@@ -338,37 +338,37 @@
   {
     "name": "icon:pierce",
     "size": 5,
-    "bricks": "ttttttttttttWtttt_tttt_tt",
+    "bricks": "ttttttttttttWttttattttatt",
     "credit": ""
   },
   {
     "name": "icon:pierce_above_paddle",
     "size": 7,
-    "bricks": "ltWtllllt_tllllt_tllllt_tlll_______________WWW___",
+    "bricks": "atWtaaaatataaaatataaaatataaa__a______a_____WWW___",
     "credit": ""
   },
   {
     "name": "icon:pierce_color",
     "size": 5,
-    "bricks": "lllllllWlllt_tltt_tttt_tt",
+    "bricks": "aaaaaaaWaaatatattattttatt",
     "credit": ""
   },
   {
     "name": "icon:pierce_left",
     "size": 6,
-    "bricks": "_ttttt_ttttt____Wt_ttttt_ttttt______",
+    "bricks": "_ttttt_tttttaaaaWt_ttttt_ttttt______",
     "credit": ""
   },
   {
     "name": "icon:pierce_right",
     "size": 6,
-    "bricks": "ttttt_ttttt_tW____ttttt_ttttt_______",
+    "bricks": "ttttt_ttttt_tWaaaattttt_ttttt_______",
     "credit": ""
   },
   {
     "name": "icon:pierce_top",
     "size": 7,
-    "bricks": "_______________tt_tt__tt_tt__ttWtt__ttttt__ttttt_",
+    "bricks": "___a______a____ttatt__ttatt__ttWtt__ttttt__ttttt_",
     "credit": ""
   },
   {
@@ -398,25 +398,25 @@
   {
     "name": "icon:refill_left",
     "size": 6,
-    "bricks": "ttWtt_t_ttt__tttt_t_ttt_tt_tt_______",
+    "bricks": "ttWtt_tattt_atttt_tattt_ttatt____a__",
     "credit": ""
   },
   {
     "name": "icon:refill_right",
     "size": 6,
-    "bricks": "_ttWtt_ttt_t_tttt__ttt_t_tt_tt______",
+    "bricks": "_ttWtt_tttat_tttta_tttat_ttatt__a___",
     "credit": ""
   },
   {
     "name": "icon:refill_top",
     "size": 7,
-    "bricks": "_tt_tt__t_t_t___ttt___tttttW_ttttt_______________",
+    "bricks": "_ttatt__tatat__attta_atttttW_ttttt_______________",
     "credit": ""
   },
   {
     "name": "icon:refill_wrap",
     "size": 8,
-    "bricks": "_tWtttt__vtttttvvtttttv__ttttvt_____v______v______v_____WWW_____",
+    "bricks": "_tWtttt__atttttaattttta__ttttat_____a______a______a_____WWW_____",
     "credit": ""
   },
   {
