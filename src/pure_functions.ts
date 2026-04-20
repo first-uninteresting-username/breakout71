@@ -153,7 +153,7 @@ export function comboKeepingRate(level: number) {
 export function base_combo_from_stronger_foundation(perkLevel: number) {
   let base = 1;
   for (let i = 0; i < perkLevel; i++) {
-    base += 3 + i;
+    base += 4 + i * 2;
   }
   return base;
 }
