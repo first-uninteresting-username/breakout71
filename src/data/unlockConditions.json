@@ -1412,5 +1412,10 @@
     "required": ["addiction", "fountain_toss", "ball_attract_ball"],
     "forbidden": ["minefield", "respawn", "flyswatter"],
     "minScore": 26900
+  },
+  "GrapheneOS": {
+    "required": ["wrap_up", "gravity_falls", "streak_shots"],
+    "forbidden": ["addiction", "top_is_lava", "pierce_left"],
+    "minScore": 27000
   }
 }
