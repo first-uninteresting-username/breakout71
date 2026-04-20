@@ -2134,7 +2134,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
       (shouldPierceByColor(gameState, vhit, hhit, chit)
         ? gameState.perks.pierce_color * 2.1
         : 0) +
-      gameState.perks.pierce * 1.1;
+      gameState.perks.pierce * 2.1;
 
     if (gameState.perks.pierce_left && hitFrom == "left") {
       damageMultiplier += gameState.perks.pierce_left * 2.1;

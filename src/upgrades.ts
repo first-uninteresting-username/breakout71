@@ -393,9 +393,9 @@ export const rawUpgrades = [
     max: 3,
     hardLimit: Infinity,
     name: t("upgrades.pierce.name"),
-    help: (lvl: number) => t("upgrades.pierce.tooltip", { count: lvl }),
+    help: (lvl: number) => t("upgrades.pierce.tooltip", { count: lvl * 2 }),
     fullHelp: (lvl: number) =>
-      t("upgrades.pierce.verbose_description", { count: lvl }),
+      t("upgrades.pierce.verbose_description", { count: lvl * 2 }),
   },
   {
     category: categories.simple,
