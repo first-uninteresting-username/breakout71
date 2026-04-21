@@ -1157,7 +1157,7 @@ export const rawUpgrades = [
 
   {
     category: categories.pierce,
-    threshold: 290000,
+    threshold: 300000,
     gift: false,
     id: "pierce_left",
     max: 3,
@@ -1168,7 +1168,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
-    threshold: 290000,
+    threshold: 310000,
     gift: false,
     id: "pierce_right",
     max: 3,
@@ -1179,7 +1179,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
-    threshold: 290000,
+    threshold: 320000,
     gift: false,
     id: "pierce_top",
     max: 3,
@@ -1190,52 +1190,19 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
-    threshold: 290000,
+    threshold: 330000,
     gift: false,
-    id: "refill_left",
+    id: "refill",
     max: 1,
     hardLimit: 1,
-    name: t("upgrades.refill_left.name"),
-    help: (lvl: number) => t("upgrades.refill_left.tooltip"),
-    fullHelp: (lvl: number) => t("upgrades.refill_left.verbose_description"),
-  },
-  {
-    category: categories.pierce,
-    threshold: 290000,
-    gift: false,
-    id: "refill_right",
-    max: 1,
-    hardLimit: 1,
-    name: t("upgrades.refill_right.name"),
-    help: (lvl: number) => t("upgrades.refill_right.tooltip"),
-    fullHelp: (lvl: number) => t("upgrades.refill_right.verbose_description"),
-  },
-  {
-    category: categories.pierce,
-    threshold: 290000,
-    gift: false,
-    id: "refill_top",
-    max: 1,
-    hardLimit: 1,
-    name: t("upgrades.refill_top.name"),
-    help: (lvl: number) => t("upgrades.refill_top.tooltip"),
-    fullHelp: (lvl: number) => t("upgrades.refill_top.verbose_description"),
-  },
-  {
-    category: categories.pierce,
-    threshold: 290000,
-    gift: false,
-    id: "refill_wrap",
-    max: 1,
-    hardLimit: 1,
-    name: t("upgrades.refill_wrap.name"),
-    help: (lvl: number) => t("upgrades.refill_wrap.tooltip"),
-    fullHelp: (lvl: number) => t("upgrades.refill_wrap.verbose_description"),
+    name: t("upgrades.refill.name"),
+    help: (lvl: number) => t("upgrades.refill.tooltip"),
+    fullHelp: (lvl: number) => t("upgrades.refill.verbose_description"),
   },
 
   {
     category: categories.pierce,
-    threshold: 290000,
+    threshold: 370000,
     gift: false,
     id: "pierce_above_paddle",
     max: 3,
@@ -1248,7 +1215,7 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
-    threshold: 290000,
+    threshold: 380000,
     gift: false,
     id: "soft_touch",
     max: 1,
@@ -1256,5 +1223,18 @@ export const rawUpgrades = [
     name: t("upgrades.soft_touch.name"),
     help: (lvl: number) => t("upgrades.soft_touch.tooltip"),
     fullHelp: (lvl: number) => t("upgrades.soft_touch.verbose_description"),
+  },
+  {
+    category: categories.combo,
+    threshold: 390000,
+    gift: true,
+    id: "varied_diet",
+    max: 3,
+    hardLimit: 9,
+    name: t("upgrades.varied_diet.name"),
+    help: (lvl: number) =>
+      t("upgrades.varied_diet.tooltip", { plus: lvl, minus: lvl }),
+    fullHelp: (lvl: number) =>
+      t("upgrades.varied_diet.verbose_description", { plus: lvl, minus: lvl }),
   },
 ] as const;

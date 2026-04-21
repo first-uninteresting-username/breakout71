@@ -22,7 +22,6 @@ import {
   getClosestBall,
   getCoinRenderColor,
   getCornerOffset,
-  getMajorityValue,
   getRowColIndex,
   isBrickOverPaddle,
   isMovingWhilePassiveIncome,
@@ -80,16 +79,14 @@ export function getPredictableBallDirection(gameState: GameState) {
   if (
     gameState.perks.side_flip ||
     gameState.perks.left_is_lava ||
-    gameState.perks.pierce_right ||
-    gameState.perks.refill_right
+    gameState.perks.pierce_right
   )
     return gameState.baseSpeed;
 
   if (
     gameState.perks.side_kick ||
     gameState.perks.right_is_lava ||
-    gameState.perks.pierce_left ||
-    gameState.perks.refill_left
+    gameState.perks.pierce_left
   )
     return -gameState.baseSpeed;
 }
@@ -115,7 +112,11 @@ export function resetBalls(gameState: GameState) {
   const perBall = gameState.puckWidth / (count + 1);
   gameState.balls = [];
   gameState.ballsColor = "#FFFFFF";
-  if (gameState.perks.picky_eater || gameState.perks.pierce_color) {
+  if (
+    gameState.perks.picky_eater ||
+    gameState.perks.pierce_color ||
+    gameState.perks.varied_diet
+  ) {
     gameState.ballsColor = "#FFFFFF";
     for (let i = gameState.bricks.length; i >= 0; i--) {
       const brickColor: colorString = gameState.bricks[i];
@@ -331,6 +332,8 @@ export function spawnParticlesExplosion(
   x: number,
   y: number,
   color: string,
+  vx: number = 0,
+  vy: number = 0,
 ) {
   if (liveCount(gameState.particles) > getCurrentMaxParticles()) {
     // Avoid freezing when lots of explosion happen at once
@@ -339,11 +342,10 @@ export function spawnParticlesExplosion(
   for (let i = 0; i < count; i++) {
     makeParticle(
       gameState,
-
       x + ((Math.random() - 0.5) * gameState.brickWidth) / 2,
       y + ((Math.random() - 0.5) * gameState.brickWidth) / 2,
-      (Math.random() - 0.5) * 30,
-      (Math.random() - 0.5) * 30,
+      vx + (Math.random() - 0.5) * 30,
+      vy + (Math.random() - 0.5) * 30,
       color,
       false,
     );
@@ -480,6 +482,7 @@ export function explodeBrick(
   const color = gameState.bricks[index];
   if (!color) return;
 
+  const colorsCount = countBrickColors(gameState);
   const wasPickyEaterPossible =
     gameState.perks.picky_eater && isPickyEatingPossible(gameState);
   const redRowReach = reachRedRowIndex(gameState);
@@ -515,7 +518,6 @@ export function explodeBrick(
 
     // should run before the brick is removed
     if (gameState.perks.palette) {
-      const colorsCount = countBrickColors(gameState);
       if (colorsCount > 1) {
         comboGain += (colorsCount - 1) * gameState.perks.palette;
       } else if (
@@ -525,6 +527,14 @@ export function explodeBrick(
         gameState.bricks.find((b, bi) => bi !== index && b !== "black" && b)
       ) {
         resetComboNeeeded = true;
+      }
+    }
+
+    if (gameState.perks.varied_diet) {
+      if (color !== gameState.ballsColor) {
+        comboGain += gameState.perks.varied_diet;
+      } else if (colorsCount > 1) {
+        comboGain -= gameState.perks.varied_diet;
       }
     }
 
@@ -617,10 +627,7 @@ export function explodeBrick(
     }
 
     if (gameState.perks.picky_eater) {
-      comboGain += Math.max(
-        0,
-        gameState.perks.picky_eater * (countBrickColors(gameState) - 1),
-      );
+      comboGain += Math.max(0, gameState.perks.picky_eater * (colorsCount - 1));
     }
 
     if (gameState.perks.three_cushion) {
@@ -648,7 +655,9 @@ export function explodeBrick(
     if (!isExplosion) {
       // color change
       if (
-        (gameState.perks.picky_eater || gameState.perks.pierce_color) &&
+        (gameState.perks.picky_eater ||
+          gameState.perks.pierce_color ||
+          gameState.perks.varied_diet) &&
         color !== gameState.ballsColor &&
         color
       ) {
@@ -1819,7 +1828,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     frames,
   );
   if (borderHitCode) {
-    applySideHitRefill(gameState, ball, borderHitCode);
+    refillBall(gameState, ball);
     ball.wrapsSinceBounce = 0;
     if (borderHitCode > 1) {
       ball.topHitsSinceBounce++;
@@ -2132,18 +2141,52 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
 
     let damageMultiplier =
       (shouldPierceByColor(gameState, vhit, hhit, chit)
-        ? gameState.perks.pierce_color * 2.1
+        ? gameState.perks.pierce_color * 3.1
         : 0) +
-      gameState.perks.pierce * 2.1;
+      gameState.perks.pierce * 2.1 +
+      gameState.perks.refill * 1.1;
 
     if (gameState.perks.pierce_left && hitFrom == "left") {
-      damageMultiplier += gameState.perks.pierce_left * 2.1;
+      damageMultiplier += gameState.perks.pierce_left * 3.1;
+      ball.vx += (gameState.baseSpeed / 2) * gameState.perks.pierce_left;
+      ball.vy *= Math.pow(0.9, gameState.perks.pierce_left);
+      spawnParticlesExplosion(
+        gameState,
+        5,
+        ball.x,
+        ball.y,
+        gameState.ballsColor,
+        -20,
+        0,
+      );
     }
     if (gameState.perks.pierce_top && hitFrom == "top") {
-      damageMultiplier += gameState.perks.pierce_top * 2.1;
+      damageMultiplier += gameState.perks.pierce_top * 3.1;
+      ball.vy += (gameState.baseSpeed / 2) * gameState.perks.pierce_top;
+      ball.vx *= Math.pow(0.9, gameState.perks.pierce_top);
+      spawnParticlesExplosion(
+        gameState,
+        5,
+        ball.x,
+        ball.y,
+        gameState.ballsColor,
+        0,
+        -20,
+      );
     }
     if (gameState.perks.pierce_right && hitFrom == "right") {
-      damageMultiplier += gameState.perks.pierce_right * 2.1;
+      damageMultiplier += gameState.perks.pierce_right * 3.1;
+      ball.vx -= (gameState.baseSpeed / 2) * gameState.perks.pierce_right;
+      ball.vy *= Math.pow(0.9, gameState.perks.pierce_right);
+      spawnParticlesExplosion(
+        gameState,
+        5,
+        ball.x,
+        ball.y,
+        gameState.ballsColor,
+        20,
+        0,
+      );
     }
     if (gameState.perks.pierce_above_paddle && ballIsAbovePaddle) {
       damageMultiplier += gameState.perks.pierce_above_paddle * 2.1;
@@ -2565,20 +2608,7 @@ function underWrapLimit(gameState: GameState, ball: Ball) {
     ball.wrapsSinceBounce = 0;
     return false;
   }
-  if (gameState.perks.refill_wrap && ball.piercePoints < 1) {
-    ball.piercePoints = 1;
-    makeText(
-      gameState,
-      ball.x,
-      ball.y,
-      gameState.ballsColor,
-      t("play.refill"),
-      12,
-      500,
-      ball.vx,
-      ball.vy,
-    );
-  }
+  refillBall(gameState, ball);
   return true;
 }
 
@@ -2644,22 +2674,14 @@ function addGravityParticules(gameState: GameState, frames: number) {
   }
 }
 
-function applySideHitRefill(
-  gameState: GameState,
-  ball: Ball,
-  borderHitCode: number,
-) {
+function refillBall(gameState: GameState, ball: Ball) {
+  if (!gameState.perks.refill) {
+    return;
+  }
   if (ball.piercePoints >= 1) {
     return;
   }
-  const hitTop = borderHitCode > 1;
-  const hitLeft = borderHitCode % 2 && ball.x < gameState.canvasWidth / 2;
-  const hitRight = borderHitCode % 2 && ball.x > gameState.canvasWidth / 2;
-  if (
-    (gameState.perks.refill_top && hitTop) ||
-    (gameState.perks.refill_left && hitLeft) ||
-    (gameState.perks.refill_right && hitRight)
-  ) {
+  if (gameState.perks.refill) {
     ball.piercePoints = 1;
     makeText(
       gameState,

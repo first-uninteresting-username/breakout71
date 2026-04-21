@@ -396,27 +396,9 @@
     "credit": ""
   },
   {
-    "name": "icon:refill_left",
-    "size": 6,
-    "bricks": "ttWtt_tattt_atttt_tattt_ttatt____a__",
-    "credit": ""
-  },
-  {
-    "name": "icon:refill_right",
-    "size": 6,
-    "bricks": "_ttWtt_tttat_tttta_tttat_ttatt__a___",
-    "credit": ""
-  },
-  {
-    "name": "icon:refill_top",
-    "size": 7,
-    "bricks": "_ttatt__tatat__attta_atttttW_ttttt_______________",
-    "credit": ""
-  },
-  {
-    "name": "icon:refill_wrap",
+    "name": "icon:refill",
     "size": 8,
-    "bricks": "_tWtttt__atttttaattttta__ttttat_____a______a______a_____WWW_____",
+    "bricks": "____a____ttata___tattta__atttt_aattttta__atttW____a________a____",
     "credit": ""
   },
   {
@@ -639,6 +621,12 @@
     "name": "icon:upload",
     "size": 8,
     "bricks": "gggbbggg__bbbb___bbbbbb____bb______bb______bb______bb______bb___",
+    "credit": ""
+  },
+  {
+    "name": "icon:varied_diet",
+    "size": 7,
+    "bricks": "t_r_t_rt_r_t_rt_r_t_rt_r_t_rt_r_t_rt_r_t_r_______",
     "credit": ""
   },
   {
@@ -2370,10 +2358,9 @@
     "credit": ""
   },
   {
-    "color": "#000000",
+    "name": "GrapheneOS",
     "size": 21,
     "bricks": "_______________________________l____________________l____________________l____________________W____________l______WBW______l_____lg___l_W_lg___l_______lW_l_____l_Wl________WBW__bbb__WBW_________W__b___b__W__________l_b_____b_l__________l_b_____b_l__________W__b___b__W_________WBW__bbb__WBW________lW_l_____l_Wl_______l____l_W_l____l_____l______WBW______l____________W____________________l____________________l____________________l__________",
-    "name": "GrapheneOS",
     "credit": "The private and secure mobile operating system with Android app compatibility. Developed as a non-profit open source project: https://grapheneos.org/ - added by Wombatmithut"
   }
 ]
