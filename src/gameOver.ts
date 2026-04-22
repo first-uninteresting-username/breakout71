@@ -1,7 +1,12 @@
 import { allLevels, appVersion, upgrades } from "./loadGameData";
 import { t } from "./i18n/i18n";
 import { GameState, RunHistoryItem } from "./types";
-import { mainGameState, pause, restart } from "./game";
+import {
+  mainGameState,
+  pause,
+  restart,
+  startComputerControlledGame,
+} from "./game";
 import {
   currentLevelInfo,
   describeLevel,
@@ -36,6 +41,10 @@ export function addToTotalPlayTime(ms: number) {
 
 export async function gameOver(title: string, intro: string) {
   if (mainGameState.startParams.animated_perk_preview) return;
+  if (mainGameState.startParams.computer_controlled) {
+    startComputerControlledGame(mainGameState.startParams.stress);
+    return;
+  }
   if (!mainGameState.running) return;
   // Ignore duplicated calls, can happen when ticking is split in multiple updates because the ball goes fast
   if (mainGameState.isGameOver) return;
