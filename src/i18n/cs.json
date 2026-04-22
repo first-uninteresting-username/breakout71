@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "Prorážení barvy",
     "upgrades.pierce_color.tooltip": "Míček prochází skrz cihličky stejné barvy",
-    "upgrades.pierce_color.verbose_description": "Normálně míček způsobuje 1 poškození a cihličky mají jeden život.\nKdykoli míček zasáhne cihličku stejné barvy, prostě nerušeně projde skrz.\nJakmile dosáhne cihličky jiné barvy, rozbije ji, získá její barvu a odrazí se.\nPokud máte robustní cihly, míček se může odrazit i od cihličky stejné barvy.",
+    "upgrades.pierce_color.verbose_description": "",
     "upgrades.pierce_left.name": "",
     "upgrades.pierce_left.tooltip": "",
     "upgrades.pierce_left.verbose_description": "",

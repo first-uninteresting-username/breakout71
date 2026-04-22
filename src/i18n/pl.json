@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "Kolobry",
     "upgrades.pierce_color.tooltip": "Piłka przechodzi przez cegły tego samego koloru",
-    "upgrades.pierce_color.verbose_description": "Zwykle kulki mają 1 uszkodzenie i cegły mają 1 punkt zdrowotny (HP).\nKiedy piłka uderza cegłą tego samego koloru, przejmuje się przez nieokreślone.\nKiedy dociera do cegły innego koloru, złama go, zajmie kolor i odbija się.\nJeśli masz solidne cegły, piłka może wciąż odbijać cegły tej samej koloru.",
+    "upgrades.pierce_color.verbose_description": "",
     "upgrades.pierce_left.name": "",
     "upgrades.pierce_left.tooltip": "",
     "upgrades.pierce_left.verbose_description": "",

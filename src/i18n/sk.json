@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "Farba pierce",
     "upgrades.pierce_color.tooltip": "Lopta prechádza tehálmi rovnakej farby",
-    "upgrades.pierce_color.verbose_description": "Normálne, guľôčky robiť 1 poškodenie a tehly majú 1 zdravotný bod (HP).\nKedykoľvek lopta hity tehlu rovnakej farby, bude to len prejsť neimped.\nAkonáhle dosiahne tehlu inej farby, bude to zlomiť, vziať svoju farbu a odraziť.\nAk máte robustné tehly, lopta môže stále odraziť tehlu rovnakej farby.",
+    "upgrades.pierce_color.verbose_description": "",
     "upgrades.pierce_left.name": "",
     "upgrades.pierce_left.tooltip": "",
     "upgrades.pierce_left.verbose_description": "",

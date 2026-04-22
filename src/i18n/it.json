@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "Colore perforante",
     "upgrades.pierce_color.tooltip": "La pallina passa attraverso mattoni dello stesso colore",
-    "upgrades.pierce_color.verbose_description": "Normalmente, le palline fanno 1 danno e i mattoni hanno 1 punto di salute (HP).\nOgni volta che una pallina colpirà un mattone dello stesso colore, ci passerà tranquillamente atteaverso.\nUna volta raggiunto un mattone di un colore diverso, lo distruggerà, prendendo il suo colore e rimbalzando.\nSe hai mattoni robusti, la pallina potrebbe ancora rimbalzare da un mattone dello stesso colore.",
+    "upgrades.pierce_color.verbose_description": "",
     "upgrades.pierce_left.name": "",
     "upgrades.pierce_left.tooltip": "",
     "upgrades.pierce_left.verbose_description": "",

@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "顏色穿刺",
     "upgrades.pierce_color.tooltip": "球穿過相同顏色的磚塊",
-    "upgrades.pierce_color.verbose_description": "通常情況下，球會造成 1 點傷害，磚塊則有 1 點生命值（HP）。\n當球碰到相同顏色的磚塊時，它會暢通無阻地穿過。\n當球碰到不同顏色的磚塊時，它會將其擊破，變成相同顏色並且彈起。\n如果磚塊很堅固，球仍然可能會被相同顏色的磚塊彈起。",
+    "upgrades.pierce_color.verbose_description": "",
     "upgrades.pierce_left.name": "",
     "upgrades.pierce_left.tooltip": "",
     "upgrades.pierce_left.verbose_description": "",

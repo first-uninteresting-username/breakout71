@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "Color pierce",
     "upgrades.pierce_color.tooltip": "The ball goes through bricks of the same color",
-    "upgrades.pierce_color.verbose_description": "Normally, balls do 1 damage and bricks have 1 health point (HP).\nWhenever a ball hits a brick of the same color, it will just go through unimpeded. \nOnce it reaches a brick of a different color, it will break it, take its color and bounce.\nIf you have sturdy bricks, the ball might still bounce off a brick of the same color.",
+    "upgrades.pierce_color.verbose_description": "The ball goes through bricks of the same color unimpeded until its \"charge\" is exhausted. It then needs to bounce on the paddle to recharge.",
     "upgrades.pierce_left.name": "Pierce left",
     "upgrades.pierce_left.tooltip": "Bricks break more easily when hit from the left",
     "upgrades.pierce_left.verbose_description": "This upgrade impacts the starting direction of the ball. The ball will accelerate when the effect is triggered.",

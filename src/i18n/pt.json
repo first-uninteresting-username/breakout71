@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "Cor perfurante",
     "upgrades.pierce_color.tooltip": "A bola atravessa tijolos da mesma cor",
-    "upgrades.pierce_color.verbose_description": "Normalmente, as bolas dão 1 de dano e tijolos têm 1 ponto de vida (HP).\nSempre que uma bola atingir um tijolo da mesma cor, ele só irá atravessá-lo.\nUma vez que atingir um tijolo de cor diferente, ela vai quebrar o tijolo, adquirir a sua cor e rebater.\nSe tiver tijolos resistentes, a bola poderá rebater mesmo sendo da mesma cor.",
+    "upgrades.pierce_color.verbose_description": "",
     "upgrades.pierce_left.name": "",
     "upgrades.pierce_left.tooltip": "",
     "upgrades.pierce_left.verbose_description": "",

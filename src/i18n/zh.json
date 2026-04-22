@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "颜色穿刺",
     "upgrades.pierce_color.tooltip": "球穿透相同颜色的砖块",
-    "upgrades.pierce_color.verbose_description": "通常，球造成 1 伤害，并且砖块有 1 生命值。\n每当球击中相同颜色的砖块，它会穿透，畅通无阻。\n一旦球碰到不同颜色的砖块，它会打碎砖块，变成砖块的颜色并弹跳。\n如果你有坚固的砖块，球仍有可能在相同颜色的砖块上弹跳。",
+    "upgrades.pierce_color.verbose_description": "",
     "upgrades.pierce_left.name": "穿刺左边",
     "upgrades.pierce_left.tooltip": "从左边击中时更容易打碎砖块",
     "upgrades.pierce_left.verbose_description": "这个升级影响球的开始方向。",

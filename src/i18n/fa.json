@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "نفوذ رنگی",
     "upgrades.pierce_color.tooltip": "توپ از آجرهای هم‌رنگ عبور می‌کند",
-    "upgrades.pierce_color.verbose_description": "معمولاً توپ‌ها ۱ آسیب می‌زنند و آجرها ۱ نقطه سلامت (HP) دارند.\nهرگاه توپ به آجری هم‌رنگ خود برخورد کند، بدون مانع عبور می‌کند.\nوقتی به آجری با رنگ متفاوت می‌رسد، آن را می‌شکند، رنگش را می‌گیرد و پرش می‌کند.\nاگر آجرهای مقاوم داشته باشید، توپ ممکن است همچنان از آجر هم‌رنگ پرش کند.",
+    "upgrades.pierce_color.verbose_description": "",
     "upgrades.pierce_left.name": "",
     "upgrades.pierce_left.tooltip": "",
     "upgrades.pierce_left.verbose_description": "",

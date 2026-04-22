@@ -374,7 +374,7 @@
     "upgrades.pierce_above_paddle.verbose_description": "",
     "upgrades.pierce_color.name": "Колір пірсінг",
     "upgrades.pierce_color.tooltip": "Кулька проходить через цеглу одного кольору",
-    "upgrades.pierce_color.verbose_description": "Нормально, кульки роблять 1 пошкодження і цегли мають 1 точку здоров'я (ХП).\nКоли б м'яч потрапив в цеглу того ж кольору, він просто пройде через неприпустимі.\nПісля того, як вона досягає цегли різного кольору, вона буде розбити її, візьміть його колір і буксир.\nЯкщо у вас є міцні цегли, то м'яч все-таки відмовляється від цегли того ж кольору.",
+    "upgrades.pierce_color.verbose_description": "",
     "upgrades.pierce_left.name": "",
     "upgrades.pierce_left.tooltip": "",
     "upgrades.pierce_left.verbose_description": "",
