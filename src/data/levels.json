@@ -2362,5 +2362,47 @@
     "size": 21,
     "bricks": "_______________________________l____________________l____________________l____________________W____________l______WBW______l_____lg___l_W_lg___l_______lW_l_____l_Wl________WBW__bbb__WBW_________W__b___b__W__________l_b_____b_l__________l_b_____b_l__________W__b___b__W_________WBW__bbb__WBW________lW_l_____l_Wl_______l____l_W_l____l_____l______WBW______l____________W____________________l____________________l____________________l__________",
     "credit": "The private and secure mobile operating system with Android app compatibility. Developed as a non-profit open source project: https://grapheneos.org/ - added by Wombatmithut"
+  },
+  {
+    "color": "#000000",
+    "size": 11,
+    "bricks": "kWSSSSSSSSSkkWSSSSSSSSykkWSSSSSSS_ykkWWWWWWW__ykkkkkkkk___ykkkkkkk__ykkkkkkkk_ykkWWWWWWWykkWtttttttkkWttttttttkWttttttttt",
+    "name": "South Africa",
+    "credit": "https://en.wikipedia.org/wiki/Flag_of_South_Africa - HazyDaisy"
+  },
+  {
+    "color": "#115988",
+    "size": 21,
+    "bricks": "WWWWWWWWgggggWWWWWWWWWWWWWWgggggggggWWWWWWWWWWgggggggggggggWWWWWWgggggggggggggggggWWWWWWWWWWWWWWWWWWWWWWWWWgggggggggggggggggWWWWgggggggggggggggggWWWWWWWWWWWWWWWWWWWWWWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWWWWWWWWWWWWWWWWWWWWWWgggggggggggggggggWWWWgggggggggggggggggWWWWWWWWWWWWWWWWWWWWWWWWgggggggggggggggggggW",
+    "name": "Internet Archive",
+    "credit": "Internet Archive is a non-profit digital library offering free universal access to texts, movies & music, as well as 624 billion archived web pages: https://archive.org/ - Wombatmithut"
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "WWWWWWWWW___WWWWWWWWWWttttttWWWBWWWttttttWWtRRRRttWWWWWttRRRRtWWtRrrrRtWWWWWtRrrrRtWWtRrrrRtttttttRrrrRtWWtRrrrrRRtttRRrrrrRtWWttRRrrrrRRRrrrrRRttWWWtttRrrrrbrrrrRtttWWWWWWtRrrbrbrbrrRtWWWWWWbWttRrrbbbrrRtbWWWbWbWbtbRbbbbbbbRbtbWbWbWWWbtRrrbbbrrRttWbWWWWWWtRrrbrbrbrrRtWWWWWWtttRrrrrbrrrrRtttWWWttRRrrrrRRRrrrrRRttWWtRrrrrRRtttRRrrrrRtWWtRrrrRtttttttRrrrRtWWtRrrrRtWWWWWtRrrrRtWWtRRRRttWWWWWttRRRRtWWttttttWWW_WWWttttttWWWWWWWWWW_B_WWWWWWWWW",
+    "name": "C.G.Jung RedBook pg94 V.1",
+    "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V. "
+  },
+  {
+    "color": "#115988",
+    "size": 21,
+    "bricks": "__________________________________________WWWWWWWWWgggWWWWWWWWWWWWWWWWgglllggWWWWWWWWWWWWgglllWlllggWWWWWWWWWglllWWWWWlllgWWWWWWWgllWWWWWWWWWllgWWWWWgllWttWWWWWttWllgWWWgllWWtrtWWWtrtWWllgWgllWWWWtrtttrtWWWWllgllWWWWWWtrrrtWWWWWWlllW_W_W_W_r_r_W_W_W_WlllWWWWWWtrrrtWWWWWWlllllWWWWtrtttrtWWWWlllWlllWWtrtWWWtrtWWlllWWWlllWttWWWWWttWlllWWWWWlllWWWWWWWWWlllWWWWWWWllllWWWWWllllWWWWWWWWWlllllWlllllWWWWWWWWWWWWlllllllWWWWWWWWWWWWWWWWlllWWWWWWWWW",
+    "name": "C.G.Jung RedBook pg94 V.2",
+    "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V. "
+  },
+  {
+    "color": "#115988",
+    "size": 21,
+    "bricks": "__________________________WWWrWrWrWWW_________WWWWWryrWWWWW_______WWWWWWWrWWWWWWW_____WWWWWWWWWWWWWWWWW___WWWWWWWt_t_tWWWWWWW_WWWWWWtttttttttWWWWWWWWWWtttWWtttWWtttWWWWWWWttWWWWtttWWWWttWWWWWtWWWWWWWtWWWWWWWtWWWtWWWWWWWWtWWWWWWWWtWWtWWWWWWggtggWWWWWWtWWWWWWWWWgrgrgWWWWWWWWWW_t_t_t_grg_t_t_t_WWWWtWtWtWgrgrgWtWtWtWWWtWtWtWtggtggtWtWtWtWWWtWWWtWtWWWtWtWWWtWWWWWWtWWWWWtWWWWWtWWWWWWttWttWttWttWttWttWWWtWWWWWtWWgWWtWWWWWtW_WWWWWWWWgrgWWWWWWWW_",
+    "name": "C.G.Jung RedBook pg93 V.1",
+    "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V."
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "______________________BRRRBRRRB_BRRRBRRRB__R_RRRBRBR_RBRBRRR_R__RRBRRRWRR_RRWRRRBRR__RRR_RBRBRBRBRBR_RRR__BRRR_RRR_k_RRR_RRRB__RBRBRBRBkkkBRBRBRBR__RRWRRR_kkkkk_RRRWRR__RBRBRBkklelkkBRB_BR__BRRR_kkleWelkk_RRRB_____BkkkeWWWekkkB_____BRRR_kkleWelkk_RRRB__RBRBRBkklelkkBRBRBR__RRWRRR_kkkkk_RRRWRR__RBRBRBRBkkkBRBRBRBR__BRRR_RRR_k_RRR_RRRB__RRR_RBRBRBRBRBR_RRR__RR_RRRWRR_RRWRRRBRR__R_RRRBRBR_RBRBRRR_R__BRRRBRRRB_BRRRBRRRB______________________",
+    "name": "C.G.Jung RedBook pg159 V.1",
+    "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V."
   }
 ]

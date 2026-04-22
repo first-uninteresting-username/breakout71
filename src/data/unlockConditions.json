@@ -1417,5 +1417,35 @@
     "required": ["wrap_up", "gravity_falls", "streak_shots"],
     "forbidden": ["addiction", "top_is_lava", "pierce_left"],
     "minScore": 27000
+  },
+  "South Africa": {
+    "required": ["ball_repulse_ball", "pierce_left", "minefield"],
+    "forbidden": ["puck_repulse_ball", "telekinesis", "addiction"],
+    "minScore": 27100
+  },
+  "Internet Archive": {
+    "required": ["bricks_attract_coins", "telekinesis", "sacrifice"],
+    "forbidden": ["smaller_puck", "three_cushion", "pierce_left"],
+    "minScore": 27200
+  },
+  "C.G.Jung RedBook pg94 V.1": {
+    "required": ["bricks_attract_ball", "refill", "bigger_explosions"],
+    "forbidden": ["sticky_coins", "sapper", "pierce"],
+    "minScore": 27300
+  },
+  "C.G.Jung RedBook pg94 V.2": {
+    "required": ["fountain_toss", "steering", "pierce_right"],
+    "forbidden": ["transparency", "left_is_lava", "pierce_color"],
+    "minScore": 27400
+  },
+  "C.G.Jung RedBook pg93 V.1": {
+    "required": ["pierce_top", "base_combo", "wrap_up"],
+    "forbidden": ["trickledown", "forgiving", "viscosity"],
+    "minScore": 27500
+  },
+  "C.G.Jung RedBook pg159 V.1": {
+    "required": ["ottawa_treaty", "trickledown", "viscosity"],
+    "forbidden": ["limitless", "forgiving", "happy_family"],
+    "minScore": 27600
   }
 }
