@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "",
     "settings.max_coins": "",
     "settings.max_coins_help": "",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "",
     "settings.mobile_help": "",
     "settings.particles": "",

@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Более чёткое изображение, но более медленная отрисовка.",
     "settings.max_coins": "{{max}} монет на экране максимум",
     "settings.max_coins_help": "Только косметика, не влияет на результат",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "Мобильный режим",
     "settings.mobile_help": "Оставляет место под лопаткой.",
     "settings.particles": "",

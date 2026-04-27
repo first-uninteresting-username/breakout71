@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Più nitido ma più lento da rendere",
     "settings.max_coins": "fino a {{max}} monete sullo schermo",
     "settings.max_coins_help": "Solo cosmetici, nessun effetto sul punteggio",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "Modalità mobile",
     "settings.mobile_help": "Lascia spazio sotto la barra.",
     "settings.particles": "",

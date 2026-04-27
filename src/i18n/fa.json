@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "واضح‌تر اما رندر کندتر",
     "settings.max_coins": "تا {{max}} سکه روی صفحه",
     "settings.max_coins_help": "فقط ظاهری، بدون اثر بر امتیاز",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "حالت تلفن همراه",
     "settings.mobile_help": "فضایی زیر پارو باقی می‌گذارد.",
     "settings.particles": "",

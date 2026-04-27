@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Mais nítido, mas mais lento a renderizar.",
     "settings.max_coins": "Máximo de {{max}} moedas no ecrã",
     "settings.max_coins_help": "Apenas um cosmético, nenhum efeito na pontuação",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "Modo para telemóvel",
     "settings.mobile_help": "Deixa um espaço extra sob o reme.",
     "settings.particles": "",

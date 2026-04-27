@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Daha keskin ama işlenmesi daha yavaş",
     "settings.max_coins": "Ekranda maksimum {{max}} jeton var",
     "settings.max_coins_help": "Sadece kozmetik, puan üzerinde etkisi yok",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "Mobil mod",
     "settings.mobile_help": "Kürek altında boşluk bırakır.",
     "settings.particles": "",

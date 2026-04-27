@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "更清晰但渲染速度较慢",
     "settings.max_coins": "屏幕上的最大硬币数量 {{max}}",
     "settings.max_coins_help": "屏幕上的硬币，不影响分数",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "手机模式",
     "settings.mobile_help": "在球拍下方留出空间。",
     "settings.particles": "",

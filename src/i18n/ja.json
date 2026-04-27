@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "より鮮明だがレンダリングが遅い",
     "settings.max_coins": "最大表示コイン数{{max}}枚",
     "settings.max_coins_help": "画面上の表示のみの変更であり、スコアには影響しません",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "モバイルモード",
     "settings.mobile_help": "パドルの下にスペースを設けます。",
     "settings.particles": "",

@@ -1,5 +1,7 @@
 import { t } from "./i18n/i18n";
 import { hideAnyTooltip } from "./tooltip";
+import { isOptionOn } from "./options";
+import { menuClick } from "./menuSound";
 
 export let alertsOpen = 0,
   closeModal: null | (() => void) = null;
@@ -50,6 +52,9 @@ export async function asyncAlert<t>({
 }): Promise<t | void> {
   hideAnyTooltip();
   updateAlertsOpen(+1);
+  if (isOptionOn("sound")) {
+    menuClick();
+  }
   return new Promise((resolve) => {
     popupWrap.className = className;
     closeModaleButton.style.display = allowClose ? "" : "none";
@@ -68,6 +73,7 @@ export async function asyncAlert<t>({
       setTimeout(() => (document.body.style.minHeight = ""), 0);
       popup.remove();
       resolve(value);
+      menuClick();
     }
 
     if (allowClose) {

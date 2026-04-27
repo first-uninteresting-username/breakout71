@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Plus net, mais rendu plus lent",
     "settings.max_coins": "{{max}} pièces affichées maximum",
     "settings.max_coins_help": "Visuel uniquement, pas d'impact sur le score",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "Mode mobile",
     "settings.mobile_help": "Laisse un espace sous la raquette.",
     "settings.particles": "",

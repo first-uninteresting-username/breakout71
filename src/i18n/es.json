@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Más nítido pero más lento de renderizar",
     "settings.max_coins": "{{max}} monedas en pantalla máximo",
     "settings.max_coins_help": "Solo cosmético, sin efecto en la puntuación.",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "Modo móvil",
     "settings.mobile_help": "Deja espacio bajo el remolino.",
     "settings.particles": "",

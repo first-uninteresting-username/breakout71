@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Ostřejší, ale pomalejší vykreslování",
     "settings.max_coins": "Maximálně {{max}} mincí na obrazovce",
     "settings.max_coins_help": "Jen kosmetika, bez vlivu na skóre",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "Mobilní režim",
     "settings.mobile_help": "Ponechává prostor pod pálkou.",
     "settings.particles": "",

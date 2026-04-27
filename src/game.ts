@@ -78,6 +78,7 @@ import { frameStarted, getWorstFPSAndReset, startWork } from "./fps";
 import { openUnlockedUpgradesList } from "./openUnlockedUpgradesList";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
 import { openLevelDetails } from "./openLevelDetails";
+import { menuClick } from "./menuSound";
 
 export async function play() {
   if (await applyFullScreenChoice()) return;
@@ -85,6 +86,7 @@ export async function play() {
   mainGameState.running = true;
   mainGameState.ballStickToPuck = false;
 
+  menuClick();
   startRecordingGame(mainGameState);
   getAudioContext()?.resume();
   resumeRecording();
@@ -98,7 +100,6 @@ export function pause(playerAskedForPause: boolean) {
   if (mainGameState.pauseTimeout && playerAskedForPause) {
     return;
   }
-
   if (mainGameState.startParams.computer_controlled) {
     play();
     return;
@@ -120,6 +121,7 @@ export function pause(playerAskedForPause: boolean) {
   };
 
   if (playerAskedForPause) {
+    menuClick();
     // Pausing many times in a run will make pause slower
     mainGameState.pauseUsesDuringRun++;
     mainGameState.pauseTimeout = setTimeout(

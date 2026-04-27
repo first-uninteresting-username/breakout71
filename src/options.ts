@@ -11,6 +11,11 @@ export const options = {
     name: t("settings.sounds"),
     help: t("settings.sounds_help"),
   },
+  menu_sound: {
+    default: true,
+    name: t("settings.menu_sound"),
+    help: t("settings.menu_sound_help"),
+  },
   "mobile-mode": {
     default:
       window.innerHeight > window.innerWidth ||

@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Sharper, ale powolny od renderowania",
     "settings.max_coins": "monety o maksymalnym wymiarze ekranowym",
     "settings.max_coins_help": "Tylko kosmetyczne, bez wpływu na wynik",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "Tryb mobilny",
     "settings.mobile_help": "Pozostawia przestrzeń pod paletką.",
     "settings.particles": "",

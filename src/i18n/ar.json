@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "أكثر وضوحًا ولكن أبطأ في العرض",
     "settings.max_coins": "{{max}} عملات معدنية على الشاشة كحد أقصى",
     "settings.max_coins_help": "تجميلي فقط، لا يؤثر على النتيجة",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "الوضع المحمول",
     "settings.mobile_help": "يترك مساحة تحت المجداف.",
     "settings.particles": "",

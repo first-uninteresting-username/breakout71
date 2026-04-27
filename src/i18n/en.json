@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Sharper but slower to render",
     "settings.max_coins": "{{max}} coins on screen maximum",
     "settings.max_coins_help": "Cosmetic only, no effect on score",
+    "settings.menu_sound": "Menu sounds",
+    "settings.menu_sound_help": "Just a bloop to confirm each menu click",
     "settings.mobile": "Mobile mode",
     "settings.mobile_help": "Leaves space under the paddle.",
     "settings.particles": "Particles",

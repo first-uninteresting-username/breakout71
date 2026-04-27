@@ -156,6 +156,8 @@
     "settings.match_pixel_ratio_help": "Schärfer, aber langsamer in der Renderzeit.",
     "settings.max_coins": "{{max}} Münzen auf dem Bildschirm maximal",
     "settings.max_coins_help": "Nur kosmetisch, keine Auswirkung auf die Punktzahl",
+    "settings.menu_sound": "",
+    "settings.menu_sound_help": "",
     "settings.mobile": "Handy-Modus",
     "settings.mobile_help": "Lässt Platz unter dem Paddel.",
     "settings.particles": "",
