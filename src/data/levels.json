@@ -2364,45 +2364,74 @@
     "credit": "The private and secure mobile operating system with Android app compatibility. Developed as a non-profit open source project: https://grapheneos.org/ - added by Wombatmithut"
   },
   {
-    "color": "#000000",
+    "name": "South Africa",
     "size": 11,
     "bricks": "kWSSSSSSSSSkkWSSSSSSSSykkWSSSSSSS_ykkWWWWWWW__ykkkkkkkk___ykkkkkkk__ykkkkkkkk_ykkWWWWWWWykkWtttttttkkWttttttttkWttttttttt",
-    "name": "South Africa",
     "credit": "https://en.wikipedia.org/wiki/Flag_of_South_Africa - HazyDaisy"
   },
   {
-    "color": "#115988",
+    "name": "Internet Archive",
     "size": 21,
     "bricks": "WWWWWWWWgggggWWWWWWWWWWWWWWgggggggggWWWWWWWWWWgggggggggggggWWWWWWgggggggggggggggggWWWWWWWWWWWWWWWWWWWWWWWWWgggggggggggggggggWWWWgggggggggggggggggWWWWWWWWWWWWWWWWWWWWWWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWggWWggWWWWggWWWggWWWWWWWWWWWWWWWWWWWWWWWWWgggggggggggggggggWWWWgggggggggggggggggWWWWWWWWWWWWWWWWWWWWWWWWgggggggggggggggggggW",
-    "name": "Internet Archive",
     "credit": "Internet Archive is a non-profit digital library offering free universal access to texts, movies & music, as well as 624 billion archived web pages: https://archive.org/ - Wombatmithut"
   },
   {
-    "color": "#000000",
+    "name": "C.G.Jung RedBook pg94 V.1",
     "size": 21,
     "bricks": "WWWWWWWWW___WWWWWWWWWWttttttWWWBWWWttttttWWtRRRRttWWWWWttRRRRtWWtRrrrRtWWWWWtRrrrRtWWtRrrrRtttttttRrrrRtWWtRrrrrRRtttRRrrrrRtWWttRRrrrrRRRrrrrRRttWWWtttRrrrrbrrrrRtttWWWWWWtRrrbrbrbrrRtWWWWWWbWttRrrbbbrrRtbWWWbWbWbtbRbbbbbbbRbtbWbWbWWWbtRrrbbbrrRttWbWWWWWWtRrrbrbrbrrRtWWWWWWtttRrrrrbrrrrRtttWWWttRRrrrrRRRrrrrRRttWWtRrrrrRRtttRRrrrrRtWWtRrrrRtttttttRrrrRtWWtRrrrRtWWWWWtRrrrRtWWtRRRRttWWWWWttRRRRtWWttttttWWW_WWWttttttWWWWWWWWWW_B_WWWWWWWWW",
-    "name": "C.G.Jung RedBook pg94 V.1",
     "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V. "
   },
   {
-    "color": "#115988",
+    "name": "C.G.Jung RedBook pg94 V.2",
     "size": 21,
     "bricks": "__________________________________________WWWWWWWWWgggWWWWWWWWWWWWWWWWgglllggWWWWWWWWWWWWgglllWlllggWWWWWWWWWglllWWWWWlllgWWWWWWWgllWWWWWWWWWllgWWWWWgllWttWWWWWttWllgWWWgllWWtrtWWWtrtWWllgWgllWWWWtrtttrtWWWWllgllWWWWWWtrrrtWWWWWWlllW_W_W_W_r_r_W_W_W_WlllWWWWWWtrrrtWWWWWWlllllWWWWtrtttrtWWWWlllWlllWWtrtWWWtrtWWlllWWWlllWttWWWWWttWlllWWWWWlllWWWWWWWWWlllWWWWWWWllllWWWWWllllWWWWWWWWWlllllWlllllWWWWWWWWWWWWlllllllWWWWWWWWWWWWWWWWlllWWWWWWWWW",
-    "name": "C.G.Jung RedBook pg94 V.2",
     "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V. "
+  },
+  {
+    "name": "C.G.Jung RedBook pg93 V.1",
+    "size": 21,
+    "bricks": "__________________________WWWrWrWrWWW_________WWWWWryrWWWWW_______WWWWWWWrWWWWWWW_____WWWWWWWWWWWWWWWWW___WWWWWWWt_t_tWWWWWWW_WWWWWWtttttttttWWWWWWWWWWtttWWtttWWtttWWWWWWWttWWWWtttWWWWttWWWWWtWWWWWWWtWWWWWWWtWWWtWWWWWWWWtWWWWWWWWtWWtWWWWWWggtggWWWWWWtWWWWWWWWWgrgrgWWWWWWWWWW_t_t_t_grg_t_t_t_WWWWtWtWtWgrgrgWtWtWtWWWtWtWtWtggtggtWtWtWtWWWtWWWtWtWWWtWtWWWtWWWWWWtWWWWWtWWWWWtWWWWWWttWttWttWttWttWttWWWtWWWWWtWWgWWtWWWWWtW_WWWWWWWWgrgWWWWWWWW_",
+    "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V."
+  },
+  {
+    "name": "C.G.Jung RedBook pg159 V.1",
+    "size": 21,
+    "bricks": "______________________BRRRBRRRB_BRRRBRRRB__R_RRRBRBR_RBRBRRR_R__RRBRRRWRR_RRWRRRBRR__RRR_RBRBRBRBRBR_RRR__BRRR_RRR_k_RRR_RRRB__RBRBRBRBkkkBRBRBRBR__RRWRRR_kkkkk_RRRWRR__RBRBRBkklelkkBRB_BR__BRRR_kkleWelkk_RRRB_____BkkkeWWWekkkB_____BRRR_kkleWelkk_RRRB__RBRBRBkklelkkBRBRBR__RRWRRR_kkkkk_RRRWRR__RBRBRBRBkkkBRBRBRBR__BRRR_RRR_k_RRR_RRRB__RRR_RBRBRBRBRBR_RRR__RR_RRRWRR_RRWRRRBRR__R_RRRBRBR_RBRBRRR_R__BRRRBRRRB_BRRRBRRRB______________________",
+    "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V."
   },
   {
     "color": "#115988",
     "size": 21,
-    "bricks": "__________________________WWWrWrWrWWW_________WWWWWryrWWWWW_______WWWWWWWrWWWWWWW_____WWWWWWWWWWWWWWWWW___WWWWWWWt_t_tWWWWWWW_WWWWWWtttttttttWWWWWWWWWWtttWWtttWWtttWWWWWWWttWWWWtttWWWWttWWWWWtWWWWWWWtWWWWWWWtWWWtWWWWWWWWtWWWWWWWWtWWtWWWWWWggtggWWWWWWtWWWWWWWWWgrgrgWWWWWWWWWW_t_t_t_grg_t_t_t_WWWWtWtWtWgrgrgWtWtWtWWWtWtWtWtggtggtWtWtWtWWWtWWWtWtWWWtWtWWWtWWWWWWtWWWWWtWWWWWtWWWWWWttWttWttWttWttWttWWWtWWWWWtWWgWWtWWWWWtW_WWWWWWWWgrgWWWWWWWW_",
-    "name": "C.G.Jung RedBook pg93 V.1",
-    "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V."
+    "bricks": "_______________l___________________lB________________Bll__________________l____________llll____l__llll____BlgBgll__lB_llgBglB__llllllllllllllbblll__lllgBlllllllllbblll__llggggllllllkkllrrl__llggggllBllgkkllrrl__lllBgllgllBlllBBlll__llllllllllllllBBlll___llllll_B_B_llllll____Bllll_______llllB_____________________________________________________________________________________________________________________________________________________",
+    "name": "SNES",
+    "credit": "Your favorite to enjoy the good old SNES in your browser: https://snesfun.com/ - Wombatmithut "
   },
   {
     "color": "#000000",
-    "size": 21,
-    "bricks": "______________________BRRRBRRRB_BRRRBRRRB__R_RRRBRBR_RBRBRRR_R__RRBRRRWRR_RRWRRRBRR__RRR_RBRBRBRBRBR_RRR__BRRR_RRR_k_RRR_RRRB__RBRBRBRBkkkBRBRBRBR__RRWRRR_kkkkk_RRRWRR__RBRBRBkklelkkBRB_BR__BRRR_kkleWelkk_RRRB_____BkkkeWWWekkkB_____BRRR_kkleWelkk_RRRB__RBRBRBkklelkkBRBRBR__RRWRRR_kkkkk_RRRWRR__RBRBRBRBkkkBRBRBRBR__BRRR_RRR_k_RRR_RRRB__RRR_RBRBRBRBRBR_RRR__RR_RRRWRR_RRWRRRBRR__R_RRRBRBR_RBRBRRR_R__BRRRBRRRB_BRRRBRRRB______________________",
-    "name": "C.G.Jung RedBook pg159 V.1",
-    "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V."
+    "size": 12,
+    "bricks": "________________________________________W__W________W__W_______W____W______WCCCCW______WCCCCW_____WCCCCCCW____WWWWWWWW__________________________",
+    "name": "Small Potion",
+    "credit": "I tried to make a beaker 😭 - Topenvy"
+  },
+  {
+    "color": "#000000",
+    "size": 9,
+    "bricks": "________Gl______G_W_____G__l__G_G___W_G_G____lG_______WlWlWlWl___________________",
+    "name": "Stonks",
+    "credit": "Money goes up! - Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 9,
+    "bricks": "_________lr_______W_r_r____l__r_r___W_____r__l______r_WlWlWlWlr__________________",
+    "name": "Not stonks",
+    "credit": "Money goes down :( - Valikzant "
+  },
+  {
+    "color": "#115988",
+    "size": 15,
+    "bricks": "___________________________________ggggg________gggOOOggg______gOyyyyOOg_____ggyyWyyyOgg____gOyWyyyyyOg____gOyWyyWyOOg____gOyyyWyyOsg____ggOyyyyOOgg_____gOOOOOOsg______gggOssggg________ggggg___________________________________",
+    "name": "The golden ball",
+    "credit": "No, you wont get it for losing 100.000 balls.  - Valikzant "
   }
 ]
