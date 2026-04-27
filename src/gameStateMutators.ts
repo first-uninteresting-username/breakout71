@@ -439,7 +439,7 @@ export function explosionAt(
           if (gameState.brickHP[i] <= 0) {
             ball.brokenSinceWallOrPaddleBounce++;
             applyNBrickPerk(gameState, ball);
-            explodeBrick(gameState, i, ball, true);
+            explodeBrick(gameState, i, ball, true, null);
           }
         }
       }
@@ -1159,7 +1159,7 @@ export function gameStateTick(
   ) {
     gameState.bricks.forEach((type, index) => {
       if (type) {
-        explodeBrick(gameState, index, gameState.balls[0], true);
+        explodeBrick(gameState, index, gameState.balls[0], true, null);
         spawnXShapedParticlesExplosion(
           gameState,
           10,
