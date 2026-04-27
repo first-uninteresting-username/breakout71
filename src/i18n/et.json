@@ -158,6 +158,8 @@
     "settings.max_coins_help": "",
     "settings.mobile": "",
     "settings.mobile_help": "",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "",
     "settings.pointer_lock_help": "",
     "settings.precise_lighting": "",

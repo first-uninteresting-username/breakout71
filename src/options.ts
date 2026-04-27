@@ -79,6 +79,11 @@ export const options = {
     name: t("settings.show_puck_rails"),
     help: t("settings.show_puck_rails_help"),
   },
+  particles: {
+    default: true,
+    name: t("settings.particles"),
+    help: t("settings.particles_help"),
+  },
   pointerLock: {
     default: false,
     name: t("settings.pointer_lock"),

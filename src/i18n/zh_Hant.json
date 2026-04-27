@@ -158,6 +158,8 @@
     "settings.max_coins_help": "僅影響外觀，不影響分數",
     "settings.mobile": "移動模式",
     "settings.mobile_help": "在槳板下方留出空間。",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "鼠標鎖定",
     "settings.pointer_lock_help": "鎖定並隱藏鼠標。",
     "settings.precise_lighting": "精準照明",

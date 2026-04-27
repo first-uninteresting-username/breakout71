@@ -158,6 +158,8 @@
     "settings.max_coins_help": "Cosmetic only, no effect on score",
     "settings.mobile": "Mobile mode",
     "settings.mobile_help": "Leaves space under the paddle.",
+    "settings.particles": "Particles",
+    "settings.particles_help": "Render particles effects",
     "settings.pointer_lock": "Mouse pointer lock",
     "settings.pointer_lock_help": "Locks and hides the mouse cursor.",
     "settings.precise_lighting": "Precise lighting",

@@ -158,6 +158,8 @@
     "settings.max_coins_help": "Visuel uniquement, pas d'impact sur le score",
     "settings.mobile": "Mode mobile",
     "settings.mobile_help": "Laisse un espace sous la raquette.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "Verrouillage du pointeur",
     "settings.pointer_lock_help": "Cache aussi le curseur de la souris.",
     "settings.precise_lighting": "Éclairage précis",

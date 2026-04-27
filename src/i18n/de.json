@@ -158,6 +158,8 @@
     "settings.max_coins_help": "Nur kosmetisch, keine Auswirkung auf die Punktzahl",
     "settings.mobile": "Handy-Modus",
     "settings.mobile_help": "Lässt Platz unter dem Paddel.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "Mauszeigersperre",
     "settings.pointer_lock_help": "Sperrt und versteckt den Mauszeiger.",
     "settings.precise_lighting": "Präzise Beleuchtung",

@@ -158,6 +158,8 @@
     "settings.max_coins_help": "Solo cosmetici, nessun effetto sul punteggio",
     "settings.mobile": "Modalità mobile",
     "settings.mobile_help": "Lascia spazio sotto la barra.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "Blocca puntatore del mouse",
     "settings.pointer_lock_help": "Blocca e nasconde il cursore del mouse.",
     "settings.precise_lighting": "Illuminazione precisa",

@@ -158,6 +158,8 @@
     "settings.max_coins_help": "화장품 만, 점수에 효과 없음",
     "settings.mobile": "모바일 모드",
     "settings.mobile_help": "패들 아래에 공간을 남겨둡니다.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "쥐 포인터 자물쇠",
     "settings.pointer_lock_help": "잠금 및 마우스 커서를 숨깁니다.",
     "settings.precise_lighting": "정밀 조명",

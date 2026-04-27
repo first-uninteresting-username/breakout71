@@ -158,6 +158,8 @@
     "settings.max_coins_help": "Solo cosmético, sin efecto en la puntuación.",
     "settings.mobile": "Modo móvil",
     "settings.mobile_help": "Deja espacio bajo el remolino.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "Bloqueo del puntero del ratón",
     "settings.pointer_lock_help": "Bloquea y oculta el cursor del mouse.",
     "settings.precise_lighting": "Iluminación precisa",

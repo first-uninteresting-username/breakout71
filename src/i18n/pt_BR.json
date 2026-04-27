@@ -158,6 +158,8 @@
     "settings.max_coins_help": "Apenas um cosmético, nenhum efeito na pontuação",
     "settings.mobile": "Modo para celular",
     "settings.mobile_help": "Deixa um espaço extra sob a raquete.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "Travar o ponteiro do mouse",
     "settings.pointer_lock_help": "Trava e esconde o cursor do mouse.",
     "settings.precise_lighting": "Iluminação precisa",

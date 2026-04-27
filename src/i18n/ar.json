@@ -158,6 +158,8 @@
     "settings.max_coins_help": "تجميلي فقط، لا يؤثر على النتيجة",
     "settings.mobile": "الوضع المحمول",
     "settings.mobile_help": "يترك مساحة تحت المجداف.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "قفل مؤشر الماوس",
     "settings.pointer_lock_help": "يقوم بقفل وإخفاء مؤشر الماوس.",
     "settings.precise_lighting": "إضاءة دقيقة",

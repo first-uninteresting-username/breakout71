@@ -158,6 +158,8 @@
     "settings.max_coins_help": "فقط ظاهری، بدون اثر بر امتیاز",
     "settings.mobile": "حالت تلفن همراه",
     "settings.mobile_help": "فضایی زیر پارو باقی می‌گذارد.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "قفل نشانگر موشواره",
     "settings.pointer_lock_help": "نشانگر موشواره را قفل و مخفی می‌کند.",
     "settings.precise_lighting": "نورپردازی دقیق",

@@ -158,6 +158,8 @@
     "settings.max_coins_help": "画面上の表示のみの変更であり、スコアには影響しません",
     "settings.mobile": "モバイルモード",
     "settings.mobile_help": "パドルの下にスペースを設けます。",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "マウスポインターをロック",
     "settings.pointer_lock_help": "マウスカーソルをロックしてポインターを非表示にします。",
     "settings.precise_lighting": "精密な照明",

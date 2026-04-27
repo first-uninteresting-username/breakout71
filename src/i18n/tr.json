@@ -158,6 +158,8 @@
     "settings.max_coins_help": "Sadece kozmetik, puan üzerinde etkisi yok",
     "settings.mobile": "Mobil mod",
     "settings.mobile_help": "Kürek altında boşluk bırakır.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "Fare işaretçisi kilidi",
     "settings.pointer_lock_help": "Fare imlecini kilitler ve gizler.",
     "settings.precise_lighting": "Hassas aydınlatma",

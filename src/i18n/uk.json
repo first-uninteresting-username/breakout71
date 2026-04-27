@@ -158,6 +158,8 @@
     "settings.max_coins_help": "Косметична тільки, не впливає на рахунок",
     "settings.mobile": "Мобільний режим",
     "settings.mobile_help": "Залишає місце під веслом.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "Замка для замка",
     "settings.pointer_lock_help": "Замки і приховує курсор миші.",
     "settings.precise_lighting": "Точне освітлення",

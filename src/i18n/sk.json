@@ -158,6 +158,8 @@
     "settings.max_coins_help": "Cosmetic iba, žiadny účinok na skóre",
     "settings.mobile": "Mobilný režim",
     "settings.mobile_help": "Zanecháva priestor pod paddleboardom.",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "Zámok myši",
     "settings.pointer_lock_help": "Zámky a skrýva kurzor myši.",
     "settings.precise_lighting": "Presné osvetlenie",

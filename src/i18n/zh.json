@@ -158,6 +158,8 @@
     "settings.max_coins_help": "屏幕上的硬币，不影响分数",
     "settings.mobile": "手机模式",
     "settings.mobile_help": "在球拍下方留出空间。",
+    "settings.particles": "",
+    "settings.particles_help": "",
     "settings.pointer_lock": "鼠标指针锁定",
     "settings.pointer_lock_help": "锁定并隐藏鼠标光标。",
     "settings.precise_lighting": "精准照明",
