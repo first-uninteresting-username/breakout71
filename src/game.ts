@@ -62,7 +62,7 @@ import {
 import { getPixelRatio, isOptionOn, options, toggleOption } from "./options";
 import { clamp } from "./pure_functions";
 import { helpMenuEntry } from "./help";
-import { creativeMode } from "./creative";
+import { creativeMode, openCreativeModePerksPicker } from "./creative";
 import { hideAnyTooltip, setupTooltips } from "./tooltip";
 import "./migrations";
 import { generateSaveFileContent } from "./generateSaveFileContent";
@@ -449,6 +449,12 @@ function scoreOpen(e) {
     closeEditorTrialRun();
     return;
   }
+  if (typeof mainGameState.startParams.isCreativeRun) {
+    pause(true);
+    openCreativeModePerksPicker();
+    return;
+  }
+
   if (alertsOpen) {
     setSettingValue("score-opened", getSettingValue("score-opened", 0) + 1);
     openScorePanel(mainGameState);
