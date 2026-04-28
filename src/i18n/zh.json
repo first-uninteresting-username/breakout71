@@ -160,6 +160,8 @@
     "settings.menu_sound_help": "",
     "settings.mobile": "手机模式",
     "settings.mobile_help": "在球拍下方留出空间。",
+    "settings.notch_space": "",
+    "settings.notch_space_help": "",
     "settings.particles": "",
     "settings.particles_help": "",
     "settings.pointer_lock": "鼠标指针锁定",

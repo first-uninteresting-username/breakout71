@@ -160,6 +160,8 @@
     "settings.menu_sound_help": "",
     "settings.mobile": "Modalità mobile",
     "settings.mobile_help": "Lascia spazio sotto la barra.",
+    "settings.notch_space": "",
+    "settings.notch_space_help": "",
     "settings.particles": "",
     "settings.particles_help": "",
     "settings.pointer_lock": "Blocca puntatore del mouse",

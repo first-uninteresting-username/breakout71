@@ -160,6 +160,8 @@
     "settings.menu_sound_help": "",
     "settings.mobile": "モバイルモード",
     "settings.mobile_help": "パドルの下にスペースを設けます。",
+    "settings.notch_space": "",
+    "settings.notch_space_help": "",
     "settings.particles": "",
     "settings.particles_help": "",
     "settings.pointer_lock": "マウスポインターをロック",

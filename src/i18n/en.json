@@ -160,6 +160,8 @@
     "settings.menu_sound_help": "Just a bloop to confirm each menu click",
     "settings.mobile": "Mobile mode",
     "settings.mobile_help": "Leaves space under the paddle.",
+    "settings.notch_space": "Notch space",
+    "settings.notch_space_help": "Move everything 40 pixels down.",
     "settings.particles": "Particles",
     "settings.particles_help": "Render particles effects",
     "settings.pointer_lock": "Mouse pointer lock",

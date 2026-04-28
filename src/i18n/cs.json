@@ -160,6 +160,8 @@
     "settings.menu_sound_help": "",
     "settings.mobile": "Mobilní režim",
     "settings.mobile_help": "Ponechává prostor pod pálkou.",
+    "settings.notch_space": "",
+    "settings.notch_space_help": "",
     "settings.particles": "",
     "settings.particles_help": "",
     "settings.pointer_lock": "Zámek ukazatele myši",

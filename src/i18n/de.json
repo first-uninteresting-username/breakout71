@@ -160,6 +160,8 @@
     "settings.menu_sound_help": "",
     "settings.mobile": "Handy-Modus",
     "settings.mobile_help": "Lässt Platz unter dem Paddel.",
+    "settings.notch_space": "",
+    "settings.notch_space_help": "",
     "settings.particles": "",
     "settings.particles_help": "",
     "settings.pointer_lock": "Mauszeigersperre",
