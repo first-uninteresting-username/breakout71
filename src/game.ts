@@ -270,7 +270,7 @@ gameCanvas.addEventListener("mousemove", (e) => {
   }
 });
 
-let timers = [];
+let timers: NodeJS.Timeout[] = [];
 function startPlayCountDown() {
   stopPlayCountDown();
 
@@ -452,7 +452,7 @@ if (getSettingValue("menu-opened", 0) < 3) {
   menuDisplay.classList.add("button-look");
 }
 
-function scoreOpen(e) {
+function scoreOpen(e: MouseEvent) {
   e.preventDefault();
   if (alertsOpen) return;
   if (typeof mainGameState.startParams.isEditorTrialRun === "number") {
@@ -522,7 +522,7 @@ export async function openMainMenu() {
       },
     },
 
-    ...donationNag(mainGameState),
+    ...donationNag(),
     {
       text: t("main_menu.settings_title"),
       help: t("main_menu.settings_help"),
