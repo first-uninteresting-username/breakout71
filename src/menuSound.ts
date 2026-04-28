@@ -25,7 +25,7 @@ export function menuClick() {
   if (!isOptionOn("sound") || !isOptionOn("menu_sound")) return;
   const context = getMenuAudioContext();
   if (!context) return;
-  const oscillator = createOscillator(context, 250, "sine");
+  const oscillator = createOscillator(context, 300, "sine");
 
   // Create a gain node to control the volume
   const gainNode = context.createGain();
