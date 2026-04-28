@@ -24,6 +24,11 @@ export const options = {
     name: t("settings.mobile"),
     help: t("settings.mobile_help"),
   },
+  notch_space: {
+    default: false,
+    name: t("settings.notch_space"),
+    help: t("settings.notch_space_help"),
+  },
   touch_delayed_start: {
     default: true,
     name: t("settings.touch_delayed_start"),

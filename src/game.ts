@@ -146,7 +146,10 @@ export const fitSize = (gameState: GameState) => {
     past_heigh = gameState.gameZoneHeight;
 
   const width = Math.floor(window.innerWidth * getPixelRatio()),
-    height = Math.floor(window.innerHeight * getPixelRatio());
+    height = Math.floor(
+      window.innerHeight * getPixelRatio() -
+        (isOptionOn("notch_space") ? 40 : 0),
+    );
 
   gameState.canvasWidth = width;
   gameState.canvasHeight = height;
@@ -239,7 +242,7 @@ setInterval(() => {
 
   if (
     width !== mainGameState.canvasWidth ||
-    height !== mainGameState.canvasHeight
+    (!isOptionOn("notch_space") && height !== mainGameState.canvasHeight)
   )
     fitSize(mainGameState);
 }, 1000);
@@ -423,6 +426,11 @@ export function tick() {
     playPendingSounds(mainGameState);
   }
   startWork("idle");
+  if (isOptionOn("notch_space")) {
+    document.body.classList.add("notch_space");
+  } else {
+    document.body.classList.remove("notch_space");
+  }
 
   requestAnimationFrame(tick);
 }
