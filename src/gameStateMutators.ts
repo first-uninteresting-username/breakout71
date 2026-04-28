@@ -59,7 +59,6 @@ import {
 import { addToTotalScore } from "./addToTotalScore";
 import { openUpgradesPicker } from "./openUpgradesPicker";
 import { computerControl } from "./computerControl";
-import { brickAt } from "./level_editor/levels_editor_util";
 
 export function setMousePos(gameState: GameState, x: number) {
   if (
@@ -2064,7 +2063,12 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     if (gameState.perks.happy_family) {
       resetCombo(gameState, ball.x, ball.y, ball);
     }
-    if (gameState.perks.thomas) {
+
+    if (
+      gameState.perks.thomas &&
+      // avoid a softlock
+      gameState.balls.find((b) => !b.destroyed)
+    ) {
       gameState.level.bricks.forEach((brick, index) => {
         if (
           brick &&
