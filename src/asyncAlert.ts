@@ -64,6 +64,7 @@ export async function asyncAlert<t>({
 
     function closeWithResult(value: t | undefined) {
       if (closed) return;
+      memorizeScrollPosition(title);
       closed = true;
       Array.prototype.forEach.call(
         popup.querySelectorAll("button:not([disabled])"),
@@ -129,6 +130,8 @@ export async function asyncAlert<t>({
       ) as HTMLButtonElement
     )?.focus();
     lastClickedItemIndex = -1;
+
+    revertScrollPosition(title);
   }).then(
     (v: unknown) => {
       updateAlertsOpen(-1);
@@ -236,13 +239,14 @@ ${icon}
 
   if (tooltip) {
     button.setAttribute("data-tooltip", tooltip);
-    // if (!isOptionOn("mobile-mode")) {
-    // //     const helpBtn = document.createElement("button");
-    // //     helpBtn.innerText = "?";
-    // //     helpBtn.setAttribute("data-help-content", tooltip);
-    // //     buttonWrap.appendChild(helpBtn);
-    // // } else {
-    //     button.setAttribute("data-tooltip", tooltip);
-    // }
   }
+}
+
+let memorizedScrollPosition: Record<string, number> = {};
+function memorizeScrollPosition(title: string | null) {
+  if (title && title?.length < 500)
+    memorizedScrollPosition[title] = window.scrollY;
+}
+function revertScrollPosition(title: string | null) {
+  if (title) window.scrollTo(0, memorizedScrollPosition[title] || 0);
 }
