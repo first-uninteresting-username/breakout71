@@ -33,10 +33,10 @@ let lastClickedItemIndex = -1;
 
 export function requiredAsyncAlert<t>(p: {
   title?: string;
-  content: (string | AsyncAlertAction<t>)[];
+  content: (string | false | AsyncAlertAction<t>)[];
   className?: string;
 }): Promise<t> {
-  return asyncAlert({ ...p, allowClose: false });
+  return asyncAlert({ ...p, allowClose: false }) as Promise<t>;
 }
 
 export async function asyncAlert<t>({
@@ -46,7 +46,7 @@ export async function asyncAlert<t>({
   className = "",
 }: {
   title?: string;
-  content: (string | AsyncAlertAction<t>)[];
+  content: (string | false | AsyncAlertAction<t>)[];
   allowClose?: boolean;
   className?: string;
 }): Promise<t | void> {
