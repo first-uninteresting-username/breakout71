@@ -628,6 +628,7 @@ async function openSettingsMenu() {
               "precise_lighting",
               "probabilistic_lighting",
             ].includes(key)) ||
+          (!isOptionOn("sound") && ["menu_sound"].includes(key)) ||
           false,
         value: () => {
           toggleOption(key);
