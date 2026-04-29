@@ -1,5 +1,7 @@
 import { t } from "./i18n/i18n";
 import { hideAnyTooltip } from "./tooltip";
+import { isOptionOn } from "./options";
+import { menuClick } from "./menuSound";
 
 export let alertsOpen = 0,
   closeModal: null | (() => void) = null;
@@ -31,10 +33,10 @@ let lastClickedItemIndex = -1;
 
 export function requiredAsyncAlert<t>(p: {
   title?: string;
-  content: (string | AsyncAlertAction<t>)[];
+  content: (string | false | AsyncAlertAction<t>)[];
   className?: string;
 }): Promise<t> {
-  return asyncAlert({ ...p, allowClose: false });
+  return asyncAlert({ ...p, allowClose: false }) as Promise<t>;
 }
 
 export async function asyncAlert<t>({
@@ -44,12 +46,15 @@ export async function asyncAlert<t>({
   className = "",
 }: {
   title?: string;
-  content: (string | AsyncAlertAction<t>)[];
+  content: (string | false | AsyncAlertAction<t>)[];
   allowClose?: boolean;
   className?: string;
 }): Promise<t | void> {
   hideAnyTooltip();
   updateAlertsOpen(+1);
+  if (isOptionOn("sound")) {
+    menuClick();
+  }
   return new Promise((resolve) => {
     popupWrap.className = className;
     closeModaleButton.style.display = allowClose ? "" : "none";
@@ -59,6 +64,7 @@ export async function asyncAlert<t>({
 
     function closeWithResult(value: t | undefined) {
       if (closed) return;
+      memorizeScrollPosition(title);
       closed = true;
       Array.prototype.forEach.call(
         popup.querySelectorAll("button:not([disabled])"),
@@ -68,6 +74,7 @@ export async function asyncAlert<t>({
       setTimeout(() => (document.body.style.minHeight = ""), 0);
       popup.remove();
       resolve(value);
+      menuClick();
     }
 
     if (allowClose) {
@@ -123,6 +130,8 @@ export async function asyncAlert<t>({
       ) as HTMLButtonElement
     )?.focus();
     lastClickedItemIndex = -1;
+
+    revertScrollPosition(title);
   }).then(
     (v: unknown) => {
       updateAlertsOpen(-1);
@@ -230,13 +239,14 @@ ${icon}
 
   if (tooltip) {
     button.setAttribute("data-tooltip", tooltip);
-    // if (!isOptionOn("mobile-mode")) {
-    // //     const helpBtn = document.createElement("button");
-    // //     helpBtn.innerText = "?";
-    // //     helpBtn.setAttribute("data-help-content", tooltip);
-    // //     buttonWrap.appendChild(helpBtn);
-    // // } else {
-    //     button.setAttribute("data-tooltip", tooltip);
-    // }
   }
+}
+
+let memorizedScrollPosition: Record<string, number> = {};
+function memorizeScrollPosition(title: string | null) {
+  if (title && title?.length < 500)
+    memorizedScrollPosition[title] = window.scrollY;
+}
+function revertScrollPosition(title: string | null) {
+  if (title) window.scrollTo(0, memorizedScrollPosition[title] || 0);
 }

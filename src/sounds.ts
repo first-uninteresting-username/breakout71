@@ -58,16 +58,6 @@ export const sounds = {
     if (!isOptionOn("sound")) return;
     createSingleBounceSound(1200, pan, volume, 0.1, "triangle");
   },
-  // void: (volume: number, pan: number) => {
-  //   if (!isOptionOn("sound")) return;
-  //   createSingleBounceSound(1200, pan, volume, 0.5, "sawtooth");
-  //   createSingleBounceSound(600, pan, volume, 0.3, "sawtooth");
-  // },
-  // freeze: (volume: number, pan: number) => {
-  //   if (!isOptionOn("sound")) return;
-  //   createSingleBounceSound(220, pan, volume, 0.5, "square");
-  //   createSingleBounceSound(440, pan, volume, 0.5, "square");
-  // },
   explode: (volume: number, pan: number, combo: number) => {
     if (!isOptionOn("sound")) return;
     createExplosionSound(pan);
@@ -268,7 +258,7 @@ function createShatteredGlassSound(pan: number) {
 }
 
 // Helper function to create an oscillator with a specific frequency
-function createOscillator(
+export function createOscillator(
   context: AudioContext,
   frequency: number,
   type: OscillatorType,

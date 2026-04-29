@@ -62,7 +62,7 @@ import {
 import { getPixelRatio, isOptionOn, options, toggleOption } from "./options";
 import { clamp } from "./pure_functions";
 import { helpMenuEntry } from "./help";
-import { creativeMode } from "./creative";
+import { creativeMode, openCreativeModePerksPicker } from "./creative";
 import { hideAnyTooltip, setupTooltips } from "./tooltip";
 import "./migrations";
 import { generateSaveFileContent } from "./generateSaveFileContent";
@@ -78,6 +78,7 @@ import { frameStarted, getWorstFPSAndReset, startWork } from "./fps";
 import { openUnlockedUpgradesList } from "./openUnlockedUpgradesList";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
 import { openLevelDetails } from "./openLevelDetails";
+import { menuClick } from "./menuSound";
 
 export async function play() {
   if (await applyFullScreenChoice()) return;
@@ -85,6 +86,7 @@ export async function play() {
   mainGameState.running = true;
   mainGameState.ballStickToPuck = false;
 
+  menuClick();
   startRecordingGame(mainGameState);
   getAudioContext()?.resume();
   resumeRecording();
@@ -98,7 +100,6 @@ export function pause(playerAskedForPause: boolean) {
   if (mainGameState.pauseTimeout && playerAskedForPause) {
     return;
   }
-
   if (mainGameState.startParams.computer_controlled) {
     play();
     return;
@@ -120,6 +121,7 @@ export function pause(playerAskedForPause: boolean) {
   };
 
   if (playerAskedForPause) {
+    menuClick();
     // Pausing many times in a run will make pause slower
     mainGameState.pauseUsesDuringRun++;
     mainGameState.pauseTimeout = setTimeout(
@@ -144,7 +146,10 @@ export const fitSize = (gameState: GameState) => {
     past_heigh = gameState.gameZoneHeight;
 
   const width = Math.floor(window.innerWidth * getPixelRatio()),
-    height = Math.floor(window.innerHeight * getPixelRatio());
+    height = Math.floor(
+      window.innerHeight * getPixelRatio() -
+        (isOptionOn("notch_space") ? 40 : 0),
+    );
 
   gameState.canvasWidth = width;
   gameState.canvasHeight = height;
@@ -237,7 +242,7 @@ setInterval(() => {
 
   if (
     width !== mainGameState.canvasWidth ||
-    height !== mainGameState.canvasHeight
+    (!isOptionOn("notch_space") && height !== mainGameState.canvasHeight)
   )
     fitSize(mainGameState);
 }, 1000);
@@ -265,7 +270,7 @@ gameCanvas.addEventListener("mousemove", (e) => {
   }
 });
 
-let timers = [];
+let timers: NodeJS.Timeout[] = [];
 function startPlayCountDown() {
   stopPlayCountDown();
 
@@ -421,6 +426,11 @@ export function tick() {
     playPendingSounds(mainGameState);
   }
   startWork("idle");
+  if (isOptionOn("notch_space")) {
+    document.body.classList.add("notch_space");
+  } else {
+    document.body.classList.remove("notch_space");
+  }
 
   requestAnimationFrame(tick);
 }
@@ -442,13 +452,19 @@ if (getSettingValue("menu-opened", 0) < 3) {
   menuDisplay.classList.add("button-look");
 }
 
-function scoreOpen(e) {
+function scoreOpen(e: MouseEvent) {
   e.preventDefault();
   if (alertsOpen) return;
   if (typeof mainGameState.startParams.isEditorTrialRun === "number") {
     closeEditorTrialRun();
     return;
   }
+  if (typeof mainGameState.startParams.isCreativeRun) {
+    pause(true);
+    openCreativeModePerksPicker();
+    return;
+  }
+
   if (alertsOpen) {
     setSettingValue("score-opened", getSettingValue("score-opened", 0) + 1);
     openScorePanel(mainGameState);
@@ -506,7 +522,7 @@ export async function openMainMenu() {
       },
     },
 
-    ...donationNag(mainGameState),
+    ...donationNag(),
     {
       text: t("main_menu.settings_title"),
       help: t("main_menu.settings_help"),
@@ -612,6 +628,7 @@ async function openSettingsMenu() {
               "precise_lighting",
               "probabilistic_lighting",
             ].includes(key)) ||
+          (!isOptionOn("sound") && ["menu_sound"].includes(key)) ||
           false,
         value: () => {
           toggleOption(key);

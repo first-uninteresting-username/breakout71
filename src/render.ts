@@ -387,12 +387,12 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
     );
   });
 
+  ctx.globalCompositeOperation = "screen";
   startWork("render:particles");
   forEachLiveOne(gameState.particles, (particle) => {
     const { x, y, time, color, size, duration } = particle;
     const elapsed = gameState.levelTime - time;
     ctx.globalAlpha = Math.max(0, Math.min(1, 2 - (elapsed / duration) * 2));
-    ctx.globalCompositeOperation = "screen";
     drawBall(ctx, color, size, x, y);
   });
 

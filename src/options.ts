@@ -11,6 +11,11 @@ export const options = {
     name: t("settings.sounds"),
     help: t("settings.sounds_help"),
   },
+  menu_sound: {
+    default: true,
+    name: t("settings.menu_sound"),
+    help: t("settings.menu_sound_help"),
+  },
   "mobile-mode": {
     default:
       window.innerHeight > window.innerWidth ||
@@ -18,6 +23,11 @@ export const options = {
       navigator.maxTouchPoints > 0,
     name: t("settings.mobile"),
     help: t("settings.mobile_help"),
+  },
+  notch_space: {
+    default: false,
+    name: t("settings.notch_space"),
+    help: t("settings.notch_space_help"),
   },
   touch_delayed_start: {
     default: true,
@@ -78,6 +88,11 @@ export const options = {
     default: true,
     name: t("settings.show_puck_rails"),
     help: t("settings.show_puck_rails_help"),
+  },
+  particles: {
+    default: true,
+    name: t("settings.particles"),
+    help: t("settings.particles_help"),
   },
   pointerLock: {
     default: false,
