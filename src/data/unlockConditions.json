@@ -1472,5 +1472,20 @@
     "required": ["sapper", "ball_attracts_coins", "shocks"],
     "forbidden": ["refill", "thomas", "bigger_puck"],
     "minScore": 28100
+  },
+  "Futuristic city": {
+    "required": ["compound_interest", "top_is_lava", "bigger_puck"],
+    "forbidden": ["paddle_up_combo", "sturdy_bricks", "pierce_left"],
+    "minScore": 28200
+  },
+  "CCTV camera": {
+    "required": ["pierce_left", "soft_reset", "soft_touch"],
+    "forbidden": ["gravity_falls", "pierce_above_paddle", "telekinesis"],
+    "minScore": 28300
+  },
+  "Explosive core apple": {
+    "required": ["telekinesis", "happy_family", "pierce_left"],
+    "forbidden": ["bricks_attract_ball", "rainbow", "metamorphosis"],
+    "minScore": 28400
   }
 }

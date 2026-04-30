@@ -2400,38 +2400,54 @@
     "credit": "It was directly inspired from the esoteric drawings of Carl Jung's The Red Book. Interpretation by D.V."
   },
   {
-    "color": "#115988",
+    "name": "SNES",
     "size": 21,
     "bricks": "_______________l___________________lB________________Bll__________________l____________llll____l__llll____BlgBgll__lB_llgBglB__llllllllllllllbblll__lllgBlllllllllbblll__llggggllllllkkllrrl__llggggllBllgkkllrrl__lllBgllgllBlllBBlll__llllllllllllllBBlll___llllll_B_B_llllll____Bllll_______llllB_____________________________________________________________________________________________________________________________________________________",
-    "name": "SNES",
     "credit": "Your favorite to enjoy the good old SNES in your browser: https://snesfun.com/ - Wombatmithut "
   },
   {
-    "color": "#000000",
+    "name": "Small Potion",
     "size": 12,
     "bricks": "________________________________________W__W________W__W_______W____W______WCCCCW______WCCCCW_____WCCCCCCW____WWWWWWWW__________________________",
-    "name": "Small Potion",
     "credit": "I tried to make a beaker 😭 - Topenvy"
   },
   {
-    "color": "#000000",
+    "name": "Stonks",
     "size": 9,
     "bricks": "________Gl______G_W_____G__l__G_G___W_G_G____lG_______WlWlWlWl___________________",
-    "name": "Stonks",
     "credit": "Money goes up! - Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "Not stonks",
     "size": 9,
     "bricks": "_________lr_______W_r_r____l__r_r___W_____r__l______r_WlWlWlWlr__________________",
-    "name": "Not stonks",
     "credit": "Money goes down :( - Valikzant "
   },
   {
-    "color": "#115988",
+    "name": "The golden ball",
     "size": 15,
     "bricks": "___________________________________ggggg________gggOOOggg______gOyyyyOOg_____ggyyWyyyOgg____gOyWyyyyyOg____gOyWyyWyOOg____gOyyyWyyOsg____ggOyyyyOOgg_____gOOOOOOsg______gggOssggg________ggggg___________________________________",
-    "name": "The golden ball",
     "credit": "No, you wont get it for losing 100.000 balls.  - Valikzant "
+  },
+  {
+    "color": "#115988",
+    "size": 20,
+    "bricks": "bggbbggbbggbbggbbggbgBBBBBBBBBBBBBBBBBBgggbbggbbgBbbggbbggbblgglglggggBlBlggglggBlglBlgllBglllglglBglb_llblallBlal_l_lbl_l_bBl_llBBll__l__ll_l_llblalBBla_lBl_l__b_bBl_llaall_lBl_l_a__ll___laal___l__baa___l____a_____b___aaa__b____aa_______aa_aaa______a_____aaa____aaaa__aa__aaaa_________aaaaaaaa__________________________________________________________________________________________________________",
+    "name": "Futuristic city",
+    "credit": "This city is protected by a forcefield! And it is futuristic if you did not get it yet :D Hit it's main shield generator! - Valikzant "
+  },
+  {
+    "color": "#115988",
+    "size": 13,
+    "bricks": "___________gg___________gg_________gg________ggggg_______gggggg______ggggggg_____gggggggg____gggggggg_____gg_bgggg_____gl__lgg______ggllRg________gggg___________________",
+    "name": "CCTV camera",
+    "credit": "is watching you - Den1251"
+  },
+  {
+    "color": "#000000",
+    "size": 8,
+    "bricks": "____C______C_____RRRRR___RRBRr___RBBBr___RrBrr___rrrrr__________",
+    "name": "Explosive core apple",
+    "credit": "The apple is about to explode! - Den1251"
   }
 ]
