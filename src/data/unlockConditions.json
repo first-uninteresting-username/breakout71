@@ -1487,5 +1487,60 @@
     "required": ["telekinesis", "happy_family", "pierce_left"],
     "forbidden": ["bricks_attract_ball", "rainbow", "metamorphosis"],
     "minScore": 28400
+  },
+  "Teotihuacán": {
+    "required": ["base_combo", "passive_income", "three_cushion"],
+    "forbidden": ["implosions", "telekinesis", "pierce_top"],
+    "minScore": 28500
+  },
+  "Pure Love": {
+    "required": ["wrap_up", "pierce", "refill"],
+    "forbidden": ["sapper", "shocks", "helium"],
+    "minScore": 28600
+  },
+  "Python - Programming language": {
+    "required": ["double_or_nothing", "wrap_right", "fountain_toss"],
+    "forbidden": ["ball_attract_ball", "trickledown", "hot_start"],
+    "minScore": 28700
+  },
+  "Ruby - Programming language": {
+    "required": ["hot_start", "trickledown", "disco_ball"],
+    "forbidden": ["golden_goose", "extra_life", "passive_income"],
+    "minScore": 28800
+  },
+  "C Sharp - Programming Language": {
+    "required": ["ottawa_treaty", "flyswatter", "trickledown"],
+    "forbidden": ["wrap_left", "hot_start", "golden_goose"],
+    "minScore": 28900
+  },
+  "Javascript - Programming language": {
+    "required": ["disco_ball", "bricks_attract_coins", "corner_shot"],
+    "forbidden": ["golden_goose", "reach", "chill"],
+    "minScore": 29000
+  },
+  "CSS - Style sheet language": {
+    "required": ["corner_shot", "clairvoyant", "paddle_up_combo"],
+    "forbidden": ["flyswatter", "passive_income", "gravity_falls"],
+    "minScore": 29100
+  },
+  "HTML - Markup language": {
+    "required": ["ball_attracts_coins", "respawn", "clairvoyant"],
+    "forbidden": ["metamorphosis", "rainbow", "picky_eater"],
+    "minScore": 29200
+  },
+  "TypeScript - Programming language": {
+    "required": ["picky_eater", "round_bricks", "puck_repulse_ball"],
+    "forbidden": ["trampoline", "ball_repulse_ball", "hot_start"],
+    "minScore": 29300
+  },
+  "Java - Programming language": {
+    "required": ["ghost_coins", "reach", "chill"],
+    "forbidden": ["pierce_above_paddle", "concave_puck", "nbricks"],
+    "minScore": 29400
+  },
+  "Django": {
+    "required": ["reach", "chill", "wrap_left"],
+    "forbidden": ["bigger_explosions", "compound_interest", "streak_shots"],
+    "minScore": 29500
   }
 }

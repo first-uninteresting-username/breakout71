@@ -2430,24 +2430,98 @@
     "credit": "No, you wont get it for losing 100.000 balls.  - Valikzant "
   },
   {
-    "color": "#115988",
+    "name": "Futuristic city",
     "size": 20,
     "bricks": "bggbbggbbggbbggbbggbgBBBBBBBBBBBBBBBBBBgggbbggbbgBbbggbbggbblgglglggggBlBlggglggBlglBlgllBglllglglBglb_llblallBlal_l_lbl_l_bBl_llBBll__l__ll_l_llblalBBla_lBl_l__b_bBl_llaall_lBl_l_a__ll___laal___l__baa___l____a_____b___aaa__b____aa_______aa_aaa______a_____aaa____aaaa__aa__aaaa_________aaaaaaaa__________________________________________________________________________________________________________",
-    "name": "Futuristic city",
     "credit": "This city is protected by a forcefield! And it is futuristic if you did not get it yet :D Hit it's main shield generator! - Valikzant "
   },
   {
-    "color": "#115988",
+    "name": "CCTV camera",
     "size": 13,
     "bricks": "___________gg___________gg_________gg________ggggg_______gggggg______ggggggg_____gggggggg____gggggggg_____gg_bgggg_____gl__lgg______ggllRg________gggg___________________",
-    "name": "CCTV camera",
     "credit": "is watching you - Den1251"
   },
   {
-    "color": "#000000",
+    "name": "Explosive core apple",
     "size": 8,
     "bricks": "____C______C_____RRRRR___RRBRr___RBBBr___RrBrr___rrrrr__________",
-    "name": "Explosive core apple",
     "credit": "The apple is about to explode! - Den1251"
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "____________________________________________B_______B_______B_____y______y______y_______y_____y_____y_________y____y____y___________y__yyy__y_____________yyyOyyy______________yyOOOyy_____________yyOOOOOyy________ByyyyOOOlOOOyyyyB________yyOlBlOyy_____________yllelly_____________yllllllly___________yllBeeeBlly_________yllllllllllly_______yllgBeeeeeBglly______lBlllllllllllBl_____llllleeeeeeelllll____________________________________________",
+    "name": "Teotihuacán",
+    "credit": "By Wombatmithut"
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "_________________________________________________B_____B_____________rrr___rrr___________rPPPr_rPPPr________BrPpppPrPpppPrB_______rPp__pPp__pPr________rPp_B_p_BgpPr_________rPp_____pPr___________rPp_B_pPr____________BrPpgpPrB___________yyyrPpPryyy________yyB___rPr___Byy___Byy_______r_______yyB___yy_____B_____yy________yyy_____yyy_____________yyyyy_________________B_B__________________yyy___________________B____________________y__________",
+    "name": "Pure Love",
+    "credit": "By Wombatmithut "
+  },
+  {
+    "color": "#000000",
+    "size": 13,
+    "bricks": "__________________ttt_________tBttt_________tttt______ttttttt_y___ttttttt__yy__ttt_____yyy__tt__yyyyyyy___t_yyyyyyy______yyyy_________yyyBy_________yyy__________________",
+    "name": "Python - Programming language",
+    "credit": "https://www.python.org/ | https://en.wikipedia.org/wiki/Python_(programming_language) - by Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 13,
+    "bricks": "___________________rssss______rrrrrsrr____rrrrrsssr___rrrrrrssss___rrrrrrrsr___rrrrrrssrR___srrrrsssrR___srssrsssRR___sssssrrRRR___srssrRRRRR____rrs_____________________",
+    "name": "Ruby - Programming language",
+    "credit": "https://www.ruby-lang.org/en/ | https://en.wikipedia.org/wiki/Ruby_(programming_language)  - by Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 19,
+    "bricks": "________ppp______________ppppppp__________ppppWWWpppp______ppppWWWWWWWpppp___pppWWWWWWWWWWpppp__ppWWWWWpppWWWWpvv__ppWWWpppppppppvvv__ppWWWpppppppWvWvv__pWWWpppppppWWWWWv__pWWWpppppvvvWvWvv__pWWWppppbvvWWWWWv__ppWWWpbbbbbvWvWvv__ppWWWbbbbbbbvvvvv__ppWWWWWbbbWWWWvvv__ppbWWWWWWWWWWbbbv___bbbbWWWWWWWbbbb______bbbbWWWbbbb__________bbbbbbb______________bbb________",
+    "name": "C Sharp - Programming Language",
+    "credit": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)  - by Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 13,
+    "bricks": "______________OOOOOOOOOOO__OOOOOyyyyyO__OOOOWyWWWyO__OOOOWyWyyyO___OOOWyWyyy____OOOWyWWWy____OOOWyyyWy____OWWWyWWWy____OOOOyyyyO_____OOOyyOO________OOO__________________",
+    "name": "Javascript - Programming language",
+    "credit": "https://en.wikipedia.org/wiki/JavaScript  - by Valikzant  "
+  },
+  {
+    "color": "#000000",
+    "size": 18,
+    "bricks": "______________________________________vvvvvvvvvvvv______vvvvvvvvvvvvv_____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvWWWvvWWvvWWv____vvWvvvvWvvvWvv_____vWWWvWWvvWWv_______vvvvvvvvvv________________________________________",
+    "name": "CSS - Style sheet language",
+    "credit": "https://en.wikipedia.org/wiki/CSS  - by Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 13,
+    "bricks": "______________SSSSSSSSSSS__SSSSSOOOOOS__SSWWWWWWWOS__SSWSSOOOOOS___SWSSOOOOO____SWWWWWWWO____SSSSOOOWO____SWSSOOOWO____SWWSOOWWS_____SSWWWSS________SSS__________________",
+    "name": "HTML - Markup language",
+    "credit": "https://en.wikipedia.org/wiki/HTML  - by Valikzant  "
+  },
+  {
+    "color": "#000000",
+    "size": 13,
+    "bricks": "_______________ttttttttt___ttttttttttt__ttttttttttt__ttttttttttt__ttttttttttt__tttWWWtWWWt__ttttWttWttt__ttttWttWWWt__ttttWttttWt__ttttWttWWWt___ttttttttt_______________",
+    "name": "TypeScript - Programming language",
+    "credit": "https://en.wikipedia.org/wiki/TypeScript  - by Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 18,
+    "bricks": "________O_________________O_______________OO__O____________OO__O_____________O__O______________OO_OO______________O__O_____________t_O_O___t________t______t__t________tttttt___t________________t_________tttttt_t__________________________t__ttttt_________t_________t________tt_____tt__t________ttttt__tt________tttttttt______",
+    "name": "Java - Programming language",
+    "credit": "https://en.wikipedia.org/wiki/Java_(programming_language)  - by Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 18,
+    "bricks": "_________________________cc__cc____________cc__cc____________cc________________cc__cc____________cc__cc________cccccc__cc_______cc___cc__cc______cc____cc__cc______cc____cc__cc_______cc___cc__cc________cccccc__cc________________cc_______________ccc______________ccc______________ccc______________ccc_______________cc_________",
+    "name": "Django",
+    "credit": "I'm a perfectionist and I have deadlines :( - by Den1251"
   }
 ]
