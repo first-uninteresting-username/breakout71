@@ -41,11 +41,13 @@ export function requiredAsyncAlert<t>(p: {
 
 export async function asyncAlert<t>({
   title,
+  id,
   content = [],
   allowClose = true,
   className = "",
 }: {
   title?: string;
+  id?: string;
   content: (string | false | AsyncAlertAction<t>)[];
   allowClose?: boolean;
   className?: string;
@@ -64,7 +66,7 @@ export async function asyncAlert<t>({
 
     function closeWithResult(value: t | undefined) {
       if (closed) return;
-      memorizeScrollPosition(title);
+      memorizeScrollPosition(id || title);
       closed = true;
       Array.prototype.forEach.call(
         popup.querySelectorAll("button:not([disabled])"),
@@ -131,7 +133,7 @@ export async function asyncAlert<t>({
     )?.focus();
     lastClickedItemIndex = -1;
 
-    revertScrollPosition(title);
+    revertScrollPosition(id || title);
   }).then(
     (v: unknown) => {
       updateAlertsOpen(-1);
@@ -243,10 +245,10 @@ ${icon}
 }
 
 let memorizedScrollPosition: Record<string, number> = {};
-function memorizeScrollPosition(title: string | null) {
+function memorizeScrollPosition(title: string | undefined) {
   if (title && title?.length < 500)
     memorizedScrollPosition[title] = window.scrollY;
 }
-function revertScrollPosition(title: string | null) {
+function revertScrollPosition(title: string | undefined) {
   if (title) window.scrollTo(0, memorizedScrollPosition[title] || 0);
 }

@@ -87,6 +87,7 @@ async function viewHistory() {
       .join("");
 
     const result = await asyncAlert({
+      id: "history",
       title: t("history.title"),
       className: "history",
       content: [
@@ -214,6 +215,7 @@ ${upgrades
 </table>`;
 
   const result = await asyncAlert({
+    id: "matrix",
     title: t("history.matrix.title"),
     className: "score_matrix_popup",
     content: [

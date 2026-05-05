@@ -23,6 +23,7 @@ export async function openScorePanel(gameState: GameState) {
   pause(true);
 
   await asyncAlert({
+    id: "score_panel",
     title: t("score_panel.title", {
       score: gameState.score,
       level: gameState.currentLevel + 1,

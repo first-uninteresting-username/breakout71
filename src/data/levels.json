@@ -2448,80 +2448,146 @@
     "credit": "The apple is about to explode! - Den1251"
   },
   {
-    "color": "#000000",
+    "name": "Teotihuacán",
     "size": 21,
     "bricks": "____________________________________________B_______B_______B_____y______y______y_______y_____y_____y_________y____y____y___________y__yyy__y_____________yyyOyyy______________yyOOOyy_____________yyOOOOOyy________ByyyyOOOlOOOyyyyB________yyOlBlOyy_____________yllelly_____________yllllllly___________yllBeeeBlly_________yllllllllllly_______yllgBeeeeeBglly______lBlllllllllllBl_____llllleeeeeeelllll____________________________________________",
-    "name": "Teotihuacán",
     "credit": "By Wombatmithut"
   },
   {
-    "color": "#000000",
+    "name": "Pure Love",
     "size": 21,
     "bricks": "_________________________________________________B_____B_____________rrr___rrr___________rPPPr_rPPPr________BrPpppPrPpppPrB_______rPp__pPp__pPr________rPp_B_p_BgpPr_________rPp_____pPr___________rPp_B_pPr____________BrPpgpPrB___________yyyrPpPryyy________yyB___rPr___Byy___Byy_______r_______yyB___yy_____B_____yy________yyy_____yyy_____________yyyyy_________________B_B__________________yyy___________________B____________________y__________",
-    "name": "Pure Love",
     "credit": "By Wombatmithut "
   },
   {
-    "color": "#000000",
+    "name": "Python - Programming language",
     "size": 13,
     "bricks": "__________________ttt_________tBttt_________tttt______ttttttt_y___ttttttt__yy__ttt_____yyy__tt__yyyyyyy___t_yyyyyyy______yyyy_________yyyBy_________yyy__________________",
-    "name": "Python - Programming language",
     "credit": "https://www.python.org/ | https://en.wikipedia.org/wiki/Python_(programming_language) - by Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "Ruby - Programming language",
     "size": 13,
     "bricks": "___________________rssss______rrrrrsrr____rrrrrsssr___rrrrrrssss___rrrrrrrsr___rrrrrrssrR___srrrrsssrR___srssrsssRR___sssssrrRRR___srssrRRRRR____rrs_____________________",
-    "name": "Ruby - Programming language",
     "credit": "https://www.ruby-lang.org/en/ | https://en.wikipedia.org/wiki/Ruby_(programming_language)  - by Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "C Sharp - Programming Language",
     "size": 19,
     "bricks": "________ppp______________ppppppp__________ppppWWWpppp______ppppWWWWWWWpppp___pppWWWWWWWWWWpppp__ppWWWWWpppWWWWpvv__ppWWWpppppppppvvv__ppWWWpppppppWvWvv__pWWWpppppppWWWWWv__pWWWpppppvvvWvWvv__pWWWppppbvvWWWWWv__ppWWWpbbbbbvWvWvv__ppWWWbbbbbbbvvvvv__ppWWWWWbbbWWWWvvv__ppbWWWWWWWWWWbbbv___bbbbWWWWWWWbbbb______bbbbWWWbbbb__________bbbbbbb______________bbb________",
-    "name": "C Sharp - Programming Language",
     "credit": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)  - by Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "Javascript - Programming language",
     "size": 13,
     "bricks": "______________OOOOOOOOOOO__OOOOOyyyyyO__OOOOWyWWWyO__OOOOWyWyyyO___OOOWyWyyy____OOOWyWWWy____OOOWyyyWy____OWWWyWWWy____OOOOyyyyO_____OOOyyOO________OOO__________________",
-    "name": "Javascript - Programming language",
     "credit": "https://en.wikipedia.org/wiki/JavaScript  - by Valikzant  "
   },
   {
-    "color": "#000000",
+    "name": "CSS - Style sheet language",
     "size": 18,
     "bricks": "______________________________________vvvvvvvvvvvv______vvvvvvvvvvvvv_____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvvvvvvvvvvvvv____vvWWWvvWWvvWWv____vvWvvvvWvvvWvv_____vWWWvWWvvWWv_______vvvvvvvvvv________________________________________",
-    "name": "CSS - Style sheet language",
     "credit": "https://en.wikipedia.org/wiki/CSS  - by Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "HTML - Markup language",
     "size": 13,
     "bricks": "______________SSSSSSSSSSS__SSSSSOOOOOS__SSWWWWWWWOS__SSWSSOOOOOS___SWSSOOOOO____SWWWWWWWO____SSSSOOOWO____SWSSOOOWO____SWWSOOWWS_____SSWWWSS________SSS__________________",
-    "name": "HTML - Markup language",
     "credit": "https://en.wikipedia.org/wiki/HTML  - by Valikzant  "
   },
   {
-    "color": "#000000",
+    "name": "TypeScript - Programming language",
     "size": 13,
     "bricks": "_______________ttttttttt___ttttttttttt__ttttttttttt__ttttttttttt__ttttttttttt__tttWWWtWWWt__ttttWttWttt__ttttWttWWWt__ttttWttttWt__ttttWttWWWt___ttttttttt_______________",
-    "name": "TypeScript - Programming language",
     "credit": "https://en.wikipedia.org/wiki/TypeScript  - by Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "Java - Programming language",
     "size": 18,
     "bricks": "________O_________________O_______________OO__O____________OO__O_____________O__O______________OO_OO______________O__O_____________t_O_O___t________t______t__t________tttttt___t________________t_________tttttt_t__________________________t__ttttt_________t_________t________tt_____tt__t________ttttt__tt________tttttttt______",
-    "name": "Java - Programming language",
     "credit": "https://en.wikipedia.org/wiki/Java_(programming_language)  - by Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "Django",
     "size": 18,
     "bricks": "_________________________cc__cc____________cc__cc____________cc________________cc__cc____________cc__cc________cccccc__cc_______cc___cc__cc______cc____cc__cc______cc____cc__cc_______cc___cc__cc________cccccc__cc________________cc_______________ccc______________ccc______________ccc______________ccc_______________cc_________",
-    "name": "Django",
     "credit": "I'm a perfectionist and I have deadlines :( - by Den1251"
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "______________________________________________WWWWWWWWWWWWWg_______WBWWyBWWWWWBW________WWWWWRWWWWWWW________WWWWWRRWWWWWW________WWWWRRRRRWWWW________WWyRRssRRRyWW________WWWWssssWWWWW________WWWWBssBWWWWW________WWWWRRRRWWWWW________WWWRWRRWRWWWW________WWWRWRRWWRBWW________WWWsWRRWWWWWW________WWWWWRBRWWWWW________WWWWRWWWRsWWW________WWWWsWWWWWWWW________WBWWWWWWWWWBW________WWWWWWWWWWWWW______________________________________________",
+    "name": "Joker",
+    "credit": "Multiplayer Card Games: https://worldofcardgames.com/ - Wombatmithut "
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "_______BlllllB______________ll_B_ll_____________ll_____ll___________ll_______ll_________llB_______Bll_______ll___________ll_____ll____B___B____ll__BlltllllllllllllltllB__llttll__B__llttll____llBttl_____lttBll____ll__ttB___Btt__ll____ll__ltt___ttl__ll____ll__lltt_ttll__ll____ll_Bll__t__llB_ll____ll__ll__B__ll__ll____ll__ll_____ll__ll____ll__ll_____ll__ll____llB_ll__B__ll_Bll__BlllllllllllllllllllB__________________________________________",
+    "name": "FragdenStaat",
+    "credit": "Everyone has the right to access information from political and administrative bodies. FragDenStaat helps you exercise that right. Through investigative reporting, strategic litigation, and public engagement campaigns, we fight for freedom of information and government transparency 🇩🇪 : https://fragdenstaat.de/ - Wombatmithut "
+  },
+  {
+    "color": "#115988",
+    "size": 21,
+    "bricks": "____________________________________________________________________________________gg_g_g________________ggBgg_________t______rrrr___________t____rssss_________tB_t___rWsssW____sBt__t_t___WWWWWWWWWss__t_t_t___WWWWWWWWWss__t_t_t___WWWWWW____s_tB_t_t___WWWWWW________t__t____gBgg__________Bt_____WWWW__________t______WW_WW________________WW__WW________________WW_WW________________ss_sss_______________________________________________________",
+    "name": "Hadouken!",
+    "credit": "https://en.wikipedia.org/wiki/Hadouken - Wombatmithut"
+  },
+  {
+    "color": "#115988",
+    "size": 15,
+    "bricks": "____________W________g____WWW________g__WWW___ggg_gggggWWWg_gggggggggggWggg_ggggggggggggg_gggggWgggWggggg_gggWWWggWWggg_ggggWgWgWgWgggg_gggWWWWWWWggg__gg_gWWWWWg_gg___g__ggggg__g_______________________________________________",
+    "name": "Kasane Teto",
+    "credit": "My heart sings a chorus out of tune! (Machine Love - Jamie Paige ft. Kasane Teto) - 63CritsInARow"
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "_____________________________________________________________________rrrrr_______________rrrrrrrrr____________kkkOOkO_____________kOkOOOkOOO___________kOkkOOOkOOO__________kkOOOOkkkk_____________OOOOOOO_____________kkrkkk______________kkkrkkrkkk__________kkkkrrrrkkkk_________OOkrOrrOrkOO_________OOOrrrrrrOOO_________OOrrrrrrrrOO___________rrr__rrr____________kkk____kkk__________kkkk____kkkk________________________________________________",
+    "name": "NES Mario",
+    "credit": "\"It's-a me, Mario!\" - Wombatmithut "
+  },
+  {
+    "color": "#000000",
+    "size": 7,
+    "bricks": "OOOaaaaOaaabbaaa_bbba_a__baa_____aa____aaO____aOO",
+    "name": "Fish",
+    "credit": "Look at it swim! - BillM123"
+  },
+  {
+    "color": "#000000",
+    "size": 15,
+    "bricks": "______________________________________yyy___________yWlWy_________yWWWWWy_______yWWWgWWWy______ylWWgWWly______yWWgWWWWy_______yWWWWWy____yy___yWlWy____y__y___yyy____y_y_y____y______y___y__y____________yy______________________",
+    "name": "What is time?",
+    "credit": "Time is an artificial construct created by humans to adapt natural cycles to their own perception. - Wombatmithut "
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "_____________________________aaaaa______________aa_____aa___________a__WWWWW__a_________a_aWattttat_a_______a_kkkttttttkk_a_____a_kkkkkttkkkkkk_a____a_kkkkttktkkkkk_a___a_kkkktttttkkkkkt_a__a_tkkktkttttkktkk_a__a_ttkkkttttkkkkkk_a__a_tkkkkkttkkOkkkk_a___a_kkkkkttkOkkOO_a____a_tkkkttttkkOOO_a_____a_kkktktttOOO_a_______a_kttkttatt_a_________a__WaWWW__a___________aa_____aa______________aaaaa__________________________________________________",
+    "name": "Planet Earth",
+    "credit": "If you are an alien, please visit this link - https://en.wikipedia.org/wiki/Earth ... if you have Earth's Internet of course. - Valikzant "
+  },
+  {
+    "color": "#115988",
+    "size": 12,
+    "bricks": "_____________vvblllllv___vvblllblvv__vvblllblvv__vvblllllvv__vvvvvvvvvv__vvWWWWWWvv__vvWggggWvv__vvWWWWWWvv__vvWggggWvv__v_WWWWWW_v__vvWWWWWWvv_",
+    "name": "Floppy disk",
+    "credit": "https://en.wikipedia.org/wiki/Floppy_disk - Nico207"
+  },
+  {
+    "color": "#115988",
+    "size": 12,
+    "bricks": "______________gggggggg____gggggggg____ggpvpvgg____ggvpvpgg____ggpvpvgg____ggvpvpgg____ggpvpvgg____ggvpvpgg____gggggggg____gggggggg______________",
+    "name": "Nether Portal",
+    "credit": "Time to go to THE NETHER! | https://minecraft.wiki/w/Nether_Portal - Valikzant "
+  },
+  {
+    "color": "#115988",
+    "size": 20,
+    "bricks": "______________________W_g__WWW__gWWWggg__WWWgggW__gggWW_gg___W_WgggWWWgggWWWg____gg_W_WgggWWWg_gW____g_gWWW_g___Wgg_W____gggW_WgggWW_g_gWWW__WW_gg_WWWgggWWWgg____WWg_gW_WgggWWWgg_____Wg_gWWWg____Wg_g___ggWWWg_gW_Wg__W_W___g__W_g_gW_Wgg__W___gg__W_ggg_W__ggW_W__W_Wgg_WW_gg_WWWg_g___W__g__W__g__WWggg___W__ggWWW_ggWWW__g___ggW__ggg_W_gggWWW___g_WWW_ggWWWgggW_W__gg_WWW__gWWW__gWWW_____________________",
+    "name": "Letters and Numbers",
+    "credit": "A-Z and 1 2 3 4 5 6 7 8 9 0 are all here. - Valikzant "
   }
 ]

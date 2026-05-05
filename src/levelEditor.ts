@@ -37,6 +37,7 @@ async function openLevelEditorLevelsList() {
   const customLevels = rawList.map(transformRawLevel);
 
   let choice = await asyncAlert({
+    id: "editor",
     title: t("editor.title"),
     content: [
       {
@@ -269,6 +270,7 @@ export async function editRawLevel(nth: number, color = "") {
         }
       } else {
         await asyncAlert({
+          id: "show_code",
           title: t("editor.editing.show_code"),
           content: [
             `
@@ -296,6 +298,7 @@ export async function editRawLevel(nth: number, color = "") {
     }
     if (action === "delete") {
       const confirm = await asyncAlert({
+        id: "editing_delete_confirm",
         title: t("editor.editing.delete_confirm"),
 
         content: [

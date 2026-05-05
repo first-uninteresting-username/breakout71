@@ -109,6 +109,7 @@ export async function gameOver(title: string, intro: string) {
   mainGameState.combo = 1;
 
   const choice = await asyncAlert({
+    id: "gameOver",
     allowClose: true,
     title,
     content: [

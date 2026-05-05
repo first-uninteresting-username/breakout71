@@ -11,6 +11,7 @@ export function helpMenuEntry() {
     help: t("help.help"),
     async value() {
       await asyncAlert({
+        id: "help",
         title: t("help.title"),
         allowClose: true,
         content: [

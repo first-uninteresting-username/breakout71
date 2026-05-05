@@ -1542,5 +1542,60 @@
     "required": ["reach", "chill", "wrap_left"],
     "forbidden": ["bigger_explosions", "compound_interest", "streak_shots"],
     "minScore": 29500
+  },
+  "Kasane Teto": {
+    "required": ["addiction", "compound_interest"],
+    "forbidden": ["round_bricks"],
+    "minScore": 40100
+  },
+  "Fish": {
+    "required": ["compound_interest", "golden_goose", "coin_magnet"],
+    "forbidden": ["buoy", "viscosity", "ball_attracts_coins"],
+    "minScore": 11153
+  },
+  "Joker": {
+    "required": ["reach", "smaller_puck", "chill"],
+    "forbidden": ["vibrant_neighborhood", "wrap_left", "thomas"],
+    "minScore": 29600
+  },
+  "FragdenStaat": {
+    "required": ["chill", "reach", "soft_touch"],
+    "forbidden": ["soft_reset", "rainbow", "sticky_coins"],
+    "minScore": 29700
+  },
+  "Hadouken!": {
+    "required": ["palette", "chill", "reach"],
+    "forbidden": ["sturdy_bricks", "addiction", "pierce_right"],
+    "minScore": 29800
+  },
+  "NES Mario": {
+    "required": ["minefield", "bigger_explosions", "addiction"],
+    "forbidden": ["disco_ball", "sacrifice", "soft_touch"],
+    "minScore": 30000
+  },
+  "What is time?": {
+    "required": ["concave_puck", "superhot", "right_is_lava"],
+    "forbidden": ["pierce_top", "corner_shot", "ball_attracts_coins"],
+    "minScore": 30200
+  },
+  "Planet Earth": {
+    "required": ["respawn", "corner_shot", "streak_shots"],
+    "forbidden": ["trampoline", "clairvoyant", "rainbow"],
+    "minScore": 30300
+  },
+  "Floppy disk": {
+    "required": ["compound_interest", "clairvoyant", "smaller_puck"],
+    "forbidden": ["paddle_up_combo", "wrap_right", "corner_shot"],
+    "minScore": 30400
+  },
+  "Nether Portal": {
+    "required": ["viscosity", "picky_eater", "bricks_attract_ball"],
+    "forbidden": ["forgiving", "extra_life", "limitless"],
+    "minScore": 30500
+  },
+  "Letters and Numbers": {
+    "required": ["ghost_coins", "pierce_right", "transparency"],
+    "forbidden": ["left_is_lava", "pierce_color", "sticky_coins"],
+    "minScore": 30600
   }
 }

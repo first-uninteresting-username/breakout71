@@ -453,22 +453,21 @@ if (getSettingValue("menu-opened", 0) < 3) {
 }
 
 function scoreOpen(e: MouseEvent) {
+  console.log("scoreOpen", mainGameState.startParams.isCreativeRun);
   e.preventDefault();
   if (alertsOpen) return;
   if (typeof mainGameState.startParams.isEditorTrialRun === "number") {
     closeEditorTrialRun();
     return;
   }
-  if (typeof mainGameState.startParams.isCreativeRun) {
+  if (mainGameState.startParams.isCreativeRun) {
     pause(true);
     openCreativeModePerksPicker();
     return;
   }
 
-  if (alertsOpen) {
-    setSettingValue("score-opened", getSettingValue("score-opened", 0) + 1);
-    openScorePanel(mainGameState);
-  }
+  setSettingValue("score-opened", getSettingValue("score-opened", 0) + 1);
+  openScorePanel(mainGameState);
 }
 
 scoreDisplay.addEventListener("click", scoreOpen);
@@ -593,6 +592,7 @@ async function openSettingsMenu() {
     help: t("settings.language_help"),
     async value() {
       const pick = await asyncAlert({
+        id: "select_language",
         title: t("settings.language"),
         content: [
           t("settings.language_help"),
@@ -717,6 +717,7 @@ async function openSettingsMenu() {
                 }
               }
               await asyncAlert({
+                id: "save_file_loaded",
                 title: t("settings.save_file_loaded"),
                 content: [
                   t("settings.save_file_loaded_help"),
@@ -727,6 +728,7 @@ async function openSettingsMenu() {
             }
           } catch (e: any) {
             await asyncAlert({
+              id: "save_file_error",
               title: t("settings.save_file_error"),
               content: [e.message, { text: t("settings.save_file_loaded_ok") }],
             });
@@ -756,6 +758,7 @@ async function openSettingsMenu() {
     async value() {
       if (
         await asyncAlert({
+          id: "reset",
           title: t("settings.reset"),
           content: [
             t("settings.reset_instruction"),
@@ -878,6 +881,7 @@ export async function confirmRestart(gameState) {
   if (alertsOpen) return true;
   pause(true);
   return asyncAlert({
+    id: "confirmRestart",
     title: t("confirmRestart.title"),
     content: [
       t("confirmRestart.text"),
