@@ -453,7 +453,6 @@ if (getSettingValue("menu-opened", 0) < 3) {
 }
 
 function scoreOpen(e: MouseEvent) {
-  console.log("scoreOpen", mainGameState.startParams.isCreativeRun);
   e.preventDefault();
   if (alertsOpen) return;
   if (typeof mainGameState.startParams.isEditorTrialRun === "number") {
