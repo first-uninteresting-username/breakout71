@@ -15,8 +15,14 @@ export function hideAnyTooltip() {
 
 function setupMobileTooltips(tooltip: HTMLDivElement) {
   tooltip.className = "mobile";
+
   function openTooltip(e: Event) {
-    hideAnyTooltip();
+    if (tooltip.style.display !== "none") {
+      e.preventDefault();
+      e.stopPropagation();
+      hideAnyTooltip();
+      return;
+    }
     const hovering = e.target as HTMLElement;
     const tooltipContent =
       hovering?.getAttribute("data-help-content")?.trim() || "";
@@ -32,7 +38,7 @@ function setupMobileTooltips(tooltip: HTMLDivElement) {
   }
 
   document.body.addEventListener("click", openTooltip, true);
-  document.addEventListener("scroll", hideAnyTooltip);
+  document.addEventListener("scroll", hideAnyTooltip, true);
 }
 
 function setupDesktopTooltips(tooltip: HTMLDivElement) {
