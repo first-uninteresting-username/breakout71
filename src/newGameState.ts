@@ -1,5 +1,10 @@
 import { GameState, PerkId, RunParams } from "./types";
-import { allLevels, allLevelsAndIcons, upgrades } from "./loadGameData";
+import {
+  allLevels,
+  allLevelsAndIcons,
+  appVersion,
+  upgrades,
+} from "./loadGameData";
 import {
   defaultSounds,
   getHighScore,
@@ -44,7 +49,7 @@ export function getRunLevels(
 }
 
 export function newGameState(params: RunParams): GameState {
-  const highScore = getHighScore();
+  const highScore = parseFloat(getHighScore().toString());
 
   const perks = { ...makeEmptyPerksMap(upgrades), ...(params?.perks || {}) };
 
@@ -145,6 +150,7 @@ export function newGameState(params: RunParams): GameState {
       sumOfValues(params.perks) > 1 ||
       (params.level && !params.level.name.startsWith("icon:")) ||
       false,
+    gameVersion: appVersion,
   };
 
   window.gameState = gameState;

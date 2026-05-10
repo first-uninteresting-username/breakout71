@@ -98,92 +98,94 @@ export function getGameAnimation(params: RunParams) {
   );
 }
 
-const customSettings: Record<PerkId, { perks?: RunParams["perks"] }> = {
-  shocks: {
-    perks: {
-      multiball: 3,
-      shocks: 1,
+const customSettings: Partial<Record<PerkId, { perks?: RunParams["perks"] }>> =
+  {
+    shocks: {
+      perks: {
+        multiball: 3,
+        shocks: 1,
+      },
     },
-  },
-  slow_down: {
-    perks: {
-      slow_down: 3,
+    slow_down: {
+      perks: {
+        slow_down: 3,
+      },
     },
-  },
-  viscosity: {
-    perks: {
-      viscosity: 3,
+    viscosity: {
+      perks: {
+        viscosity: 3,
+      },
     },
-  },
-  coin_magnet: {
-    perks: { coin_magnet: 2, base_combo: 2 },
-  },
-  bigger_explosions: {
-    perks: {
-      bigger_explosions: 1,
-      pierce: 2,
-      concave_puck: 1,
+    coin_magnet: {
+      perks: { coin_magnet: 2, base_combo: 2 },
     },
-  },
-  soft_reset: {
-    perks: {
-      soft_reset: 1,
-      streak_shots: 1,
+    bigger_explosions: {
+      perks: {
+        bigger_explosions: 1,
+        pierce: 2,
+        concave_puck: 1,
+      },
     },
-  },
-  sacrifice: {
-    perks: {
-      sacrifice: 1,
-      extra_life: 4,
-      base_combo: 3,
+    soft_reset: {
+      perks: {
+        soft_reset: 2,
+        streak_shots: 1,
+        hot_start: 3,
+      },
     },
-  },
-  buoy: {
-    perks: {
-      buoy: 2,
-      base_combo: 2,
+    sacrifice: {
+      perks: {
+        sacrifice: 1,
+        extra_life: 4,
+        base_combo: 3,
+      },
     },
-  },
-  metamorphosis: {
-    perks: {
-      metamorphosis: 1,
-      pierce: 2,
+    buoy: {
+      perks: {
+        buoy: 2,
+        base_combo: 2,
+      },
     },
-  },
-  ball_repulse_ball: {
-    perks: {
-      ball_repulse_ball: 1,
-      multiball: 3,
-      pierce: 1,
+    metamorphosis: {
+      perks: {
+        metamorphosis: 1,
+        pierce: 2,
+      },
     },
-  },
-  puck_repulse_ball: {
-    perks: {
-      puck_repulse_ball: 2,
+    ball_repulse_ball: {
+      perks: {
+        ball_repulse_ball: 1,
+        multiball: 3,
+        pierce: 1,
+      },
     },
-  },
-  ghost_coins: {
-    perks: {
-      ghost_coins: 1,
-      pierce: 3,
-      base_combo: 1,
+    puck_repulse_ball: {
+      perks: {
+        puck_repulse_ball: 2,
+      },
     },
-  },
-  implosions: {
-    perks: {
-      implosions: 1,
-      pierce: 2,
-      concave_puck: 1,
+    ghost_coins: {
+      perks: {
+        ghost_coins: 1,
+        pierce: 3,
+        base_combo: 1,
+      },
     },
-  },
-  rainbow: {
-    perks: {
-      rainbow: 1,
-      pierce: 1,
-      base_combo: 2,
+    implosions: {
+      perks: {
+        implosions: 1,
+        pierce: 2,
+        concave_puck: 1,
+      },
     },
-  },
-};
+    rainbow: {
+      perks: {
+        rainbow: 1,
+        pierce: 1,
+        base_combo: 2,
+      },
+    },
+  };
 
 export function getPerkAnimation(perkId: PerkId) {
   const { requires } = upgrades.find((u) => u.id === perkId) as Upgrade;

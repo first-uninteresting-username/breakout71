@@ -5,6 +5,7 @@ import {
   colorString,
   GameState,
   HitDirection,
+  Level,
   LightFlash,
   ParticleFlash,
   ReusableArray,
@@ -36,7 +37,11 @@ import {
 } from "./game_utils";
 import { t } from "./i18n/i18n";
 
-import { getCurrentMaxCoins, getCurrentMaxParticles } from "./settings";
+import {
+  getCurrentMaxCoins,
+  getCurrentMaxParticles,
+  setSettingValue,
+} from "./settings";
 import { background } from "./render";
 import { gameOver } from "./gameOver";
 import {
@@ -44,6 +49,7 @@ import {
   fitSize,
   hasBrick,
   hitsSomething,
+  mainGameState,
   pause,
   startComputerControlledGame,
 } from "./game";
@@ -779,6 +785,7 @@ export async function setLevel(gameState: GameState, l: number) {
     return;
   }
   if (!gameState.running && l > 0) return;
+
   if (!gameState.startParams.animated_perk_preview) {
     pause(false);
     gameState.upgradesOfferedFor = l;
@@ -843,6 +850,20 @@ export async function setLevel(gameState: GameState, l: number) {
   // Balls color will depend on most common brick color sometimes
   resetBalls(gameState);
   gameState.needsRender = true;
+  loadLevelBackground(lvl);
+  if (
+    isOptionOn("enable_autosave") &&
+    gameState.currentLevel > 0 &&
+    !gameState.startParams.isCreativeRun &&
+    !gameState.startParams.computer_controlled &&
+    !gameState.startParams.animated_perk_preview &&
+    !gameState.startParams.isEditorTrialRun
+  ) {
+    setSettingValue("autosave", JSON.parse(JSON.stringify(gameState)));
+  }
+}
+
+export function loadLevelBackground(lvl: Level) {
   // This caused problems with accented characters like the ô of côte d'ivoire for odd reasons
   // background.src = 'data:image/svg+xml;base64,' + btoa(lvl.svg)
   background.src = "data:image/svg+xml;UTF8," + lvl.svg;

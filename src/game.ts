@@ -34,6 +34,7 @@ import {
 import {
   forEachLiveOne,
   gameStateTick,
+  loadLevelBackground,
   normalizeGameState,
   setLevel,
   setMousePos,
@@ -79,6 +80,7 @@ import { openUnlockedUpgradesList } from "./openUnlockedUpgradesList";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
 import { openLevelDetails } from "./openLevelDetails";
 import { menuClick } from "./menuSound";
+import { toast } from "./toast";
 
 export async function play() {
   if (await applyFullScreenChoice()) return;
@@ -977,6 +979,7 @@ export const mainGameState = newGameState({});
 window.mainGameState = mainGameState;
 
 export function restart(params: RunParams) {
+  setSettingValue("autosave", null);
   getWorstFPSAndReset();
   Object.assign(mainGameState, newGameState(params));
   // Recompute brick size according to level
@@ -991,7 +994,20 @@ export function restart(params: RunParams) {
 if (window.location.search.match(/autoplay|stress/)) {
   startComputerControlledGame(window.location.search.includes("stress"));
 } else {
-  restart({});
+  let saved = getSettingValue<GameState | null>("autosave", null);
+  if (
+    isOptionOn("enable_autosave") &&
+    saved &&
+    saved.gameVersion === appVersion
+  ) {
+    setSettingValue("autosave", null);
+    Object.assign(mainGameState, saved);
+    fitSize(mainGameState);
+    loadLevelBackground(mainGameState.level);
+    toast(t("play.auto_save_resumed"));
+  } else {
+    restart({});
+  }
 }
 
 export function startComputerControlledGame(stress: boolean = false) {

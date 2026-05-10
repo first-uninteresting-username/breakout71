@@ -29,6 +29,11 @@ export const options = {
     name: t("settings.notch_space"),
     help: t("settings.notch_space_help"),
   },
+  enable_autosave: {
+    default: true,
+    name: t("settings.enable_autosave"),
+    help: t("settings.enable_autosave_help"),
+  },
   touch_delayed_start: {
     default: true,
     name: t("settings.touch_delayed_start"),

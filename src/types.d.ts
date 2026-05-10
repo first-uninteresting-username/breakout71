@@ -294,6 +294,8 @@ export type GameState = {
   creative: boolean;
   startParams: RunParams;
   startCountDown: number;
+  // usefull to avoid autosave conflicts
+  gameVersion: string;
 };
 
 export type RunParams = {

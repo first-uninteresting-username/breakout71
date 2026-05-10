@@ -51,6 +51,7 @@ export async function gameOver(title: string, intro: string) {
   mainGameState.isGameOver = true;
   pause(false);
   askForPersistentStorage();
+  setSettingValue("autosave", null);
   stopRecording();
   addToTotalPlayTime(mainGameState.runStatistics.runTime);
 

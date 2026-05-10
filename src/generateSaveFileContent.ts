@@ -3,8 +3,15 @@ export function generateSaveFileContent() {
 
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i) as string;
-    // Avoid including recovery info in the recovery info
-    if (["recovery_data"].includes(key)) continue;
+    if (
+      [
+        // Avoid including recovery info in the recovery info
+        "recovery_data",
+        // This autosave is rough, better not keep it across versions
+        "autosave",
+      ].includes(key)
+    )
+      continue;
     try {
       const value = localStorage.getItem(key) as string;
       localStorageContent[key] = JSON.parse(value);
