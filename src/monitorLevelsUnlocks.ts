@@ -26,7 +26,7 @@ export function monitorLevelsUnlocks(gameState: GameState) {
     );
   }
 
-  if (gameState.creative) return;
+  if (gameState.startParams.runType !== "normal") return;
 
   if (!list) {
     list = allLevels.map((l, li) => ({

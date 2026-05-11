@@ -74,7 +74,7 @@ export async function openLevelDetails(level: Level) {
   if (!action) return openUnlockedLevelsList();
   if (action === "run") {
     if (await confirmRestart(mainGameState)) {
-      restart({ level } as RunParams);
+      restart({ runType: "level_preview_run", level } as RunParams);
       return;
     }
   }

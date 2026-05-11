@@ -111,7 +111,7 @@ export function renderMaxLevel(gameState: GameState) {
   return gameState.perks.chill ? "∞" : max_levels(gameState);
 }
 export function max_levels(gameState: GameState) {
-  if (gameState.creative) return 1;
+  if (gameState.startParams.runType !== "normal") return 1;
   if (gameState.perks.chill) return gameState.currentLevel + 2;
   return 7 + gameState.perks.extra_levels;
 }
@@ -165,7 +165,7 @@ export function levelsListHTMl(
   currentLevelIndex: number,
 ) {
   if (!gameState.perks.clairvoyant) return "";
-  if (gameState.creative) return "";
+  if (gameState.startParams.runType !== "normal") return "";
   let list = "";
   for (let i = 0; i < max_levels(gameState); i++) {
     let level = gameState.runLevels[i % gameState.runLevels.length];

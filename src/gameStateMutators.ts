@@ -68,8 +68,9 @@ import { computerControl } from "./computerControl";
 
 export function setMousePos(gameState: GameState, x: number) {
   if (
-    gameState.startParams.computer_controlled ||
-    gameState.startParams.animated_perk_preview
+    ["stress", "autoplay", "animated_perk_preview"].includes(
+      gameState.startParams.runType,
+    )
   )
     return;
   gameState.puckPosition = Math.round(x);
@@ -746,13 +747,6 @@ export function addToScore(gameState: GameState, coin: Coin) {
 
   gameState.levelCaughtCoins += coin.points;
   gameState.lastScoreIncrease = gameState.levelTime;
-  addToTotalScore(gameState, coin.points);
-  if (gameState.score > gameState.highScore && !gameState.creative) {
-    gameState.highScore = gameState.score;
-    try {
-      localStorage.setItem("breakout-3-hs-short", gameState.score.toString());
-    } catch (e) {}
-  }
 
   makeParticle(
     gameState,
@@ -777,6 +771,16 @@ export function addToScore(gameState: GameState, coin: Coin) {
       coin,
     );
   }
+
+  if (gameState.startParams.runType === "normal") {
+    addToTotalScore(gameState, coin.points);
+    if (gameState.score > gameState.highScore) {
+      gameState.highScore = gameState.score;
+      try {
+        localStorage.setItem("breakout-3-hs-short", gameState.score.toString());
+      } catch (e) {}
+    }
+  }
 }
 
 export async function setLevel(gameState: GameState, l: number) {
@@ -786,7 +790,7 @@ export async function setLevel(gameState: GameState, l: number) {
   }
   if (!gameState.running && l > 0) return;
 
-  if (!gameState.startParams.animated_perk_preview) {
+  if (gameState.startParams.runType === "normal") {
     pause(false);
     gameState.upgradesOfferedFor = l;
   }
@@ -854,10 +858,7 @@ export async function setLevel(gameState: GameState, l: number) {
   if (
     isOptionOn("enable_autosave") &&
     gameState.currentLevel > 0 &&
-    !gameState.startParams.isCreativeRun &&
-    !gameState.startParams.computer_controlled &&
-    !gameState.startParams.animated_perk_preview &&
-    !gameState.startParams.isEditorTrialRun
+    gameState.startParams.runType === "normal"
   ) {
     setSettingValue("autosave", JSON.parse(JSON.stringify(gameState)));
   }
@@ -1115,8 +1116,9 @@ export function gameStateTick(
   }
   // Ai movement of puck
   if (
-    gameState.startParams.computer_controlled ||
-    gameState.startParams.animated_perk_preview
+    ["animated_perk_preview", "stress", "autoplay"].includes(
+      gameState.startParams.runType,
+    )
   )
     computerControl(gameState);
 
@@ -1215,7 +1217,7 @@ export function gameStateTick(
   ) {
     if (gameState.startParams.computer_controlled) {
       startComputerControlledGame(gameState.startParams.stress);
-    } else if (gameState.startParams.animated_perk_preview) {
+    } else if (gameState.startParams.runType === "animated_perk_preview") {
       gameState.isGameOver = true;
     } else if (gameState.currentLevel + 1 < max_levels(gameState)) {
       setLevel(gameState, gameState.currentLevel + 1);
@@ -2077,7 +2079,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     justLostALife(gameState, ball.x, ball.y);
     putBallsAtPuck(gameState);
     gameState.ballStickToPuck = true;
-    if (!gameState.startParams.animated_perk_preview) pause(false);
+    if (gameState.startParams.runType !== "animated_perk_preview") pause(false);
   } else if (outOfBounds) {
     ball.destroyed = true;
     gameState.runStatistics.balls_lost++;
@@ -2119,7 +2121,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     ) {
       if (gameState.startParams.computer_controlled) {
         startComputerControlledGame(gameState.startParams.stress);
-      } else if (gameState.startParams.animated_perk_preview) {
+      } else if (gameState.startParams.runType === "animated_perk_preview") {
         gameState.isGameOver = true;
       } else {
         gameOver(t("gameOver.lost.title"), t("gameOver.lost.summary"));

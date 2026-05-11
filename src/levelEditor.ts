@@ -237,6 +237,7 @@ export async function editRawLevel(nth: number, color = "") {
     }
     if (action === "play") {
       restart({
+        runType: "level_editor_trial",
         level: transformRawLevel(level),
         isEditorTrialRun: nth,
         perks: {
@@ -334,5 +335,7 @@ export async function editRawLevel(nth: number, color = "") {
 
 export function closeEditorTrialRun() {
   editRawLevel(mainGameState.startParams.isEditorTrialRun || 0);
-  restart({});
+  restart({
+    runType: "normal",
+  });
 }

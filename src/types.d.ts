@@ -291,7 +291,6 @@ export type GameState = {
     colorChange: { vol: number; x: number };
   };
   rerolls: number;
-  creative: boolean;
   startParams: RunParams;
   startCountDown: number;
   // usefull to avoid autosave conflicts
@@ -304,10 +303,10 @@ export type RunParams = {
   perkToAvoid?: PerkId;
   perks?: Partial<PerksMap>;
   computer_controlled?: boolean;
-  animated_perk_preview?: boolean;
   isEditorTrialRun?: number;
   isCreativeRun?: boolean;
   stress?: boolean;
+  runType: RunType;
 };
 export type OptionDef = {
   default: boolean;
@@ -322,4 +321,12 @@ export type UnlockCondition = {
   minScore: number;
 };
 
+export type RunType =
+  | "normal"
+  | "creative"
+  | "level_editor_trial"
+  | "level_preview_run"
+  | "stress"
+  | "autoplay"
+  | "animated_perk_preview";
 export type HitDirection = "top" | "left" | "right" | "bottom" | "corner";

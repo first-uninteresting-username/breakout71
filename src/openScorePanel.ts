@@ -6,7 +6,7 @@ import {
   pickedUpgradesHTMl,
   renderMaxLevel,
 } from "./game_utils";
-import { getCreativeModeWarning, getHistory } from "./gameOver";
+import { getHistory } from "./gameOver";
 import { pause } from "./game";
 import { allLevels, upgrades } from "./loadGameData";
 import { firstWhere } from "./pure_functions";
@@ -18,9 +18,25 @@ import {
 } from "./get_level_unlock_condition";
 import { isOptionOn } from "./options";
 import { getIcon } from "./levelIcon";
+import { openLevelDetails } from "./openLevelDetails";
+import { closeEditorTrialRun } from "./levelEditor";
+import { openCreativeModePerksPicker } from "./creative";
 
 export async function openScorePanel(gameState: GameState) {
   pause(true);
+
+  if (gameState.startParams.runType === "level_preview_run") {
+    openLevelDetails(gameState.level);
+    return;
+  }
+  if (gameState.startParams.runType === "level_editor_trial") {
+    closeEditorTrialRun();
+    return;
+  }
+  if (gameState.startParams.runType === "creative") {
+    openCreativeModePerksPicker();
+    return;
+  }
 
   await asyncAlert({
     id: "score_panel",
@@ -31,7 +47,6 @@ export async function openScorePanel(gameState: GameState) {
     }),
 
     content: [
-      getCreativeModeWarning(gameState),
       pickedUpgradesHTMl(gameState),
       levelsListHTMl(gameState, gameState.currentLevel),
       getNearestUnlockHTML(gameState),
@@ -46,7 +61,7 @@ export async function openScorePanel(gameState: GameState) {
 }
 
 export function getFirstUnlockable(gameState: GameState) {
-  if (gameState.creative) return undefined;
+  if (gameState.startParams.runType !== "normal") return undefined;
   const unlocked = new Set(getSettingValue("breakout_71_unlocked_levels", []));
   return firstWhere(allLevels, (l, li) => {
     if (unlocked.has(l.name)) return;

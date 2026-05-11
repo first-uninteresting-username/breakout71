@@ -65,7 +65,7 @@ export function getHaloScale() {
 
 let framesCounter = 0;
 export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
-  const isPreview = gameState.startParams.animated_perk_preview;
+  const isPreview = gameState.startParams.runType === "animated_perk_preview";
 
   const width = gameState.canvasWidth,
     height = gameState.canvasHeight;
@@ -848,11 +848,11 @@ export function renderAllBricks(
 
   if (
     newKey !== cachedBricksRenderKey ||
-    gameState.startParams.animated_perk_preview
+    gameState.startParams.runType === "animated_perk_preview"
   ) {
     let canctx = ctx;
 
-    if (!gameState.startParams.animated_perk_preview) {
+    if (gameState.startParams.runType !== "animated_perk_preview") {
       cachedBricksRenderKey = newKey;
       cachedBricksRender.width = gameState.gameZoneWidth;
       cachedBricksRender.height = gameState.gameZoneWidth + 1;
@@ -912,7 +912,7 @@ export function renderAllBricks(
       }
     });
   }
-  if (!gameState.startParams.animated_perk_preview)
+  if (gameState.startParams.runType !== "animated_perk_preview")
     ctx.drawImage(cachedBricksRender, gameState.offsetX, 0);
 }
 

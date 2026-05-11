@@ -124,6 +124,7 @@ export async function openCreativeModePerksPicker() {
     ) {
       if (await confirmRestart(mainGameState)) {
         restart({
+          runType: "creative",
           perks: creativeModePerks,
           level: selectedLeveOption.value,
           isCreativeRun: true,

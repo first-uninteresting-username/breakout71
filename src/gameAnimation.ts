@@ -26,7 +26,7 @@ export function getGameAnimation(params: RunParams) {
     async function reset() {
       gameState = newGameState({
         ...params,
-        animated_perk_preview: true,
+        runType: "animated_perk_preview",
       });
       await setLevel(gameState, 0);
       gameState.canvasWidth = width;
@@ -190,7 +190,7 @@ const customSettings: Partial<Record<PerkId, { perks?: RunParams["perks"] }>> =
 export function getPerkAnimation(perkId: PerkId) {
   const { requires } = upgrades.find((u) => u.id === perkId) as Upgrade;
 
-  const demoParams = {
+  const demoParams: RunParams = {
     perks: { [perkId]: 1 },
     level: allLevelsAndIcons.find((l) => l.name === "icon:" + perkId),
   };

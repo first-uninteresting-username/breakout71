@@ -31,6 +31,7 @@ import {
   settingsChangeRecommendations,
 } from "./openUpgradesPicker";
 import { getIcon } from "./levelIcon";
+import { openLevelDetails } from "./openLevelDetails";
 
 export function addToTotalPlayTime(ms: number) {
   setSettingValue(
@@ -40,11 +41,24 @@ export function addToTotalPlayTime(ms: number) {
 }
 
 export async function gameOver(title: string, intro: string) {
-  if (mainGameState.startParams.animated_perk_preview) return;
-  if (mainGameState.startParams.computer_controlled) {
-    startComputerControlledGame(mainGameState.startParams.stress);
+  if (["stress", "autoplay"].includes(mainGameState.startParams.runType)) {
+    startComputerControlledGame(mainGameState.startParams.runType === "stress");
     return;
   }
+
+  if (mainGameState.startParams.isCreativeRun) {
+    openCreativeModePerksPicker();
+    restart({ runType: "normal" });
+    return;
+  }
+  if (mainGameState.startParams.runType === "level_preview_run") {
+    openLevelDetails(mainGameState.level);
+    restart({ runType: "normal" });
+    return;
+  }
+
+  if (mainGameState.startParams.runType !== "normal") return;
+
   if (!mainGameState.running) return;
   // Ignore duplicated calls, can happen when ticking is split in multiple updates because the ball goes fast
   if (mainGameState.isGameOver) return;
@@ -57,12 +71,6 @@ export async function gameOver(title: string, intro: string) {
 
   if (typeof mainGameState.startParams.isEditorTrialRun === "number") {
     closeEditorTrialRun();
-    return;
-  }
-
-  if (mainGameState.startParams.isCreativeRun) {
-    openCreativeModePerksPicker();
-    restart({});
     return;
   }
 
@@ -114,7 +122,7 @@ export async function gameOver(title: string, intro: string) {
     allowClose: true,
     title,
     content: [
-      getCreativeModeWarning(mainGameState) || levelStats,
+      levelStats,
       intro,
       startTs != endTs
         ? t("gameOver.total", { score: mainGameState.score }) +
@@ -137,15 +145,9 @@ export async function gameOver(title: string, intro: string) {
   });
   applySettingsChangeReco(choice);
   restart({
+    runType: "normal",
     levelToAvoid: currentLevelInfo(mainGameState).name,
   });
-}
-
-export function getCreativeModeWarning(gameState: GameState) {
-  if (gameState.creative) {
-    return "<p>" + t("gameOver.creative") + "</p>";
-  }
-  return "";
 }
 
 let runsHistory = [];
@@ -162,8 +164,34 @@ export function getHistory() {
   return runsHistory;
 }
 
+export function addGameToHistory(gameState: GameState) {
+  if (gameState.startParams.runType !== "normal") return "";
+  if (!gameState.currentLevel) {
+    return;
+  }
+  if (runsHistory.find((r) => r.started === gameState.runStatistics.started)) {
+    // already saved
+    return;
+  }
+  const perks: Partial<GameState["perks"]> = { ...gameState.perks };
+  for (let id in perks) {
+    if (!perks[id]) {
+      delete perks[id];
+    }
+  }
+  runsHistory.push({
+    ...gameState.runStatistics,
+    perks,
+    appVersion,
+  });
+  localStorage.setItem(
+    "breakout_71_runs_history",
+    JSON.stringify(runsHistory, null, 2),
+  );
+}
+
 export function getHistograms(gameState: GameState) {
-  if (gameState.creative) return "";
+  if (gameState.startParams.runType !== "normal") return "";
   let unlockedLevels = "";
   let runStats = "";
   try {
@@ -178,17 +206,7 @@ export function getHistograms(gameState: GameState) {
     gameState.runStatistics.runTime = Math.round(
       gameState.runStatistics.runTime,
     );
-    const perks = { ...gameState.perks };
-    for (let id in perks) {
-      if (!perks[id]) {
-        delete perks[id];
-      }
-    }
-    runsHistory.push({
-      ...gameState.runStatistics,
-      perks,
-      appVersion,
-    });
+    addGameToHistory(gameState);
 
     const unlocked = locked.filter(
       ({ li, l }) => !isLevelLocked(li, l.name, runsHistory),
@@ -215,11 +233,6 @@ export function getHistograms(gameState: GameState) {
     }
 
     // Generate some histogram
-
-    localStorage.setItem(
-      "breakout_71_runs_history",
-      JSON.stringify(runsHistory, null, 2),
-    );
 
     const makeHistogram = (
       title: string,

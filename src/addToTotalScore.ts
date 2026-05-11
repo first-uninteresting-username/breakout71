@@ -7,7 +7,7 @@ import { getTotalScore, setSettingValue } from "./settings";
 import { getIcon } from "./levelIcon";
 
 export function addToTotalScore(gameState: GameState, points: number) {
-  if (gameState.creative) return;
+  if (gameState.startParams.runType !== "normal") return;
   const pastScore = getTotalScore();
   const newScore = pastScore + points;
   setSettingValue("breakout_71_total_score", newScore);

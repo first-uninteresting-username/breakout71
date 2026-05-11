@@ -145,11 +145,6 @@ export function newGameState(params: RunParams): GameState {
     autoCleanUses: 0,
     ...defaultSounds(),
     rerolls: 0,
-    creative:
-      params?.computer_controlled ||
-      sumOfValues(params.perks) > 1 ||
-      (params.level && !params.level.name.startsWith("icon:")) ||
-      false,
     gameVersion: appVersion,
   };
 

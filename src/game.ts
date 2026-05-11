@@ -9,6 +9,7 @@ import {
   ParticleFlash,
   PerksMap,
   RunParams,
+  RunType,
   TextFlash,
 } from "./types";
 import { getAudioContext, playPendingSounds } from "./sounds";
@@ -142,7 +143,7 @@ export function pause(playerAskedForPause: boolean) {
 
 export const fitSize = (gameState: GameState) => {
   if (!gameState) throw new Error("Missign game state");
-  if (gameState.startParams.animated_perk_preview) return;
+  if (gameState.startParams.runType === "animated_perk_preview") return;
   const past_off = gameState.offsetXRoundedDown,
     past_width = gameState.gameZoneWidthRoundedUp,
     past_heigh = gameState.gameZoneHeight;
@@ -457,15 +458,6 @@ if (getSettingValue("menu-opened", 0) < 3) {
 function scoreOpen(e: MouseEvent) {
   e.preventDefault();
   if (alertsOpen) return;
-  if (typeof mainGameState.startParams.isEditorTrialRun === "number") {
-    closeEditorTrialRun();
-    return;
-  }
-  if (mainGameState.startParams.isCreativeRun) {
-    pause(true);
-    openCreativeModePerksPicker();
-    return;
-  }
 
   setSettingValue("score-opened", getSettingValue("score-opened", 0) + 1);
   openScorePanel(mainGameState);
@@ -496,6 +488,7 @@ export async function openMainMenu() {
       help: highScoreText() || t("main_menu.normal_help"),
       value: () => {
         restart({
+          runType: "normal",
           levelToAvoid: currentLevelInfo(mainGameState).name,
         });
       },
@@ -966,6 +959,7 @@ document.addEventListener("keyup", async (e) => {
     // When doing ctrl + R in dev to refresh, i don't want to instantly restart a run
     if (await confirmRestart(mainGameState)) {
       restart({
+        runType: "normal",
         levelToAvoid: currentLevelInfo(mainGameState).name,
       });
     }
@@ -1006,11 +1000,14 @@ if (window.location.search.match(/autoplay|stress/)) {
     loadLevelBackground(mainGameState.level);
     toast(t("play.auto_save_resumed"));
   } else {
-    restart({});
+    restart({
+      runType: "normal",
+    });
   }
 }
 
 export function startComputerControlledGame(stress: boolean = false) {
+  const runType: RunType = stress ? "stress" : "autoplay";
   const perks: Partial<PerksMap> = { base_combo: 20, pierce: 3 };
   if (stress) {
     Object.assign(perks, {
@@ -1033,6 +1030,7 @@ export function startComputerControlledGame(stress: boolean = false) {
     perks.superhot = 0;
   }
   restart({
+    runType,
     level: sample(allLevels.filter((l) => l.color === "#000000")),
     computer_controlled: true,
     perks,

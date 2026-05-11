@@ -1,4 +1,4 @@
-import { PerkId, Upgrade } from "./types";
+import { PerkId, RunParams, Upgrade } from "./types";
 import { allLevelsAndIcons, upgrades } from "./loadGameData";
 import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
 import { asyncAlert } from "./asyncAlert";
@@ -32,7 +32,8 @@ export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
       .filter((u) => getSettingValue("offer-upgrade-" + u.id, true))?.length >
       15;
 
-  const runParams = {
+  const runParams: RunParams = {
+    runType: "normal",
     perks: { [id]: 1 },
     level: allLevelsAndIcons.find((l) => l.name === "icon:" + id),
   };
