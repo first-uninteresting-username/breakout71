@@ -36,7 +36,7 @@ export function getWorstFPSAndReset() {
 }
 
 export function startWork(what: string) {
-  if (!mainGameState.startParams.stress) return;
+  if (mainGameState.startParams.runType !== "stress") return;
   const newNow = performance.now();
   if (doing) {
     total[doing] = (total[doing] || 0) + (newNow - lastTick);
@@ -52,7 +52,7 @@ setInterval(() => {
   lastMeasuredFPS = FPSCounter;
   FPSCounter = 0;
 
-  if (!mainGameState.startParams.stress) {
+  if (mainGameState.startParams.runType !== "stress") {
     stats.style.display = "none";
     return;
   }

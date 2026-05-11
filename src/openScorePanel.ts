@@ -18,24 +18,21 @@ import {
 } from "./get_level_unlock_condition";
 import { isOptionOn } from "./options";
 import { getIcon } from "./levelIcon";
-import { openLevelDetails } from "./openLevelDetails";
+import { closeLevelPreview, openLevelDetails } from "./openLevelDetails";
 import { closeEditorTrialRun } from "./levelEditor";
-import { openCreativeModePerksPicker } from "./creative";
+import { closeCreativeRun, openCreativeModePerksPicker } from "./creative";
 
 export async function openScorePanel(gameState: GameState) {
   pause(true);
 
   if (gameState.startParams.runType === "level_preview_run") {
-    openLevelDetails(gameState.level);
-    return;
+    return closeLevelPreview(gameState);
   }
   if (gameState.startParams.runType === "level_editor_trial") {
-    closeEditorTrialRun();
-    return;
+    return closeEditorTrialRun();
   }
   if (gameState.startParams.runType === "creative") {
-    openCreativeModePerksPicker();
-    return;
+    return closeCreativeRun(gameState);
   }
 
   await asyncAlert({

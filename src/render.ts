@@ -31,6 +31,7 @@ import {
   catchRateGood,
   clamp,
   coinsBoostedCombo,
+  isComputerControlled,
   levelTimeBest,
   levelTimeGood,
   missesBest,
@@ -78,54 +79,9 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
 
   if (!isPreview) {
     startWork("render:currentLevelDisplay");
-    if (gameState.currentLevel || gameState.levelTime) {
-      menuLabel.innerText = t("play.current_lvl", {
-        level: gameState.currentLevel + 1,
-        max: renderMaxLevel(gameState),
-      });
-    } else {
-      menuLabel.innerText = t("play.menu_label");
-    }
-
-    const catchRate = gameState.levelSpawnedCoins
-      ? gameState.levelCaughtCoins / (gameState.levelSpawnedCoins || 1)
-      : 1;
-
+    updateMenuDisplay(gameState);
     startWork("render:scoreDisplay");
-    if (typeof gameState.startParams.isEditorTrialRun == "number") {
-      scoreDisplay.innerHTML = t("editor.leave_preview");
-    } else
-      scoreDisplay.innerHTML =
-        (isOptionOn("show_fps") || gameState.startParams.computer_controlled
-          ? ` 
-          <span class="${(Math.abs(lastMeasuredFPS - 60) < 2 && " ") || (Math.abs(lastMeasuredFPS - 60) < 10 && "good") || "bad"}">
-            ${lastMeasuredFPS} FPS
-        </span><span> / </span>
-            `
-          : "") +
-        (isOptionOn("show_stats")
-          ? ` 
-        <span class="${(catchRate > catchRateBest / 100 && "great") || (catchRate > catchRateGood / 100 && "good") || ""}" data-tooltip="${t("play.stats.coins_catch_rate")}">
-            ${Math.floor(catchRate * 100)}%
-        </span><span> / </span>
-        <span class="${(gameState.levelTime < levelTimeBest * 1000 && "great") || (gameState.levelTime < levelTimeGood * 1000 && "good") || ""}" data-tooltip="${t("play.stats.levelTime")}">
-        ${Math.ceil(gameState.levelTime / 1000)}s 
-        </span><span> / </span>  
-        <span class="${(gameState.levelMisses < missesBest && "great") || (gameState.levelMisses < missesGood && "good") || ""}" data-tooltip="${t("play.stats.levelMisses")}">
-        ${gameState.levelMisses} M
-        </span><span> / </span>
-        `
-          : "") +
-        `<span class="score" data-tooltip="${t("play.score_tooltip")}">${
-          "$" + gameState.score
-        }</span>`;
-
-    scoreDisplay.classList[
-      gameState.startParams.computer_controlled ? "add" : "remove"
-    ]("computer_controlled");
-    scoreDisplay.classList[
-      gameState.lastScoreIncrease > gameState.levelTime - 500 ? "add" : "remove"
-    ]("active");
+    updateScoreDisplay(gameState);
   }
   // Clear
   if (
@@ -1330,7 +1286,8 @@ let wakeLockRunning = false,
 
 function askForWakeLock(gameState: GameState) {
   if (
-    gameState.startParams.computer_controlled &&
+    gameState === mainGameState &&
+    isComputerControlled(gameState) &&
     !wakeLockPending &&
     !wakeLockRunning
   ) {
@@ -1348,4 +1305,58 @@ function askForWakeLock(gameState: GameState) {
       console.warn("askForWakeLock error", e);
     }
   }
+}
+
+function updateMenuDisplay(gameState: GameState) {
+  if (gameState.currentLevel || gameState.levelTime) {
+    menuLabel.innerText = t("play.current_lvl", {
+      level: gameState.currentLevel + 1,
+      max: renderMaxLevel(gameState),
+    });
+  } else {
+    menuLabel.innerText = t("play.menu_label");
+  }
+}
+function updateScoreDisplay(gameState: GameState) {
+  const catchRate = gameState.levelSpawnedCoins
+    ? gameState.levelCaughtCoins / (gameState.levelSpawnedCoins || 1)
+    : 1;
+  if (gameState.startParams.runType === "level_editor_trial") {
+    scoreDisplay.innerHTML = t("editor.leave_preview");
+  } else if (gameState.startParams.runType === "level_preview_run") {
+    scoreDisplay.innerHTML = t("play.close_modale_window_tooltip");
+  } else {
+    scoreDisplay.innerHTML =
+      (isOptionOn("show_fps") || isComputerControlled(gameState)
+        ? ` 
+          <span class="${(Math.abs(lastMeasuredFPS - 60) < 2 && " ") || (Math.abs(lastMeasuredFPS - 60) < 10 && "good") || "bad"}">
+            ${lastMeasuredFPS} FPS
+        </span><span> / </span>
+            `
+        : "") +
+      (isOptionOn("show_stats")
+        ? ` 
+        <span class="${(catchRate > catchRateBest / 100 && "great") || (catchRate > catchRateGood / 100 && "good") || ""}" data-tooltip="${t("play.stats.coins_catch_rate")}">
+            ${Math.floor(catchRate * 100)}%
+        </span><span> / </span>
+        <span class="${(gameState.levelTime < levelTimeBest * 1000 && "great") || (gameState.levelTime < levelTimeGood * 1000 && "good") || ""}" data-tooltip="${t("play.stats.levelTime")}">
+        ${Math.ceil(gameState.levelTime / 1000)}s 
+        </span><span> / </span>  
+        <span class="${(gameState.levelMisses < missesBest && "great") || (gameState.levelMisses < missesGood && "good") || ""}" data-tooltip="${t("play.stats.levelMisses")}">
+        ${gameState.levelMisses} M
+        </span><span> / </span>
+        `
+        : "") +
+      `<span class="score" data-tooltip="${t("play.score_tooltip")}">${
+        "$" + gameState.score
+      }</span>`;
+  }
+
+  scoreDisplay.classList[isComputerControlled(gameState) ? "add" : "remove"](
+    "computer_controlled",
+  );
+
+  scoreDisplay.classList[
+    gameState.lastScoreIncrease > gameState.levelTime - 500 ? "add" : "remove"
+  ]("active");
 }

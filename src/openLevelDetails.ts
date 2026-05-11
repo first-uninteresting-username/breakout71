@@ -1,4 +1,4 @@
-import { Level, RunParams } from "./types";
+import { GameState, Level, RunParams } from "./types";
 import { getSettingValue, setSettingValue } from "./settings";
 import { reasonLevelIsLocked } from "./get_level_unlock_condition";
 import { allLevels } from "./loadGameData";
@@ -88,4 +88,9 @@ export async function openLevelDetails(level: Level) {
     return openLevelDetails(previous);
   }
   await openLevelDetails(level);
+}
+
+export function closeLevelPreview(gameState: GameState) {
+  openLevelDetails(gameState.level);
+  restart({ runType: "normal" });
 }

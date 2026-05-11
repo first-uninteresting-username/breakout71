@@ -62,7 +62,7 @@ import {
   closeModal,
 } from "./asyncAlert";
 import { getPixelRatio, isOptionOn, options, toggleOption } from "./options";
-import { clamp } from "./pure_functions";
+import { clamp, isComputerControlled } from "./pure_functions";
 import { helpMenuEntry } from "./help";
 import { creativeMode, openCreativeModePerksPicker } from "./creative";
 import { hideAnyTooltip, setupTooltips } from "./tooltip";
@@ -103,7 +103,7 @@ export function pause(playerAskedForPause: boolean) {
   if (mainGameState.pauseTimeout && playerAskedForPause) {
     return;
   }
-  if (mainGameState.startParams.computer_controlled) {
+  if (isComputerControlled(mainGameState)) {
     play();
     return;
   }
@@ -925,7 +925,7 @@ document.addEventListener("keydown", async (e) => {
   e.preventDefault();
 });
 
-let pageLoad = new Date();
+let pageLoad = Date.now();
 document.addEventListener("keyup", async (e) => {
   const focused = document.querySelector("button:focus");
   if (e.key in pressed) {
@@ -951,11 +951,9 @@ document.addEventListener("keyup", async (e) => {
   } else if (
     e.key.toLowerCase() === "r" &&
     !alertsOpen &&
-    pageLoad < Date.now() - 500
+    pageLoad < Date.now() - 500 &&
+    mainGameState.startParams.runType === "normal"
   ) {
-    if (mainGameState.startParams.computer_controlled) {
-      return startComputerControlledGame(mainGameState.startParams.stress);
-    }
     // When doing ctrl + R in dev to refresh, i don't want to instantly restart a run
     if (await confirmRestart(mainGameState)) {
       restart({
@@ -969,10 +967,10 @@ document.addEventListener("keyup", async (e) => {
   e.preventDefault();
 });
 
-export const mainGameState = newGameState({});
+export const mainGameState = newGameState({ runType: "normal" });
 window.mainGameState = mainGameState;
 
-export function restart(params: RunParams) {
+export async function restart(params: RunParams) {
   setSettingValue("autosave", null);
   getWorstFPSAndReset();
   Object.assign(mainGameState, newGameState(params));
@@ -980,9 +978,9 @@ export function restart(params: RunParams) {
   fitSize(mainGameState);
 
   pauseRecording();
-  setLevel(mainGameState, 0);
-  if (params?.computer_controlled) {
-    play();
+  await setLevel(mainGameState, 0);
+  if (isComputerControlled(mainGameState)) {
+    await play();
   }
 }
 if (window.location.search.match(/autoplay|stress/)) {
@@ -1032,9 +1030,7 @@ export function startComputerControlledGame(stress: boolean = false) {
   restart({
     runType,
     level: sample(allLevels.filter((l) => l.color === "#000000")),
-    computer_controlled: true,
     perks,
-    stress,
   });
 }
 

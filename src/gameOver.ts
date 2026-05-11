@@ -21,7 +21,7 @@ import {
 import { stopRecording } from "./recording";
 import { asyncAlert } from "./asyncAlert";
 import { closeEditorTrialRun, editRawLevel } from "./levelEditor";
-import { openCreativeModePerksPicker } from "./creative";
+import { closeCreativeRun, openCreativeModePerksPicker } from "./creative";
 import {
   isLevelLocked,
   reasonLevelIsLocked,
@@ -31,7 +31,7 @@ import {
   settingsChangeRecommendations,
 } from "./openUpgradesPicker";
 import { getIcon } from "./levelIcon";
-import { openLevelDetails } from "./openLevelDetails";
+import { closeLevelPreview, openLevelDetails } from "./openLevelDetails";
 
 export function addToTotalPlayTime(ms: number) {
   setSettingValue(
@@ -40,21 +40,28 @@ export function addToTotalPlayTime(ms: number) {
   );
 }
 
-export async function gameOver(title: string, intro: string) {
-  if (["stress", "autoplay"].includes(mainGameState.startParams.runType)) {
-    startComputerControlledGame(mainGameState.startParams.runType === "stress");
+export async function gameOver(
+  gameState: GameState,
+  title: string,
+  intro: string,
+) {
+  if (gameState.startParams.runType === "animated_perk_preview") {
+    gameState.isGameOver = true;
     return;
+  }
+  if (["stress", "autoplay"].includes(gameState.startParams.runType)) {
+    startComputerControlledGame(gameState.startParams.runType === "stress");
+    return;
+  }
+  if (gameState.startParams.runType === "creative") {
+    return closeCreativeRun(gameState);
+  }
+  if (gameState.startParams.runType === "level_preview_run") {
+    return closeLevelPreview(gameState);
   }
 
-  if (mainGameState.startParams.isCreativeRun) {
-    openCreativeModePerksPicker();
-    restart({ runType: "normal" });
-    return;
-  }
-  if (mainGameState.startParams.runType === "level_preview_run") {
-    openLevelDetails(mainGameState.level);
-    restart({ runType: "normal" });
-    return;
+  if (gameState.startParams.runType === "level_editor_trial") {
+    return closeEditorTrialRun();
   }
 
   if (mainGameState.startParams.runType !== "normal") return;
@@ -68,11 +75,6 @@ export async function gameOver(title: string, intro: string) {
   setSettingValue("autosave", null);
   stopRecording();
   addToTotalPlayTime(mainGameState.runStatistics.runTime);
-
-  if (typeof mainGameState.startParams.isEditorTrialRun === "number") {
-    closeEditorTrialRun();
-    return;
-  }
 
   // unlocks
   const endTs = getTotalScore();

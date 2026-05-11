@@ -157,3 +157,12 @@ export function base_combo_from_stronger_foundation(perkLevel: number) {
   }
   return base;
 }
+
+const computerControlledRunTypes = new Set([
+  "animated_perk_preview",
+  "stress",
+  "autoplay",
+]);
+export function isComputerControlled(gameState: GameState) {
+  return computerControlledRunTypes.has(gameState.startParams.runType);
+}

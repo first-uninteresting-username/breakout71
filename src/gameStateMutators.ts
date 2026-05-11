@@ -44,15 +44,7 @@ import {
 } from "./settings";
 import { background } from "./render";
 import { gameOver } from "./gameOver";
-import {
-  brickIndex,
-  fitSize,
-  hasBrick,
-  hitsSomething,
-  mainGameState,
-  pause,
-  startComputerControlledGame,
-} from "./game";
+import { brickIndex, fitSize, hasBrick, hitsSomething, pause } from "./game";
 import { stopRecording } from "./recording";
 import { getPixelRatio, isOptionOn } from "./options";
 import {
@@ -61,20 +53,15 @@ import {
   clamp,
   coinsBoostedCombo,
   comboKeepingRate,
+  isComputerControlled,
 } from "./pure_functions";
 import { addToTotalScore } from "./addToTotalScore";
 import { openUpgradesPicker } from "./openUpgradesPicker";
 import { computerControl } from "./computerControl";
 
 export function setMousePos(gameState: GameState, x: number) {
-  if (
-    ["stress", "autoplay", "animated_perk_preview"].includes(
-      gameState.startParams.runType,
-    )
-  )
-    return;
+  if (isComputerControlled(gameState)) return;
   gameState.puckPosition = Math.round(x);
-
   // Sets the puck position, and updates the ball position if they are supposed to follow it
   gameState.needsRender = true;
 }
@@ -260,6 +247,7 @@ export function resetCombo(
       justLostALife(gameState, x, y);
     } else {
       gameOver(
+        gameState,
         t("gameOver.double_or_nothing.title"),
         t("gameOver.double_or_nothing.summary", {
           perk: t("upgrades.double_or_nothing.name"),
@@ -1115,12 +1103,7 @@ export function gameStateTick(
     return;
   }
   // Ai movement of puck
-  if (
-    ["animated_perk_preview", "stress", "autoplay"].includes(
-      gameState.startParams.runType,
-    )
-  )
-    computerControl(gameState);
+  if (isComputerControlled(gameState)) computerControl(gameState);
 
   gameState.runStatistics.max_combo = Math.max(
     gameState.runStatistics.max_combo,
@@ -1215,14 +1198,13 @@ export function gameStateTick(
       !hasPendingBricks &&
       !liveCount(gameState.coins))
   ) {
-    if (gameState.startParams.computer_controlled) {
-      startComputerControlledGame(gameState.startParams.stress);
-    } else if (gameState.startParams.runType === "animated_perk_preview") {
-      gameState.isGameOver = true;
-    } else if (gameState.currentLevel + 1 < max_levels(gameState)) {
+    if (
+      !isComputerControlled(gameState) &&
+      gameState.currentLevel + 1 < max_levels(gameState)
+    ) {
       setLevel(gameState, gameState.currentLevel + 1);
     } else {
-      gameOver(t("gameOver.win.title"), t("gameOver.win.summary"));
+      gameOver(gameState, t("gameOver.win.title"), t("gameOver.win.summary"));
     }
   } else {
     const coinRadius = Math.round(gameState.coinSize / 2);
@@ -2119,13 +2101,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
       gameState.running &&
       !gameState.winAt
     ) {
-      if (gameState.startParams.computer_controlled) {
-        startComputerControlledGame(gameState.startParams.stress);
-      } else if (gameState.startParams.runType === "animated_perk_preview") {
-        gameState.isGameOver = true;
-      } else {
-        gameOver(t("gameOver.lost.title"), t("gameOver.lost.summary"));
-      }
+      gameOver(gameState, t("gameOver.lost.title"), t("gameOver.lost.summary"));
     }
   }
   const radius = gameState.ballSize / 2;

@@ -302,10 +302,7 @@ export type RunParams = {
   levelToAvoid?: string;
   perkToAvoid?: PerkId;
   perks?: Partial<PerksMap>;
-  computer_controlled?: boolean;
-  isEditorTrialRun?: number;
-  isCreativeRun?: boolean;
-  stress?: boolean;
+  levelEditorLevelIndex?: number;
   runType: RunType;
 };
 export type OptionDef = {

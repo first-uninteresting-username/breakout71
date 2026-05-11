@@ -4,6 +4,7 @@ import { hashCode } from "./getLevelBackground";
 import { clamp } from "./pure_functions";
 import { startComputerControlledGame } from "./game";
 import { forEachLiveOne } from "./gameStateMutators";
+import { gameOver } from "./gameOver";
 
 export function computerControl(gameState: GameState) {
   let speed = 1;
@@ -84,10 +85,11 @@ export function computerControl(gameState: GameState) {
 
   gameState.puckPosition +=
     clamp((targetX - gameState.puckPosition) / 5, -10, 10) * speed;
-  if (
-    gameState.levelTime > 30000 &&
-    gameState.startParams.computer_controlled
-  ) {
-    startComputerControlledGame(gameState.startParams.stress);
+  if (gameState.levelTime > 30000) {
+    gameOver(
+      gameState,
+      "30s_automatic_preview_reset",
+      "this_message_should_never_be_displayed",
+    );
   }
 }

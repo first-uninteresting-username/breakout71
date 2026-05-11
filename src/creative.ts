@@ -127,7 +127,6 @@ export async function openCreativeModePerksPicker() {
           runType: "creative",
           perks: creativeModePerks,
           level: selectedLeveOption.value,
-          isCreativeRun: true,
         });
         return;
       }
@@ -145,4 +144,9 @@ export async function openCreativeModePerksPicker() {
       setSettingValue("creativeModePerks", creativeModePerks);
     }
   }
+}
+
+export function closeCreativeRun(gameState: GameState) {
+  openCreativeModePerksPicker();
+  restart({ runType: "normal" });
 }
