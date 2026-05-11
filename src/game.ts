@@ -82,6 +82,7 @@ import { getCheckboxIcon, getIcon } from "./levelIcon";
 import { openLevelDetails } from "./openLevelDetails";
 import { menuClick } from "./menuSound";
 import { toast } from "./toast";
+import { addGameToHistory } from "./gameOver";
 
 export async function play() {
   if (await applyFullScreenChoice()) return;
@@ -973,6 +974,9 @@ window.mainGameState = mainGameState;
 export async function restart(params: RunParams) {
   setSettingValue("autosave", null);
   getWorstFPSAndReset();
+  if (mainGameState.currentLevel > 0 && !mainGameState.isGameOver) {
+    addGameToHistory(mainGameState);
+  }
   Object.assign(mainGameState, newGameState(params));
   // Recompute brick size according to level
   fitSize(mainGameState);

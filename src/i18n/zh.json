@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "射击未命中",
     "play.stats.levelTime": "关卡时间",
     "play.stats.levelWallBounces": "墙面弹跳",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "解锁下一个关卡：",
     "score_panel.get_upgrades_to_unlock": "得到 {{missingUpgrades}} 和 {{points}} 分数来解锁 {{level}} 关卡",
     "score_panel.score_to_unlock": "得到 {{points}} 分数来解锁 {{level}} 关卡",

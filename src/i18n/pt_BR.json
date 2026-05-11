@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Arremessos perdidos, onde você não acertou nada",
     "play.stats.levelTime": "Tempo no nível",
     "play.stats.levelWallBounces": "Quicadas na parede",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Próximo nível desbloqueia:",
     "score_panel.get_upgrades_to_unlock": "Obtenha {{missingUpgrades}} e marque mais {{points}} pontos para desbloquear o nível \"{{level}}\"",
     "score_panel.score_to_unlock": "Pontue mais {{points}} pontos para desbloquear o nível \"{{level}}\"",

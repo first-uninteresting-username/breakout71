@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "الضربات الضائعة، حيث لم تصب أي شيء",
     "play.stats.levelTime": "وقت المستوى",
     "play.stats.levelWallBounces": "ارتدادات الحائط",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "فتح المستوى التالي:",
     "score_panel.get_upgrades_to_unlock": "احصل على {{missingUpgrades}} واحصل على {{points}} نقطة إضافية لفتح المستوى \"{{level}}\"",
     "score_panel.score_to_unlock": "احصل على {{points}} نقطة إضافية لفتح المستوى \"{{level}}\"",

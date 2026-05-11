@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Fallaste tiros, o no golpeaste ningún ladrillo",
     "play.stats.levelTime": "Duración del nivel",
     "play.stats.levelWallBounces": "Rebota en las paredes",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Siguiente nivel desbloqueado:",
     "score_panel.get_upgrades_to_unlock": "Consigue {{missingUpgrades}} y coge {{points}} monedas extra para desbloquear el nivel \"{{level}}\".",
     "score_panel.score_to_unlock": "Coge {{points}} monedas más para desbloquear el nivel \"{{level}}\".",

@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Minuté rány, kdy jste nic netrefili",
     "play.stats.levelTime": "Čas úrovně",
     "play.stats.levelWallBounces": "Odrazy od stěn",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Další úroveň k odemknutí:",
     "score_panel.get_upgrades_to_unlock": "Získejte {{missingUpgrades}} a dalších {{points}} bodů pro odemknutí úrovně „{{level}}“",
     "score_panel.score_to_unlock": "Získejte {{points}} dalších bodů pro odemknutí úrovně „{{level}}“",

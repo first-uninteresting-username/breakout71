@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Hiçbir şeye isabet ettiremediğiniz şutlar",
     "play.stats.levelTime": "Seviye zamanı",
     "play.stats.levelWallBounces": "Duvar sıçramaları",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Sonraki seviyenin kilidini aç:",
     "score_panel.get_upgrades_to_unlock": "{{missingUpgrades}} alın ve \"{{level}}\" seviyesinin kilidini açmak için {{points}} puan daha kazanın",
     "score_panel.score_to_unlock": "\"{{level}}\" seviyesini açmak için {{points}} puan daha kazanın",

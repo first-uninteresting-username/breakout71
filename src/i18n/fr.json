@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Tirs ratés, ou vous n'avez touché aucune brique",
     "play.stats.levelTime": "Durée du niveau",
     "play.stats.levelWallBounces": "Rebonds sur les murs",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Prochain niveau débloqué :",
     "score_panel.get_upgrades_to_unlock": "Obtenez {{missingUpgrades}} et attrapez {{points}} pièces supplémentaires pour débloquer le niveau « {{level}} »",
     "score_panel.score_to_unlock": "Attrapez {{points}} pièces supplémentaires pour débloquer le niveau « {{level}} »",

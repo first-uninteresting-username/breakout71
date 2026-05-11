@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Verfehlte Schüsse, bei denen du nichts getroffen hast",
     "play.stats.levelTime": "Zeit pro Level",
     "play.stats.levelWallBounces": "Wandaufpralle",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Nächstes Level freischalten:",
     "score_panel.get_upgrades_to_unlock": "Hole {{missingUpgrades}} und erziele {{points}} mehr Punkte, um Level \"{{level}}\" freizuschalten.",
     "score_panel.score_to_unlock": "Erziele {{points}} mehr Punkte, um Level \"{{level}}\" freizuschalten.",

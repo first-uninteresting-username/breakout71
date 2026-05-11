@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Chýbajúce zábery, kde ste hit nič",
     "play.stats.levelTime": "Čas úrovne",
     "play.stats.levelWallBounces": "Stena odrazí",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Odomknite ďalšiu úroveň:",
     "score_panel.get_upgrades_to_unlock": "Získať {{missingUpgrades}} a skóre {{points}} viac bodov na odomknutie úrovne \"{{level}}\"",
     "score_panel.score_to_unlock": "Skóre {{points}} viac bodov na odomknutie úrovne \"{{level}}\"",

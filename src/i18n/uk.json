@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Змішані постріли, де ви вдарили нічого",
     "play.stats.levelTime": "Час рівня",
     "play.stats.levelWallBounces": "Настінні бунси",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Наступний рівень розблокування :",
     "score_panel.get_upgrades_to_unlock": "Отримати {{missingUpgrades}} і записати {{points}} більше балів, щоб розблокувати рівень \"{{level}}\"",
     "score_panel.score_to_unlock": "Оцінка {{points}} більше точок для розблокування \"{{level}}\"",

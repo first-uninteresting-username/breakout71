@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Zaginione strzały, w których nie trafiły nic",
     "play.stats.levelTime": "Czas trwania",
     "play.stats.levelWallBounces": "Wall bounce",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Następny poziom unlock",
     "score_panel.get_upgrades_to_unlock": "Get (missingUpgrades) and score {{points}} więcej punktów do odblokowania poziomu \"{{level}}\"",
     "score_panel.score_to_unlock": "Score {{points}} zwraca więcej punktów do odblokowania poziomu \"{{level}}\"",

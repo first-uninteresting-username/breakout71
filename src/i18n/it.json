@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Colpi a vuoto, quando non hai colpito nulla",
     "play.stats.levelTime": "Durata livello",
     "play.stats.levelWallBounces": "Rimbalzi contro il muro",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Il prossimo livello si sblocca :",
     "score_panel.get_upgrades_to_unlock": "Ottieni {{missingUpgrades}} e segna {{points}} più punti per sbloccare il livello \"{{level}}\"",
     "score_panel.score_to_unlock": "Ottieni altri {{points}} punti per sbloccare il livello \"{{level}}\"",

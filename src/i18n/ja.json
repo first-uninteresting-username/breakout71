@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "ミス（何も当たらなかったショット）",
     "play.stats.levelTime": "レベルタイム",
     "play.stats.levelWallBounces": "壁バウンド",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "次に解禁されるレベル:",
     "score_panel.get_upgrades_to_unlock": "『{{missingUpgrades}}』を適用して、スコアをあと{{points}}点獲得すると、レベル『{{level}}』が解禁されます",
     "score_panel.score_to_unlock": "スコアをあと{{points}}点獲得するとレベル『{{level}}』が解禁されます",

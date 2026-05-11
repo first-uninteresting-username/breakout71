@@ -10,7 +10,7 @@ export function runHistoryViewerMenuEntry() {
   const history = getHistory();
 
   return [
-    history.length > 10 && {
+    history.length && {
       icon: getIcon("icon:history"),
       text: t("history.title"),
       help: t("history.help", { count: history.length }),
@@ -41,15 +41,17 @@ async function viewHistory() {
       label: t("history.columns.score"),
       field: (r) => r.score,
     },
-    ...upgrades.map((u) => ({
-      label: getIcon("icon:" + u.id),
-      tooltip: u.name,
-      field: (r) => r.perks?.[u.id] || 0,
-      render(v) {
-        if (!v) return "-";
-        return v;
-      },
-    })),
+    ...upgrades
+      .filter((u) => history.find((r) => r.perks[u.id]))
+      .map((u) => ({
+        label: getIcon("icon:" + u.id),
+        tooltip: u.name,
+        field: (r) => r.perks?.[u.id] || 0,
+        render(v) {
+          if (!v) return "-";
+          return v;
+        },
+      })),
   ];
   while (true) {
     const hasCurrentVersion = history.find((r) => r.appVersion === appVersion);

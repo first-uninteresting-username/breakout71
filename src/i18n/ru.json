@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "Пропущенные выстрелы, когда вы не попали ни в кого",
     "play.stats.levelTime": "Время уровня",
     "play.stats.levelWallBounces": "Отскоки от стены",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "Разблокировка следующего уровня:",
     "score_panel.get_upgrades_to_unlock": "Наберите {{missingUpgrades}} и наберите {{points}} больше очков, чтобы разблокировать уровень \"{{level}}\"",
     "score_panel.score_to_unlock": "Наберите {{points}} больше очков, чтобы разблокировать уровень \"{{level}}\"",

@@ -1597,5 +1597,25 @@
     "required": ["ghost_coins", "pierce_right", "transparency"],
     "forbidden": ["left_is_lava", "pierce_color", "sticky_coins"],
     "minScore": 30600
+  },
+  "Ärzte ohne Grenzen": {
+    "required": ["skip_last", "asceticism", "soft_reset"],
+    "forbidden": ["soft_touch", "ghost_coins", "passive_income"],
+    "minScore": 30700
+  },
+  "Bellingcat": {
+    "required": ["rainbow", "happy_family", "respawn"],
+    "forbidden": ["side_flip", "side_kick", "skip_last"],
+    "minScore": 30800
+  },
+  "Arch Linux": {
+    "required": ["thomas", "implosions", "side_kick"],
+    "forbidden": ["side_flip", "palette", "shocks"],
+    "minScore": 30900
+  },
+  "Ribbon of Saint George": {
+    "required": ["side_kick", "side_flip", "concave_puck"],
+    "forbidden": ["soft_touch", "soft_reset", "three_cushion"],
+    "minScore": 31000
   }
 }

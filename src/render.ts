@@ -1308,7 +1308,10 @@ function askForWakeLock(gameState: GameState) {
 }
 
 function updateMenuDisplay(gameState: GameState) {
-  if (gameState.currentLevel || gameState.levelTime) {
+  if (
+    gameState.startParams.runType === "normal" &&
+    (gameState.currentLevel || gameState.levelTime)
+  ) {
     menuLabel.innerText = t("play.current_lvl", {
       level: gameState.currentLevel + 1,
       max: renderMaxLevel(gameState),
@@ -1347,9 +1350,9 @@ function updateScoreDisplay(gameState: GameState) {
         </span><span> / </span>
         `
         : "") +
-      `<span class="score" data-tooltip="${t("play.score_tooltip")}">${
-        "$" + gameState.score
-      }</span>`;
+      `<span class="score" data-tooltip="${
+        gameState.startParams.runType == "normal" ? t("play.score_tooltip") : ""
+      }">${"$" + gameState.score}</span>`;
   }
 
   scoreDisplay.classList[isComputerControlled(gameState) ? "add" : "remove"](

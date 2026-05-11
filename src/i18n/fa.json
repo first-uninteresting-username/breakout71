@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "شوت‌های خطا، جایی که چیزی نزدید",
     "play.stats.levelTime": "زمان سطح",
     "play.stats.levelWallBounces": "پرش‌های دیواری",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "باز کردن سطح بعدی:",
     "score_panel.get_upgrades_to_unlock": "{{missingUpgrades}} قدرت بگیرید و {{points}} امتیاز دیگر برای باز کردن سطح «{{level}}» کسب کنید",
     "score_panel.score_to_unlock": "{{points}} امتیاز دیگر برای باز کردن سطح «{{level}}» کسب کنید",

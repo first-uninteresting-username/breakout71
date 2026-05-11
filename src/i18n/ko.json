@@ -120,6 +120,7 @@
     "play.stats.levelMisses": "아무것도 맞히지 못한 미스 샷",
     "play.stats.levelTime": "레벨 시간",
     "play.stats.levelWallBounces": "벽면 바운스",
+    "play.trying_level": "",
     "score_panel.close_to_unlock": "다음 레벨 잠금 해제 :",
     "score_panel.get_upgrades_to_unlock": "{{missingUpgrades}} 을 획득하고 {{points}} 개의 추가 코인을 획득하여 레벨 \"{{level}}\"을 잠금 해제하세요.",
     "score_panel.score_to_unlock": "추가 코인 {{points}} 개를 획득하여 레벨 \"{{level}}\"을 잠금 해제하세요.",

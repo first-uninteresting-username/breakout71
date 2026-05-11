@@ -74,7 +74,6 @@ export async function gameOver(
   askForPersistentStorage();
   setSettingValue("autosave", null);
   stopRecording();
-  addToTotalPlayTime(mainGameState.runStatistics.runTime);
 
   // unlocks
   const endTs = getTotalScore();
@@ -175,6 +174,9 @@ export function addGameToHistory(gameState: GameState) {
     // already saved
     return;
   }
+
+  addToTotalPlayTime(mainGameState.runStatistics.runTime);
+
   const perks: Partial<GameState["perks"]> = { ...gameState.perks };
   for (let id in perks) {
     if (!perks[id]) {
