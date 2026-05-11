@@ -777,14 +777,14 @@ async function openSettingsMenu() {
     text: t("settings.autoplay"),
     help: t("settings.autoplay_help"),
     async value() {
-      startComputerControlledGame(false);
+      startComputerControlledGame("autoplay");
     },
   });
   actions.push({
     text: t("settings.stress_test"),
     help: t("settings.stress_test_help"),
     async value() {
-      startComputerControlledGame(true);
+      startComputerControlledGame("stress");
     },
   });
 
@@ -984,7 +984,9 @@ export async function restart(params: RunParams) {
   }
 }
 if (window.location.search.match(/autoplay|stress/)) {
-  startComputerControlledGame(window.location.search.includes("stress"));
+  startComputerControlledGame(
+    window.location.search.includes("stress") ? "stress" : "autoplay",
+  );
 } else {
   let saved = getSettingValue<GameState | null>("autosave", null);
   if (
@@ -1004,10 +1006,9 @@ if (window.location.search.match(/autoplay|stress/)) {
   }
 }
 
-export function startComputerControlledGame(stress: boolean = false) {
-  const runType: RunType = stress ? "stress" : "autoplay";
+export function startComputerControlledGame(runType: RunType) {
   const perks: Partial<PerksMap> = { base_combo: 20, pierce: 3 };
-  if (stress) {
+  if (runType === "stress") {
     Object.assign(perks, {
       base_combo: 150,
       pierce: 20,

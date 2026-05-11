@@ -50,7 +50,7 @@ export async function gameOver(
     return;
   }
   if (["stress", "autoplay"].includes(gameState.startParams.runType)) {
-    startComputerControlledGame(gameState.startParams.runType === "stress");
+    startComputerControlledGame(gameState.startParams.runType);
     return;
   }
   if (gameState.startParams.runType === "creative") {
