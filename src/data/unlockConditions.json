@@ -1613,9 +1613,60 @@
     "forbidden": ["side_flip", "palette", "shocks"],
     "minScore": 30900
   },
-  "Ribbon of Saint George": {
+
+  "Yellow lines": {
     "required": ["side_kick", "side_flip", "concave_puck"],
     "forbidden": ["soft_touch", "soft_reset", "three_cushion"],
     "minScore": 31000
+  },
+  "7 jours sur Terre": {
+    "required": ["streak_shots", "etherealcoins", "concave_puck"],
+    "forbidden": ["side_kick", "side_flip", "puck_repulse_ball"],
+    "minScore": 31100
+  },
+  "Arkanoid Archive": {
+    "required": ["pierce_top", "base_combo", "fountain_toss"],
+    "forbidden": ["smaller_puck", "thomas", "implosions"],
+    "minScore": 31200
+  },
+  "Wind Chime": {
+    "required": ["ball_attracts_coins", "smaller_puck", "compound_interest"],
+    "forbidden": ["trampoline", "sticky_coins", "pierce_color"],
+    "minScore": 31300
+  },
+  "Fedora Linux": {
+    "required": ["pierce_color", "sticky_coins", "left_is_lava"],
+    "forbidden": ["transparency", "pierce_right", "wrap_right"],
+    "minScore": 31400
+  },
+  "Tauri": {
+    "required": ["vibrant_neighborhood", "corner_shot", "right_is_lava"],
+    "forbidden": ["extra_life", "pierce_above_paddle", "clairvoyant"],
+    "minScore": 31500
+  },
+  "Android": {
+    "required": ["clairvoyant", "flyswatter", "corner_shot"],
+    "forbidden": ["steering", "happy_family", "picky_eater"],
+    "minScore": 31600
+  },
+  "Big G": {
+    "required": ["hot_start", "thomas", "asceticism"],
+    "forbidden": ["picky_eater", "shocks", "sapper"],
+    "minScore": 31700
+  },
+  "Discourse": {
+    "required": ["ghost_coins", "metamorphosis", "picky_eater"],
+    "forbidden": ["trampoline", "wrap_left", "hot_start"],
+    "minScore": 31800
+  },
+  "Libera Chat": {
+    "required": ["superhot", "wrap_left", "respawn"],
+    "forbidden": ["rainbow", "ghost_coins", "implosions"],
+    "minScore": 31900
+  },
+  "IRC": {
+    "required": ["wrap_left", "soft_reset", "soft_touch"],
+    "forbidden": ["sturdy_bricks", "asceticism", "trickledown"],
+    "minScore": 32000
   }
 }

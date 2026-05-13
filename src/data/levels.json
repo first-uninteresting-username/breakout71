@@ -2592,17 +2592,83 @@
     "credit": "Bellingcat is an independent investigative collective of researchers, investigators and citizen journalists brought together by a passion for open source research: https://www.bellingcat.com/  - Wombatmithut "
   },
   {
-    "color": "#000000",
+    "name": "Arch Linux",
     "size": 21,
     "bricks": "__________t____________________t___________________ttt__________________ttt__________________ttt__________________tttt_________________tttt_______________tt_tttt______________tt_tttt_____________ttttttttt____________ttttttttt___________ttttttttttt__________ttttt_ttttt_________ttttt___ttttt________tttt_____tttt_______ttttt_____ttt_t______ttttt_____ttttt_____tttttt_____tttttt___tttt___________tttt__tt_______________tt_t___________________t",
-    "name": "Arch Linux",
     "credit": "https://archlinux.org/ a lightweight and flexible Linux distribution that tries to Keep It Simple - Topenvy"
   },
   {
-    "color": "#115988",
-    "size": 9,
-    "bricks": "__________________gggggggggOOOOOOOOOgggggggggOOOOOOOOOggggggggg__________________",
-    "name": "Ribbon of Saint George",
-    "credit": "https://en.wikipedia.org/wiki/Ribbon_of_Saint_George - Russian military symbol - by Greg1415"
+    "name": "Yellow lines",
+    "size": 8,
+    "bricks": "y_y_y__yy_y__y_yy__y_y_y_y_y_y_y_y_y_y_yy__y_y_yy_y__y_yy_y_y__y",
+    "credit": ""
+  },
+  {
+    "name": "7 jours sur Terre",
+    "size": 13,
+    "bricks": "_______________WWWWWWWWWW___W________W__WWWWWWWW__W_WW__WWWW__WW_W__WWWW__WW__WW__WW__W____WWWWW__WWWW___WWW__WW__WW___W__WW__WWW___WWW_W___W____________________________",
+    "credit": "https://www.youtube.com/c/7jourssurTerre - A francophone youtube channel about geopolitics"
+  },
+  {
+    "name": "Arkanoid Archive",
+    "size": 11,
+    "bricks": "_______________________OO_____tbt_OBOO___btb__tOOO__tbt__t_OOO_____Brr_OO____BrrrttBO___rrrB__OO____rB___________________",
+    "credit": "https://www.youtube.com/@ArkanoidArchive - Gameplay videos of 2200+ games in the genre"
+  },
+  {
+    "name": "Wind Chime",
+    "size": 12,
+    "bricks": "_____W___________W___________W_________OOOOO_______W_W_W_______l_l_l_______l_l_l_______l_l_l_______lOOOl_______l_l_l_______l_l___________l______",
+    "credit": "They just sounds so nice"
+  },
+  {
+    "name": "Fedora Linux",
+    "size": 13,
+    "bricks": "_______________bbbbbbbbb___bbbbbbWWWbb__bbbbbWbbbtb__bbbbbWbbbtb__bbbbbWbbbtb__bbtWWWWWtbb__btbbbWbbbbb__btbbbWbbbbb__btbbbWbbbbb__bbWWWbbbbbb__bbbbbbbbbb_______________",
+    "credit": "fedoraproject.org - by Jade"
+  },
+  {
+    "name": "Tauri",
+    "size": 8,
+    "bricks": "___yyy____y___y_____y_y___a___y__a___y___a_a_____a___a____aaa___",
+    "credit": "https://v2.tauri.app/ - A lean alternative to Electron for desktop web apps"
+  },
+  {
+    "name": "Android",
+    "size": 8,
+    "bricks": "________________C______C_C____C___CCCC___CCCCCC_CCWCCWCCCCCCCCCC",
+    "credit": "Remember when it was open ?"
+  },
+  {
+    "name": "Big G",
+    "size": 8,
+    "bricks": "__tttt___t____t_t_______t_______t___ttttt______t_t____t___tttt__",
+    "svg": null,
+    "color": "",
+    "credit": "Is watching you."
+  },
+  {
+    "name": "Discourse",
+    "size": 8,
+    "bricks": "__WWWW___WrrrrW_WrryyyCWWryyyyCWWryyyyCWWWyyyCCWWWWCCCW_WWWWWW__",
+    "svg": null,
+    "color": "",
+    "credit": "https://www.discourse.org - An open source forum with (too) many features "
+  },
+  {
+    "name": "Libera Chat",
+    "size": 10,
+    "bricks": "___________________________________b______b__b_b____b__b_b__b__b_bp__b_b_p_pppb___pppppp__bppppppppb",
+    "svg": null,
+    "color": "",
+    "credit": "https://libera.chat/ - Modern IRC"
+  },
+  {
+    "name": "IRC",
+    "size": 8,
+    "bricks": "________________p_bbb_ppp_b_b_p_p_bb__p_p_b_b_pp________________",
+    "svg": null,
+    "color": "",
+    "credit": "https://libera.chat/guides/basics - An old solution to chat with friends"
   }
 ]
