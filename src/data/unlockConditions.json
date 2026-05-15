@@ -1668,5 +1668,110 @@
     "required": ["wrap_left", "soft_reset", "soft_touch"],
     "forbidden": ["sturdy_bricks", "asceticism", "trickledown"],
     "minScore": 32000
+  },
+
+  "R.E.P.O": {
+    "required": ["smaller_puck", "gravity_falls", "paddle_up_combo"],
+    "forbidden": ["steering", "wrap_left", "helium"],
+    "minScore": 32100
+  },
+  "Dexter Morgan": {
+    "required": ["base_combo", "implosions", "sticky_coins"],
+    "forbidden": ["pierce_color", "left_is_lava", "transparency"],
+    "minScore": 32200
+  },
+  "Dr. Gregory House": {
+    "required": ["addiction", "minefield", "double_or_nothing"],
+    "forbidden": ["three_cushion", "ball_attracts_coins", "pierce_right"],
+    "minScore": 32300
+  },
+  "Breakout Bad": {
+    "required": ["sacrifice", "minefield", "etherealcoins"],
+    "forbidden": ["wrap_right", "addiction", "ball_attracts_coins"],
+    "minScore": 32400
+  },
+  "Haumea, the Second Pillar": {
+    "required": ["disco_ball", "happy_family", "passive_income"],
+    "forbidden": ["thomas", "fountain_toss", "sacrifice"],
+    "minScore": 32500
+  },
+  "Charon, Guardian of the Second Pillar": {
+    "required": ["bricks_attract_ball", "flyswatter", "pierce_above_paddle"],
+    "forbidden": ["corner_shot", "steering", "palette"],
+    "minScore": 32600
+  },
+  "Ohkubo's Moon ": {
+    "required": ["ottawa_treaty", "corner_shot", "bigger_explosions"],
+    "forbidden": ["clairvoyant", "asceticism", "pierce_top"],
+    "minScore": 32700
+  },
+  "Ohkubo's Sun": {
+    "required": ["trampoline", "corner_shot", "clairvoyant"],
+    "forbidden": ["forgiving", "right_is_lava", "viscosity"],
+    "minScore": 32800
+  },
+  "Ohkubo's Death God.": {
+    "required": ["unbounded", "golden_goose", "limitless"],
+    "forbidden": ["paddle_up_combo", "bricks_attract_coins", "viscosity"],
+    "minScore": 32900
+  },
+  "Soul Eater \\(0£0)/": {
+    "required": ["asceticism", "unbounded", "limitless"],
+    "forbidden": ["viscosity", "trickledown", "sticky_coins"],
+    "minScore": 33000
+  },
+  "Joker (Five-Two)": {
+    "required": ["trickledown", "steering", "skip_last"],
+    "forbidden": ["pierce_right", "transparency", "left_is_lava"],
+    "minScore": 33100
+  },
+  "Shinmon Benimaru, the God of Destruction of Asakusa.": {
+    "required": ["implosions", "skip_last", "trickledown"],
+    "forbidden": ["right_is_lava", "base_combo", "ottawa_treaty"],
+    "minScore": 33200
+  },
+  "Shinmon Benimaru's NICHIRIN": {
+    "required": ["happy_family", "side_flip", "side_kick"],
+    "forbidden": ["sturdy_bricks", "thomas", "shocks"],
+    "minScore": 33300
+  },
+  "Breakout LXXI": {
+    "required": [
+      "ball_attracts_coins",
+      "ball_repulse_ball",
+      "vibrant_neighborhood"
+    ],
+    "forbidden": ["superhot", "puck_repulse_ball", "gravity_falls"],
+    "minScore": 33400
+  },
+  "Hastati": {
+    "required": ["disco_ball", "soft_touch", "soft_reset"],
+    "forbidden": ["vibrant_neighborhood", "metamorphosis", "extra_life"],
+    "minScore": 33500
+  },
+  "Spartans!": {
+    "required": ["bigger_explosions", "pierce_above_paddle", "three_cushion"],
+    "forbidden": ["bricks_attract_ball", "flyswatter", "respawn"],
+    "minScore": 33600
+  },
+  "Trojan Horse": {
+    "required": ["pierce_top", "golden_goose", "etherealcoins"],
+    "forbidden": ["base_combo", "bricks_attract_ball", "pierce_above_paddle"],
+    "minScore": 33700
+  },
+  "Centurion": {
+    "required": ["shocks", "sapper", "thomas"],
+    "forbidden": ["refill", "pierce", "fountain_toss"],
+    "minScore": 33800
+  },
+  "Numidian cavalry": {
+    "required": ["wrap_right", "corner_shot", "clairvoyant"],
+    "forbidden": ["hot_start", "implosions", "picky_eater"],
+    "minScore": 33900
+  },
+  "Zeus": {
+    "required": ["metamorphosis", "reach", "chill"],
+    "forbidden": ["passive_income", "asceticism", "telekinesis"],
+    "minScore": 34000
   }
 }
