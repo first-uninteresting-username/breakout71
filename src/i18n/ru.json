@@ -30,7 +30,6 @@
     "editor.import": "Импортировать уровень",
     "editor.import_instruction": "Вставьте код уровня, чтобы импортировать его в список уровней.",
     "editor.leave_preview": "",
-    "editor.locked": "Наберите в общей сложности {{min}} очков, чтобы разблокировать",
     "editor.new_level": "Новый уровень",
     "editor.title": "Редактор уровней",
     "gameOver.creative": "Этот забег не будет записываться.",

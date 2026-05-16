@@ -30,7 +30,6 @@
     "editor.import": "Import a level",
     "editor.import_instruction": "Paste a level code to import it in your level list",
     "editor.leave_preview": "Back to editor",
-    "editor.locked": "Reach a total score of {{min}} to unlock",
     "editor.new_level": "New level",
     "editor.title": "Level Editor",
     "gameOver.creative": "This run will not be recorded.",

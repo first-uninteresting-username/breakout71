@@ -19,13 +19,10 @@ import { toast } from "./toast";
 const palette = _palette as Palette;
 
 export function levelEditorMenuEntry() {
-  const min = 10000;
-  const disabled = getTotalScore() < min;
   return {
     icon: getIcon("icon:editor"),
     text: t("editor.title"),
-    disabled,
-    help: disabled ? t("editor.locked", { min }) : t("editor.help"),
+    help: t("editor.help"),
     async value() {
       openLevelEditorLevelsList().then();
     },

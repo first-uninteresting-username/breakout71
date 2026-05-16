@@ -30,7 +30,6 @@
     "editor.import": "导入一个关卡",
     "editor.import_instruction": "粘贴一个关卡代码以导入它到你的关卡列表中",
     "editor.leave_preview": "回到编辑器",
-    "editor.locked": "达到总分 {{min}} 即可解锁",
     "editor.new_level": "新关卡",
     "editor.title": "关卡编辑器",
     "gameOver.creative": "这把游戏不会被录制。",

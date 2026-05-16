@@ -30,7 +30,6 @@
     "editor.import": "Bir seviyeyi içe aktar",
     "editor.import_instruction": "Seviye listenize aktarmak için bir seviye kodunu yapıştırın",
     "editor.leave_preview": "",
-    "editor.locked": "Kilidi açmak için toplam {{min}} puanına ulaşın",
     "editor.new_level": "Yeni seviye",
     "editor.title": "Seviye Editörü",
     "gameOver.creative": "Bu koşu kaydedilmeyecek.",

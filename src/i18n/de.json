@@ -30,7 +30,6 @@
     "editor.import": "Importiere ein Level",
     "editor.import_instruction": "Füge einen Levelcode ein, um ihn in deine Levelliste zu importieren",
     "editor.leave_preview": "",
-    "editor.locked": "Erreiche eine Gesamtpunktzahl von {{min}} zum freizuschalten",
     "editor.new_level": "Neues Level",
     "editor.title": "Level-Editor",
     "gameOver.creative": "Dieser Durchlauf wird nicht gewertet.",

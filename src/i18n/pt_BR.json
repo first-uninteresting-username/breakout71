@@ -30,7 +30,6 @@
     "editor.import": "Importar um nível",
     "editor.import_instruction": "Cole um código de nível para importá-lo na sua lista de níveis",
     "editor.leave_preview": "Voltar para o editor",
-    "editor.locked": "Chegue numa pontuação total de {{min}} para desbloquear",
     "editor.new_level": "Novo nível",
     "editor.title": "Editor de Nível",
     "gameOver.creative": "Esta partida não será salva.",

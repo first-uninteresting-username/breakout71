@@ -30,7 +30,6 @@
     "editor.import": "Імпорт рівня",
     "editor.import_instruction": "Вставте код рівня, щоб імпортувати його до списку рівнів",
     "editor.leave_preview": "",
-    "editor.locked": "Досягніть загального рахунку {{min}} для розблокування",
     "editor.new_level": "Новий рівень",
     "editor.title": "Редактор рівнів",
     "gameOver.creative": "Ця гра не буде записана.",

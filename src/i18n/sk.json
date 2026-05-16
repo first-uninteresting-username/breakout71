@@ -30,7 +30,6 @@
     "editor.import": "Importovať level",
     "editor.import_instruction": "Pre pridanie do vášho zoznamu levelov vložte jeho kód levelu",
     "editor.leave_preview": "",
-    "editor.locked": "Odomknete dosiahnutím celkového skóre {{min}}",
     "editor.new_level": "Nový level",
     "editor.title": "Editor levelov",
     "gameOver.creative": "Tento pokus nebude zaznamenaný.",

@@ -30,7 +30,6 @@
     "editor.import": "匯入一個關卡",
     "editor.import_instruction": "貼上關卡代碼以匯入至你的關卡清單",
     "editor.leave_preview": "",
-    "editor.locked": "總分數達到 {{min}} 時解鎖",
     "editor.new_level": "新關卡",
     "editor.title": "關卡編輯器",
     "gameOver.creative": "此遊玩將不會被記錄。",

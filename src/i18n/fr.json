@@ -30,7 +30,6 @@
     "editor.import": "Importer un niveau",
     "editor.import_instruction": "Collez un code de niveau pour l'importer dans votre liste de niveaux",
     "editor.leave_preview": "Revenir à l'éditeur",
-    "editor.locked": "Atteignez un score total de {{min}} pour débloquer",
     "editor.new_level": "Nouveau niveau",
     "editor.title": "Éditeur de niveau",
     "gameOver.creative": "Cette partie ne sera pas enregistrée.",

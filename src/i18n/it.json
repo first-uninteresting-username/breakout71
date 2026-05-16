@@ -30,7 +30,6 @@
     "editor.import": "Importa un livello",
     "editor.import_instruction": "Incolla un codice di livello per importarlo nella tuo elenco livelli",
     "editor.leave_preview": "",
-    "editor.locked": "Raggiungi un punteggio totale di {{min}} per sbloccare",
     "editor.new_level": "Nuovo livello",
     "editor.title": "Creatore di livelli",
     "gameOver.creative": "Questa partita non verrà registrata.",
