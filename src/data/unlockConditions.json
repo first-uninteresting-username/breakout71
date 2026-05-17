@@ -1773,5 +1773,10 @@
     "required": ["metamorphosis", "reach", "chill"],
     "forbidden": ["passive_income", "asceticism", "telekinesis"],
     "minScore": 34000
+  },
+  "Fish 2": {
+    "required": ["sacrifice", "ottawa_treaty", "round_bricks"],
+    "forbidden": ["minefield", "flyswatter", "concave_puck"],
+    "minScore": 30100
   }
 }

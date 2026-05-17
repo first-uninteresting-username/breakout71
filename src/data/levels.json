@@ -2544,7 +2544,7 @@
     "credit": "\"It's-a me, Mario!\" - Wombatmithut "
   },
   {
-    "name": "Fish",
+    "name": "Fish 2",
     "size": 7,
     "bricks": "OOOaaaaOaaabbaaa_bbba_a__baa_____aa____aaO____aOO",
     "credit": "Look at it swim! - BillM123"
@@ -2670,136 +2670,124 @@
     "credit": "An online co-op horror game with up to 6 players. Locate valuable, fully physics-based objects and handle them with care as you retrieve and extract to satisfy your creator's desires. | https://store.steampowered.com/app/3241660/REPO/ - Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "Ohkubo's Moon ",
     "size": 21,
-    "bricks": "____RRRRRBRRRBRBR_______RBRRRBRRRRRBRBR_____RBRRBRRBRRRRBRBR_____RBRRBRRBRRRRRRRRR____RBRRRRRRRRRROBRRR____RRRRBOBRRBBOeOBRR_____RRBOOeOOOeeeOBR______RBOeOeeeeeeOOBR______OBeOOeeeeeOOeBs______OOeRROOOOORROes______OOOOORRORROOOes______OOOWBWOOsWBWOss______OOeOOOsOsOOeOs________sOeOssOsReOsR________sOeeOReROOOsR________RsOOOOsOOOsRR_________sOOsssssssR_________WRsOOeeeOsRRW______WBWBRsOsRssRRBWBW__WWWBWWBRsOOsRRBWWBWWWWWWWBWWBssRsRBWWBWWWW",
-    "name": "Dexter Morgan",
-    "credit": "Friendly neighborhood Serial Killer. The serial killer killing serial killer. Yes, that is grammatically accurate. A character which really makes you question morality and ethics itself. The face of Dexter Morgan, Michael Carlyle Hall. Level by D.V."
+    "bricks": "_____________________________ee_________________eeeyyyy____________eeeey____y__________eeeey________________eeey________________eeeyy_______y________yeey_______y________yeeeey____ey____e____yeBbBe__eeey_____e___yebBbyeeeey______e___yeBbByeeeyy______e___yyeyyeeeey______eey___yyeeeeeeeW____eeey___yyeWeeyyWWBWeyeey_____yyWWWWWWBWWeyeey_____yyyWWBBBWWeyeyy_______yyyWWWWWeyeyy_________yyyyyyyyyyy____________yyyyyy_____________________________",
+    "credit": "This is the moon from Soul Eater and Fire Force. Awesome stories created by Atsushi Ohkubo. Level by D.V."
+  },
+  {
+    "name": "Ohkubo's Sun",
+    "size": 21,
+    "bricks": "___R______R______R_______R____RO_____R________ROO__ROO__OOR____R____OOO_yyy_OOO____R_RO__OyyyyyyyyyO__OR___ROOyyyyyyyyyyyOOR____ROyyyyyyyyyyyyyOR_____OyBWByyRyyBWByO_______yW_WyyOyyW_Wy______OyyBWByRORyBWByyOO_ROOyyyyyROOORyyyyyORR_RRyyyyyOOyOOyyyyyR______yBWyyOOOyyWBy_______OyWBWWWWWWWBWyO_____OOyyWBBBBBBBWyyOO____OROyyWWWWWWWyyORO___RR__OyyyyyyyyyO__RR_R____OOO_yyy_OOO____R____OOR__OOR__ROO________R_____OR____R_______R______R______R___",
+    "credit": "The Sun from Soul Eater and \"another\" place, both created by Atsushi Ohkubo. Level by D.V."
+  },
+  {
+    "name": "Soul Eater \\(0£0)/",
+    "size": 21,
+    "bricks": "WWWW__________________W__WWWW_______________W_____WWWWW___________W_________WWW________WW___________WW_____W_______________W___W_________________W__W_________________W__W_WW___________WW_W_W___WWWW_____WWWW___WW___WWWWW___WWWWW___WW____WWW__W__WWW____WW___________________WW___W___________W___W_W_W__W_______W__W_W__W_W_W_W__W__W_W_W_W__W__W__W_W_W_W__W__W___W_____W___W_____W_____WW___________WW________WWW_____WWW_____________WWWWW________",
+    "credit": "Logo of a story franchise created by Atsushi Ohkubo. btw, Don't use Crunchyroll, if you want to support Ohkubo, best way is to buy some Soul Eater or Fire Force merchandise, from which Ohkubo gets a higher % of royalties. Level by D.V."
+  },
+  {
+    "name": "Joker (Five-Two)",
+    "size": 21,
+    "bricks": "_____lel_l_l______________eel__lBl____________lBBel__l_____________BWppB_l__l___________lWWpWl__lBl__________ellWll_l_l___________eeeeell____l_________eeeeeel_l_lBl_________eeeleel___l__l_______eeeleeel_l__lBl______eeleeeeel__l_l________eeBleeeell____l______eeeeeeeeeell_l________eeeeeeeeeell_______BOOWWWWWWeeeell____BWWBelWWWeeeeelllB_BWWB__eellleeellBB_lWWB_____eeeellBB_elll________ellBB_lleeell____________leelleeel_____________leelleel",
+    "credit": "A very interesting and mysterious character from Fire Force, a story by Atsushi Ohkubo. Level by D.V."
+  },
+  {
+    "name": "Shinmon Benimaru's NICHIRIN",
+    "size": 21,
+    "bricks": "B_BWW_OBW__BWyWO_WyBWWB_BWWr_BWBWyW_rWyBWW_WB_BOr_BWBWyWOryBWWBB_WB_rOyyyyyyyrOBWWB_WB_WrOryyyyyyrOrWWB_W_WB_rBOryWWWyrBOrB_WyB_WOyrrWWWyWWWrryyOyWWByryWWWyWWOWyWWyyrWByWOryWyWWWrWWWyWWOrB_WyrOWWWWWOrWWWWWWrO___rOrWyWWWr_rWWyWrOrWWBrBOrWWWrO_OrWWWrBOrBWyrrWWOWWO_OWWyOWrrW__ByyWWryWrOrWWWrWyyWWBWyyyOrWWWrWWyOryyWyWWyWyyrOWyWWWyWrOyyBWyyW_BrOryWWyWWrOryW_BWW_BWrBOryWWWyrBOrBW_B_BW__rryyyyyyyrrB_BW_BW__ByWWyyyyyBWyWB_BWW__ByWWB___WB_BWyWB_B",
+    "credit": "Don't tell me there's too many bombs. There's never enough bombs when we're talking about Shinmon Benimaru! (an op character from Fire Force) Level by D.V."
+  },
+  {
+    "name": "Breakout LXXI",
+    "size": 14,
+    "bricks": "______________________________________________________________________llllllllllllll_W__W_W_W_W_W__W___W___W__W__WW_W_W_W_W_W_llllllllllllll________________________________________________________",
+    "credit": "Roman numeral system: https://en.wikipedia.org/wiki/Roman_numerals - Level by Wombatmithut "
+  },
+  {
+    "name": "Hastati",
+    "size": 13,
+    "bricks": "__________________rr__________llll_________lssl_________RllR_____l__RRRRRR_____l_RRRRrrrrr___lsRRRryryr____lRRRrryrr______RRrryrr______RRryryr______llrrrrr______________",
+    "credit": "Roman army: https://en.wikipedia.org/wiki/Roman_army  - Level by Wombatmithut "
+  },
+  {
+    "name": "Spartans!",
+    "size": 19,
+    "bricks": "__________________________RR________________Ryy_______________Ryyyy_____________RyyOBO______________yyOOOO_____________yyOOOyyy____________ylOyRRRy_________RyllyRRBRRy_______RylllyRBRBRy_______ROlllyBRRRBy__l_ssssOssssyRRRysssll___RRlllllyyy____l_____ROlll______________RO__O_______________O___O______________O___O______________RR__RR___________________________",
+    "credit": "Phalanx: https://simple.wikipedia.org/wiki/Phalanx_formation  - Level by Wombatmithut "
+  },
+  {
+    "name": "Trojan Horse",
+    "size": 21,
+    "bricks": "_________________________________________________________g___________________ggg_________________gggg________________ggsRs_______________ggsRRRs_____gggRsssRsssRssgs____gggsRssssRsRsRssRR___ggssRRRRRRRssRsssss_gg_ssRssssRsssg__ssg_gg_sRssssssRsg____g__g__RsRsgggssR________gg__ssR___ssR_________g__ssRR__ssRR____________ssR___ssR____________sgg___sgg____________gg____gg_______________________________________________________________________",
+    "credit": "Whos horse is that?: https://en.wikipedia.org/wiki/Trojan_Horse - Level by Wombatmithut "
+  },
+  {
+    "name": "Centurion",
+    "size": 17,
+    "bricks": "_________________________R______________RRRRR___________RRRlRRR___________lRlRl___________lllllll__________lylllyl__________y_yyy_y_________l_R_l_R_l________l_WRlRW_l_______yl_WWlWW_ly_______ll__l__ll________yl_lll_ly_________y_WlW_y__________l__W__l___________l___l_______________________",
+    "credit": "Centurion: https://en.wikipedia.org/wiki/Centurion - Level by Wombatmithut "
+  },
+  {
+    "name": "Numidian cavalry",
+    "size": 21,
+    "bricks": "________WWWW________________WWRRRW______________WWRsss_______________RRsssss____R___OOOOOOWWssssOOOOORRR____PP_W_ssss_____R______WW____ss__O__________WWWWRWWWWROO__________WWRWWWWWWROO____________WWWWWWsOO_____________WWWW_sOO_____________WWWW_OO__OOO____OOss_RRRR_Os_OsssO__OOssssWWWWWWsssssss__OsssRWWsssWWRssssss_OOsssRWWsssRRRsss_ss_OO_ssRRssssssssss____OO_sssss___sssss_____O___sss_____sss______O___ss_______ss__________ss_______ss_____",
+    "credit": "Battle of Zama: https://en.wikipedia.org/wiki/Battle_of_Zama - Level by Wombatmithut "
+  },
+  {
+    "name": "Zeus",
+    "size": 21,
+    "bricks": "_________y_______________B______W__y__________y__BW__WWB___________y_y_WW__W___W_y______y____lW_W_WWlW______yy__W__WWWWW_________y__yWlWsssssWWWW_____ys____WsysyslW_______sss____sssss_By______ysss___WsysW_________y_ssssWllWWlWss_y___yy__sssWWWlWWssWs____y___ssssWlWslsWWs____y__y_ssssWsssWWs_____y____BssssssWWsB_____B____y_sWWWWWs__y___________WWWWWWW___________y__WWWWWWW___y______B__WWWWWWWWW_y_________WWWWWBWWWWWB__________WWW___WWW____",
+    "credit": "Heureka!: https://www.britannica.com/topic/Zeus - Level by Wombatmithut "
   },
   {
     "color": "#000000",
     "size": 21,
-    "bricks": "_____RRRRRRRRRRR_________RRRRRRRBRRRBR________RBRRRRRRBBBRR_______RRRBBBBBReOBRRR______RRROOOeeeeeORRR______RBOOeeeeeeeOOBR______BBOOeeeeeeeOOBB______OBOeeeeeeeeeOBO______OBORRRReRRRROBO______OORWtWOeOWtWROe______eOeOeeeOeeeOeOe_______OeeOOOeOOOeeO________ReeeeOeOeeeeR_________OOeeBOBeeOO__________OOeeeBeeeOO__________ROeRRORReeR________BtBRROeeeORRBtB_____B_tBROROOORORBt_B__BBB__tBRORRRORBt__BBB__B__tBRRRORRRBt__B_____B__tBRRRRRBt__B___",
-    "name": "Dr. Gregory House",
-    "credit": "The world's only beloved malpracticing doctor. You Can hate him, but you'd always want a doctor like him when it counts. The main character of the TV series House MD. played by Hugh Laurie. Did you know Hugh Laurie also makes Blues music? Did you also know that House is totally gay for Wilson? Level by D.V."
-  },
-  {
-    "color": "#000000",
-    "size": 21,
-    "bricks": "_______OOeeeee____________OOOeeeeWeee_________OOOeeeeeeeWee________OOOeeeeeeeeWe_______OOOeeeeeeeeeWee______OOOeeeeeeeeeeWe______OOOeeeeeeeeeeWe______OOeeeeeeeeeeeee______Oeeeeeeeeeeeeee______OeBB____BB___ee_____eBBOWWB_eBWWBe__e____eOBeeee_eBeeee_ee____OOOBBBBOeeBBBBeeO_____OOeeeeOeeeeeeee______OOOeeeOeOeeeeeO_______OOeeOeeeeeeeO________OOOeRRRRReeeO________BOORROOORReOB________yBOROeeeOROBy____BByByyBRRORORRByyByBByyyyByyBRRRRRByyByyyy",
+    "bricks": "_______BOeeeeB____________BOOeeeeWeeB_________BOOeeeeeeeWeB________OOOeeeeeeeeWe_______BOOeeeeeeeeeWeB______OOOeeeeeeeeeeWe______OOOeeeeeeeeeeWe______OOeeeeeeeeeeeee______Oeeeeeeeeeeeeee______Oe___________ee_____eBBOWWB_eBWWBe__e____eOBeeee_eBeeee_ee____OOOBBBBOeeBBBBeeO_____OOeeeeOeeeeeeee______OOOeeeOeOeeeeeO_______OOeeOeeeeeeeO________OOOeRRRRReeeO________BOORROOORReOB________yBOROeeeOROBy____BByByyBRRORORRByyByBByyyyByyBRRRRRByyByyyy",
     "name": "Breakout Bad",
     "credit": "This is obviously Walter White. But puns take precedence over names. Happy cooking! The central focus of the Breaking Bad TV show, played by Bryan Cranston. Level by D.V."
   },
   {
     "color": "#000000",
     "size": 21,
-    "bricks": "_____yy__yBy__yy_______yyy____BBy____yy____y_____yyyyyyy____y_______yByByyByyBy___y_____yByyByyyByyBy______O_yByByyyyByyBy_O____yOlOlByByByylOlOy____yOOyOlOlylOlOyOOy____yOyyyOyOlOyOOyOOy____yOyyyyyyOyyyOyOOy____yOyyyyyyyyyyOyOOy____OOyyyyyyyyyyOyOOO_____OOOyyyyyyyyOOOO______lyOOOyyyyyOOOyl_______ylleOOOOOeely________yleeeeleeeeey________y_eeBeeeBee_y_________y_eeBBBee__y_________y__eeeee__y_____________llell__y____________WlllleW_______",
-    "name": "Haumea, the Second Pillar",
-    "credit": "Haumea is a character from Fire Force, an awesome story by Atsushi Ohkubo. She is the Second Pillar of the Evangelist's faction, both ingredient and fuel for the Great Cataclysm. She is easily misunderstood and a very significant antagonist. the name \"Haumea\" means \"Red Ruler\" and is a God of fertility and childbirth in Hawaiian mythology. Basic info - Age:_17_ Birthday:_February_18_ Height:_163cm_ Weight:_50kg_ Level by D.V."
-  },
-  {
-    "color": "#115988",
-    "size": 21,
-    "bricks": "___________________________eeeeeeeee__________eeeeeeeeeeeee_______eeeeeeeeeeeeeee______eeRRReeeeeRRRee______eeeRRRReRRRReee______eeRRRRRRRRRRRee______WBRRRRgRgRRRRBW______WWWWWWWpWWWWWWW______ppppWWWpWWWpppp______WWWWpppppppWWWW______RBWWWWWpWWWWWBR______WRBBBWWpWWBBBRW_____WWRRRRBBBBBRRRRWW____WB_RRRRgRgRRRR_BW___WWB_RWRRRgRRRWR_BWW__WB__gRWWWWWWWRg__BW__WB_eggRRgggRRgge_BW__B_eegggRRRRRgggee_B___eegRRgggggggRRgee____egRRRRgggggRRRRgee_",
-    "name": "Charon, Guardian of the Second Pillar",
-    "credit": "Charon is a character from Fire Force, an awesome story created by Atsushi Ohkubu. He's a powerful antagonist and the 'guardian' of the Second Pillar, Haumea. Charon is the name of the ferryman of the dead in Greek mythology, responsible for transporting souls across the rivers Acheron and Styx to the underworld.__ Basic info - Age:_28_ Birthday:_June_22_ Height:_202cm_ Weight:_130kg_ Level by D.V."
+    "bricks": "_____RRRRRRRRRRR_________RRRRRRRBRRRBR________RBRRRRRRBBRRR_______RRRBBBRReeOBRRR______RRROOOeeeeeORRR______RBOOeeeeeeeOOBR______BROOeeeeeeeOORB______OBOeeeeeeeeeOBO______OBORRRReRRRROBO______OORWtWOeOWtWROe______eOeOeeeOeeeOeOe_______OeeOOOeOOOeeO________ReeeeOeOeeeeR_________OOeeBOBeeOO__________OOeeeBeeeOO__________ROeRRORReeR________BtBRROeeeORRBtB_____B_tBROROOORORBt_B__BB___tBRORRRORBt___BB__B__tBRRRORRRBt__B_____B__tBRRRRRBt__B___",
+    "name": "Dr. Gregory House",
+    "credit": "The world's only beloved malpracticing doctor. You Can hate him, but you'd always want a doctor like him when it counts. The main character of the TV series House MD. played by Hugh Laurie. Did you know Hugh Laurie also makes Blues music? Did you also know that House is totally gay for Wilson? Level by D.V."
   },
   {
     "color": "#000000",
     "size": 21,
-    "bricks": "_____________________________ee_________________eeeyyyy____________eeeey____y__________eeeey________________eeey________________eeeyy_______y________yeey_______y________yeeeey____ey____e____yeBbBe__eeey_____e___yebBbyeeeey______e___yeBbByeeeyy______e___yyeyyeeeey______eey___yyeeeeeeeW____eeey___yyeWeeyyWWBWeyeey_____yyWWWWWWBWWeyeey_____yyyWWBBBWWeyeyy_______yyyWWWWWeyeyy_________yyyyyyyyyyy____________yyyyyy_____________________________",
-    "name": "Ohkubo's Moon ",
-    "credit": "This is the moon from Soul Eater and Fire Force. Awesome stories created by Atsushi Ohkubo. Level by D.V."
-  },
-  {
-    "color": "#000000",
-    "size": 21,
-    "bricks": "___R______R______R_______R____RO_____R________ROO__ROO__OOR____R____OOO_yyy_OOO____R_RO__OyyyyyyyyyO__OR___ROOyyyyyyyyyyyOOR____ROyyyyyyyyyyyyyOR_____OyBWByyRyyBWByO_______yW_WyyOyyW_Wy______OyyBWByRORyBWByyOO_ROOyyyyyROOORyyyyyORR_RRyyyyyOOyOOyyyyyR______yBWyyOOOyyWBy_______OyWBWWWWWWWBWyO_____OOyyWBBBBBBBWyyOO____OROyyWWWWWWWyyORO___RR__OyyyyyyyyyO__RR_R____OOO_yyy_OOO____R____OOR__OOR__ROO________R_____OR____R_______R______R______R___",
-    "name": "Ohkubo's Sun",
-    "credit": "The Sun from Soul Eater and \"another\" place, both created by Atsushi Ohkubo. Level by D.V."
+    "bricks": "____O_eO____OO_OO_B_____OO__O_____O_eO_O_____O_O_O____BeO_e_eO__B_e_e_eO___OeO_eO_O__O_e_e_eB___OeeO_e_O__O_eee_eO___Oeee_eeO__O_eeB_Be___eBBB_eeO__B_BBO_Oe_B_eOOO_BBB__O_eee_Oe_O__Oeee_eO__e_BBBB_e_O__eBBBB_e__BBrWrW_e_eB_eWrWrBB__W_WrWW_eO_O_eWWrW_W__W_WWWO_ee_O__OWWW_W__ee_OOee_eeeB_eOOO_e__ee_eeee_OeeO_eee_ee__eee_eeeeOeeeB_ee_ee__eeeeeeeeOeeee_eeeee__eeeeeeeOeeeOeeeeeee___eeeeeeeOOOeeeeeeee__eeeeeeeeBOBeeeeeeee__eeeeeeeeeeeeOeeeee__",
+    "name": "Shinmon Benimaru, the God of Destruction of Asakusa.",
+    "credit": "Shinmon Benimaru, a chill, OP, wild child Character in Fire Force, created by Atsushi Ohkubo."
   },
   {
     "color": "#000000",
     "size": 19,
-    "bricks": "________WWW_____________BWWWWWWWB_________WWWWWWWWWWW_______BWWWWWWWWWWWB______WWWWWWWWWWWWW______WWWBWWWWWBWWW______WW___WWW___WW______WWB_BWWWB_BWW_______WWWWWBWWWWW________WWWW___WWWW________WWWWB_BWWWW________BWWWWWWWWWB_________WW_WWW_WW__________WW_WWW_WW__________BW_WWW_WB___________W_BWB_W____________W__W__W____________B__W__B_______________B_________",
+    "bricks": "________WWW_____________BWWWWWWWB_________WWWWWWWWWWW_______BWWWWWWWWWWWB______WWWWWWWWWWWWW______WWW_WWWWW_WWW______WW___WWW___WW______WWB_BWWWB_BWW_______WWWWW_WWWWW________WWWW___WWWW________WWWWB_BWWWW________BWWWWWWWWWB_________WW_WWW_WW__________WW_WWW_WW__________BW_WWW_WB___________W_BWB_W____________W__W__W____________B__W__B_______________B_________",
     "name": "Ohkubo's Death God.",
     "credit": "The God of Death's friendly mask from Atsushi Ohkubo's Soul Eater. Level by D.V."
   },
   {
     "color": "#000000",
     "size": 21,
-    "bricks": "WWWW__________________W__WWWW_______________W_____WWWWW___________W_________WWW________WW___________WW_____W_______________W___W_________________W__W_________________W__W_WW___________WW_W_W___WWWW_____WWWW___WW___WWWWW___WWWWW___WW____WWW__W__WWW____WW___________________WW___W___________W___W_W_W__W_______W__W_W__W_W_W_W__W__W_W_W_W__W__W__W_W_W_W__W__W___W_____W___W_____W_____WW___________WW________WWW_____WWW_____________WWWWW________",
-    "name": "Soul Eater \\(0£0)/",
-    "credit": "Logo of a story franchise created by Atsushi Ohkubo. btw, Don't use Crunchyroll, if you want to support Ohkubo, best way is to buy some Soul Eater or Fire Force merchandise, from which Ohkubo gets a higher % of royalties. Level by D.V."
-  },
-  {
-    "color": "#000000",
-    "size": 21,
-    "bricks": "_____lel_l_l______________eel__lBl____________lBBel__l_____________BWppB_l__l___________lWWpWl__lBl__________ellWll_l_l___________eeeeell____l_________eeeeeel_l_lBl_________eeeleel___l__l_______eeeleeel_l__lBl______eeleeeeel__l_l________eeBleeeell____l______eeeeeeeeeell_l________eeeeeeeeeell_______BOOWWWWWWeeeell____BWWBelWWWeeeeelllB_BWWB__eellleeellBB_lWWB_____eeeellBB_elll________ellBB_lleeell____________leelleeel_____________leelleel",
-    "name": "Joker (Five-Two)",
-    "credit": "A very interesting and mysterious character from Fire Force, a story by Atsushi Ohkubo. Level by D.V."
-  },
-  {
-    "color": "#000000",
-    "size": 21,
-    "bricks": "____O_eO____OO_OO_B_____OO__O_____O_eO_O_____O_O_O____BeO_e_eO__B_e_e_eO___OeO_eO_O__O_e_e_eB___OeeO_e_O__O_eee_eO___Oeee_eeO__O_eeB_Be___eBBB_eeO__B_BBO_Oe_B_eOO_e_BB__O_eee_Oe_O__Oe_e_eO__e_BBBB_e_O__eBBBB_e__BBrWrW_e_eB_eWrWrBB__W_WrWW_eO_O_eWWrW_W__W_WWWO_ee_O_BOWWW_W__ee_OOee_eeeB_eOOO_e__ee_eeee_OeeO_eee_ee__eee_eeeeOeeeB_ee_ee__eeeeeeeeOeeee_e_eee__eeeeeeeOeeeOeeeeeee___eeeeeeeOOOeeeeeeee__eeeeeeeeBOBeeeeeeee__eeeeeeeeeeeeOeeeee__",
-    "name": "Shinmon Benimaru, the God of Destruction of Asakusa.",
-    "credit": "Shinmon Benimaru, a chill, OP, wild child Character in Fire Force, created by Atsushi Ohkubo."
-  },
-  {
-    "color": "#000000",
-    "size": 21,
-    "bricks": "B_BWW_OBW__BWyWO_WyBWWB_BWWr_BWBWyW_rWyBWW_WB_BOr_BWBWyWOryBWWBB_WB_rOyyyyyyyrOBWWB_WB_WrOryyyyyyrOrWWB_W_WB_rBOryWWWyrBOrB_WyB_WOyrrWWWyWWWrryyOyWWByryWWWyWWOWyWWyyrWByWOryWyWWWrWWWyWWOrB_WyrOWWWWWOrWWWWWWrO___rOrWyWWWr_rWWyWrOrWWBrBOrWWWrO_OrWWWrBOrBWyrrWWOWWO_OWWyOWrrW__ByyWWryWrOrWWWrWyyWWBWyyyOrWWWrWWyOryyWyWWyWyyrOWyWWWyWrOyyBWyyW_BrOryWWyWWrOryW_BWW_BWrBOryWWWyrBOrBW_B_BW__rryyyyyyyrrB_BW_BW__ByWWyyyyyBWyWB_BWW__ByWWB___WB_BWyWB_B",
-    "name": "Shinmon Benimaru's NICHIRIN",
-    "credit": "Don't tell me there's too many bombs. There's never enough bombs when we're talking about Shinmon Benimaru! (an op character from Fire Force) Level by D.V."
-  },
-  {
-    "color": "#000000",
-    "size": 14,
-    "bricks": "______________________________________________________________________llllllllllllll_W__W_W_W_W_W__W___W___W__W__WW_W_W_W_W_W_llllllllllllll________________________________________________________",
-    "name": "Breakout LXXI",
-    "credit": "Roman numeral system: https://en.wikipedia.org/wiki/Roman_numerals - Level by Wombatmithut "
-  },
-  {
-    "color": "#000000",
-    "size": 13,
-    "bricks": "__________________rr__________llll_________lssl_________RllR_____l__RRRRRR_____l_RRRRrrrrr___lsRRRryryr____lRRRrryrr______RRrryrr______RRryryr______llrrrrr______________",
-    "name": "Hastati",
-    "credit": "Roman army: https://en.wikipedia.org/wiki/Roman_army  - Level by Wombatmithut "
-  },
-  {
-    "color": "#000000",
-    "size": 19,
-    "bricks": "__________________________RR________________Ryy_______________Ryyyy_____________RyyOBO______________yyOOOO_____________yyOOOyyy____________ylOyRRRy_________RyllyRRBRRy_______RylllyRBRBRy_______ROlllyBRRRBy__l_ssssOssssyRRRysssll___RRlllllyyy____l_____ROlll______________RO__O_______________O___O______________O___O______________RR__RR___________________________",
-    "name": "Spartans!",
-    "credit": "Phalanx: https://simple.wikipedia.org/wiki/Phalanx_formation  - Level by Wombatmithut "
+    "bricks": "____RRRRRBRRRBRBR_______RBRRRBRRRRBRRBR_____RBRRBRRRRRRRRRBR_____RBRRBRRBRRRRRRRRR____RRRRRRRRRRRROBRRR____RRRRBOBRRBBOeOBRR_____RRBOOeOOOeeeOBR______RBOeOeeeeeeOORR______OBeOOeeeeeOOeRs______OOeRROOOOORROes______OOOOORRORROOOes______OOOWBWOOsWBWOss______OOeOOOsOsOOeOs________sOeOssOsReOsR________sOeeOReROOOsR________RsOOOOsOOOsRR_________sOOsssssssR_________WRsOOeeeOsRRW______WBWBRsOsRssRRBWBW__WWWBWWBRsOOsRRBWWBWWWWWWWBWWBssRsRBWWBWWWW",
+    "name": "Dexter Morgan",
+    "credit": "Friendly neighborhood Serial Killer. The serial killer killing serial killer. Yes, that is grammatically accurate. A character which really makes you question morality and ethics itself. The face of Dexter Morgan, Michael Carlyle Hall. Level by D.V."
   },
   {
     "color": "#115988",
     "size": 21,
-    "bricks": "_________________________________________________________g___________________ggg_________________gggg________________ggsRs_______________ggsRRRs_____gggRsssRsssRssgs____gggsRssssRsRsRssRR___ggssRRRRRRRssRsssss_gg_ssRssssRsssg__ssg_gg_sRssssssRsg____g__g__RsRsgggssR________gg__ssR___ssR_________g__ssRR__ssRR____________ssR___ssR____________sgg___sgg____________gg____gg_______________________________________________________________________",
-    "name": "Trojan Horse",
-    "credit": "Whos horse is that?: https://en.wikipedia.org/wiki/Trojan_Horse - Level by Wombatmithut "
-  },
-  {
-    "color": "#000000",
-    "size": 17,
-    "bricks": "_________________________R______________RRRRR___________RRRlRRR___________lRlRl___________lllllll__________lylllyl__________y_yyy_y_________l_R_l_R_l________l_WRlRW_l_______yl_WWlWW_ly_______ll__l__ll________yl_lll_ly_________y_WlW_y__________l__W__l___________l___l_______________________",
-    "name": "Centurion",
-    "credit": "Centurion: https://en.wikipedia.org/wiki/Centurion - Level by Wombatmithut "
+    "bricks": "__________________________BeeeeeeeeeB_________eeeeeeeeeeeee_______BeeeeeeeeeeeeeB______eeRRReeeeeRRRee______eeeRRRReRRRReee______eeRRRRRRRRRRRee______WBRRRRgRgRRRRBW______WWWWWWWpWWWWWWW______ppppWWWpWWWpppp______WWWWpppppppWWWW______RBWWWWWpWWWWWBR______WRBBBWWpWWBBBRW_____WWRRRRBBBBBRRRRWW____WB_RRRRgRgRRRR_BW___WW__RWRRRgRRRWR__WW__WB__gRWWWWWWWRg__BW__W__eggRRgggRRgge__W__B_eeBggRRRRRggBee_B___eeBRRgggggggRRBee____eBRRRRgggggRRRRBee_",
+    "name": "Charon, Guardian of the Second Pillar",
+    "credit": "Charon is a character from Fire Force, an awesome story created by Atsushi Ohkubu. He's a powerful antagonist and the 'guardian' of the Second Pillar, Haumea. Charon is the name of the ferryman of the dead in Greek mythology, responsible for transporting souls across the rivers Acheron and Styx to the underworld.__ Basic info - Age:_28_ Birthday:_June_22_ Height:_202cm_ Weight:_130kg_ Level by D.V."
   },
   {
     "color": "#000000",
     "size": 21,
-    "bricks": "________WWWW________________WWRRRW______________WWRsss_______________RRsssss____R___OOOOOOWWssssOOOOORRR____PP_W_ssss_____R______WW____ss__O__________WWWWRWWWWROO__________WWRWWWWWWROO____________WWWWWWsOO_____________WWWW_sOO_____________WWWW_OO__OOO____OOss_RRRR_Os_OsssO__OOssssWWWWWWsssssss__OsssRWWsssWWRssssss_OOsssRWWsssRRRsss_ss_OO_ssRRssssssssss____OO_sssss___sssss_____O___sss_____sss______O___ss_______ss__________ss_______ss_____",
-    "name": "Numidian cavalry",
-    "credit": "Battle of Zama: https://en.wikipedia.org/wiki/Battle_of_Zama - Level by Wombatmithut "
-  },
-  {
-    "color": "#000000",
-    "size": 21,
-    "bricks": "_________y_______________B______W__y__________y__BW__WWB___________y_y_WW__W___W_y______y____lW_W_WWlW______yy__W__WWWWW_________y__yWlWsssssWWWW_____ys____WsysyslW_______sss____sssss_By______ysss___WsysW_________y_ssssWllWWlWss_y___yy__sssWWWlWWssWs____y___ssssWlWslsWWs____y__y_ssssWsssWWs_____y____BssssssWWsB_____B____y_sWWWWWs__y___________WWWWWWW___________y__WWWWWWW___y______B__WWWWWWWWW_y_________WWWWWBWWWWWB__________WWW___WWW____",
-    "name": "Zeus",
-    "credit": "Heureka!: https://www.britannica.com/topic/Zeus - Level by Wombatmithut "
+    "bricks": "_____yy__yBy__yy_______yyy____BBy____yy____y_____yyyyyyy____y_______yByByyByyBy___y_____yByyByyyByyBy______O_yByByyyyByyBy_O____yOlOlByByByylOlOy____yOOyOlOlylOlOyOOy____yOyyyOyOlOyOOyOOy____yOyyyyyyOyyyOyOOy____yOyyyyyyyyyyOyOOy____OOyyyyyyyyyyOyOOO_____OOOyyyyyyyyOOOO______lyOOOyyyyyOOOyl_______ylleOOOOOeely________yleeeeleeeeey________y_eeBeeeBee_y_________y_eeBBBee__y_________y__eeeee__y____________BllellB_y___________BWlllleWB______",
+    "name": "Haumea, the Second Pillar",
+    "credit": "Haumea is a character from Fire Force, an awesome story by Atsushi Ohkubo. She is the Second Pillar of the Evangelist's faction, both ingredient and fuel for the Great Cataclysm. She is easily misunderstood and a very significant antagonist. the name \"Haumea\" means \"Red Ruler\" and is a God of fertility and childbirth in Hawaiian mythology. Basic info - Age:_17_ Birthday:_February_18_ Height:_163cm_ Weight:_50kg_ Level by D.V."
   }
 ]

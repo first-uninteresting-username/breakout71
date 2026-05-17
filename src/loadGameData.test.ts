@@ -14,6 +14,13 @@ describe("json data checks", () => {
       _rawLevelsList.filter((l) => !l.name.startsWith("icon:")).length,
     ).toBeGreaterThan(10);
   });
+  it("_rawLevelsList has no duplicates", () => {
+    const names = _rawLevelsList.map((l) => l.name);
+    const dupes = names.filter(
+      (name, index, list) => list.indexOf(name) !== index,
+    );
+    expect(dupes).toEqual([]);
+  });
 
   it("_rawLevelsList has max 5 colors per level", () => {
     const levelsWithManyBrickColors = _rawLevelsList

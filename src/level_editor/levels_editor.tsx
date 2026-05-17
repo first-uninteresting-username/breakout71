@@ -238,7 +238,7 @@ function App() {
             if (!code) return;
             const l = levelCodeToRawLevel(code);
             if (!l) return;
-            setLevels((list) => [...list, l]);
+            setLevels((list) => [...list.filter((e) => e.name !== l.name), l]);
             setEditingIndex(levels.length);
           }}
         >
