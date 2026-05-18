@@ -535,7 +535,7 @@ export async function openMainMenu() {
 
       `<p>       
         <span>Made in France by <a href="https://lecaro.me">Renan LE CARO</a>.</span> 
-        <a href="https://paypal.me/renanlecaro" target="_blank">Donate</a>
+        <a href="https://buy.stripe.com/00w4gz9gI4v47Vk4W40gw01" target="_blank">Donate</a>
         <a href="https://discord.gg/bbcQw4x5zA" target="_blank">Discord</a>
         <a href="https://f-droid.org/en/packages/me.lecaro.breakout/" target="_blank">F-Droid</a>
         <a href="https://play.google.com/store/apps/details?id=me.lecaro.breakout" target="_blank">Google Play</a>
@@ -543,7 +543,6 @@ export async function openMainMenu() {
         <a href="https://gitlab.com/lecarore/breakout71" target="_blank">Gitlab</a>
         <a href="https://hosted.weblate.org/projects/breakout-71/" target="_blank">Weblate</a>
         <a href="https://breakout.lecaro.me/" target="_blank">Web version</a>
-        <a href="https://news.ycombinator.com/item?id=43183131" target="_blank">HackerNews</a>
         <a href="https://breakout.lecaro.me/privacy.html" target="_blank">Privacy Policy</a>
         <a href="https://archive.lecaro.me/public-files/b71/" target="_blank">Archives</a>
         <span>v.${appVersion}</span>
@@ -568,7 +567,7 @@ function donationNag() {
       }),
       icon: getIcon("icon:premium"),
       value() {
-        window.open("https://paypal.me/renanlecaro", "_blank");
+        window.open("https://buy.stripe.com/00w4gz9gI4v47Vk4W40gw01", "_blank");
       },
     },
   ];

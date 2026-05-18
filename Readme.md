@@ -3,7 +3,7 @@
 Break colourful bricks, catch bouncing coins and select powerful upgrades !
 
 - [Play now](https://breakout.lecaro.me/)  
-- [Donate](https://paypal.me/renanlecaro)
+- [Donate](https://buy.stripe.com/00w4gz9gI4v47Vk4W40gw01)
 - Bitcoin : bc1qlh8kywy3ttsuqqa08yx2rdc8dqhdvyt43wlxmr
 - [Discord](https://discord.gg/bbcQw4x5zA)
 - [itch.io](https://renanlecaro.itch.io/breakout71)    
