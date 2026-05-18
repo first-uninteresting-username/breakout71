@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding-bottom: 0;
+  overflow: hidden;
   background: #333;
 }
 #editor {
@@ -14,7 +16,8 @@ body {
     "list bricks palette"
     "new bricks palette";
   height: 100vh;
-  grid-template-columns: auto 1fr auto;
+  width: 100vw;
+  grid-template-columns: 200px calc(100vw - 280px - 20px) 80px;
   grid-template-rows: auto auto auto 1fr auto;
 }
 
@@ -46,8 +49,11 @@ body {
   }
 }
 
-#level-bricks-preview {
+#bricks{
   grid-area: bricks;
+  overflow: auto;
+}
+#level-bricks-preview {
   position: relative;
 }
 #name {

@@ -158,15 +158,17 @@ function App() {
           </button>
         </div>
 
-        <div
-          id="level-bricks-preview"
-          style={{
-            width: size * 40,
-            height: size * 40,
-            background: automaticBackgroundColor(bricks.split("")),
-          }}
-        >
-          {brickButtons}
+        <div id="bricks">
+          <div
+            id="level-bricks-preview"
+            style={{
+              width: size * 40,
+              height: size * 40,
+              background: automaticBackgroundColor(bricks.split("")),
+            }}
+          >
+            {brickButtons}
+          </div>
         </div>
       </>
     );
