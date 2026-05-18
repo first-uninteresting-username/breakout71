@@ -1778,5 +1778,36 @@
     "required": ["sacrifice", "ottawa_treaty", "round_bricks"],
     "forbidden": ["minefield", "flyswatter", "concave_puck"],
     "minScore": 30100
+  },
+
+  "Glowing jellyfish": {
+    "required": ["reach", "chill", "trampoline"],
+    "forbidden": ["hot_start", "etherealcoins", "happy_family"],
+    "minScore": 34100
+  },
+  "Yellow azae": {
+    "required": ["chill", "reach", "wrap_up"],
+    "forbidden": ["hot_start", "trickledown", "fountain_toss"],
+    "minScore": 34200
+  },
+  "Red azae": {
+    "required": ["trickledown", "chill", "reach"],
+    "forbidden": ["wrap_left", "puck_repulse_ball", "ball_repulse_ball"],
+    "minScore": 34300
+  },
+  "Minotaur": {
+    "required": ["chill", "reach", "trickledown"],
+    "forbidden": ["wrap_left", "superhot", "ball_attracts_coins"],
+    "minScore": 34400
+  },
+  "Atropa": {
+    "required": ["compound_interest", "soft_touch", "soft_reset"],
+    "forbidden": ["chill", "reach", "right_is_lava"],
+    "minScore": 34500
+  },
+  "Strawberry": {
+    "required": ["paddle_up_combo", "thomas", "shocks"],
+    "forbidden": ["sapper", "refill", "golden_goose"],
+    "minScore": 34600
   }
 }
