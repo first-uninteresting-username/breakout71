@@ -1709,7 +1709,6 @@ export function gameStateTick(
 
   forEachLiveOne(gameState.delayedDmgs, (d, index) => {
     if (gameState.levelTime > d.time) {
-      console.log("Applying", d);
       destroy(gameState.delayedDmgs, index);
       const ball = gameState.balls[d.ballIndex];
       if (!ball || ball.destroyed) return console.info("no ball");
