@@ -2742,52 +2742,87 @@
     "credit": "Heureka!: https://www.britannica.com/topic/Zeus - Level by Wombatmithut "
   },
   {
-    "color": "#000000",
+    "name": "Breakout Bad",
     "size": 21,
     "bricks": "_______BOeeeeB____________BOOeeeeWeeB_________BOOeeeeeeeWeB________OOOeeeeeeeeWe_______BOOeeeeeeeeeWeB______OOOeeeeeeeeeeWe______OOOeeeeeeeeeeWe______OOeeeeeeeeeeeee______Oeeeeeeeeeeeeee______Oe___________ee_____eBBOWWB_eBWWBe__e____eOBeeee_eBeeee_ee____OOOBBBBOeeBBBBeeO_____OOeeeeOeeeeeeee______OOOeeeOeOeeeeeO_______OOeeOeeeeeeeO________OOOeRRRRReeeO________BOORROOORReOB________yBOROeeeOROBy____BByByyBRRORORRByyByBByyyyByyBRRRRRByyByyyy",
-    "name": "Breakout Bad",
     "credit": "This is obviously Walter White. But puns take precedence over names. Happy cooking! The central focus of the Breaking Bad TV show, played by Bryan Cranston. Level by D.V."
   },
   {
-    "color": "#000000",
+    "name": "Dr. Gregory House",
     "size": 21,
     "bricks": "_____RRRRRRRRRRR_________RRRRRRRBRRRBR________RBRRRRRRBBRRR_______RRRBBBRReeOBRRR______RRROOOeeeeeORRR______RBOOeeeeeeeOOBR______BROOeeeeeeeOORB______OBOeeeeeeeeeOBO______OBORRRReRRRROBO______OORWtWOeOWtWROe______eOeOeeeOeeeOeOe_______OeeOOOeOOOeeO________ReeeeOeOeeeeR_________OOeeBOBeeOO__________OOeeeBeeeOO__________ROeRRORReeR________BtBRROeeeORRBtB_____B_tBROROOORORBt_B__BB___tBRORRRORBt___BB__B__tBRRRORRRBt__B_____B__tBRRRRRBt__B___",
-    "name": "Dr. Gregory House",
     "credit": "The world's only beloved malpracticing doctor. You Can hate him, but you'd always want a doctor like him when it counts. The main character of the TV series House MD. played by Hugh Laurie. Did you know Hugh Laurie also makes Blues music? Did you also know that House is totally gay for Wilson? Level by D.V."
   },
   {
-    "color": "#000000",
+    "name": "Shinmon Benimaru, the God of Destruction of Asakusa.",
     "size": 21,
     "bricks": "____O_eO____OO_OO_B_____OO__O_____O_eO_O_____O_O_O____BeO_e_eO__B_e_e_eO___OeO_eO_O__O_e_e_eB___OeeO_e_O__O_eee_eO___Oeee_eeO__O_eeB_Be___eBBB_eeO__B_BBO_Oe_B_eOOO_BBB__O_eee_Oe_O__Oeee_eO__e_BBBB_e_O__eBBBB_e__BBrWrW_e_eB_eWrWrBB__W_WrWW_eO_O_eWWrW_W__W_WWWO_ee_O__OWWW_W__ee_OOee_eeeB_eOOO_e__ee_eeee_OeeO_eee_ee__eee_eeeeOeeeB_ee_ee__eeeeeeeeOeeee_eeeee__eeeeeeeOeeeOeeeeeee___eeeeeeeOOOeeeeeeee__eeeeeeeeBOBeeeeeeee__eeeeeeeeeeeeOeeeee__",
-    "name": "Shinmon Benimaru, the God of Destruction of Asakusa.",
     "credit": "Shinmon Benimaru, a chill, OP, wild child Character in Fire Force, created by Atsushi Ohkubo."
+  },
+  {
+    "name": "Ohkubo's Death God.",
+    "size": 19,
+    "bricks": "________WWW_____________BWWWWWWWB_________WWWWWWWWWWW_______BWWWWWWWWWWWB______WWWWWWWWWWWWW______WWW_WWWWW_WWW______WW___WWW___WW______WWB_BWWWB_BWW_______WWWWW_WWWWW________WWWW___WWWW________WWWWB_BWWWW________BWWWWWWWWWB_________WW_WWW_WW__________WW_WWW_WW__________BW_WWW_WB___________W_BWB_W____________W__W__W____________B__W__B_______________B_________",
+    "credit": "The God of Death's friendly mask from Atsushi Ohkubo's Soul Eater. Level by D.V."
+  },
+  {
+    "name": "Dexter Morgan",
+    "size": 21,
+    "bricks": "____RRRRRBRRRBRBR_______RBRRRBRRRRBRRBR_____RBRRBRRRRRRRRRBR_____RBRRBRRBRRRRRRRRR____RRRRRRRRRRRROBRRR____RRRRBOBRRBBOeOBRR_____RRBOOeOOOeeeOBR______RBOeOeeeeeeOORR______OBeOOeeeeeOOeRs______OOeRROOOOORROes______OOOOORRORROOOes______OOOWBWOOsWBWOss______OOeOOOsOsOOeOs________sOeOssOsReOsR________sOeeOReROOOsR________RsOOOOsOOOsRR_________sOOsssssssR_________WRsOOeeeOsRRW______WBWBRsOsRssRRBWBW__WWWBWWBRsOOsRRBWWBWWWWWWWBWWBssRsRBWWBWWWW",
+    "credit": "Friendly neighborhood Serial Killer. The serial killer killing serial killer. Yes, that is grammatically accurate. A character which really makes you question morality and ethics itself. The face of Dexter Morgan, Michael Carlyle Hall. Level by D.V."
+  },
+  {
+    "name": "Charon, Guardian of the Second Pillar",
+    "size": 21,
+    "bricks": "__________________________BeeeeeeeeeB_________eeeeeeeeeeeee_______BeeeeeeeeeeeeeB______eeRRReeeeeRRRee______eeeRRRReRRRReee______eeRRRRRRRRRRRee______WBRRRRgRgRRRRBW______WWWWWWWpWWWWWWW______ppppWWWpWWWpppp______WWWWpppppppWWWW______RBWWWWWpWWWWWBR______WRBBBWWpWWBBBRW_____WWRRRRBBBBBRRRRWW____WB_RRRRgRgRRRR_BW___WW__RWRRRgRRRWR__WW__WB__gRWWWWWWWRg__BW__W__eggRRgggRRgge__W__B_eeBggRRRRRggBee_B___eeBRRgggggggRRBee____eBRRRRgggggRRRRBee_",
+    "credit": "Charon is a character from Fire Force, an awesome story created by Atsushi Ohkubu. He's a powerful antagonist and the 'guardian' of the Second Pillar, Haumea. Charon is the name of the ferryman of the dead in Greek mythology, responsible for transporting souls across the rivers Acheron and Styx to the underworld.__ Basic info - Age:_28_ Birthday:_June_22_ Height:_202cm_ Weight:_130kg_ Level by D.V."
+  },
+  {
+    "name": "Haumea, the Second Pillar",
+    "size": 21,
+    "bricks": "_____yy__yBy__yy_______yyy____BBy____yy____y_____yyyyyyy____y_______yByByyByyBy___y_____yByyByyyByyBy______O_yByByyyyByyBy_O____yOlOlByByByylOlOy____yOOyOlOlylOlOyOOy____yOyyyOyOlOyOOyOOy____yOyyyyyyOyyyOyOOy____yOyyyyyyyyyyOyOOy____OOyyyyyyyyyyOyOOO_____OOOyyyyyyyyOOOO______lyOOOyyyyyOOOyl_______ylleOOOOOeely________yleeeeleeeeey________y_eeBeeeBee_y_________y_eeBBBee__y_________y__eeeee__y____________BllellB_y___________BWlllleWB______",
+    "credit": "Haumea is a character from Fire Force, an awesome story by Atsushi Ohkubo. She is the Second Pillar of the Evangelist's faction, both ingredient and fuel for the Great Cataclysm. She is easily misunderstood and a very significant antagonist. the name \"Haumea\" means \"Red Ruler\" and is a God of fertility and childbirth in Hawaiian mythology. Basic info - Age:_17_ Birthday:_February_18_ Height:_163cm_ Weight:_50kg_ Level by D.V."
+  },
+  {
+    "color": "#000000",
+    "size": 13,
+    "bricks": "__________________atWa_______taWtattW____bWttatWat_____batWtttWa____bWataWatt___bbbbWtttWa__bb_bbbbaWb______b_b_b_______b_bb_bb________b___b_____________________________",
+    "name": "Glowing jellyfish",
+    "credit": "Reference photo: https://unsplash.com/photos/several-glowing-jellyfish-float-in-dark-blue-water-M2IZlnc4bjs - Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 17,
+    "bricks": "_________________________WWy_____________WWyy__________OOWWyOyOO_______OOWWyOyyyOO______OWWyyeyyOyO____yyWWyOeeeOyyy____yWWyyeeWeeyyyy___WWyOeeWsWeeOyyy___yyyyeeWeeyyOyy____yyyOeeeOyyyyy____OyOyyeyyOyO______OOyyyOyyyOO_______OOyOyyyOO__________yyyy_____________yyy_________________________",
+    "name": "Yellow azae",
+    "credit": "Used as a medium to spirit fly. oandcogames.com - Jade "
   },
   {
     "color": "#000000",
     "size": 19,
-    "bricks": "________WWW_____________BWWWWWWWB_________WWWWWWWWWWW_______BWWWWWWWWWWWB______WWWWWWWWWWWWW______WWW_WWWWW_WWW______WW___WWW___WW______WWB_BWWWB_BWW_______WWWWW_WWWWW________WWWW___WWWW________WWWWB_BWWWW________BWWWWWWWWWB_________WW_WWW_WW__________WW_WWW_WW__________BW_WWW_WB___________W_BWB_W____________W__W__W____________B__W__B_______________B_________",
-    "name": "Ohkubo's Death God.",
-    "credit": "The God of Death's friendly mask from Atsushi Ohkubo's Soul Eater. Level by D.V."
+    "bricks": "_______kk________________k__k__________________k_________________kkk_______________kkkkk_____________kkkkkkk___________kkkkkkkkk__________kkSkkkrkk__________ksSSkSrrk__________SssSSSrrR__________SssSSSrrR__________SSsSSSrrR__________SSSSSrrrR__________SSSSrrrrR__________rrrrrrrRR___________RrrrrRR_____________RRRRR_______________RRR_________________R_________",
+    "name": "Red azae",
+    "credit": "Explosive medium. oandcogames.com - Jade "
   },
   {
     "color": "#000000",
     "size": 21,
-    "bricks": "____RRRRRBRRRBRBR_______RBRRRBRRRRBRRBR_____RBRRBRRRRRRRRRBR_____RBRRBRRBRRRRRRRRR____RRRRRRRRRRRROBRRR____RRRRBOBRRBBOeOBRR_____RRBOOeOOOeeeOBR______RBOeOeeeeeeOORR______OBeOOeeeeeOOeRs______OOeRROOOOORROes______OOOOORRORROOOes______OOOWBWOOsWBWOss______OOeOOOsOsOOeOs________sOeOssOsReOsR________sOeeOReROOOsR________RsOOOOsOOOsRR_________sOOsssssssR_________WRsOOeeeOsRRW______WBWBRsOsRssRRBWBW__WWWBWWBRsOOsRRBWWBWWWWWWWBWWBssRsRBWWBWWWW",
-    "name": "Dexter Morgan",
-    "credit": "Friendly neighborhood Serial Killer. The serial killer killing serial killer. Yes, that is grammatically accurate. A character which really makes you question morality and ethics itself. The face of Dexter Morgan, Michael Carlyle Hall. Level by D.V."
+    "bricks": "________________________W_____________W______WWW_________WWW_______WWWWRR_RRWWWW_________WWRrRRRrRWW___________RRrrRrrRR___________R_RrrRrrR_R__________RR_RRRRR_RR_yy_______R__RRRRR__Ryy__________RRRRRRR_yyy__y_______ORyRyRO_y_Ryyy_____OOOy___yOO_R_yy_____OOOOyRRRyOOR_yy_____OOOOOOyyyOORO________OO__OOOOOOROO________RR__OOOOORrrO________RR__OOOOROrr_____________yyyyyyy______________RRRRRRR_____________RRRR_RRRR____________RRR___RRR______",
+    "name": "Minotaur",
+    "credit": "Theseus and the Minotaur: https://www.britannica.com/topic/Minotaur - Wombatmithut "
+  },
+  {
+    "color": "#000000",
+    "size": 19,
+    "bricks": "__________________________rrrrr_____________rsrrrsr____________rrsssrr____________rrrrrrr_________RRRRRrrrRRRRR______RRRRRRrRRRRRR___rrrrrrRRRRRRRrrrrrrssssssrRyyyRrssssssrrrrrrsrRyRrsrrrrrrrrrrrrrsRRRsrrrrrrrrrrrrrrsRRRsrrrrrrr_rrrrrrskkksrrrrrr_______kkkkkkk________kkkk__kkk__kkkk____kkkkk_kkk_kkkkk____kkkkk__k__kkkkk_____kkkk__k__kkkk______________________",
+    "name": "Atropa",
+    "credit": "Perhaps this one will save her? oandcogames.com - Jade"
   },
   {
     "color": "#115988",
-    "size": 21,
-    "bricks": "__________________________BeeeeeeeeeB_________eeeeeeeeeeeee_______BeeeeeeeeeeeeeB______eeRRReeeeeRRRee______eeeRRRReRRRReee______eeRRRRRRRRRRRee______WBRRRRgRgRRRRBW______WWWWWWWpWWWWWWW______ppppWWWpWWWpppp______WWWWpppppppWWWW______RBWWWWWpWWWWWBR______WRBBBWWpWWBBBRW_____WWRRRRBBBBBRRRRWW____WB_RRRRgRgRRRR_BW___WW__RWRRRgRRRWR__WW__WB__gRWWWWWWWRg__BW__W__eggRRgggRRgge__W__B_eeBggRRRRRggBee_B___eeBRRgggggggRRBee____eBRRRRgggggRRRRBee_",
-    "name": "Charon, Guardian of the Second Pillar",
-    "credit": "Charon is a character from Fire Force, an awesome story created by Atsushi Ohkubu. He's a powerful antagonist and the 'guardian' of the Second Pillar, Haumea. Charon is the name of the ferryman of the dead in Greek mythology, responsible for transporting souls across the rivers Acheron and Styx to the underworld.__ Basic info - Age:_28_ Birthday:_June_22_ Height:_202cm_ Weight:_130kg_ Level by D.V."
-  },
-  {
-    "color": "#000000",
-    "size": 21,
-    "bricks": "_____yy__yBy__yy_______yyy____BBy____yy____y_____yyyyyyy____y_______yByByyByyBy___y_____yByyByyyByyBy______O_yByByyyyByyBy_O____yOlOlByByByylOlOy____yOOyOlOlylOlOyOOy____yOyyyOyOlOyOOyOOy____yOyyyyyyOyyyOyOOy____yOyyyyyyyyyyOyOOy____OOyyyyyyyyyyOyOOO_____OOOyyyyyyyyOOOO______lyOOOyyyyyOOOyl_______ylleOOOOOeely________yleeeeleeeeey________y_eeBeeeBee_y_________y_eeBBBee__y_________y__eeeee__y____________BllellB_y___________BWlllleWB______",
-    "name": "Haumea, the Second Pillar",
-    "credit": "Haumea is a character from Fire Force, an awesome story by Atsushi Ohkubo. She is the Second Pillar of the Evangelist's faction, both ingredient and fuel for the Great Cataclysm. She is easily misunderstood and a very significant antagonist. the name \"Haumea\" means \"Red Ruler\" and is a God of fertility and childbirth in Hawaiian mythology. Basic info - Age:_17_ Birthday:_February_18_ Height:_163cm_ Weight:_50kg_ Level by D.V."
+    "size": 14,
+    "bricks": "_____________________gg_________gggCCg_______gCCgCCCg______ggRCCRgg______gRRRRRRg_____gRsrrrrrRg____grrrsrrsrg____grsrRrrRrg____grRrrrrRrg_____grRRRRrg_______grRRrg_________grrg___________gg______",
+    "name": "Strawberry",
+    "credit": "A memento for a perilous climb. celestegame.com - Jade"
   }
 ]
