@@ -112,6 +112,7 @@ export function newGameState(params: RunParams): GameState {
     texts: { indexMin: 0, total: 0, list: [] },
     coins: { indexMin: 0, total: 0, list: [] },
     respawns: { indexMin: 0, total: 0, list: [] },
+    delayedDmgs: { indexMin: 0, total: 0, list: [] },
     levelStartScore: 0,
     levelMisses: 0,
     levelSpawnedCoins: 0,

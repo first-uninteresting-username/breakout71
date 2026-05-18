@@ -86,6 +86,15 @@ export type Coin = {
   metamorphosisPoints: number;
   floatingTime: number;
 };
+
+// represents brick damage to apply at a later time, for the bomb delay
+export type DelayedDmg = {
+  destroyed?: boolean;
+  index: number;
+  damage: number;
+  time: number;
+  ballIndex: number;
+};
 export type Ball = {
   x: number;
   previousX: number;
@@ -106,6 +115,7 @@ export type Ball = {
   brokenSinceBounce: number;
   brokenSinceWallOrPaddleBounce: number;
   sidesHitsSinceBounce: number;
+  softBrushUsesSinceBounce: number;
   topHitsSinceBounce: number;
   wrapsSinceBounce: number;
   // At the time of the last paddle bounce, there were fewer bricks on screen than there are balls.
@@ -249,6 +259,7 @@ export type GameState = {
   texts: ReusableArray<TextFlash>;
   lights: ReusableArray<LightFlash>;
   coins: ReusableArray<Coin>;
+  delayedDmgs: ReusableArray<DelayedDmg>;
 
   // Bricks that should respawn destroyed
   respawns: ReusableArray<{

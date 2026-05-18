@@ -142,6 +142,7 @@ export function resetBalls(gameState: GameState) {
       topHitsSinceBounce: 0,
       wrapsSinceBounce: 0,
       sapperUses: 0,
+      softBrushUsesSinceBounce: 0,
       bouncedToEmptyLevel: false,
     });
   }
@@ -167,6 +168,7 @@ export function putBallsAtPuck(gameState: GameState) {
     ball.brokenSinceBounce = 0;
     ball.brokenSinceWallOrPaddleBounce = 0;
     ball.sidesHitsSinceBounce = 0;
+    ball.softBrushUsesSinceBounce = 0;
     ball.topHitsSinceBounce = 0;
     ball.wrapsSinceBounce = 0;
     ball.piercePoints = 1;
@@ -427,13 +429,23 @@ export function explosionAt(
     for (let dx = -size; dx <= size; dx++) {
       for (let dy = -size; dy <= size; dy++) {
         const i = getRowColIndex(gameState, row + dy, col + dx);
+        const damage = 1;
         if (gameState.bricks[i] && i !== -1) {
           // Study bricks resist explosions too
-          gameState.brickHP[i]--;
-          if (gameState.brickHP[i] <= 0) {
-            ball.brokenSinceWallOrPaddleBounce++;
-            applyNBrickPerk(gameState, ball);
-            explodeBrick(gameState, i, ball, true, null);
+          if (gameState.perks.instant_explosion) {
+            gameState.brickHP[i] -= damage;
+            if (gameState.brickHP[i] <= 0) {
+              ball.brokenSinceWallOrPaddleBounce++;
+              applyNBrickPerk(gameState, ball);
+              explodeBrick(gameState, i, ball, true, null);
+            }
+          } else {
+            append(gameState.delayedDmgs, (d) => {
+              d.damage = damage;
+              d.index = i;
+              d.time = gameState.levelTime + 150 * Math.random();
+              d.ballIndex = gameState.balls.indexOf(ball);
+            });
           }
         }
       }
@@ -833,6 +845,7 @@ export async function setLevel(gameState: GameState, l: number) {
   empty(gameState.lights);
   empty(gameState.texts);
   empty(gameState.respawns);
+  empty(gameState.delayedDmgs);
   gameState.bricks = [];
 
   for (let i = 0; i < lvl.size * lvl.size; i++) {
@@ -1693,6 +1706,22 @@ export function gameStateTick(
       destroy(gameState.lights, pi);
     }
   });
+
+  forEachLiveOne(gameState.delayedDmgs, (d, index) => {
+    if (gameState.levelTime > d.time) {
+      console.log("Applying", d);
+      destroy(gameState.delayedDmgs, index);
+      const ball = gameState.balls[d.ballIndex];
+      if (!ball || ball.destroyed) return console.info("no ball");
+      if (!gameState.bricks[d.index]) return;
+      gameState.brickHP[d.index] -= d.damage;
+      if (gameState.brickHP[d.index] <= 0) {
+        ball.brokenSinceWallOrPaddleBounce++;
+        applyNBrickPerk(gameState, ball);
+        explodeBrick(gameState, d.index, ball, true, null);
+      }
+    }
+  });
 }
 
 function applyNBrickPerk(gameState: GameState, ball: Ball) {
@@ -2023,6 +2052,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     ball.brokenSinceBounce = 0;
     ball.brokenSinceWallOrPaddleBounce = 0;
     ball.sidesHitsSinceBounce = 0;
+    ball.softBrushUsesSinceBounce = 0;
     ball.topHitsSinceBounce = 0;
     ball.wrapsSinceBounce = 0;
     ball.sapperUses = 0;
@@ -2202,6 +2232,16 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     if (gameState.perks.soft_touch && !ballIsAbovePaddle) {
       dmg = 0;
     }
+    if (
+      ball.softBrushUsesSinceBounce < gameState.perks.soft_brush &&
+      initialBrickColor !== gameState.ballsColor
+    ) {
+      dmg = 0;
+      gameState.bricks[hitBrick] = gameState.ballsColor;
+      ball.softBrushUsesSinceBounce++;
+      schedulGameSound(gameState, "colorChange", ball.x, 0.5);
+    }
+
     gameState.brickHP[hitBrick] -= dmg;
     if (damageMultiplier) {
       // if piercing was used, exhaust it

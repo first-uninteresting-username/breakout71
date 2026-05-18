@@ -2784,45 +2784,53 @@
     "credit": "Haumea is a character from Fire Force, an awesome story by Atsushi Ohkubo. She is the Second Pillar of the Evangelist's faction, both ingredient and fuel for the Great Cataclysm. She is easily misunderstood and a very significant antagonist. the name \"Haumea\" means \"Red Ruler\" and is a God of fertility and childbirth in Hawaiian mythology. Basic info - Age:_17_ Birthday:_February_18_ Height:_163cm_ Weight:_50kg_ Level by D.V."
   },
   {
-    "color": "#000000",
+    "name": "Glowing jellyfish",
     "size": 13,
     "bricks": "__________________atWa_______taWtattW____bWttatWat_____batWtttWa____bWataWatt___bbbbWtttWa__bb_bbbbaWb______b_b_b_______b_bb_bb________b___b_____________________________",
-    "name": "Glowing jellyfish",
     "credit": "Reference photo: https://unsplash.com/photos/several-glowing-jellyfish-float-in-dark-blue-water-M2IZlnc4bjs - Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "Yellow azae",
     "size": 17,
     "bricks": "_________________________WWy_____________WWyy__________OOWWyOyOO_______OOWWyOyyyOO______OWWyyeyyOyO____yyWWyOeeeOyyy____yWWyyeeWeeyyyy___WWyOeeWsWeeOyyy___yyyyeeWeeyyOyy____yyyOeeeOyyyyy____OyOyyeyyOyO______OOyyyOyyyOO_______OOyOyyyOO__________yyyy_____________yyy_________________________",
-    "name": "Yellow azae",
     "credit": "Used as a medium to spirit fly. oandcogames.com - Jade "
   },
   {
-    "color": "#000000",
+    "name": "Red azae",
     "size": 19,
     "bricks": "_______kk________________k__k__________________k_________________kkk_______________kkkkk_____________kkkkkkk___________kkkkkkkkk__________kkSkkkrkk__________ksSSkSrrk__________SssSSSrrR__________SssSSSrrR__________SSsSSSrrR__________SSSSSrrrR__________SSSSrrrrR__________rrrrrrrRR___________RrrrrRR_____________RRRRR_______________RRR_________________R_________",
-    "name": "Red azae",
     "credit": "Explosive medium. oandcogames.com - Jade "
   },
   {
-    "color": "#000000",
+    "name": "Minotaur",
     "size": 21,
     "bricks": "________________________W_____________W______WWW_________WWW_______WWWWRR_RRWWWW_________WWRrRRRrRWW___________RRrrRrrRR___________R_RrrRrrR_R__________RR_RRRRR_RR_yy_______R__RRRRR__Ryy__________RRRRRRR_yyy__y_______ORyRyRO_y_Ryyy_____OOOy___yOO_R_yy_____OOOOyRRRyOOR_yy_____OOOOOOyyyOORO________OO__OOOOOOROO________RR__OOOOORrrO________RR__OOOOROrr_____________yyyyyyy______________RRRRRRR_____________RRRR_RRRR____________RRR___RRR______",
-    "name": "Minotaur",
     "credit": "Theseus and the Minotaur: https://www.britannica.com/topic/Minotaur - Wombatmithut "
   },
   {
-    "color": "#000000",
+    "name": "Atropa",
     "size": 19,
     "bricks": "__________________________rrrrr_____________rsrrrsr____________rrsssrr____________rrrrrrr_________RRRRRrrrRRRRR______RRRRRRrRRRRRR___rrrrrrRRRRRRRrrrrrrssssssrRyyyRrssssssrrrrrrsrRyRrsrrrrrrrrrrrrrsRRRsrrrrrrrrrrrrrrsRRRsrrrrrrr_rrrrrrskkksrrrrrr_______kkkkkkk________kkkk__kkk__kkkk____kkkkk_kkk_kkkkk____kkkkk__k__kkkkk_____kkkk__k__kkkk______________________",
-    "name": "Atropa",
     "credit": "Perhaps this one will save her? oandcogames.com - Jade"
   },
   {
-    "color": "#115988",
+    "name": "Strawberry",
     "size": 14,
     "bricks": "_____________________gg_________gggCCg_______gCCgCCCg______ggRCCRgg______gRRRRRRg_____gRsrrrrrRg____grrrsrrsrg____grsrRrrRrg____grRrrrrRrg_____grRRRRrg_______grRRrg_________grrg___________gg______",
-    "name": "Strawberry",
     "credit": "A memento for a perilous climb. celestegame.com - Jade"
+  },
+  {
+    "name": "icon:instant_explosion",
+    "size": 9,
+    "bricks": "____y_______yBy_____bByBb___yBb_bBy_yBy___yBy_yBb___y___bBy_______yBy_______y____",
+    "svg": null,
+    "color": ""
+  },
+  {
+    "name": "icon:soft_brush",
+    "size": 8,
+    "bricks": "______________bb_____bbb____bbb____bbb____bbb___yyyb____________",
+    "svg": null,
+    "color": ""
   }
 ]

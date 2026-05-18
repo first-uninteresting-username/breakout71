@@ -57,4 +57,10 @@ describe("translation quality checks", () => {
     }
     expect(badKeys).toEqual([]);
   });
+  it("all keys are set in english, except maybe verbose_description", () => {
+    const badKeys = Object.keys(englishTranslation).filter(
+      (k) => !englishTranslation[k] && !k.includes("verbose_description"),
+    );
+    expect(badKeys).toEqual([]);
+  });
 });

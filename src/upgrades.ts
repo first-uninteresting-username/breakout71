@@ -1237,4 +1237,29 @@ export const rawUpgrades = [
     fullHelp: (lvl: number) =>
       t("upgrades.varied_diet.verbose_description", { plus: lvl, minus: lvl }),
   },
+
+  {
+    category: categories.advanced,
+    threshold: 400000,
+    gift: false,
+    id: "instant_explosion",
+    max: 1,
+    hardLimit: 1,
+    name: t("upgrades.instant_explosion.name"),
+    help: (lvl: number) => t("upgrades.instant_explosion.tooltip"),
+    fullHelp: (lvl: number) =>
+      t("upgrades.instant_explosion.verbose_description"),
+  },
+
+  {
+    category: categories.advanced,
+    threshold: 410000,
+    gift: false,
+    id: "soft_brush",
+    max: 7,
+    hardLimit: Infinity,
+    name: t("upgrades.soft_brush.name"),
+    help: (lvl: number) => t("upgrades.soft_brush.tooltip"),
+    fullHelp: (lvl: number) => t("upgrades.soft_brush.verbose_description"),
+  },
 ] as const;
