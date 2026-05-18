@@ -246,6 +246,12 @@
     "credit": ""
   },
   {
+    "name": "icon:instant_explosion",
+    "size": 9,
+    "bricks": "____y_______yBy_____bByBb___yBb_bBy_yBy___yBy_yBb___y___bBy_______yBy_______y____",
+    "credit": ""
+  },
+  {
     "name": "icon:left_is_lava",
     "size": 8,
     "bricks": "r_______rtttttt_rtttttt_r_______r_______r____W__r_______r_WWW___",
@@ -507,6 +513,12 @@
     "name": "icon:smaller_puck",
     "size": 8,
     "bricks": "_________tttttt__tttttt_____________W_____________________yy____",
+    "credit": ""
+  },
+  {
+    "name": "icon:soft_brush",
+    "size": 8,
+    "bricks": "______________bb_____bbb____bbb____bbb____bbb___yyyb____________",
     "credit": ""
   },
   {
@@ -2605,8 +2617,8 @@
   },
   {
     "name": "7 jours sur Terre",
-    "size": 13,
-    "bricks": "_______________WWWWWWWWWW___W________W__WWWWWWWW__W_WW__WWWW__WW_W__WWWW__WW__WW__WW__W____WWWWW__WWWW___WWW__WW__WW___W__WW__WWW___WWW_W___W____________________________",
+    "size": 12,
+    "bricks": "______________WWWWWWWWWW__W________W_WWWWWWWW__WWW__WWWW__WWW__WWWW__WW_WW__WW__W___WWWWW__WWWW__WWW__WW__WW__W__WW__WWW__WWW_W___W_____________",
     "credit": "https://www.youtube.com/c/7jourssurTerre - A francophone youtube channel about geopolitics"
   },
   {
@@ -2820,17 +2832,70 @@
     "credit": "A memento for a perilous climb. celestegame.com - Jade"
   },
   {
-    "name": "icon:instant_explosion",
-    "size": 9,
-    "bricks": "____y_______yBy_____bByBb___yBb_bBy_yBy___yBy_yBb___y___bBy_______yBy_______y____",
-    "svg": null,
-    "color": ""
+    "name": "Bomb garden",
+    "size": 6,
+    "bricks": "BaaaaBvBaaByvvysyyvvavyyvBssByBssssB",
+    "credit": "By Marion LE CARO"
   },
   {
-    "name": "icon:soft_brush",
-    "size": 8,
-    "bricks": "______________bb_____bbb____bbb____bbb____bbb___yyyb____________",
-    "svg": null,
-    "color": ""
+    "name": "Steamed clams",
+    "size": 9,
+    "bricks": "___________OyOOy___yOOOyOO__kkkOkkO__RRRRRRR__SSSSSSS__OOOOOOO___OOOOO___________",
+    "credit": "\"That's what I call hamburgers\" https://knowyourmeme.com/memes/steamed-hams - Jade"
+  },
+  {
+    "name": "This is literally 2077!",
+    "size": 20,
+    "bricks": "____r_r___r_r_r________r__Rr_Rr_R_r_r______RrrRrRRrRrR__r_____r_RrRrRrrRrr_r_______RrRyRrRrrRyrr_______RrlyyRrrryyRr________RRlrRRrRrRrr_________RllRrrrRrr__________RRR_rr_rrr________l_RlrRrrrrlr_l_______llRl____lrll___________RRrrrr________________Rr__________yyya__ya__yyya_yyyaya_ya_yayaya_yaya_yaa__yaya_yayaya_yaya___ya_ya_ya__ya___ya__ya__ya_ya_ya___ya__ya_yaya_ya_ya___ya__yyya__yya__ya___ya__",
+    "credit": "The year V got the short end of the stick, with a poor rendition of the samurai print. Level by D.V."
+  },
+  {
+    "name": "Plague Inc. logo",
+    "size": 21,
+    "bricks": "______BBBBBBBBB____________RRRRBRRRR_________BRRRssRRRssRRRB_____BRRssWWRRRWWssRRB___BRRsWWssRRRssWWsRRB__RRsWWsRRBBBRRsWWsRR_BRRsWsRRBWWWBRRsWsRRBRRsWWWssWsssWssWWWsRRRsWssWWWsRBRsWWWssWsRRsWsRssWWWsWWWssRsWsRRsWsRRWsWsBsWsWRRsWsRRsWsBsWRsWsWsRWsBsWsRRRRRBWsBRWWWRBsWBRRRRRBRRRBWsssWsssWBRRRBRBRsWRRBWWsWsWWBRRWsRB_RRWsRRBRsWsRBRRsWRR__BRsWssRsWWWsRssWsRB___RRsWWsWWsWWsWWsRR____BRRssWWsRsWWssRRB_____BRRRssRRRssRRRB________BRRRRRRRRRB_____",
+    "credit": "Game logo of Plague Inc. A classic pandemic simulation/strategy game by nDemic Creations. It achieved a second wave of popularity during the year 2020 due to \"contextual reasons\". Designing this level almost made me lose my mind. This was one of my first levels, but I had to completely redesign it 11 times to get that hazard sign Just right. Level by D.V."
+  },
+  {
+    "name": "Altered Carbon",
+    "size": 21,
+    "bricks": "______________________________________________BRRRRRRRRRRRB________R___________R_______BR_RRRR____R_RB______RR_R_______R_RR_____BR__R_______R__RB____RR__RR_____RR__RR____R____R_____R____R___RR____RR___RR____RR__R______RRR_R______R_RR________R________RR_R______R_RRR______R__RR____RR___RR____RR___R____R_____R____R____RR__RR_____RR__RR____BR__R_______R__RB_____RR_R_______R_RR______BR_R____RRRR_RB_______R___________R________BRRRRRRRRRRRB____",
+    "credit": "The logo of a cyberpunk-esque sci-fi TV show where the human body becomes replaceable. The human body becomes simply.. *drops title card* Level by D.V."
+  },
+  {
+    "name": "Breakout Bad, again.",
+    "size": 21,
+    "bricks": "WWWWWWWWWWW__________WkkkkkkkkkW__________WkkkkkkBBkW__________WkWWkkkkkkW__________WkWkWkkkkkW__________WkWWkkWWkkW__________WkWkWkWkkkW__________WkWWkkWkkkW__________WkkkkkkkkkW__________WkkkkkkkkkW_B_B_B_B_BWWWWWWWWWWWWWWWWWWWWWB_B_B_B_B_WkkkkkkkkkW__________WkkkkkkBBkW__________WkWWkkkkkkW__________WkWkWkkkkkW__________WkWWkkkWWkW__________WkWkWkWkWkW__________WkWWkkWWWkW__________WkkkkkkkkkW__________WkkkkkkkkkW__________WWWWWWWWWWW",
+    "credit": "Logo of the hit show. Level by D.V."
+  },
+  {
+    "name": "This is literally 1984!",
+    "size": 17,
+    "bricks": "_____BBBBBBB_________BrrrrrrrB______Brrrr___rrrrB___Brrr__WWW__rrrB_Brrr_WWWWWWW_rrrBrrr_WWWBBBWWW_rrrrr_WWWWB_BWWWW_rrrrr_WWWBBBWWW_rrrrrrr_WWWWWWW_rrrrrrrrr__WWW__rrrrrrrrrrrrrrrrrrrrrrrr_rr___r___r_r_rr__rr_r_r_r_r_r_rrr_rr___r___r___rrr_rrrr_r_r_rrr_rr___r___r___rrr_rrrrrrrrrrrrrrrrrr",
+    "credit": "Ha ha, funny year. Such meme, So conspiracy. A b**k written by Ge*rge *rwell. If y*u bec*me a double-ungood pers*n and re*d this b**k, Onii-Chan will un-alive you. Level by D.V."
+  },
+  {
+    "name": "Fahrenheit 451 - Ray Bradbury",
+    "size": 21,
+    "bricks": "_______________________gBgggBgggBgggBg______BlggBgggBglgBggW_____gggBlllBllgBgggWg____ggBllgBgggBgggBWg____gBlggBgggBgggBgWB____BgglBgggBgggBggWg____ggWrgggBgggBgggWg____gWrrrOOOOOOOOOBWg____gWrrrOOOOOOOOOgWB____BgrrBgggBgggBggWg____gggBgggBgggBgggWg____gOOgrgBgrrrggrBWg____gOggrBrgrBggrrgWB____BOOgrrrgrrrgBrgWg____gOgBggrBggrBgrgWg____gOBgggrgrrBgrrBWg____gBgggBgggBgggBgWB____BgggBgggBgggBggWg____gWrWWWWWWWWWWWWWg_____BgrgBgggBgggBggg__",
+    "credit": "Very *un*important book by Ray Bradbury. Oops, I burned the rest of the explanation. Don't read the book,  just get an AI to     ̶b̶u̶r̶n̶ *summarize* it for you. People who read books are lame. Always stay Illiterate and Proud! Level by D.V."
+  },
+  {
+    "name": "The meat of sassafas, Albert camel",
+    "size": 21,
+    "bricks": "______________________WWWWWWWWWWWWWWWWWWW__WWWWWWBWBWBBWBWWWBW__WWWWWB_WWWWWWWWWB_W__WWWWB__WBBBWWWWB__W__WWWB___WWWWWWWB___W__WWB____WWWWWWB____W__W______WWWWW______W__W______WWWW_______W__W______WWW________W__W______WW_________W__W______W__________W__WWWWWWWWWWWWWWWWWWW__WWBWWWWBWWWWBWWWWBW__WB_WWWB_WWWB_WWWB_W__W__WW___WW___WW___W__W__W____W____W____W__WWWWWWWWWWWWWWWWWWW__WWBWWBWWBWWBWWBWWBW__W__W__W__W__W__W__W__WWWWWWWWWWWWWWWWWWW_",
+    "credit": "The Myth of Sisyphus by Albert Camus is a book about how absurdism can add meaning to an otherwise meaningless life. Aren't you happy playing this game over and over again? The funny name happened when writing the title using voice-type, and the book shows you that sometimes things really don't matter that much. And it's okay. Life goes on. Level by D.V."
+  },
+  {
+    "name": "A Clockwork Orange - Anthony Burgess",
+    "size": 21,
+    "bricks": "_rrrrrrrrrrrrrrrrrrr__rrrrrr_______rrrrrr__rrrr___________rrrr__rrrr___________rrrr__rrr_____________rrr__rrr_____________rrr__rrr_____________rrr__r_______OOOOOOOO__r__r______OBOOOOOOO__r__rrOO__OBWBOOOOOOrrr__rrOO_OBW_WBOOOOOrrr__rrOO_OOBWBOOOOOOrrr__rrrO_OOOBOOOOOOOrrr__yyyyOOOOOOOOOOOOyyy__yyyyOOOOOOOOOOOOyyy__yyyyyOOOOOOOOOOyyyy__yyyykOOOOOOOOOOkyyy__yyyBk_OOOOOOOO_kByy__ykBBkkk_OOOOOOkkBBk__kkkBkkkkk_OOO_kkBkk__kkkBBkkkkkkkkkkBBkk_",
+    "credit": "It's a book by Anthony Burgess. You're a Good©® Person if you read the book, and you're a Bad©® Person if you watch the movie directed by Stanley Kubrick. Level by D.V."
+  },
+  {
+    "color": "#115988",
+    "size": 10,
+    "bricks": "PPPPPPPPPPPPPPPPPPPPppppppppppppppppppppggggggggggggggggggggbbbbbbbbbbbbbbbbbbbbtttttttttttttttttttt",
+    "name": "Omnisexual flag",
+    "credit": "https://new.lgbtqia.wiki/wiki/Omni_(orientation) - By Jade"
   }
 ]

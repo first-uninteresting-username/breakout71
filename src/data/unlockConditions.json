@@ -1809,5 +1809,60 @@
     "required": ["paddle_up_combo", "thomas", "shocks"],
     "forbidden": ["sapper", "refill", "golden_goose"],
     "minScore": 34600
+  },
+  "Bomb garden": {
+    "required": ["bricks_attract_ball", "minefield", "pierce_top"],
+    "forbidden": ["addiction", "base_combo", "gravity_falls"],
+    "minScore": 34700
+  },
+  "Steamed clams": {
+    "required": ["steering", "sacrifice", "bricks_attract_coins"],
+    "forbidden": ["minefield", "chill", "reach"],
+    "minScore": 34800
+  },
+  "This is literally 2077!": {
+    "required": ["round_bricks", "wrap_right", "three_cushion"],
+    "forbidden": ["sacrifice", "concave_puck", "chill"],
+    "minScore": 34900
+  },
+  "Plague Inc. logo": {
+    "required": ["bigger_explosions", "pierce_left", "instant_explosion"],
+    "forbidden": ["happy_family", "right_is_lava", "paddle_up_combo"],
+    "minScore": 35000
+  },
+  "Altered Carbon": {
+    "required": ["telekinesis", "trampoline", "pierce_left"],
+    "forbidden": ["rainbow", "top_is_lava", "gravity_falls"],
+    "minScore": 35100
+  },
+  "Breakout Bad, again.": {
+    "required": ["telekinesis", "forgiving", "wrap_right"],
+    "forbidden": ["vibrant_neighborhood", "gravity_falls", "palette"],
+    "minScore": 35200
+  },
+  "This is literally 1984!": {
+    "required": ["viscosity", "metamorphosis", "wrap_up"],
+    "forbidden": ["forgiving", "vibrant_neighborhood", "limitless"],
+    "minScore": 35300
+  },
+  "Fahrenheit 451 - Ray Bradbury": {
+    "required": ["golden_goose", "thomas", "shocks"],
+    "forbidden": ["sapper", "etherealcoins", "compound_interest"],
+    "minScore": 35400
+  },
+  "The meat of sassafas, Albert camel": {
+    "required": ["ball_attracts_coins", "skip_last", "soft_brush"],
+    "forbidden": ["ball_attract_ball", "soft_reset", "soft_touch"],
+    "minScore": 35500
+  },
+  "A Clockwork Orange - Anthony Burgess": {
+    "required": ["passive_income", "trickledown", "side_flip"],
+    "forbidden": ["side_kick", "skip_last", "superhot"],
+    "minScore": 35600
+  },
+  "Omnisexual flag": {
+    "required": ["side_kick", "side_flip", "base_combo"],
+    "forbidden": ["round_bricks", "implosions", "pierce_above_paddle"],
+    "minScore": 35700
   }
 }
