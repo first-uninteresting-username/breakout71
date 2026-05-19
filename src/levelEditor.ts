@@ -131,7 +131,6 @@ export async function editRawLevel(nth: number, color = "") {
   }
 
   function handlePointerDown(e: MouseEvent) {
-    console.log("handlePointerDown", e);
     if (!e.isPrimary) return;
     const el = (e.target as Element).closest("[data-swipe]");
     if (!el) return;
