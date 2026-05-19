@@ -252,3 +252,12 @@ function memorizeScrollPosition(title: string | undefined) {
 function revertScrollPosition(title: string | undefined) {
   if (title) window.scrollTo(0, memorizedScrollPosition[title] || 0);
 }
+
+window["backButtonCaptured"] = function () {
+  if (closeModal) {
+    closeModal();
+    return true;
+  } else {
+    return false;
+  }
+};

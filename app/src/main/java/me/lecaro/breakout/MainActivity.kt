@@ -16,6 +16,7 @@ import android.webkit.ValueCallback
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.content.FileProvider
 import java.io.File
 import java.net.URLDecoder
@@ -25,8 +26,71 @@ import java.util.Date
 
 const val CHOOSE_FILE_REQUEST_CODE = 548459
 
-class MainActivity : android.app.Activity() {
+class MainActivity : androidx.activity.ComponentActivity() {
 
+    private lateinit var webView: WebView
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
+        webView = WebView(this)
+        webView.settings.javaScriptEnabled = true
+        webView.settings.domStorageEnabled = true
+        webView.settings.setSupportZoom(false)
+
+
+        webView.loadUrl("file:///android_asset/index.html?isInWebView=true")
+        val activity = this;
+
+        webView.webChromeClient = object : WebChromeClient() {
+            override fun onConsoleMessage(consoleMessage: ConsoleMessage): Boolean {
+                Log.d(
+                    "WebView",
+                    "${consoleMessage.message()} -- From line " + "${consoleMessage.lineNumber()} of ${consoleMessage.sourceId()}"
+                )
+                return true
+            }
+
+
+            override fun onShowFileChooser(
+                webView: WebView?,
+                filePathCallback: ValueCallback<Array<Uri>>?,
+                fileChooserParams: FileChooserParams?
+            ): Boolean {
+                try {
+
+                    fileChooserParams?.createIntent()?.let {
+                        startActivityForResult(
+                            it, CHOOSE_FILE_REQUEST_CODE
+                        )
+                    }
+                    this@MainActivity.filePathCallback = filePathCallback
+                    return true
+                } catch (e: Exception) {
+                    Log.e("DL", "Error ${e.message}")
+                    Toast.makeText(activity, "Error ${e.message}", Toast.LENGTH_LONG).show()
+                    return false
+                }
+            }
+        }
+
+        webView.setDownloadListener(DownloadListener { url, userAgent, contentDisposition, mimetype, contentLength ->
+            Log.d("DL", "url: ${url}")
+            Log.d("DL", "userAgent: ${userAgent}")
+            Log.d("DL", "contentDisposition: ${contentDisposition}")
+            Log.d("DL", "mimetype: ${mimetype}")
+            Log.d("DL", "contentLength: ${contentLength}")
+
+            downloadFile(url)
+        })
+
+        setContentView(webView)
+        setupBackCallback()
+    }
+
+    @Deprecated("This method has been deprecated in favor of using the Activity Result API\n      which brings increased type safety via an {@link ActivityResultContract} and the prebuilt\n      contracts for common intents available in\n      {@link androidx.activity.result.contract.ActivityResultContracts}, provides hooks for\n      testing, and allow receiving results in separate, testable classes independent from your\n      activity. Use\n      {@link #registerForActivityResult(ActivityResultContract, ActivityResultCallback)}\n      with the appropriate {@link ActivityResultContract} and handling the result in the\n      {@link ActivityResultCallback#onActivityResult(Object) callback}.")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 
         super.onActivityResult(requestCode, resultCode, data)
@@ -55,13 +119,22 @@ class MainActivity : android.app.Activity() {
 
                 val urlEncoded = url.substring("data:application/json;charset=utf-8,".length)
                 val str = URLDecoder.decode(urlEncoded, StandardCharsets.UTF_8.name())
-                writeFileAndShare(str.toByteArray(), "breakout-71-save-$currentDate.json", "application/json")
+                writeFileAndShare(
+                    str.toByteArray(),
+                    "breakout-71-save-$currentDate.json",
+                    "application/json"
+                )
             }
 
             if (url.startsWith("data:video/webm;base64,")) {
                 val base64Data = url.substring("data:video/webm;base64,".length)
-                val decodedBytes = android.util.Base64.decode(base64Data, android.util.Base64.DEFAULT)
-                writeFileAndShare(decodedBytes, "breakout-71-capture-$currentDate.webm", "video/webm")
+                val decodedBytes =
+                    android.util.Base64.decode(base64Data, android.util.Base64.DEFAULT)
+                writeFileAndShare(
+                    decodedBytes,
+                    "breakout-71-capture-$currentDate.webm",
+                    "video/webm"
+                )
             }
 
 
@@ -71,7 +144,7 @@ class MainActivity : android.app.Activity() {
         }
     }
 
-    fun writeFileAndShare(bytes:ByteArray, fileName: String, mime: String) {
+    fun writeFileAndShare(bytes: ByteArray, fileName: String, mime: String) {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             // android 10
@@ -119,65 +192,18 @@ class MainActivity : android.app.Activity() {
         }
     }
 
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN
-        );
-        val webView = WebView(this)
-        webView.settings.javaScriptEnabled = true
-        webView.settings.domStorageEnabled = true
-        webView.settings.setSupportZoom(false)
-
-
-        webView.loadUrl("file:///android_asset/index.html?isInWebView=true")
-        val activity = this;
-
-        webView.webChromeClient = object : WebChromeClient() {
-            override fun onConsoleMessage(consoleMessage: ConsoleMessage): Boolean {
-                Log.d(
-                    "WebView",
-                    "${consoleMessage.message()} -- From line " + "${consoleMessage.lineNumber()} of ${consoleMessage.sourceId()}"
-                )
-                return true
-            }
-
-
-            override fun onShowFileChooser(
-                webView: WebView?,
-                filePathCallback: ValueCallback<Array<Uri>>?,
-                fileChooserParams: FileChooserParams?
-            ): Boolean {
-                try {
-
-                    startActivityForResult(
-                        fileChooserParams?.createIntent(), CHOOSE_FILE_REQUEST_CODE
-                    )
-                    this@MainActivity.filePathCallback = filePathCallback
-                    return true
-                } catch (e: Exception) {
-                    Log.e("DL", "Error ${e.message}")
-                    Toast.makeText(activity, "Error ${e.message}", Toast.LENGTH_LONG).show()
-                    return false
+    private fun setupBackCallback() {
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                webView.evaluateJavascript("window.backButtonCaptured?.()") { result -> 
+                    if (!result.toBoolean()) {
+                        isEnabled = false
+                        onBackPressedDispatcher.onBackPressed()
+                    }
                 }
             }
-        }
-
-        webView.setDownloadListener(DownloadListener { url, userAgent, contentDisposition, mimetype, contentLength ->
-            Log.d("DL", "url: ${url}")
-            Log.d("DL", "userAgent: ${userAgent}")
-            Log.d("DL", "contentDisposition: ${contentDisposition}")
-            Log.d("DL", "mimetype: ${mimetype}")
-            Log.d("DL", "contentLength: ${contentLength}")
-
-            downloadFile(url)
         })
-
-
-
-        setContentView(webView)
     }
+
+
 }

@@ -3,7 +3,6 @@ import java.util.Properties
 
 plugins {
     alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
 }
 
 
@@ -27,10 +26,10 @@ android {
 
     defaultConfig {
         applicationId = "me.lecaro.breakout"
-        minSdk = 21
-        targetSdk = 36
-        versionCode = 29651956
-        versionName = "29651956"
+        minSdk = 23
+        targetSdk = 37
+        versionCode = 29652932
+        versionName = "29652932"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
@@ -52,15 +51,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+
     buildFeatures {
 //        compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
-    }
+//    composeOptions {
+//        kotlinCompilerExtensionVersion = "1.5.1"
+//    }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -69,4 +66,5 @@ android {
 }
 dependencies {
     implementation(libs.androidx.core)
+    implementation(libs.androidx.activity.ktx)
 }
