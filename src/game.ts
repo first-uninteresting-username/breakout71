@@ -448,11 +448,11 @@ document.addEventListener("visibilitychange", () => {
     pause(true);
   }
 });
-if (getSettingValue("score-opened", 0) < 3) {
+if (getSettingValue("score-opened", 0) < 1) {
   scoreDisplay.classList.add("button-look");
 }
 const menuDisplay = document.getElementById("menu") as HTMLButtonElement;
-if (getSettingValue("menu-opened", 0) < 3) {
+if (getSettingValue("menu-opened", 0) < 1) {
   menuDisplay.classList.add("button-look");
 }
 
@@ -461,6 +461,7 @@ function scoreOpen(e: MouseEvent) {
   if (alertsOpen) return;
 
   setSettingValue("score-opened", getSettingValue("score-opened", 0) + 1);
+  scoreDisplay.classList.remove("button-look");
   openScorePanel(mainGameState);
 }
 
@@ -471,6 +472,7 @@ menuDisplay.addEventListener("click", (e) => {
   e.preventDefault();
   if (!alertsOpen) {
     setSettingValue("menu-opened", getSettingValue("menu-opened", 0) + 1);
+    menuDisplay.classList.remove("button-look");
     openMainMenu();
   }
 });
