@@ -195,7 +195,7 @@ class MainActivity : androidx.activity.ComponentActivity() {
     private fun setupBackCallback() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                webView.evaluateJavascript("window.backButtonCaptured?.()") { result -> 
+                webView.evaluateJavascript("window.backButtonCaptured?.()") { result ->
                     if (!result.toBoolean()) {
                         isEnabled = false
                         onBackPressedDispatcher.onBackPressed()

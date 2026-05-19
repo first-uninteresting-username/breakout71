@@ -1,7 +1,7 @@
 import { transformRawLevel } from "./loadGameData";
 import { t } from "./i18n/i18n";
 import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
-import { asyncAlert } from "./asyncAlert";
+import { asyncAlert, closeModal } from "./asyncAlert";
 import { Palette, RawLevel } from "./types";
 import { getIcon, levelIconHTML } from "./levelIcon";
 
@@ -91,8 +91,9 @@ export async function editRawLevel(nth: number, color = "") {
   for (let y = 0; y < level.size; y++) {
     grid += '<div style="background: ' + (level.color || "black") + ';">';
     for (let x = 0; x < level.size; x++) {
-      const c = bricks[y * level.size + x];
-      grid += `<span data-resolve-to="paint_brick:${x}:${y}" style="background: ${palette[c]}">${c == "B" ? "💣" : ""}</span>`;
+      const index = y * level.size + x;
+      const c = bricks[index];
+      grid += `<span data-resolve-to="paint_brick:${index}" data-swipe="${index}" style="background: ${palette[c]}">${c == "B" ? "💣" : ""}</span>`;
     }
     grid += "</div>";
   }
@@ -118,6 +119,56 @@ export async function editRawLevel(nth: number, color = "") {
 
   const next = rawList[nth + 1];
   const previous = rawList[nth - 1];
+  let painting = "";
+  let painted: Set<number> = new Set();
+
+  function paintBrick(el: Element) {
+    const index = parseInt(el.getAttribute("data-swipe"));
+
+    painted.add(index);
+    el.style.background = palette[painting] || "";
+    el.textContent = painting == "B" ? "💣" : "";
+  }
+
+  function handlePointerDown(e: MouseEvent) {
+    console.log("handlePointerDown", e);
+    if (!e.isPrimary) return;
+    const el = (e.target as Element).closest("[data-swipe]");
+    if (!el) return;
+    const index = parseInt(el.getAttribute("data-swipe"));
+
+    painting = bricks[index] === color ? "_" : color;
+    paintBrick(el);
+    e.stopPropagation();
+    // e.preventDefault();
+  }
+  function handlePointerMove(e: MouseEvent) {
+    if (!painting) return;
+    const el = document
+      .elementFromPoint(e.clientX, e.clientY)
+      ?.closest("[data-swipe]");
+
+    if (!el) return;
+    paintBrick(el);
+    e.stopPropagation();
+    // e.preventDefault();
+  }
+  function handlePointerUp() {
+    if (painted.size) {
+      closeModal?.();
+    } else {
+      painting = "";
+    }
+  }
+  const options = { capture: false, passive: false };
+  document.addEventListener("pointerdown", handlePointerDown, options);
+  document.addEventListener("pointermove", handlePointerMove, options);
+  document.addEventListener("pointerup", handlePointerUp, options);
+  function cleanup() {
+    document.removeEventListener("pointerdown", handlePointerDown, options);
+    document.removeEventListener("pointermove", handlePointerMove, options);
+    document.removeEventListener("pointerup", handlePointerUp, options);
+  }
 
   const clicked = await asyncAlert<string | null>({
     title: `<span class="perk-title">
@@ -129,7 +180,7 @@ export async function editRawLevel(nth: number, color = "") {
       t("editor.editing.color"),
       colorList,
       t("editor.editing.help"),
-      `<div class="gridEdit" style="--grid-size:${level.size};">${grid}</div>`,
+      `<div class="gridEdit" style="--grid-size:${level.size}; touch-action: none; user-select: none;">${grid}</div>`,
 
       {
         icon: getIcon("icon:new_run"),
@@ -188,14 +239,20 @@ export async function editRawLevel(nth: number, color = "") {
       },
     ],
   });
-  if (!clicked) return;
+  cleanup();
+  if (painted.size && painting) {
+    // swiped on the board
+    painted.forEach((index) => {
+      bricks[index] = painting;
+    });
+    level.bricks = bricks.join("");
+  } else if (!clicked) return;
+
   if (typeof clicked === "string") {
     const [action, a, b] = clicked.split(":");
     if (action == "paint_brick") {
-      const x = parseInt(a),
-        y = parseInt(b);
-      bricks[y * level.size + x] =
-        bricks[y * level.size + x] === color ? "_" : color;
+      const index = parseInt(a);
+      bricks[index] = bricks[index] === color ? "_" : color;
       level.bricks = bricks.join("");
     }
     if (action == "set_color") {
