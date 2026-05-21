@@ -2892,10 +2892,23 @@
     "credit": "It's a book by Anthony Burgess. You're a Good©® Person if you read the book, and you're a Bad©® Person if you watch the movie directed by Stanley Kubrick. Level by D.V."
   },
   {
-    "color": "#115988",
+    "name": "Omnisexual flag",
     "size": 10,
     "bricks": "PPPPPPPPPPPPPPPPPPPPppppppppppppppppppppggggggggggggggggggggbbbbbbbbbbbbbbbbbbbbtttttttttttttttttttt",
-    "name": "Omnisexual flag",
     "credit": "https://new.lgbtqia.wiki/wiki/Omni_(orientation) - By Jade"
+  },
+  {
+    "color": "#000000",
+    "size": 12,
+    "bricks": "_________________at__________bb__________tb_________tttb________bttb________ttta________aaWW________WWaa________Watt________bttb________________",
+    "name": "a bo-tl uh wah-tah",
+    "credit": "My keyboard got British accent for a bit when naming this level. - Valikzant"
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "_______y___ty______________ttttt__t___________ytttttttBt___________tttOOt_Wtty________yttOO_Ot__Wt_________ttOB____t__Wt______yttO__yt___t_________tttO__t_ty___________tttB__t_Btt_____B_____t__ytttWWt______y_______tttt__W_______y____yttttOtt_________y___ttttOB_____yy_ll__yytttOO_______yO_OOl_OtttOB___y_y__yl_lllBltBt___ttttWt___OlllO_____yt_BtW_W____lll__yt_tttttW______OO_O__ttttOttttttt___l__Ol_t_OOBOOOB_____OO__BOBB___________Bllllllll",
+    "name": "Hydra & Hercules",
+    "credit": "https://en.wikipedia.org/wiki/Lernaean_Hydra - Wombatmithut"
   }
 ]

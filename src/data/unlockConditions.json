@@ -1864,5 +1864,15 @@
     "required": ["side_kick", "side_flip", "base_combo"],
     "forbidden": ["round_bricks", "implosions", "pierce_above_paddle"],
     "minScore": 35700
+  },
+  "a bo-tl uh wah-tah": {
+    "required": ["concave_puck", "right_is_lava", "wrap_up"],
+    "forbidden": ["steering", "bricks_attract_ball", "streak_shots"],
+    "minScore": 35800
+  },
+  "Hydra & Hercules": {
+    "required": ["pierce", "refill", "streak_shots"],
+    "forbidden": ["sapper", "shocks", "thomas"],
+    "minScore": 35900
   }
 }
