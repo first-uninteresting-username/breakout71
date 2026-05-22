@@ -5,6 +5,7 @@ import {
   liveCount,
 } from "./gameStateMutators";
 import {
+  baseBrickHP,
   brickCenterX,
   brickCenterY,
   countBrickColors,
@@ -38,6 +39,7 @@ import {
   missesGood,
 } from "./pure_functions";
 import { lastMeasuredFPS, startWork } from "./fps";
+import { hashCode } from "./getLevelBackground";
 
 export const gameCanvas = document.getElementById("game") as HTMLCanvasElement;
 
@@ -322,6 +324,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       -1,
       gameState.perks.clairvoyant >= 2,
       gameState.perks.round_bricks > 0,
+      0,
     );
   });
 
@@ -774,8 +777,7 @@ export function renderAllBricks(
     offset = 0;
   }
 
-  const clairVoyance =
-    clairvoyant && gameState.brickHP.reduce((a, b) => a + b, 0);
+  const brickHps = gameState.brickHP.reduce((a, b) => a + b, 0);
 
   const round = gameState.perks.round_bricks > 0;
   const newKey =
@@ -794,13 +796,14 @@ export function renderAllBricks(
     "_" +
     gameState.perks.pierce_color +
     "_" +
-    clairVoyance +
+    brickHps +
     "_" +
     offset +
     "_" +
     redBorderOutOfPuck +
     "_" +
-    round;
+    round +
+    "_";
 
   if (
     newKey !== cachedBricksRenderKey ||
@@ -839,6 +842,15 @@ export function renderAllBricks(
           gameState.perks.paddle_up_combo &&
           !isBrickOverPaddle(gameState, index));
 
+      const cracks =
+        color === "black" || clairvoyant
+          ? 0
+          : clamp(
+              Math.round(baseBrickHP(gameState) - gameState.brickHP[index]),
+              0,
+              10,
+            );
+
       canctx.globalCompositeOperation = "source-over";
       drawBrick(
         gameState,
@@ -849,6 +861,7 @@ export function renderAllBricks(
         redBorder ? offset : -1,
         clairvoyant >= 2,
         round,
+        cracks,
       );
       if (gameState.brickHP[index] > 1 && clairvoyant) {
         canctx.globalCompositeOperation = "source-over";
@@ -1110,6 +1123,7 @@ export function drawBrick(
   offset: number = 0,
   borderOnly: boolean,
   round: boolean = false,
+  cracks = 0,
 ) {
   const tlx = Math.ceil(x - gameState.brickWidth / 2);
   const tly = Math.ceil(y - gameState.brickWidth / 2);
@@ -1135,7 +1149,8 @@ export function drawBrick(
     borderOnly +
     "_" +
     round +
-    "_";
+    "_" +
+    cracks;
 
   if (!cachedGraphics[key]) {
     const can = document.createElement("canvas");
@@ -1177,10 +1192,49 @@ export function drawBrick(
       canctx.fill();
     }
     canctx.stroke();
+    drawCracks(canctx, width, height, cracks, color);
     cachedGraphics[key] = can;
   }
   ctx.drawImage(cachedGraphics[key], tlx, tly, width, height);
   // It's not easy to have a 1px gap between bricks without antialiasing
+}
+function drawCracks(
+  canctx: CanvasRenderingContext2D,
+  width: number,
+  height: number,
+  cracks: number,
+  color: String,
+) {
+  let counter = 0;
+  const size = Math.max(width, height);
+  let rand = () => {
+    counter++;
+    return (
+      (hashCode("cracks-step" + counter + " " + color + "-start") % 100) / 100.0
+    );
+  };
+  for (let i = 0; i < cracks; i++) {
+    canctx.strokeStyle = "black";
+    canctx.lineWidth = 2;
+    canctx.globalCompositeOperation = "multiply";
+    canctx.globalAlpha = 1;
+    canctx.setLineDash(emptyArray);
+    canctx.beginPath();
+    const centerX = (0.2 + rand() * 0.8) * size;
+    const centerY = (0.2 + rand() * 0.8) * size;
+    const angle1 = rand() * Math.PI * 2;
+    const angle2 = angle1 + Math.PI + (rand() - 0.5) * Math.PI * 0.2;
+    canctx.moveTo(
+      centerX + Math.cos(angle1) * size,
+      centerY + Math.sin(angle1) * size,
+    );
+    canctx.lineTo(centerX, centerY);
+    canctx.lineTo(
+      centerX + Math.cos(angle2) * size,
+      centerY + Math.sin(angle2) * size,
+    );
+    canctx.stroke();
+  }
 }
 
 export function roundRect(

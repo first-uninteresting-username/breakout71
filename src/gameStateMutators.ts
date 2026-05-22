@@ -13,6 +13,7 @@ import {
 } from "./types";
 
 import {
+  baseBrickHP,
   brickCenterX,
   brickCenterY,
   canvasCenterX,
@@ -878,9 +879,7 @@ export function loadLevelBackground(lvl: Level) {
 function setBrick(gameState: GameState, index: number, color: string) {
   gameState.bricks[index] = color || "";
   gameState.brickHP[index] =
-    (color === "black" && 1) ||
-    (color && 1 + gameState.perks.sturdy_bricks) ||
-    0;
+    (color === "black" && 1) || (color && baseBrickHP(gameState)) || 0;
 }
 
 const rainbow = [

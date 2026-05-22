@@ -387,3 +387,6 @@ export function isBrickOverPaddle(gameState: GameState, brickIndex: number) {
     x < gameState.puckPosition + gameState.puckWidth / 2
   );
 }
+export function baseBrickHP(gameState: GameState) {
+  return 1 + gameState.perks.sturdy_bricks;
+}
