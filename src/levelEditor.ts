@@ -93,7 +93,7 @@ export async function editRawLevel(nth: number, color = "") {
     for (let x = 0; x < level.size; x++) {
       const index = y * level.size + x;
       const c = bricks[index];
-      grid += `<span data-resolve-to="paint_brick:${index}" data-swipe="${index}" style="background: ${palette[c]}">${c == "B" ? "💣" : ""}</span>`;
+      grid += `<span data-swipe="${index}" style="background: ${palette[c]}">${c == "B" ? "💣" : ""}</span>`;
     }
     grid += "</div>";
   }
@@ -124,7 +124,6 @@ export async function editRawLevel(nth: number, color = "") {
 
   function paintBrick(el: Element) {
     const index = parseInt(el.getAttribute("data-swipe"));
-
     painted.add(index);
     el.style.background = palette[painting] || "";
     el.textContent = painting == "B" ? "💣" : "";
@@ -132,10 +131,12 @@ export async function editRawLevel(nth: number, color = "") {
 
   function handlePointerDown(e: MouseEvent) {
     if (!e.isPrimary) return;
-    const el = (e.target as Element).closest("[data-swipe]");
-    if (!el) return;
-    const index = parseInt(el.getAttribute("data-swipe"));
 
+    const el = document
+      .elementFromPoint(e.clientX, e.clientY)
+      ?.closest("[data-swipe]");
+    if (!el) return;
+    const index = parseInt(el.getAttribute("data-swipe") as String);
     painting = bricks[index] === color ? "_" : color;
     paintBrick(el);
     e.stopPropagation();
@@ -153,6 +154,7 @@ export async function editRawLevel(nth: number, color = "") {
     // e.preventDefault();
   }
   function handlePointerUp() {
+    console.log("handlePointerUp", { painted, painting });
     if (painted.size) {
       closeModal?.();
     } else {
@@ -249,11 +251,6 @@ export async function editRawLevel(nth: number, color = "") {
 
   if (typeof clicked === "string") {
     const [action, a, b] = clicked.split(":");
-    if (action == "paint_brick") {
-      const index = parseInt(a);
-      bricks[index] = bricks[index] === color ? "_" : color;
-      level.bricks = bricks.join("");
-    }
     if (action == "set_color") {
       color = a;
     }
