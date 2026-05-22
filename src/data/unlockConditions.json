@@ -1874,5 +1874,10 @@
     "required": ["pierce", "refill", "streak_shots"],
     "forbidden": ["sapper", "shocks", "thomas"],
     "minScore": 35900
+  },
+  "S.P.Q.R": {
+    "required": ["pierce_top", "coin_magnet", "bigger_puck"],
+    "forbidden": ["fountain_toss", "base_combo", "top_is_lava"],
+    "minScore": 36000
   }
 }

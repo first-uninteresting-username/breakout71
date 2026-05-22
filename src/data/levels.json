@@ -2898,17 +2898,22 @@
     "credit": "https://new.lgbtqia.wiki/wiki/Omni_(orientation) - By Jade"
   },
   {
-    "color": "#000000",
+    "name": "a bo-tl uh wah-tah",
     "size": 12,
     "bricks": "_________________at__________bb__________tb_________tttb________bttb________ttta________aaWW________WWaa________Watt________bttb________________",
-    "name": "a bo-tl uh wah-tah",
     "credit": "My keyboard got British accent for a bit when naming this level. - Valikzant"
+  },
+  {
+    "name": "Hydra & Hercules",
+    "size": 21,
+    "bricks": "_______y___ty______________ttttt__t___________ytttttttBt___________tttOOt_Wtty________yttOO_Ot__Wt_________ttOB____t__Wt______yttO__yt___t_________tttO__t_ty___________tttB__t_Btt_____B_____t__ytttWWt______y_______tttt__W_______y____yttttOtt_________y___ttttOB_____yy_ll__yytttOO_______yO_OOl_OtttOB___y_y__yl_lllBltBt___ttttWt___OlllO_____yt_BtW_W____lll__yt_tttttW______OO_O__ttttOttttttt___l__Ol_t_OOBOOOB_____OO__BOBB___________Bllllllll",
+    "credit": "https://en.wikipedia.org/wiki/Lernaean_Hydra - Wombatmithut"
   },
   {
     "color": "#000000",
     "size": 21,
-    "bricks": "_______y___ty______________ttttt__t___________ytttttttBt___________tttOOt_Wtty________yttOO_Ot__Wt_________ttOB____t__Wt______yttO__yt___t_________tttO__t_ty___________tttB__t_Btt_____B_____t__ytttWWt______y_______tttt__W_______y____yttttOtt_________y___ttttOB_____yy_ll__yytttOO_______yO_OOl_OtttOB___y_y__yl_lllBltBt___ttttWt___OlllO_____yt_BtW_W____lll__yt_tttttW______OO_O__ttttOttttttt___l__Ol_t_OOBOOOB_____OO__BOBB___________Bllllllll",
-    "name": "Hydra & Hercules",
-    "credit": "https://en.wikipedia.org/wiki/Lernaean_Hydra - Wombatmithut"
+    "bricks": "_____yyyy___yyyy_______yyy____yyy____yyy___y______yRRR_______y__y__R__yR_BRyy__R__y__y_RyR__RRRRy__RyR_y_y_RyRyR__RRR__RyRyR_yyRyRRRyRRRRRRRyRRRyRyyR__RyRRyRRRyRRyR__Ry_y_____RRyRyRR_____y__y______RRyRR______y__y_____RR_R_RR_____y___yyy_RR_____RR_yyy_______yyyy___yyyy______________y_y____________yyyyyyyyyyyyyyy_____yRRR_RRR_RRR__R_y___y_R_B_RBR_R_R_RBR_y__y_RRR_RRR_R_R_RR__y__y___R_R___R_R_R_R_y___yRRR_R___RRB_R_Ry_____yyyyyyyyyyyyyyy___",
+    "name": "S.P.Q.R",
+    "credit": "SPQR or S.P.Q.R., an initialism for Senatus Populusque Romanus: https://en.wikipedia.org/wiki/SPQR - Wombatmithut "
   }
 ]

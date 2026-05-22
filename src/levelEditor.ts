@@ -140,7 +140,6 @@ export async function editRawLevel(nth: number, color = "") {
     painting = bricks[index] === color ? "_" : color;
     paintBrick(el);
     e.stopPropagation();
-    // e.preventDefault();
   }
   function handlePointerMove(e: MouseEvent) {
     if (!painting) return;
@@ -151,24 +150,27 @@ export async function editRawLevel(nth: number, color = "") {
     if (!el) return;
     paintBrick(el);
     e.stopPropagation();
-    // e.preventDefault();
   }
   function handlePointerUp() {
-    console.log("handlePointerUp", { painted, painting });
     if (painted.size) {
       closeModal?.();
     } else {
       painting = "";
     }
   }
+  function handleContextMenu(e: MouseEvent) {
+    e.preventDefault();
+  }
   const options = { capture: false, passive: false };
   document.addEventListener("pointerdown", handlePointerDown, options);
   document.addEventListener("pointermove", handlePointerMove, options);
   document.addEventListener("pointerup", handlePointerUp, options);
+  document.addEventListener("contextmenu", handleContextMenu, options);
   function cleanup() {
     document.removeEventListener("pointerdown", handlePointerDown, options);
     document.removeEventListener("pointermove", handlePointerMove, options);
     document.removeEventListener("pointerup", handlePointerUp, options);
+    document.removeEventListener("contextmenu", handleContextMenu, options);
   }
 
   const clicked = await asyncAlert<string | null>({
@@ -181,7 +183,7 @@ export async function editRawLevel(nth: number, color = "") {
       t("editor.editing.color"),
       colorList,
       t("editor.editing.help"),
-      `<div class="gridEdit" style="--grid-size:${level.size}; touch-action: none; user-select: none;">${grid}</div>`,
+      `<div class="gridEdit" style="--grid-size:${level.size}; ">${grid}</div>`,
 
       {
         icon: getIcon("icon:new_run"),
