@@ -1879,5 +1879,10 @@
     "required": ["pierce_top", "coin_magnet", "bigger_puck"],
     "forbidden": ["fountain_toss", "base_combo", "top_is_lava"],
     "minScore": 36000
+  },
+  "Minerva's Owl": {
+    "required": ["top_is_lava", "bigger_puck", "coin_magnet"],
+    "forbidden": ["trampoline", "pierce_left", "telekinesis"],
+    "minScore": 36100
   }
 }

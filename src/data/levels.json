@@ -2910,10 +2910,16 @@
     "credit": "https://en.wikipedia.org/wiki/Lernaean_Hydra - Wombatmithut"
   },
   {
-    "color": "#000000",
+    "name": "S.P.Q.R",
     "size": 21,
     "bricks": "_____yyyy___yyyy_______yyy____yyy____yyy___y______yRRR_______y__y__R__yR_BRyy__R__y__y_RyR__RRRRy__RyR_y_y_RyRyR__RRR__RyRyR_yyRyRRRyRRRRRRRyRRRyRyyR__RyRRyRRRyRRyR__Ry_y_____RRyRyRR_____y__y______RRyRR______y__y_____RR_R_RR_____y___yyy_RR_____RR_yyy_______yyyy___yyyy______________y_y____________yyyyyyyyyyyyyyy_____yRRR_RRR_RRR__R_y___y_R_B_RBR_R_R_RBR_y__y_RRR_RRR_R_R_RR__y__y___R_R___R_R_R_R_y___yRRR_R___RRB_R_Ry_____yyyyyyyyyyyyyyy___",
-    "name": "S.P.Q.R",
     "credit": "SPQR or S.P.Q.R., an initialism for Senatus Populusque Romanus: https://en.wikipedia.org/wiki/SPQR - Wombatmithut "
+  },
+  {
+    "color": "#115988",
+    "size": 21,
+    "bricks": "_______Bg___gB_____________gggg_gggg___________gllllBllllg_________glegelllegelg_______glegWgggggWgelg______BlgWBWlllWBWglB______glegWlllllWgelg_______gleglssslgelg_________gllllsllllg___________BllgWgllB____________lggggggglB_________glglBgWglWglg_______gWgWgWlglglWlg______BWgWgWglglgWgg_______lgWBWgllWlWglB_______gWgWgWgllWBlg_______gWglglgWWWgllg_______lgl_glglBllsB________gl_gl_s___s__________Bl_Bls____s_______________s_____ss_______",
+    "name": "Minerva's Owl",
+    "credit": "Press me on a coin and worship me: https://en.wikipedia.org/wiki/Owl_of_Athena - Wombatmithut "
   }
 ]
