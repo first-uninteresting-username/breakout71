@@ -51,9 +51,14 @@ butler push  "./build/index.html" renanlecaro/breakout71:offline --userversion $
 butler push app/build/outputs/apk/release/app-release.apk renanlecaro/breakout71:apk --userversion $versionCode
 
 # archive the output files
-FOLDER="/opt/mup-nginx-proxy/config/html/static_sites/archive.lecaro.me/public-files/b71/$versionCode"
+
+BASE_FOLDER="/opt/mup-nginx-proxy/config/html/static_sites/archive.lecaro.me/public-files/b71"
+FOLDER="$BASE_FOLDER/$versionCode"
 ssh staging "mkdir -p $FOLDER"
 rsync -vz "./build/index.html" staging:$FOLDER/b71-$versionCode.html
 rsync -vz "./app/build/outputs/apk/release/app-release.apk" staging:$FOLDER/b71-$versionCode.apk
+
+# for obtainium
+rsync -vz "./app/build/outputs/apk/release/app-release.apk" staging:$BASE_FOLDER/b71-latest.apk
 
 
