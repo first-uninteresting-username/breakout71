@@ -157,7 +157,10 @@ try {
   runsHistory = JSON.parse(
     localStorage.getItem("breakout_71_runs_history") || "[]",
   )
-    .sort((a, b) => b.score - a.score)
+    .sort(
+      (a, b) =>
+        parseInt(b.appVersion) - parseInt(a.appVersion) || b.score - a.score,
+    )
     .slice(0, 100) as RunHistoryItem[];
 } catch (e) {}
 
