@@ -1884,5 +1884,46 @@
     "required": ["top_is_lava", "bigger_puck", "coin_magnet"],
     "forbidden": ["trampoline", "pierce_left", "telekinesis"],
     "minScore": 36100
+  },
+
+  "Finn the human": {
+    "required": ["ottawa_treaty", "wrap_right", "golden_goose"],
+    "forbidden": ["pierce_left", "thomas", "shocks"],
+    "minScore": 36200
+  },
+  "Jake the dog": {
+    "required": ["extra_life", "telekinesis", "paddle_up_combo"],
+    "forbidden": ["steering", "pierce_left", "right_is_lava"],
+    "minScore": 36300
+  },
+  "Umbrella Corporation": {
+    "required": ["wrap_up", "double_or_nothing", "telekinesis"],
+    "forbidden": ["flyswatter", "ball_attract_ball", "nbricks"],
+    "minScore": 36400
+  },
+  "The Dark Side of the Moon": {
+    "required": ["asceticism", "hot_start", "round_bricks"],
+    "forbidden": ["soft_brush", "soft_reset", "soft_touch"],
+    "minScore": 36500
+  },
+  "mau5head": {
+    "required": ["metamorphosis", "concave_puck", "superhot"],
+    "forbidden": ["bricks_attract_coins", "round_bricks", "wrap_left"],
+    "minScore": 36600
+  },
+  "QR Code": {
+    "required": ["refill", "streak_shots", "wrap_left"],
+    "forbidden": ["sapper", "pierce", "shocks"],
+    "minScore": 36700
+  },
+  "Colibri": {
+    "required": ["bricks_attract_ball", "trickledown", "pierce_above_paddle"],
+    "forbidden": ["fountain_toss", "smaller_puck", "wrap_left"],
+    "minScore": 36800
+  },
+  "Parrot": {
+    "required": ["wrap_up", "smaller_puck", "trickledown"],
+    "forbidden": ["passive_income", "addiction", "nbricks"],
+    "minScore": 36900
   }
 }

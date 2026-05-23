@@ -2916,10 +2916,61 @@
     "credit": "SPQR or S.P.Q.R., an initialism for Senatus Populusque Romanus: https://en.wikipedia.org/wiki/SPQR - Wombatmithut "
   },
   {
-    "color": "#115988",
+    "name": "Minerva's Owl",
     "size": 21,
     "bricks": "_______Bg___gB_____________gggg_gggg___________gllllBllllg_________glegelllegelg_______glegWgggggWgelg______BlgWBWlllWBWglB______glegWlllllWgelg_______gleglssslgelg_________gllllsllllg___________BllgWgllB____________lggggggglB_________glglBgWglWglg_______gWgWgWlglglWlg______BWgWgWglglgWgg_______lgWBWgllWlWglB_______gWgWgWgllWBlg_______gWglglgWWWgllg_______lgl_glglBllsB________gl_gl_s___s__________Bl_Bls____s_______________s_____ss_______",
-    "name": "Minerva's Owl",
     "credit": "Press me on a coin and worship me: https://en.wikipedia.org/wiki/Owl_of_Athena - Wombatmithut "
+  },
+  {
+    "name": "Finn the human",
+    "size": 12,
+    "bricks": "_____________WW______WW__WW______WW__WWWWWWWWWW__WWeeeeeeWW__WeBeeeeBeW__WeeeeeeeeW__WeegeegeeW__WeeeggeeeW__WWWeeeeWWW____WWWWWW_______________",
+    "credit": "It's adventure time! https://en.wikipedia.org/wiki/Adventure_Time - Jade"
+  },
+  {
+    "name": "Jake the dog",
+    "size": 16,
+    "bricks": "____________________gggggggg_______gyyyyyyyyg_____ggWWyyyygWWg___gygWWgggggWWyg__gygggyyyygggyg__gyygyyggyygyyg__gyggyggggyggyg___gyyggRRggyygg___gyyyyggyyyyg____gyyyyyyyyyyg_____gyyyyyyyyg_______gggggggg____________________________________________________",
+    "credit": "It's adventure time! https://en.wikipedia.org/wiki/Adventure_Time - Jade"
+  },
+  {
+    "name": "Umbrella Corporation",
+    "size": 19,
+    "bricks": "____gggg___gggg_______gWgRRgggRRgWg______gWWgRRRRRgWWg____ggWWWgRRRRRgWWWgg_gWWWWWWgRRRgWWWWWWgggWWWWWgRRRgWWWWWgggRggWWWWgRgWWWWggRggRRRggWWgRgWWggRRRg_gRRRRggWgWggRRRRg__gRRRRRRgggRRRRRRg__gRRRRggWgWggRRRRg_gRRRggWWgRgWWggRRRggRggWWWWgRgWWWWggRgggWWWWWgRRRgWWWWWgggWWWWWWgRRRgWWWWWWg_ggWWWgRRRRRgWWWgg____gWWgRRRRRgWWg______gWgRRgggRRgWg_______gggg___gggg____",
+    "credit": "Protecting the Health of the People https://en.wikipedia.org/wiki/Resident_Evil - ThatGuyOverThere"
+  },
+  {
+    "name": "The Dark Side of the Moon",
+    "size": 21,
+    "bricks": "____________________________________________________W___________________W_W_________________W___W________________W___Wrrrr___________W_____Wyyyrrr______WWW______WCCyyyr___WW_W_______WttCCCy_WW__W_________W_tttCW____W_________W____t____W___________W_______W_____________W_____WWWWWWWWWWWWWWWWW_____________________________________________________________________________________________________________________________________________________",
+    "credit": "There is no dark side of the moon, really. Matter of fact it's all dark. - ThatGuyOverThere"
+  },
+  {
+    "name": "mau5head",
+    "size": 21,
+    "bricks": "_________________________________________________________________rrrrr_______rrrrr___rrrrrrr_____rrrrrrr_rrrrrrrrr___rrrrrrrrrrrrrrrrrr___rrrrrrrrrrrrrrrrrr___rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrWWrrrWWrrrrrrr_rrrrrrWWrrrWWrrrrrr___rrrrrrrrrrrrrrrrr________rWWWWWWWr____________rWWWWWWWr____________rrWWWWWrr_____________rrWWWrr_______________rrrrr____________________________________________________________________________________________",
+    "credit": "Random Level Title https://en.wikipedia.org/wiki/Deadmau5 - ThatGuyOverThere"
+  },
+  {
+    "name": "QR Code",
+    "size": 21,
+    "bricks": "gggggggWWgWggWggggggggWWWWWgWggWgWWgWWWWWggWgggWgWggWWgWgWgggWggWgggWgWWgWgWWgWgggWggWgggWgWgWWWgWgWgggWggWWWWWgWgWWggWgWWWWWggggggggWgWgWgWgggggggWWWWWWWWgggggWWWWWWWWggWgWWggWggWWWgggWggWgWWWgWWWWgggWWWWgWWWggWgWWgggggWWgWWggWggWWgWWgWWWWggWWWgggWWggWggggWgWgWgWgggggWWWgWWWWWWWWggWWWgWWWWWWWgggggggWgWgggggWWWWgWgWWWWWgWWWgWgWWgggWgggWgggWgWWgWWggggWWWgWgWgggWgWgWWggggWWgWWggWgggWgWWggggWWWgWWWggWWWWWgWggWWgWWgWWWgggggggggWgWgggWWggWggW",
+    "credit": "Try to scan it :) - ThatGuyOverThere"
+  },
+  {
+    "name": "Colibri",
+    "size": 24,
+    "bricks": "____________________b______________________bb____________________bbbP__________________bbbbPv_________________bbbbPPv_________PPP____bbbbPPvv________PPPPP__bbbPPPvv_____bbbbPBPPP_bbPPvvvvv_________vvPPPPbPvvvvvv__________vvvPPbPvvvbbbbbbb_______vvPPPbvvbbPPPvvv________WPPPPPbbbPPvvvv_________WWPPPPPbPPvvv____________WWPPPPPbbvv_____________WWWWPPPbb________________WWWPPPbb_________________WWPPbb___________________PPPbb____________________PPb_____________________PPb_____________________WPb____________________WWb_____________________WWb_____________________bb_____________",
+    "svg": null,
+    "color": "",
+    "credit": "https://prohama.com/bird-2-pattern/"
+  },
+  {
+    "name": "Parrot",
+    "size": 15,
+    "bricks": "_____RRR___________RReeR__________yyBeR__________yyeeR__________yBeRRR__________eRRRR__________RRRyyR_________RRyyyy_________RRtyyyy_________RRtkkk_________RRtyykk_________RRttyy________yyy_ttt_____________tR______________R__",
+    "svg": null,
+    "color": "",
+    "credit": "https://prohama.com/bird-12-pattern/"
   }
 ]
