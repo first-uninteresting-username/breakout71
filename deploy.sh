@@ -20,6 +20,7 @@ versionCode=$(($(date +%s) / 60))
 
 bash ./build.sh $versionCode
 
+export JAVA_HOME="/home/renan/android-studio/jbr/"
 
 # generate signed apk for itch.io
 ./gradlew assembleRelease
