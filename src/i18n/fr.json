@@ -229,8 +229,6 @@
     "unlocks.reached": "Votre meilleur score pour l'instant est {{reached}}.",
     "unlocks.start_new_game_with": "Commencez une nouvelle partie",
     "unlocks.start_new_game_with_help": "Utiliser cette amélioration comme avantage de départ.",
-    "unlocks.starting_perk": "Amélioration de départ",
-    "unlocks.starting_perk_help": "Choisir cette amélioration aléatoirement en début de partie.",
     "unlocks.title_upgrades": "Vous avez débloqué {{unlocked}} améliorations sur {{out_of}}",
     "unlocks.try": "Essayer",
     "unlocks.unlock_condition": "Condition d'obtention :",

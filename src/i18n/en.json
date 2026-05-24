@@ -229,8 +229,6 @@
     "unlocks.reached": "Your best score was {{reached}}.",
     "unlocks.start_new_game_with": "Start a new game",
     "unlocks.start_new_game_with_help": "Use this upgrade as starter perk.",
-    "unlocks.starting_perk": "Starting upgrade",
-    "unlocks.starting_perk_help": "Sometimes pick this upgrade randomly when starting a new game.",
     "unlocks.title_upgrades": "{{unlocked}} /  {{out_of}} upgrades unlocked",
     "unlocks.try": "Try",
     "unlocks.unlock_condition": "Unlock condition:",

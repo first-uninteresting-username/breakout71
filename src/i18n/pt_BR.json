@@ -229,8 +229,6 @@
     "unlocks.reached": "Sua melhor pontuação foi {{reached}}.",
     "unlocks.start_new_game_with": "Começar uma nova partida",
     "unlocks.start_new_game_with_help": "Use esta melhoria como uma vantagem inicial.",
-    "unlocks.starting_perk": "Melhoria inicial",
-    "unlocks.starting_perk_help": "Escolher esta melhoria aleatoriamente quando começar uma nova partida.",
     "unlocks.title_upgrades": "{{unlocked}} melhorias de {{out_of}} desbloqueadas",
     "unlocks.try": "Testar",
     "unlocks.unlock_condition": "Condição de desbloqueio:",

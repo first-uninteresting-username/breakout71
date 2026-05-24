@@ -1,17 +1,15 @@
-import { PerkId, RunParams, Upgrade } from "./types";
-import { allLevelsAndIcons, upgrades } from "./loadGameData";
-import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
+import { PerkId, Upgrade } from "./types";
+import { upgrades } from "./loadGameData";
+import { getTotalScore } from "./settings";
 import { asyncAlert } from "./asyncAlert";
 import { miniMarkDown } from "./pure_functions";
 import { t } from "./i18n/i18n";
-import { confirmRestart, mainGameState, restart } from "./game";
-import { getCheckboxIcon, getIcon } from "./levelIcon";
 import { getPerkAnimation } from "./gameAnimation";
 import { getUpgradeHelp, getUpgradeTooltip } from "./openUpgradesPicker";
 
 export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
   const u = upgrades.find((u) => u.id === id) as Upgrade;
-  const { name, help, fullHelp } = u;
+  const { name } = u;
 
   const ts = getTotalScore();
 

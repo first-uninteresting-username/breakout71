@@ -229,8 +229,6 @@
     "unlocks.reached": "你的最好分数是 {{reached}}。",
     "unlocks.start_new_game_with": "开始新游戏",
     "unlocks.start_new_game_with_help": "使用这个升级作为初始被动技能。",
-    "unlocks.starting_perk": "初始升级",
-    "unlocks.starting_perk_help": "当开始新游戏时有时候随机挑选这个升级。",
     "unlocks.title_upgrades": "{{unlocked}} / {{out_of}} 升级已经解锁",
     "unlocks.try": "尝试",
     "unlocks.unlock_condition": "解锁条件：",

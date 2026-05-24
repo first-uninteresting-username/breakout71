@@ -72,7 +72,7 @@ export function getStartRunButtons() {
         const choice = await asyncAlert({
           title: t("main_menu.starting_perk"),
           content: [
-            t("main_menu.starting_perk_help"),
+            t("main_menu.starting_perk_intro"),
             {
               icon: getIcon("icon:random"),
               value: "starting_perk:",

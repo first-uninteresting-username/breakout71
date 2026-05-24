@@ -229,8 +229,6 @@
     "unlocks.reached": "Vaše nejlepší skóre bylo {{reached}}.",
     "unlocks.start_new_game_with": "Začít novou hru",
     "unlocks.start_new_game_with_help": "Použít jako počáteční vylepšení.",
-    "unlocks.starting_perk": "Počáteční vylepšení",
-    "unlocks.starting_perk_help": "Někdy náhodně vybrat toto vylepšení při zahájení nové hry.",
     "unlocks.title_upgrades": "Odemčeno {{unlocked}} / {{out_of}} vylepšení",
     "unlocks.try": "Zkusit",
     "unlocks.unlock_condition": "Podmínka odemčení:",
