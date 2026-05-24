@@ -103,8 +103,6 @@ export async function openCreativeModePerksPicker() {
             className:
               " upgrade " +
               (creativeModePerks[u.id] ? " highlight" : " not-highlighed"),
-            // tooltip: u.help(creativeModePerks[u.id] || 1),
-            // actionLabel: (creativeModePerks[u.id] || 0) + ' / '+( u.max + (creativeModePerks.limitless || 0))
           })),
         t("lab.select_level"),
         ...levelOptions,

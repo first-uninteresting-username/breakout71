@@ -22,6 +22,7 @@ const popupWrap = document.getElementById("popup") as HTMLDivElement;
 const closeModaleButton = document.getElementById(
   "close-modale",
 ) as HTMLButtonElement;
+
 closeModaleButton.addEventListener("click", (e) => {
   e.preventDefault();
   if (closeModal) closeModal();
@@ -200,7 +201,7 @@ function addButton<t>(
       button.addEventListener("click", (e) => {
         e.preventDefault();
         e.stopPropagation();
-        closeWithResult(value);
+        closeWithResult(value as t);
         // Focus "same" button if it's still there
         lastClickedItemIndex = index;
       });
@@ -226,7 +227,7 @@ ${icon}
     button.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
-      closeWithResult(value);
+      closeWithResult(value as t);
       // Focus "same" button if it's still there
       lastClickedItemIndex = index;
     });
@@ -253,7 +254,7 @@ function revertScrollPosition(title: string | undefined) {
   if (title) window.scrollTo(0, memorizedScrollPosition[title] || 0);
 }
 
-window["backButtonCaptured"] = function () {
+window.backButtonCaptured = function () {
   if (closeModal) {
     closeModal();
     return true;

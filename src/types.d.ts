@@ -40,6 +40,7 @@ export type PerkId = (typeof rawUpgrades)[number]["id"];
 declare global {
   interface Window {
     webkitAudioContext?: typeof AudioContext;
+    backButtonCaptured?: () => boolean;
   }
 
   interface Document {
