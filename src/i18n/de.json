@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "+{{lvl}} Combo / Stein, Combo wird {{delay}}s nach Zerbrechen eines Steins zurückgesetzt.",
     "upgrades.addiction.verbose_description": "Der Countdown beginnt erst nach dem Zerbrechen des ersten Steins eines jeden Levels. Er stoppt, sobald alle Ziegel zerstört sind.",
     "upgrades.asceticism.name": "Askese",
-    "upgrades.asceticism.tooltip": "+{{combo}} Combo / Ziegel, - {{combo}} bei Münzfang",
+    "upgrades.asceticism.tooltip": "+{{combo}} Combo / Ziegel, - {{loss}} bei Münzfang",
     "upgrades.asceticism.verbose_description": "Du musst die Münzen irgendwo aufbewahren, während die Combo steigt.",
     "upgrades.ball_attract_ball.name": "Schwerkraft",
     "upgrades.ball_attract_ball.tooltip": "Bälle ziehen Bälle an",

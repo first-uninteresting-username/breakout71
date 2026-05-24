@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "+{{lvl}} combo / brique cassée, combo perdu après {{delay}}s sans casser de briques",
     "upgrades.addiction.verbose_description": "Le décompte ne commence qu'à parti de la  destruction de la première brique du niveau, et s'arrête dès qu'il n'y a plus de briques.",
     "upgrades.asceticism.name": "Ascétisme",
-    "upgrades.asceticism.tooltip": "+{{combo}} combo par brique cassée, - {{combo}} quand une pièce est attrapée.",
+    "upgrades.asceticism.tooltip": "+{{combo}} combo par brique cassée, - {{loss}} quand une pièce est attrapée.",
     "upgrades.asceticism.verbose_description": "Il faudra trouver un moyen de stocker les pièces pendant que le combo grandis.",
     "upgrades.ball_attract_ball.name": "Projet de groupe",
     "upgrades.ball_attract_ball.tooltip": "Les balles attirent les balles",

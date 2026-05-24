@@ -1301,14 +1301,13 @@ export function drawText(
 
   if (!cachedGraphics[key]) {
     const can = document.createElement("canvas");
-    can.width = fontSize * text.length;
-    can.height = fontSize;
+    can.width = fontSize * text.length + 4;
+    can.height = fontSize + 4;
     const canctx = can.getContext("2d") as CanvasRenderingContext2D;
     canctx.fillStyle = color;
     canctx.textAlign = left ? "left" : "center";
     canctx.textBaseline = "middle";
-    canctx.font = fontSize + "px monospace";
-
+    canctx.font = (fontSize > 20 ? "bolder " : "") + fontSize + "px monospace";
     canctx.fillText(text, left ? 0 : can.width / 2, can.height / 2, can.width);
 
     cachedGraphics[key] = can;

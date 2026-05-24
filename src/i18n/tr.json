@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "+{{lvl}} kombo / tuğla, kombo bir tuğlayı kırdıktan sonra {{delay}}saniye içinde sıfırlanır.",
     "upgrades.addiction.verbose_description": "Geri sayım yalnızca her seviyenin ilk tuğlası kırıldıktan sonra başlar. Tüm tuğlalar yok edildiğinde durur.",
     "upgrades.asceticism.name": "Zühd",
-    "upgrades.asceticism.tooltip": "+{{combo}} kombo / tuğla, - {{combo}} jeton yakalamada",
+    "upgrades.asceticism.tooltip": "+{{combo}} kombo / tuğla, - {{loss}} jeton yakalamada",
     "upgrades.asceticism.verbose_description": "Kombonuz tırmanırken paraları bir yere saklamanız gerekecek.",
     "upgrades.ball_attract_ball.name": "Yer çekimi",
     "upgrades.ball_attract_ball.tooltip": "Toplar toplarını çeker",

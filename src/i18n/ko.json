@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "+{{lvl}} 콤보 / 벽돌, 벽돌을 부수고 {{delay}}초 후에 콤보가 초기화됩니다.",
     "upgrades.addiction.verbose_description": "카운트다운은 각 레벨의 첫 번째 벽돌을 부순 후에만 시작됩니다. 모든 벽돌이 파괴되면 카운트다운이 멈춥니다.",
     "upgrades.asceticism.name": "금욕주의",
-    "upgrades.asceticism.tooltip": "+{{combo}} 콤보 / 벽돌, - {{combo}} 동전 잡기",
+    "upgrades.asceticism.tooltip": "+{{combo}} 콤보 / 벽돌, - {{loss}} 동전 잡기",
     "upgrades.asceticism.verbose_description": "콤보가 올라가는 동안 코인을 어딘가에 보관해야 합니다.",
     "upgrades.ball_attract_ball.name": "Gravity",
     "upgrades.ball_attract_ball.tooltip": "공은 공을 끌어당깁니다",

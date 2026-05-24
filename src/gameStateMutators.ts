@@ -273,20 +273,42 @@ export function resetCombo(
       );
     }
     if (typeof x !== "undefined" && typeof y !== "undefined") {
-      makeText(
-        gameState,
-        x,
-        y,
-        "#FF0000",
-        "-" + lost,
-        20,
-        500 + clamp(lost, 0, 500),
-        speedReference?.vx ?? 0,
-        speedReference?.vy ?? -6,
-      );
+      makeComboText(gameState, x, y, -lost);
     }
   }
   return lost;
+}
+
+let comboLastNotification = 1;
+function makeComboText(gameState: GameState, x: number, y: number, by: number) {
+  const importance =
+    1 +
+    Math.round(clamp(Math.abs(by) / (comboLastNotification + 10), 0, 2) * 2) /
+      2;
+  comboLastNotification = gameState.combo;
+
+  makeText(
+    gameState,
+    clamp(
+      x,
+      gameState.offsetX + 20 * importance,
+      gameState.offsetX + gameState.gameZoneWidth - 20 * importance,
+    ),
+    clamp(
+      y,
+      25 * importance,
+      gameState.gameZoneHeight - gameState.puckHeight * 2 * importance,
+    ),
+    by > 0 ? "#ffd300" : "#FF0000",
+    "x" +
+      (gameState.combo > 6000
+        ? Math.round(gameState.combo / 1000) + "k"
+        : gameState.combo),
+    20 * importance,
+    100 + 250 * importance,
+    0,
+    by > 0 ? -2 : 2,
+  );
 }
 
 export function offsetCombo(
@@ -300,7 +322,7 @@ export function offsetCombo(
   if (by > 0) {
     by *= 1 + gameState.perks.double_or_nothing;
     gameState.combo += by;
-    makeText(gameState, x, y, "#ffd300", "+" + by, 25, 400 + by);
+    makeComboText(gameState, x, y, by);
   } else {
     const prev = gameState.combo;
     gameState.combo = Math.max(baseCombo(gameState), gameState.combo + by);
@@ -308,17 +330,7 @@ export function offsetCombo(
 
     if (lost) {
       schedulGameSound(gameState, "comboDecrease", x, 1);
-      makeText(
-        gameState,
-        x,
-        y,
-        "#FF0000",
-        "-" + lost,
-        20,
-        400 + lost,
-        speedReference?.vx ?? 0,
-        speedReference?.vy ?? -6,
-      );
+      makeComboText(gameState, x, y, by);
     }
   }
 }
@@ -766,7 +778,7 @@ export function addToScore(gameState: GameState, coin: Coin) {
   if (gameState.perks.asceticism) {
     offsetCombo(
       gameState,
-      -gameState.perks.asceticism * 3 * coin.points,
+      -gameState.perks.asceticism * coin.points,
       coin.x,
       coin.y,
       coin,

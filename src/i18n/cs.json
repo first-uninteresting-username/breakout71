@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "Více mincí, pokud cihličky rozbíjíte bez přestávky",
     "upgrades.addiction.verbose_description": "+{{lvl}} kombo / rozbitá cihlička, kombo se resetuje {{delay}} s po rozbití cihličky. Odpočet začíná až po rozbití první cihličky v každé úrovni. Zastaví se, jakmile jsou všechny cihličky zničeny.",
     "upgrades.asceticism.name": "Askeze",
-    "upgrades.asceticism.tooltip": "+{{combo}} kombo za rozbitou cihličku, −{{combo}} kombo za chycenou minci.",
+    "upgrades.asceticism.tooltip": "+{{combo}} kombo za rozbitou cihličku, −{{loss}} kombo za chycenou minci.",
     "upgrades.asceticism.verbose_description": "Mince si budete muset někam odložit a nechat stoupat své kombo.",
     "upgrades.ball_attract_ball.name": "Skupinový projekt",
     "upgrades.ball_attract_ball.tooltip": "Míčky přitahují míčky",

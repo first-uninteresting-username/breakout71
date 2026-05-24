@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "如果你不停地擊破磚塊，將獲得更多硬幣",
     "upgrades.addiction.verbose_description": "+{{lvl}} 連擊/磚塊破壞，連擊在磚塊破壞後 {{delay}}秒重設。倒數計時僅在破壞每個等級的第一個磚塊後開始。所有磚塊被破壞後，倒數計時立即停止。",
     "upgrades.asceticism.name": "苦修主義",
-    "upgrades.asceticism.tooltip": "每擊破一塊磚塊 +{{combo}} 連擊，每接住一枚硬幣 -{{combo}} 連擊。",
+    "upgrades.asceticism.tooltip": "每擊破一塊磚塊 +{{combo}} 連擊，每接住一枚硬幣 -{{loss}} 連擊。",
     "upgrades.asceticism.verbose_description": "當你的連擊攀升時，你需要將硬幣存放在某個地方。",
     "upgrades.ball_attract_ball.name": "重力",
     "upgrades.ball_attract_ball.tooltip": "球吸引球",

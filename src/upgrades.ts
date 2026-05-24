@@ -287,9 +287,13 @@ export const rawUpgrades = [
     max: 1,
     hardLimit: Infinity,
     name: t("upgrades.asceticism.name"),
-    help: (lvl: number) => t("upgrades.asceticism.tooltip", { combo: lvl * 3 }),
+    help: (lvl: number) =>
+      t("upgrades.asceticism.tooltip", { combo: lvl * 3, loss: lvl }),
     fullHelp: (lvl: number) =>
-      t("upgrades.asceticism.verbose_description", { combo: lvl * 3 }),
+      t("upgrades.asceticism.verbose_description", {
+        combo: lvl * 3,
+        loss: lvl,
+      }),
   },
   {
     category: categories.combo,

@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "Більше монет, якщо ви перерву цегли без паузи",
     "upgrades.addiction.verbose_description": "+{{lvl}} combo / цегла зламаний, комбіновані скидки {{delay}} після розбиття цегли. Відлік тільки починається після розбиття першої цегли кожного рівня. Запобігає, як тільки всі цегли знищуються.",
     "upgrades.asceticism.name": "Асцетика",
-    "upgrades.asceticism.tooltip": "+{combo}} combo на цегляний зламаний, -{{combo}} комбо на монету спійманий.",
+    "upgrades.asceticism.tooltip": "+{combo}} combo на цегляний зламаний, -{{loss}} комбо на монету спійманий.",
     "upgrades.asceticism.verbose_description": "Ви повинні зберігати монети в будь-який час, коли ви скелете.",
     "upgrades.ball_attract_ball.name": "Гравітність",
     "upgrades.ball_attract_ball.tooltip": "Яйця приваблюють кульки",

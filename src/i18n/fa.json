@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "سکه‌های بیشتر اگر بدون توقف آجرها را بشکنید",
     "upgrades.addiction.verbose_description": "+{{lvl}} ترکیب برای هر آجر شکسته‌شده، ترکیب {{delay}} ثانیه پس از شکستن آجر بازنشانی می‌شود. شمارش معکوس پس از شکستن اولین آجر هر سطح آغاز می‌شود و با نابودی همه آجرها متوقف می‌شود.",
     "upgrades.asceticism.name": "پرهیزکاری",
-    "upgrades.asceticism.tooltip": "+{{combo}} ترکیب برای هر آجر شکسته‌شده، -{{combo}} ترکیب برای هر سکه گرفته‌شده.",
+    "upgrades.asceticism.tooltip": "+{{combo}} ترکیب برای هر آجر شکسته‌شده، -{{loss}} ترکیب برای هر سکه گرفته‌شده.",
     "upgrades.asceticism.verbose_description": "باید سکه‌ها را جایی ذخیره کنید تا ترکیب شما بالا برود.",
     "upgrades.ball_attract_ball.name": "جاذبه",
     "upgrades.ball_attract_ball.tooltip": "توپ‌ها یکدیگر را جذب می‌کنند",

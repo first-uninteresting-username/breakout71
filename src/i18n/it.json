@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "Più monete se rompi mattoni senza pause",
     "upgrades.addiction.verbose_description": "+{{lvl}} combo / mattone distrutto, la combo si resetta {{delay}}s dopo aver distrutto un mattone. Il conto alla rovescia inizia solo dopo aver distrutto il primo mattone di ogni livello. Si ferma non appena tutti i mattoni sono distrutti.",
     "upgrades.asceticism.name": "Ascetismo",
-    "upgrades.asceticism.tooltip": "+{{combo}} combo per mattone distrutto, -{{combo}} combo per moneta catturata.",
+    "upgrades.asceticism.tooltip": "+{{combo}} combo per mattone distrutto, -{{loss}} combo per moneta catturata.",
     "upgrades.asceticism.verbose_description": "Dovrai conservare le monete da qualche parte mentre la tua combo sale.",
     "upgrades.ball_attract_ball.name": "Gravità",
     "upgrades.ball_attract_ball.tooltip": "Le palline attirano palline",

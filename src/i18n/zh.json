@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "不停地打碎砖块，获得更多硬币",
     "upgrades.addiction.verbose_description": "每个打碎的砖块 +{{lvl}} 连击，打碎砖块后 {{delay}} 秒重置连击。仅在每一个关卡打碎第一个砖块后开始倒计时。倒计时在所有砖块摧毁后停止。",
     "upgrades.asceticism.name": "苦修主义",
-    "upgrades.asceticism.tooltip": "每个打碎的砖块 +{{combo}} 连击。每个抓到的硬币 -{{combo}} 连击。",
+    "upgrades.asceticism.tooltip": "每个打碎的砖块 +{{combo}} 连击。每个抓到的硬币 -{{loss}} 连击。",
     "upgrades.asceticism.verbose_description": "在你的连击攀升时，你需要存放硬币在某个地方。",
     "upgrades.ball_attract_ball.name": "小组项目",
     "upgrades.ball_attract_ball.tooltip": "球吸引球",

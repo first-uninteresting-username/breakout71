@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "More coins if you break bricks without pause",
     "upgrades.addiction.verbose_description": "+{{lvl}} combo / brick broken, combo resets {{delay}}s after breaking a brick.  The countdown only starts after breaking the first brick of each level. It stops as soon as all bricks are destroyed.",
     "upgrades.asceticism.name": "Asceticism",
-    "upgrades.asceticism.tooltip": "+{{combo}} combo per brick broken, -{{combo}} combo  per coin caught.",
+    "upgrades.asceticism.tooltip": "+{{combo}} combo per brick broken, -{{loss}} combo  per coin caught.",
     "upgrades.asceticism.verbose_description": "You'll need to store the coins somewhere while your combo climbs.",
     "upgrades.ball_attract_ball.name": "Group project",
     "upgrades.ball_attract_ball.tooltip": "Balls attract balls",

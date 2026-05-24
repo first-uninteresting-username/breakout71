@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "Mais moedas se quebrar tijolos sem parar",
     "upgrades.addiction.verbose_description": "+{{lvl}} combo por tijolo quebrado, combo reinicia {{delay}} segundos após quebrar um tijolo. A contagem regressiva só começa depois de quebrar o primeiro tijolo de cada nível. Irá parar assim que todos os tijolos forem destruídos.",
     "upgrades.asceticism.name": "Ascetismo",
-    "upgrades.asceticism.tooltip": "+{{combo}} de combo por tijolo quebrado, -{{combo}} por moedas coletadas.",
+    "upgrades.asceticism.tooltip": "+{{combo}} de combo por tijolo quebrado, -{{loss}} por moedas coletadas.",
     "upgrades.asceticism.verbose_description": "Vai precisar guardar as moedas em algum lugar enquanto o combo sobe.",
     "upgrades.ball_attract_ball.name": "Projeto em equipa",
     "upgrades.ball_attract_ball.tooltip": "Bolas atraem bolas",

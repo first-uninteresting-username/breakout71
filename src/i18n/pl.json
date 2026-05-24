@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "Więcej monet, jeśli złamasz cegły bez przerwy",
     "upgrades.addiction.verbose_description": "+{{lvl}} combo / brick broken, combo resets {{delay}} po złamaniu cegły. Odliczanie rozpoczyna się dopiero po złamaniu pierwszego cegły każdego poziomu. Zatrzymuje się, gdy wszystkie cegły zostały zniszczone.",
     "upgrades.asceticism.name": "Ascetyka",
-    "upgrades.asceticism.tooltip": "+ (combo) combo per brick broken. -{c}(ang.) właśnie na monetę.",
+    "upgrades.asceticism.tooltip": "",
     "upgrades.asceticism.verbose_description": "Musisz przechowywać monety gdzieś, podczas gdy wspina się twoja krata.",
     "upgrades.ball_attract_ball.name": "Gravity",
     "upgrades.ball_attract_ball.tooltip": "Bally przyciągają kule",

@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "+{{lvl}} مجموعة / لبنة، يتم إعادة تعيين المجموعة لمدة {{delay}}ثانية بعد كسر لبنة.",
     "upgrades.addiction.verbose_description": "يبدأ العد التنازلي بعد كسر أول لبنة من كل مستوى، ويتوقف عند تدمير جميع الطوب.",
     "upgrades.asceticism.name": "الزهد",
-    "upgrades.asceticism.tooltip": "+{{combo}} مجموعة / لبنة، - {{combo}} عند التقاط العملة المعدنية",
+    "upgrades.asceticism.tooltip": "+{{combo}} مجموعة / لبنة، - {{loss}} عند التقاط العملة المعدنية",
     "upgrades.asceticism.verbose_description": "سوف تحتاج إلى تخزين العملات المعدنية في مكان ما أثناء صعود مجموعتك.",
     "upgrades.ball_attract_ball.name": "جاذبية",
     "upgrades.ball_attract_ball.tooltip": "الكرات تجذب الكرات",

@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "ブロックを休む暇なく壊すと、コインが増えます",
     "upgrades.addiction.verbose_description": "壊したブロックにつき{{lvl}}コンボ加算。{{delay}}秒壊さないとリセットされます。カウントダウンは各レベルで最初にブロックを壊した時に開始されます。すべてのブロックが壊されるとカウントダウンは止まります。",
     "upgrades.asceticism.name": "禁欲",
-    "upgrades.asceticism.tooltip": "壊したブロック1個につき{{combo}}コンボ加算。受け止めたコイン1枚につき{{combo}}コンボ減算。",
+    "upgrades.asceticism.tooltip": "壊したブロック1個につき{{combo}}コンボ加算。受け止めたコイン1枚につき{{loss}}コンボ減算。",
     "upgrades.asceticism.verbose_description": "コンボを高くする間、どこかにコインを置いておきましょう。",
     "upgrades.ball_attract_ball.name": "万有引力",
     "upgrades.ball_attract_ball.tooltip": "ボール同士が引きつけ合います",

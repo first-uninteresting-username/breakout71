@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "+{{lvl}} combo / ladrillo, combo perdido después de {{delay}}s sin romper ningún ladrillo",
     "upgrades.addiction.verbose_description": "La cuenta atrás sólo comienza una vez que se ha destruido el primer ladrillo del nivel, y se detiene en cuanto no hay más ladrillos.",
     "upgrades.asceticism.name": "Ascetismo",
-    "upgrades.asceticism.tooltip": "+{{combo}} combo por ladrillo roto, - {{combo}} cuando una pieza es atrapada",
+    "upgrades.asceticism.tooltip": "+{{combo}} combo por ladrillo roto, - {{loss}} cuando una pieza es atrapada",
     "upgrades.asceticism.verbose_description": "Tendremos que encontrar una forma de almacenar las piezas mientras crece el combo.",
     "upgrades.ball_attract_ball.name": "Gravedad",
     "upgrades.ball_attract_ball.tooltip": "Las pelotas atraen a las pelotas",

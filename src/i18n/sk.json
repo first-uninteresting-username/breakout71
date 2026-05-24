@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "Viac mincí, ak zlomíte tehly bez pauzy",
     "upgrades.addiction.verbose_description": "+{{lvl}} combo / tehla rozbité, combo resetuje {{delay}} po rozpade tehly. odpočítavanie len začína po rozpade prvej tehly každej úrovne. Zastavuje hneď, ako sú všetky tehly zničené.",
     "upgrades.asceticism.name": "Asceticizmus",
-    "upgrades.asceticism.tooltip": "+{{combo}} combo na tehly rozbité, -{{combo}} combo na mince chytený.",
+    "upgrades.asceticism.tooltip": "+{{combo}} combo na tehly rozbité, -{{loss}} combo na mince chytený.",
     "upgrades.asceticism.verbose_description": "Budete musieť uložiť mince niekde, zatiaľ čo vaše horolezectvo.",
     "upgrades.ball_attract_ball.name": "Gravity",
     "upgrades.ball_attract_ball.tooltip": "Lopty priťahujú gule",

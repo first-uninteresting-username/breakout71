@@ -8,7 +8,7 @@
   {
     "name": "icon:asceticism",
     "size": 8,
-    "bricks": "_tttttt__tt__tt_____W_______r______________r_________r_____WWW__",
+    "bricks": "_tttttt__tt__tt___r_W_______r______________r_____WWWWWW__WWWWWW_",
     "credit": ""
   },
   {
@@ -123,6 +123,12 @@
     "name": "icon:creative",
     "size": 7,
     "bricks": "bbg_bgg_______bbb_bgg_______bgg_bbg_______bbg_bbb",
+    "credit": ""
+  },
+  {
+    "name": "icon:custom_start",
+    "size": 9,
+    "bricks": "__b_______bbb_____b_b_b______b________b_________b_________bbbb___________________",
     "credit": ""
   },
   {
@@ -332,7 +338,7 @@
   {
     "name": "icon:passive_income",
     "size": 8,
-    "bricks": "_ttttt___ttt_t_______________W_____________________WWW______r___",
+    "bricks": "_ttttt___ttt_t_______________W_____________________lll______r___",
     "credit": ""
   },
   {
@@ -393,6 +399,12 @@
     "name": "icon:rainbow",
     "size": 8,
     "bricks": "_____________bb_____ccb____yyc____SSy____rrS______r_____________",
+    "credit": ""
+  },
+  {
+    "name": "icon:random",
+    "size": 10,
+    "bricks": "_____________gggggg___ggggggg__gggggggg_ggggggggg_gbggbgggg_ggggggggg_gggggggg__gbggbgg___gggggg____",
     "credit": ""
   },
   {
@@ -3082,19 +3094,5 @@
     "size": 12,
     "bricks": "____gggg______ggrrrrgg___grrrrrrrrg__grrrrrrrrg_grrrrggrrrrggrrrgWWgrrrggggggWWggggggWWWWggWWWWg_gWWWWWWWWg__gWWWWWWWWg___ggWWWWgg______gggg____",
     "credit": "Gotta break 'em all - ThatGuyOverThere"
-  },
-  {
-    "name": "icon:custom_start",
-    "size": 9,
-    "bricks": "__b_______bbb_____b_b_b______b________b_________b_________bbbb___________________",
-    "svg": null,
-    "color": ""
-  },
-  {
-    "name": "icon:random",
-    "size": 10,
-    "bricks": "_____________gggggg___ggggggg__gggggggg_ggggggggg_gbggbgggg_ggggggggg_gggggggg__gbggbgg___gggggg____",
-    "svg": null,
-    "color": ""
   }
 ]

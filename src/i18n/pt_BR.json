@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "Mais moedas se você quebrar blocos sem pausas",
     "upgrades.addiction.verbose_description": "+{{lvl}} combo por bloco quebrado, combo reinicia {{delay}} segundos após quebrar um bloco. A contagem regressiva só começa depois de quebrar o primeiro bloco de cada nível. Irá parar assim que todos os blocos forem destruídos.",
     "upgrades.asceticism.name": "Ascetismo",
-    "upgrades.asceticism.tooltip": "+{{combo}} de combo por bloco quebrado, -{{combo}} por moedas coletadas.",
+    "upgrades.asceticism.tooltip": "+{{combo}} de combo por bloco quebrado, -{{loss}} por moedas coletadas.",
     "upgrades.asceticism.verbose_description": "Você vai precisar guardar as moedas em algum lugar enquanto o combo sobe.",
     "upgrades.ball_attract_ball.name": "Projeto em equipe",
     "upgrades.ball_attract_ball.tooltip": "Bolas atraem bolas",

@@ -244,7 +244,7 @@
     "upgrades.addiction.tooltip": "+{{lvl}} комбо / кирпич, комбо сбрасывается на {{delay}}с после разрушения кирпича.",
     "upgrades.addiction.verbose_description": "Отсчет начинается только после разрушения первого кирпича на каждом уровне. Он остановится, как только все кирпичи будут уничтожены.",
     "upgrades.asceticism.name": "Аскетизм",
-    "upgrades.asceticism.tooltip": "+{{combo}} комбо/кирпич, - {{combo}} при ловле монет",
+    "upgrades.asceticism.tooltip": "+{{combo}} комбо/кирпич, - {{loss}} при ловле монет",
     "upgrades.asceticism.verbose_description": "Вам нужно будет где-то хранить монеты, пока ваш комбо поднимается.",
     "upgrades.ball_attract_ball.name": "Гравитация",
     "upgrades.ball_attract_ball.tooltip": "Мячи притягивают мячи",
