@@ -1,7 +1,7 @@
-import {GameState} from "./types";
-import {getIcon} from "./levelIcon";
-import {getUpgradeHelp} from "./openUpgradesPicker";
-import {t} from "./i18n/i18n";
+import { GameState } from "./types";
+import { getIcon } from "./levelIcon";
+import { getUpgradeHelp } from "./openUpgradesPicker";
+import { t } from "./i18n/i18n";
 import {
   escapeAttribute,
   getPossibleUpgrades,
