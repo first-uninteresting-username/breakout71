@@ -2,7 +2,8 @@ import conditions from "./unlockConditions.json";
 import levels from "./levels.json";
 import { rawUpgrades } from "../upgrades";
 import { getLevelUnlockCondition } from "../get_level_unlock_condition";
-import { UnlockCondition } from "../types";
+import { PerkId, UnlockCondition, Upgrade } from "../types";
+import { upgrades } from "../loadGameData";
 
 describe("conditions", () => {
   it("defines conditions for existing levels only", () => {
@@ -21,6 +22,29 @@ describe("conditions", () => {
     });
 
     expect([...missing]).toEqual([]);
+  });
+
+  it("required upgrade preconditions aren't in the forbidden ones", () => {
+    const problems: String[] = [];
+    Object.entries(conditions).forEach(
+      ([levelName, { required, forbidden }]) => {
+        forbidden.forEach((f) => {
+          required.forEach((r) => {
+            if (
+              (upgrades.find((u) => u.id === r) as Upgrade).requires.includes(
+                f as PerkId,
+              )
+            ) {
+              problems.push(
+                `Level ${levelName} requires ${r} but forbids its required perk ${f}`,
+              );
+            }
+          });
+        });
+      },
+    );
+
+    expect(problems).toEqual([]);
   });
 
   it("defines conditions for all levels", () => {

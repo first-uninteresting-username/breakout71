@@ -222,7 +222,7 @@
   "Russia": {
     "minScore": 3500,
     "required": ["compound_interest", "bigger_explosions"],
-    "forbidden": ["sapper", "pierce"]
+    "forbidden": ["pierce"]
   },
   "Ukraine": {
     "minScore": 3600,
@@ -292,7 +292,7 @@
   "Baby Dog": {
     "minScore": 4900,
     "required": ["bigger_explosions", "pierce"],
-    "forbidden": ["sapper", "compound_interest"]
+    "forbidden": ["compound_interest"]
   },
   "dog 21": {
     "minScore": 5000,
@@ -537,7 +537,7 @@
   "Leaf": {
     "minScore": 9800,
     "required": ["concave_puck", "sacrifice", "puck_repulse_ball"],
-    "forbidden": ["coin_magnet", "trampoline", "ball_repulse_ball"]
+    "forbidden": ["coin_magnet", "ball_repulse_ball"]
   },
   "Abstract 2": {
     "minScore": 9900,
@@ -790,7 +790,7 @@
   },
   "Nova drift": {
     "required": ["rainbow", "ghost_coins", "sacrifice"],
-    "forbidden": ["picky_eater", "pierce", "wrap_right"],
+    "forbidden": ["pierce", "wrap_right"],
     "minScore": 14700
   },
   "Heat Signature": {
@@ -845,7 +845,7 @@
   },
   "Zen monk": {
     "required": ["respawn", "rainbow", "golden_goose"],
-    "forbidden": ["clairvoyant", "extra_life", "picky_eater"],
+    "forbidden": ["clairvoyant", "extra_life"],
     "minScore": 15800
   },
   "Lotus flower": {
@@ -965,7 +965,7 @@
   },
   "Cloud sun and birds": {
     "required": ["rainbow", "ghost_coins", "trampoline"],
-    "forbidden": ["bricks_attract_coins", "metamorphosis", "slow_down"],
+    "forbidden": ["bricks_attract_coins", "slow_down"],
     "minScore": 18200
   },
   "Palestine": {
@@ -1020,7 +1020,7 @@
   },
   "Pumpkinhead and Black Cat": {
     "required": ["hot_start", "metamorphosis", "superhot"],
-    "forbidden": ["transparency", "left_is_lava", "pierce_color"],
+    "forbidden": ["transparency", "left_is_lava"],
     "minScore": 19300
   },
   "Floaty Ghost": {
@@ -1125,7 +1125,7 @@
   },
   "Better half": {
     "required": ["rainbow", "reach", "chill"],
-    "forbidden": ["ghost_coins", "picky_eater", "respawn"],
+    "forbidden": ["ghost_coins", "respawn"],
     "minScore": 21400
   },
   "Minesweeper 2": {
@@ -1170,7 +1170,7 @@
   },
   "skibidi toilet": {
     "required": ["passive_income", "minefield", "bigger_explosions"],
-    "forbidden": ["shocks", "sapper", "corner_shot"],
+    "forbidden": ["corner_shot"],
     "minScore": 22300
   },
   "Czech Republic": {
@@ -1430,7 +1430,7 @@
   },
   "C.G.Jung RedBook pg94 V.1": {
     "required": ["bricks_attract_ball", "refill", "bigger_explosions"],
-    "forbidden": ["sticky_coins", "sapper", "pierce"],
+    "forbidden": ["sticky_coins"],
     "minScore": 27300
   },
   "C.G.Jung RedBook pg94 V.2": {
@@ -1677,7 +1677,7 @@
   },
   "Dexter Morgan": {
     "required": ["base_combo", "implosions", "sticky_coins"],
-    "forbidden": ["pierce_color", "left_is_lava", "transparency"],
+    "forbidden": ["left_is_lava", "transparency"],
     "minScore": 32200
   },
   "Dr. Gregory House": {
@@ -1746,7 +1746,7 @@
   },
   "Hastati": {
     "required": ["disco_ball", "soft_touch", "soft_reset"],
-    "forbidden": ["vibrant_neighborhood", "metamorphosis", "extra_life"],
+    "forbidden": ["extra_life"],
     "minScore": 33500
   },
   "Spartans!": {
@@ -1756,7 +1756,7 @@
   },
   "Trojan Horse": {
     "required": ["pierce_top", "golden_goose", "etherealcoins"],
-    "forbidden": ["base_combo", "bricks_attract_ball", "pierce_above_paddle"],
+    "forbidden": ["base_combo", "bricks_attract_ball"],
     "minScore": 33700
   },
   "Centurion": {
@@ -1842,7 +1842,7 @@
   },
   "This is literally 1984!": {
     "required": ["viscosity", "metamorphosis", "wrap_up"],
-    "forbidden": ["forgiving", "vibrant_neighborhood", "limitless"],
+    "forbidden": ["forgiving", "limitless"],
     "minScore": 35300
   },
   "Fahrenheit 451 - Ray Bradbury": {
@@ -1913,7 +1913,7 @@
   },
   "QR Code": {
     "required": ["refill", "streak_shots", "wrap_left"],
-    "forbidden": ["sapper", "pierce", "shocks"],
+    "forbidden": ["sapper", "shocks"],
     "minScore": 36700
   },
   "Colibri": {
@@ -1943,7 +1943,7 @@
   },
   "Banksy knockoff No.1": {
     "required": ["bigger_puck", "top_is_lava", "disco_ball"],
-    "forbidden": ["rainbow", "sacrifice", "fountain_toss"],
+    "forbidden": ["sacrifice", "fountain_toss"],
     "minScore": 37300
   },
   "Banksy knockoff No.2": {
@@ -1973,7 +1973,7 @@
   },
   "Papyrus": {
     "required": ["metamorphosis", "skip_last", "trickledown"],
-    "forbidden": ["puck_repulse_ball", "palette", "pierce_right"],
+    "forbidden": ["puck_repulse_ball", "pierce_right"],
     "minScore": 37900
   },
   "Anti-Gain": {

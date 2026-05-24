@@ -227,6 +227,8 @@
     "unlocks.next": "下一个",
     "unlocks.previous": "上一个",
     "unlocks.reached": "你的最好分数是 {{reached}}。",
+    "unlocks.requires": "",
+    "unlocks.requires_one": "",
     "unlocks.start_new_game_with": "开始新游戏",
     "unlocks.start_new_game_with_help": "使用这个升级作为初始被动技能。",
     "unlocks.title_upgrades": "{{unlocked}} / {{out_of}} 升级已经解锁",

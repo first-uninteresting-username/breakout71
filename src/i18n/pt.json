@@ -227,6 +227,8 @@
     "unlocks.next": "Próxima",
     "unlocks.previous": "Anterior",
     "unlocks.reached": "A sua melhor pontuação foi {{reached}}.",
+    "unlocks.requires": "",
+    "unlocks.requires_one": "",
     "unlocks.start_new_game_with": "Começar uma nova partida",
     "unlocks.start_new_game_with_help": "Use esta melhoria como uma vantagem inicial.",
     "unlocks.title_upgrades": "{{unlocked}} melhorias de {{out_of}} desbloqueadas",

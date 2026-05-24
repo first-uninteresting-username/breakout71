@@ -23,103 +23,50 @@ export const categories = {
   advanced: 6,
 };
 
+const anyPierce = [
+  "pierce_left",
+  "pierce_right",
+  "pierce",
+  "pierce_above_paddle",
+  "pierce_color",
+  "refill",
+];
+
+// any upgrade related to brick/coin/balls color.
+const anyColor = [
+  "metamorphosis",
+  "pierce_color",
+  "metamorphosis",
+  "sticky_coins",
+  "rainbow",
+  "picky_eater",
+  "palette",
+  "vibrant_neighborhood",
+  "soft_brush",
+  "varied_diet",
+];
+
+const explosives = [
+  "sapper",
+  "zen",
+  "minefield",
+  "instant_explosion",
+  "shocks",
+];
+
 export const rawUpgrades = [
   {
-    category: categories.beginner,
+    category: categories.combo,
     requires: [],
-    threshold: 0,
-    id: "slow_down",
-    max: 2,
-    hardLimit: Infinity,
-    name: t("upgrades.slow_down.name"),
-    help: (lvl: number) => t("upgrades.slow_down.tooltip", { lvl }),
-    fullHelp: (lvl: number) =>
-      t("upgrades.slow_down.verbose_description", { lvl }),
-  },
-  {
-    category: categories.beginner,
-    requires: [],
-    threshold: 0,
-    id: "extra_life",
-    max: 7,
-    hardLimit: Infinity,
-    name: t("upgrades.extra_life.name"),
-    help: (lvl: number) => t("upgrades.extra_life.tooltip"),
-    fullHelp: (lvl: number) =>
-      t("upgrades.extra_life.verbose_description", { lvl }),
-  },
-
-  {
-    category: categories.beginner,
-    requires: [],
-    threshold: 0,
-    id: "bigger_puck",
-    max: 2,
-    hardLimit: Infinity,
-    name: t("upgrades.bigger_puck.name"),
-    help: () => t("upgrades.bigger_puck.tooltip"),
-    fullHelp: (lvl: number) =>
-      t("upgrades.bigger_puck.verbose_description", { lvl }),
-  },
-
-  {
-    category: categories.beginner,
-    requires: [],
-    threshold: 50,
-    id: "skip_last",
-    max: 7,
-    hardLimit: Infinity,
-    name: t("upgrades.skip_last.name"),
-    help: (lvl: number) => t("upgrades.skip_last.tooltip"),
-    fullHelp: (lvl: number) =>
-      t("upgrades.skip_last.verbose_description", { lvl }),
-  },
-  {
-    category: categories.beginner,
-    requires: [],
-    threshold: 500,
-    id: "telekinesis",
-    max: 1,
-    hardLimit: Infinity,
-    name: t("upgrades.telekinesis.name"),
-    help: (lvl: number) => t("upgrades.telekinesis.tooltip"),
-    fullHelp: (lvl: number) =>
-      t("upgrades.telekinesis.verbose_description", { lvl }),
-  },
-  {
-    category: categories.beginner,
-    requires: [],
-    threshold: 600,
-    id: "yoyo",
-    max: 1,
-    hardLimit: Infinity,
-    name: t("upgrades.yoyo.name"),
-    help: (lvl: number) => t("upgrades.yoyo.tooltip"),
-    fullHelp: (lvl: number) => t("upgrades.yoyo.verbose_description", { lvl }),
-  },
-  {
-    category: categories.beginner,
-    requires: [],
-    threshold: 750,
-    id: "one_more_choice",
+    threshold: 390000,
+    id: "varied_diet",
     max: 3,
-    hardLimit: Infinity,
-    name: t("upgrades.one_more_choice.name"),
-    help: (lvl: number) => t("upgrades.one_more_choice.tooltip", { lvl }),
+    hardLimit: 9,
+    name: t("upgrades.varied_diet.name"),
+    help: (lvl: number) =>
+      t("upgrades.varied_diet.tooltip", { plus: lvl, minus: lvl }),
     fullHelp: (lvl: number) =>
-      t("upgrades.one_more_choice.verbose_description", { lvl }),
-  },
-  {
-    category: categories.beginner,
-    requires: [],
-    threshold: 950,
-    id: "concave_puck",
-    max: 1,
-    hardLimit: Infinity,
-    name: t("upgrades.concave_puck.name"),
-    help: (lvl: number) => t("upgrades.concave_puck.tooltip"),
-    fullHelp: (lvl: number) =>
-      t("upgrades.concave_puck.verbose_description", { lvl }),
+      t("upgrades.varied_diet.verbose_description", { plus: lvl, minus: lvl }),
   },
   {
     category: categories.combo,
@@ -344,6 +291,146 @@ export const rawUpgrades = [
     fullHelp: (lvl: number) =>
       t("upgrades.asceticism.verbose_description", { combo: lvl * 3 }),
   },
+  {
+    category: categories.combo,
+    requires: [],
+    threshold: 140000,
+    id: "passive_income",
+    max: 4,
+    hardLimit: Infinity,
+    name: t("upgrades.passive_income.name"),
+    help: (lvl: number) =>
+      t("upgrades.passive_income.tooltip", {
+        time: (lvl * 0.1 - 0.05).toFixed(2),
+        lvl,
+      }),
+    fullHelp: (lvl: number) =>
+      t("upgrades.passive_income.verbose_description", {
+        time: (lvl * 0.1 - 0.05).toFixed(2),
+        lvl,
+      }),
+  },
+  {
+    category: categories.combo,
+    requires: [],
+    threshold: 275000,
+    id: "palette",
+    max: 1,
+    hardLimit: 1,
+    name: t("upgrades.palette.name"),
+    help: (lvl: number) => t("upgrades.palette.tooltip"),
+    fullHelp: (lvl: number) => t("upgrades.palette.verbose_description"),
+  },
+  {
+    category: categories.combo,
+    requires: [],
+    threshold: 290000,
+    id: "paddle_up_combo",
+    max: 1,
+    hardLimit: 1,
+    name: t("upgrades.paddle_up_combo.name"),
+    help: (lvl: number) => t("upgrades.paddle_up_combo.tooltip"),
+    fullHelp: (lvl: number) =>
+      t("upgrades.paddle_up_combo.verbose_description"),
+  },
+
+  {
+    category: categories.beginner,
+    requires: [],
+    threshold: 0,
+    id: "slow_down",
+    max: 2,
+    hardLimit: Infinity,
+    name: t("upgrades.slow_down.name"),
+    help: (lvl: number) => t("upgrades.slow_down.tooltip", { lvl }),
+    fullHelp: (lvl: number) =>
+      t("upgrades.slow_down.verbose_description", { lvl }),
+  },
+  {
+    category: categories.beginner,
+    requires: [],
+    threshold: 0,
+    id: "extra_life",
+    max: 7,
+    hardLimit: Infinity,
+    name: t("upgrades.extra_life.name"),
+    help: (lvl: number) => t("upgrades.extra_life.tooltip"),
+    fullHelp: (lvl: number) =>
+      t("upgrades.extra_life.verbose_description", { lvl }),
+  },
+
+  {
+    category: categories.beginner,
+    requires: ["slow_down"],
+    threshold: 0,
+    id: "bigger_puck",
+    max: 2,
+    hardLimit: Infinity,
+    name: t("upgrades.bigger_puck.name"),
+    help: () => t("upgrades.bigger_puck.tooltip"),
+    fullHelp: (lvl: number) =>
+      t("upgrades.bigger_puck.verbose_description", { lvl }),
+  },
+
+  {
+    category: categories.beginner,
+    requires: [],
+    threshold: 50,
+    id: "skip_last",
+    max: 7,
+    hardLimit: Infinity,
+    name: t("upgrades.skip_last.name"),
+    help: (lvl: number) => t("upgrades.skip_last.tooltip"),
+    fullHelp: (lvl: number) =>
+      t("upgrades.skip_last.verbose_description", { lvl }),
+  },
+  {
+    category: categories.beginner,
+    requires: [],
+    threshold: 500,
+    id: "telekinesis",
+    max: 1,
+    hardLimit: Infinity,
+    name: t("upgrades.telekinesis.name"),
+    help: (lvl: number) => t("upgrades.telekinesis.tooltip"),
+    fullHelp: (lvl: number) =>
+      t("upgrades.telekinesis.verbose_description", { lvl }),
+  },
+  {
+    category: categories.beginner,
+    requires: [],
+    threshold: 600,
+    id: "yoyo",
+    max: 1,
+    hardLimit: Infinity,
+    name: t("upgrades.yoyo.name"),
+    help: (lvl: number) => t("upgrades.yoyo.tooltip"),
+    fullHelp: (lvl: number) => t("upgrades.yoyo.verbose_description", { lvl }),
+  },
+  {
+    category: categories.beginner,
+    requires: [],
+    threshold: 750,
+    id: "one_more_choice",
+    max: 3,
+    hardLimit: 6,
+    name: t("upgrades.one_more_choice.name"),
+    help: (lvl: number) => t("upgrades.one_more_choice.tooltip", { lvl }),
+    fullHelp: (lvl: number) =>
+      t("upgrades.one_more_choice.verbose_description", { lvl }),
+  },
+  {
+    category: categories.beginner,
+    requires: ["left_is_lava", "right_is_lava", "top_is_lava", "trampoline"],
+    threshold: 950,
+    id: "concave_puck",
+    max: 1,
+    hardLimit: Infinity,
+    name: t("upgrades.concave_puck.name"),
+    help: (lvl: number) => t("upgrades.concave_puck.tooltip"),
+    fullHelp: (lvl: number) =>
+      t("upgrades.concave_puck.verbose_description", { lvl }),
+  },
 
   {
     category: categories.pierce,
@@ -548,7 +635,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: [],
+    requires: ["extra_life"],
     threshold: 110000,
     id: "sacrifice",
     max: 1,
@@ -685,7 +772,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: [],
+    requires: anyColor,
     threshold: 205000,
     id: "rainbow",
     max: 7,
@@ -697,7 +784,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: [],
+    requires: anyColor,
     threshold: 208000,
     id: "disco_ball",
     max: 1,
@@ -758,7 +845,7 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
-    requires: [],
+    requires: anyColor,
     threshold: 235000,
     id: "sticky_coins",
     max: 1,
@@ -822,7 +909,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: [],
+    requires: anyColor,
     threshold: 2500,
     id: "metamorphosis",
     max: 1,
@@ -846,7 +933,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: [],
+    requires: explosives,
     threshold: 9000,
     id: "bigger_explosions",
     max: 1,
@@ -883,7 +970,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: [],
+    requires: explosives,
     threshold: 180000,
     id: "minefield",
     max: 3,
@@ -928,25 +1015,7 @@ export const rawUpgrades = [
         percent: Math.round(comboKeepingRate(lvl) * 100),
       }),
   },
-  {
-    category: categories.combo,
-    requires: [],
-    threshold: 140000,
-    id: "passive_income",
-    max: 4,
-    hardLimit: Infinity,
-    name: t("upgrades.passive_income.name"),
-    help: (lvl: number) =>
-      t("upgrades.passive_income.tooltip", {
-        time: (lvl * 0.1 - 0.05).toFixed(2),
-        lvl,
-      }),
-    fullHelp: (lvl: number) =>
-      t("upgrades.passive_income.verbose_description", {
-        time: (lvl * 0.1 - 0.05).toFixed(2),
-        lvl,
-      }),
-  },
+
   {
     category: categories.combo_boost,
     requires: [],
@@ -1040,20 +1109,10 @@ export const rawUpgrades = [
     help: (lvl: number) => t("upgrades.gravity_falls.tooltip"),
     fullHelp: (lvl: number) => t("upgrades.gravity_falls.verbose_description"),
   },
-  {
-    category: categories.combo,
-    requires: [],
-    threshold: 275000,
-    id: "palette",
-    max: 1,
-    hardLimit: 1,
-    name: t("upgrades.palette.name"),
-    help: (lvl: number) => t("upgrades.palette.tooltip"),
-    fullHelp: (lvl: number) => t("upgrades.palette.verbose_description"),
-  },
+
   {
     category: categories.combo_boost,
-    requires: [],
+    requires: anyColor,
     threshold: 280000,
     id: "vibrant_neighborhood",
     max: 1,
@@ -1062,18 +1121,6 @@ export const rawUpgrades = [
     help: (lvl: number) => t("upgrades.vibrant_neighborhood.tooltip"),
     fullHelp: (lvl: number) =>
       t("upgrades.vibrant_neighborhood.verbose_description"),
-  },
-  {
-    category: categories.combo,
-    requires: [],
-    threshold: 290000,
-    id: "paddle_up_combo",
-    max: 1,
-    hardLimit: 1,
-    name: t("upgrades.paddle_up_combo.name"),
-    help: (lvl: number) => t("upgrades.paddle_up_combo.tooltip"),
-    fullHelp: (lvl: number) =>
-      t("upgrades.paddle_up_combo.verbose_description"),
   },
 
   {
@@ -1100,7 +1147,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
-    requires: [],
+    requires: anyPierce,
     threshold: 320000,
     id: "pierce_top",
     max: 3,
@@ -1111,13 +1158,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
-    requires: [
-      "pierce_left",
-      "pierce_right",
-      "pierce",
-      "pierce_above_paddle",
-      "pierce_color",
-    ],
+    requires: anyPierce,
     threshold: 330000,
     id: "refill",
     max: 1,
@@ -1129,7 +1170,7 @@ export const rawUpgrades = [
 
   {
     category: categories.pierce,
-    requires: [],
+    requires: anyPierce,
     threshold: 370000,
     id: "pierce_above_paddle",
     max: 3,
@@ -1151,22 +1192,10 @@ export const rawUpgrades = [
     help: (lvl: number) => t("upgrades.soft_touch.tooltip"),
     fullHelp: (lvl: number) => t("upgrades.soft_touch.verbose_description"),
   },
-  {
-    category: categories.combo,
-    requires: [],
-    threshold: 390000,
-    id: "varied_diet",
-    max: 3,
-    hardLimit: 9,
-    name: t("upgrades.varied_diet.name"),
-    help: (lvl: number) =>
-      t("upgrades.varied_diet.tooltip", { plus: lvl, minus: lvl }),
-    fullHelp: (lvl: number) =>
-      t("upgrades.varied_diet.verbose_description", { plus: lvl, minus: lvl }),
-  },
+
   {
     category: categories.advanced,
-    requires: [],
+    requires: explosives,
     threshold: 400000,
     id: "instant_explosion",
     max: 1,
@@ -1178,7 +1207,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: [],
+    requires: anyColor,
     threshold: 410000,
     id: "soft_brush",
     max: 7,

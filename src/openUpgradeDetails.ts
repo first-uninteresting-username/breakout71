@@ -20,6 +20,10 @@ export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
   const next = free[currentIndex + 1];
   const previous = free[currentIndex - 1];
 
+  const required = upgrades
+    .filter((r) => u.requires.includes(r.id) && r.id !== u.id)
+    .map((u) => u.name);
+
   const action = await asyncAlert<string>({
     title: `<span class="perk-title">
     <button ${previous ? 'data-resolve-to="previous"' : "disabled"} data-tooltip="${t("unlocks.previous")}">‹ </button>
@@ -30,6 +34,10 @@ export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
       getPerkAnimation(id),
       getUpgradeHelp(u, undefined),
       miniMarkDown(getUpgradeTooltip(u, undefined)),
+      (required.length === 1 && t("unlocks.requires_one", { required })) ||
+        (required.length &&
+          t("unlocks.requires", { required: required.join(", ") })) ||
+        "",
       "id:" + id,
     ],
     allowClose: true,

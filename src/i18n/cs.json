@@ -227,6 +227,8 @@
     "unlocks.next": "Další",
     "unlocks.previous": "Předchozí",
     "unlocks.reached": "Vaše nejlepší skóre bylo {{reached}}.",
+    "unlocks.requires": "",
+    "unlocks.requires_one": "",
     "unlocks.start_new_game_with": "Začít novou hru",
     "unlocks.start_new_game_with_help": "Použít jako počáteční vylepšení.",
     "unlocks.title_upgrades": "Odemčeno {{unlocked}} / {{out_of}} vylepšení",

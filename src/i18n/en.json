@@ -227,6 +227,8 @@
     "unlocks.next": "Next",
     "unlocks.previous": "Previous",
     "unlocks.reached": "Your best score was {{reached}}.",
+    "unlocks.requires": "This upgrade requires you to first pick one of those : {{required}}",
+    "unlocks.requires_one": "This upgrade requires that you to first pick \"{{required}}\"",
     "unlocks.start_new_game_with": "Start a new game",
     "unlocks.start_new_game_with_help": "Use this upgrade as starter perk.",
     "unlocks.title_upgrades": "{{unlocked}} /  {{out_of}} upgrades unlocked",
