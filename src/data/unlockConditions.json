@@ -1925,5 +1925,100 @@
     "required": ["wrap_up", "smaller_puck", "trickledown"],
     "forbidden": ["passive_income", "addiction", "nbricks"],
     "minScore": 36900
+  },
+  "New Earth-rise": {
+    "required": ["base_combo", "varied_diet", "nbricks"],
+    "forbidden": ["thomas", "pierce_top", "implosions"],
+    "minScore": 37000
+  },
+  "'Integrity' Crew Module landing": {
+    "required": ["addiction", "three_cushion", "passive_income"],
+    "forbidden": ["minefield", "varied_diet", "coin_magnet"],
+    "minScore": 37100
+  },
+  "The Jonkler": {
+    "required": ["coin_magnet", "vibrant_neighborhood", "sacrifice"],
+    "forbidden": ["minefield", "wrap_right", "bigger_puck"],
+    "minScore": 37200
+  },
+  "Banksy knockoff No.1": {
+    "required": ["bigger_puck", "top_is_lava", "disco_ball"],
+    "forbidden": ["rainbow", "sacrifice", "fountain_toss"],
+    "minScore": 37300
+  },
+  "Banksy knockoff No.2": {
+    "required": ["flyswatter", "palette", "round_bricks"],
+    "forbidden": ["pierce_left", "top_is_lava", "bigger_puck"],
+    "minScore": 37400
+  },
+  "Banksy knockoff No.3": {
+    "required": ["ottawa_treaty", "sapper", "shocks"],
+    "forbidden": ["refill", "pierce_left", "thomas"],
+    "minScore": 37500
+  },
+  "Banksy knockoff No.4": {
+    "required": ["ball_attracts_coins", "telekinesis", "superhot"],
+    "forbidden": ["forgiving", "trampoline", "sturdy_bricks"],
+    "minScore": 37600
+  },
+  "Banksy knockoff No.5": {
+    "required": ["unbounded", "limitless", "smaller_puck"],
+    "forbidden": ["viscosity", "bigger_explosions", "forgiving"],
+    "minScore": 37700
+  },
+  "Banksy knockoff No.6": {
+    "required": ["sticky_coins", "pierce_color", "left_is_lava"],
+    "forbidden": ["transparency", "pierce_right", "skip_last"],
+    "minScore": 37800
+  },
+  "Papyrus": {
+    "required": ["metamorphosis", "skip_last", "trickledown"],
+    "forbidden": ["puck_repulse_ball", "palette", "pierce_right"],
+    "minScore": 37900
+  },
+  "Anti-Gain": {
+    "required": ["implosions", "skip_last", "paddle_up_combo"],
+    "forbidden": ["right_is_lava", "palette", "base_combo"],
+    "minScore": 38000
+  },
+  "Friend": {
+    "required": ["side_flip", "side_kick", "nbricks"],
+    "forbidden": ["sturdy_bricks", "varied_diet", "superhot"],
+    "minScore": 38100
+  },
+  "Fionna Campbell": {
+    "required": ["round_bricks", "gravity_falls", "varied_diet"],
+    "forbidden": ["side_kick", "side_flip", "wrap_right"],
+    "minScore": 38200
+  },
+  "Cake the cat": {
+    "required": ["thomas", "shocks", "sapper"],
+    "forbidden": ["disco_ball", "refill", "concave_puck"],
+    "minScore": 38300
+  },
+  "Sans": {
+    "required": ["puck_repulse_ball", "coin_magnet", "rainbow"],
+    "forbidden": ["ball_repulse_ball", "three_cushion", "streak_shots"],
+    "minScore": 38400
+  },
+  "Daft Punk": {
+    "required": ["palette", "bigger_puck", "smaller_puck"],
+    "forbidden": ["top_is_lava", "coin_magnet", "bricks_attract_coins"],
+    "minScore": 38500
+  },
+  "Mondrian": {
+    "required": ["nbricks", "instant_explosion", "trampoline"],
+    "forbidden": ["top_is_lava", "bigger_explosions", "bricks_attract_coins"],
+    "minScore": 38600
+  },
+  "Morse Code": {
+    "required": ["pierce_left", "passive_income", "pierce_right"],
+    "forbidden": ["transparency", "left_is_lava", "pierce_color"],
+    "minScore": 38700
+  },
+  "Pokeball": {
+    "required": ["bricks_attract_ball", "happy_family", "pierce_above_paddle"],
+    "forbidden": ["hot_start", "sturdy_bricks", "telekinesis"],
+    "minScore": 38900
   }
 }
