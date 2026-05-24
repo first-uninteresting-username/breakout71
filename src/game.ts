@@ -83,6 +83,7 @@ import { openLevelDetails } from "./openLevelDetails";
 import { menuClick } from "./menuSound";
 import { toast } from "./toast";
 import { addGameToHistory } from "./gameOver";
+import { getStartRunButtons } from "./startingPerks";
 
 export async function play() {
   if (await applyFullScreenChoice()) return;
@@ -485,17 +486,7 @@ export async function openMainMenu() {
   pause(true);
 
   const actions: AsyncAlertAction<() => void>[] = [
-    {
-      icon: getIcon("icon:new_run"),
-      text: t("main_menu.normal"),
-      help: highScoreText() || t("main_menu.normal_help"),
-      value: () => {
-        restart({
-          runType: "normal",
-          levelToAvoid: currentLevelInfo(mainGameState).name,
-        });
-      },
-    },
+    ...getStartRunButtons(),
     creativeMode(mainGameState),
     ...runHistoryViewerMenuEntry(),
     levelEditorMenuEntry(),
@@ -1027,8 +1018,8 @@ export function startComputerControlledGame(runType: RunType) {
     for (let i = 0; i < 10; i++) {
       const u = sample(upgrades);
       perks[u.id] ||= Math.floor(Math.random() * u.max) + 1;
-      if (u.requires) {
-        perks[u.requires] ||= 1;
+      if (u.requires.length) {
+        perks[sample(u.requires)] ||= 1;
       }
     }
     perks.superhot = 0;

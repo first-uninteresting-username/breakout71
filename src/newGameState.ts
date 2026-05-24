@@ -15,7 +15,7 @@ import { resetBalls } from "./gameStateMutators";
 import { getPixelRatio, isOptionOn } from "./options";
 import { getHistory } from "./gameOver";
 import { getSettingValue } from "./settings";
-import { isBlackListedForStart, isStartingPerk } from "./startingPerks";
+import { getStartingPerks } from "./startingPerks";
 import { isLevelLocked } from "./get_level_unlock_condition";
 import {
   dontOfferTooSoon,
@@ -55,31 +55,28 @@ export function getRunLevels(
 export function newGameState(params: RunParams): GameState {
   const highScore = parseFloat(getHighScore().toString());
 
-  const perks = { ...makeEmptyPerksMap(upgrades), ...(params?.perks || {}) };
+  if (params.runType === "normal") {
+    const randomPick = getStartingPerks();
 
-  let randomGift: PerkId | undefined = undefined;
-  if (!sumOfValues(perks)) {
-    let giftable = upgrades.filter((u) => isStartingPerk(u));
-    if (!giftable.length) {
-      giftable = upgrades.filter((u) => !isBlackListedForStart(u));
-    }
-
-    randomGift =
-      (isOptionOn("kid") && "slow_down") ||
-      giftable[Math.floor(Math.random() * giftable.length)].id;
-
-    perks[randomGift] = 1;
+    params.perks ||= randomPick.perks;
+    params.mainPerkId ||= randomPick.mainPerkId;
   }
 
-  const firstPerk = Object.entries(perks).find((e) => e[1] === 1)?.[0] as
-    | PerkId
-    | undefined;
-  if (params.runType === "normal" && firstPerk) {
-    logUpgradeShown(firstPerk);
-    logUpgradePicked(firstPerk);
-  }
+  const perks = {
+    ...makeEmptyPerksMap(upgrades),
+    ...(params?.perks || {}),
+  };
 
-  const runLevels = getRunLevels(params, randomGift);
+  if (params.runType === "normal")
+    Object.keys(perks)
+      .filter((id) => perks[id as PerkId])
+      .forEach((id) => {
+        logUpgradeShown(id as PerkId);
+        logUpgradePicked(id as PerkId);
+      });
+
+  const runLevels = getRunLevels(params, params.mainPerkId);
+
   const gameState: GameState = {
     startParams: params,
     runLevels,
@@ -98,6 +95,8 @@ export function newGameState(params: RunParams): GameState {
     puckPosition: 400,
     lastPuckPosition: 400,
     lastPuckMove: 0,
+    levelLostCoins: 0,
+    startCountDown: 0,
     lastZenComboIncrease: 0,
     pauseTimeout: null,
     canvasWidth: 0,

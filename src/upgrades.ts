@@ -26,9 +26,8 @@ export const categories = {
 export const rawUpgrades = [
   {
     category: categories.beginner,
-    requires: "",
+    requires: [],
     threshold: 0,
-    gift: false,
     id: "slow_down",
     max: 2,
     hardLimit: Infinity,
@@ -39,9 +38,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.beginner,
-    requires: "",
+    requires: [],
     threshold: 0,
-    gift: false,
     id: "extra_life",
     max: 7,
     hardLimit: Infinity,
@@ -53,9 +51,8 @@ export const rawUpgrades = [
 
   {
     category: categories.beginner,
-    requires: "",
+    requires: [],
     threshold: 0,
-    gift: false,
     id: "bigger_puck",
     max: 2,
     hardLimit: Infinity,
@@ -67,9 +64,8 @@ export const rawUpgrades = [
 
   {
     category: categories.beginner,
-    requires: "",
+    requires: [],
     threshold: 50,
-    gift: false,
     id: "skip_last",
     max: 7,
     hardLimit: Infinity,
@@ -80,10 +76,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.beginner,
-    requires: "",
+    requires: [],
     threshold: 500,
     id: "telekinesis",
-    gift: true,
     max: 1,
     hardLimit: Infinity,
     name: t("upgrades.telekinesis.name"),
@@ -93,9 +88,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.beginner,
-    requires: "",
+    requires: [],
     threshold: 600,
-    gift: false,
     id: "yoyo",
     max: 1,
     hardLimit: Infinity,
@@ -105,9 +99,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.beginner,
-    requires: "",
+    requires: [],
     threshold: 750,
-    gift: false,
     id: "one_more_choice",
     max: 3,
     hardLimit: Infinity,
@@ -118,9 +111,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.beginner,
-    requires: "",
+    requires: [],
     threshold: 950,
-    gift: false,
     id: "concave_puck",
     max: 1,
     hardLimit: Infinity,
@@ -131,10 +123,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 100,
     id: "streak_shots",
-    gift: true,
     max: 1,
     hardLimit: 1,
     name: t("upgrades.streak_shots.name"),
@@ -145,10 +136,9 @@ export const rawUpgrades = [
 
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 200,
     id: "left_is_lava",
-    gift: true,
     max: 1,
     hardLimit: 2,
     name: t("upgrades.left_is_lava.name"),
@@ -158,10 +148,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 300,
     id: "right_is_lava",
-    gift: true,
     max: 1,
     hardLimit: 2,
     name: t("upgrades.right_is_lava.name"),
@@ -171,10 +160,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 400,
     id: "top_is_lava",
-    gift: true,
     max: 1,
     hardLimit: 2,
     name: t("upgrades.top_is_lava.name"),
@@ -184,10 +172,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 4000,
     id: "hot_start",
-    gift: true,
     max: 3,
     hardLimit: Infinity,
     name: t("upgrades.hot_start.name"),
@@ -205,10 +192,9 @@ export const rawUpgrades = [
 
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 2000,
     id: "picky_eater",
-    gift: true,
     max: 1,
     hardLimit: 1,
     name: t("upgrades.picky_eater.name"),
@@ -219,10 +205,9 @@ export const rawUpgrades = [
 
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 3000,
     id: "compound_interest",
-    gift: true,
     max: 1,
     hardLimit: Infinity,
     name: t("upgrades.compound_interest.name"),
@@ -232,9 +217,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 150000,
-    gift: true,
     id: "side_kick",
     max: 3,
     hardLimit: Infinity,
@@ -246,9 +230,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 150000,
-    gift: true,
     id: "side_flip",
     max: 3,
     hardLimit: Infinity,
@@ -260,10 +243,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 135000,
-
-    gift: false,
     id: "reach",
     max: 1,
     hardLimit: Infinity,
@@ -273,9 +254,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "multiball",
+    requires: ["multiball"],
     threshold: 245000,
-    gift: false,
     id: "happy_family",
     max: 1,
     hardLimit: Infinity,
@@ -286,9 +266,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 165000,
-    gift: false,
     id: "addiction",
     max: 7,
     hardLimit: Infinity,
@@ -303,9 +282,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 90000,
-    gift: true,
     id: "nbricks",
     max: 3,
     hardLimit: 6,
@@ -319,9 +297,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 230000,
-    gift: false,
     id: "three_cushion",
     max: 3,
     hardLimit: Infinity,
@@ -333,9 +310,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 115000,
-    gift: true,
     id: "trampoline",
     max: 1,
     hardLimit: Infinity,
@@ -347,9 +323,8 @@ export const rawUpgrades = [
 
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 105000,
-    gift: true,
     id: "zen",
     max: 1,
     hardLimit: Infinity,
@@ -359,9 +334,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 70000,
-    gift: true,
     id: "asceticism",
     max: 1,
     hardLimit: Infinity,
@@ -373,9 +347,8 @@ export const rawUpgrades = [
 
   {
     category: categories.pierce,
-    requires: "",
+    requires: [],
     threshold: 15000,
-    gift: false,
     id: "pierce_color",
     max: 4,
     hardLimit: Infinity,
@@ -386,10 +359,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
-    requires: "",
+    requires: [],
     threshold: 1500,
     id: "pierce",
-    gift: false,
     max: 3,
     hardLimit: Infinity,
     name: t("upgrades.pierce.name"),
@@ -399,10 +371,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 800,
     id: "multiball",
-    gift: true,
     max: 6,
     hardLimit: Infinity,
     name: t("upgrades.multiball.name"),
@@ -412,9 +383,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "multiball",
+    requires: ["multiball"],
     threshold: 21000,
-    gift: false,
     id: "ball_repulse_ball",
     max: 3,
     hardLimit: Infinity,
@@ -425,9 +395,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "multiball",
+    requires: ["multiball"],
     threshold: 25000,
-    gift: false,
     id: "ball_attract_ball",
     max: 3,
     hardLimit: Infinity,
@@ -438,9 +407,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 30000,
-    gift: false,
     id: "puck_repulse_ball",
     max: 2,
     hardLimit: Infinity,
@@ -451,9 +419,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 35000,
-    gift: false,
     id: "wind",
     max: 3,
     hardLimit: Infinity,
@@ -463,9 +430,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 65000,
-    gift: false,
     id: "helium",
     max: 3,
     hardLimit: Infinity,
@@ -476,9 +442,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 200000,
-    gift: false,
     id: "bricks_attract_coins",
     max: 3,
     hardLimit: Infinity,
@@ -489,9 +454,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 240000,
-    gift: false,
     id: "wrap_left",
     max: 1,
     hardLimit: Infinity,
@@ -502,9 +466,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 245000,
-    gift: false,
     id: "wrap_right",
     max: 1,
     hardLimit: Infinity,
@@ -516,9 +479,8 @@ export const rawUpgrades = [
 
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 45000,
-    gift: false,
     id: "respawn",
     max: 4,
     hardLimit: Infinity,
@@ -536,9 +498,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 55000,
-    gift: false,
     id: "double_or_nothing",
     max: 1,
     hardLimit: 1,
@@ -550,9 +511,8 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 75000,
-    gift: false,
     id: "unbounded",
     max: 3,
     hardLimit: Infinity,
@@ -564,9 +524,8 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 95000,
-    gift: false,
     id: "etherealcoins",
     max: 1,
     hardLimit: Infinity,
@@ -577,9 +536,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "multiball",
+    requires: ["multiball"],
     threshold: 100000,
-    gift: false,
     id: "shocks",
     max: 1,
     hardLimit: Infinity,
@@ -590,9 +548,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 110000,
-    gift: false,
     id: "sacrifice",
     max: 1,
     hardLimit: 1,
@@ -603,9 +560,8 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 120000,
-    gift: false,
     id: "ghost_coins",
     max: 3,
     hardLimit: Infinity,
@@ -616,9 +572,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: "",
+    requires: [],
     threshold: 125000,
-    gift: false,
     id: "forgiving",
     max: 1,
     hardLimit: Infinity,
@@ -629,9 +584,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 130000,
-    gift: false,
     id: "ball_attracts_coins",
     max: 3,
     hardLimit: Infinity,
@@ -642,9 +596,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 145000,
-    gift: false,
     id: "clairvoyant",
     max: 1,
     hardLimit: Infinity,
@@ -656,9 +609,8 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 155000,
-    gift: false,
     id: "implosions",
     max: 1,
     hardLimit: Infinity,
@@ -669,9 +621,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 160000,
-    gift: false,
     id: "corner_shot",
     max: 1,
     hardLimit: Infinity,
@@ -682,9 +633,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 175000,
-    gift: false,
     id: "limitless",
     max: 1,
     hardLimit: Infinity,
@@ -695,9 +645,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 185000,
-    gift: false,
     id: "trickledown",
     max: 1,
     hardLimit: Infinity,
@@ -708,9 +657,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: "",
+    requires: [],
     threshold: 190000,
-    gift: false,
     id: "transparency",
     max: 3,
     hardLimit: Infinity,
@@ -725,9 +673,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 195000,
-    gift: false,
     id: "superhot",
     max: 3,
     hardLimit: Infinity,
@@ -738,9 +685,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 205000,
-    gift: false,
     id: "rainbow",
     max: 7,
     hardLimit: Infinity,
@@ -751,9 +697,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 208000,
-    gift: false,
     id: "disco_ball",
     max: 1,
     hardLimit: 1,
@@ -763,9 +708,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 210000,
-    gift: false,
     id: "golden_goose",
     max: 1,
     hardLimit: Infinity,
@@ -776,9 +720,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 215000,
-    gift: false,
     id: "bricks_attract_ball",
     max: 1,
     hardLimit: Infinity,
@@ -790,9 +733,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 220000,
-    gift: false,
     id: "buoy",
     max: 3,
     hardLimit: Infinity,
@@ -803,9 +745,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 225000,
-    gift: false,
     id: "ottawa_treaty",
     max: 1,
     hardLimit: Infinity,
@@ -817,9 +758,8 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 235000,
-    gift: false,
     id: "sticky_coins",
     max: 1,
     hardLimit: Infinity,
@@ -830,10 +770,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: "",
+    requires: [],
     threshold: 0,
     id: "base_combo",
-    gift: true,
     max: 7,
     hardLimit: Infinity,
     name: t("upgrades.base_combo.name"),
@@ -846,9 +785,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 0,
-    gift: false,
     id: "viscosity",
     max: 3,
     hardLimit: Infinity,
@@ -859,9 +797,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 700,
-    gift: false,
     id: "coin_magnet",
     max: 3,
     hardLimit: Infinity,
@@ -872,9 +809,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: "",
+    requires: [],
     threshold: 1000,
-    gift: false,
     id: "smaller_puck",
     max: 2,
     hardLimit: Infinity,
@@ -886,9 +822,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 2500,
-    gift: false,
     id: "metamorphosis",
     max: 1,
     hardLimit: Infinity,
@@ -899,10 +834,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 6000,
     id: "sapper",
-    gift: false,
     max: 7,
     hardLimit: Infinity,
     name: t("upgrades.sapper.name"),
@@ -912,10 +846,9 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 9000,
     id: "bigger_explosions",
-    gift: false,
     max: 1,
     hardLimit: Infinity,
     name: t("upgrades.bigger_explosions.name"),
@@ -925,9 +858,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: "",
+    requires: [],
     threshold: 13000,
-    gift: false,
     adventure: false,
     id: "extra_levels",
     max: 3,
@@ -939,9 +871,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: "",
+    requires: [],
     threshold: 170000,
-    gift: false,
     id: "fountain_toss",
     max: 7,
     hardLimit: Infinity,
@@ -952,9 +883,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: "",
+    requires: [],
     threshold: 180000,
-    gift: false,
     id: "minefield",
     max: 3,
     hardLimit: Infinity,
@@ -966,9 +896,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: "",
+    requires: [],
     threshold: 18000,
-    gift: false,
     id: "soft_reset",
     max: 3,
     hardLimit: Infinity,
@@ -984,9 +913,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: "",
+    requires: [],
     threshold: 80000,
-    gift: false,
     id: "shunt",
     max: 3,
     hardLimit: Infinity,
@@ -1002,9 +930,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: "",
+    requires: [],
     threshold: 140000,
-    gift: true,
     id: "passive_income",
     max: 4,
     hardLimit: Infinity,
@@ -1022,9 +949,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: "",
+    requires: [],
     threshold: 40000,
-    gift: false,
     id: "sturdy_bricks",
     max: 4,
     hardLimit: Infinity,
@@ -1039,9 +965,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 250000,
-    gift: false,
     id: "steering",
     max: 4,
     hardLimit: Infinity,
@@ -1051,9 +976,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 255000,
-    gift: false,
     id: "wrap_up",
     max: 1,
     hardLimit: Infinity,
@@ -1063,9 +987,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.beginner,
-    requires: "",
+    requires: [],
     threshold: 5000,
-    gift: false,
     id: "chill",
     max: 1,
     hardLimit: Infinity,
@@ -1075,9 +998,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "",
+    requires: [],
     threshold: 260000,
-    gift: false,
     id: "round_bricks",
     max: 1,
     hardLimit: 1,
@@ -1087,9 +1009,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: "multiball",
+    requires: ["multiball"],
     threshold: 265000,
-    gift: false,
     id: "thomas",
     max: 1,
     hardLimit: Infinity,
@@ -1099,8 +1020,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
+    requires: [],
     threshold: 270000,
-    gift: false,
     id: "flyswatter",
     max: 1,
     hardLimit: 1,
@@ -1110,8 +1031,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
+    requires: [],
     threshold: 275000,
-    gift: false,
     id: "gravity_falls",
     max: 1,
     hardLimit: 1,
@@ -1121,8 +1042,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
+    requires: [],
     threshold: 275000,
-    gift: false,
     id: "palette",
     max: 1,
     hardLimit: 1,
@@ -1132,8 +1053,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
+    requires: [],
     threshold: 280000,
-    gift: false,
     id: "vibrant_neighborhood",
     max: 1,
     hardLimit: 1,
@@ -1144,8 +1065,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
+    requires: [],
     threshold: 290000,
-    gift: false,
     id: "paddle_up_combo",
     max: 1,
     hardLimit: 1,
@@ -1157,8 +1078,8 @@ export const rawUpgrades = [
 
   {
     category: categories.pierce,
+    requires: [],
     threshold: 300000,
-    gift: false,
     id: "pierce_left",
     max: 3,
     hardLimit: Infinity,
@@ -1168,8 +1089,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
+    requires: [],
     threshold: 310000,
-    gift: false,
     id: "pierce_right",
     max: 3,
     hardLimit: Infinity,
@@ -1179,8 +1100,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
+    requires: [],
     threshold: 320000,
-    gift: false,
     id: "pierce_top",
     max: 3,
     hardLimit: Infinity,
@@ -1190,8 +1111,14 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
+    requires: [
+      "pierce_left",
+      "pierce_right",
+      "pierce",
+      "pierce_above_paddle",
+      "pierce_color",
+    ],
     threshold: 330000,
-    gift: false,
     id: "refill",
     max: 1,
     hardLimit: 1,
@@ -1202,8 +1129,8 @@ export const rawUpgrades = [
 
   {
     category: categories.pierce,
+    requires: [],
     threshold: 370000,
-    gift: false,
     id: "pierce_above_paddle",
     max: 3,
     hardLimit: Infinity,
@@ -1215,8 +1142,8 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
+    requires: [],
     threshold: 380000,
-    gift: false,
     id: "soft_touch",
     max: 1,
     hardLimit: 2,
@@ -1226,8 +1153,8 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
+    requires: [],
     threshold: 390000,
-    gift: true,
     id: "varied_diet",
     max: 3,
     hardLimit: 9,
@@ -1237,11 +1164,10 @@ export const rawUpgrades = [
     fullHelp: (lvl: number) =>
       t("upgrades.varied_diet.verbose_description", { plus: lvl, minus: lvl }),
   },
-
   {
     category: categories.advanced,
+    requires: [],
     threshold: 400000,
-    gift: false,
     id: "instant_explosion",
     max: 1,
     hardLimit: 1,
@@ -1250,11 +1176,10 @@ export const rawUpgrades = [
     fullHelp: (lvl: number) =>
       t("upgrades.instant_explosion.verbose_description"),
   },
-
   {
     category: categories.advanced,
+    requires: [],
     threshold: 410000,
-    gift: false,
     id: "soft_brush",
     max: 7,
     hardLimit: Infinity,

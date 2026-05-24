@@ -104,7 +104,10 @@ export function getClosestBall(
 export function getPossibleUpgrades(gameState: GameState) {
   return upgrades
     .filter((u) => getTotalScore() >= u.threshold)
-    .filter((u) => !u?.requires || gameState.perks[u?.requires]);
+    .filter(
+      (u) =>
+        u.requires.length === 0 || u.requires.find((r) => gameState.perks[r]),
+    );
 }
 
 export function renderMaxLevel(gameState: GameState) {

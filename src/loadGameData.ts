@@ -9,7 +9,7 @@ import { automaticBackgroundColor } from "./pure_functions";
 
 export const upgrades = [...rawUpgrades].sort(
   (a, b) => a.category - b.category || a.threshold - b.threshold,
-) as Upgrade[];
+) as unknown as Upgrade[];
 const palette = _palette as Palette;
 
 const rawLevelsList = _rawLevelsList as RawLevel[];

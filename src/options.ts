@@ -104,11 +104,6 @@ export const options = {
     name: t("settings.pointer_lock"),
     help: t("settings.pointer_lock_help"),
   },
-  kid: {
-    default: false,
-    name: t("settings.kid"),
-    help: t("settings.kid_help"),
-  },
   // Could not get the sharing to work without loading androidx and all the modern android things so for now I'll just disable sharing in the android app
   record: {
     default: false,

@@ -40,10 +40,10 @@ export async function openUnlockedUpgradesList() {
       upgradeActions.find((u) => u.disabled)
         ? t("unlocks.greyed_out_help")
         : "",
-      miniMarkDown(t("unlocks.category.beginner")),
-      ...upgradeActions.filter((u) => u.category == categories.beginner),
       miniMarkDown(t("unlocks.category.combo")),
       ...upgradeActions.filter((u) => u.category == categories.combo),
+      miniMarkDown(t("unlocks.category.beginner")),
+      ...upgradeActions.filter((u) => u.category == categories.beginner),
       miniMarkDown(t("unlocks.category.combo_boost")),
       ...upgradeActions.filter((u) => u.category == categories.combo_boost),
       miniMarkDown(t("unlocks.category.simple")),

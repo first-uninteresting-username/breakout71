@@ -10,6 +10,7 @@ import {
 import { allLevelsAndIcons, upgrades } from "./loadGameData";
 import { clamp } from "./pure_functions";
 import { t } from "./i18n/i18n";
+import { sample } from "./game_utils";
 
 let counter = 0;
 
@@ -197,8 +198,8 @@ export function getPerkAnimation(perkId: PerkId) {
   if (customSettings[perkId]?.perks) {
     Object.assign(demoParams.perks, customSettings[perkId].perks);
   }
-  if (requires) {
-    demoParams.perks[requires] ||= 1;
+  if (requires.length) {
+    demoParams.perks[sample(requires)] ||= 1;
   }
   return getGameAnimation(demoParams);
 }

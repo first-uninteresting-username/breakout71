@@ -22,7 +22,7 @@ function isExcluded(id: PerkId) {
     ]);
     // Avoid excluding a perk that's needed for the required one
     upgrades.forEach((u) => {
-      if (u.requires) excluded.add(u.requires);
+      u.requires.forEach((r) => excluded.add(r));
     });
   }
   return excluded.has(id);

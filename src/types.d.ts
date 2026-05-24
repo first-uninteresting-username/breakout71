@@ -24,7 +24,6 @@ export type Palette = { [k: string]: string };
 
 export type Upgrade = {
   threshold: number;
-  gift: boolean;
   id: PerkId;
   name: string;
   category: number;
@@ -32,7 +31,7 @@ export type Upgrade = {
   hardLimit: number;
   help: (lvl: number) => string;
   fullHelp: (lvl: number) => string;
-  requires: PerkId | "";
+  requires: PerkId[];
 };
 
 export type PerkId = (typeof rawUpgrades)[number]["id"];
@@ -41,6 +40,7 @@ declare global {
   interface Window {
     webkitAudioContext?: typeof AudioContext;
     backButtonCaptured?: () => boolean;
+    gameState?: GameState;
   }
 
   interface Document {
@@ -313,6 +313,7 @@ export type RunParams = {
   level?: Level;
   levelToAvoid?: string;
   perkToAvoid?: PerkId;
+  mainPerkId?: PerkId;
   perks?: Partial<PerksMap>;
   levelEditorLevelIndex?: number;
   runType: RunType;
