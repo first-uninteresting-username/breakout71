@@ -17,7 +17,11 @@ import { getHistory } from "./gameOver";
 import { getSettingValue } from "./settings";
 import { isBlackListedForStart, isStartingPerk } from "./startingPerks";
 import { isLevelLocked } from "./get_level_unlock_condition";
-import { dontOfferTooSoon } from "./openUpgradesPicker";
+import {
+  dontOfferTooSoon,
+  logUpgradePicked,
+  logUpgradeShown,
+} from "./openUpgradesPicker";
 
 export function getRunLevels(
   params: RunParams,
@@ -65,6 +69,14 @@ export function newGameState(params: RunParams): GameState {
       giftable[Math.floor(Math.random() * giftable.length)].id;
 
     perks[randomGift] = 1;
+  }
+
+  const firstPerk = Object.entries(perks).find((e) => e[1] === 1)?.[0] as
+    | PerkId
+    | undefined;
+  if (params.runType === "normal" && firstPerk) {
+    logUpgradeShown(firstPerk);
+    logUpgradePicked(firstPerk);
   }
 
   const runLevels = getRunLevels(params, randomGift);

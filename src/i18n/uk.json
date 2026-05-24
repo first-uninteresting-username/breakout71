@@ -131,6 +131,8 @@
     "settings.autoplay_help": "Почати сеанс з випадковими оновленнями і комп'ютером керованої веслами",
     "settings.basic": "Базова графіка",
     "settings.basic_help": "Краще виконання.",
+    "settings.censor_perks_before_use": "",
+    "settings.censor_perks_before_use_help": "",
     "settings.colorful_coins": "Кольорові монети",
     "settings.colorful_coins_help": "Монети завжди спавна кольору цегли",
     "settings.contrast": "Високий контраст",

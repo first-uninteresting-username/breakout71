@@ -131,6 +131,8 @@
     "settings.autoplay_help": "임의 업그레이드와 컴퓨터 제어 패들로 세션을 시작합니다",
     "settings.basic": "기본 그래픽",
     "settings.basic_help": "더 나은 성능.",
+    "settings.censor_perks_before_use": "",
+    "settings.censor_perks_before_use_help": "",
     "settings.colorful_coins": "다채로운 동전",
     "settings.colorful_coins_help": "동전은 항상 벽돌의 색상의",
     "settings.contrast": "높은 대비",

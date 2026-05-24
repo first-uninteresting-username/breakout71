@@ -131,6 +131,8 @@
     "settings.autoplay_help": "Starte eine Sitzung mit zufälligen Upgrades und einem computergesteuerten Paddel",
     "settings.basic": "Einfache Grafik",
     "settings.basic_help": "Bessere Leistung",
+    "settings.censor_perks_before_use": "",
+    "settings.censor_perks_before_use_help": "",
     "settings.colorful_coins": "Bunte Münzen",
     "settings.colorful_coins_help": "Münzen spawnen immer in der Farbe des Steins",
     "settings.contrast": "Hoher Kontrast",

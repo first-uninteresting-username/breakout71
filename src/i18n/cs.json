@@ -131,6 +131,8 @@
     "settings.autoplay_help": "Spustit hru s náhodnými vylepšeními a počítačem ovládanou pálkou",
     "settings.basic": "Základní grafika",
     "settings.basic_help": "Lepší výkon.",
+    "settings.censor_perks_before_use": "",
+    "settings.censor_perks_before_use_help": "",
     "settings.colorful_coins": "Barevné mince",
     "settings.colorful_coins_help": "Mince se vždy zrodí v barvě cihličky",
     "settings.contrast": "Vysoký kontrast",

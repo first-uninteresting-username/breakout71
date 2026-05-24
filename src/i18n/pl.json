@@ -131,6 +131,8 @@
     "settings.autoplay_help": "Zaczyna sesję z losowymi aktualizacją oraz sterowaną przez komputer",
     "settings.basic": "Grafika podstawowa",
     "settings.basic_help": "Lepsze występy.",
+    "settings.censor_perks_before_use": "",
+    "settings.censor_perks_before_use_help": "",
     "settings.colorful_coins": "Moneta kolorowa",
     "settings.colorful_coins_help": "Coins zawsze zaczyna kolor cegły",
     "settings.contrast": "High Contrast",

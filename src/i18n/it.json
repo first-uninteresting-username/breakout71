@@ -131,6 +131,8 @@
     "settings.autoplay_help": "Inizia una sessione con potenziamenti casuali e una barra controllata dal computer",
     "settings.basic": "Grafica semplice",
     "settings.basic_help": "Migliori performance.",
+    "settings.censor_perks_before_use": "",
+    "settings.censor_perks_before_use_help": "",
     "settings.colorful_coins": "Monete colorate",
     "settings.colorful_coins_help": "Le monete sono sempre dello stesso colore del loro mattoncino",
     "settings.contrast": "Contrasto Elevato",

@@ -131,6 +131,8 @@
     "settings.autoplay_help": "جلسه‌ای با قدرت‌های تصادفی و پاروی کنترل‌شده توسط رایانه آغاز کنید",
     "settings.basic": "گرافیک ساده",
     "settings.basic_help": "کارایی بهتر.",
+    "settings.censor_perks_before_use": "",
+    "settings.censor_perks_before_use_help": "",
     "settings.colorful_coins": "سکه‌های رنگارنگ",
     "settings.colorful_coins_help": "سکه‌ها همیشه به رنگ آجر نمایان می‌شوند",
     "settings.contrast": "تضاد بالا",

@@ -130,6 +130,11 @@ export const options = {
     name: t("settings.level_unlocks_hints"),
     help: t("settings.level_unlocks_hints_help"),
   },
+  censor_perks_before_use: {
+    default: false,
+    name: t("settings.censor_perks_before_use"),
+    help: t("settings.censor_perks_before_use_help"),
+  },
 } as const satisfies { [k: string]: OptionDef };
 
 export function isOptionOn(key: OptionId) {

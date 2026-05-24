@@ -131,6 +131,8 @@
     "settings.autoplay_help": "Začnite reláciu s náhodnými vylepšeniami a počítačom ovládaným paddleboardom",
     "settings.basic": "Základné grafiky",
     "settings.basic_help": "Lepšie výkon.",
+    "settings.censor_perks_before_use": "",
+    "settings.censor_perks_before_use_help": "",
     "settings.colorful_coins": "Farebné mince",
     "settings.colorful_coins_help": "Mince vždy spawn farby tehál",
     "settings.contrast": "Vysoká kontrast",

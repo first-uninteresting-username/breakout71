@@ -7,24 +7,27 @@ import { miniMarkDown } from "./pure_functions";
 import { categories } from "./upgrades";
 import { openUpgradeDetails } from "./openUpgradeDetails";
 import { getIcon } from "./levelIcon";
+import { getUpgradeHelp } from "./openUpgradesPicker";
 
 export async function openUnlockedUpgradesList() {
   const ts = getTotalScore();
   const upgradeActions = upgrades
-    .map(({ name, id, threshold, help, category, fullHelp }) => ({
-      text: name,
-      disabled: ts < threshold,
-      value: id,
-      icon: getIcon("icon:" + id),
-      category,
-      help:
-        ts < threshold
-          ? t("unlocks.minTotalScore", { score: threshold })
-          : help(1),
-      threshold,
-      className: "upgrade choice " + (ts > threshold ? "used" : ""),
-      // actionLabel: t("unlocks.use"),
-    }))
+    .map((u) => {
+      const { name, id, threshold, help, category, fullHelp } = u;
+      return {
+        text: name,
+        disabled: ts < threshold,
+        value: id,
+        icon: getIcon("icon:" + id),
+        category,
+        help:
+          ts < threshold
+            ? t("unlocks.minTotalScore", { score: threshold })
+            : getUpgradeHelp(u, undefined),
+        threshold,
+        className: "upgrade choice " + (ts > threshold ? "used" : ""),
+      };
+    })
     .sort((a, b) => a.threshold - b.threshold);
 
   const id = await asyncAlert<Upgrade["id"]>({

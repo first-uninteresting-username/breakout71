@@ -1,4 +1,4 @@
-import { GameState, PerkId } from "./types";
+import { GameState, PerkId, Upgrade } from "./types";
 import {
   catchRateBest,
   catchRateGood,
@@ -17,7 +17,6 @@ import {
   escapeAttribute,
   getPossibleUpgrades,
   levelsListHTMl,
-  pickedUpgradesHTMl,
   renderMaxLevel,
   upgradeLevelAndMaxDisplay,
 } from "./game_utils";
@@ -31,6 +30,7 @@ import {
 } from "./settings";
 import { toast } from "./toast";
 import { getIcon } from "./levelIcon";
+import { pickedUpgradesHTMl } from "./picked_upgrades_html";
 
 export async function openUpgradesPicker(gameState: GameState) {
   if (gameState.perks.chill) return;
@@ -145,7 +145,16 @@ export async function openUpgradesPicker(gameState: GameState) {
         Math.min(u.max + gameState.perks.limitless, u.hardLimit),
     );
   let recommendation = settingsChangeRecommendations();
-  while (true && !gameState.perks.chill) {
+
+  let usedCountCache: Record<string, number> = {};
+  const usageRate = (u: Upgrade) => {
+    if (!(u.id in usedCountCache)) {
+      usedCountCache[u.id] =
+        getUpgradesPicked(u.id) / (1 + getUpgradesShown(u.id));
+    }
+    return usedCountCache[u.id];
+  };
+  while (!gameState.perks.chill) {
     // refresh the list if you pick extra one_more_choice
     const offered = sorted.slice(
       0,
@@ -158,42 +167,52 @@ export async function openUpgradesPicker(gameState: GameState) {
     const unlockable = getFirstUnlockable(gameState);
     let unlockRelatedUpgradesOffered = 0;
 
-    const upgradesActions = offered.map((u) => {
-      let unlockHint = "";
-      let className = "";
-      if (isOptionOn("level_unlocks_hints")) {
-        if (unlockable?.forbidden?.includes(u.id) && !gameState.perks[u.id]) {
-          unlockRelatedUpgradesOffered++;
-          className += " forbidden";
-          unlockHint = t("level_up.forbidden", {
-            levelName: unlockable?.l.name || "",
-          });
+    const upgradesActions = offered
+      .sort((a, b) => {
+        return usageRate(b) - usageRate(a);
+      })
+      .map((u) => {
+        let unlockHint = "";
+        let className = "";
+        if (isOptionOn("level_unlocks_hints")) {
+          if (unlockable?.forbidden?.includes(u.id) && !gameState.perks[u.id]) {
+            unlockRelatedUpgradesOffered++;
+            className += " forbidden";
+            unlockHint = t("level_up.forbidden", {
+              levelName: unlockable?.l.name || "",
+            });
+          }
+          if (unlockable?.required?.includes(u.id) && !gameState.perks[u.id]) {
+            unlockRelatedUpgradesOffered++;
+            className += " required";
+            unlockHint = t("level_up.required", {
+              levelName: unlockable?.l.name || "",
+            });
+          }
         }
-        if (unlockable?.required?.includes(u.id) && !gameState.perks[u.id]) {
-          unlockRelatedUpgradesOffered++;
-          className += " required";
-          unlockHint = t("level_up.required", {
-            levelName: unlockable?.l.name || "",
-          });
+        const disabled =
+          gameState.perks[u.id] >= u.max + gameState.perks.limitless;
+        if (!disabled) {
+          logUpgradeShown(u.id);
         }
-      }
-      return {
-        value: u.id,
-        disabled: gameState.perks[u.id] >= u.max + gameState.perks.limitless,
-        text:
-          u.name +
-          (gameState.perks[u.id]
-            ? upgradeLevelAndMaxDisplay(u, gameState)
-            : ""),
-        icon: getIcon("icon:" + u.id),
-        help: u.help(gameState.perks[u.id] || 1),
-        tooltip: unlockHint + u.fullHelp(gameState.perks[u.id] || 1),
-        className,
-        actionLabel: t(
-          gameState.perks[u.id] ? "level_up.upgrade" : "level_up.pick",
-        ),
-      };
-    });
+        return {
+          value: u.id,
+          disabled,
+          text:
+            u.name +
+            (gameState.perks[u.id]
+              ? upgradeLevelAndMaxDisplay(u, gameState)
+              : ""),
+          icon: getIcon("icon:" + u.id),
+
+          help: getUpgradeHelp(u, gameState),
+          tooltip: unlockHint + getUpgradeTooltip(u, gameState),
+          className,
+          actionLabel: t(
+            gameState.perks[u.id] ? "level_up.upgrade" : "level_up.pick",
+          ),
+        };
+      });
 
     const choice = await requiredAsyncAlert<
       PerkId | { changeSettings: Record<string, any> }
@@ -223,8 +242,9 @@ export async function openUpgradesPicker(gameState: GameState) {
     if (applySettingsChangeReco(choice)) {
       recommendation = "";
     } else {
+      logUpgradePicked(choice as PerkId);
       upgradePoints--;
-      gameState.perks[choice]++;
+      gameState.perks[choice as PerkId]++;
       gameState.runStatistics.upgrades_picked++;
       if (!upgradePoints) {
         return;
@@ -240,8 +260,9 @@ export function dontOfferTooSoon(gameState: GameState, id: PerkId) {
 export function applySettingsChangeReco(choice: unknown) {
   if (!choice) return;
   if (typeof choice == "object" && "changeSettings" in choice) {
-    for (let key in choice.changeSettings) {
-      setSettingValue(key, choice.changeSettings[key]);
+    const changes = choice.changeSettings as Record<string, any>;
+    for (let key in changes) {
+      setSettingValue(key, changes[key]);
     }
     toast(t("settings.suggestions.applied"));
     return true;
@@ -315,4 +336,53 @@ export function settingsChangeRecommendations() {
       changeSettings: { "breakout-settings-enable-basic": true },
     },
   };
+}
+
+function getUpgradesPicked(id: PerkId) {
+  return getSettingValue("picked_" + id, 0);
+}
+function getUpgradesShown(id: PerkId) {
+  return getSettingValue("showed_" + id, 0);
+}
+
+export function logUpgradeShown(id: PerkId) {
+  return setSettingValue(
+    "showed_" + id,
+    getSettingValue("showed_" + id, 0) + 1,
+  );
+}
+export function logUpgradePicked(id: PerkId) {
+  return setSettingValue(
+    "picked_" + id,
+    getSettingValue("picked_" + id, 0) + 1,
+  );
+}
+
+export function getUpgradeHelp(u: Upgrade, gameState: GameState | undefined) {
+  return censorUpgradeInfo(u, 1, u.help(gameState?.perks[u.id] || 1));
+}
+export function getUpgradeTooltip(
+  u: Upgrade,
+  gameState: GameState | undefined,
+) {
+  return censorUpgradeInfo(u, 2, u.fullHelp(gameState?.perks[u.id] || 1));
+}
+
+const censorChars = "☰☱☲☳☴☵☶☷ ".split("");
+function censorUpgradeInfo(
+  { id, threshold }: Upgrade,
+  showAfterNPicks: number,
+  text: string,
+) {
+  if (!isOptionOn("censor_perks_before_use")) return text;
+  if (threshold && getUpgradesPicked(id) < showAfterNPicks) {
+    return text
+      .split("")
+      .map((char, i) => {
+        if (!char.trim()) return char;
+        return censorChars[i % censorChars.length];
+      })
+      .join("");
+  }
+  return text;
 }

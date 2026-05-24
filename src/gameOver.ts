@@ -7,11 +7,7 @@ import {
   restart,
   startComputerControlledGame,
 } from "./game";
-import {
-  currentLevelInfo,
-  describeLevel,
-  pickedUpgradesHTMl,
-} from "./game_utils";
+import { currentLevelInfo, describeLevel } from "./game_utils";
 import {
   askForPersistentStorage,
   getSettingValue,
@@ -28,10 +24,12 @@ import {
 } from "./get_level_unlock_condition";
 import {
   applySettingsChangeReco,
+  getUpgradeHelp,
   settingsChangeRecommendations,
 } from "./openUpgradesPicker";
 import { getIcon } from "./levelIcon";
 import { closeLevelPreview, openLevelDetails } from "./openLevelDetails";
+import { pickedUpgradesHTMl } from "./picked_upgrades_html";
 
 export function addToTotalPlayTime(ms: number) {
   setSettingValue(
@@ -106,7 +104,7 @@ export async function gameOver(
           ${getIcon("icon:" + u.id)}
           <p>
           <strong>${u.name}</strong>
-           ${u.help(1)}
+           ${getUpgradeHelp(u, undefined)}
         </p>  
       </div>
       `,

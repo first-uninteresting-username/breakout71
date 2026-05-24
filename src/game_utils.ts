@@ -129,37 +129,6 @@ export function levelAndMaxBadge(lvl: number, max: number) {
   return ` <span class="level ${lvl < max ? "can-upgrade" : "capped"}"><span>${lvl}</span><span>${max}</span></span>`;
 }
 
-export function pickedUpgradesHTMl(gameState: GameState) {
-  const upgradesList = getPossibleUpgrades(gameState)
-    .filter((u) => gameState.perks[u.id])
-    .map((u) => {
-      const newMax = Math.max(0, u.max + gameState.perks.limitless);
-
-      const state = (gameState.perks[u.id] && 1) || (!newMax && 2) || 3;
-      const tooltip = escapeAttribute(u.fullHelp(gameState.perks[u.id] || 1));
-      return {
-        state,
-        html: `
-        <div class="upgrade ${["??", "used", "banned", "free"][state]}">
-            ${getIcon("icon:" + u.id)}
-            <p data-tooltip="${tooltip}"
-            data-help-content="${tooltip}"
-            >
-            <strong>${u.name}</strong>
-            ${upgradeLevelAndMaxDisplay(u, gameState)} 
-            ${u.help(gameState.perks[u.id] || 1)} 
-          
-          </p>  
-        </div>
-        `,
-      };
-    })
-    .sort((a, b) => a.state - b.state)
-    .map((a) => a.html);
-
-  return ` <p>${t("score_panel.upgrades_picked")}</p>` + upgradesList.join("");
-}
-
 export function levelsListHTMl(
   gameState: GameState,
   currentLevelIndex: number,

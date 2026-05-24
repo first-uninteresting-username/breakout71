@@ -1,11 +1,7 @@
 import { GameState, PerkId } from "./types";
 import { asyncAlert } from "./asyncAlert";
 import { t } from "./i18n/i18n";
-import {
-  levelsListHTMl,
-  pickedUpgradesHTMl,
-  renderMaxLevel,
-} from "./game_utils";
+import { levelsListHTMl, renderMaxLevel } from "./game_utils";
 import { getHistory } from "./gameOver";
 import { pause } from "./game";
 import { allLevels, upgrades } from "./loadGameData";
@@ -21,6 +17,7 @@ import { getIcon } from "./levelIcon";
 import { closeLevelPreview, openLevelDetails } from "./openLevelDetails";
 import { closeEditorTrialRun } from "./levelEditor";
 import { closeCreativeRun, openCreativeModePerksPicker } from "./creative";
+import { pickedUpgradesHTMl } from "./picked_upgrades_html";
 
 export async function openScorePanel(gameState: GameState) {
   pause(true);

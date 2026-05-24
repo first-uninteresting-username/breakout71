@@ -131,6 +131,8 @@
     "settings.autoplay_help": "Start a session with random upgrades and a computer controlled paddle",
     "settings.basic": "Basic graphics",
     "settings.basic_help": "Better performance.",
+    "settings.censor_perks_before_use": "Censor perks descriptions before first use",
+    "settings.censor_perks_before_use_help": "Creates a sense of mystery",
     "settings.colorful_coins": "Colorful coins",
     "settings.colorful_coins_help": "Coins always spawn of the color of the brick",
     "settings.contrast": "High Contrast",
