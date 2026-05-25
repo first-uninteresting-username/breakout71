@@ -83,7 +83,7 @@ async function openLevelEditorLevelsList() {
   });
   if (typeof choice == "function") choice();
 }
-setTimeout(() => editRawLevel(0));
+
 export async function editRawLevel(nth: number, color = "") {
   let rawList = getSettingValue("custom_levels", []) as RawLevel[];
   const level = rawList[nth];
