@@ -281,7 +281,13 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: [],
+    requires: [
+      "bricks_attract_coins",
+      "helium",
+      "sticky_coins",
+      "sapper",
+      "trickledown",
+    ],
     threshold: 70000,
     id: "asceticism",
     max: 1,

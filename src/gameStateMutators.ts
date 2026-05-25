@@ -1991,7 +1991,10 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     ball.y > ylimit &&
     ball.vy > 0 &&
     ballIsAbovePaddle &&
-    !isMovingWhilePassiveIncome(gameState)
+    !(
+      gameState.perks.passive_income > 1 &&
+      isMovingWhilePassiveIncome(gameState)
+    )
   ) {
     const speed = Math.sqrt(ball.vx * ball.vx + ball.vy * ball.vy);
     const angle = Math.atan2(
@@ -2827,7 +2830,13 @@ function applyBrickSidesParticleEffects(gameState: GameState, frames: number) {
       100 * (Math.random() + 1),
     );
   }
-  if (gameState.perks.streak_shots && !isMovingWhilePassiveIncome(gameState)) {
+  if (
+    gameState.perks.streak_shots &&
+    !(
+      gameState.perks.passive_income > 1 &&
+      isMovingWhilePassiveIncome(gameState)
+    )
+  ) {
     const pos = 0.5 - Math.random();
     makeParticle(
       gameState,
