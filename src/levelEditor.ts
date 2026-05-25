@@ -7,7 +7,7 @@ import { getIcon, levelIconHTML } from "./levelIcon";
 
 import _palette from "./data/palette.json";
 import { mainGameState, restart } from "./game";
-import { describeLevel } from "./game_utils";
+import { describeLevel, largestDivisorUnder5 } from "./game_utils";
 import {
   automaticBackgroundColor,
   levelCodeToRawLevel,
@@ -83,7 +83,7 @@ async function openLevelEditorLevelsList() {
   });
   if (typeof choice == "function") choice();
 }
-
+setTimeout(() => editRawLevel(0));
 export async function editRawLevel(nth: number, color = "") {
   let rawList = getSettingValue("custom_levels", []) as RawLevel[];
   const level = rawList[nth];
@@ -96,7 +96,14 @@ export async function editRawLevel(nth: number, color = "") {
     for (let x = 0; x < level.size; x++) {
       const index = y * level.size + x;
       const c = bricks[index];
-      grid += `<span data-swipe="${index}" style="background: ${palette[c]}">${c == "B" ? "💣" : ""}</span>`;
+      const background = palette[c] ? "background: " + palette[c] + ";" : "";
+      const checkerSize = largestDivisorUnder5(level.size);
+      const checked =
+        checkerSize > 1
+          ? (Math.floor(x / checkerSize) + Math.floor(y / checkerSize)) % 2
+          : x == (level.size - 1) / 2 || y == (level.size - 1) / 2;
+
+      grid += `<span data-swipe="${index}" style="${background}" class="${checked ? "checked" : ""}">${c == "B" ? "💣" : ""}</span>`;
     }
     grid += "</div>";
   }
@@ -153,6 +160,7 @@ export async function editRawLevel(nth: number, color = "") {
     e.stopPropagation();
   }
   function handlePointerUp() {
+    if (!painting) return;
     if (painted.size) {
       closeModal?.();
     } else {
@@ -160,13 +168,16 @@ export async function editRawLevel(nth: number, color = "") {
     }
   }
   function handleContextMenu(e: MouseEvent) {
+    if (!painting) return;
     e.preventDefault();
   }
   const options = { capture: false, passive: false };
+
   document.addEventListener("pointerdown", handlePointerDown, options);
   document.addEventListener("pointermove", handlePointerMove, options);
   document.addEventListener("pointerup", handlePointerUp, options);
   document.addEventListener("contextmenu", handleContextMenu, options);
+
   function cleanup() {
     document.removeEventListener("pointerdown", handlePointerDown, options);
     document.removeEventListener("pointermove", handlePointerMove, options);

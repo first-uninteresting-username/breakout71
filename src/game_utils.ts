@@ -284,7 +284,14 @@ export function getHighScore() {
   } catch (e) {}
   return BigInt(0);
 }
-
+export function largestDivisorUnder5(n: number) {
+  for (let i = Math.min(Math.floor(n / 2), 5); i >= 2; i--) {
+    if (n % i == 0) {
+      return i;
+    }
+  }
+  return 1;
+}
 export function getCoinRenderColor(gameState: GameState, coin: Coin) {
   if (
     gameState.perks.metamorphosis ||
