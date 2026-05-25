@@ -18,7 +18,7 @@
     "editor.editing.help": "Then click a tile to color it.",
     "editor.editing.left": "Move all bricks to the left",
     "editor.editing.play": "Play this level",
-    "editor.editing.rename": "Level name",
+    "editor.editing.rename": "Rename level",
     "editor.editing.rename_prompt": "Please enter a new name for the level.",
     "editor.editing.right": "Move all bricks to the right",
     "editor.editing.show_code": "Show level code",

@@ -29,6 +29,23 @@ export function levelEditorMenuEntry() {
   };
 }
 
+function newLevelButton(rawList: RawLevel[]) {
+  return {
+    text: t("editor.new_level"),
+    icon: getIcon("icon:editor"),
+    value() {
+      rawList.push({
+        size: 6,
+        bricks: "____________________________________",
+        name: "custom level" + (rawList.length + 1),
+        credit: "",
+      });
+      setSettingValue("custom_levels", rawList);
+      editRawLevel(rawList.length - 1);
+    },
+  };
+}
+
 async function openLevelEditorLevelsList() {
   const rawList = getSettingValue("custom_levels", []) as RawLevel[];
   const customLevels = rawList.map(transformRawLevel);
@@ -37,21 +54,7 @@ async function openLevelEditorLevelsList() {
     id: "editor",
     title: t("editor.title"),
     content: [
-      {
-        text: t("editor.new_level"),
-        icon: getIcon("icon:editor"),
-        value() {
-          rawList.push({
-            color: "",
-            size: 6,
-            bricks: "____________________________________",
-            name: "custom level" + (rawList.length + 1),
-            credit: "",
-          });
-          setSettingValue("custom_levels", rawList);
-          editRawLevel(rawList.length - 1);
-        },
-      },
+      newLevelButton(rawList),
       ...customLevels.map((l, li) => ({
         text: l.name,
         icon: levelIconHTML(l.bricks, l.size),
@@ -106,13 +109,11 @@ export async function editRawLevel(nth: number, color = "") {
     '<div class="palette">' +
     Object.entries(palette)
       .filter(([key, value]) => key !== "_")
-      .filter(
-        ([key, value]) =>
-          levelColors.size < 5 || levelColors.has(key) || key === "B",
-      )
       .map(
         ([key, value]) =>
-          `<span data-resolve-to="set_color:${key}" data-selected="${key == color}" style="background: ${value}">${key == "B" ? "💣" : ""}</span>`,
+          `<button data-resolve-to="set_color:${key}" 
+        data-selected="${key == color}" style="background: ${value}" 
+        ${levelColors.size < 5 || levelColors.has(key) || key === "B" ? "" : "disabled"}>${key == "B" ? "💣" : ""}</button>`,
       )
       .join("") +
     "</div>";
@@ -173,10 +174,10 @@ export async function editRawLevel(nth: number, color = "") {
     document.removeEventListener("contextmenu", handleContextMenu, options);
   }
 
-  const clicked = await asyncAlert<string | null>({
+  const clicked = await asyncAlert<string | null | (() => void)>({
     title: `<span class="perk-title">
     <button ${previous ? 'data-resolve-to="previous"' : "disabled"} data-tooltip="${t("unlocks.previous")}">‹ </button>
-    <span>${level.name}</span>
+    <span data-resolve-to="rename" data-tooltip="${t("editor.editing.rename")}">${level.name}</span>
     <button ${next ? 'data-resolve-to="next"' : "disabled"} data-tooltip="${t("unlocks.next")}">  ›</button></span> 
     `,
     content: [
@@ -184,7 +185,14 @@ export async function editRawLevel(nth: number, color = "") {
       colorList,
       t("editor.editing.help"),
       `<div class="gridEdit" style="--grid-size:${level.size}; ">${grid}</div>`,
-
+      `<div class="editor-actions">
+          <button data-resolve-to="size:+1" data-tooltip="${t("editor.editing.bigger")}" ${level.size >= MAX_LEVEL_SIZE ? "disabled" : ""}>+</button>
+          <button data-resolve-to="size:-1" data-tooltip="${t("editor.editing.smaller")}" ${level.size <= MIN_LEVEL_SIZE ? "disabled" : ""}>-</button>
+          <button data-resolve-to="move:-1:0" data-tooltip="${t("editor.editing.left")}">🠜</button>
+          <button data-resolve-to="move:1:0" data-tooltip="${t("editor.editing.right")}">🠞</button>
+          <button data-resolve-to="move:0:-1" data-tooltip="${t("editor.editing.up")}">🠝</button>
+          <button data-resolve-to="move:0:1" data-tooltip="${t("editor.editing.down")}">🠟</button>
+      </div>`,
       {
         icon: getIcon("icon:new_run"),
         text: t("editor.editing.play"),
@@ -214,32 +222,7 @@ export async function editRawLevel(nth: number, color = "") {
         value: "show_code",
         help: t("editor.editing.show_code_help"),
       },
-      {
-        text: t("editor.editing.bigger"),
-        value: "size:+1",
-        disabled: level.size >= MAX_LEVEL_SIZE,
-      },
-      {
-        text: t("editor.editing.smaller"),
-        value: "size:-1",
-        disabled: level.size <= MIN_LEVEL_SIZE,
-      },
-      {
-        text: t("editor.editing.left"),
-        value: "move:-1:0",
-      },
-      {
-        text: t("editor.editing.right"),
-        value: "move:1:0",
-      },
-      {
-        text: t("editor.editing.up"),
-        value: "move:0:-1",
-      },
-      {
-        text: t("editor.editing.down"),
-        value: "move:0:1",
-      },
+      newLevelButton(rawList),
     ],
   });
   cleanup();
@@ -251,6 +234,10 @@ export async function editRawLevel(nth: number, color = "") {
     level.bricks = bricks.join("");
   } else if (!clicked) return;
 
+  if (typeof clicked === "function") {
+    clicked();
+    return;
+  }
   if (typeof clicked === "string") {
     const [action, a, b] = clicked.split(":");
     if (action == "set_color") {
