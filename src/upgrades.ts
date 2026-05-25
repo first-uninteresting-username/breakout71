@@ -346,7 +346,7 @@ export const rawUpgrades = [
 
   {
     category: categories.beginner,
-    requires: [],
+    requires: ["base_combo"],
     threshold: 0,
     id: "slow_down",
     max: 2,

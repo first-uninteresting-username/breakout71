@@ -177,7 +177,32 @@ export function addGameToHistory(gameState: GameState) {
   }
 
   addToTotalPlayTime(mainGameState.runStatistics.runTime);
-
+  if (gameState.startParams.mainPerkId) {
+    setSettingValue(
+      "starting_" + gameState.startParams.mainPerkId + "_hs",
+      Math.max(
+        gameState.score,
+        getSettingValue(
+          "starting_" + gameState.startParams.mainPerkId + "_hs",
+          0,
+        ),
+      ),
+    );
+    setSettingValue(
+      "starting_" + gameState.startParams.mainPerkId + "_max_lvl",
+      Math.max(
+        gameState.currentLevel + 1,
+        getSettingValue(
+          "starting_" + gameState.startParams.mainPerkId + "_max_lvl",
+          0,
+        ),
+      ),
+    );
+  }
+  setSettingValue(
+    "max_lvl",
+    Math.max(gameState.currentLevel + 1, getSettingValue("max_lvl", 0)),
+  );
   const perks: Partial<GameState["perks"]> = { ...gameState.perks };
   for (let id in perks) {
     if (!perks[id]) {
@@ -188,6 +213,7 @@ export function addGameToHistory(gameState: GameState) {
     ...gameState.runStatistics,
     perks,
     appVersion,
+    mainPerkId: gameState.startParams.mainPerkId,
   });
   localStorage.setItem(
     "breakout_71_runs_history",

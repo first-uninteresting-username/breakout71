@@ -1,8 +1,13 @@
 import { PerkId, RunParams, Upgrade } from "./types";
 import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
 import { categories, rawUpgrades } from "./upgrades";
-import { currentLevelInfo, highScoreText, sample } from "./game_utils";
-import { allLevels } from "./loadGameData";
+import {
+  currentLevelInfo,
+  getHighScore,
+  highScoreText,
+  sample,
+} from "./game_utils";
+import { allLevels, upgrades } from "./loadGameData";
 import { getIcon } from "./levelIcon";
 import { t } from "./i18n/i18n";
 import { mainGameState, restart } from "./game";
@@ -28,9 +33,6 @@ export function getStartingPerks() {
   if (upgrade.requires.length) {
     perks[sample(upgrade.requires) as PerkId] = 1;
   }
-  if (upgrade.id === "slow_down") {
-    perks["base_combo"] = 1;
-  }
 
   return {
     mainPerkId: upgrade.id as PerkId,
@@ -51,12 +53,21 @@ function possibleStartingPerks() {
 
 export function getStartRunButtons() {
   const favorite = getSettingValue<string>("starting_perk", "");
+  const hs = favorite
+    ? getSettingValue("starting_" + favorite + "_hs", 0)
+    : getHighScore();
 
   return [
     {
       icon: favorite ? getIcon("icon:" + favorite) : getIcon("icon:new_run"),
-      text: t("main_menu.normal"),
-      help: highScoreText() || t("main_menu.normal_help"),
+      text: favorite
+        ? t("main_menu.normal_with_perk", {
+            perk: upgrades.find((u) => u.id === favorite)?.name || favorite,
+          })
+        : t("main_menu.normal"),
+      help: hs
+        ? t("main_menu.high_score", { score: hs })
+        : t("main_menu.normal_help"),
       value: () => {
         restart({
           runType: "normal",
@@ -79,16 +90,20 @@ export function getStartRunButtons() {
               text: t("main_menu.random_perk"),
               help: t("main_menu.random_perk_help"),
             },
-            ...possibleStartingPerks().map((u) => ({
-              icon: getIcon("icon:" + u.id),
-              value: "starting_perk:" + u.id,
-              text: u.name,
-              disabled: u.threshold > getTotalScore(),
-              help:
-                getTotalScore() < u.threshold
-                  ? t("unlocks.minTotalScore", { score: u.threshold })
-                  : getUpgradeHelp(u, undefined),
-            })),
+            ...possibleStartingPerks().map((u) => {
+              const hs = getSettingValue("starting_" + u.id + "_hs", 0);
+              return {
+                icon: getIcon("icon:" + u.id),
+                value: "starting_perk:" + u.id,
+                text: u.name,
+                disabled: u.threshold > getTotalScore(),
+                help:
+                  (hs && t("main_menu.high_score", { score: hs })) ||
+                  (getTotalScore() < u.threshold &&
+                    t("unlocks.minTotalScore", { score: u.threshold })) ||
+                  getUpgradeHelp(u, undefined),
+              };
+            }),
           ],
         });
         if (choice) {

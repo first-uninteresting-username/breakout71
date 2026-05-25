@@ -4,7 +4,6 @@ import { t } from "./i18n/i18n";
 import { asyncAlert } from "./asyncAlert";
 import { getSettingValue, setSettingValue } from "./settings";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
-import { RunHistoryItem, Upgrade } from "./types";
 
 export function runHistoryViewerMenuEntry() {
   const history = getHistory();
@@ -30,6 +29,13 @@ async function viewHistory() {
       render(v) {
         return new Date(v).toISOString().slice(0, 10);
       },
+    },
+    {
+      label: t("history.columns.mainPerkId"),
+      field: (r) =>
+        upgrades.find((u) => u.id === r.mainPerkId)?.name ||
+        r.mainPerkId ||
+        "-",
     },
     {
       label: t("history.columns.score"),

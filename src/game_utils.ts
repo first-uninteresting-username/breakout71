@@ -285,13 +285,6 @@ export function getHighScore() {
   return BigInt(0);
 }
 
-export function highScoreText() {
-  if (getHighScore()) {
-    return t("main_menu.high_score", { score: getHighScore().toString() });
-  }
-  return "";
-}
-
 export function getCoinRenderColor(gameState: GameState, coin: Coin) {
   if (
     gameState.perks.metamorphosis ||

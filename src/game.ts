@@ -18,7 +18,6 @@ import {
   brickCenterY,
   currentLevelInfo,
   getRowColIndex,
-  highScoreText,
   hoursSpentPlaying,
   sample,
 } from "./game_utils";
