@@ -216,6 +216,7 @@ export async function openUpgradesPicker(gameState: GameState) {
     const choice = await requiredAsyncAlert<
       PerkId | { changeSettings: Record<string, any> }
     >({
+      id: "level_up",
       title: t("level_up.title", {
         level: gameState.currentLevel,
         max: renderMaxLevel(gameState),
