@@ -1181,7 +1181,7 @@ export function gameStateTick(
   }
 
   if (
-    (window.location.search.includes("skipplaying") ||
+    ("skipplaying" in window ||
       (gameState.perks.skip_last &&
         remainingBricks <= gameState.perks.skip_last)) &&
     !gameState.autoCleanUses
