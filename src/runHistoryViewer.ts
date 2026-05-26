@@ -95,7 +95,7 @@ async function viewHistory() {
       content: [
         `
 <table>
-<thead><tr>${header}</tr></thead>
+<thead><tr style="white-space: nowrap">${header}</tr></thead>
 <tbody>${tbody}</tbody>
 </table>
                     `,
