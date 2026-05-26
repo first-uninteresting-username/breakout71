@@ -71,7 +71,7 @@ export const rawUpgrades = [
   {
     category: categories.combo,
     requires: [],
-    threshold: 100,
+    threshold: 0,
     id: "streak_shots",
     max: 1,
     hardLimit: 1,
