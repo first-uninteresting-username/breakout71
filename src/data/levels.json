@@ -3036,12 +3036,6 @@
     "credit": "The original work is called \"Warning Sign\", made in 2006. quite daring given the times back then. The cultural after effects of 9/11 didn't stay bound only to the US. Level by D.V. https://banksyexplained.com/warning-sign-2006/"
   },
   {
-    "name": "Papyrus",
-    "size": 20,
-    "bricks": "_______________________RRRRRRRRRRRRR_____BRRsssssssssssRRB_____RRRRRRRRRRRRR________WWWWWWWWWWW_________WgWWWggWgWW_________WWgWgWWgWgB__________WWgWWgWWWW__________WWWWWWWgWWW_________BWWgWWgWgWB_________WWgWgWgWWgW__________gWWWWgWgWW__________WWWWWWWWWWW_________WWgWWgWWWgW________WWgWWgWgWgW_________BgWWgWWgWgB_________WWWWWWWWWWW________RRRRRRRRRRRRR_____BRRsssssssssssRRB_____RRRRRRRRRRRRR___",
-    "credit": "Papyrus, invented to write down bills - Paypyrus: https://en.wikipedia.org/wiki/Papyrus - Wombatmithut"
-  },
-  {
     "name": "Anti-Gain",
     "size": 15,
     "bricks": "WWWWWWW_WWWWWWWWWWBWWWBWWBWWWWWWW_WWW_WW_WWWWWWW_WWW_WW_WWBWWWW_WWW_WW_WW_WWWWBWWWBWWBWWBWWWWWWWW_WWWWWWW_B___B___B___B_WWWWWWW_WWWWWWWWBWWBWWBW_WWWWWW_WW_WW_WBWWWWWW_WW_WW_W_WWWWWW_WW_WW_W_WWWWWWBWWBWWBW_W__B_WWWWWWW_WWWWWWW",
@@ -3094,5 +3088,82 @@
     "size": 12,
     "bricks": "____gggg______ggrrrrgg___grrrrrrrrg__grrrrrrrrg_grrrrggrrrrggrrrgWWgrrrggggggWWggggggWWWWggWWWWg_gWWWWWWWWg__gWWWWWWWWg___ggWWWWgg______gggg____",
     "credit": "Gotta break 'em all - ThatGuyOverThere"
+  },
+  {
+    "color": "#000000",
+    "size": 9,
+    "bricks": "____________________b______y_y_y_y__W_G_S_S_yb_G_b_y_b___________________________",
+    "name": "The Simpsons",
+    "credit": "by Matt Groening - level by ThatGuyOverThere, Valikzant and Derek"
+  },
+  {
+    "color": "#115988",
+    "size": 20,
+    "bricks": "_______________________RRRRRRRRRRRRR_____BRRsssssssssssRRB_____RRRRRRRRRRRRR________eeeeeeeeeee_________egeeeggegee_________eegegeegegB__________eegeegeeee__________eeeeeeegeee_________BeegeegegeB_________eegegegeege__________geeeegegee__________eeeeeeeeeee_________eegeegeeege________eegeegegege_________BgeegeegegB_________eeeeeeeeeee________RRRRRRRRRRRRR_____BRRsssssssssssRRB_____RRRRRRRRRRRRR___",
+    "name": "Papyrus",
+    "credit": "Papyrus, invented to write down bills - Paypyrus: https://en.wikipedia.org/wiki/Papyrus - Wombatmithut "
+  },
+  {
+    "color": "#000000",
+    "size": 17,
+    "bricks": "_bbb_WS___SW_____b___bW_S_S_W_____b___bW__S__W_____b___bW_S_S_W______bbb_WS___SW_____WWWWWBWWWWWBWWWWW_____W_bbb_WS___S_____Wb___bW_S_S______Wb___bW__S_______Wb___bW_S_S______W_bbb_WS___SWWWWWBWWWWWBWWWWWS___SW_____W_bbb__S_S_W_____Wb___b__S__W_____Wb___b_S_S_W_____Wb___bS___SW_____W_bbb_",
+    "name": "Tic Tac Toe",
+    "credit": "ThatGuyOverThere"
+  },
+  {
+    "color": "#115988",
+    "size": 18,
+    "bricks": "___________________________________________eel______________egggl________e___egggggl___e__e_e_eeeggglee_e_e_e__eeeeelleeee__e_e__eeReeeReeeR__e_e__eRsReRsReRs__e__e_RsesRsesRse_e____eeeeeseeeseee_______eeeeReeee__________eeRsRee____________RsesR______________eee______________ReReR____________RsRsRsR________________________",
+    "name": "Pottery",
+    "credit": "« To make a pot is my job ! » Harry Pottery 4000 BC: https://en.wikipedia.org/wiki/Pottery - Wombatmithut "
+  },
+  {
+    "color": "#115988",
+    "size": 14,
+    "bricks": "__ggggg_________gggggg_______ggggggg_______gggggggg______gggggggg_____gggggggggggg__gggggggggggggggggggggggggggggggggggggggggggWBWBWWBWBWBWggWBWBWWBWBWBWggWWWWWWWWWWWWggggggggggggggg______________",
+    "name": "Piano",
+    "credit": "ThatGuyOverThere"
+  },
+  {
+    "color": "#115988",
+    "size": 11,
+    "bricks": "_____________ggggggg____ggWWWgg____gWWWWWg____gWWlWWg____gWWWWWg____ggWllgg____glllggg____gllgggg____ggggggg_____________",
+    "name": "An HDD (Hard Disk Drive). ",
+    "credit": "Reliable and affordable data storage. Don't worry, this one does not work, you can destroy it : ). | https://en.wikipedia.org/wiki/Hard_disk_drive - Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 11,
+    "bricks": "WWttttWWWWWtWWtttttWWWtttttttttttttttWtttttWtWWtttttWWttttttttWWWWttttttttttttkkkkkWWtttkkkkkkkkkWWkkkkkkkkkkkkkkkkkkkkkk",
+    "name": "Bliss",
+    "credit": "Wallpaper from the 2000s, which made it appearance and became popular in the Windows XP operating system. | https://en.wikipedia.org/wiki/Bliss_(photograph) - Valikzant"
+  },
+  {
+    "color": "#115988",
+    "size": 12,
+    "bricks": "_________________ee________eeeeee_____eeeeeeee____geeeeeel____gggeelll____ggggllll____ggggllll____ggggllll_____ggglll________gl_________________",
+    "name": "Default Cube.",
+    "credit": "This is what you start you day with when launching Blender (3D modeling software). - Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 16,
+    "bricks": "_____OOO_____________OOOO_____________OOOO_____________OOOO_____________OOOO____OOOOOOOOOOOOO____OOOOOOOOOOOOO______OOOOOOOOOOO____OOOOO_____OOO__OOOOO__bbb__OO_OOOOOO_bbbbb_OOOOOO_OO_bbbbb_OOOOO__OO__bbb__OOOO___OOO_____OOO______OOOOOOOOO_________OOOOO___",
+    "name": "Blender - 3D modeling software.",
+    "credit": "Blender is a free and open-source 3D computer graphics software suite. | https://en.wikipedia.org/wiki/Blender_(software) - Valikzant "
+  },
+  {
+    "color": "#115988",
+    "size": 16,
+    "bricks": "__gg______________ggg______________gggppppp________pgggpppppp______pggggppppp_____pppggggppppO____ppppggggppOO____aapppgllOOOO____aaaapplllOOO____aaaaaaalgOOO____aaaaaaaggOOO_____aaaaagggaO______aaaaaaaaaa________aaaaaa_____________________________________",
+    "name": "Krita - Digital art software.",
+    "credit": "Krita is a free and open-source raster graphics editor designed primarily for digital art and 2D animation. | https://en.wikipedia.org/wiki/Krita - Valikzant "
+  },
+  {
+    "color": "#000000",
+    "size": 15,
+    "bricks": "__________________________________BbObbbB_______tttttbOby_____tOtttOttbby___tttyytttytbby__btyyyytOtybby_BbtyyyytttybbyB_Obtyyttttybby__bbttttOtybOby___bOttttttbby_____bbyttbyby_______BtyyybB__________________________________",
+    "name": "The Nebra Sky Disk",
+    "credit": "The Nebra sky disc features the oldest concrete depiction of astronomical phenomena known from anywhere in the world: https://en.wikipedia.org/wiki/Nebra_sky_disc - Wombatmithut "
   }
 ]

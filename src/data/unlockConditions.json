@@ -2020,5 +2020,55 @@
     "required": ["bricks_attract_ball", "happy_family", "pierce_above_paddle"],
     "forbidden": ["hot_start", "sturdy_bricks", "telekinesis"],
     "minScore": 38900
+  },
+  "The Simpsons": {
+    "required": ["telekinesis", "ottawa_treaty", "paddle_up_combo"],
+    "forbidden": ["hot_start", "thomas", "yoyo"],
+    "minScore": 38800
+  },
+  "Tic Tac Toe": {
+    "required": ["gravity_falls", "compound_interest", "happy_family"],
+    "forbidden": ["bricks_attract_ball", "passive_income", "disco_ball"],
+    "minScore": 39000
+  },
+  "Pottery": {
+    "required": ["ball_attract_ball", "double_or_nothing", "happy_family"],
+    "forbidden": ["superhot", "flyswatter", "buoy"],
+    "minScore": 39100
+  },
+  "Piano": {
+    "required": ["soft_reset", "soft_touch", "asceticism"],
+    "forbidden": ["three_cushion", "etherealcoins", "respawn"],
+    "minScore": 39200
+  },
+  "An HDD (Hard Disk Drive). ": {
+    "required": ["passive_income", "fountain_toss", "hot_start"],
+    "forbidden": ["corner_shot", "thomas", "clairvoyant"],
+    "minScore": 39300
+  },
+  "Bliss": {
+    "required": ["hot_start", "implosions", "corner_shot"],
+    "forbidden": ["clairvoyant", "pierce_top", "golden_goose"],
+    "minScore": 39400
+  },
+  "Default Cube.": {
+    "required": ["corner_shot", "clairvoyant", "golden_goose"],
+    "forbidden": ["hot_start", "wrap_left", "double_or_nothing"],
+    "minScore": 39500
+  },
+  "Blender - 3D modeling software.": {
+    "required": ["wrap_left", "clairvoyant", "corner_shot"],
+    "forbidden": ["wrap_right", "passive_income", "ottawa_treaty"],
+    "minScore": 39600
+  },
+  "Krita - Digital art software.": {
+    "required": ["disco_ball", "respawn", "ball_repulse_ball"],
+    "forbidden": ["sturdy_bricks", "puck_repulse_ball", "ghost_coins"],
+    "minScore": 39700
+  },
+  "The Nebra Sky Disk": {
+    "required": ["round_bricks", "ghost_coins", "flyswatter"],
+    "forbidden": ["gravity_falls", "thomas", "paddle_up_combo"],
+    "minScore": 39800
   }
 }
