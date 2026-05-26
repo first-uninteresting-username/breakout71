@@ -1040,7 +1040,7 @@
   },
   "The Skull": {
     "required": ["ball_attracts_coins", "asceticism", "addiction"],
-    "forbidden": ["bricks_attract_coins", "rainbow", "soft_reset"],
+    "forbidden": ["rainbow", "soft_reset"],
     "minScore": 19700
   },
   "Japan": {
@@ -1651,7 +1651,7 @@
   },
   "Big G": {
     "required": ["hot_start", "thomas", "asceticism"],
-    "forbidden": ["picky_eater", "shocks", "sapper"],
+    "forbidden": ["picky_eater", "shocks"],
     "minScore": 31700
   },
   "Discourse": {
@@ -1717,7 +1717,7 @@
   },
   "Soul Eater \\(0£0)/": {
     "required": ["asceticism", "unbounded", "limitless"],
-    "forbidden": ["viscosity", "trickledown", "sticky_coins"],
+    "forbidden": ["viscosity"],
     "minScore": 33000
   },
   "Joker (Five-Two)": {
