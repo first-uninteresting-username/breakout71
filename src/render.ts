@@ -771,7 +771,8 @@ export function renderAllBricks(
     !(
       redBorderOnBricksWithWrongColor ||
       redRowReach !== -1 ||
-      gameState.perks.zen
+      gameState.perks.zen ||
+      redBorderOutOfPuck
     )
   ) {
     offset = 0;
@@ -1161,10 +1162,7 @@ export function drawBrick(
     const canctx = can.getContext("2d") as CanvasRenderingContext2D;
 
     canctx.fillStyle = color;
-
-    canctx.setLineDash(offset !== -1 ? redBorderDash : emptyArray);
-    canctx.lineDashOffset = offset;
-    canctx.strokeStyle = (offset !== -1 && "#FF000033") || color;
+    canctx.strokeStyle = color;
     canctx.lineJoin = "round";
     canctx.lineWidth = bord;
     if (round) {
@@ -1192,6 +1190,14 @@ export function drawBrick(
       canctx.fill();
     }
     canctx.stroke();
+
+    if (offset !== -1) {
+      canctx.setLineDash(redBorderDash);
+      canctx.lineDashOffset = offset;
+      canctx.strokeStyle = "#FF0000";
+      canctx.stroke();
+    }
+
     drawCracks(canctx, width, height, cracks, color);
     cachedGraphics[key] = can;
   }
