@@ -199,10 +199,10 @@ export async function editRawLevel(nth: number, color = "") {
       `<div class="editor-actions">
           <button data-resolve-to="size:+1" data-tooltip="${t("editor.editing.bigger")}" ${level.size >= MAX_LEVEL_SIZE ? "disabled" : ""}>+</button>
           <button data-resolve-to="size:-1" data-tooltip="${t("editor.editing.smaller")}" ${level.size <= MIN_LEVEL_SIZE ? "disabled" : ""}>-</button>
-          <button data-resolve-to="move:-1:0" data-tooltip="${t("editor.editing.left")}">🠜</button>
-          <button data-resolve-to="move:1:0" data-tooltip="${t("editor.editing.right")}">🠞</button>
-          <button data-resolve-to="move:0:-1" data-tooltip="${t("editor.editing.up")}">🠝</button>
-          <button data-resolve-to="move:0:1" data-tooltip="${t("editor.editing.down")}">🠟</button>
+          <button data-resolve-to="move:-1:0" data-tooltip="${t("editor.editing.left")}">←</button>
+          <button data-resolve-to="move:1:0" data-tooltip="${t("editor.editing.right")}">→</button>
+          <button data-resolve-to="move:0:-1" data-tooltip="${t("editor.editing.up")}">↑</button>
+          <button data-resolve-to="move:0:1" data-tooltip="${t("editor.editing.down")}">↓</button>
       </div>`,
       {
         icon: getIcon("icon:new_run"),
