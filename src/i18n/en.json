@@ -218,7 +218,7 @@
     "unlocks.intro": "Your total score is {{ts}}. Click an upgrade below to start a game with it.",
     "unlocks.just_unlocked": "Level unlocked",
     "unlocks.just_unlocked_plural": "You just unlocked {{count}} levels",
-    "unlocks.level": "Here are all the game levels. Click on a level to learn more about it. You unlocked {{unlocked}} levels out of {{out_of}}. Send use your best levels in discord for inclusion in the list.",
+    "unlocks.level": "Here are all the game levels. Click on a level to learn more about it. You unlocked {{unlocked}} levels out of {{out_of}}. Send us your best levels in discord for inclusion in the list.",
     "unlocks.level_description": "A {{size}}x{{size}} level with {{bricks}} bricks, {{colors}} colors and {{bombs}} bombs.",
     "unlocks.levels": "Levels",
     "unlocks.levels_help": "Discover all  {{count}} levels of the game.",
