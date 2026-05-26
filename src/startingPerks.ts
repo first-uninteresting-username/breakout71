@@ -24,7 +24,7 @@ export function getStartingPerks() {
   if (!upgrade) {
     upgrade = sample(
       allowedUpgrades.filter(
-        (u) => u.threshold < getTotalScore() && u.id !== "slow_down",
+        (u) => u.threshold <= getTotalScore() && u.id !== "slow_down",
       ),
     ) as Upgrade;
   }
