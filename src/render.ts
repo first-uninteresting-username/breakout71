@@ -40,6 +40,7 @@ import {
 } from "./pure_functions";
 import { lastMeasuredFPS, startWork } from "./fps";
 import { hashCode } from "./getLevelBackground";
+import { palette } from "./loadGameData";
 
 export const gameCanvas = document.getElementById("game") as HTMLCanvasElement;
 
@@ -1194,7 +1195,10 @@ export function drawBrick(
     if (offset !== -1) {
       canctx.setLineDash(redBorderDash);
       canctx.lineDashOffset = offset;
-      canctx.strokeStyle = "#FF0000";
+      if (color === palette.r) {
+        canctx.globalCompositeOperation = "destination-out";
+      }
+      canctx.strokeStyle = palette.r;
       canctx.stroke();
     }
 
