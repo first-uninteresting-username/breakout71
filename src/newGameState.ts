@@ -160,7 +160,6 @@ export function newGameState(params: RunParams): GameState {
     gameVersion: appVersion,
   };
 
-  window.gameState = gameState;
   resetBalls(gameState);
 
   for (let perk of upgrades) {
