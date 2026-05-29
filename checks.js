@@ -9,7 +9,7 @@ for (let filename of files) {
       content[key].match(/<|>|http|\bpuck\b|\bpalet\b|퍽|шайба|冰球|rondelle/gi)
     ) {
       content[key] = "";
-      console.log(`Removed ${key} of ${filename}`);
+      console.info(`Removed ${key} of ${filename}`);
     }
     content[key] = content[key].trim();
   }
