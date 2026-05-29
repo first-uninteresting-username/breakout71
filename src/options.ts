@@ -60,12 +60,12 @@ export const options = {
     help: t("settings.smooth_lighting_help"),
   },
   precise_lighting: {
-    default: true,
+    default: false,
     name: t("settings.precise_lighting"),
     help: t("settings.precise_lighting_help"),
   },
   probabilistic_lighting: {
-    default: false,
+    default: true,
     name: t("settings.probabilistic_lighting"),
     help: t("settings.probabilistic_lighting_help"),
   },

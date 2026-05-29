@@ -55,7 +55,7 @@ export function getTotalScore() {
 }
 
 export function getCurrentMaxCoins() {
-  return Math.pow(2, getSettingValue("max_coins", 2)) * 200;
+  return Math.pow(2, getSettingValue("max_coins", 1)) * 200;
 }
 
 export function getCurrentMaxParticles() {

@@ -22,12 +22,8 @@ import {
 } from "./game_utils";
 import { getFirstUnlockable, getNearestUnlockHTML } from "./openScorePanel";
 import { isOptionOn } from "./options";
-import { getWorstFPSAndReset } from "./fps";
-import {
-  getCurrentMaxCoins,
-  getSettingValue,
-  setSettingValue,
-} from "./settings";
+import { isPerformanceTerrible } from "./fps";
+import { getSettingValue, setSettingValue } from "./settings";
 import { toast } from "./toast";
 import { getIcon } from "./levelIcon";
 import { pickedUpgradesHTMl } from "./picked_upgrades_html";
@@ -310,26 +306,9 @@ export function applySettingsChangeReco(choice: unknown) {
   }
   return false;
 }
-export function settingsChangeRecommendations() {
-  const { worstFPS, coinsForLag } = getWorstFPSAndReset();
-  const maxCoinsSetting = getSettingValue("max_coins", 2);
 
-  if (worstFPS > 55) return "";
-  if (coinsForLag > 200 && getCurrentMaxCoins() > 200) {
-    // Limit the coins
-    const limit = Math.floor(Math.log2(coinsForLag / 200));
-    if (limit < maxCoinsSetting) {
-      return {
-        icon: getIcon("icon:slow"),
-        text: t("settings.suggestions.reduce_coins", {
-          max: Math.pow(2, limit) * 200,
-        }),
-        value: {
-          changeSettings: { max_coins: limit },
-        },
-      };
-    }
-  }
+export function settingsChangeRecommendations() {
+  if (!isPerformanceTerrible()) return "";
 
   if (isOptionOn("record"))
     return {
@@ -340,43 +319,14 @@ export function settingsChangeRecommendations() {
       },
     };
 
-  if (isOptionOn("basic")) return "";
-
-  if (
-    isOptionOn("smooth_lighting") ||
-    isOptionOn("precise_lighting") ||
-    !isOptionOn("probabilistic_lighting") ||
-    isOptionOn("contrast")
-  )
+  if (!isOptionOn("basic"))
     return {
       icon: getIcon("icon:slow"),
-      text: t("settings.suggestions.simpler_lights"),
+      text: t("settings.suggestions.basic_mode"),
       value: {
-        changeSettings: {
-          "breakout-settings-enable-smooth_lighting": false,
-          "breakout-settings-enable-precise_lighting": false,
-          "breakout-settings-enable-probabilistic_lighting": true,
-          "breakout-settings-enable-contrast": false,
-        },
+        changeSettings: { "breakout-settings-enable-basic": true },
       },
     };
-
-  if (isOptionOn("extra_bright"))
-    return {
-      icon: getIcon("icon:slow"),
-      text: t("settings.suggestions.reduce_brightness"),
-      value: {
-        changeSettings: { "breakout-settings-enable-extra_bright": false },
-      },
-    };
-
-  return {
-    icon: getIcon("icon:slow"),
-    text: t("settings.suggestions.basic_mode"),
-    value: {
-      changeSettings: { "breakout-settings-enable-basic": true },
-    },
-  };
 }
 
 function getUpgradesPicked(id: PerkId) {

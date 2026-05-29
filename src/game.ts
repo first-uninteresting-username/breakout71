@@ -71,7 +71,7 @@ import { runHistoryViewerMenuEntry } from "./runHistoryViewer";
 import { openScorePanel } from "./openScorePanel";
 import { monitorLevelsUnlocks } from "./monitorLevelsUnlocks";
 import { levelEditorMenuEntry } from "./levelEditor";
-import { frameStarted, getWorstFPSAndReset, startWork } from "./fps";
+import { frameStarted, isPerformanceTerrible, startWork } from "./fps";
 import { openUnlockedUpgradesList } from "./openUnlockedUpgradesList";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
 import { openLevelDetails } from "./openLevelDetails";
@@ -174,9 +174,6 @@ export const fitSize = (gameState: GameState) => {
     ),
   );
 
-  gameState.ballSize = Math.ceil(20);
-  gameState.coinSize = Math.ceil(14);
-  gameState.puckHeight = Math.ceil(20);
   forEachLiveOne(gameState.coins, (b) => (b.size = gameState.coinSize));
 
   gameState.brickWidth =
@@ -954,7 +951,8 @@ window.mainGameState = mainGameState;
 
 export async function restart(params: RunParams) {
   setSettingValue("autosave", null);
-  getWorstFPSAndReset();
+  // just to reset counters
+  isPerformanceTerrible();
   if (mainGameState.currentLevel > 0 && !mainGameState.isGameOver) {
     addGameToHistory(mainGameState);
   }
