@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "Incluir nível no jogo",
     "unlocks.include_in_level_pool_help": "Você pode desmarcar níveis que você não gosta",
     "unlocks.include_in_level_pool_locked": "É necessário ter no mínimo 15 níveis.",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "Sua pontuação total é {{ts}}. Clique em uma melhoria abaixo para iniciar um jogo com ela.",
     "unlocks.just_unlocked": "Nível desbloqueado",
     "unlocks.just_unlocked_plural": "Você acabou de desbloquear {{count}} níveis",

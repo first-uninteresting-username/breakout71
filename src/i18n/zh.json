@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "在游戏中包含这个关卡",
     "unlocks.include_in_level_pool_help": "你可以取消勾选你不喜欢的关卡",
     "unlocks.include_in_level_pool_locked": "你需要保持最少 15 个关卡。",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "你的总分是 {{ts}}。点击下面的一个升级来使用它开始游戏。",
     "unlocks.just_unlocked": "关卡已解锁",
     "unlocks.just_unlocked_plural": "你刚刚解锁了 {{count}} 个关卡",

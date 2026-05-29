@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "Zahrnout úroveň do hry",
     "unlocks.include_in_level_pool_help": "Můžete odškrtnout úrovně, které se vám nelíbí",
     "unlocks.include_in_level_pool_locked": "Musíte ponechat alespoň 15 úrovní.",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "Vaše celkové skóre je {{ts}}. Kliknutím na vylepšení níže spustíte hru s ním.",
     "unlocks.just_unlocked": "Úroveň odemčena",
     "unlocks.just_unlocked_plural": "Právě jste odemkli {{count}} úrovně",

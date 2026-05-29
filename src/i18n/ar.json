@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "",
     "unlocks.include_in_level_pool_help": "",
     "unlocks.include_in_level_pool_locked": "",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "مجموع نقاطك هو {{ts}}. انقر على ترقية أدناه لبدء اللعبة بها.",
     "unlocks.just_unlocked": "تم فتح المستوى",
     "unlocks.just_unlocked_plural": "لقد قمت للتو بفتح {{count}} مستوى",

@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "",
     "unlocks.include_in_level_pool_help": "",
     "unlocks.include_in_level_pool_locked": "",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "총 점수는 {{ts}}입니다. 아래는 게임에서 제공하는 모든 업그레이드와 레벨입니다.   아래에서 업그레이드 또는 레벨을 클릭하여 테스트 게임을 시작하세요.",
     "unlocks.just_unlocked": "레벨 잠금 해제",
     "unlocks.just_unlocked_plural": "방금 {{count}} 레벨을 잠금 해제했습니다.",

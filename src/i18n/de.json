@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "",
     "unlocks.include_in_level_pool_help": "",
     "unlocks.include_in_level_pool_locked": "",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "Deine Gesamtpunktzahl ist {{ts}}. Klicke auf ein Upgrade, um ein Spiel damit zu starten.",
     "unlocks.just_unlocked": "Level freigeschaltet",
     "unlocks.just_unlocked_plural": "Du hast gerade {{count}} Stufen freigeschaltet",

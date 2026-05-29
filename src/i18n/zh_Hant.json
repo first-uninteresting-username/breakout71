@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "",
     "unlocks.include_in_level_pool_help": "",
     "unlocks.include_in_level_pool_locked": "",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "你的總分數是 {{ts}}。點擊下方的一個升級以使用它開始遊戲。",
     "unlocks.just_unlocked": "關卡已解鎖",
     "unlocks.just_unlocked_plural": "你剛剛解鎖了 {{count}} 個關卡",

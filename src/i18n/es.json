@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "Incluir nivel en el juego",
     "unlocks.include_in_level_pool_help": "Puedes desmarcar niveles que no te gusten",
     "unlocks.include_in_level_pool_locked": "Debes mantener al menos 15 niveles.",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "Tu puntuación total es {{ts}}. Haz clic en una mejora para empezar a una partida con ella.",
     "unlocks.just_unlocked": "Nivel desbloqueado",
     "unlocks.just_unlocked_plural": "Acabas de desbloquear {{count}} niveles",

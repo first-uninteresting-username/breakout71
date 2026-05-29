@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "",
     "unlocks.include_in_level_pool_help": "",
     "unlocks.include_in_level_pool_locked": "",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "Ваш загальний бал {{ts}}. Натисніть оновлення нижче, щоб почати гру з ним.",
     "unlocks.just_unlocked": "Рівень розблокований",
     "unlocks.just_unlocked_plural": "Ви просто розблокували {{count}} рівні",

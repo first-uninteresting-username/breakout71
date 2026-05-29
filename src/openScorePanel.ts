@@ -59,6 +59,7 @@ export function getFirstUnlockable(gameState: GameState) {
   const unlocked = new Set(getSettingValue("breakout_71_unlocked_levels", []));
   return firstWhere(allLevels, (l, li) => {
     if (unlocked.has(l.name)) return;
+    if (!getSettingValue("offer-level-" + l.name, true)) return;
     const reason = reasonLevelIsLocked(li, l.name, getHistory(), false);
     if (!reason) return;
 

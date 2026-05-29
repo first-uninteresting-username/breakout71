@@ -210,6 +210,8 @@
     "unlocks.include_in_level_pool": "",
     "unlocks.include_in_level_pool_help": "",
     "unlocks.include_in_level_pool_locked": "",
+    "unlocks.include_in_unlock_hints_help": "",
+    "unlocks.include_in_unlock_not_during_gameplay": "",
     "unlocks.intro": "あなたの累計スコアは{{ts}}点です。下のアップグレードをクリックすると、選択したアップグレードを使ってプレイできます。",
     "unlocks.just_unlocked": "レベルが解禁されました",
     "unlocks.just_unlocked_plural": "{{count}}種のレベルを解禁しました",

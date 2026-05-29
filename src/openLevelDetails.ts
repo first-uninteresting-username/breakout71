@@ -34,9 +34,11 @@ export async function openLevelDetails(level: Level) {
     .filter((level) => unlockedBefore.has(level.name))
     .filter((level) => getSettingValue("offer-level-" + level.name, true));
 
-  const allowedInGame =
-    !isLocked && getSettingValue("offer-level-" + level.name, true);
+  const allowedInGame = getSettingValue("offer-level-" + level.name, true);
   const allowDisabling = !allowedInGame || activeLevels?.length > 15;
+  const tooFarInGame =
+    mainGameState.currentLevel > 0 &&
+    mainGameState.startParams.runType === "normal";
 
   const currentIndex = allLevels.indexOf(level);
   const next = allLevels[currentIndex + 1];
@@ -60,13 +62,16 @@ export async function openLevelDetails(level: Level) {
         disabled: isLocked,
       },
       {
-        icon: getCheckboxIcon(allowedInGame && !isLocked),
+        icon: getCheckboxIcon(allowedInGame),
         value: "toggle-offer-level",
         text: t("unlocks.include_in_level_pool"),
-        help: allowDisabling
-          ? t("unlocks.include_in_level_pool_help")
-          : t("unlocks.include_in_level_pool_locked"),
-        disabled: isLocked || !allowDisabling,
+        help:
+          (tooFarInGame &&
+            t("unlocks.include_in_unlock_not_during_gameplay")) ||
+          (!allowDisabling && t("unlocks.include_in_level_pool_locked")) ||
+          (isLocked && t("unlocks.include_in_unlock_hints_help")) ||
+          t("unlocks.include_in_level_pool_help"),
+        disabled: !allowDisabling || tooFarInGame,
       },
     ],
     allowClose: true,
