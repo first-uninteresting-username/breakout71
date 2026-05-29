@@ -23,37 +23,6 @@ export const categories = {
   advanced: 6,
 };
 
-const anyPierce = [
-  "pierce_left",
-  "pierce_right",
-  "pierce",
-  "pierce_above_paddle",
-  "pierce_color",
-  "refill",
-];
-
-// any upgrade related to brick/coin/balls color.
-const anyColor = [
-  "metamorphosis",
-  "pierce_color",
-  "metamorphosis",
-  "sticky_coins",
-  "rainbow",
-  "picky_eater",
-  "palette",
-  "vibrant_neighborhood",
-  "soft_brush",
-  "varied_diet",
-];
-
-const explosives = [
-  "sapper",
-  "zen",
-  "minefield",
-  "instant_explosion",
-  "shocks",
-];
-
 export const rawUpgrades = [
   {
     category: categories.combo,
@@ -281,13 +250,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo,
-    requires: [
-      "bricks_attract_coins",
-      "helium",
-      "sticky_coins",
-      "sapper",
-      "trickledown",
-    ],
+    requires: [],
     threshold: 70000,
     id: "asceticism",
     max: 1,
@@ -346,6 +309,7 @@ export const rawUpgrades = [
 
   {
     category: categories.beginner,
+    // so that you get the starting base combo perk
     requires: ["base_combo"],
     threshold: 0,
     id: "slow_down",
@@ -371,7 +335,7 @@ export const rawUpgrades = [
 
   {
     category: categories.beginner,
-    requires: ["slow_down"],
+    requires: [],
     threshold: 0,
     id: "bigger_puck",
     max: 2,
@@ -431,7 +395,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.beginner,
-    requires: ["left_is_lava", "right_is_lava", "top_is_lava", "trampoline"],
+    requires: [],
     threshold: 950,
     id: "concave_puck",
     max: 1,
@@ -782,7 +746,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: anyColor,
+    requires: [],
     threshold: 205000,
     id: "rainbow",
     max: 7,
@@ -794,7 +758,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: anyColor,
+    requires: [],
     threshold: 208000,
     id: "disco_ball",
     max: 1,
@@ -855,7 +819,7 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
-    requires: anyColor,
+    requires: [],
     threshold: 235000,
     id: "sticky_coins",
     max: 1,
@@ -919,7 +883,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: anyColor,
+    requires: [],
     threshold: 2500,
     id: "metamorphosis",
     max: 1,
@@ -943,7 +907,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.simple,
-    requires: explosives,
+    requires: [],
     threshold: 9000,
     id: "bigger_explosions",
     max: 1,
@@ -980,7 +944,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.combo_boost,
-    requires: explosives,
+    requires: [],
     threshold: 180000,
     id: "minefield",
     max: 3,
@@ -1122,7 +1086,7 @@ export const rawUpgrades = [
 
   {
     category: categories.combo_boost,
-    requires: anyColor,
+    requires: [],
     threshold: 280000,
     id: "vibrant_neighborhood",
     max: 1,
@@ -1157,7 +1121,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
-    requires: anyPierce,
+    requires: [],
     threshold: 320000,
     id: "pierce_top",
     max: 3,
@@ -1168,7 +1132,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
-    requires: anyPierce,
+    requires: [],
     threshold: 330000,
     id: "refill",
     max: 1,
@@ -1180,7 +1144,7 @@ export const rawUpgrades = [
 
   {
     category: categories.pierce,
-    requires: anyPierce,
+    requires: [],
     threshold: 370000,
     id: "pierce_above_paddle",
     max: 3,
@@ -1205,7 +1169,7 @@ export const rawUpgrades = [
 
   {
     category: categories.advanced,
-    requires: explosives,
+    requires: [],
     threshold: 400000,
     id: "instant_explosion",
     max: 1,
@@ -1217,7 +1181,7 @@ export const rawUpgrades = [
   },
   {
     category: categories.advanced,
-    requires: anyColor,
+    requires: [],
     threshold: 410000,
     id: "soft_brush",
     max: 7,
