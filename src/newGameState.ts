@@ -149,7 +149,7 @@ export function newGameState(params: RunParams): GameState {
       upgrades_picked: 1,
       max_combo: 1,
     },
-    lastOffered: {},
+    offersCount: {},
     levelTime: 0,
     winAt: 0,
     levelWallBounces: 0,

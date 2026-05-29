@@ -284,7 +284,7 @@ export type GameState = {
   lastTick: number;
   lastTickDown: number;
   runStatistics: RunStats;
-  lastOffered: Partial<{ [k in PerkId]: number }>;
+  offersCount: Partial<{ [k in PerkId]: number }>;
   levelTime: number;
   lastPuckMove: number;
   lastZenComboIncrease: number;

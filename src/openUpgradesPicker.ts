@@ -31,6 +31,8 @@ import {
 import { toast } from "./toast";
 import { getIcon } from "./levelIcon";
 import { pickedUpgradesHTMl } from "./picked_upgrades_html";
+import { synergies } from "./synergies";
+import { incompatibilities } from "./incompatibilities";
 
 export async function openUpgradesPicker(gameState: GameState) {
   if (gameState.perks.chill) return;
@@ -132,17 +134,59 @@ export async function openUpgradesPicker(gameState: GameState) {
     );
   }
 
-  let sorted = getPossibleUpgrades(gameState)
-    .map((u) => ({
+  const scored = getPossibleUpgrades(gameState).map((u) => {
+    let synergy = 0;
+    // adds one chance to see the perk perk other perk that synergize well with it
+    synergies.forEach((perks) => {
+      // if u is in the synergies
+      if (!perks.includes(u.id)) return;
+      // and u is not picked already
+      if (gameState.perks[u.id]) return;
+      // boost chances for each pther perk found
+      perks.forEach((p) => {
+        if (gameState.perks[p] && p !== u.id) {
+          synergy++;
+        }
+      });
+    });
+    // avoid offering perks that aren't very compatible
+    let incompatibility = 0;
+    incompatibilities.forEach((perks) => {
+      // if u is in the incompatibilities
+      if (!perks.includes(u.id)) return;
+      // and u is not picked already
+      if (gameState.perks[u.id]) return;
+      // reduce chances for each pther perk found
+      perks.forEach((p) => {
+        if (gameState.perks[p] && p !== u.id) {
+          incompatibility++;
+        }
+      });
+    });
+
+    // Add lvl chances to see a perk if already picked
+    const againPlease = gameState.perks[u.id] || 0;
+
+    // Reduce the score if recently offered
+    const score =
+      (1 + synergy + againPlease) /
+      (1 + (gameState.offersCount[u.id] || 0) + incompatibility);
+
+    return {
       ...u,
-      score: Math.random() + (gameState.lastOffered[u.id] || 0),
-    }))
-    .sort((a, b) => a.score - b.score)
+      score,
+    };
+  });
+
+  let sorted = scored
+    .map((u) => ({ ...u, score: u.score * (0.5 + Math.random()) }))
+    .sort((a, b) => b.score - a.score)
     .filter(
       (u) =>
         gameState.perks[u.id] <
         Math.min(u.max + gameState.perks.limitless, u.hardLimit),
     );
+
   let recommendation = settingsChangeRecommendations();
 
   let usedCountCache: Record<string, number> = {};
@@ -254,7 +298,8 @@ export async function openUpgradesPicker(gameState: GameState) {
 }
 
 export function dontOfferTooSoon(gameState: GameState, id: PerkId) {
-  gameState.lastOffered[id] = Math.round(Date.now() / 1000);
+  gameState.offersCount[id] ||= 0;
+  gameState.offersCount[id]++;
 }
 
 export function applySettingsChangeReco(choice: unknown) {
