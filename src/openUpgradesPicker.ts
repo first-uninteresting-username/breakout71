@@ -136,19 +136,15 @@ export async function openUpgradesPicker(gameState: GameState) {
 
   const scored = getPossibleUpgrades(gameState).map((u) => {
     let synergy = 0;
-    // adds one chance to see the perk perk other perk that synergize well with it
-    synergies.forEach((perks) => {
-      // if u is in the synergies
-      if (!perks.includes(u.id)) return;
-      // and u is not picked already
-      if (gameState.perks[u.id]) return;
-      // boost chances for each pther perk found
-      perks.forEach((p) => {
-        if (gameState.perks[p] && p !== u.id) {
-          synergy++;
-        }
-      });
-    });
+    for (let required in synergies) {
+      if (
+        gameState.perks[required as PerkId] &&
+        synergies[required as PerkId]?.includes(u.id) &&
+        !gameState.perks[u.id]
+      ) {
+        synergy++;
+      }
+    }
     // avoid offering perks that aren't very compatible
     let incompatibility = 0;
     incompatibilities.forEach((perks) => {
@@ -179,7 +175,7 @@ export async function openUpgradesPicker(gameState: GameState) {
   });
 
   let sorted = scored
-    .map((u) => ({ ...u, score: u.score * (0.5 + Math.random()) }))
+    .map((u) => ({ ...u, score: u.score * Math.random() }))
     .sort((a, b) => b.score - a.score)
     .filter(
       (u) =>

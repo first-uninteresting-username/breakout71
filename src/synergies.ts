@@ -1,90 +1,47 @@
 import { PerkId } from "./types";
 
-export const synergies: Array<Array<PerkId>> = [
-  [
-    // pierce
-    "pierce",
-    "pierce_left",
-    "pierce_right",
-    "pierce_above_paddle",
-    "pierce_color",
-    "refill",
-    "streak_shots",
-    "hot_start",
-  ],
-  [
-    // Colorful
-    "metamorphosis",
-    "pierce_color",
-    "sticky_coins",
-    "rainbow",
-    "picky_eater",
-    "palette",
-    "vibrant_neighborhood",
-    "soft_brush",
-    "varied_diet",
-  ],
-  [
-    // Explosive gameplay
-    "sapper",
-    "zen",
-    "minefield",
-    "instant_explosion",
-    "shocks",
-    "bigger_explosions",
-  ],
-  [
-    // delayed coin catch
-    "asceticism",
+export const synergies: Partial<Record<PerkId, Array<PerkId>>> = {
+  streak_shots: ["puck_repulse_ball", "wrap_up"],
+  left_is_lava: ["concave_puck", "telekinesis", "yoyo"],
+  right_is_lava: ["concave_puck", "telekinesis", "yoyo"],
+  top_is_lava: ["flyswatter"],
+  picky_eater: ["pierce_color", "soft_brush"],
+  compound_interest: ["viscosity", "coin_magnet", "bigger_puck"],
+  hot_start: ["pierce", "sapper", "bigger_explosions", "refill", "multiball"],
+  asceticism: [
     "bricks_attract_coins",
     "helium",
     "sticky_coins",
     "sapper",
     "trickledown",
   ],
-  [
-    // beginner bunlde
-    "slow_down",
-    "bigger_puck",
-    "skip_last",
-    "forgiving",
-    "extra_life",
+  nbricks: ["ottawa_treaty", "flyswatter", "soft_touch"],
+  zen: ["ottawa_treaty"],
+  trampoline: ["concave_puck", "telekinesis", "yoyo"],
+  reach: [
     "telekinesis",
-    "yoyo",
-    "fountain_toss",
-  ],
-  [
-    // shoot straight
-    "left_is_lava",
-    "right_is_lava",
-    "top_is_lava",
-    "trampoline",
     "concave_puck",
-  ],
-  [
-    // don't miss a coin
-    "viscosity",
-    "coin_magnet",
-    "bigger_puck",
-    "compound_interest",
-  ],
-  [
-    // expert
-    "extra_levels",
-    "limitless",
-    "smaller_puck",
-    "double_or_nothing",
-  ],
-  [
-    // avoid touching the paddle
-    "streak_shots",
-    "puck_repulse_ball",
-    "wrap_up",
-  ],
-  [
-    // keep ball above paddle
-    "paddle_up_combo",
-    "pierce_above_paddle",
+    "corner_shot",
+    "refill",
     "soft_touch",
+    "limitless",
+    "round_bricks",
   ],
-];
+  passive_income: [
+    "yoyo",
+    "viscosity",
+    "bricks_attract_coins",
+    "buoy",
+    "pierce_above_paddle",
+  ],
+  side_kick: ["wrap_right", "pierce_left", "refill"],
+  side_flip: ["wrap_left", "pierce_right", "refill"],
+  addiction: ["bricks_attract_ball", "pierce", "multiball", "skip_last"],
+  three_cushion: ["wind"],
+  happy_family: ["yoyo", "bigger_puck", "telekinesis", "soft_touch"],
+  palette: ["disco_ball", "metamorphosis", "rainbow"],
+  paddle_up_combo: ["pierce_above_paddle", "soft_touch"],
+  varied_diet: ["metamorphosis", "disco_ball"],
+  extra_levels: ["limitless"],
+  sacrifice: ["extra_life"],
+};
