@@ -354,9 +354,12 @@ export function countBrickColors(gameState: GameState) {
 
 export function isBrickOverPaddle(gameState: GameState, brickIndex: number) {
   const x = brickCenterX(gameState, brickIndex);
+
   return (
-    x > gameState.puckPosition - gameState.puckWidth / 2 &&
-    x < gameState.puckPosition + gameState.puckWidth / 2
+    x + gameState.brickWidth / 2 >
+      gameState.puckPosition - gameState.puckWidth / 2 &&
+    x - gameState.brickWidth / 2 <
+      gameState.puckPosition + gameState.puckWidth / 2
   );
 }
 export function baseBrickHP(gameState: GameState) {
