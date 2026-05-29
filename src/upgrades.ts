@@ -1132,7 +1132,14 @@ export const rawUpgrades = [
   },
   {
     category: categories.pierce,
-    requires: [],
+    requires: [
+      "pierce",
+      "pierce_color",
+      "pierce_left",
+      "pierce_right",
+      "pierce_top",
+      "pierce_above_paddle",
+    ],
     threshold: 330000,
     id: "refill",
     max: 1,
