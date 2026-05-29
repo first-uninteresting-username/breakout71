@@ -553,7 +553,7 @@ export function explodeBrick(
       if (color !== gameState.ballsColor) {
         comboGain += gameState.perks.varied_diet;
       } else if (colorsCount > 1) {
-        comboGain -= gameState.perks.varied_diet;
+        comboGain -= gameState.perks.varied_diet * 2;
       }
     }
 

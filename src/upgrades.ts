@@ -33,9 +33,12 @@ export const rawUpgrades = [
     hardLimit: 9,
     name: t("upgrades.varied_diet.name"),
     help: (lvl: number) =>
-      t("upgrades.varied_diet.tooltip", { plus: lvl, minus: lvl }),
+      t("upgrades.varied_diet.tooltip", { plus: lvl, minus: lvl * 2 }),
     fullHelp: (lvl: number) =>
-      t("upgrades.varied_diet.verbose_description", { plus: lvl, minus: lvl }),
+      t("upgrades.varied_diet.verbose_description", {
+        plus: lvl,
+        minus: lvl * 2,
+      }),
   },
   {
     category: categories.combo,
