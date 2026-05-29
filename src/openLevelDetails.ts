@@ -22,12 +22,7 @@ export async function openLevelDetails(level: Level) {
 
   const isLocked = !unlockedBefore.has(level.name);
   const lockReason = isLocked
-    ? reasonLevelIsLocked(
-        allLevels.indexOf(level),
-        level.name,
-        getHistory(),
-        true,
-      )
+    ? reasonLevelIsLocked(level, getHistory(), true)
     : null;
 
   const activeLevels = allLevels

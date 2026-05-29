@@ -12,11 +12,6 @@ import { schedulGameSound } from "./gameStateMutators";
 import { getLevelUnlockCondition } from "./get_level_unlock_condition";
 import { getIcon } from "./levelIcon";
 
-let list: {
-  minScore: number;
-  forbidden: PerkId[];
-  required: PerkId[];
-}[];
 let unlocked: Set<string> | null = null;
 
 export function monitorLevelsUnlocks(gameState: GameState) {
@@ -28,22 +23,12 @@ export function monitorLevelsUnlocks(gameState: GameState) {
 
   if (gameState.startParams.runType !== "normal") return;
 
-  if (!list) {
-    list = allLevels.map((l, li) => ({
-      name: l.name,
-      li,
-      l,
-      ...getLevelUnlockCondition(li, l.name),
-    }));
-  }
-
-  list.forEach(({ name, minScore, forbidden, required, l }) => {
+  allLevels.forEach(({ name, minScore, forbidden, required }) => {
     // Already unlocked
     if (unlocked!.has(name)) return;
     // Score not reached yet
     if (gameState.score < minScore) return;
     if (!minScore) return;
-
     if (gameState.score < minScore) return;
     // We are missing a required perk
     if (required.find((id) => !gameState.perks[id])) return;

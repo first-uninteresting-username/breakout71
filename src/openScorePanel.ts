@@ -57,16 +57,14 @@ export async function openScorePanel(gameState: GameState) {
 export function getFirstUnlockable(gameState: GameState) {
   if (gameState.startParams.runType !== "normal") return undefined;
   const unlocked = new Set(getSettingValue("breakout_71_unlocked_levels", []));
+
   return firstWhere(allLevels, (l, li) => {
     if (unlocked.has(l.name)) return;
     if (!getSettingValue("offer-level-" + l.name, true)) return;
-    const reason = reasonLevelIsLocked(li, l.name, getHistory(), false);
+    const reason = reasonLevelIsLocked(l, getHistory(), false);
     if (!reason) return;
 
-    const { minScore, forbidden, required } = getLevelUnlockCondition(
-      li,
-      l.name,
-    );
+    const { minScore, forbidden, required } = l;
     const missing: PerkId[] = required.filter((id) => !gameState?.perks?.[id]);
     // we can't have a forbidden perk
     if (forbidden.find((id) => gameState?.perks?.[id])) {

@@ -45,8 +45,7 @@ export async function openCreativeModePerksPicker() {
   while (true) {
     const levelOptions = [
       ...allLevels.map((l, li) => {
-        const problem =
-          reasonLevelIsLocked(li, l.name, getHistory(), true)?.text || "";
+        const problem = reasonLevelIsLocked(l, getHistory(), true)?.text || "";
         return {
           icon: getIcon(l.name),
           text: l.name,

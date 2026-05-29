@@ -813,7 +813,7 @@ export async function openUnlockedLevelsList() {
   const unlockedBefore = new Set<string>(
     getSettingValue("breakout_71_unlocked_levels", []),
   );
-  const levelActions = allLevels.map((l, li) => {
+  const levelActions = allLevels.map((l) => {
     const locked = !unlockedBefore.has(l.name);
 
     return {

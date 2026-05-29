@@ -226,22 +226,13 @@ export function getHistograms(gameState: GameState) {
   let unlockedLevels = "";
   let runStats = "";
   try {
-    const locked = allLevels
-      .map((l, li) => ({
-        li,
-        l,
-        r: reasonLevelIsLocked(li, l.name, runsHistory, false)?.text,
-      }))
-      .filter((l) => l.r);
-
     gameState.runStatistics.runTime = Math.round(
       gameState.runStatistics.runTime,
     );
+    const locked = allLevels.filter((l) => isLevelLocked(l, runsHistory));
     addGameToHistory(gameState);
+    const unlocked = locked.filter((l) => !isLevelLocked(l, runsHistory));
 
-    const unlocked = locked.filter(
-      ({ li, l }) => !isLevelLocked(li, l.name, runsHistory),
-    );
     if (unlocked.length) {
       unlockedLevels = `
 
@@ -249,7 +240,7 @@ export function getHistograms(gameState: GameState) {
       
         ${unlocked
           .map(
-            ({ l, r }) => ` 
+            (l) => ` 
          <div class="upgrade used">
             ${getIcon(l.name)}
             <p>

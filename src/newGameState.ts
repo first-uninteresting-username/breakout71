@@ -32,8 +32,7 @@ export function getRunLevels(
 
   const history = getHistory();
   const unlocked = allLevels.filter(
-    (l, li) =>
-      unlockedBefore.has(l.name) || !isLevelLocked(li, l.name, history),
+    (l, li) => unlockedBefore.has(l.name) || !isLevelLocked(l, history),
   );
   const firstLevel = params?.level
     ? [params.level]

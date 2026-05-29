@@ -128,7 +128,7 @@ migrate("set_breakout_71_unlocked_levels" + _appVersion, () => {
   ) as string[];
 
   allLevels
-    .filter((l, li) => !isLevelLocked(li, l.name, runsHistory))
+    .filter((l) => !isLevelLocked(l, runsHistory))
     .forEach((l) => {
       if (!breakout_71_unlocked_levels.includes(l.name)) {
         breakout_71_unlocked_levels.push(l.name);

@@ -1,4 +1,4 @@
-import { PerkId, RunHistoryItem, UnlockCondition } from "./types";
+import { Level, PerkId, RunHistoryItem, UnlockCondition } from "./types";
 import { upgrades } from "./loadGameData";
 import { hashCode } from "./getLevelBackground";
 import { t } from "./i18n/i18n";
@@ -69,29 +69,23 @@ export function getBestScoreMatching(
       .map((r) => r.score),
   );
 }
-
-export function isLevelLocked(
-  levelIndex: number,
-  levelName: string,
-  history: RunHistoryItem[],
-) {
-  const { required, forbidden, minScore } = getLevelUnlockCondition(
-    levelIndex,
-    levelName,
+// TODO
+export function isLevelLocked(level: Level, history: RunHistoryItem[]) {
+  return (
+    getBestScoreMatching(history, level.required, level.forbidden) <
+    level.minScore
   );
-  return getBestScoreMatching(history, required, forbidden) < minScore;
 }
-
+// TODO
 export function reasonLevelIsLocked(
-  levelIndex: number,
-  levelName: string,
+  level: Level,
   history: RunHistoryItem[],
   mentionBestScore: boolean,
 ): null | { reached: number; minScore: number; text: string } {
-  const { required, forbidden, minScore } = getLevelUnlockCondition(
-    levelIndex,
-    levelName,
-  );
+  const { required, forbidden, minScore } = level;
+  if (!required) {
+    debugger;
+  }
   const reached = getBestScoreMatching(history, required, forbidden);
   let reachedText =
     reached && mentionBestScore ? t("unlocks.reached", { reached }) : "";

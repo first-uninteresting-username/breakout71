@@ -1277,7 +1277,7 @@
       "rainbow"
     ],
     "forbidden": ["buoy", "extra_life", "sapper"],
-    "minScore": 100
+    "minScore": 1555
   },
   "DeBÍ HaCER MáS NIVELeS": {
     "required": ["shocks", "sapper", "pierce"],

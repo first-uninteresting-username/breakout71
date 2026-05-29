@@ -18,6 +18,10 @@ export type Level = {
   color: string;
   sortKey: number;
   credit?: string;
+  // unlock conditions
+  required: PerkId[];
+  forbidden: PerkId[];
+  minScore: number;
 };
 
 export type Palette = { [k: string]: string };

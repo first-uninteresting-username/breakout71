@@ -6,6 +6,7 @@ import { rawUpgrades } from "./upgrades";
 import { getLevelBackground } from "./getLevelBackground";
 
 import { automaticBackgroundColor } from "./pure_functions";
+import { getLevelUnlockCondition } from "./get_level_unlock_condition";
 
 export const upgrades = [...rawUpgrades].sort(
   (a, b) => a.category - b.category || a.threshold - b.threshold,
@@ -36,6 +37,12 @@ export const allLevelsAndIcons = rawLevelsList.map(
   transformRawLevel,
 ) as Level[];
 
-export const allLevels = allLevelsAndIcons.filter(
-  (l) => !l.name.startsWith("icon:"),
-);
+export const allLevels = allLevelsAndIcons
+  .filter((l) => !l.name.startsWith("icon:"))
+  .map((l, li) => ({
+    ...l,
+    ...getLevelUnlockCondition(li, l.name),
+  }))
+  .sort((a, b) => a.minScore - b.minScore);
+
+console.log(allLevels);
