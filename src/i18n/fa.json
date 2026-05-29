@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "به شما کمک می‌کند ویژگی‌های مناسب برای باز کردن سطوح را انتخاب کنید",
     "settings.load_save_file": "بارگذاری ذخیره بازی",
     "settings.load_save_file_help": "ذخیره بازی را از دستگاه خود انتخاب کنید",
-    "settings.match_pixel_ratio": "رندر با وضوح تصویر اصلی (native)",
-    "settings.match_pixel_ratio_help": "واضح‌تر اما رندر کندتر",
     "settings.max_coins": "تا {{max}} سکه روی صفحه",
     "settings.max_coins_help": "فقط ظاهری، بدون اثر بر امتیاز",
     "settings.menu_sound": "",

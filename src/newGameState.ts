@@ -12,7 +12,6 @@ import {
   sumOfValues,
 } from "./game_utils";
 import { resetBalls } from "./gameStateMutators";
-import { getPixelRatio, isOptionOn } from "./options";
 import { getHistory } from "./gameOver";
 import { getSettingValue } from "./settings";
 import { getStartingPerks } from "./startingPerks";
@@ -128,9 +127,9 @@ export function newGameState(params: RunParams): GameState {
     levelMisses: 0,
     levelSpawnedCoins: 0,
     puckColor: "#FFFFFF",
-    ballSize: Math.ceil(20 * getPixelRatio()),
-    coinSize: Math.ceil(14 * getPixelRatio()),
-    puckHeight: Math.ceil(20 * getPixelRatio()),
+    ballSize: Math.ceil(20),
+    coinSize: Math.ceil(14),
+    puckHeight: Math.ceil(20),
     pauseUsesDuringRun: 0,
     keyboardPuckSpeed: 0,
     lastTick: performance.now(),

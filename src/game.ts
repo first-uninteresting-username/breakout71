@@ -60,7 +60,7 @@ import {
   AsyncAlertAction,
   closeModal,
 } from "./asyncAlert";
-import { getPixelRatio, isOptionOn, options, toggleOption } from "./options";
+import { isOptionOn, options, toggleOption } from "./options";
 import { clamp, isComputerControlled } from "./pure_functions";
 import { helpMenuEntry } from "./help";
 import { creativeMode, openCreativeModePerksPicker } from "./creative";
@@ -70,11 +70,7 @@ import { generateSaveFileContent } from "./generateSaveFileContent";
 import { runHistoryViewerMenuEntry } from "./runHistoryViewer";
 import { openScorePanel } from "./openScorePanel";
 import { monitorLevelsUnlocks } from "./monitorLevelsUnlocks";
-import {
-  closeEditorTrialRun,
-  editRawLevel,
-  levelEditorMenuEntry,
-} from "./levelEditor";
+import { levelEditorMenuEntry } from "./levelEditor";
 import { frameStarted, getWorstFPSAndReset, startWork } from "./fps";
 import { openUnlockedUpgradesList } from "./openUnlockedUpgradesList";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
@@ -149,10 +145,9 @@ export const fitSize = (gameState: GameState) => {
     past_width = gameState.gameZoneWidthRoundedUp,
     past_heigh = gameState.gameZoneHeight;
 
-  const width = Math.floor(window.innerWidth * getPixelRatio()),
+  const width = Math.floor(window.innerWidth),
     height = Math.floor(
-      window.innerHeight * getPixelRatio() -
-        (isOptionOn("notch_space") ? 40 : 0),
+      window.innerHeight - (isOptionOn("notch_space") ? 40 : 0),
     );
 
   gameState.canvasWidth = width;
@@ -179,10 +174,9 @@ export const fitSize = (gameState: GameState) => {
     ),
   );
 
-  // in case getPixelRatio changed value
-  gameState.ballSize = Math.ceil(20 * getPixelRatio());
-  gameState.coinSize = Math.ceil(14 * getPixelRatio());
-  gameState.puckHeight = Math.ceil(20 * getPixelRatio());
+  gameState.ballSize = Math.ceil(20);
+  gameState.coinSize = Math.ceil(14);
+  gameState.puckHeight = Math.ceil(20);
   forEachLiveOne(gameState.coins, (b) => (b.size = gameState.coinSize));
 
   gameState.brickWidth =
@@ -241,8 +235,8 @@ window.addEventListener("fullscreenchange", () => fitSize(mainGameState));
 setInterval(() => {
   // Sometimes, the page changes size without triggering the event (when switching to fullscreen, closing debug panel...)
 
-  const width = Math.floor(window.innerWidth * getPixelRatio()),
-    height = Math.floor(window.innerHeight * getPixelRatio());
+  const width = Math.floor(window.innerWidth),
+    height = Math.floor(window.innerHeight);
 
   if (
     width !== mainGameState.canvasWidth ||
@@ -265,12 +259,9 @@ gameCanvas.addEventListener("mouseup", (e) => {
 
 gameCanvas.addEventListener("mousemove", (e) => {
   if (document.pointerLockElement === gameCanvas) {
-    setMousePos(
-      mainGameState,
-      mainGameState.puckPosition + e.movementX * getPixelRatio(),
-    );
+    setMousePos(mainGameState, mainGameState.puckPosition + e.movementX);
   } else {
-    setMousePos(mainGameState, e.clientX * getPixelRatio());
+    setMousePos(mainGameState, e.clientX);
   }
 });
 
@@ -310,7 +301,7 @@ function stopPlayCountDown() {
 gameCanvas.addEventListener("touchstart", (e) => {
   e.preventDefault();
   if (!e.touches?.length) return;
-  setMousePos(mainGameState, e.touches[0].pageX * getPixelRatio());
+  setMousePos(mainGameState, e.touches[0].pageX);
   normalizeGameState(mainGameState);
   if (mainGameState.levelTime || !isOptionOn("touch_delayed_start")) {
     play();
@@ -331,7 +322,7 @@ gameCanvas.addEventListener("touchcancel", (e) => {
 });
 gameCanvas.addEventListener("touchmove", (e) => {
   if (!e.touches?.length) return;
-  setMousePos(mainGameState, e.touches[0].pageX * getPixelRatio());
+  setMousePos(mainGameState, e.touches[0].pageX);
 });
 
 export function brickIndex(gameState: GameState, x: number, y: number) {
@@ -599,7 +590,6 @@ async function openSettingsMenu() {
   });
   for (const key of Object.keys(options) as OptionId[]) {
     // Skip displaying option if it does nothing
-    if (window.devicePixelRatio === 1 && key == "match_pixel_ratio") continue;
     if (options[key]) {
       actions.push({
         icon: getCheckboxIcon(isOptionOn(key)),

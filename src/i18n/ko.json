@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "레벨을 잠금 해제하기 위해 올바른 perks를 선택하십시오",
     "settings.load_save_file": "Load 파일",
     "settings.load_save_file_help": "당신의 장치에 저장 파일을 선택하십시오",
-    "settings.match_pixel_ratio": "디스플레이의 기본 해상도로 렌더링합니다.",
-    "settings.match_pixel_ratio_help": "더 선명하지만 렌더링 속도는 더 느립니다.",
     "settings.max_coins": "{{max}} 동전",
     "settings.max_coins_help": "화장품 만, 점수에 효과 없음",
     "settings.menu_sound": "",

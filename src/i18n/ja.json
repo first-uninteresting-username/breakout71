@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "レベルを解禁するためにどの特典を選択すればいいか表示します",
     "settings.load_save_file": "セーブファイル読込",
     "settings.load_save_file_help": "デバイス内のセーブファイルを選択してください",
-    "settings.match_pixel_ratio": "ネイティブディスプレイ解像度でレンダリングする",
-    "settings.match_pixel_ratio_help": "より鮮明だがレンダリングが遅い",
     "settings.max_coins": "最大表示コイン数{{max}}枚",
     "settings.max_coins_help": "画面上の表示のみの変更であり、スコアには影響しません",
     "settings.menu_sound": "",

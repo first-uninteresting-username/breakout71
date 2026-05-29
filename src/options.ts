@@ -39,20 +39,15 @@ export const options = {
     name: t("settings.touch_delayed_start"),
     help: t("settings.touch_delayed_start_help"),
   },
-  basic: {
-    default: false,
-    name: t("settings.basic"),
-    help: t("settings.basic_help"),
-  },
-  match_pixel_ratio: {
-    default: false,
-    name: t("settings.match_pixel_ratio"),
-    help: t("settings.match_pixel_ratio_help"),
-  },
   colorful_coins: {
     default: false,
     name: t("settings.colorful_coins"),
     help: t("settings.colorful_coins_help"),
+  },
+  basic: {
+    default: false,
+    name: t("settings.basic"),
+    help: t("settings.basic_help"),
   },
   extra_bright: {
     default: true,
@@ -141,8 +136,4 @@ export function isOptionOn(key: OptionId) {
 
 export function toggleOption(key: OptionId) {
   setSettingValue("breakout-settings-enable-" + key, !isOptionOn(key));
-}
-
-export function getPixelRatio() {
-  return isOptionOn("match_pixel_ratio") ? window.devicePixelRatio || 1 : 1;
 }

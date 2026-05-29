@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Ajuda-o a escolher as vantagens certas para desbloquear níveis",
     "settings.load_save_file": "Carregar ficheiro de dados gravados",
     "settings.load_save_file_help": "Selecione um ficheiro de dados gravados no dispositivo",
-    "settings.match_pixel_ratio": "Renderizar na resolução nativa do monitor",
-    "settings.match_pixel_ratio_help": "Mais nítido, mas mais lento a renderizar.",
     "settings.max_coins": "Máximo de {{max}} moedas no ecrã",
     "settings.max_coins_help": "Apenas um cosmético, nenhum efeito na pontuação",
     "settings.menu_sound": "Sons do menu",

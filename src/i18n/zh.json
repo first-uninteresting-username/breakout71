@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "帮助你挑选正确的被动技能以解锁关卡",
     "settings.load_save_file": "加载保存文件",
     "settings.load_save_file_help": "选择你的设备上的一个保存文件",
-    "settings.match_pixel_ratio": "以显示器原生分辨率渲染",
-    "settings.match_pixel_ratio_help": "更清晰但渲染速度较慢",
     "settings.max_coins": "屏幕上的最大硬币数量 {{max}}",
     "settings.max_coins_help": "屏幕上的硬币，不影响分数",
     "settings.menu_sound": "菜单声音",

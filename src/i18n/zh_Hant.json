@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "幫助你挑選正確的技能以解鎖關卡",
     "settings.load_save_file": "載入儲存檔案",
     "settings.load_save_file_help": "選擇你的裝置上的儲存檔案",
-    "settings.match_pixel_ratio": "以顯示器原生解析度渲染",
-    "settings.match_pixel_ratio_help": "更清晰但渲染速度較慢",
     "settings.max_coins": "螢幕上最多顯示 {{max}} 硬幣",
     "settings.max_coins_help": "僅影響外觀，不影響分數",
     "settings.menu_sound": "",

@@ -25,7 +25,7 @@ import {
 import { colorString, GameState } from "./types";
 import { t } from "./i18n/i18n";
 import { mainGameState } from "./game";
-import { getPixelRatio, isOptionOn } from "./options";
+import { isOptionOn } from "./options";
 import {
   ballTransparency,
   catchRateBest,
@@ -64,7 +64,7 @@ const haloCanvasCtx = haloCanvas.getContext("2d", {
 }) as CanvasRenderingContext2D;
 
 export function getHaloScale() {
-  return 16 * (isOptionOn("precise_lighting") ? 1 : 2) * getPixelRatio();
+  return 16 * (isOptionOn("precise_lighting") ? 1 : 2);
 }
 
 let framesCounter = 0;
@@ -77,7 +77,6 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
   framesCounter++;
   startWork("render:init");
   const level = currentLevelInfo(gameState);
-
   const hasCombo = gameState.combo > baseCombo(gameState);
 
   if (!isPreview) {
@@ -190,7 +189,6 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
         const bgctx = backgroundCanvas.getContext(
           "2d",
         ) as CanvasRenderingContext2D;
-        bgctx.scale(getPixelRatio(), getPixelRatio());
         bgctx.globalCompositeOperation = "source-over";
         bgctx.fillStyle = level.color || "#000";
         bgctx.fillRect(0, 0, gameState.canvasWidth, gameState.canvasHeight);
@@ -719,7 +717,7 @@ function drawStraightLine(
   if (mode == "#FF0000") {
     ctx.strokeStyle = "red";
     ctx.lineDashOffset = getDashOffset(gameState);
-    ctx.lineWidth = Math.ceil(2 * getPixelRatio());
+    ctx.lineWidth = Math.ceil(2);
     ctx.setLineDash(redBorderDash);
     ctx.beginPath();
     ctx.moveTo(x1, y1);
@@ -728,7 +726,7 @@ function drawStraightLine(
     ctx.setLineDash(emptyArray);
     ctx.lineWidth = 1;
   } else {
-    const width = Math.ceil(getPixelRatio());
+    const width = 1;
     ctx.fillStyle = mode;
     ctx.fillRect(
       Math.min(x1, x2),
@@ -1129,10 +1127,8 @@ export function drawBrick(
 ) {
   const tlx = Math.ceil(x - gameState.brickWidth / 2);
   const tly = Math.ceil(y - gameState.brickWidth / 2);
-  const brx =
-    Math.ceil(x + gameState.brickWidth / 2) - Math.ceil(getPixelRatio());
-  const bry =
-    Math.ceil(y + gameState.brickWidth / 2) - Math.ceil(getPixelRatio());
+  const brx = Math.ceil(x + gameState.brickWidth / 2) - 1;
+  const bry = Math.ceil(y + gameState.brickWidth / 2) - 1;
 
   const width = brx - tlx,
     height = bry - tly;

@@ -47,7 +47,7 @@ import { background } from "./render";
 import { gameOver } from "./gameOver";
 import { brickIndex, fitSize, hasBrick, hitsSomething, pause } from "./game";
 import { stopRecording } from "./recording";
-import { getPixelRatio, isOptionOn } from "./options";
+import { isOptionOn } from "./options";
 import {
   ballTransparency,
   base_combo_from_stronger_foundation,
@@ -180,7 +180,7 @@ export function normalizeGameState(gameState: GameState) {
   // This function resets most parameters on the state to correct values, and should be used even when the game is paused
 
   gameState.baseSpeed = Math.max(
-    3 * getPixelRatio(),
+    3,
     gameState.gameZoneWidth / 12 / 10 +
       gameState.currentLevel / 3 / (1 + gameState.perks.chill * 10) +
       gameState.levelTime / (30 * 1000) -
@@ -2435,7 +2435,7 @@ function makeParticle(
     p.vx = vx;
     p.vy = vy;
     p.color = color;
-    p.size = size * getPixelRatio();
+    p.size = size;
     p.duration = duration;
     p.ethereal = ethereal;
   });
@@ -2463,7 +2463,7 @@ function makeText(
     p.vx = vx;
     p.vy = vy;
     p.color = color;
-    p.size = size * getPixelRatio();
+    p.size = size;
     p.duration = clamp(duration, 400, 2000);
     p.text = text;
   });

@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Help you pick the right perks to unlock levels",
     "settings.load_save_file": "Load save file",
     "settings.load_save_file_help": "Select a save file on your device",
-    "settings.match_pixel_ratio": "Render at the native  display resolution",
-    "settings.match_pixel_ratio_help": "Sharper but slower to render",
     "settings.max_coins": "{{max}} coins on screen maximum",
     "settings.max_coins_help": "Cosmetic only, no effect on score",
     "settings.menu_sound": "Menu sounds",

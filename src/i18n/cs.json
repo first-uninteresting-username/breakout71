@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Pomáhá vám vybrat si správná vylepšení pro odemykání úrovní",
     "settings.load_save_file": "Načíst uložený soubor",
     "settings.load_save_file_help": "Vyberte soubor s uloženým stavem na vašem zařízení",
-    "settings.match_pixel_ratio": "Vykreslovat v nativním rozlišení displeje",
-    "settings.match_pixel_ratio_help": "Ostřejší, ale pomalejší vykreslování",
     "settings.max_coins": "Maximálně {{max}} mincí na obrazovce",
     "settings.max_coins_help": "Jen kosmetika, bez vlivu na skóre",
     "settings.menu_sound": "Zvuky v menu",

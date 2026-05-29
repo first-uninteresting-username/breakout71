@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Помочь вам выбрать правильные преимущества для разблокировки уровней",
     "settings.load_save_file": "Загрузить файл сохранения",
     "settings.load_save_file_help": "Выберите файл сохранения на вашем устройстве",
-    "settings.match_pixel_ratio": "Отображение в собственном разрешении экрана.",
-    "settings.match_pixel_ratio_help": "Более чёткое изображение, но более медленная отрисовка.",
     "settings.max_coins": "{{max}} монет на экране максимум",
     "settings.max_coins_help": "Только косметика, не влияет на результат",
     "settings.menu_sound": "",

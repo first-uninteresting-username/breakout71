@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Pomôcť si vybrať správne perks na odomknutie úrovne",
     "settings.load_save_file": "Načítať súbor",
     "settings.load_save_file_help": "Vyberte súbor na vašom zariadení",
-    "settings.match_pixel_ratio": "Render na rozlíšenie rodného displeja",
-    "settings.match_pixel_ratio_help": "Sharper ale pomalšie na render",
     "settings.max_coins": "{{max}} mince na obrazovke maximálne",
     "settings.max_coins_help": "Cosmetic iba, žiadny účinok na skóre",
     "settings.menu_sound": "",

@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Допомогти вам підібрати правильні перки для розблокування рівнів",
     "settings.load_save_file": "Завантажити файл",
     "settings.load_save_file_help": "Виберіть файл збереження на вашому пристрої",
-    "settings.match_pixel_ratio": "Рендер на локальній роздільній здатності дисплея",
-    "settings.match_pixel_ratio_help": "Заточка, але повільніше рендерити",
     "settings.max_coins": "{{max}} монети на екрані максимум",
     "settings.max_coins_help": "Косметична тільки, не впливає на рахунок",
     "settings.menu_sound": "",

@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Aiuta a scegliere i potenziamenti giusti per sbloccare livelli",
     "settings.load_save_file": "Carica file di salvataggio",
     "settings.load_save_file_help": "Seleziona un file di salvataggio sul dispositivo",
-    "settings.match_pixel_ratio": "Render alla risoluzione di visualizzazione nativo",
-    "settings.match_pixel_ratio_help": "Più nitido ma più lento da rendere",
     "settings.max_coins": "fino a {{max}} monete sullo schermo",
     "settings.max_coins_help": "Solo cosmetici, nessun effetto sul punteggio",
     "settings.menu_sound": "",

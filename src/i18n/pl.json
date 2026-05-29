@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Pomagasz, aby skorzystać z prawa do odblokowania poziomu",
     "settings.load_save_file": "Load ubezpieczeniowy",
     "settings.load_save_file_help": "Wybierz plik na swoim urządzeniem",
-    "settings.match_pixel_ratio": "Render w rodzimej rozdzielczości wyświetlaczy",
-    "settings.match_pixel_ratio_help": "Sharper, ale powolny od renderowania",
     "settings.max_coins": "monety o maksymalnym wymiarze ekranowym",
     "settings.max_coins_help": "Tylko kosmetyczne, bez wpływu na wynik",
     "settings.menu_sound": "",

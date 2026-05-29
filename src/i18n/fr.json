@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Vous aider à choisir les bons avantages pour débloquer des niveaux",
     "settings.load_save_file": "Charger une sauvegarde",
     "settings.load_save_file_help": "Depuis un fichier",
-    "settings.match_pixel_ratio": "Rendu à la résolution native de l'écran",
-    "settings.match_pixel_ratio_help": "Plus net, mais rendu plus lent",
     "settings.max_coins": "{{max}} pièces affichées maximum",
     "settings.max_coins_help": "Visuel uniquement, pas d'impact sur le score",
     "settings.menu_sound": "Menu audio",

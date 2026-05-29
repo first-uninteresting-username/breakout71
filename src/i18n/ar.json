@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "نساعدك في اختيار الامتيازات المناسبة لفتح المستويات",
     "settings.load_save_file": "تحميل ملف الحفظ",
     "settings.load_save_file_help": "حدد ملف الحفظ على جهازك",
-    "settings.match_pixel_ratio": "قم بالعرض بدقة الشاشة الأصلية",
-    "settings.match_pixel_ratio_help": "أكثر وضوحًا ولكن أبطأ في العرض",
     "settings.max_coins": "{{max}} عملات معدنية على الشاشة كحد أقصى",
     "settings.max_coins_help": "تجميلي فقط، لا يؤثر على النتيجة",
     "settings.menu_sound": "",

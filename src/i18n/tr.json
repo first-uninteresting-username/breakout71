@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Seviyelerin kilidini açmak için doğru avantajları seçmenize yardımcı olur",
     "settings.load_save_file": "Kayıt dosyasını yükle",
     "settings.load_save_file_help": "Cihazınızda bir kayıt dosyası seçin",
-    "settings.match_pixel_ratio": "Ekranın doğal çözünürlüğünde görüntü oluştur",
-    "settings.match_pixel_ratio_help": "Daha keskin ama işlenmesi daha yavaş",
     "settings.max_coins": "Ekranda maksimum {{max}} jeton var",
     "settings.max_coins_help": "Sadece kozmetik, puan üzerinde etkisi yok",
     "settings.menu_sound": "",

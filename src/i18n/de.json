@@ -154,8 +154,6 @@
     "settings.level_unlocks_hints_help": "Helfen Sie dabei, die richtigen Vorteile zum Freischalten von Levels auszuwählen",
     "settings.load_save_file": "Speicherdatei laden",
     "settings.load_save_file_help": "Wähle eine Speicherdatei auf Ihrem Gerät",
-    "settings.match_pixel_ratio": "In der nativen Bildschirmauflösung rendern",
-    "settings.match_pixel_ratio_help": "Schärfer, aber langsamer in der Renderzeit.",
     "settings.max_coins": "{{max}} Münzen auf dem Bildschirm maximal",
     "settings.max_coins_help": "Nur kosmetisch, keine Auswirkung auf die Punktzahl",
     "settings.menu_sound": "",
