@@ -44,4 +44,16 @@ export const synergies: Partial<Record<PerkId, Array<PerkId>>> = {
   varied_diet: ["metamorphosis", "disco_ball"],
   extra_levels: ["limitless"],
   sacrifice: ["extra_life"],
+  // beginner helpers
+  slow_down: [
+    "base_combo",
+    "bigger_puck",
+    "extra_life",
+    "telekinesis",
+    "yoyo",
+    "skip_last",
+    "chill",
+  ],
+  // hardcore players
+  smaller_puck: ["double_or_nothing", "limitless"],
 };
