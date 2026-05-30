@@ -47,8 +47,6 @@
     "settings.language_help": "Alege limba jocului",
     "settings.load_save_file": "Încarcă fișierul de salvare",
     "settings.load_save_file_help": "Selectează fișierul de salvare din dispozitivul",
-    "settings.match_pixel_ratio": "Afișează pe ecranul rezoluției nativă",
-    "settings.match_pixel_ratio_help": "Arată mai ascuțit, dar rulează mai încet",
     "settings.max_coins": "{{max}} de monede pe ecran maximă",
     "settings.max_coins_help": "Doar cosmetic, nu are efect la scor",
     "settings.particles": "Particule",
