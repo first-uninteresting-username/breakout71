@@ -673,11 +673,12 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       Math.ceil((gameState.winAt - gameState.levelTime) / 1000);
     if (remaining > 0 && remaining < 5) {
       ctx.globalAlpha = 1;
-      ctx.globalCompositeOperation = "destination-out";
+      ctx.globalCompositeOperation = "source-over";
+
       drawText(
         ctx,
         remaining.toString(),
-        "white",
+        gameState.level.color,
         60,
         gameState.canvasWidth / 2,
         gameState.canvasHeight / 2,
@@ -685,7 +686,6 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
         10,
       );
 
-      ctx.globalCompositeOperation = "screen";
       drawText(
         ctx,
         remaining.toString(),
