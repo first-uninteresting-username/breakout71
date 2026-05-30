@@ -40,12 +40,12 @@ export function getStartingPerks() {
 }
 
 function possibleStartingPerks() {
-  return rawUpgrades
-    .filter(
-      (upgrade) =>
-        upgrade.category === categories.combo || upgrade.id == "slow_down",
-    )
-    .sort((a, b) => a.threshold - b.threshold) as Upgrade[];
+  return [
+    upgrades.find((u) => u.id === "slow_down"),
+    ...upgrades
+      .filter((upgrade) => upgrade.category === categories.combo)
+      .sort((a, b) => a.threshold - b.threshold),
+  ] as Upgrade[];
 }
 
 export function getStartRunButtons() {
