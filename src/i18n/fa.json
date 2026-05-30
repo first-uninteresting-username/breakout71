@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "ویژگی‌ها و سطوح بازشده را امتحان کنید",
     "play.auto_save_resumed": "",
     "play.close_modale_window_tooltip": "بستن",
+    "play.combo_reset": "",
     "play.current_lvl": "سطح {{level}}/{{max}}",
     "play.forgiven": "",
     "play.gravity": "",

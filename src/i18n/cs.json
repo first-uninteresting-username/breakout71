@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "Vyzkoušejte odemčené úrovně a vylepšení",
     "play.auto_save_resumed": "Automatické uložení načteno a vymazáno.",
     "play.close_modale_window_tooltip": "zavřít",
+    "play.combo_reset": "",
     "play.current_lvl": "Úroveň {{level}}/{{max}}",
     "play.forgiven": "Odpuštěno",
     "play.gravity": "Gravitace",

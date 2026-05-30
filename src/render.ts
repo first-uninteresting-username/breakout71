@@ -334,17 +334,25 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
     const elapsed = gameState.levelTime - time;
     const elapsedFrames = elapsed / 60;
     ctx.globalAlpha = Math.max(0, Math.min(1, 2 - (elapsed / duration) * 2));
-    ctx.globalCompositeOperation = "source-over";
-    drawText(
-      ctx,
-      flash.text,
-      color,
-      size,
-      x + elapsedFrames * vx,
-      y + elapsedFrames * vy,
-    );
+    for (let isClearingBg of trueFalse) {
+      if (size < 15 && isClearingBg) {
+        continue;
+      }
+      ctx.globalCompositeOperation = isClearingBg
+        ? "destination-out"
+        : "source-over";
+      drawText(
+        ctx,
+        flash.text,
+        color,
+        size,
+        x + elapsedFrames * vx,
+        y + elapsedFrames * vy,
+        false,
+        Math.floor(Math.sqrt(size) - 2) * (isClearingBg ? 4 : 1),
+      );
+    }
   });
-
   ctx.globalCompositeOperation = "screen";
   startWork("render:particles");
   forEachLiveOne(gameState.particles, (particle) => {
@@ -495,6 +503,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
         left + gameState.coinSize * 1.5,
         gameState.gameZoneHeight - gameState.puckHeight / 2,
         true,
+        0,
       );
 
       ctx.globalAlpha = 1;
@@ -518,6 +527,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
         gameState.puckPosition,
         gameState.gameZoneHeight - gameState.puckHeight / 2,
         false,
+        0,
       );
     }
   }
@@ -653,6 +663,8 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       gameState.canvasWidth / 2,
       gameState.gameZoneHeight +
         (gameState.canvasHeight - gameState.gameZoneHeight) / 2,
+      false,
+      0,
     );
   }
 
@@ -668,13 +680,14 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
         ctx,
         remaining.toString(),
         "white",
-        65,
+        60,
         gameState.canvasWidth / 2,
         gameState.canvasHeight / 2,
+        false,
+        10,
       );
 
       ctx.globalCompositeOperation = "screen";
-      ctx.globalAlpha = 1 / remaining;
       drawText(
         ctx,
         remaining.toString(),
@@ -682,6 +695,8 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
         60,
         gameState.canvasWidth / 2,
         gameState.canvasHeight / 2,
+        false,
+        0,
       );
     }
   }
@@ -872,6 +887,8 @@ export function renderAllBricks(
           gameState.puckHeight,
           x,
           y,
+          false,
+          1,
         );
       }
 
@@ -1057,8 +1074,8 @@ export function drawCoin(
       canctx.translate(-size / 2, -size / 2);
 
       canctx.globalCompositeOperation = "multiply";
-      drawText(canctx, "$", color, size - 2, size / 2, size / 2 + 1);
-      drawText(canctx, "$", color, size - 2, size / 2, size / 2 + 1);
+      drawText(canctx, "$", color, size - 2, size / 2, size / 2 + 1, false, 0);
+      drawText(canctx, "$", color, size - 2, size / 2, size / 2 + 1, false, 0);
     }
     cachedGraphics[key] = can;
   }
@@ -1302,20 +1319,40 @@ export function drawText(
   x: number,
   y: number,
   left = false,
+  borderWidth: number = 0,
 ) {
-  const key = "text" + text + "_" + color + "_" + fontSize + "_" + left;
+  const key =
+    "text" +
+    text +
+    "_" +
+    color +
+    "_" +
+    fontSize +
+    "_" +
+    left +
+    "_" +
+    borderWidth;
 
   if (!cachedGraphics[key]) {
     const can = document.createElement("canvas");
-    can.width = fontSize * text.length + 4;
-    can.height = fontSize + 4;
+    can.width = fontSize * text.length + 4 + borderWidth * 2;
+    can.height = fontSize + 4 + borderWidth * 2;
     const canctx = can.getContext("2d") as CanvasRenderingContext2D;
     canctx.fillStyle = color;
     canctx.textAlign = left ? "left" : "center";
     canctx.textBaseline = "middle";
     canctx.font = (fontSize > 20 ? "bolder " : "") + fontSize + "px monospace";
+    if (borderWidth) {
+      canctx.strokeStyle = color;
+      canctx.lineWidth = borderWidth;
+      canctx.strokeText(
+        text,
+        left ? 0 : can.width / 2,
+        can.height / 2,
+        can.width,
+      );
+    }
     canctx.fillText(text, left ? 0 : can.width / 2, can.height / 2, can.width);
-
     cachedGraphics[key] = can;
   }
   ctx.drawImage(
@@ -1422,3 +1459,5 @@ function updateScoreDisplay(gameState: GameState) {
     gameState.lastScoreIncrease > gameState.levelTime - 500 ? "add" : "remove"
   ]("active");
 }
+
+const trueFalse = [true, false];

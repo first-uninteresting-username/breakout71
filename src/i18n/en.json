@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "Try perks and levels you unlocked",
     "play.auto_save_resumed": "Auto save loaded and cleared.",
     "play.close_modale_window_tooltip": "close",
+    "play.combo_reset": "RESET",
     "play.current_lvl": "Level {{level}}/{{max}}",
     "play.forgiven": "Forgiven",
     "play.gravity": "Gravity",

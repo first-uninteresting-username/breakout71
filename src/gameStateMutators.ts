@@ -273,19 +273,34 @@ export function resetCombo(
       );
     }
     if (typeof x !== "undefined" && typeof y !== "undefined") {
-      makeComboText(gameState, x, y, -lost);
+      makeComboText(gameState, x, y, -lost, true);
     }
   }
   return lost;
 }
 
 let comboLastNotification = 1;
-function makeComboText(gameState: GameState, x: number, y: number, by: number) {
+function makeComboText(
+  gameState: GameState,
+  x: number,
+  y: number,
+  by: number,
+  isReset: boolean = false,
+) {
   const importance =
     1 +
     Math.round(clamp(Math.abs(by) / (comboLastNotification + 10), 0, 2) * 2) /
       2;
+
   comboLastNotification = gameState.combo;
+  let text =
+    "×" +
+    (gameState.combo > 6000
+      ? Math.round(gameState.combo / 1000) + "k"
+      : gameState.combo);
+  if (isReset) {
+    text = t("play.combo_reset");
+  }
 
   makeText(
     gameState,
@@ -300,10 +315,7 @@ function makeComboText(gameState: GameState, x: number, y: number, by: number) {
       gameState.gameZoneHeight - gameState.puckHeight * 2 * importance,
     ),
     by > 0 ? "#ffd300" : "#FF0000",
-    "x" +
-      (gameState.combo > 6000
-        ? Math.round(gameState.combo / 1000) + "k"
-        : gameState.combo),
+    text,
     20 * importance,
     100 + 250 * importance,
     0,
@@ -2043,18 +2055,20 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
       } else {
         gameState.levelMisses++;
         gameState.runStatistics.misses++;
+        let previousCombo = gameState.combo;
         resetCombo(gameState, ball.x, ball.y, ball);
-        makeText(
-          gameState,
-          gameState.puckPosition,
-          gameState.gameZoneHeight - gameState.puckHeight * 2,
-          "#FF0000",
-          t("play.missed_ball"),
-          gameState.puckHeight,
-          500,
-          ball.vx,
-          ball.vy,
-        );
+        if (previousCombo == gameState.combo)
+          makeText(
+            gameState,
+            ball.x,
+            gameState.gameZoneHeight - gameState.puckHeight * 2,
+            "#FF0000",
+            t("play.missed_ball"),
+            gameState.puckHeight,
+            500,
+            0,
+            -1,
+          );
       }
     }
 

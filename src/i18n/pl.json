@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "Tryp i poziomy odblokują się",
     "play.auto_save_resumed": "",
     "play.close_modale_window_tooltip": "bliski",
+    "play.combo_reset": "",
     "play.current_lvl": "Poziom {{level}}/ (ang.)",
     "play.forgiven": "",
     "play.gravity": "",

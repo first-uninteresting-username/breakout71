@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "解禁した特典やレベルを試す",
     "play.auto_save_resumed": "",
     "play.close_modale_window_tooltip": "閉じる",
+    "play.combo_reset": "",
     "play.current_lvl": "レベル{{level}}／{{max}}",
     "play.forgiven": "",
     "play.gravity": "",

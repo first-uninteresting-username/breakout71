@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "جرب الامتيازات والمستويات التي فتحتها",
     "play.auto_save_resumed": "",
     "play.close_modale_window_tooltip": "يغلق",
+    "play.combo_reset": "",
     "play.current_lvl": "المستوى {{level}}/{{max}}",
     "play.forgiven": "",
     "play.gravity": "",

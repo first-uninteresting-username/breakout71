@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "Prova i potenziamenti e i livelli che hai sbloccato",
     "play.auto_save_resumed": "",
     "play.close_modale_window_tooltip": "chiudi",
+    "play.combo_reset": "",
     "play.current_lvl": "Livello {{level}}/{{max}}",
     "play.forgiven": "",
     "play.gravity": "",

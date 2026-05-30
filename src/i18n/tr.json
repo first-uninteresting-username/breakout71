@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "Kilidini açtığınız avantajları ve seviyeleri deneyin",
     "play.auto_save_resumed": "",
     "play.close_modale_window_tooltip": "Kapalı",
+    "play.combo_reset": "",
     "play.current_lvl": "Seviye {{level}}/{{max}}",
     "play.forgiven": "",
     "play.gravity": "",

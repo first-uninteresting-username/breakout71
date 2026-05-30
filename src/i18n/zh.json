@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "尝试已解锁的被动技能和关卡",
     "play.auto_save_resumed": "自动保存已载入并且已清除。",
     "play.close_modale_window_tooltip": "关闭",
+    "play.combo_reset": "",
     "play.current_lvl": "关卡 {{level}}/{{max}}",
     "play.forgiven": "宽容",
     "play.gravity": "重力",

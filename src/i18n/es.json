@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "Prueba mejoras y niveles que has desbloqueado",
     "play.auto_save_resumed": "Autoguardado cargado y limpio.",
     "play.close_modale_window_tooltip": "Cerrar",
+    "play.combo_reset": "",
     "play.current_lvl": "Nivel {{level}}/{{max}}",
     "play.forgiven": "Perdonado",
     "play.gravity": "Gravedad",

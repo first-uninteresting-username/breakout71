@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "Freigeschaltete Vergünstigungen und Stufen ausprobieren",
     "play.auto_save_resumed": "",
     "play.close_modale_window_tooltip": "Schließen",
+    "play.combo_reset": "",
     "play.current_lvl": "Level {{level}}/{{max}}",
     "play.forgiven": "",
     "play.gravity": "",

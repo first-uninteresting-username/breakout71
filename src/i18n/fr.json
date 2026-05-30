@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "Essayez les éléments débloqués",
     "play.auto_save_resumed": "Sauvegarde automatique chargée et supprimée.",
     "play.close_modale_window_tooltip": "Fermer",
+    "play.combo_reset": "",
     "play.current_lvl": "Niveau {{level}}/{{max}}",
     "play.forgiven": "Pardonné",
     "play.gravity": "Gravité",

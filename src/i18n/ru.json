@@ -107,6 +107,7 @@
     "main_menu.unlocks_help": "Попробуйте преимущества и уровни, которые вы разблокировали",
     "play.auto_save_resumed": "",
     "play.close_modale_window_tooltip": "Закрыть",
+    "play.combo_reset": "",
     "play.current_lvl": "Уровень {{level}}/{{max}}",
     "play.forgiven": "",
     "play.gravity": "",
