@@ -1,4 +1,4 @@
-import { Level, Palette, RawLevel, Upgrade } from "./types";
+import { Level, Palette, RawLevel, UnlockCondition, Upgrade } from "./types";
 import _palette from "./data/palette.json";
 import _rawLevelsList from "./data/levels.json";
 import _appVersion from "./data/version.json";
@@ -7,6 +7,7 @@ import { getLevelBackground } from "./getLevelBackground";
 
 import { automaticBackgroundColor } from "./pure_functions";
 import { getLevelUnlockCondition } from "./get_level_unlock_condition";
+import _hardCodedCondition from "./data/unlockConditions.json";
 
 export const upgrades = [...rawUpgrades].sort(
   (a, b) => a.category - b.category || a.threshold - b.threshold,
@@ -37,12 +38,14 @@ export const allLevelsAndIcons = rawLevelsList.map(
   transformRawLevel,
 ) as Level[];
 
+export const hardCodedCondition = _hardCodedCondition as Record<
+  string,
+  UnlockCondition
+>;
 export const allLevels = allLevelsAndIcons
   .filter((l) => !l.name.startsWith("icon:"))
   .map((l, li) => ({
     ...l,
-    ...getLevelUnlockCondition(li, l.name),
+    ...(hardCodedCondition[l.name] || getLevelUnlockCondition(li)),
   }))
   .sort((a, b) => a.minScore - b.minScore);
-
-console.log(allLevels);

@@ -3,13 +3,6 @@ import { upgrades } from "./loadGameData";
 import { hashCode } from "./getLevelBackground";
 import { t } from "./i18n/i18n";
 
-import _hardCodedCondition from "./data/unlockConditions.json";
-
-const hardCodedCondition = _hardCodedCondition as Record<
-  string,
-  UnlockCondition
->;
-
 let excluded: Set<PerkId>;
 
 function isExcluded(id: PerkId) {
@@ -28,11 +21,7 @@ function isExcluded(id: PerkId) {
   return excluded.has(id);
 }
 
-export function getLevelUnlockCondition(
-  levelIndex: number,
-  levelName: string,
-): UnlockCondition {
-  if (hardCodedCondition[levelName]) return hardCodedCondition[levelName];
+export function getLevelUnlockCondition(levelIndex: number): UnlockCondition {
   const result: UnlockCondition = {
     required: [],
     forbidden: [],
@@ -69,14 +58,14 @@ export function getBestScoreMatching(
       .map((r) => r.score),
   );
 }
-// TODO
+
 export function isLevelLocked(level: Level, history: RunHistoryItem[]) {
   return (
     getBestScoreMatching(history, level.required, level.forbidden) <
     level.minScore
   );
 }
-// TODO
+
 export function reasonLevelIsLocked(
   level: Level,
   history: RunHistoryItem[],

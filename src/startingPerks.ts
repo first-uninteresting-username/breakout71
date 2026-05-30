@@ -7,7 +7,7 @@ import {
   highScoreText,
   sample,
 } from "./game_utils";
-import { allLevels, upgrades } from "./loadGameData";
+import { upgrades } from "./loadGameData";
 import { getIcon } from "./levelIcon";
 import { t } from "./i18n/i18n";
 import { mainGameState, restart } from "./game";
@@ -45,10 +45,12 @@ export function getStartingPerks() {
 }
 
 function possibleStartingPerks() {
-  return rawUpgrades.filter(
-    (upgrade) =>
-      upgrade.category === categories.combo || upgrade.id == "slow_down",
-  ) as Upgrade[];
+  return rawUpgrades
+    .filter(
+      (upgrade) =>
+        upgrade.category === categories.combo || upgrade.id == "slow_down",
+    )
+    .sort((a, b) => a.threshold - b.threshold) as Upgrade[];
 }
 
 export function getStartRunButtons() {

@@ -7,11 +7,7 @@ import { pause } from "./game";
 import { allLevels, upgrades } from "./loadGameData";
 import { firstWhere } from "./pure_functions";
 import { getSettingValue, getTotalScore } from "./settings";
-import {
-  getLevelUnlockCondition,
-  reasonLevelIsLocked,
-  upgradeName,
-} from "./get_level_unlock_condition";
+import { reasonLevelIsLocked, upgradeName } from "./get_level_unlock_condition";
 import { isOptionOn } from "./options";
 import { getIcon } from "./levelIcon";
 import { closeLevelPreview, openLevelDetails } from "./openLevelDetails";

@@ -9,7 +9,6 @@ import { allLevels } from "./loadGameData";
 import { t } from "./i18n/i18n";
 import { toast } from "./toast";
 import { schedulGameSound } from "./gameStateMutators";
-import { getLevelUnlockCondition } from "./get_level_unlock_condition";
 import { getIcon } from "./levelIcon";
 
 let unlocked: Set<string> | null = null;
