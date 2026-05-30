@@ -1,4 +1,4 @@
-import {getLevelUnlockCondition} from "./get_level_unlock_condition";
+import { getLevelUnlockCondition } from "./get_level_unlock_condition";
 import {
   allLevelsAndIcons,
   hardCodedCondition,

@@ -211,7 +211,7 @@
     "unlocks.include_in_level_pool_help": "Draw this level sometimes during gameplay",
     "unlocks.include_in_level_pool_locked": "You need to keep at least 15 levels.",
     "unlocks.include_in_unlock_hints_help": "Help me to unlock the level",
-    "unlocks.include_in_unlock_not_during_gameplay": "You cannot change this setting after a game has started. ",
+    "unlocks.include_in_unlock_not_during_gameplay": "You cannot change this setting after a game has started.",
     "unlocks.intro": "Your total score is {{ts}}. Click an upgrade below to start a game with it.",
     "unlocks.just_unlocked": "Level unlocked",
     "unlocks.just_unlocked_plural": "You just unlocked {{count}} levels",
