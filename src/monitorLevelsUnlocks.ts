@@ -1,4 +1,4 @@
-import { GameState, PerkId } from "./types";
+import { GameState } from "./types";
 import {
   commitSettingsChangesToLocalStorage,
   getSettingValue,

@@ -1,12 +1,7 @@
 import { PerkId, RunParams, Upgrade } from "./types";
 import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
 import { categories, rawUpgrades } from "./upgrades";
-import {
-  currentLevelInfo,
-  getHighScore,
-  highScoreText,
-  sample,
-} from "./game_utils";
+import { currentLevelInfo, getHighScore, sample } from "./game_utils";
 import { upgrades } from "./loadGameData";
 import { getIcon } from "./levelIcon";
 import { t } from "./i18n/i18n";

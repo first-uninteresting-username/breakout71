@@ -5,12 +5,7 @@ import {
   appVersion,
   upgrades,
 } from "./loadGameData";
-import {
-  defaultSounds,
-  getHighScore,
-  makeEmptyPerksMap,
-  sumOfValues,
-} from "./game_utils";
+import { defaultSounds, getHighScore, makeEmptyPerksMap } from "./game_utils";
 import { resetBalls } from "./gameStateMutators";
 import { getHistory } from "./gameOver";
 import { getSettingValue } from "./settings";

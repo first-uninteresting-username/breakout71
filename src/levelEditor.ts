@@ -1,6 +1,6 @@
 import { transformRawLevel } from "./loadGameData";
 import { t } from "./i18n/i18n";
-import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
+import { getSettingValue, setSettingValue } from "./settings";
 import { asyncAlert, closeModal } from "./asyncAlert";
 import { Palette, RawLevel } from "./types";
 import { getIcon, levelIconHTML } from "./levelIcon";

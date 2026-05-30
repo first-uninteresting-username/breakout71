@@ -1,4 +1,3 @@
-import { allLevelsAndIcons, upgrades } from "./loadGameData";
 import { t } from "./i18n/i18n";
 import { asyncAlert } from "./asyncAlert";
 import { miniMarkDown } from "./pure_functions";

@@ -2,7 +2,6 @@ import { GameState } from "./types";
 import { getClosestBall } from "./game_utils";
 import { hashCode } from "./getLevelBackground";
 import { clamp } from "./pure_functions";
-import { startComputerControlledGame } from "./game";
 import { forEachLiveOne } from "./gameStateMutators";
 import { gameOver } from "./gameOver";
 

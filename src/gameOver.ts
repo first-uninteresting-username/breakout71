@@ -16,19 +16,16 @@ import {
 } from "./settings";
 import { stopRecording } from "./recording";
 import { asyncAlert } from "./asyncAlert";
-import { closeEditorTrialRun, editRawLevel } from "./levelEditor";
-import { closeCreativeRun, openCreativeModePerksPicker } from "./creative";
-import {
-  isLevelLocked,
-  reasonLevelIsLocked,
-} from "./get_level_unlock_condition";
+import { closeEditorTrialRun } from "./levelEditor";
+import { closeCreativeRun } from "./creative";
+import { isLevelLocked } from "./get_level_unlock_condition";
 import {
   applySettingsChangeReco,
   getUpgradeHelp,
   settingsChangeRecommendations,
 } from "./openUpgradesPicker";
 import { getIcon } from "./levelIcon";
-import { closeLevelPreview, openLevelDetails } from "./openLevelDetails";
+import { closeLevelPreview } from "./openLevelDetails";
 import { pickedUpgradesHTMl } from "./picked_upgrades_html";
 
 export function addToTotalPlayTime(ms: number) {

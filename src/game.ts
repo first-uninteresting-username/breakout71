@@ -63,7 +63,7 @@ import {
 import { isOptionOn, options, toggleOption } from "./options";
 import { clamp, isComputerControlled } from "./pure_functions";
 import { helpMenuEntry } from "./help";
-import { creativeMode, openCreativeModePerksPicker } from "./creative";
+import { creativeMode } from "./creative";
 import { hideAnyTooltip, setupTooltips } from "./tooltip";
 import "./migrations";
 import { generateSaveFileContent } from "./generateSaveFileContent";

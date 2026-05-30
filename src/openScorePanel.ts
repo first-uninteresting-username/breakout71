@@ -10,9 +10,9 @@ import { getSettingValue, getTotalScore } from "./settings";
 import { reasonLevelIsLocked, upgradeName } from "./get_level_unlock_condition";
 import { isOptionOn } from "./options";
 import { getIcon } from "./levelIcon";
-import { closeLevelPreview, openLevelDetails } from "./openLevelDetails";
+import { closeLevelPreview } from "./openLevelDetails";
 import { closeEditorTrialRun } from "./levelEditor";
-import { closeCreativeRun, openCreativeModePerksPicker } from "./creative";
+import { closeCreativeRun } from "./creative";
 import { pickedUpgradesHTMl } from "./picked_upgrades_html";
 
 export async function openScorePanel(gameState: GameState) {
