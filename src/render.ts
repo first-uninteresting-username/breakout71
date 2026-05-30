@@ -338,13 +338,11 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       if (size < 15 && isClearingBg) {
         continue;
       }
-      ctx.globalCompositeOperation = isClearingBg
-        ? "destination-out"
-        : "source-over";
+      ctx.globalCompositeOperation = "source-over";
       drawText(
         ctx,
         flash.text,
-        color,
+        isClearingBg ? level.color : color,
         size,
         x + elapsedFrames * vx,
         y + elapsedFrames * vy,

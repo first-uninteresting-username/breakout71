@@ -2067,7 +2067,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
             gameState.puckHeight,
             500,
             0,
-            -1,
+            1,
           );
       }
     }
