@@ -2070,5 +2070,80 @@
     "required": ["round_bricks", "ghost_coins", "flyswatter"],
     "forbidden": ["gravity_falls", "thomas", "paddle_up_combo"],
     "minScore": 39800
+  },
+  "A little bit of sunshine": {
+    "required": ["bigger_explosions", "concave_puck", "addiction"],
+    "forbidden": ["instant_explosion", "minefield", "ghost_coins"],
+    "minScore": 39900
+  },
+  "Tako Luka": {
+    "required": ["bricks_attract_ball", "addiction", "ottawa_treaty"],
+    "forbidden": ["double_or_nothing", "minefield", "ball_attract_ball"],
+    "minScore": 40000
+  },
+  "Mauve ": {
+    "required": ["superhot", "right_is_lava", "minefield"],
+    "forbidden": ["flyswatter", "sacrifice", "addiction"],
+    "minScore": 40100
+  },
+  "Seychelles": {
+    "required": ["asceticism", "paddle_up_combo", "sacrifice"],
+    "forbidden": ["soft_brush", "soft_reset", "soft_touch"],
+    "minScore": 40200
+  },
+  "Synthwave Landscape": {
+    "required": ["golden_goose", "gravity_falls", "bricks_attract_coins"],
+    "forbidden": ["trampoline", "respawn", "sacrifice"],
+    "minScore": 40300
+  },
+  "skibidi toilet 67": {
+    "required": ["bricks_attract_coins", "metamorphosis", "implosions"],
+    "forbidden": ["bigger_explosions", "instant_explosion", "forgiving"],
+    "minScore": 40400
+  },
+  "Full Moon": {
+    "required": ["forgiving", "etherealcoins", "steering"],
+    "forbidden": ["three_cushion", "viscosity", "limitless"],
+    "minScore": 40500
+  },
+  "Chromatic aberration.": {
+    "required": ["limitless", "unbounded", "viscosity"],
+    "forbidden": ["puck_repulse_ball", "round_bricks", "ball_repulse_ball"],
+    "minScore": 40600
+  },
+  "Chicken or the egg?": {
+    "required": ["corner_shot", "concave_puck", "clairvoyant"],
+    "forbidden": ["disco_ball", "skip_last", "unbounded"],
+    "minScore": 40700
+  },
+  "Schrödinger's cat.": {
+    "required": ["ball_attracts_coins", "clairvoyant", "streak_shots"],
+    "forbidden": ["skip_last", "instant_explosion", "compound_interest"],
+    "minScore": 40800
+  },
+  "Solar eclipse.": {
+    "required": ["picky_eater", "side_flip", "side_kick"],
+    "forbidden": ["passive_income", "ghost_coins", "smaller_puck"],
+    "minScore": 40900
+  },
+  "Cupids Arrow": {
+    "required": ["trickledown", "disco_ball", "side_flip"],
+    "forbidden": ["side_kick", "etherealcoins", "helium"],
+    "minScore": 41000
+  },
+  "Sandwich": {
+    "required": ["flyswatter", "ball_repulse_ball", "fountain_toss"],
+    "forbidden": ["puck_repulse_ball", "golden_goose", "trickledown"],
+    "minScore": 41100
+  },
+  "Tetris 71": {
+    "required": ["asceticism", "golden_goose", "trickledown"],
+    "forbidden": ["soft_brush", "side_kick", "side_flip"],
+    "minScore": 41200
+  },
+  "Atom": {
+    "required": ["bigger_explosions", "ottawa_treaty", "trampoline"],
+    "forbidden": ["instant_explosion", "compound_interest", "trickledown"],
+    "minScore": 41300
   }
 }

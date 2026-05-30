@@ -4,16 +4,17 @@ import { t } from "./i18n/i18n";
 import { levelsListHTMl, renderMaxLevel } from "./game_utils";
 import { getHistory } from "./gameOver";
 import { pause } from "./game";
-import { allLevels, upgrades } from "./loadGameData";
+import { upgrades } from "./loadGameData";
 import { firstWhere } from "./pure_functions";
 import { getSettingValue, getTotalScore } from "./settings";
-import { reasonLevelIsLocked, upgradeName } from "./get_level_unlock_condition";
 import { isOptionOn } from "./options";
 import { getIcon } from "./levelIcon";
 import { closeLevelPreview } from "./openLevelDetails";
 import { closeEditorTrialRun } from "./levelEditor";
 import { closeCreativeRun } from "./creative";
 import { pickedUpgradesHTMl } from "./picked_upgrades_html";
+import { allLevels } from "./allLevels";
+import { reasonLevelIsLocked, upgradeName } from "./reason_level_is_locked";
 
 export async function openScorePanel(gameState: GameState) {
   pause(true);

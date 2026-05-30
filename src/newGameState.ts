@@ -1,10 +1,5 @@
 import { GameState, PerkId, RunParams } from "./types";
-import {
-  allLevels,
-  allLevelsAndIcons,
-  appVersion,
-  upgrades,
-} from "./loadGameData";
+import { allLevelsAndIcons, appVersion, upgrades } from "./loadGameData";
 import { defaultSounds, getHighScore, makeEmptyPerksMap } from "./game_utils";
 import { resetBalls } from "./gameStateMutators";
 import { getHistory } from "./gameOver";
@@ -16,6 +11,7 @@ import {
   logUpgradePicked,
   logUpgradeShown,
 } from "./openUpgradesPicker";
+import { allLevels } from "./allLevels";
 
 export function getRunLevels(
   params: RunParams,

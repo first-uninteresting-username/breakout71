@@ -4,12 +4,12 @@ import {
   getSettingValue,
   setSettingValue,
 } from "./settings";
-import { allLevels } from "./loadGameData";
 
 import { t } from "./i18n/i18n";
 import { toast } from "./toast";
 import { schedulGameSound } from "./gameStateMutators";
 import { getIcon } from "./levelIcon";
+import { allLevels } from "./allLevels";
 
 let unlocked: Set<string> | null = null;
 

@@ -53,7 +53,7 @@ describe("conditions", () => {
       .filter((l) => !l.name.startsWith("icon:"))
       .forEach((l, li) => {
         if (l.name in conditions) return;
-        toAdd[l.name] = getLevelUnlockCondition(li);
+        toAdd[l.name] = getLevelUnlockCondition(li, upgrades);
       });
     if (Object.keys(toAdd).length) {
       console.debug(

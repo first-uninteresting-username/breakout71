@@ -6,7 +6,6 @@ import { rawUpgrades } from "./upgrades";
 import { getLevelBackground } from "./getLevelBackground";
 
 import { automaticBackgroundColor } from "./pure_functions";
-import { getLevelUnlockCondition } from "./get_level_unlock_condition";
 import _hardCodedCondition from "./data/unlockConditions.json";
 
 export const upgrades = [...rawUpgrades].sort(
@@ -42,10 +41,3 @@ export const hardCodedCondition = _hardCodedCondition as Record<
   string,
   UnlockCondition
 >;
-export const allLevels = allLevelsAndIcons
-  .filter((l) => !l.name.startsWith("icon:"))
-  .map((l, li) => ({
-    ...l,
-    ...(hardCodedCondition[l.name] || getLevelUnlockCondition(li)),
-  }))
-  .sort((a, b) => a.minScore - b.minScore);

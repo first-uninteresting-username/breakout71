@@ -1,4 +1,4 @@
-import { allLevels, appVersion, upgrades } from "./loadGameData";
+import { appVersion, upgrades } from "./loadGameData";
 import { t } from "./i18n/i18n";
 import { GameState, RunHistoryItem } from "./types";
 import {
@@ -27,6 +27,7 @@ import {
 import { getIcon } from "./levelIcon";
 import { closeLevelPreview } from "./openLevelDetails";
 import { pickedUpgradesHTMl } from "./picked_upgrades_html";
+import { allLevels } from "./allLevels";
 
 export function addToTotalPlayTime(ms: number) {
   setSettingValue(

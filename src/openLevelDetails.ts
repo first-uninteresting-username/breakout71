@@ -1,7 +1,5 @@
 import { GameState, Level, RunParams } from "./types";
 import { getSettingValue, setSettingValue } from "./settings";
-import { reasonLevelIsLocked } from "./get_level_unlock_condition";
-import { allLevels } from "./loadGameData";
 import { getHistory } from "./gameOver";
 import { asyncAlert } from "./asyncAlert";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
@@ -14,6 +12,8 @@ import {
   openUnlockedLevelsList,
   restart,
 } from "./game";
+import { allLevels } from "./allLevels";
+import { reasonLevelIsLocked } from "./reason_level_is_locked";
 
 export async function openLevelDetails(level: Level) {
   const unlockedBefore = new Set<string>(

@@ -1,4 +1,4 @@
-import { allLevels, appVersion, upgrades } from "./loadGameData";
+import { appVersion, upgrades } from "./loadGameData";
 import {
   Ball,
   Coin,
@@ -79,6 +79,7 @@ import { menuClick } from "./menuSound";
 import { toast } from "./toast";
 import { addGameToHistory } from "./gameOver";
 import { getStartRunButtons } from "./startingPerks";
+import { allLevels } from "./allLevels";
 
 export async function play() {
   if (await applyFullScreenChoice()) return;
