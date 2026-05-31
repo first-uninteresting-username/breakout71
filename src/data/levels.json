@@ -3256,5 +3256,19 @@
     "size": 17,
     "bricks": "_______WWW_____________WW_WW____________W___W_______yyyy_W___W_OOOO__y___yyy_OOW___O__y___W_OOy_W___O__y___OO___yW___O___y_OW__r__Wy_O_____y_W_rBr_W_O_____O_yW__r__WO_y___O___yy___OW___y__O___WyyyOOW___y__O___OOO_yyW___y__OOOOOW___Wyyyyy_______W___W____________WW_WW_____________WWW_______",
     "credit": "https://en.wikipedia.org/wiki/Ernest_Rutherford - ThatGuyOverThere"
+  },
+  {
+    "color": "#115988",
+    "size": 16,
+    "bricks": "___________________glllllllll______lggggggggl______lrBBOOBOgl______lgOBOBBOgl______lgBBBOBOgl______lgOBOOBOgl______lgOBOOBOgl______lggggggggl______llllllllll______llglllllll______lgBgllllpl______llglllplll______lllllllllB______llgglgglBl_______llllllll____",
+    "name": "Gameboy 71",
+    "credit": "Wombatmithut"
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "______________________________________________________________________________________________________________________________________r__________________________________rr_r__rr___rrr__rrr__r_r_r__r__r____r_____r_r_r__r___rr___rr___r_r_r__r_____r____r__r_r_r_rrr_rrr__rrr__________________________________________________________________________________________________________________________________________________________________________",
+    "name": "miss",
+    "credit": "This is the text shown when missing the bricks in the english version - Greg1415"
   }
 ]

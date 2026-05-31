@@ -16,13 +16,11 @@ import {
   isMovingWhilePassiveIncome,
   isPickyEatingPossible,
   reachRedRowIndex,
-  shortenBigNumber,
   renderMaxLevel,
   telekinesisEffectRate,
   yoyoEffectRate,
   zoneLeftBorderX,
   zoneRightBorderX,
-  formatFullNumber,
 } from "./game_utils";
 import { colorString, GameState } from "./types";
 import { currentLanguageSupportsHeavyFontWeight, t } from "./i18n/i18n";
@@ -44,6 +42,7 @@ import {
 import { lastMeasuredFPS, startWork } from "./fps";
 import { hashCode } from "./getLevelBackground";
 import { palette } from "./loadGameData";
+import { formatFullNumber, shortenBigNumber } from "./format_number";
 
 export const gameCanvas = document.getElementById("game") as HTMLCanvasElement;
 

@@ -17,7 +17,6 @@ import {
   brickCenterX,
   brickCenterY,
   currentLevelInfo,
-  getRowColIndex,
   hoursSpentPlaying,
   sample,
 } from "./game_utils";
@@ -61,7 +60,7 @@ import {
   closeModal,
 } from "./asyncAlert";
 import { isOptionOn, options, toggleOption } from "./options";
-import { clamp, isComputerControlled } from "./pure_functions";
+import { clamp, getRowColIndex, isComputerControlled } from "./pure_functions";
 import { helpMenuEntry } from "./help";
 import { creativeMode } from "./creative";
 import { hideAnyTooltip, setupTooltips } from "./tooltip";

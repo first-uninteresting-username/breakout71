@@ -4,7 +4,8 @@ import { t } from "./i18n/i18n";
 import { asyncAlert } from "./asyncAlert";
 import { getSettingValue, setSettingValue } from "./settings";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
-import { formatFullNumber } from "./game_utils";
+
+import { formatFullNumber } from "./format_number";
 
 export function runHistoryViewerMenuEntry() {
   const history = getHistory();

@@ -1,18 +1,14 @@
 import { PerkId, RunParams, Upgrade } from "./types";
 import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
 import { categories, rawUpgrades } from "./upgrades";
-import {
-  currentLevelInfo,
-  formatFullNumber,
-  getHighScore,
-  sample,
-} from "./game_utils";
+import { currentLevelInfo, getHighScore, sample } from "./game_utils";
 import { upgrades } from "./loadGameData";
 import { getIcon } from "./levelIcon";
 import { t } from "./i18n/i18n";
 import { mainGameState, restart } from "./game";
 import { asyncAlert } from "./asyncAlert";
 import { getUpgradeHelp } from "./openUpgradesPicker";
+import { formatFullNumber } from "./format_number";
 
 export function getStartingPerks() {
   const favorite = getSettingValue<string>("starting_perk", "");

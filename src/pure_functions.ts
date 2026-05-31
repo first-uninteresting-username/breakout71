@@ -1,5 +1,4 @@
 import { Ball, GameState } from "./types";
-import { getRowColIndex } from "./game_utils";
 
 export function clamp(value: number, min: number, max: number) {
   return Math.max(min, Math.min(value, max));
@@ -174,6 +173,17 @@ export function getNewReusableArray<T>() {
     total: 0,
     list: [] as T[],
   };
+}
+
+export function getRowColIndex(gameState: GameState, row: number, col: number) {
+  if (
+    row < 0 ||
+    col < 0 ||
+    row >= gameState.gridSize ||
+    col >= gameState.gridSize
+  )
+    return -1;
+  return row * gameState.gridSize + col;
 }
 
 export function countDifferentColorBricks(

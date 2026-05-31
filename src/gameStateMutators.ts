@@ -24,13 +24,11 @@ import {
   getClosestBall,
   getCoinRenderColor,
   getCornerOffset,
-  getRowColIndex,
   isBrickOverPaddle,
   isMovingWhilePassiveIncome,
   isPickyEatingPossible,
   max_levels,
   reachRedRowIndex,
-  shortenBigNumber,
   shouldPierceByColor,
   telekinesisEffectRate,
   yoyoEffectRate,
@@ -57,12 +55,14 @@ import {
   comboKeepingRate,
   countDifferentColorBricks,
   getNewReusableArray,
+  getRowColIndex,
   isComputerControlled,
 } from "./pure_functions";
 import { addToTotalScore } from "./addToTotalScore";
 import { openUpgradesPicker } from "./openUpgradesPicker";
 import { computerControl } from "./computerControl";
 import { palette } from "./loadGameData";
+import { shortenBigNumber } from "./format_number";
 
 export function setMousePos(gameState: GameState, x: number) {
   if (isComputerControlled(gameState)) return;

@@ -2145,5 +2145,15 @@
     "required": ["bigger_explosions", "ottawa_treaty", "trampoline"],
     "forbidden": ["instant_explosion", "compound_interest", "trickledown"],
     "minScore": 41300
+  },
+  "Gameboy 71": {
+    "required": ["right_is_lava", "sturdy_bricks", "round_bricks"],
+    "forbidden": ["implosions", "wrap_up", "thomas"],
+    "minScore": 41400
+  },
+  "miss": {
+    "required": ["steering", "concave_puck", "round_bricks"],
+    "forbidden": ["puck_repulse_ball", "paddle_up_combo", "ball_repulse_ball"],
+    "minScore": 41500
   }
 }

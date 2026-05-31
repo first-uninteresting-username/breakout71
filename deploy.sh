@@ -37,7 +37,7 @@ git commit -m "Build $versionCode"
 git push
 
 # Now that fdroid builds daily, we can deploy there systematically
-# git tag -a $versionCode -m $versionCode
+git tag -a $versionCode -m $versionCode
 
 # upload to breakout.lecaro.me
 DOMAIN="breakout.lecaro.me"
