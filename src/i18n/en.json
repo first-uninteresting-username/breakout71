@@ -139,7 +139,7 @@
     "settings.colorful_coins": "Colorful coins",
     "settings.colorful_coins_help": "Coins always spawn of the color of the brick",
     "settings.combo_bubbles": "Floating Combo Text",
-    "settings.combo_bubbles_help": "Announce the current combo / rest in game, on the location of the loss or gain of combo",
+    "settings.combo_bubbles_help": "Announce the current combo / reset in game, on the location of the loss or gain of combo",
     "settings.contrast": "High Contrast",
     "settings.contrast_help": "More colorful and dark rendering",
     "settings.donation_reminder": "Remind me to donate",
