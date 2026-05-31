@@ -2245,6 +2245,9 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
   const hitBrick = vhit ?? hhit ?? chit;
 
   if (typeof hitBrick !== "undefined") {
+    const dx = ball.x - brickCenterX(gameState, hitBrick);
+    const dy = ball.y - brickCenterY(gameState, hitBrick);
+
     const hitFrom: HitDirection =
       (typeof vhit == "undefined" &&
         typeof hhit !== "undefined" &&
@@ -2262,7 +2265,15 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
         typeof hhit == "undefined" &&
         ball.previousVY < 0 &&
         "bottom") ||
-      "corner";
+      (Math.abs(dx) > Math.abs(dy)
+        ? dx > 0
+          ? "left"
+          : "right"
+        : dy > 0
+          ? "left"
+          : "right");
+
+    makeText(gameState, x, y, "pink", hitFrom);
 
     const initialBrickColor = gameState.bricks[hitBrick];
     ball.hitSinceBounce++;
@@ -2320,10 +2331,18 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     if (gameState.perks.pierce_above_paddle && ballIsAbovePaddle) {
       damageMultiplier += gameState.perks.pierce_above_paddle * 2.1;
     }
-
+    let baseDmg = 1;
+    if (
+      gameState.perks.hardhat &&
+      hitFrom === "top" &&
+      gameState.bricks[hitBrick] !== "black"
+    ) {
+      baseDmg /= Math.pow(2, gameState.perks.hardhat);
+      damageMultiplier /= Math.pow(2, gameState.perks.hardhat);
+    }
     let dmg = Math.min(
       gameState.brickHP[hitBrick],
-      1 + ball.piercePoints * damageMultiplier,
+      baseDmg + ball.piercePoints * damageMultiplier,
     );
     if (gameState.perks.soft_touch && !ballIsAbovePaddle) {
       dmg = 0;

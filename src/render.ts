@@ -853,7 +853,7 @@ export function renderAllBricks(
       if (!color) return;
 
       let redBecauseOfReach =
-        redRowReach === Math.floor(index / gameState.level.size);
+        hasCombo && redRowReach === Math.floor(index / gameState.level.size);
 
       let redBorder =
         (gameState.ballsColor !== color &&
@@ -1223,7 +1223,12 @@ export function drawBrick(
     if (offset !== -1) {
       canctx.setLineDash(redBorderDash);
       canctx.lineDashOffset = offset;
-      if (color === palette.r) {
+      if (
+        color === palette.s ||
+        color === palette.r ||
+        color === palette.R ||
+        color === palette.S
+      ) {
         canctx.globalCompositeOperation = "destination-out";
       }
       canctx.strokeStyle = palette.r;

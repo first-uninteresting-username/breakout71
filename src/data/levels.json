@@ -228,6 +228,12 @@
     "credit": ""
   },
   {
+    "name": "icon:hardhat",
+    "size": 10,
+    "bricks": "_______________________yyyy_____yyyyyy___yyyyyyyy__yyyybb____yyybbb_____ybbbb______bbb______________",
+    "credit": ""
+  },
+  {
     "name": "icon:helium",
     "size": 8,
     "bricks": "_y____y_yb____bybb___ybbb____b_b_____b____________________WWW___",

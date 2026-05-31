@@ -26,6 +26,7 @@ export const synergies: Partial<Record<PerkId, Array<PerkId>>> = {
     "soft_touch",
     "limitless",
     "round_bricks",
+    "hardhat",
   ],
   passive_income: [
     "yoyo",
