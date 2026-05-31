@@ -601,9 +601,8 @@ async function openSettingsMenu() {
               "precise_lighting",
               "probabilistic_lighting",
             ].includes(key)) ||
-          (!isOptionOn("particles") && ["missed_shot_trail"].includes(key))||(
-            !isOptionOn("sound") && ["menu_sound"].includes(key),
-          ) ||
+          (!isOptionOn("particles") && ["missed_shot_trail"].includes(key)) ||
+          (!isOptionOn("sound") && ["menu_sound"].includes(key)) ||
           false,
         value: () => {
           toggleOption(key);
