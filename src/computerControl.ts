@@ -82,6 +82,8 @@ export function computerControl(gameState: GameState) {
     }
   }
 
+  if (gameState.perks.top_is_lava) speed *= 1.3;
+
   gameState.puckPosition +=
     clamp((targetX - gameState.puckPosition) / 5, -10, 10) * speed;
   if (gameState.levelTime > 30000) {

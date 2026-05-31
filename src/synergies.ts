@@ -26,6 +26,7 @@ export const synergies: Partial<Record<PerkId, Array<PerkId>>> = {
     "soft_touch",
     "limitless",
     "round_bricks",
+    "hardhat",
   ],
   passive_income: [
     "yoyo",
@@ -44,4 +45,17 @@ export const synergies: Partial<Record<PerkId, Array<PerkId>>> = {
   varied_diet: ["metamorphosis", "disco_ball"],
   extra_levels: ["limitless"],
   sacrifice: ["extra_life"],
+  vibrant_neighborhood: ["fumes", "metamorphosis", "rainbow", "telekinesis"],
+  // beginner helpers
+  slow_down: [
+    "base_combo",
+    "bigger_puck",
+    "extra_life",
+    "telekinesis",
+    "yoyo",
+    "skip_last",
+    "chill",
+  ],
+  // hardcore players
+  smaller_puck: ["double_or_nothing", "limitless"],
 };

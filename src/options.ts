@@ -44,6 +44,11 @@ export const options = {
     name: t("settings.colorful_coins"),
     help: t("settings.colorful_coins_help"),
   },
+  missed_shot_trail: {
+    default: true,
+    name: t("settings.missed_shot_trail"),
+    help: t("settings.missed_shot_trail_help"),
+  },
   basic: {
     default: false,
     name: t("settings.basic"),
@@ -83,6 +88,16 @@ export const options = {
     default: false,
     name: t("settings.show_stats"),
     help: t("settings.show_stats_help"),
+  },
+  short_numbers: {
+    default: true,
+    name: t("settings.short_numbers"),
+    help: t("settings.short_numbers_help"),
+  },
+  combo_bubbles: {
+    default: true,
+    name: t("settings.combo_bubbles"),
+    help: t("settings.combo_bubbles_help"),
   },
   show_puck_rails: {
     default: true,

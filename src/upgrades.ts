@@ -1088,7 +1088,7 @@ export const rawUpgrades = [
   },
 
   {
-    category: categories.combo_boost,
+    category: categories.combo,
     requires: [],
     threshold: 280000,
     id: "vibrant_neighborhood",
@@ -1199,5 +1199,28 @@ export const rawUpgrades = [
     name: t("upgrades.soft_brush.name"),
     help: (lvl: number) => t("upgrades.soft_brush.tooltip"),
     fullHelp: (lvl: number) => t("upgrades.soft_brush.verbose_description"),
+  },
+  {
+    category: categories.advanced,
+    requires: [],
+    threshold: 420000,
+    id: "fumes",
+    max: 1,
+    hardLimit: 2,
+    name: t("upgrades.fumes.name"),
+    help: (lvl: number) => t("upgrades.fumes.tooltip"),
+    fullHelp: (lvl: number) => t("upgrades.fumes.verbose_description"),
+  },
+
+  {
+    category: categories.advanced,
+    requires: [],
+    threshold: 430000,
+    id: "hardhat",
+    max: 1,
+    hardLimit: 3,
+    name: t("upgrades.hardhat.name"),
+    help: (lvl: number) => t("upgrades.hardhat.tooltip"),
+    fullHelp: (lvl: number) => t("upgrades.hardhat.verbose_description"),
   },
 ] as const;

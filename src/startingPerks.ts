@@ -8,6 +8,7 @@ import { t } from "./i18n/i18n";
 import { mainGameState, restart } from "./game";
 import { asyncAlert } from "./asyncAlert";
 import { getUpgradeHelp } from "./openUpgradesPicker";
+import { formatFullNumber } from "./format_number";
 
 export function getStartingPerks() {
   const favorite = getSettingValue<string>("starting_perk", "");
@@ -40,12 +41,12 @@ export function getStartingPerks() {
 }
 
 function possibleStartingPerks() {
-  return rawUpgrades
-    .filter(
-      (upgrade) =>
-        upgrade.category === categories.combo || upgrade.id == "slow_down",
-    )
-    .sort((a, b) => a.threshold - b.threshold) as Upgrade[];
+  return [
+    upgrades.find((u) => u.id === "slow_down"),
+    ...upgrades
+      .filter((upgrade) => upgrade.category === categories.combo)
+      .sort((a, b) => a.threshold - b.threshold),
+  ] as Upgrade[];
 }
 
 export function getStartRunButtons() {
@@ -63,7 +64,7 @@ export function getStartRunButtons() {
           })
         : t("main_menu.normal"),
       help: hs
-        ? t("main_menu.high_score", { score: hs })
+        ? t("main_menu.high_score", { score: formatFullNumber(hs) + " $" })
         : t("main_menu.normal_help"),
       value: () => {
         restart({
@@ -95,9 +96,14 @@ export function getStartRunButtons() {
                 text: u.name,
                 disabled: u.threshold > getTotalScore(),
                 help:
-                  (hs && t("main_menu.high_score", { score: hs })) ||
+                  (hs &&
+                    t("main_menu.high_score", {
+                      score: formatFullNumber(hs) + " $",
+                    })) ||
                   (getTotalScore() < u.threshold &&
-                    t("unlocks.minTotalScore", { score: u.threshold })) ||
+                    t("unlocks.minTotalScore", {
+                      score: formatFullNumber(u.threshold),
+                    })) ||
                   getUpgradeHelp(u, undefined),
               };
             }),

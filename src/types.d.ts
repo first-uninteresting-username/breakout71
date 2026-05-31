@@ -128,7 +128,16 @@ export type Ball = {
   bouncedToEmptyLevel: boolean;
   sapperUses: number;
   destroyed?: boolean;
+  tail: ReusableArray<BallTailParticle>;
 };
+
+interface BallTailParticle {
+  destroyed?: boolean;
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+}
 
 interface BaseFlash {
   time: number;

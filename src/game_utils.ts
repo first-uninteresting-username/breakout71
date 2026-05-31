@@ -74,17 +74,6 @@ export function brickCenterY(gameState: GameState, index: number) {
   return (Math.floor(index / gameState.gridSize) + 0.5) * gameState.brickWidth;
 }
 
-export function getRowColIndex(gameState: GameState, row: number, col: number) {
-  if (
-    row < 0 ||
-    col < 0 ||
-    row >= gameState.gridSize ||
-    col >= gameState.gridSize
-  )
-    return -1;
-  return row * gameState.gridSize + col;
-}
-
 export function getClosestBall(
   gameState: GameState,
   x: number,

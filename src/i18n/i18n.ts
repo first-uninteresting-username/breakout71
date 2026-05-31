@@ -35,12 +35,14 @@ export const languages = [
     value: "zh",
     strings: zh,
     levelName: "China",
+    limitTextWeight: true,
   },
   {
     text: "正體字",
     value: "zh_Hant",
     strings: zh_Hant,
     levelName: "Taiwan",
+    limitTextWeight: true,
   },
   {
     text: "Brasil",
@@ -92,6 +94,7 @@ export const languages = [
     value: "ko",
     strings: ko,
     levelName: "Korea",
+    limitTextWeight: true,
   },
   {
     text: "فارسی",
@@ -126,9 +129,12 @@ export const languages = [
 ];
 
 type translationKeys = keyof typeof en;
-type translation = { [key in translationKeys]: string };
+type translation = {
+  strings: { [key in translationKeys]: string };
+  limitTextWeight?: boolean;
+};
 const languagesMap: Record<string, translation> = {};
-languages.forEach((l) => (languagesMap[l.value] = l.strings));
+languages.forEach((l) => (languagesMap[l.value] = l));
 
 let defaultLang =
   [...navigator.languages, navigator.language]
@@ -145,11 +151,20 @@ export function t(
   params: { [key: string]: any } = {},
 ): string {
   const lang = getCurrentLang();
-  let template = languagesMap[lang]?.[key] || languagesMap.en[key];
+  let template =
+    languagesMap[lang]?.strings[key] || languagesMap.en.strings[key];
   if (typeof template == "undefined")
     throw new Error("Missing translation key :" + key);
   for (let key in params) {
     template = template.split("{{" + key + "}}").join(`${params[key]}`);
   }
   return template.replace(/</gi, "&lt;").replace(/>/gi, "&gt;");
+}
+
+const supportsBold: Record<string, (typeof languages)[0]> = {};
+languages.forEach((l) => {
+  supportsBold[l.value] = l;
+});
+export function currentLanguageSupportsHeavyFontWeight() {
+  return !languagesMap[getCurrentLang()].limitTextWeight;
 }

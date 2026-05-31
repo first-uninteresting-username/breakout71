@@ -192,6 +192,12 @@
     "credit": "Icon by pedr01gb"
   },
   {
+    "name": "icon:fumes",
+    "size": 8,
+    "bricks": "_bbbybb__bbbybb__bbbybb__yyy_yy______________W___________WWWW___",
+    "credit": ""
+  },
+  {
     "name": "icon:ghost_coins",
     "size": 7,
     "bricks": "__bbb___bbbbb__bybyb__bbbbb__byyyb__bbbbb__b_b_b_",
@@ -219,6 +225,12 @@
     "name": "icon:happy_family",
     "size": 9,
     "bricks": "__tt_tt____tt_tt____tt_tt____________________W_______W__W_W_W___________rrrWWWrrr",
+    "credit": ""
+  },
+  {
+    "name": "icon:hardhat",
+    "size": 10,
+    "bricks": "_______________________yyyy_____yyyyyy___yyyyyyyy__yyyybb____yyybbb_____ybbbb______bbb______________",
     "credit": ""
   },
   {
@@ -656,7 +668,7 @@
   {
     "name": "icon:vibrant_neighborhood",
     "size": 7,
-    "bricks": "yy___yyty___yttt___tt_ty_yt__yy_yy___yty_____t___",
+    "bricks": "tt_r_tttt_r_ttWW___WW_Wt_tW__tt_tt___tWt_____W___",
     "credit": ""
   },
   {
@@ -3156,108 +3168,107 @@
     "credit": "The Nebra sky disc features the oldest concrete depiction of astronomical phenomena known from anywhere in the world: https://en.wikipedia.org/wiki/Nebra_sky_disc - Wombatmithut "
   },
   {
-    "color": "#000000",
+    "name": "A little bit of sunshine",
     "size": 8,
     "bricks": "WWaaaWWWWWWOOaWWaaOyyOaaWWyyyyOaOWWWWWyOtOyyWWWWWWOyyOtWtWWOOttt",
-    "name": "A little bit of sunshine",
     "credit": "A metaphorical phrase used to describe anything that brings sudden joy, positivity, or hope into a situation - Wombatmithut"
   },
   {
-    "color": "#000000",
+    "name": "Tako Luka",
     "size": 12,
     "bricks": "_______________pppppp_____pppppppp____pppppppp___yppeppeppy__yppBpeBppy___peBeeBep___p_PeeeeP_p__pPPpPPpPPp___pp_PP_pp_______pp_________________",
-    "name": "Tako Luka",
     "credit": "☆ Tako Luka Maguro Fever ☆ - 63CritsInARow"
   },
   {
-    "color": "#000000",
+    "name": "Mauve ",
     "size": 17,
     "bricks": "_____________________________________bbbbbbbbbbbb____baaaWWWaaaaaWb__baaaWaaaWaaaaaWbbaaaWattttWtaaaaWaWatWttWttWttWtaWaWttWtbWbbWbtWttWaWttWbbWbbWbbWttWaWttWbbWbbWbbWttWaWttWtbWbbWbtWttWaWatWttWttWttWtaWaWaaWatWttWtaWaaWbaWaaaWaWaaaWaaWb_baWWWaaaWWWaaWb___bbbbbbbbbbbbb___________________",
-    "name": "Mauve ",
     "credit": "A million stars lead me home to you: https://music.youtube.com/@thisismauve?si=aZaN2wpUXLsQrb-n - Wombatmithut"
   },
   {
-    "color": "#000000",
+    "name": "Seychelles",
     "size": 17,
     "bricks": "___________________________________bbbbbyyyyyrrrrr__bbbbbyyyyrrrrrr__bbbbyyyyrrrrrrr__bbbyyyyrrrrrrWW__bbbyyrrrrrWWWWW__bbyyrrrrWWWWWWW__byyrrWWWWWWWkkk__brrWWWWkkkkkkkk__rkkkkkkkkkkkkkk_______________________________________________________________________________________________________",
-    "name": "Seychelles",
     "credit": "Greg1415"
   },
   {
-    "color": "#000000",
+    "name": "Synthwave Landscape",
     "size": 18,
     "bricks": "___________________________________________OOOO____aa__aa___OOOOOO_aappaapp__aaaa____appappappaOOOOOO_O_aapaapp__aaaaa______________OOOO_O__p____aaa___OOOO_apappaapppa________appa_ppap________________p_______b______b___b_____bbb____bb__bb____bbtbb__bbt_bbtb___bbttbb_bbtbbttbb_bbttatbbbttbtaatbbbtaaattbtaataaaatttaaaaattaaa",
-    "name": "Synthwave Landscape",
     "credit": "Ride the synth wave!: https://synthwaveradio.eu/ - Wombatmithut"
   },
   {
-    "color": "#115988",
+    "name": "skibidi toilet 67",
     "size": 20,
     "bricks": "________WWWW______________WWWWWWWW_________WWWggggggggWWW______llWgOOggOOgWWW______WWWOOOOOOOOWWW______WWWOggOOggOWWW______WWWOWtOOtWOWWW______WWWOOOOOOOOWWW______WWWgOOOOOOgWWW______WWWOggWWggOWWW______WWWOOgWWgOOWWW______WWWWOOOOOOWWWW____WWWWWWWWWWWWWWWWWW__llllllllllllggglll__WWWWgggWWWWWWWgWWW___WWWggWWWWWWWgWWW_____WWgWgWWWWWWgWW______WWgggWWWWWWWWO_______OWWWWWWWOOOO_________OOOOWWWWWW_____",
-    "name": "skibidi toilet 67",
     "credit": "skibidi toilet and 67 - Greg1415"
   },
   {
-    "color": "#000000",
+    "name": "Full Moon",
     "size": 13,
     "bricks": "y____y______y________y______y______lll______WWW__lllllllWWWWW__y__llllWWWWW_____gWWWWllll__y__WWWWWllll___llllWWW__y__lll_WWW_______________y________y_______y__________y",
-    "name": "Full Moon",
     "credit": "Never miss your favorite moon again: https://www.virtualtelescope.eu/webtv/ - Wombatmithut "
   },
   {
-    "color": "#000000",
+    "name": "Chromatic aberration.",
     "size": 13,
     "bricks": "__________________bb__________bbWr________bbWWWr______bbWWWWWr_____bWWWWWWWr_____bWWWWWrr_____bWr_bWr_____bbWWWWWr_____bWWWWWWWr_____rrrrrrrr____________________________",
-    "name": "Chromatic aberration.",
     "credit": "Chromatic aberration is a failure of a lens to focus all colors to the same point. | https://en.wikipedia.org/wiki/Chromatic_aberration - Valikzant "
   },
   {
-    "color": "#000000",
+    "name": "Chicken or the egg?",
     "size": 13,
     "bricks": "__________________rrr__________WWr_________OgW____W_____rWWW__WW______WWWWlWW______WWWWWlW___W__lWWllWl__WWW__lllll___WWW____OO____lWl___OO______________________________",
-    "name": "Chicken or the egg?",
     "credit": "\"Which came first: the chicken or the egg?\" The dilemma stems from the observation that all chickens hatch from eggs and all chicken eggs are laid by chickens. | https://en.wikipedia.org/wiki/Chicken_or_the_egg  - Valikzant "
   },
   {
-    "color": "#115988",
+    "name": "Schrödinger's cat.",
     "size": 15,
     "bricks": "________________ggggggggggggg__g___________g__g_____gg____g__g____g__g___g__g______g____g__g__W_W____W_g__g__WWW_g__W_g__g_WgWgW__W__g__g__WWWWWWW__g__glllWWWWWW__g__g_llWWWWWWl_g__gllllWlllWllg__ggggggggggggg________________",
-    "name": "Schrödinger's cat.",
     "credit": "In the thought experiment, a hypothetical cat in a closed box may be considered to be simultaneously both alive and dead while it is unobserved, as a result of its fate being linked to a random subatomic event that may or may not occur. | https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat - Valikzant "
   },
   {
-    "color": "#115988",
+    "name": "Solar eclipse.",
     "size": 12,
     "bricks": "________________yyOO______yyggggOO____yggggggO___yggggggggO__yggggggggO__yggggggggO__yggggggggO___yggggggO____yyggggOO______OOOO________________",
-    "name": "Solar eclipse.",
     "credit": "A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby obscuring the view of the Sun from a small part of Earth, totally or partially. | https://en.wikipedia.org/wiki/Solar_eclipse - Valikzant"
   },
   {
-    "color": "#000000",
+    "name": "Cupids Arrow",
     "size": 16,
     "bricks": "_________________yyy_____________yy______________y_y________________yrr___rr________rRRr_rRRr______rRppRrRppRr_____rRpPpRpPpRr_____rRpPPpPPpRr______rRpPPPpRr________rRpPpRr__________rRpRry___________rRr__y___________r____yy______________y__________________",
-    "name": "Cupids Arrow",
     "credit": "Cupid's arrow represents the mythical weapon used by the Roman god of love (and the Greek god Eros) to manipulate emotions: https://en.wikipedia.org/wiki/Cupid - Wombatmithut "
   },
   {
-    "color": "#000000",
+    "name": "Sandwich",
     "size": 12,
     "bricks": "sssssssseeeessssssseeGWGssssseeeGWRRssseeeGWRRRReeeeGGWRRGGGWeeeWRRRGeeeRWGGRRWWGeesRRRRRGGGesssGWGRGeeesss_eGGWeesss___seeeesss____ssssss______",
-    "name": "Sandwich",
     "credit": "Gotta eat them all!: https://en.wikipedia.org/wiki/List_of_sandwiches - Wombatmithut"
   },
   {
-    "color": "#115988",
+    "name": "Tetris 71",
     "size": 14,
     "bricks": "__________Bgggaa________g___aaC_r_____grrrBCC_rrr___g_r_rC________g___rr_______Bg_y_Br______Brg_yyrCCCrr__ryg__yBrrCrr__yyg___BBCCCy__CyBgggBaaCya__Cyg_a_yyaCaaa_Cyg_aayyaBBBB_CCg_a_BgggggggggBggg",
-    "name": "Tetris 71",
     "credit": "Another blockbuster to enjoy: https://play.tetris.com/ - Wombatmithut"
   },
   {
-    "color": "#000000",
+    "name": "Atom",
     "size": 17,
     "bricks": "_______WWW_____________WW_WW____________W___W_______yyyy_W___W_OOOO__y___yyy_OOW___O__y___W_OOy_W___O__y___OO___yW___O___y_OW__r__Wy_O_____y_W_rBr_W_O_____O_yW__r__WO_y___O___yy___OW___y__O___WyyyOOW___y__O___OOO_yyW___y__OOOOOW___Wyyyyy_______W___W____________WW_WW_____________WWW_______",
-    "name": "Atom",
     "credit": "https://en.wikipedia.org/wiki/Ernest_Rutherford - ThatGuyOverThere"
+  },
+  {
+    "color": "#115988",
+    "size": 16,
+    "bricks": "___________________glllllllll______lggggggggl______lrBBOOBOgl______lgOBOBBOgl______lgBBBOBOgl______lgOBOOBOgl______lgOBOOBOgl______lggggggggl______llllllllll______llglllllll______lgBgllllpl______llglllplll______lllllllllB______llgglgglBl_______llllllll____",
+    "name": "Gameboy 71",
+    "credit": "Wombatmithut"
+  },
+  {
+    "color": "#000000",
+    "size": 21,
+    "bricks": "______________________________________________________________________________________________________________________________________r__________________________________rr_r__rr___rrr__rrr__r_r_r__r__r____r_____r_r_r__r___rr___rr___r_r_r__r_____r____r__r_r_r_rrr_rrr__rrr__________________________________________________________________________________________________________________________________________________________________________",
+    "name": "miss",
+    "credit": "This is the text shown when missing the bricks in the english version - Greg1415"
   }
 ]

@@ -24,7 +24,6 @@ import {
   getClosestBall,
   getCoinRenderColor,
   getCornerOffset,
-  getRowColIndex,
   isBrickOverPaddle,
   isMovingWhilePassiveIncome,
   isPickyEatingPossible,
@@ -54,11 +53,16 @@ import {
   clamp,
   coinsBoostedCombo,
   comboKeepingRate,
+  countDifferentColorBricks,
+  getNewReusableArray,
+  getRowColIndex,
   isComputerControlled,
 } from "./pure_functions";
 import { addToTotalScore } from "./addToTotalScore";
 import { openUpgradesPicker } from "./openUpgradesPicker";
 import { computerControl } from "./computerControl";
+import { palette } from "./loadGameData";
+import { shortenBigNumber } from "./format_number";
 
 export function setMousePos(gameState: GameState, x: number) {
   if (isComputerControlled(gameState)) return;
@@ -145,6 +149,7 @@ export function resetBalls(gameState: GameState) {
       sapperUses: 0,
       softBrushUsesSinceBounce: 0,
       bouncedToEmptyLevel: false,
+      tail: getNewReusableArray(),
     });
   }
   gameState.ballStickToPuck = true;
@@ -173,6 +178,7 @@ export function putBallsAtPuck(gameState: GameState) {
     ball.topHitsSinceBounce = 0;
     ball.wrapsSinceBounce = 0;
     ball.piercePoints = 1;
+    empty(ball.tail);
   });
 }
 
@@ -273,19 +279,31 @@ export function resetCombo(
       );
     }
     if (typeof x !== "undefined" && typeof y !== "undefined") {
-      makeComboText(gameState, x, y, -lost);
+      makeComboText(gameState, x, y, -lost, true);
     }
   }
   return lost;
 }
 
 let comboLastNotification = 1;
-function makeComboText(gameState: GameState, x: number, y: number, by: number) {
+function makeComboText(
+  gameState: GameState,
+  x: number,
+  y: number,
+  by: number,
+  isReset: boolean = false,
+) {
+  if (!isOptionOn("combo_bubbles")) return;
   const importance =
     1 +
     Math.round(clamp(Math.abs(by) / (comboLastNotification + 10), 0, 2) * 2) /
       2;
+
   comboLastNotification = gameState.combo;
+  let text = "×" + shortenBigNumber(gameState.combo);
+  if (isReset) {
+    text = t("play.combo_reset");
+  }
 
   makeText(
     gameState,
@@ -299,12 +317,9 @@ function makeComboText(gameState: GameState, x: number, y: number, by: number) {
       25 * importance,
       gameState.gameZoneHeight - gameState.puckHeight * 2 * importance,
     ),
-    by > 0 ? "#ffd300" : "#FF0000",
-    "x" +
-      (gameState.combo > 6000
-        ? Math.round(gameState.combo / 1000) + "k"
-        : gameState.combo),
-    20 * importance,
+    by > 0 ? gameState.ballsColor : "#FF0000",
+    text,
+    30,
     100 + 250 * importance,
     0,
     by > 0 ? -2 : 2,
@@ -557,39 +572,18 @@ export function explodeBrick(
       }
     }
 
-    setBrick(gameState, index, "");
-
-    let coinsToSpawn = coinsBoostedCombo(gameState);
-    let multiplier = 1;
-
     if (gameState.perks.vibrant_neighborhood) {
-      const baseX = index % gameState.gridSize;
-      const baseY = Math.floor(index / gameState.gridSize);
-
-      for (let dx = -1; dx <= 1; dx++) {
-        for (let dy = -1; dy <= 1; dy++) {
-          const neighbor =
-            gameState.bricks[getRowColIndex(gameState, baseY + dy, baseX + dx)];
-          if (neighbor && neighbor !== "black" && neighbor !== color) {
-            multiplier++;
-          }
-        }
+      let diff = countDifferentColorBricks(gameState, index, color);
+      if (diff === -1) {
+        resetComboNeeeded = true;
+      } else {
+        comboGain += diff;
       }
     }
 
-    coinsToSpawn *= multiplier;
-    if (multiplier !== 1)
-      makeText(
-        gameState,
-        x,
-        y,
-        gameState.ballsColor,
-        "x" + multiplier,
-        18,
-        500,
-        ball.vx,
-        ball.vy,
-      );
+    setBrick(gameState, index, "");
+
+    let coinsToSpawn = coinsBoostedCombo(gameState);
 
     gameState.levelSpawnedCoins += coinsToSpawn;
     gameState.runStatistics.coins_spawned += coinsToSpawn;
@@ -736,6 +730,49 @@ export function explodeBrick(
         b.time = gameState.levelTime + (3 * 1000) / gameState.perks.respawn;
       });
     }
+  }
+  applyFumes(gameState, index, color);
+}
+
+function applyFumes(gameState: GameState, index: number, color: string) {
+  if (gameState.perks.fumes && color !== "black") {
+    const x = index % gameState.gridSize;
+
+    for (let y = 0; y < Math.floor(index / gameState.gridSize); y++) {
+      const targetIndex = x + y * gameState.gridSize;
+      applyFume(gameState, targetIndex, color);
+    }
+  }
+  if (gameState.perks.fumes > 1) {
+    const y = index / gameState.gridSize;
+    for (let x = 0; x < gameState.gridSize; x++) {
+      const targetIndex = x + y * gameState.gridSize;
+      applyFume(gameState, targetIndex, color);
+    }
+  }
+}
+
+function applyFume(gameState: GameState, targetIndex: number, color: string) {
+  const targetColor = gameState.bricks[targetIndex];
+  if (targetColor && targetColor !== color && targetColor !== "black") {
+    gameState.bricks[targetIndex] = color;
+    schedulGameSound(
+      gameState,
+      "colorChange",
+      brickCenterX(gameState, targetIndex),
+      0.1,
+    );
+    makeText(
+      gameState,
+      brickCenterX(gameState, targetIndex),
+      brickCenterY(gameState, targetIndex) + 10,
+      targetColor,
+      t("play.brick_was_colored"),
+      20,
+      500,
+      0,
+      -2,
+    );
   }
 }
 
@@ -895,13 +932,13 @@ function setBrick(gameState: GameState, index: number, color: string) {
 }
 
 const rainbow = [
-  "#ff2e2e",
-  "#ffe02e",
-  "#70ff33",
-  "#33ffa7",
-  "#38acff",
-  "#6262EA",
-  "#ff3de5",
+  palette.r,
+  palette.y,
+  palette.G,
+  palette.c,
+  palette.t,
+  palette.b,
+  palette.p,
 ];
 
 export function rainbowColor(gameState: GameState): colorString {
@@ -1863,6 +1900,33 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     }
   }
 
+  // Log ball position
+  if (
+    isOptionOn("missed_shot_trail") &&
+    isOptionOn("particles") &&
+    !ball.destroyed &&
+    Math.random() < frames * 0.5
+  ) {
+    const MAX_TAIL_SIZE = 300;
+    const total = liveCount(ball.tail);
+    if (total < MAX_TAIL_SIZE) {
+      append(ball.tail, (t) => {
+        t.x = ball.x;
+        t.y = ball.y;
+        t.vx = ball.vx;
+        t.vy = ball.vy;
+      });
+    } else {
+      // pick a random one
+      const index = Math.floor(Math.random() * total);
+      const t = ball.tail.list[index];
+      t.x = ball.x;
+      t.y = ball.y;
+      t.vx = ball.vx;
+      t.vy = ball.vy;
+    }
+  }
+
   // Bounces
   const borderHitCode = bordersHitCheck(
     gameState,
@@ -2043,18 +2107,34 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
       } else {
         gameState.levelMisses++;
         gameState.runStatistics.misses++;
+        let previousCombo = gameState.combo;
         resetCombo(gameState, ball.x, ball.y, ball);
-        makeText(
-          gameState,
-          gameState.puckPosition,
-          gameState.gameZoneHeight - gameState.puckHeight * 2,
-          "#FF0000",
-          t("play.missed_ball"),
-          gameState.puckHeight,
-          500,
-          ball.vx,
-          ball.vy,
-        );
+        if (previousCombo == gameState.combo)
+          makeText(
+            gameState,
+            ball.x,
+            gameState.gameZoneHeight - gameState.puckHeight * 2,
+            "#FF0000",
+            t("play.missed_ball"),
+            gameState.puckHeight,
+            500,
+            0,
+            1,
+          );
+        // Particle effect
+        forEachLiveOne(ball.tail, (p) => {
+          makeParticle(
+            gameState,
+            p.x,
+            p.y,
+            p.vx / 5,
+            p.vy / 5,
+            "#FF0000",
+            true,
+            8,
+            400,
+          );
+        });
       }
     }
 
@@ -2065,6 +2145,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     ball.brokenSinceBounce = 0;
     ball.brokenSinceWallOrPaddleBounce = 0;
     ball.sidesHitsSinceBounce = 0;
+    empty(ball.tail);
     ball.softBrushUsesSinceBounce = 0;
     ball.topHitsSinceBounce = 0;
     ball.wrapsSinceBounce = 0;
@@ -2162,6 +2243,9 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
   const hitBrick = vhit ?? hhit ?? chit;
 
   if (typeof hitBrick !== "undefined") {
+    const dx = ball.x - brickCenterX(gameState, hitBrick);
+    const dy = ball.y - brickCenterY(gameState, hitBrick);
+
     const hitFrom: HitDirection =
       (typeof vhit == "undefined" &&
         typeof hhit !== "undefined" &&
@@ -2179,7 +2263,13 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
         typeof hhit == "undefined" &&
         ball.previousVY < 0 &&
         "bottom") ||
-      "corner";
+      (Math.abs(dx) > Math.abs(dy)
+        ? dx > 0
+          ? "left"
+          : "right"
+        : dy > 0
+          ? "left"
+          : "right");
 
     const initialBrickColor = gameState.bricks[hitBrick];
     ball.hitSinceBounce++;
@@ -2237,10 +2327,18 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     if (gameState.perks.pierce_above_paddle && ballIsAbovePaddle) {
       damageMultiplier += gameState.perks.pierce_above_paddle * 2.1;
     }
-
+    let baseDmg = 1;
+    if (
+      gameState.perks.hardhat &&
+      hitFrom === "top" &&
+      gameState.bricks[hitBrick] !== "black"
+    ) {
+      baseDmg /= Math.pow(2, gameState.perks.hardhat);
+      damageMultiplier /= Math.pow(2, gameState.perks.hardhat);
+    }
     let dmg = Math.min(
       gameState.brickHP[hitBrick],
-      1 + ball.piercePoints * damageMultiplier,
+      baseDmg + ball.piercePoints * damageMultiplier,
     );
     if (gameState.perks.soft_touch && !ballIsAbovePaddle) {
       dmg = 0;

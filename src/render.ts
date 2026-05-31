@@ -23,7 +23,7 @@ import {
   zoneRightBorderX,
 } from "./game_utils";
 import { colorString, GameState } from "./types";
-import { t } from "./i18n/i18n";
+import { currentLanguageSupportsHeavyFontWeight, t } from "./i18n/i18n";
 import { mainGameState } from "./game";
 import { isOptionOn } from "./options";
 import {
@@ -32,6 +32,7 @@ import {
   catchRateGood,
   clamp,
   coinsBoostedCombo,
+  countDifferentColorBricks,
   isComputerControlled,
   levelTimeBest,
   levelTimeGood,
@@ -41,6 +42,7 @@ import {
 import { lastMeasuredFPS, startWork } from "./fps";
 import { hashCode } from "./getLevelBackground";
 import { palette } from "./loadGameData";
+import { formatFullNumber, shortenBigNumber } from "./format_number";
 
 export const gameCanvas = document.getElementById("game") as HTMLCanvasElement;
 
@@ -327,24 +329,6 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
     );
   });
 
-  startWork("render:texts");
-  ctx.globalCompositeOperation = "screen";
-  forEachLiveOne(gameState.texts, (flash) => {
-    const { x, y, vx, vy, time, color, size, duration } = flash;
-    const elapsed = gameState.levelTime - time;
-    const elapsedFrames = elapsed / 60;
-    ctx.globalAlpha = Math.max(0, Math.min(1, 2 - (elapsed / duration) * 2));
-    ctx.globalCompositeOperation = "source-over";
-    drawText(
-      ctx,
-      flash.text,
-      color,
-      size,
-      x + elapsedFrames * vx,
-      y + elapsedFrames * vy,
-    );
-  });
-
   ctx.globalCompositeOperation = "screen";
   startWork("render:particles");
   forEachLiveOne(gameState.particles, (particle) => {
@@ -366,75 +350,6 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       1,
     );
   }
-
-  startWork("render:balls");
-  ctx.globalAlpha = 1;
-  ctx.globalCompositeOperation = "source-over";
-  gameState.balls.forEach((ball) => {
-    const drawingColor = gameState.ballsColor;
-    let ballAlpha = 1 - ballTransparency(ball, gameState);
-    if (
-      gameState.perks.soft_touch &&
-      Math.abs(ball.x - gameState.puckPosition) >
-        gameState.ballSize / 2 + gameState.puckWidth / 2
-    ) {
-      ballAlpha = Math.min(ballAlpha, 0.5);
-    }
-
-    ctx.globalAlpha = ballAlpha;
-    // The white border around is to distinguish colored balls from coins/bg
-    drawBall(
-      ctx,
-      drawingColor,
-      gameState.ballSize,
-      ball.x,
-      ball.y,
-      gameState.puckColor,
-    );
-
-    if (
-      telekinesisEffectRate(gameState, ball) ||
-      yoyoEffectRate(gameState, ball)
-    ) {
-      ctx.beginPath();
-      ctx.moveTo(gameState.puckPosition, gameState.gameZoneHeight);
-      ctx.globalAlpha = clamp(
-        Math.max(
-          telekinesisEffectRate(gameState, ball),
-          yoyoEffectRate(gameState, ball),
-        ) * ballAlpha,
-        0,
-        1,
-      );
-      ctx.strokeStyle = gameState.puckColor;
-      ctx.bezierCurveTo(
-        gameState.puckPosition,
-        gameState.gameZoneHeight,
-        gameState.puckPosition,
-        ball.y,
-        ball.x,
-        ball.y,
-      );
-      ctx.stroke();
-
-      ctx.lineWidth = 2;
-      ctx.setLineDash(emptyArray);
-    }
-
-    ctx.globalAlpha = ballAlpha;
-    if (
-      (gameState.perks.clairvoyant && gameState.ballStickToPuck) ||
-      (gameState.perks.steering > 1 && !gameState.ballStickToPuck) ||
-      (gameState.ballStickToPuck &&
-        typeof getPredictableBallDirection(gameState) === "number")
-    ) {
-      ctx.strokeStyle = gameState.ballsColor;
-      ctx.beginPath();
-      ctx.moveTo(ball.x, ball.y);
-      ctx.lineTo(ball.x + ball.vx * 10, ball.y + ball.vy * 10);
-      ctx.stroke();
-    }
-  });
 
   startWork("render:helium_bars");
   if (
@@ -463,7 +378,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
     ctx.stroke();
   }
 
-  startWork("render:puck");
+  startWork("render:paddle");
   ctx.globalAlpha = isMovingWhilePassiveIncome(gameState) ? 0.2 : 1;
   ctx.globalCompositeOperation = "source-over";
   drawPuck(
@@ -480,7 +395,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
     ctx.globalCompositeOperation = "source-over";
     ctx.globalAlpha = 1;
 
-    const comboText = spawns.toString();
+    const comboText = shortenBigNumber(spawns);
     const comboTextWidth = (comboText.length * gameState.puckHeight) / 1.8;
     const totalWidth = comboTextWidth + gameState.coinSize * 2;
     const left = gameState.puckPosition - totalWidth / 2;
@@ -495,6 +410,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
         left + gameState.coinSize * 1.5,
         gameState.gameZoneHeight - gameState.puckHeight / 2,
         true,
+        0,
       );
 
       ctx.globalAlpha = 1;
@@ -518,6 +434,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
         gameState.puckPosition,
         gameState.gameZoneHeight - gameState.puckHeight / 2,
         false,
+        0,
       );
     }
   }
@@ -614,6 +531,103 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
     bottomLineIsRed ? 1 : 0.5,
   );
 
+  startWork("render:texts");
+  ctx.globalCompositeOperation = "screen";
+  forEachLiveOne(gameState.texts, (flash) => {
+    const { x, y, vx, vy, time, color, size, duration } = flash;
+    const elapsed = gameState.levelTime - time;
+    const elapsedFrames = elapsed / 60;
+    ctx.globalAlpha = Math.max(0, Math.min(1, 2 - (elapsed / duration) * 2));
+    for (let isClearingBg of trueFalse) {
+      if (size < 15 && isClearingBg) {
+        continue;
+      }
+      ctx.globalCompositeOperation = "source-over";
+      let borderWidth =
+        Math.floor(Math.sqrt(size) - 2) *
+        (isClearingBg ? 4 : 1) *
+        (currentLanguageSupportsHeavyFontWeight() || isClearingBg ? 1 : 0);
+      drawText(
+        ctx,
+        flash.text,
+        isClearingBg ? level.color : color,
+        size,
+        x + elapsedFrames * vx,
+        y + elapsedFrames * vy,
+        false,
+        borderWidth,
+      );
+    }
+  });
+
+  startWork("render:balls");
+  ctx.globalAlpha = 1;
+  ctx.globalCompositeOperation = "source-over";
+  gameState.balls.forEach((ball) => {
+    const drawingColor = gameState.ballsColor;
+    let ballAlpha = 1 - ballTransparency(ball, gameState);
+    if (
+      gameState.perks.soft_touch &&
+      Math.abs(ball.x - gameState.puckPosition) >
+        gameState.ballSize / 2 + gameState.puckWidth / 2
+    ) {
+      ballAlpha = Math.min(ballAlpha, 0.5);
+    }
+
+    ctx.globalAlpha = ballAlpha;
+    // The white border around is to distinguish colored balls from coins/bg
+    drawBall(
+      ctx,
+      drawingColor,
+      gameState.ballSize,
+      ball.x,
+      ball.y,
+      gameState.puckColor,
+    );
+
+    if (
+      telekinesisEffectRate(gameState, ball) ||
+      yoyoEffectRate(gameState, ball)
+    ) {
+      ctx.beginPath();
+      ctx.moveTo(gameState.puckPosition, gameState.gameZoneHeight);
+      ctx.globalAlpha = clamp(
+        Math.max(
+          telekinesisEffectRate(gameState, ball),
+          yoyoEffectRate(gameState, ball),
+        ) * ballAlpha,
+        0,
+        1,
+      );
+      ctx.strokeStyle = gameState.puckColor;
+      ctx.bezierCurveTo(
+        gameState.puckPosition,
+        gameState.gameZoneHeight,
+        gameState.puckPosition,
+        ball.y,
+        ball.x,
+        ball.y,
+      );
+      ctx.stroke();
+
+      ctx.lineWidth = 2;
+      ctx.setLineDash(emptyArray);
+    }
+
+    ctx.globalAlpha = ballAlpha;
+    if (
+      (gameState.perks.clairvoyant && gameState.ballStickToPuck) ||
+      (gameState.perks.steering > 1 && !gameState.ballStickToPuck) ||
+      (gameState.ballStickToPuck &&
+        typeof getPredictableBallDirection(gameState) === "number")
+    ) {
+      ctx.strokeStyle = gameState.ballsColor;
+      ctx.beginPath();
+      ctx.moveTo(ball.x, ball.y);
+      ctx.lineTo(ball.x + ball.vx * 10, ball.y + ball.vy * 10);
+      ctx.stroke();
+    }
+  });
   startWork("render:contrast");
   if (
     !isOptionOn("basic") &&
@@ -653,6 +667,8 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       gameState.canvasWidth / 2,
       gameState.gameZoneHeight +
         (gameState.canvasHeight - gameState.gameZoneHeight) / 2,
+      false,
+      0,
     );
   }
 
@@ -663,18 +679,19 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       Math.ceil((gameState.winAt - gameState.levelTime) / 1000);
     if (remaining > 0 && remaining < 5) {
       ctx.globalAlpha = 1;
-      ctx.globalCompositeOperation = "destination-out";
+      ctx.globalCompositeOperation = "source-over";
+
       drawText(
         ctx,
         remaining.toString(),
-        "white",
-        65,
+        gameState.level.color,
+        60,
         gameState.canvasWidth / 2,
         gameState.canvasHeight / 2,
+        false,
+        10,
       );
 
-      ctx.globalCompositeOperation = "screen";
-      ctx.globalAlpha = 1 / remaining;
       drawText(
         ctx,
         remaining.toString(),
@@ -682,6 +699,8 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
         60,
         gameState.canvasWidth / 2,
         gameState.canvasHeight / 2,
+        false,
+        0,
       );
     }
   }
@@ -763,6 +782,9 @@ export function renderAllBricks(
     gameState.perks.paddle_up_combo &&
     "" + gameState.puckPosition + "," + gameState.puckWidth;
 
+  const redBorderOnDullNeighborhoods =
+    hasCombo && gameState.perks.vibrant_neighborhood;
+
   const redRowReach = reachRedRowIndex(gameState);
   const { clairvoyant } = gameState.perks;
   let offset = getDashOffset(gameState);
@@ -771,7 +793,8 @@ export function renderAllBricks(
       redBorderOnBricksWithWrongColor ||
       redRowReach !== -1 ||
       gameState.perks.zen ||
-      redBorderOutOfPuck
+      redBorderOutOfPuck ||
+      redBorderOnDullNeighborhoods
     )
   ) {
     offset = 0;
@@ -791,6 +814,8 @@ export function renderAllBricks(
     redBorderOnBricksWithWrongColor +
     "_" +
     redBorderOnAllBricks +
+    "_" +
+    redBorderOnDullNeighborhoods +
     "_" +
     gameState.ballsColor +
     "_" +
@@ -829,7 +854,7 @@ export function renderAllBricks(
       if (!color) return;
 
       let redBecauseOfReach =
-        redRowReach === Math.floor(index / gameState.level.size);
+        hasCombo && redRowReach === Math.floor(index / gameState.level.size);
 
       let redBorder =
         (gameState.ballsColor !== color &&
@@ -841,6 +866,12 @@ export function renderAllBricks(
         (hasCombo &&
           gameState.perks.paddle_up_combo &&
           !isBrickOverPaddle(gameState, index));
+
+      if (redBorderOnDullNeighborhoods) {
+        if (countDifferentColorBricks(gameState, index, color) === -1) {
+          redBorder = true;
+        }
+      }
 
       const cracks =
         color === "black" || clairvoyant
@@ -872,6 +903,8 @@ export function renderAllBricks(
           gameState.puckHeight,
           x,
           y,
+          false,
+          1,
         );
       }
 
@@ -1057,8 +1090,8 @@ export function drawCoin(
       canctx.translate(-size / 2, -size / 2);
 
       canctx.globalCompositeOperation = "multiply";
-      drawText(canctx, "$", color, size - 2, size / 2, size / 2 + 1);
-      drawText(canctx, "$", color, size - 2, size / 2, size / 2 + 1);
+      drawText(canctx, "$", color, size - 2, size / 2, size / 2 + 1, false, 0);
+      drawText(canctx, "$", color, size - 2, size / 2, size / 2 + 1, false, 0);
     }
     cachedGraphics[key] = can;
   }
@@ -1191,7 +1224,12 @@ export function drawBrick(
     if (offset !== -1) {
       canctx.setLineDash(redBorderDash);
       canctx.lineDashOffset = offset;
-      if (color === palette.r) {
+      if (
+        color === palette.s ||
+        color === palette.r ||
+        color === palette.R ||
+        color === palette.S
+      ) {
         canctx.globalCompositeOperation = "destination-out";
       }
       canctx.strokeStyle = palette.r;
@@ -1302,20 +1340,40 @@ export function drawText(
   x: number,
   y: number,
   left = false,
+  borderWidth: number = 0,
 ) {
-  const key = "text" + text + "_" + color + "_" + fontSize + "_" + left;
+  const key =
+    "text" +
+    text +
+    "_" +
+    color +
+    "_" +
+    fontSize +
+    "_" +
+    left +
+    "_" +
+    borderWidth;
 
   if (!cachedGraphics[key]) {
     const can = document.createElement("canvas");
-    can.width = fontSize * text.length + 4;
-    can.height = fontSize + 4;
+    can.width = fontSize * text.length + 4 + borderWidth * 2;
+    can.height = fontSize + 4 + borderWidth * 2;
     const canctx = can.getContext("2d") as CanvasRenderingContext2D;
     canctx.fillStyle = color;
     canctx.textAlign = left ? "left" : "center";
     canctx.textBaseline = "middle";
     canctx.font = (fontSize > 20 ? "bolder " : "") + fontSize + "px monospace";
+    if (borderWidth) {
+      canctx.strokeStyle = color;
+      canctx.lineWidth = borderWidth;
+      canctx.strokeText(
+        text,
+        left ? 0 : can.width / 2,
+        can.height / 2,
+        can.width,
+      );
+    }
     canctx.fillText(text, left ? 0 : can.width / 2, can.height / 2, can.width);
-
     cachedGraphics[key] = can;
   }
   ctx.drawImage(
@@ -1411,7 +1469,7 @@ function updateScoreDisplay(gameState: GameState) {
         : "") +
       `<span class="score" data-tooltip="${
         gameState.startParams.runType == "normal" ? t("play.score_tooltip") : ""
-      }">${"$" + gameState.score}</span>`;
+      }">${formatFullNumber(gameState.score)} $</span>`;
   }
 
   scoreDisplay.classList[isComputerControlled(gameState) ? "add" : "remove"](
@@ -1422,3 +1480,5 @@ function updateScoreDisplay(gameState: GameState) {
     gameState.lastScoreIncrease > gameState.levelTime - 500 ? "add" : "remove"
   ]("active");
 }
+
+const trueFalse = [true, false];

@@ -53,6 +53,9 @@ export async function asyncAlert<t>({
   allowClose?: boolean;
   className?: string;
 }): Promise<t | void> {
+  if (document.exitPointerLock) {
+    document.exitPointerLock();
+  }
   hideAnyTooltip();
   updateAlertsOpen(+1);
   if (isOptionOn("sound")) {

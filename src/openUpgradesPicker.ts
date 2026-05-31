@@ -131,6 +131,17 @@ export async function openUpgradesPicker(gameState: GameState) {
   }
 
   const scored = getPossibleUpgrades(gameState).map((u) => {
+    let requiredPerksCount = 0;
+    for (let required in u.requires) {
+      if (
+        gameState.perks[required as PerkId] &&
+        !gameState.perks[u.id] &&
+        u.id !== required
+      ) {
+        requiredPerksCount++;
+      }
+    }
+
     let synergy = 0;
     for (let required in synergies) {
       if (
@@ -161,7 +172,7 @@ export async function openUpgradesPicker(gameState: GameState) {
 
     // Reduce the score if recently offered
     const score =
-      (1 + synergy + againPlease) /
+      (1 + synergy + againPlease + requiredPerksCount) /
       (1 + (gameState.offersCount[u.id] || 0) + incompatibility);
 
     return {

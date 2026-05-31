@@ -5,6 +5,8 @@ import { asyncAlert } from "./asyncAlert";
 import { getSettingValue, setSettingValue } from "./settings";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
 
+import { formatFullNumber } from "./format_number";
+
 export function runHistoryViewerMenuEntry() {
   const history = getHistory();
 
@@ -40,6 +42,9 @@ async function viewHistory() {
     {
       label: t("history.columns.score"),
       field: (r) => r.score,
+      render(v): string {
+        return formatFullNumber(v) + " $";
+      },
     },
     ...upgrades
       .filter((u) => history.find((r) => r.perks[u.id]))

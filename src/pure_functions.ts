@@ -166,3 +166,54 @@ const computerControlledRunTypes = new Set([
 export function isComputerControlled(gameState: GameState) {
   return computerControlledRunTypes.has(gameState.startParams.runType);
 }
+
+export function getNewReusableArray<T>() {
+  return {
+    indexMin: 0,
+    total: 0,
+    list: [] as T[],
+  };
+}
+
+export function getRowColIndex(gameState: GameState, row: number, col: number) {
+  if (
+    row < 0 ||
+    col < 0 ||
+    row >= gameState.gridSize ||
+    col >= gameState.gridSize
+  )
+    return -1;
+  return row * gameState.gridSize + col;
+}
+
+export function countDifferentColorBricks(
+  gameState: GameState,
+  index: number,
+  color: string,
+) {
+  const baseX = index % gameState.gridSize;
+  const baseY = Math.floor(index / gameState.gridSize);
+  let sameColor = 0;
+  let differentColor = 0;
+  for (let dx = -1; dx <= 1; dx++) {
+    for (let dy = -1; dy <= 1; dy++) {
+      if (!dx && !dy) continue;
+      const neighbor =
+        gameState.bricks[getRowColIndex(gameState, baseY + dy, baseX + dx)];
+      if (neighbor && neighbor !== "black") {
+        if (neighbor === color) {
+          sameColor++;
+        } else {
+          differentColor++;
+        }
+      }
+    }
+  }
+  if (differentColor >= 1) {
+    return differentColor;
+  } else if (sameColor) {
+    return -1;
+  } else {
+    return 0;
+  }
+}
