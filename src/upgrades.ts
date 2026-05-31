@@ -1218,7 +1218,7 @@ export const rawUpgrades = [
     threshold: 430000,
     id: "hardhat",
     max: 1,
-    hardLimit: 2,
+    hardLimit: 3,
     name: t("upgrades.hardhat.name"),
     help: (lvl: number) => t("upgrades.hardhat.tooltip"),
     fullHelp: (lvl: number) => t("upgrades.hardhat.verbose_description"),

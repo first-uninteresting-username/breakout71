@@ -374,7 +374,7 @@ export function shortenBigNumber(n: number) {
 }
 
 let locale: string | undefined, formatter: Intl.NumberFormat | undefined;
-export function formatFullNumber(score: number) {
+export function formatFullNumber(score: number | bigint) {
   if (locale !== getCurrentLang()) {
     formatter = new Intl.NumberFormat(getCurrentLang(), {});
     locale = getCurrentLang();

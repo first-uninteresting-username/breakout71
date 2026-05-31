@@ -68,7 +68,7 @@ export function getStartRunButtons() {
           })
         : t("main_menu.normal"),
       help: hs
-        ? t("main_menu.high_score", { score: hs })
+        ? t("main_menu.high_score", { score: formatFullNumber(hs) + " $" })
         : t("main_menu.normal_help"),
       value: () => {
         restart({
