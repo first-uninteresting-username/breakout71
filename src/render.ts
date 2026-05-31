@@ -16,11 +16,13 @@ import {
   isMovingWhilePassiveIncome,
   isPickyEatingPossible,
   reachRedRowIndex,
+  shortenBigNumber,
   renderMaxLevel,
   telekinesisEffectRate,
   yoyoEffectRate,
   zoneLeftBorderX,
   zoneRightBorderX,
+  formatFullNumber,
 } from "./game_utils";
 import { colorString, GameState } from "./types";
 import { currentLanguageSupportsHeavyFontWeight, t } from "./i18n/i18n";
@@ -394,7 +396,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
     ctx.globalCompositeOperation = "source-over";
     ctx.globalAlpha = 1;
 
-    const comboText = spawns.toString();
+    const comboText = shortenBigNumber(spawns);
     const comboTextWidth = (comboText.length * gameState.puckHeight) / 1.8;
     const totalWidth = comboTextWidth + gameState.coinSize * 2;
     const left = gameState.puckPosition - totalWidth / 2;
@@ -1468,7 +1470,7 @@ function updateScoreDisplay(gameState: GameState) {
         : "") +
       `<span class="score" data-tooltip="${
         gameState.startParams.runType == "normal" ? t("play.score_tooltip") : ""
-      }">${"$" + gameState.score}</span>`;
+      }">${formatFullNumber(gameState.score)} $</span>`;
   }
 
   scoreDisplay.classList[isComputerControlled(gameState) ? "add" : "remove"](

@@ -30,6 +30,7 @@ import {
   isPickyEatingPossible,
   max_levels,
   reachRedRowIndex,
+  shortenBigNumber,
   shouldPierceByColor,
   telekinesisEffectRate,
   yoyoEffectRate,
@@ -298,11 +299,7 @@ function makeComboText(
       2;
 
   comboLastNotification = gameState.combo;
-  let text =
-    "×" +
-    (gameState.combo > 6000
-      ? Math.round(gameState.combo / 1000) + "k"
-      : gameState.combo);
+  let text = "×" + shortenBigNumber(gameState.combo);
   if (isReset) {
     text = t("play.combo_reset");
   }
@@ -2272,8 +2269,6 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
         : dy > 0
           ? "left"
           : "right");
-
-    makeText(gameState, x, y, "pink", hitFrom);
 
     const initialBrickColor = gameState.bricks[hitBrick];
     ball.hitSinceBounce++;

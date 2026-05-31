@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Gravar ficheiro de dados",
     "settings.save_file_loaded_help": "A app agora vai reiniciar para aplicar os seus dados gravados",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "Contador de FPS",
     "settings.show_fps_help": "Monitorar o desempenho da app",
     "settings.show_puck_rails": "Barras verticais na raquete",

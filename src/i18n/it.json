@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "File di salvataggio caricato",
     "settings.save_file_loaded_help": "L'applicazione verrà ricaricata per applicare il salvataggio",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "Contatore FPS",
     "settings.show_fps_help": "Monitora le prestazioni dell'app",
     "settings.show_puck_rails": "",

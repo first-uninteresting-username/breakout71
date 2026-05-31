@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Archivo de guardado cargado",
     "settings.save_file_loaded_help": "La aplicación se reiniciará para aplicar tu guardado.",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "Contador de FPS",
     "settings.show_fps_help": "Monitorea el rendimiento de la aplicación",
     "settings.show_puck_rails": "Barras verticales de la raqueta",

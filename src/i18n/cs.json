@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Uložená data načtena",
     "settings.save_file_loaded_help": "Aplikace se nyní znovu načte, aby se použila vaše uložená data",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "Ukazatel FPS",
     "settings.show_fps_help": "Zkontrolujte výkon aplikace",
     "settings.show_puck_rails": "Svislé lišty pálky",

@@ -89,6 +89,11 @@ export const options = {
     name: t("settings.show_stats"),
     help: t("settings.show_stats_help"),
   },
+  short_numbers: {
+    default: true,
+    name: t("settings.short_numbers"),
+    help: t("settings.short_numbers_help"),
+  },
   show_puck_rails: {
     default: true,
     name: t("settings.show_puck_rails"),

@@ -8,7 +8,7 @@ import {
   Upgrade,
 } from "./types";
 import { upgrades } from "./loadGameData";
-import { t } from "./i18n/i18n";
+import { getCurrentLang, t } from "./i18n/i18n";
 import { clamp } from "./pure_functions";
 import { getSettingValue, getTotalScore } from "./settings";
 import { isOptionOn } from "./options";
@@ -364,4 +364,20 @@ export function isBrickOverPaddle(gameState: GameState, brickIndex: number) {
 }
 export function baseBrickHP(gameState: GameState) {
   return 1 + gameState.perks.sturdy_bricks;
+}
+export function shortenBigNumber(n: number) {
+  let minMul = 6;
+  if (n < 1000 * minMul || !isOptionOn("short_numbers")) return "" + n;
+  if (n > 1000000000 * minMul) return Math.floor(n / 1000000000) + "B";
+  if (n > 1000000 * minMul) return Math.floor(n / 1000000) + "M";
+  return Math.floor(n / 1000) + "k";
+}
+
+let locale: string | undefined, formatter: Intl.NumberFormat | undefined;
+export function formatFullNumber(score: number) {
+  if (locale !== getCurrentLang()) {
+    formatter = new Intl.NumberFormat(getCurrentLang(), {});
+    locale = getCurrentLang();
+  }
+  return formatter?.format(score);
 }

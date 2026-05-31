@@ -1,7 +1,12 @@
 import { PerkId, RunParams, Upgrade } from "./types";
 import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
 import { categories, rawUpgrades } from "./upgrades";
-import { currentLevelInfo, getHighScore, sample } from "./game_utils";
+import {
+  currentLevelInfo,
+  formatFullNumber,
+  getHighScore,
+  sample,
+} from "./game_utils";
 import { upgrades } from "./loadGameData";
 import { getIcon } from "./levelIcon";
 import { t } from "./i18n/i18n";
@@ -95,9 +100,14 @@ export function getStartRunButtons() {
                 text: u.name,
                 disabled: u.threshold > getTotalScore(),
                 help:
-                  (hs && t("main_menu.high_score", { score: hs })) ||
+                  (hs &&
+                    t("main_menu.high_score", {
+                      score: formatFullNumber(hs) + " $",
+                    })) ||
                   (getTotalScore() < u.threshold &&
-                    t("unlocks.minTotalScore", { score: u.threshold })) ||
+                    t("unlocks.minTotalScore", {
+                      score: formatFullNumber(u.threshold),
+                    })) ||
                   getUpgradeHelp(u, undefined),
               };
             }),

@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Plik zapisu wczytany",
     "settings.save_file_loaded_help": "„Aplikacja zostanie teraz przeładowana, aby zastosować zapis",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "FPS",
     "settings.show_fps_help": "Monitoruje wydajność aplikacji",
     "settings.show_puck_rails": "",

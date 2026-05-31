@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "ذخیره بازی بارگذاری شد",
     "settings.save_file_loaded_help": "برنامه اکنون برای پیاده‌سازی ذخیره شما دوباره بارگذاری می‌شود",
     "settings.save_file_loaded_ok": "پذیرش",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "شمارنده فریم در ثانیه",
     "settings.show_fps_help": "به کارایی برنامه نظارت کنید",
     "settings.show_puck_rails": "",

@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Geladene Datei speichern",
     "settings.save_file_loaded_help": "Die App wird nun neu geladen, um die Speicherung zu übernehmen.",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "FPS-Zähler",
     "settings.show_fps_help": "Überwache die Leistung der Anwendung",
     "settings.show_puck_rails": "",

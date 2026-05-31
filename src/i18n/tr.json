@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Yüklenen dosya kaydedildi",
     "settings.save_file_loaded_help": "Uygulama şimdi kaydınızı uygulamak için yeniden yüklenecek",
     "settings.save_file_loaded_ok": "TAMAM",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "FPS Sayacı",
     "settings.show_fps_help": "Uygulamanın performansını izleyin",
     "settings.show_puck_rails": "",

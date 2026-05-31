@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Salvar arquivo de dados",
     "settings.save_file_loaded_help": "O aplicativo agora vai reiniciar para aplicar seus dados salvos",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "Contador de FPS",
     "settings.show_fps_help": "Monitorar o desempenho do aplicativo",
     "settings.show_puck_rails": "Barras verticais na raquete",

@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Uložiť súbor naložený",
     "settings.save_file_loaded_help": "Aplikácia bude teraz preťažiť, aby sa vaše uloženie",
     "settings.save_file_loaded_ok": "Okno",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "FPS pult",
     "settings.show_fps_help": "Monitorovať výkon aplikácie",
     "settings.show_puck_rails": "",

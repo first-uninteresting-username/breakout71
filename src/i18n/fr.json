@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Sauvegarde chargée",
     "settings.save_file_loaded_help": "L'appli va redémarrer",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "Compteur de FPS",
     "settings.show_fps_help": "Surveiller la performance du jeu",
     "settings.show_puck_rails": "Barres verticales sur la raquette",

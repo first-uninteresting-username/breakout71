@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Сохранить загруженный файл",
     "settings.save_file_loaded_help": "Теперь приложение перезагрузится, чтобы применить ваше сохранение",
     "settings.save_file_loaded_ok": "OK",
+    "settings.short_numbers": "",
+    "settings.short_numbers_help": "",
     "settings.show_fps": "Счетчик FPS",
     "settings.show_fps_help": "Контролируйте работу приложения",
     "settings.show_puck_rails": "",

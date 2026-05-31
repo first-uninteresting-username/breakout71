@@ -186,6 +186,8 @@
     "settings.save_file_loaded": "Save file loaded",
     "settings.save_file_loaded_help": "The app will now reload to apply your save",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.short_numbers": "Shorten numbers",
+    "settings.short_numbers_help": "Show 3k, 2M, 1B instead of full numbers when applicable",
     "settings.show_fps": "FPS counter",
     "settings.show_fps_help": "Monitor the app's performance",
     "settings.show_puck_rails": "Paddle vertical bars",
