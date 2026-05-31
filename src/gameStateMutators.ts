@@ -54,11 +54,14 @@ import {
   clamp,
   coinsBoostedCombo,
   comboKeepingRate,
+  countDifferentColorBricks,
+  getNewReusableArray,
   isComputerControlled,
 } from "./pure_functions";
 import { addToTotalScore } from "./addToTotalScore";
 import { openUpgradesPicker } from "./openUpgradesPicker";
 import { computerControl } from "./computerControl";
+import { palette } from "./loadGameData";
 
 export function setMousePos(gameState: GameState, x: number) {
   if (isComputerControlled(gameState)) return;
@@ -145,6 +148,7 @@ export function resetBalls(gameState: GameState) {
       sapperUses: 0,
       softBrushUsesSinceBounce: 0,
       bouncedToEmptyLevel: false,
+      tail: getNewReusableArray(),
     });
   }
   gameState.ballStickToPuck = true;
@@ -173,6 +177,7 @@ export function putBallsAtPuck(gameState: GameState) {
     ball.topHitsSinceBounce = 0;
     ball.wrapsSinceBounce = 0;
     ball.piercePoints = 1;
+    empty(ball.tail);
   });
 }
 
@@ -314,9 +319,9 @@ function makeComboText(
       25 * importance,
       gameState.gameZoneHeight - gameState.puckHeight * 2 * importance,
     ),
-    by > 0 ? "#ffd300" : "#FF0000",
+    by > 0 ? gameState.ballsColor : "#FF0000",
     text,
-    20 * importance,
+    30,
     100 + 250 * importance,
     0,
     by > 0 ? -2 : 2,
@@ -569,39 +574,18 @@ export function explodeBrick(
       }
     }
 
-    setBrick(gameState, index, "");
-
-    let coinsToSpawn = coinsBoostedCombo(gameState);
-    let multiplier = 1;
-
     if (gameState.perks.vibrant_neighborhood) {
-      const baseX = index % gameState.gridSize;
-      const baseY = Math.floor(index / gameState.gridSize);
-
-      for (let dx = -1; dx <= 1; dx++) {
-        for (let dy = -1; dy <= 1; dy++) {
-          const neighbor =
-            gameState.bricks[getRowColIndex(gameState, baseY + dy, baseX + dx)];
-          if (neighbor && neighbor !== "black" && neighbor !== color) {
-            multiplier++;
-          }
-        }
+      let diff = countDifferentColorBricks(gameState, index, color);
+      if (diff === -1) {
+        resetComboNeeeded = true;
+      } else {
+        comboGain += diff;
       }
     }
 
-    coinsToSpawn *= multiplier;
-    if (multiplier !== 1)
-      makeText(
-        gameState,
-        x,
-        y,
-        gameState.ballsColor,
-        "x" + multiplier,
-        18,
-        500,
-        ball.vx,
-        ball.vy,
-      );
+    setBrick(gameState, index, "");
+
+    let coinsToSpawn = coinsBoostedCombo(gameState);
 
     gameState.levelSpawnedCoins += coinsToSpawn;
     gameState.runStatistics.coins_spawned += coinsToSpawn;
@@ -748,6 +732,49 @@ export function explodeBrick(
         b.time = gameState.levelTime + (3 * 1000) / gameState.perks.respawn;
       });
     }
+  }
+  applyFumes(gameState, index, color);
+}
+
+function applyFumes(gameState: GameState, index: number, color: string) {
+  if (gameState.perks.fumes && color !== "black") {
+    const x = index % gameState.gridSize;
+
+    for (let y = 0; y < Math.floor(index / gameState.gridSize); y++) {
+      const targetIndex = x + y * gameState.gridSize;
+      applyFume(gameState, targetIndex, color);
+    }
+  }
+  if (gameState.perks.fumes > 1) {
+    const y = index / gameState.gridSize;
+    for (let x = 0; x < gameState.gridSize; x++) {
+      const targetIndex = x + y * gameState.gridSize;
+      applyFume(gameState, targetIndex, color);
+    }
+  }
+}
+
+function applyFume(gameState: GameState, targetIndex: number, color: string) {
+  const targetColor = gameState.bricks[targetIndex];
+  if (targetColor && targetColor !== color && targetColor !== "black") {
+    gameState.bricks[targetIndex] = color;
+    schedulGameSound(
+      gameState,
+      "colorChange",
+      brickCenterX(gameState, targetIndex),
+      0.1,
+    );
+    makeText(
+      gameState,
+      brickCenterX(gameState, targetIndex),
+      brickCenterY(gameState, targetIndex) + 10,
+      targetColor,
+      t("play.brick_was_colored"),
+      20,
+      500,
+      0,
+      -2,
+    );
   }
 }
 
@@ -907,13 +934,13 @@ function setBrick(gameState: GameState, index: number, color: string) {
 }
 
 const rainbow = [
-  "#ff2e2e",
-  "#ffe02e",
-  "#70ff33",
-  "#33ffa7",
-  "#38acff",
-  "#6262EA",
-  "#ff3de5",
+  palette.r,
+  palette.y,
+  palette.G,
+  palette.c,
+  palette.t,
+  palette.b,
+  palette.p,
 ];
 
 export function rainbowColor(gameState: GameState): colorString {
@@ -1875,6 +1902,33 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     }
   }
 
+  // Log ball position
+  if (
+    isOptionOn("missed_shot_trail") &&
+    isOptionOn("particles") &&
+    !ball.destroyed &&
+    Math.random() < frames * 0.5
+  ) {
+    const MAX_TAIL_SIZE = 300;
+    const total = liveCount(ball.tail);
+    if (total < MAX_TAIL_SIZE) {
+      append(ball.tail, (t) => {
+        t.x = ball.x;
+        t.y = ball.y;
+        t.vx = ball.vx;
+        t.vy = ball.vy;
+      });
+    } else {
+      // pick a random one
+      const index = Math.floor(Math.random() * total);
+      const t = ball.tail.list[index];
+      t.x = ball.x;
+      t.y = ball.y;
+      t.vx = ball.vx;
+      t.vy = ball.vy;
+    }
+  }
+
   // Bounces
   const borderHitCode = bordersHitCheck(
     gameState,
@@ -2069,6 +2123,20 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
             0,
             1,
           );
+        // Particle effect
+        forEachLiveOne(ball.tail, (p) => {
+          makeParticle(
+            gameState,
+            p.x,
+            p.y,
+            p.vx / 5,
+            p.vy / 5,
+            "#FF0000",
+            true,
+            8,
+            400,
+          );
+        });
       }
     }
 
@@ -2079,6 +2147,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     ball.brokenSinceBounce = 0;
     ball.brokenSinceWallOrPaddleBounce = 0;
     ball.sidesHitsSinceBounce = 0;
+    empty(ball.tail);
     ball.softBrushUsesSinceBounce = 0;
     ball.topHitsSinceBounce = 0;
     ball.wrapsSinceBounce = 0;

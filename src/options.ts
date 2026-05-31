@@ -44,6 +44,11 @@ export const options = {
     name: t("settings.colorful_coins"),
     help: t("settings.colorful_coins_help"),
   },
+  missed_shot_trail: {
+    default: true,
+    name: t("settings.missed_shot_trail"),
+    help: t("settings.missed_shot_trail_help"),
+  },
   basic: {
     default: false,
     name: t("settings.basic"),

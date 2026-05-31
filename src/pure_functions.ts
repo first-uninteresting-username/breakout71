@@ -1,4 +1,5 @@
 import { Ball, GameState } from "./types";
+import { getRowColIndex } from "./game_utils";
 
 export function clamp(value: number, min: number, max: number) {
   return Math.max(min, Math.min(value, max));
@@ -165,4 +166,44 @@ const computerControlledRunTypes = new Set([
 ]);
 export function isComputerControlled(gameState: GameState) {
   return computerControlledRunTypes.has(gameState.startParams.runType);
+}
+
+export function getNewReusableArray<T>() {
+  return {
+    indexMin: 0,
+    total: 0,
+    list: [] as T[],
+  };
+}
+
+export function countDifferentColorBricks(
+  gameState: GameState,
+  index: number,
+  color: string,
+) {
+  const baseX = index % gameState.gridSize;
+  const baseY = Math.floor(index / gameState.gridSize);
+  let sameColor = 0;
+  let differentColor = 0;
+  for (let dx = -1; dx <= 1; dx++) {
+    for (let dy = -1; dy <= 1; dy++) {
+      if (!dx && !dy) continue;
+      const neighbor =
+        gameState.bricks[getRowColIndex(gameState, baseY + dy, baseX + dx)];
+      if (neighbor && neighbor !== "black") {
+        if (neighbor === color) {
+          sameColor++;
+        } else {
+          differentColor++;
+        }
+      }
+    }
+  }
+  if (differentColor >= 1) {
+    return differentColor;
+  } else if (sameColor) {
+    return -1;
+  } else {
+    return 0;
+  }
 }

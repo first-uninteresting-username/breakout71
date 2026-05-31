@@ -44,6 +44,7 @@ export const synergies: Partial<Record<PerkId, Array<PerkId>>> = {
   varied_diet: ["metamorphosis", "disco_ball"],
   extra_levels: ["limitless"],
   sacrifice: ["extra_life"],
+  vibrant_neighborhood: ["fumes", "metamorphosis", "rainbow", "telekinesis"],
   // beginner helpers
   slow_down: [
     "base_combo",

@@ -250,7 +250,7 @@ gameCanvas.addEventListener("mouseup", (e) => {
   } else {
     play();
     if (isOptionOn("pointerLock") && gameCanvas.requestPointerLock) {
-      gameCanvas.requestPointerLock().then();
+      gameCanvas.requestPointerLock()?.then();
     }
   }
 });
@@ -602,7 +602,9 @@ async function openSettingsMenu() {
               "precise_lighting",
               "probabilistic_lighting",
             ].includes(key)) ||
-          (!isOptionOn("sound") && ["menu_sound"].includes(key)) ||
+          (!isOptionOn("particles") && ["missed_shot_trail"].includes(key))||(
+            !isOptionOn("sound") && ["menu_sound"].includes(key),
+          ) ||
           false,
         value: () => {
           toggleOption(key);
