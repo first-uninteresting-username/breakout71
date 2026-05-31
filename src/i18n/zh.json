@@ -138,6 +138,8 @@
     "settings.censor_perks_before_use_help": "创造一种神秘感",
     "settings.colorful_coins": "多彩硬币",
     "settings.colorful_coins_help": "硬币生成时总是带着砖块的颜色",
+    "settings.combo_bubbles": "",
+    "settings.combo_bubbles_help": "",
     "settings.contrast": "高对比度",
     "settings.contrast_help": "更多的颜色和暗渲染",
     "settings.donation_reminder": "提醒我捐赠",

@@ -94,6 +94,11 @@ export const options = {
     name: t("settings.short_numbers"),
     help: t("settings.short_numbers_help"),
   },
+  combo_bubbles: {
+    default: true,
+    name: t("settings.combo_bubbles"),
+    help: t("settings.combo_bubbles_help"),
+  },
   show_puck_rails: {
     default: true,
     name: t("settings.show_puck_rails"),

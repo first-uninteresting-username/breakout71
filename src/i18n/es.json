@@ -138,6 +138,8 @@
     "settings.censor_perks_before_use_help": "Crea una sensación de misterio",
     "settings.colorful_coins": "Monedas coloridas",
     "settings.colorful_coins_help": "Las monedas siempre aparecen del color del ladrillo.",
+    "settings.combo_bubbles": "",
+    "settings.combo_bubbles_help": "",
     "settings.contrast": "Alto contraste",
     "settings.contrast_help": "Renderización más colorida y oscura.",
     "settings.donation_reminder": "Recuérdame donar",

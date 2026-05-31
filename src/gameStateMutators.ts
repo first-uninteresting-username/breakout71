@@ -293,6 +293,7 @@ function makeComboText(
   by: number,
   isReset: boolean = false,
 ) {
+  if (!isOptionOn("combo_bubbles")) return;
   const importance =
     1 +
     Math.round(clamp(Math.abs(by) / (comboLastNotification + 10), 0, 2) * 2) /
