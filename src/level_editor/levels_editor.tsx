@@ -29,6 +29,8 @@ function App() {
             l.size * l.size,
           ),
           credit: l.credit || "",
+          category: l.category || "",
+          author: l.author || "",
         }));
         const sorted = [
           ...cleaned
@@ -71,7 +73,7 @@ function App() {
 
   const content = (() => {
     if (!level) return null;
-    const { name, credit, bricks, size, svg, color } = level;
+    const { name, credit, bricks, size, category, author } = level;
 
     const brickButtons = [];
     for (let x = 0; x < size; x++) {
@@ -115,14 +117,36 @@ function App() {
           value={name}
           onChange={(e) => updateLevel(editingIndex, { name: e.target.value })}
         />
-        <input
-          id={"credit"}
-          type="text"
-          value={credit || ""}
-          onChange={(e) =>
-            updateLevel(editingIndex, { credit: e.target.value })
-          }
-        />
+        <div id="credit">
+          <input
+            placeholder="credit"
+            type="text"
+            value={credit || ""}
+            onChange={(e) =>
+              updateLevel(editingIndex, { credit: e.target.value })
+            }
+          />
+
+          <input
+            list="existing-categories"
+            placeholder="category"
+            type="text"
+            value={category || ""}
+            onChange={(e) =>
+              updateLevel(editingIndex, { category: e.target.value })
+            }
+          />
+
+          <input
+            placeholder="author"
+            list="existing-authors"
+            type="text"
+            value={author || ""}
+            onChange={(e) =>
+              updateLevel(editingIndex, { author: e.target.value })
+            }
+          />
+        </div>
 
         <div id={"tools"}>
           <button onClick={() => deleteLevel(editingIndex)}>Delete</button>
@@ -187,7 +211,7 @@ function App() {
             className={li === editingIndex ? "active" : ""}
             onClick={() => setEditingIndex(li)}
           >
-            {level.name}
+            {level.name} {level.author ? "✍️" : ""} {level.category ? "🗄️" : ""}
           </button>
         ))}
       </div>
@@ -247,6 +271,31 @@ function App() {
           import
         </button>
       </div>
+
+      <datalist id="existing-categories">
+        {[
+          ...new Set(
+            levels
+              .filter((l, li) => li !== editingIndex)
+              .map((l) => l.category),
+          ),
+        ]
+          .filter(Boolean)
+          .map((o) => (
+            <option value={o} key={o}></option>
+          ))}
+      </datalist>
+      <datalist id="existing-authors">
+        {[
+          ...new Set(
+            levels.filter((l, li) => li !== editingIndex).map((l) => l.author),
+          ),
+        ]
+          .filter(Boolean)
+          .map((o) => (
+            <option value={o} key={o}></option>
+          ))}
+      </datalist>
     </div>
   );
 }
