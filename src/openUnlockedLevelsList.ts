@@ -11,7 +11,22 @@ type mapper = (a: { l: Level; unlockedBefore: Set<string> }) => {
   sort: string;
 };
 
-const sortMethods: { value: string; text: () => string; getVal: mapper }[] = [
+const categoryNames: Record<string, () => string> = {
+  stills: () => t("unlocks.levels_categories.stills"),
+  animals: () => t("unlocks.levels_categories.animals"),
+  symbols: () => t("unlocks.levels_categories.symbols"),
+  landscapes: () => t("unlocks.levels_categories.landscapes"),
+  games: () => t("unlocks.levels_categories.games"),
+  abstract: () => t("unlocks.levels_categories.abstract"),
+  flags: () => t("unlocks.levels_categories.flags"),
+  portraits: () => t("unlocks.levels_categories.portraits"),
+};
+
+export const sortMethods: {
+  value: string;
+  text: () => string;
+  getVal: mapper;
+}[] = [
   {
     value: "unlocked",
     text: () => t("unlocks.sort_unlocked"),
@@ -27,7 +42,8 @@ const sortMethods: { value: string; text: () => string; getVal: mapper }[] = [
     value: "category",
     text: () => t("unlocks.sort_category"),
     getVal({ l }) {
-      return { label: l.category || "Other", sort: l.category || "Other" };
+      const label = (categoryNames[l.category] || categoryNames["stills"])();
+      return { label, sort: label };
     },
   },
   {
@@ -47,11 +63,46 @@ const sortMethods: { value: string; text: () => string; getVal: mapper }[] = [
       };
     },
   },
+  {
+    value: "bricks",
+    text: () => t("unlocks.sort_bricks"),
+    getVal({ l }) {
+      const count = l.bricks.filter((c) => c && c !== "black").length;
+      return {
+        label: count,
+        sort: ("0000" + count).slice(-3),
+      };
+    },
+  },
+  {
+    value: "bombs",
+    text: () => t("unlocks.sort_bombs"),
+    getVal({ l }) {
+      const count = l.bricks.filter((c) => c === "black").length;
+      return {
+        label: count,
+        sort: ("0000" + count).slice(-3),
+      };
+    },
+  },
+  {
+    value: "colors",
+    text: () => t("unlocks.sort_colors"),
+    getVal({ l }) {
+      const count = new Set(l.bricks.filter((c) => c && c !== "black")).size;
+      return {
+        label: count,
+        sort: ("0000" + count).slice(-3),
+      };
+    },
+  },
 ];
 
 export function getSortedLevelsList() {
   let criteria = getSettingValue("sort-criteria", "unlocked");
-  const getVal = sortMethods.find((s) => s.value === criteria)!.getVal;
+  const getVal =
+    sortMethods.find((s) => s.value === criteria)?.getVal ||
+    sortMethods[0].getVal;
 
   const unlockedBefore = new Set<string>(
     getSettingValue("breakout_71_unlocked_levels", []),
@@ -78,8 +129,7 @@ export function getSortedLevelsList() {
     criteria,
   };
 }
-// TODO
-setTimeout(openUnlockedLevelsList);
+
 export async function openUnlockedLevelsList() {
   const actions = [];
 

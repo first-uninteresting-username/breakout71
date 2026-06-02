@@ -9,7 +9,11 @@ import { t } from "./i18n/i18n";
 import { confirmRestart, mainGameState, restart } from "./game";
 import { allLevels } from "./allLevels";
 import { reasonLevelIsLocked } from "./reason_level_is_locked";
-import { openUnlockedLevelsList } from "./openUnlockedLevelsList";
+import {
+  getSortedLevelsList,
+  openUnlockedLevelsList,
+  sortMethods,
+} from "./openUnlockedLevelsList";
 
 export async function openLevelDetails(level: Level) {
   const unlockedBefore = new Set<string>(
@@ -21,7 +25,8 @@ export async function openLevelDetails(level: Level) {
     ? reasonLevelIsLocked(level, getHistory(), true)
     : null;
 
-  const activeLevels = allLevels
+  const fullList = getSortedLevelsList().sorted;
+  const activeLevels = fullList
     .filter((level) => unlockedBefore.has(level.name))
     .filter((level) => getSettingValue("offer-level-" + level.name, true));
 
@@ -31,9 +36,9 @@ export async function openLevelDetails(level: Level) {
     mainGameState.currentLevel > 0 &&
     mainGameState.startParams.runType === "normal";
 
-  const currentIndex = allLevels.indexOf(level);
-  const next = allLevels[currentIndex + 1];
-  const previous = allLevels[currentIndex - 1];
+  const currentIndex = fullList.indexOf(level);
+  const next = fullList[currentIndex + 1];
+  const previous = fullList[currentIndex - 1];
 
   const action = await asyncAlert<string>({
     title: `<span class="perk-title">
@@ -44,8 +49,12 @@ export async function openLevelDetails(level: Level) {
     content: [
       `<div class="full-width-icon">${getIcon(level.name, 350)}</div>`,
       miniMarkDown(level.credit || ""),
-      describeLevel(level),
+      ...sortMethods.map(
+        ({ text, getVal }) =>
+          text() + ": " + getVal({ l: level, unlockedBefore }).label,
+      ),
       lockReason ? t("unlocks.unlock_condition") + lockReason.text : "",
+
       {
         value: "run",
         icon: getIcon("icon:new_run"),
