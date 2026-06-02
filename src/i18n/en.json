@@ -241,7 +241,7 @@
     "unlocks.sort_author": "Author",
     "unlocks.sort_category": "Category",
     "unlocks.sort_size": "Size",
-    "unlocks.sort_unlocked": "Locked status",
+    "unlocks.sort_unlocked": "Access",
     "unlocks.start_new_game_with": "Start a new game",
     "unlocks.start_new_game_with_help": "Use this upgrade as starter perk.",
     "unlocks.title_upgrades": "{{unlocked}} /  {{out_of}} upgrades unlocked",

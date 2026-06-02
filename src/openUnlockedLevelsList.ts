@@ -57,14 +57,6 @@ export function getSortedLevelsList() {
     getSettingValue("breakout_71_unlocked_levels", []),
   );
   let unlockedCount = 0;
-  // function getVal(l: Level, li: number) {
-  //   if (criteria == "unlocked") {
-  //     return unlockedBefore.has(l.name)
-  //       ? t("unlocks.level_unlocked")
-  //       : t("unlocks.level_locked");
-  //   }
-  //   return "Other";
-  // }
   const sorted = allLevels
     .map((l, li) => ({ l, li, ...getVal({ l, unlockedBefore }) }))
     .sort((a, b) => a.sort.localeCompare(b.sort) || a.li - b.li);
@@ -83,19 +75,21 @@ export function getSortedLevelsList() {
     sorted: sorted.map((l) => l.l),
     grouped: grouped,
     unlockedCount,
+    criteria,
   };
 }
+// TODO
 setTimeout(openUnlockedLevelsList);
 export async function openUnlockedLevelsList() {
   const actions = [];
 
-  const { unlockedCount, grouped, sorted } = getSortedLevelsList();
+  const { unlockedCount, grouped, sorted, criteria } = getSortedLevelsList();
   grouped.forEach(({ label, levels }) => {
     actions.push(`<h2>${label}</h2>`);
     levels.forEach((l) => {
       actions.push({
         value: l,
-        icon: getIcon(l.name),
+        icon: getIcon(l.name, l.size),
         className: "level choice no-border",
         tooltip: l.name,
       });
@@ -109,11 +103,15 @@ export async function openUnlockedLevelsList() {
         unlocked: unlockedCount,
         out_of: sorted.length,
       }),
-      ...sortMethods.map((s) => ({ value: s.value, text: s.text() })),
+      ...sortMethods.map((s) => ({
+        value: s.value,
+        text: s.text(),
+        className: criteria == s.value ? "highlight" : "",
+      })),
       ...actions,
     ],
     allowClose: true,
-    className: "actionsAsGrid compact",
+    className: "levels-list",
   });
 
   if (typeof choice === "string") {

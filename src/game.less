@@ -265,7 +265,6 @@ body.notch_space {
 
   &.actionsAsGrid > div {
     max-width: none;
-
     & > div,
     & > p,
     & > h1,
@@ -282,6 +281,19 @@ body.notch_space {
     }
   }
 
+  &.levels-list > div {
+
+    max-width: 900px;
+   & > section {
+      grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+     display: grid;
+     img{
+       width: 92px;
+       height: 92px;
+        image-rendering: crisp-edges;
+     }
+    }
+  }
   button#close-modale {
     color: white;
     position: fixed;
