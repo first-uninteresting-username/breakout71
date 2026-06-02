@@ -22,15 +22,15 @@ function App() {
       .then((r) => r.json())
       .then((lvls) => {
         const cleaned = lvls.map((l) => ({
-          name: l.name,
+          name: l.name.trim(),
           size: l.size,
           bricks: (l.bricks + "_".repeat(l.size * l.size)).slice(
             0,
             l.size * l.size,
           ),
-          credit: l.credit || "",
-          category: l.category || "",
-          author: l.author || "",
+          credit: l.credit?.trim() || "",
+          category: l.category?.trim() || "",
+          author: l.author?.trim() || "",
         }));
         const sorted = [
           ...cleaned

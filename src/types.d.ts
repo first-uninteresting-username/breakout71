@@ -22,6 +22,8 @@ export type Level = {
   required: PerkId[];
   forbidden: PerkId[];
   minScore: number;
+  author: string;
+  category: string;
 };
 
 export type Palette = { [k: string]: string };

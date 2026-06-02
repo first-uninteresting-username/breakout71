@@ -3,7 +3,6 @@ import {
   Ball,
   Coin,
   GameState,
-  Level,
   LightFlash,
   OptionId,
   ParticleFlash,
@@ -73,12 +72,12 @@ import { levelEditorMenuEntry } from "./levelEditor";
 import { frameStarted, isPerformanceTerrible, startWork } from "./fps";
 import { openUnlockedUpgradesList } from "./openUnlockedUpgradesList";
 import { getCheckboxIcon, getIcon } from "./levelIcon";
-import { openLevelDetails } from "./openLevelDetails";
 import { menuClick } from "./menuSound";
 import { toast } from "./toast";
 import { addGameToHistory } from "./gameOver";
 import { getStartRunButtons } from "./startingPerks";
 import { allLevels } from "./allLevels";
+import { openUnlockedLevelsList } from "./openUnlockedLevelsList";
 
 export async function play() {
   if (await applyFullScreenChoice()) return;
@@ -808,46 +807,6 @@ async function applyFullScreenChoice() {
     console.warn(e);
   }
   return false;
-}
-
-export async function openUnlockedLevelsList() {
-  const unlockedBefore = new Set<string>(
-    getSettingValue("breakout_71_unlocked_levels", []),
-  );
-  const levelActions = allLevels.map((l) => {
-    const locked = !unlockedBefore.has(l.name);
-
-    return {
-      // text: l.name,
-      // disabled: locked,
-      value: l,
-      icon: getIcon(l.name),
-      // help: locked?.text || describeLevel(l),
-      className:
-        "level choice no-border " +
-        (!locked ? "used" : " grey-out-unless-hovered"),
-      // link: extractLinkFromText(l.credit || ""),
-      tooltip: l.name,
-      locked,
-    };
-  });
-
-  const level = await asyncAlert<Level>({
-    title: t("unlocks.levels"),
-    content: [
-      t("unlocks.level", {
-        unlocked: levelActions.filter((a) => !a.locked).length,
-        out_of: levelActions.length,
-      }),
-      ...levelActions,
-    ],
-    allowClose: true,
-    className: "actionsAsGrid compact",
-  });
-
-  if (level) {
-    await openLevelDetails(level);
-  }
 }
 
 export async function confirmRestart(gameState) {

@@ -106,7 +106,7 @@ export const levelTimeBest = 25,
   upPerSilver = 1,
   upPerGold = 1;
 
-export const MAX_LEVEL_SIZE = 21;
+export const MAX_LEVEL_SIZE = 24;
 export const MIN_LEVEL_SIZE = 2;
 
 export function automaticBackgroundColor(bricks: string[]) {
@@ -136,6 +136,9 @@ export function levelCodeToRawLevel(code: string) {
       bricks,
       name,
       credit,
+      // TODO
+      author: "",
+      category: "",
     };
   console.warn("Invalid level", {
     code,

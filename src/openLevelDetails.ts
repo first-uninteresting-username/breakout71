@@ -6,14 +6,10 @@ import { getCheckboxIcon, getIcon } from "./levelIcon";
 import { miniMarkDown } from "./pure_functions";
 import { describeLevel } from "./game_utils";
 import { t } from "./i18n/i18n";
-import {
-  confirmRestart,
-  mainGameState,
-  openUnlockedLevelsList,
-  restart,
-} from "./game";
+import { confirmRestart, mainGameState, restart } from "./game";
 import { allLevels } from "./allLevels";
 import { reasonLevelIsLocked } from "./reason_level_is_locked";
+import { openUnlockedLevelsList } from "./openUnlockedLevelsList";
 
 export async function openLevelDetails(level: Level) {
   const unlockedBefore = new Set<string>(

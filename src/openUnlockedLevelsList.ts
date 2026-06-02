@@ -1,0 +1,125 @@
+import { getSettingValue, setSettingValue } from "./settings";
+import { allLevels } from "./allLevels";
+import { getIcon } from "./levelIcon";
+import { asyncAlert } from "./asyncAlert";
+import { Level } from "./types";
+import { t } from "./i18n/i18n";
+import { openLevelDetails } from "./openLevelDetails";
+
+type mapper = (a: { l: Level; unlockedBefore: Set<string> }) => {
+  label: string;
+  sort: string;
+};
+
+const sortMethods: { value: string; text: () => string; getVal: mapper }[] = [
+  {
+    value: "unlocked",
+    text: () => t("unlocks.sort_unlocked"),
+    getVal({ l, unlockedBefore }) {
+      if (unlockedBefore.has(l.name)) {
+        return { label: t("unlocks.level_unlocked"), sort: "a" };
+      } else {
+        return { label: t("unlocks.level_locked"), sort: "z" };
+      }
+    },
+  },
+  {
+    value: "category",
+    text: () => t("unlocks.sort_category"),
+    getVal({ l }) {
+      return { label: l.category || "Other", sort: l.category || "Other" };
+    },
+  },
+  {
+    value: "author",
+    text: () => t("unlocks.sort_author"),
+    getVal({ l }) {
+      return { label: l.author || "Renan", sort: l.author || "Renan" };
+    },
+  },
+  {
+    value: "size",
+    text: () => t("unlocks.sort_size"),
+    getVal({ l }) {
+      return {
+        label: l.size + "×" + l.size + " bricks",
+        sort: ("0000" + l.size).slice(-3),
+      };
+    },
+  },
+];
+
+export function getSortedLevelsList() {
+  let criteria = getSettingValue("sort-criteria", "unlocked");
+  const getVal = sortMethods.find((s) => s.value === criteria)!.getVal;
+
+  const unlockedBefore = new Set<string>(
+    getSettingValue("breakout_71_unlocked_levels", []),
+  );
+  let unlockedCount = 0;
+  // function getVal(l: Level, li: number) {
+  //   if (criteria == "unlocked") {
+  //     return unlockedBefore.has(l.name)
+  //       ? t("unlocks.level_unlocked")
+  //       : t("unlocks.level_locked");
+  //   }
+  //   return "Other";
+  // }
+  const sorted = allLevels
+    .map((l, li) => ({ l, li, ...getVal({ l, unlockedBefore }) }))
+    .sort((a, b) => a.sort.localeCompare(b.sort) || a.li - b.li);
+
+  const grouped: { label: string; levels: Level[] }[] = [];
+  sorted.forEach(({ l, li, label }) => {
+    unlockedCount += unlockedBefore.has(l.name) ? 1 : 0;
+
+    if (grouped[grouped.length - 1]?.label === label) {
+      grouped[grouped.length - 1].levels.push(l);
+    } else {
+      grouped.push({ label, levels: [l] });
+    }
+  });
+  return {
+    sorted: sorted.map((l) => l.l),
+    grouped: grouped,
+    unlockedCount,
+  };
+}
+setTimeout(openUnlockedLevelsList);
+export async function openUnlockedLevelsList() {
+  const actions = [];
+
+  const { unlockedCount, grouped, sorted } = getSortedLevelsList();
+  grouped.forEach(({ label, levels }) => {
+    actions.push(`<h2>${label}</h2>`);
+    levels.forEach((l) => {
+      actions.push({
+        value: l,
+        icon: getIcon(l.name),
+        className: "level choice no-border",
+        tooltip: l.name,
+      });
+    });
+  });
+
+  const choice = await asyncAlert<Level>({
+    title: t("unlocks.levels"),
+    content: [
+      t("unlocks.level", {
+        unlocked: unlockedCount,
+        out_of: sorted.length,
+      }),
+      ...sortMethods.map((s) => ({ value: s.value, text: s.text() })),
+      ...actions,
+    ],
+    allowClose: true,
+    className: "actionsAsGrid compact",
+  });
+
+  if (typeof choice === "string") {
+    setSettingValue("sort-criteria", choice);
+    openUnlockedLevelsList();
+  } else if (choice) {
+    await openLevelDetails(choice);
+  }
+}
