@@ -81,10 +81,6 @@ export function miniMarkDown(md: string) {
     .join("\n");
 }
 
-export function extractLinkFromText(md: string) {
-  return md.match(/\bhttps?:\/\/[^\s<>]+/gi)?.[0];
-}
-
 export function firstWhere<Input, Output>(
   arr: Input[],
   mapper: (item: Input, index: number) => Output | undefined,
@@ -114,39 +110,6 @@ export function automaticBackgroundColor(bricks: string[]) {
     bricks.filter((b) => b !== "_").length * 0.05
     ? "#115988"
     : "#000000";
-}
-
-export function levelCodeToRawLevel(code: string) {
-  let [name, credit] = code.match(/\[([^\]]+)]/gi) || ["", ""];
-
-  let bricks = code.split(name)[1].split(credit)[0].replace(/\s/gi, "");
-  name = name.slice(1, -1);
-  credit = credit.slice(1, -1);
-  name ||= "Imported on " + new Date().toISOString().slice(0, 10);
-  credit ||= "";
-  const size = Math.sqrt(bricks.length);
-  if (
-    Math.floor(size) === size &&
-    size >= MIN_LEVEL_SIZE &&
-    size <= MAX_LEVEL_SIZE
-  )
-    return {
-      color: automaticBackgroundColor(bricks.split("")),
-      size,
-      bricks,
-      name,
-      credit,
-      // TODO
-      author: "",
-      category: "",
-    };
-  console.warn("Invalid level", {
-    code,
-    name,
-    credit,
-    bricks,
-    size,
-  });
 }
 
 export function comboKeepingRate(level: number) {

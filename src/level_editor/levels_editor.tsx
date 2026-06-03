@@ -3,10 +3,8 @@ import _palette from "../data/palette.json";
 import { createRoot } from "react-dom/client";
 import { useEffect, useState } from "react";
 import { moveLevel, resizeLevel, setBrick } from "./levels_editor_util";
-import {
-  automaticBackgroundColor,
-  levelCodeToRawLevel,
-} from "../pure_functions";
+import { automaticBackgroundColor } from "../pure_functions";
+import { levelCodeToRawLevel } from "../level_code_to_raw_level";
 
 const palette = _palette as Palette;
 
@@ -208,6 +206,7 @@ function App() {
       <div id="list">
         {levels.map((level, li) => (
           <button
+            key={li}
             className={li === editingIndex ? "active" : ""}
             onClick={() => setEditingIndex(li)}
           >

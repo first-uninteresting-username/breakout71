@@ -3140,7 +3140,7 @@
     "size": 11,
     "bricks": "____OOO________OOO________WWW_______WWWWW______OOOOO______OOOOO______WWWWW_____WWWWWWW____OOOOOOO__OOOOOOOOOOOOOOOOOOOOOO",
     "credit": "https://www.videolan.org/vlc/",
-    "category": "symbols",
+    "category": "stills",
     "author": ""
   },
   {
@@ -3956,7 +3956,7 @@
     "size": 21,
     "bricks": "____________________________________________________W___________________W_W_________________W___W________________W___Wrrrr___________W_____Wyyyrrr______WWW______WCCyyyr___WW_W_______WttCCCy_WW__W_________W_tttCW____W_________W____t____W___________W_______W_____________W_____WWWWWWWWWWWWWWWWW_____________________________________________________________________________________________________________________________________________________",
     "credit": "There is no dark side of the moon, really. Matter of fact it's all dark.",
-    "category": "symbols",
+    "category": "stills",
     "author": "ThatGuyOverThere"
   },
   {
@@ -4092,7 +4092,7 @@
     "size": 16,
     "bricks": "___________________g________g_____gPg______gPg____gPggggggggPg____ggeeWWWWWegg____geeeWWWWWeeg___geetBtWWtBtWWg__geetgtWWtgtWWg__geWtteggettWWg__gWWWWeeeeWWWWg__gWWWWWggWWWWWg__gWWWWWWWWWWWWg___ggWWWWWWWWgg_____gggggggggg___________________________________",
     "credit": "Shoot, did I just copy Finn and Jake? https://en.wikipedia.org/wiki/Adventure_Time",
-    "category": "animals",
+    "category": "portraits",
     "author": "Jade"
   },
   {
@@ -4116,7 +4116,7 @@
     "size": 13,
     "bricks": "WWWgrrrrrrrrrWWWgrrrrrrrrrWWWgrrrrrrrrrggggrrrrrrrrrggggrrrrrrrrrWWWgrrrrrrrrrWWWgrrrrrrrrrWWWgrrrrrrrrrWWWgrrrrrrrrrgggggggggggggtttgWWWWWWWgttttgWWWWWWWggtttgWWWWWWWgy",
     "credit": "https://en.wikipedia.org/wiki/Piet_Mondrian",
-    "category": "stills",
+    "category": "abstract",
     "author": "ThatGuyOverThere"
   },
   {
@@ -4358,5 +4358,13 @@
     "credit": "This is the text shown when missing the bricks in the english version",
     "category": "games",
     "author": "Greg1415"
+  },
+  {
+    "size": 6,
+    "bricks": "SSS_SSSOO_OS____OSSO____SO_OOSSS_SSS",
+    "category": "symbols",
+    "name": "Test",
+    "author": "Toto",
+    "credit": "Yay"
   }
 ]

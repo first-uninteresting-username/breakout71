@@ -10,12 +10,13 @@ import { mainGameState, restart } from "./game";
 import { describeLevel, largestDivisorUnder5 } from "./game_utils";
 import {
   automaticBackgroundColor,
-  levelCodeToRawLevel,
   MAX_LEVEL_SIZE,
   MIN_LEVEL_SIZE,
 } from "./pure_functions";
 import { toast } from "./toast";
-import { categoryNames, getCategoryName } from "./openUnlockedLevelsList";
+import { getCategoryName } from "./openUnlockedLevelsList";
+import { levelCodeToRawLevel } from "./level_code_to_raw_level";
+import { categoryNames } from "./categoryNames";
 
 const palette = _palette as Palette;
 
@@ -227,7 +228,7 @@ export async function editRawLevel(nth: number, color = "") {
       {
         text: t("editor.editing.category"),
         value: "category",
-        help: getCategoryName(level.category),
+        help: getCategoryName(level.category || ""),
       },
       {
         text: t("editor.editing.author"),
@@ -241,12 +242,18 @@ export async function editRawLevel(nth: number, color = "") {
       {
         text: t("editor.editing.copy"),
         value: "copy",
-        help: t("editor.editing.copy_help"),
+        help: level.author
+          ? t("editor.editing.copy_help")
+          : t("editor.editing.author_required"),
+        disabled: !level.author,
       },
       {
         text: t("editor.editing.show_code"),
         value: "show_code",
-        help: t("editor.editing.show_code_help"),
+        help: level.author
+          ? t("editor.editing.show_code_help")
+          : t("editor.editing.author_required"),
+        disabled: !level.author,
       },
       newLevelButton(rawList),
     ],
@@ -311,6 +318,16 @@ export async function editRawLevel(nth: number, color = "") {
       });
       return;
     }
+    if (action === "author") {
+      const author = prompt(
+        t("editor.editing.author_prompt"),
+        level.author || "",
+      );
+      if (author !== null) {
+        setSettingValue("level-author", author);
+        level.author = author || "";
+      }
+    }
     if (action === "copy" || action === "show_code") {
       let text = JSON.stringify(level);
 
@@ -349,16 +366,6 @@ export async function editRawLevel(nth: number, color = "") {
       );
       if (credit !== "null") {
         level.credit = credit || "";
-      }
-    }
-    if (action === "author") {
-      const author = prompt(
-        t("editor.editing.author_prompt"),
-        level.author || "",
-      );
-      if (author !== null) {
-        setSettingValue("level-author", author);
-        level.author = author || "";
       }
     }
 
