@@ -16,7 +16,7 @@ import {
 import { toast } from "./toast";
 import { getCategoryName } from "./openUnlockedLevelsList";
 import { levelCodeToRawLevel } from "./level_code_to_raw_level";
-import { categoryNames } from "./categoryNames";
+import { categoryDetails, categoryNames } from "./categoryNames";
 
 const palette = _palette as Palette;
 
@@ -375,6 +375,7 @@ export async function editRawLevel(nth: number, color = "") {
         choices.push({
           value: key,
           text: categoryNames[key](),
+          help: categoryDetails[key](),
         });
       }
 

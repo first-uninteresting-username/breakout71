@@ -10,3 +10,14 @@ export const categoryNames: Record<string, () => string> = {
   flags: () => t("unlocks.levels_categories.flags"),
   portraits: () => t("unlocks.levels_categories.portraits"),
 };
+
+export const categoryDetails: Record<string, () => string> = {
+  stills: () => t("unlocks.levels_categories_rules.stills"),
+  animals: () => t("unlocks.levels_categories_rules.animals"),
+  symbols: () => t("unlocks.levels_categories_rules.symbols"),
+  landscapes: () => t("unlocks.levels_categories_rules.landscapes"),
+  games: () => t("unlocks.levels_categories_rules.games"),
+  abstract: () => t("unlocks.levels_categories_rules.abstract"),
+  flags: () => t("unlocks.levels_categories_rules.flags"),
+  portraits: () => t("unlocks.levels_categories_rules.portraits"),
+};
