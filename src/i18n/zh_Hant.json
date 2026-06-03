@@ -234,8 +234,6 @@
     "unlocks.levels_help": "探索遊戲中全部 {{count}} 個關卡。",
     "unlocks.level_locked": "",
     "unlocks.level_unlocked": "",
-<<<<<<< HEAD
-=======
     "unlocks.levels": "已解鎖關卡",
     "unlocks.levels_categories.abstract": "",
     "unlocks.levels_categories.animals": "",
@@ -254,7 +252,6 @@
     "unlocks.levels_categories_rules.stills": "",
     "unlocks.levels_categories_rules.symbols": "",
     "unlocks.levels_help": "",
->>>>>>> eb5e771 (feat: more level sort, translate categories, display stats)
     "unlocks.minScore": "單局遊戲分數達到 ${{minScore}} 以解鎖。",
     "unlocks.minScoreWithPerks": "在單局遊戲中得到 ${{minScore}} 分，而且選擇 {{required}} 但是沒有 {{forbidden}} 以解鎖。",
     "unlocks.minScoreWithPerksNoForbidden": "在單局遊戲中選擇 {{required}} 而且得到 ${{minScore}} 分以解鎖。",
