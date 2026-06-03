@@ -15,6 +15,7 @@ import { noCreative } from "./upgrades";
 import { getIcon, levelIconHTML } from "./levelIcon";
 import { allLevels } from "./allLevels";
 import { reasonLevelIsLocked } from "./reason_level_is_locked";
+import { getUnlockedLevelList } from "./unlocked_level_list";
 
 export function creativeMode(gameState: GameState) {
   return {
@@ -39,9 +40,7 @@ export async function openCreativeModePerksPicker() {
   const customLevels = (getSettingValue("custom_levels", []) as RawLevel[]).map(
     transformRawLevel,
   );
-  const unlockedBefore = new Set<string>(
-    getSettingValue("breakout_71_unlocked_levels", []),
-  );
+  const unlockedBefore = getUnlockedLevelList();
 
   while (true) {
     const levelOptions = [

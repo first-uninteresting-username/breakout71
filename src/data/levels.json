@@ -4360,11 +4360,27 @@
     "author": "Greg1415"
   },
   {
-    "size": 6,
-    "bricks": "SSS_SSSOO_OS____OSSO____SO_OOSSS_SSS",
-    "category": "symbols",
-    "name": "Test",
-    "author": "Toto",
-    "credit": "Yay"
+    "size": 21,
+    "bricks": "______________________________________________________eeee_______________eeeeeeee_____________eeeeeeee____________eeeeeeeeee___________eeeeeeeeee__________seeeeeeeeee________RRseeeeeeeeee________RR__eeeeeeee__O______sssseeeeeeeeOOO______s_____eeeeOOOOO______s_______OOOOOOO_____s_s____OOOOOOOOO_____s_s__OOOOOOOOOOO____s__sOOOOOOOOOOOOO____s_OOOOOOOOOOOOOOO____OOOOOOOOOOOOOOOOO__OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+    "name": "Sisyphus",
+    "credit": "One must imagine Sisyphus happy. https://en.wikipedia.org/wiki/Sisyphus",
+    "author": "Wombatmithut",
+    "category": "portraits"
+  },
+  {
+    "size": 21,
+    "bricks": "_______RRRRRRR_____________RRRRRRRRR____________RRsssssRR____________RsBBsBBsR____________Rss_s_ssR____________RRsssssRR_____________RsWWWsR_______________rrsrr_____________ssrrrsrrrss_________ssOrrrsrrrOss________sOssrsssrssOs________ssssOsssOssss_________OsOsssssOsO____________sssssss_______________OOOOO_______________RRRRRRR_____________RRRR_RRRR____________ssO___Oss____________sOs___sOs____________RR_____RR____________RR_____RR______",
+    "name": "Yes Coach!",
+    "credit": "Protect yourself at all times: https://www.britannica.com/sports/boxing",
+    "author": "Wombatmithut",
+    "category": "portraits"
+  },
+  {
+    "size": 11,
+    "bricks": "ggglyyylgggglllylylllgglgllyllglgllllOlOllllyylOOyOOlyyylyOOOOOylyyylOWOWOlyyllllOWOllllglgllyllglgglllylylllgggglyyylggg",
+    "name": "Mindustry",
+    "credit": "https://mindustrygame.github.io/ An open source game",
+    "author": "Lachie!",
+    "category": "games"
   }
 ]

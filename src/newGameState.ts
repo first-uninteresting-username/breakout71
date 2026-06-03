@@ -12,14 +12,13 @@ import {
   logUpgradeShown,
 } from "./openUpgradesPicker";
 import { allLevels } from "./allLevels";
+import { getUnlockedLevelList } from "./unlocked_level_list";
 
 export function getRunLevels(
   params: RunParams,
   randomGift: PerkId | undefined,
 ) {
-  const unlockedBefore = new Set(
-    getSettingValue("breakout_71_unlocked_levels", []),
-  );
+  const unlockedBefore = getUnlockedLevelList();
 
   const history = getHistory();
   const unlocked = allLevels.filter(

@@ -14,11 +14,10 @@ import {
   openUnlockedLevelsList,
   sortMethods,
 } from "./openUnlockedLevelsList";
+import { getUnlockedLevelList } from "./unlocked_level_list";
 
 export async function openLevelDetails(level: Level) {
-  const unlockedBefore = new Set<string>(
-    getSettingValue("breakout_71_unlocked_levels", []),
-  );
+  const unlockedBefore = getUnlockedLevelList();
 
   const isLocked = !unlockedBefore.has(level.name);
   const lockReason = isLocked

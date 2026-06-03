@@ -1700,7 +1700,7 @@
     "forbidden": ["corner_shot", "steering", "palette"],
     "minScore": 32600
   },
-  "Ohkubo's Moon ": {
+  "Ohkubo's Moon": {
     "required": ["ottawa_treaty", "corner_shot", "bigger_explosions"],
     "forbidden": ["clairvoyant", "asceticism", "pierce_top"],
     "minScore": 32700
@@ -2041,7 +2041,7 @@
     "forbidden": ["three_cushion", "etherealcoins", "respawn"],
     "minScore": 39200
   },
-  "An HDD (Hard Disk Drive). ": {
+  "An HDD (Hard Disk Drive).": {
     "required": ["passive_income", "fountain_toss", "hot_start"],
     "forbidden": ["corner_shot", "thomas", "clairvoyant"],
     "minScore": 39300
@@ -2081,7 +2081,7 @@
     "forbidden": ["double_or_nothing", "minefield", "ball_attract_ball"],
     "minScore": 40000
   },
-  "Mauve ": {
+  "Mauve": {
     "required": ["superhot", "right_is_lava", "minefield"],
     "forbidden": ["flyswatter", "sacrifice", "addiction"],
     "minScore": 40100
@@ -2155,5 +2155,20 @@
     "required": ["steering", "concave_puck", "round_bricks"],
     "forbidden": ["puck_repulse_ball", "paddle_up_combo", "ball_repulse_ball"],
     "minScore": 41500
+  },
+  "Sisyphus": {
+    "required": ["streak_shots", "gravity_falls", "concave_puck"],
+    "forbidden": ["hot_start", "flyswatter", "buoy"],
+    "minScore": 41600
+  },
+  "Yes Coach!": {
+    "required": ["metamorphosis", "soft_touch", "compound_interest"],
+    "forbidden": ["soft_reset", "soft_brush", "hot_start"],
+    "minScore": 41700
+  },
+  "Mindustry": {
+    "required": ["superhot", "ball_attract_ball", "hot_start"],
+    "forbidden": ["smaller_puck", "etherealcoins", "three_cushion"],
+    "minScore": 41800
   }
 }

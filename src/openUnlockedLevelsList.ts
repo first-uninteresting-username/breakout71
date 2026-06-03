@@ -6,6 +6,7 @@ import { Level } from "./types";
 import { t } from "./i18n/i18n";
 import { openLevelDetails } from "./openLevelDetails";
 import { categoryNames } from "./categoryNames";
+import { getUnlockedLevelList } from "./unlocked_level_list";
 
 type mapper = (a: { l: Level; unlockedBefore: Set<string> }) => {
   label: string;
@@ -102,9 +103,7 @@ export function getSortedLevelsList() {
     sortMethods.find((s) => s.value === criteria)?.getVal ||
     sortMethods[0].getVal;
 
-  const unlockedBefore = new Set<string>(
-    getSettingValue("breakout_71_unlocked_levels", []),
-  );
+  const unlockedBefore = getUnlockedLevelList();
   let unlockedCount = 0;
   const sorted = allLevels
     .map((l, li) => ({ l, li, ...getVal({ l, unlockedBefore }) }))

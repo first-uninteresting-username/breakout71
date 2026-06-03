@@ -15,6 +15,7 @@ import { closeCreativeRun } from "./creative";
 import { pickedUpgradesHTMl } from "./picked_upgrades_html";
 import { allLevels } from "./allLevels";
 import { reasonLevelIsLocked, upgradeName } from "./reason_level_is_locked";
+import { getUnlockedLevelList } from "./unlocked_level_list";
 
 export async function openScorePanel(gameState: GameState) {
   pause(true);
@@ -53,7 +54,7 @@ export async function openScorePanel(gameState: GameState) {
 
 export function getFirstUnlockable(gameState: GameState) {
   if (gameState.startParams.runType !== "normal") return undefined;
-  const unlocked = new Set(getSettingValue("breakout_71_unlocked_levels", []));
+  const unlocked = getUnlockedLevelList();
 
   return firstWhere(allLevels, (l, li) => {
     if (unlocked.has(l.name)) return;
