@@ -11,7 +11,7 @@ type mapper = (a: { l: Level; unlockedBefore: Set<string> }) => {
   sort: string;
 };
 
-const categoryNames: Record<string, () => string> = {
+export const categoryNames: Record<string, () => string> = {
   stills: () => t("unlocks.levels_categories.stills"),
   animals: () => t("unlocks.levels_categories.animals"),
   symbols: () => t("unlocks.levels_categories.symbols"),
@@ -22,6 +22,9 @@ const categoryNames: Record<string, () => string> = {
   portraits: () => t("unlocks.levels_categories.portraits"),
 };
 
+export function getCategoryName(s: string) {
+  return (categoryNames[s] || categoryNames["stills"])();
+}
 export const sortMethods: {
   value: string;
   text: () => string;
@@ -42,7 +45,7 @@ export const sortMethods: {
     value: "category",
     text: () => t("unlocks.sort_category"),
     getVal({ l }) {
-      const label = (categoryNames[l.category] || categoryNames["stills"])();
+      const label = getCategoryName(l.category);
       return { label, sort: label };
     },
   },
@@ -58,7 +61,7 @@ export const sortMethods: {
     text: () => t("unlocks.sort_size"),
     getVal({ l }) {
       return {
-        label: l.size + "×" + l.size + " bricks",
+        label: l.size + "×" + l.size,
         sort: ("0000" + l.size).slice(-3),
       };
     },
@@ -69,7 +72,7 @@ export const sortMethods: {
     getVal({ l }) {
       const count = l.bricks.filter((c) => c && c !== "black").length;
       return {
-        label: count,
+        label: t("unlocks.sort_bricks_label", { count }),
         sort: ("0000" + count).slice(-3),
       };
     },
@@ -80,7 +83,10 @@ export const sortMethods: {
     getVal({ l }) {
       const count = l.bricks.filter((c) => c === "black").length;
       return {
-        label: count,
+        label:
+          (count === 0 && t("unlocks.sort_bombs_label_0")) ||
+          (count === 1 && t("unlocks.sort_bombs_label_1")) ||
+          t("unlocks.sort_bombs_label", { count }),
         sort: ("0000" + count).slice(-3),
       };
     },
@@ -91,7 +97,9 @@ export const sortMethods: {
     getVal({ l }) {
       const count = new Set(l.bricks.filter((c) => c && c !== "black")).size;
       return {
-        label: count,
+        label:
+          (count === 1 && t("unlocks.sort_colors_label_1")) ||
+          t("unlocks.sort_colors_label", { count }),
         sort: ("0000" + count).slice(-3),
       };
     },

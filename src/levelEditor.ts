@@ -15,6 +15,7 @@ import {
   MIN_LEVEL_SIZE,
 } from "./pure_functions";
 import { toast } from "./toast";
+import { categoryNames, getCategoryName } from "./openUnlockedLevelsList";
 
 const palette = _palette as Palette;
 
@@ -39,6 +40,8 @@ function newLevelButton(rawList: RawLevel[]) {
         bricks: "____________________________________",
         name: "custom level" + (rawList.length + 1),
         credit: "",
+        category: "",
+        author: getSettingValue("level-author", ""),
       });
       setSettingValue("custom_levels", rawList);
       editRawLevel(rawList.length - 1);
@@ -87,12 +90,14 @@ async function openLevelEditorLevelsList() {
 export async function editRawLevel(nth: number, color = "") {
   let rawList = getSettingValue("custom_levels", []) as RawLevel[];
   const level = rawList[nth];
+  delete level.color;
   const bricks = level.bricks.split("");
   color ||= bricks.find((i) => i !== "_") || "W";
 
   let grid = "";
   for (let y = 0; y < level.size; y++) {
-    grid += '<div style="background: ' + (level.color || "black") + ';">';
+    grid +=
+      '<div style="background: ' + automaticBackgroundColor(bricks) + ';">';
     for (let x = 0; x < level.size; x++) {
       const index = y * level.size + x;
       const c = bricks[index];
@@ -220,6 +225,16 @@ export async function editRawLevel(nth: number, color = "") {
         help: level.credit,
       },
       {
+        text: t("editor.editing.category"),
+        value: "category",
+        help: getCategoryName(level.category),
+      },
+      {
+        text: t("editor.editing.author"),
+        value: "author",
+        help: level.author,
+      },
+      {
         text: t("editor.editing.delete"),
         value: "delete",
       },
@@ -297,18 +312,7 @@ export async function editRawLevel(nth: number, color = "") {
       return;
     }
     if (action === "copy" || action === "show_code") {
-      let text =
-        "```\n[" +
-        (level.name || "unnamed level")?.replace(/\[|\]/gi, " ") +
-        "]";
-      bricks.forEach((b, bi) => {
-        if (!(bi % level.size)) text += "\n";
-        text += b;
-      });
-      text +=
-        "\n[" +
-        (level.credit?.replace(/\[|\]/gi, " ") || "Missing credits") +
-        "]\n```";
+      let text = JSON.stringify(level);
 
       if (action === "copy") {
         try {
@@ -325,7 +329,7 @@ export async function editRawLevel(nth: number, color = "") {
           title: t("editor.editing.show_code"),
           content: [
             `
-          <pre>${text}</pre>
+          <pre style="white-space: break-spaces; word-break: break-all">${text}</pre>
           `,
           ],
         });
@@ -347,6 +351,37 @@ export async function editRawLevel(nth: number, color = "") {
         level.credit = credit || "";
       }
     }
+    if (action === "author") {
+      const author = prompt(
+        t("editor.editing.author_prompt"),
+        level.author || "",
+      );
+      if (author !== null) {
+        setSettingValue("level-author", author);
+        level.author = author || "";
+      }
+    }
+
+    if (action === "category") {
+      const choices = [];
+      for (let key in categoryNames) {
+        choices.push({
+          value: key,
+          text: categoryNames[key](),
+        });
+      }
+
+      const category = await asyncAlert({
+        id: "editor_category_prompt",
+        title: t("editor.editing.category_prompt"),
+        content: choices,
+      });
+
+      if (category) {
+        level.category = category;
+      }
+    }
+
     if (action === "delete") {
       const confirm = await asyncAlert({
         id: "editing_delete_confirm",
@@ -376,8 +411,6 @@ export async function editRawLevel(nth: number, color = "") {
     if (action == "previous" && previous)
       return editRawLevel(rawList.indexOf(previous));
   }
-
-  level.color = automaticBackgroundColor(bricks);
 
   setSettingValue("custom_levels", rawList);
   editRawLevel(nth, color);

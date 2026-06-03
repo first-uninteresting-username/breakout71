@@ -8,6 +8,8 @@ export type RawLevel = {
   size: number;
   bricks: string;
   credit?: string;
+  author?: string;
+  category?: string;
 };
 export type Level = {
   name: string;
