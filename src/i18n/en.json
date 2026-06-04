@@ -543,7 +543,7 @@
     "upgrades.varied_diet.verbose_description": "This perk does not add a reset condition.",
     "upgrades.vibrant_neighborhood.name": "Vibrant neighborhood",
     "upgrades.vibrant_neighborhood.tooltip": "More coins when bricks are near bricks of a different color.",
-    "upgrades.vibrant_neighborhood.verbose_description": "When a brick is broken, the combo climbs by the number of bricks of a color different in the 3x3 box around the destroyed brick. If there are only bricks of the same color nearby, the combo reset. Bricks without neighbors don't affect the combo when broken.",
+    "upgrades.vibrant_neighborhood.verbose_description": "When a brick is broken, the combo climbs by the number of bricks of a color different in the 3x3 box around the destroyed brick. If there are only bricks of the same color nearby, and the level has more than one color, the combo reset. Bricks without neighbors don't affect the combo when broken.",
     "upgrades.viscosity.name": "Viscosity",
     "upgrades.viscosity.tooltip": "Slower coin fall",
     "upgrades.viscosity.verbose_description": "Coins normally accelerate with gravity and explosions to pretty high speeds. \n\nThis perk constantly makes them slow down, as if they were in some sort of viscous liquid. \n\nThis makes catching them easier, and combines nicely with perks that influence the coin's movement.",

@@ -774,8 +774,9 @@ export function renderAllBricks(
   const redBorderOnBricksWithWrongColor =
     hasCombo && gameState.perks.picky_eater && isPickyEatingPossible(gameState);
 
+  const colorsCount = countBrickColors(gameState);
   const redBorderOnAllBricks =
-    hasCombo && gameState.perks.palette && countBrickColors(gameState) < 2;
+    hasCombo && gameState.perks.palette && colorsCount < 2;
 
   const redBorderOutOfPuck =
     hasCombo &&
@@ -868,7 +869,9 @@ export function renderAllBricks(
           !isBrickOverPaddle(gameState, index));
 
       if (redBorderOnDullNeighborhoods) {
-        if (countDifferentColorBricks(gameState, index, color) === -1) {
+        if (
+          countDifferentColorBricks(gameState, index, color, colorsCount) === -1
+        ) {
           redBorder = true;
         }
       }

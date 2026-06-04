@@ -573,7 +573,12 @@ export function explodeBrick(
     }
 
     if (gameState.perks.vibrant_neighborhood) {
-      let diff = countDifferentColorBricks(gameState, index, color);
+      let diff = countDifferentColorBricks(
+        gameState,
+        index,
+        color,
+        colorsCount,
+      );
       if (diff === -1) {
         resetComboNeeeded = true;
       } else {

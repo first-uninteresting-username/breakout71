@@ -156,6 +156,7 @@ export function countDifferentColorBricks(
   gameState: GameState,
   index: number,
   color: string,
+  colorsCount: number,
 ) {
   const baseX = index % gameState.gridSize;
   const baseY = Math.floor(index / gameState.gridSize);
@@ -177,7 +178,7 @@ export function countDifferentColorBricks(
   }
   if (differentColor >= 1) {
     return differentColor;
-  } else if (sameColor) {
+  } else if (sameColor && colorsCount > 1) {
     return -1;
   } else {
     return 0;
