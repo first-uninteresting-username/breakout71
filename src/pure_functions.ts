@@ -14,7 +14,7 @@ export function ballTransparency(ball: Ball, gameState: GameState) {
   );
 }
 
-export function coinsBoostedCombo(gameState: GameState) {
+export function applyComboBoost(gameState: GameState, comboIncrease: number) {
   let boost =
     1 +
     gameState.perks.sturdy_bricks / 2 +
@@ -28,7 +28,12 @@ export function coinsBoostedCombo(gameState: GameState) {
       }
     });
   }
-  return Math.ceil(Math.max(gameState.combo, gameState.lastCombo) * boost);
+
+  // double_or_nothing is applied last and also boosts other combos boosts
+  const float = comboIncrease * boost * (1 + gameState.perks.double_or_nothing);
+  const floor = Math.floor(float);
+  // round up or down randomly based on excess amount
+  return floor + (float - floor > Math.random() ? 1 : 0);
 }
 
 export function miniMarkDown(md: string) {

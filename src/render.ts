@@ -31,7 +31,6 @@ import {
   catchRateBest,
   catchRateGood,
   clamp,
-  coinsBoostedCombo,
   countDifferentColorBricks,
   isComputerControlled,
   levelTimeBest,
@@ -390,7 +389,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
   );
 
   startWork("render:combotext");
-  const spawns = coinsBoostedCombo(gameState);
+  const spawns = gameState.combo;
   if (spawns > 1 && !isMovingWhilePassiveIncome(gameState)) {
     ctx.globalCompositeOperation = "source-over";
     ctx.globalAlpha = 1;

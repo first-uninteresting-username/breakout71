@@ -48,10 +48,10 @@ import { brickIndex, fitSize, hasBrick, hitsSomething, pause } from "./game";
 import { stopRecording } from "./recording";
 import { isOptionOn } from "./options";
 import {
+  applyComboBoost,
   ballTransparency,
   base_combo_from_stronger_foundation,
   clamp,
-  coinsBoostedCombo,
   comboKeepingRate,
   countDifferentColorBricks,
   getNewReusableArray,
@@ -304,19 +304,10 @@ function makeComboText(
   if (isReset) {
     text = t("play.combo_reset");
   }
-
   makeText(
     gameState,
-    clamp(
-      x,
-      gameState.offsetX + 20 * importance,
-      gameState.offsetX + gameState.gameZoneWidth - 20 * importance,
-    ),
-    clamp(
-      y,
-      25 * importance,
-      gameState.gameZoneHeight - gameState.puckHeight * 2 * importance,
-    ),
+    x,
+    y,
     by > 0 ? gameState.ballsColor : "#FF0000",
     text,
     30,
@@ -335,7 +326,7 @@ export function offsetCombo(
 ) {
   if (!by) return;
   if (by > 0) {
-    by *= 1 + gameState.perks.double_or_nothing;
+    by = applyComboBoost(gameState, by);
     gameState.combo += by;
     makeComboText(gameState, x, y, by);
   } else {
@@ -588,7 +579,7 @@ export function explodeBrick(
 
     setBrick(gameState, index, "");
 
-    let coinsToSpawn = coinsBoostedCombo(gameState);
+    let coinsToSpawn = gameState.combo;
 
     gameState.levelSpawnedCoins += coinsToSpawn;
     gameState.runStatistics.coins_spawned += coinsToSpawn;
@@ -2555,14 +2546,12 @@ function makeText(
   vx: number = 0,
   vy: number = -6,
 ) {
+  const padding = (text.length * size * 0.7) / 2;
+
   append(gameState.texts, (p: Partial<TextFlash>) => {
     p.time = gameState.levelTime;
-    p.x = clamp(x, 20, gameState.canvasWidth - 20);
-    p.y = clamp(
-      y,
-      40,
-      gameState.gameZoneHeight - gameState.puckHeight - gameState.ballSize,
-    );
+    p.x = clamp(x, padding, gameState.canvasWidth - padding);
+    p.y = clamp(y, 40, gameState.gameZoneHeight - gameState.puckHeight - size);
     p.vx = vx;
     p.vy = vy;
     p.color = color;
