@@ -329,7 +329,7 @@ export async function editRawLevel(nth: number, color = "") {
       }
     }
     if (action === "copy" || action === "show_code") {
-      let text = JSON.stringify(level);
+      let text = "```\n" + JSON.stringify(level) + "\n```";
 
       if (action === "copy") {
         try {

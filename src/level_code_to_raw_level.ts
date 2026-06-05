@@ -5,6 +5,8 @@ import { categoryNames } from "./categoryNames";
 
 export function levelCodeToRawLevel(code: string) {
   try {
+    // Removed surrounding code block and spaces
+    code = code.replace(/^(`|\s)+|(`|\s)+$/gi, "");
     // New format
     const parsed = JSON.parse(code);
 
