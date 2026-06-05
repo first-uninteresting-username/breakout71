@@ -464,7 +464,7 @@
     "upgrades.round_bricks.tooltip": "Os blocos ficam redondos",
     "upgrades.round_bricks.verbose_description": "",
     "upgrades.sacrifice.name": "Sacrifício",
-    "upgrades.sacrifice.tooltip": "Perder uma vida duplica o combo.",
+    "upgrades.sacrifice.tooltip": "",
     "upgrades.sacrifice.verbose_description": "",
     "upgrades.sapper.name": "Sapador",
     "upgrades.sapper.tooltip": "O primeiro tijolo quebrado vira uma bomba.",

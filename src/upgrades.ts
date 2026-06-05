@@ -615,11 +615,12 @@ export const rawUpgrades = [
     requires: ["extra_life"],
     threshold: 110000,
     id: "sacrifice",
-    max: 1,
-    hardLimit: 1,
+    max: 7,
+    hardLimit: Infinity,
     name: t("upgrades.sacrifice.name"),
-    help: (lvl: number) => t("upgrades.sacrifice.tooltip"),
-    fullHelp: (lvl: number) => t("upgrades.sacrifice.verbose_description"),
+    help: (lvl: number) => t("upgrades.sacrifice.tooltip", { gain: 100 * lvl }),
+    fullHelp: (lvl: number) =>
+      t("upgrades.sacrifice.verbose_description", { gain: 100 * lvl }),
   },
 
   {

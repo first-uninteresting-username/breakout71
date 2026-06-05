@@ -464,7 +464,7 @@
     "upgrades.round_bricks.tooltip": "Cihličky jsou teď kulaté",
     "upgrades.round_bricks.verbose_description": "",
     "upgrades.sacrifice.name": "Oběť",
-    "upgrades.sacrifice.tooltip": "Ztráta života zdvojnásobí kombo.",
+    "upgrades.sacrifice.tooltip": "",
     "upgrades.sacrifice.verbose_description": "",
     "upgrades.sapper.name": "Ženista",
     "upgrades.sapper.tooltip": "První rozbitá cihlička se stane bombou.",

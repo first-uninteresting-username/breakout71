@@ -464,7 +464,7 @@
     "upgrades.round_bricks.tooltip": "磚磈變成圓的",
     "upgrades.round_bricks.verbose_description": "",
     "upgrades.sacrifice.name": "犧牲",
-    "upgrades.sacrifice.tooltip": "球被救起時，連擊加倍。",
+    "upgrades.sacrifice.tooltip": "",
     "upgrades.sacrifice.verbose_description": "",
     "upgrades.sapper.name": "工兵",
     "upgrades.sapper.tooltip": "第一塊擊破的磚塊變成炸彈。",

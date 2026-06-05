@@ -464,7 +464,7 @@
     "upgrades.round_bricks.tooltip": "现在砖是圆的",
     "upgrades.round_bricks.verbose_description": "",
     "upgrades.sacrifice.name": "牺牲",
-    "upgrades.sacrifice.tooltip": "失去生命，连击加倍。",
+    "upgrades.sacrifice.tooltip": "",
     "upgrades.sacrifice.verbose_description": "",
     "upgrades.sapper.name": "工兵",
     "upgrades.sapper.tooltip": "第一个打碎的砖块变成炸弹。",

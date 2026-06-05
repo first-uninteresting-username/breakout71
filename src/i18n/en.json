@@ -464,7 +464,7 @@
     "upgrades.round_bricks.tooltip": "Bricks are round now",
     "upgrades.round_bricks.verbose_description": "",
     "upgrades.sacrifice.name": "Sacrifice",
-    "upgrades.sacrifice.tooltip": "Loosing a life doubles the combo.",
+    "upgrades.sacrifice.tooltip": "Loosing a life increases the combo by {{gain}}.",
     "upgrades.sacrifice.verbose_description": "",
     "upgrades.sapper.name": "Sapper",
     "upgrades.sapper.tooltip": "The first brick broken becomes a bomb.",

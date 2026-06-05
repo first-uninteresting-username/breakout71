@@ -464,7 +464,7 @@
     "upgrades.round_bricks.tooltip": "Los ladrillos ahora son redondos",
     "upgrades.round_bricks.verbose_description": "",
     "upgrades.sacrifice.name": "Sacrificio",
-    "upgrades.sacrifice.tooltip": "Perder una vida duplica el combo.",
+    "upgrades.sacrifice.tooltip": "",
     "upgrades.sacrifice.verbose_description": "",
     "upgrades.sapper.name": "Zapador",
     "upgrades.sapper.tooltip": "El primer ladrillo roto se convierte en una bomba.",

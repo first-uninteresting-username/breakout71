@@ -2448,7 +2448,7 @@ function justLostALife(gameState: GameState, x: number, y: number) {
   if (gameState.perks.extra_life < 0) {
     gameState.perks.extra_life = 0;
   } else if (gameState.perks.sacrifice) {
-    offsetCombo(gameState, gameState.combo + 1, x, y);
+    offsetCombo(gameState, 100 * gameState.perks.sacrifice, x, y);
   }
 
   schedulGameSound(gameState, "lifeLost", x, 1);
