@@ -900,6 +900,12 @@ document.addEventListener("keyup", async (e) => {
         levelToAvoid: currentLevelInfo(mainGameState).name,
       });
     }
+  } else if (
+    e.key.toLowerCase() === "r" &&
+    !alertsOpen &&
+    mainGameState.startParams.runType === "creative"
+  ) {
+    restart(mainGameState.startParams);
   } else {
     return;
   }
