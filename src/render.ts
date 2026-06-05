@@ -132,7 +132,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       drawFuzzyBall(
         haloCanvasCtx,
         gameState.ballsColor,
-        (gameState.ballSize * 2 * brightness) / haloScale,
+        ((gameState.ballSize + 20) * brightness) / haloScale,
         ball.x / haloScale,
         ball.y / haloScale,
       );
@@ -300,7 +300,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
     drawBall(
       ctx,
       level.color || "#000",
-      gameState.ballSize * 6,
+      gameState.ballSize + 100,
       ball.x,
       ball.y,
     );

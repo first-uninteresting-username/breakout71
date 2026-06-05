@@ -12,13 +12,7 @@ import {
   TextFlash,
 } from "./types";
 import { getAudioContext, playPendingSounds } from "./sounds";
-import {
-  brickCenterX,
-  brickCenterY,
-  currentLevelInfo,
-  hoursSpentPlaying,
-  sample,
-} from "./game_utils";
+import { currentLevelInfo, hoursSpentPlaying, sample } from "./game_utils";
 
 import "./PWA/sw_loader";
 import { getCurrentLang, languages, t } from "./i18n/i18n";
@@ -59,7 +53,7 @@ import {
   closeModal,
 } from "./asyncAlert";
 import { isOptionOn, options, toggleOption } from "./options";
-import { clamp, getRowColIndex, isComputerControlled } from "./pure_functions";
+import { clamp, isComputerControlled } from "./pure_functions";
 import { helpMenuEntry } from "./help";
 import { creativeMode } from "./creative";
 import { hideAnyTooltip, setupTooltips } from "./tooltip";
@@ -321,41 +315,6 @@ gameCanvas.addEventListener("touchmove", (e) => {
   setMousePos(mainGameState, e.touches[0].pageX);
 });
 
-export function brickIndex(gameState: GameState, x: number, y: number) {
-  const index = getRowColIndex(
-    gameState,
-    Math.floor(y / gameState.brickWidth),
-    Math.floor((x - gameState.offsetX) / gameState.brickWidth),
-  );
-  if (gameState.perks.round_bricks && index !== -1) {
-    const dx = x - brickCenterX(gameState, index);
-    const dy = y - brickCenterY(gameState, index);
-    const radius = gameState.brickWidth / 2.8;
-    if (dx * dx + dy * dy > radius * radius) return -1;
-  }
-  return index;
-}
-
-export function hasBrick(
-  gameState: GameState,
-  index: number,
-): number | undefined {
-  if (gameState.bricks[index]) return index;
-}
-
-export function hitsSomething(
-  gameState: GameState,
-  x: number,
-  y: number,
-  radius: number,
-) {
-  return (
-    hasBrick(gameState, brickIndex(gameState, x - radius, y - radius)) ??
-    hasBrick(gameState, brickIndex(gameState, x + radius, y - radius)) ??
-    hasBrick(gameState, brickIndex(gameState, x + radius, y + radius)) ??
-    hasBrick(gameState, brickIndex(gameState, x - radius, y + radius))
-  );
-}
 const ctx = gameCanvas.getContext("2d", {
   alpha: false,
 }) as CanvasRenderingContext2D;
@@ -394,7 +353,7 @@ export function tick() {
       mainGameState.coins,
       ({ vx, vy }) => (maxSpeed2 = Math.max(maxSpeed2, vx * vx + vy * vy)),
     );
-    const steps = Math.ceil((Math.sqrt(maxSpeed2) * frames) / 8);
+    const steps = Math.ceil((Math.sqrt(maxSpeed2) * frames) / 4);
 
     for (let i = 0; i < steps; i++) {
       gameStateTick(mainGameState, frames / steps);

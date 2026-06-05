@@ -1,8 +1,10 @@
 import {
   Ball,
   Coin,
+  colorString,
   GameState,
   Level,
+  ParticleFlash,
   PerkId,
   PerksMap,
   Upgrade,
@@ -13,6 +15,7 @@ import { clamp } from "./pure_functions";
 import { getSettingValue, getTotalScore } from "./settings";
 import { isOptionOn } from "./options";
 import { getIcon } from "./levelIcon";
+import { append } from "./gameStateMutators";
 
 export function describeLevel(level: Level) {
   let bricks = 0,
@@ -230,30 +233,13 @@ export function defaultSounds() {
 
 export function shouldPierceByColor(
   gameState: GameState,
-  vhit: number | undefined,
-  hhit: number | undefined,
-  chit: number | undefined,
+  hitBrick: number | undefined,
 ) {
-  if (!gameState.perks.pierce_color) return false;
-  if (
-    typeof vhit !== "undefined" &&
-    gameState.bricks[vhit] !== gameState.ballsColor
-  ) {
-    return false;
-  }
-  if (
-    typeof hhit !== "undefined" &&
-    gameState.bricks[hhit] !== gameState.ballsColor
-  ) {
-    return false;
-  }
-  if (
-    typeof chit !== "undefined" &&
-    gameState.bricks[chit] !== gameState.ballsColor
-  ) {
-    return false;
-  }
-  return true;
+  return (
+    gameState.perks.pierce_color &&
+    typeof hitBrick !== "undefined" &&
+    gameState.bricks[hitBrick] === gameState.ballsColor
+  );
 }
 
 export function isMovingWhilePassiveIncome(gameState: GameState) {
@@ -353,4 +339,31 @@ export function isBrickOverPaddle(gameState: GameState, brickIndex: number) {
 }
 export function baseBrickHP(gameState: GameState) {
   return 1 + gameState.perks.sturdy_bricks;
+}
+export function makeParticle(
+  gameState: GameState,
+  x: number,
+  y: number,
+  vx: number,
+  vy: number,
+  color: colorString,
+  ethereal = false,
+  size = 8,
+  duration = 150,
+) {
+  if (!color.match(/^#[a-f0-9]{6}$/gi)) {
+    throw new Error("Particle creation ignored, invalid color : " + color);
+  }
+  if (!isOptionOn("particles")) return;
+  append(gameState.particles, (p: Partial<ParticleFlash>) => {
+    p.time = gameState.levelTime;
+    p.x = x;
+    p.y = y;
+    p.vx = vx;
+    p.vy = vy;
+    p.color = color;
+    p.size = size;
+    p.duration = duration;
+    p.ethereal = ethereal;
+  });
 }

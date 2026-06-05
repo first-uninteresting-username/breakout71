@@ -33,7 +33,6 @@ export function getGameAnimation(params: RunParams) {
       gameState.canvasWidth = width;
       gameState.canvasHeight = height;
       gameState.gameZoneHeight = height - 20;
-      gameState.ballSize = 20;
       gameState.ballSize = 14;
       gameState.puckHeight = 20;
       gameState.ballStickToPuck = false;
