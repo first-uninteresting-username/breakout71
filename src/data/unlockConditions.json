@@ -2170,5 +2170,30 @@
     "required": ["superhot", "ball_attract_ball", "hot_start"],
     "forbidden": ["smaller_puck", "etherealcoins", "three_cushion"],
     "minScore": 41800
+  },
+  "Earth and Friends": {
+    "required": ["sticky_coins", "corner_shot", "left_is_lava"],
+    "forbidden": ["transparency", "thomas", "shocks"],
+    "minScore": 41900
+  },
+  "Maize or Corn?": {
+    "required": ["wrap_up", "reach", "puck_repulse_ball"],
+    "forbidden": ["disco_ball", "fumes", "chill"],
+    "minScore": 42000
+  },
+  "Two forts": {
+    "required": ["bricks_attract_ball", "reach", "fumes"],
+    "forbidden": ["chill", "wrap_left", "flyswatter"],
+    "minScore": 42100
+  },
+  "Always has been": {
+    "required": ["reach", "fumes", "chill"],
+    "forbidden": ["trickledown", "instant_explosion", "compound_interest"],
+    "minScore": 42200
+  },
+  "Trapped chest": {
+    "required": ["chill", "fumes", "reach"],
+    "forbidden": ["round_bricks", "bricks_attract_coins", "hardhat"],
+    "minScore": 42300
   }
 }

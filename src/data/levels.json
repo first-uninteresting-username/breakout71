@@ -4382,5 +4382,45 @@
     "credit": "https://mindustrygame.github.io/ An open source game",
     "category": "games",
     "author": "Lachie!"
+  },
+  {
+    "size": 16,
+    "bricks": "_y_________y___________y_______y___WWW____y_______WWWWW___________WWWWW______y____WWWWW_y__________WWW___________y_________ttt_________y__ktkkt___________kttkt____OyO____tkttt___OyyyO____ttt____yyyyy___________OyyyO__y_________OyO_______y__y______y________",
+    "category": "landscapes",
+    "name": "Earth and Friends",
+    "author": "Wombatmithut",
+    "credit": "Explore our universal neighbourhood: https://astroshed.com/milkypan.htm"
+  },
+  {
+    "size": 17,
+    "bricks": "_______yk______________yyGk____________yyOyGk___________yOyyGk___________yOyOGk__________GyOyyk__________GkyyOyGk_________k_kyyGk__________k___Gk_______________Gk________________Gk______________Gk______________Gk_______________Gk________________Gk__s__________ssGk_sss________sssskssss____",
+    "category": "stills",
+    "name": "Maize or Corn?",
+    "author": "Wombatmithut",
+    "credit": "Its over 9000 years old: https://en.wikipedia.org/wiki/Maize"
+  },
+  {
+    "size": 21,
+    "bricks": "b_b_b_b_b_b_b_b_b_b_b_b_b_b_b_b_b_b_b_b_b_b_O_b_b_b_b_b_b_b_O_b_OOO_b_b_b_b_b_b_OOO_OOtOO_b_b_b_b_b_OOROOOtOtO__b_b_b_b__OROROlllll_b_b_b_b_b_llllllllll__b_b_b_b__llllll___l_b___b___b_l___ll_______O___O_______ll_lll__OtOOORO__lll_ll___t__O_O_O_O__R___l______________________ll_llO_______Oll_ll___l__llOOOOOOOll__l__l_ll_ll_______ll_ll_l__l__lt_______Rl__l__t_l_lll_______lll_l_Rlll_l___________l_llllll___lbbbbbbbl___llllllllllbbbbbbblllllll",
+    "name": "Two forts",
+    "credit": "Some say there are nerds that have been trapped here for decades, maybe even to this day. what are these structures even for??",
+    "author": "bunny baphomet",
+    "category": "landscapes"
+  },
+  {
+    "size": 21,
+    "bricks": "__W_________________W______W_______W________________________W__W____________________________W___W__________kktt________________tkktkt__________WWW__kkttkk_WWW_____WyyWW_tttkktWyWWW____WyyWW_tkkkktWyWWW____WyyWW__ttttW_WWWWlll__WWWW_____W__WWWW_WlWWWWWW_____W_WW_WW___WWWW_WW____WWWW_WW_____WW_W______WW_WWW__W__WW_W____W___WWWW____WWW_W________WWWW____WW_WW_W_____WWWW__W__WWWWW_______WW_WW___WWWWWW____W__WWW_W___WWW_WW________WW_W___WWW_WW",
+    "name": "Always has been",
+    "credit": "It's all bricks???",
+    "author": "bunny baphomet",
+    "category": "portraits"
+  },
+  {
+    "size": 21,
+    "bricks": "__y______y____y__________y_vvvvvvvvv__y__yy__vvvtttyyytttvvv_____vyyttttyyyttttyyvy__yvyyttttyyyttttyyv____vyyttttyyyttttyyvy_y_vyytttyyyyytttyyv____vyytttyyyyytttyyv____vyyyttyBBByttyyyv_y__vyyyyyyBBByyyyyyv___y_vytttyyByytttyv_y____vyttttyyyttttyv_____yvyttttyyyttttyv_y_y__vyttttyyyttttyv______vyttttyyyttttyvy___y_vyyyyyyyyyyyyyv__y____vvvvvvvvvvvvv______y__y_____y____y__y___y_____y____y_____y__yyy__y___y__yy___yy_yyyyy_y_yyy_yyy_yyyyy",
+    "name": "Trapped chest",
+    "credit": "It's a perfectly normal chest. Don't be weird.",
+    "author": "bunny baphomet",
+    "category": "stills"
   }
 ]
