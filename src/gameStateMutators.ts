@@ -308,7 +308,7 @@ function makeComboText(
     gameState,
     x,
     y,
-    by > 0 ? gameState.ballsColor : "#FF0000",
+    by > 0 ? palette.y : "#FF0000",
     text,
     30,
     100 + 250 * importance,
