@@ -2100,6 +2100,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
           ball.vx,
           ball.vy,
         );
+        traceBallTail(gameState, ball, "#00b2ff");
       } else {
         gameState.levelMisses++;
         gameState.runStatistics.misses++;
@@ -2117,20 +2118,8 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
             0,
             1,
           );
-        // Particle effect
-        forEachLiveOne(ball.tail, (p) => {
-          makeParticle(
-            gameState,
-            p.x,
-            p.y,
-            p.vx / 5,
-            p.vy / 5,
-            "#FF0000",
-            true,
-            8,
-            400,
-          );
-        });
+
+        traceBallTail(gameState, ball, "#FF0000");
       }
     }
 
@@ -2506,7 +2495,12 @@ function makeCoin(
     p.floatingTime = 0;
   });
 }
-
+function traceBallTail(gameState: GameState, ball: Ball, color: string) {
+  // Particle effect
+  forEachLiveOne(ball.tail, (p) => {
+    makeParticle(gameState, p.x, p.y, p.vx / 5, p.vy / 5, color, true, 8, 400);
+  });
+}
 function makeParticle(
   gameState: GameState,
   x: number,
