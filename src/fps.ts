@@ -37,10 +37,13 @@ export const stats = document.getElementById("stats") as HTMLDivElement;
 setInterval(() => {
   lastMeasuredFPS = FPSCounter;
   FPSCounter = 0;
-  if (lastMeasuredFPS > 30) {
-    secondsAbove30FPS++;
-  } else {
-    secondsBelow30FPS++;
+  // Tab could be in the background otherwise, no point in measure fps then
+  if (mainGameState.running) {
+    if (lastMeasuredFPS > 30) {
+      secondsAbove30FPS++;
+    } else {
+      secondsBelow30FPS++;
+    }
   }
 
   if (mainGameState.startParams.runType !== "stress") {
