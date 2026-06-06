@@ -100,7 +100,7 @@ export const options = {
     help: t("settings.combo_bubbles_help"),
   },
   goofy_text: {
-    default: currentLanguageSupportsHeavyFontWeight(),
+    default: true,
     name: t("settings.goofy_text"),
     help: t("settings.goofy_text_help"),
   },

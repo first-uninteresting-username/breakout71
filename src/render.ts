@@ -532,6 +532,8 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
 
   startWork("render:texts");
   ctx.globalCompositeOperation = "screen";
+  const boldOn =
+    currentLanguageSupportsHeavyFontWeight() && isOptionOn("goofy_text");
   forEachLiveOne(gameState.texts, (flash) => {
     const { x, y, vx, vy, time, color, size, duration } = flash;
     const elapsed = gameState.levelTime - time;
@@ -545,7 +547,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       let borderWidth =
         Math.floor(Math.sqrt(size) - 2) *
         (isClearingBg ? 4 : 1) *
-        (isOptionOn("goofy_text") || isClearingBg ? 1 : 0);
+        (boldOn || isClearingBg ? 1 : 0);
 
       drawText(
         ctx,

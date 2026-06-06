@@ -15,7 +15,12 @@ import { getAudioContext, playPendingSounds } from "./sounds";
 import { currentLevelInfo, hoursSpentPlaying, sample } from "./game_utils";
 
 import "./PWA/sw_loader";
-import { getCurrentLang, languages, t } from "./i18n/i18n";
+import {
+  currentLanguageSupportsHeavyFontWeight,
+  getCurrentLang,
+  languages,
+  t,
+} from "./i18n/i18n";
 import {
   commitSettingsChangesToLocalStorage,
   cycleMaxCoins,
@@ -561,6 +566,7 @@ async function openSettingsMenu() {
             ].includes(key)) ||
           (!isOptionOn("particles") && ["missed_shot_trail"].includes(key)) ||
           (!isOptionOn("sound") && ["menu_sound"].includes(key)) ||
+          (key === "goofy_text" && !currentLanguageSupportsHeavyFontWeight()) ||
           false,
         value: () => {
           toggleOption(key);
