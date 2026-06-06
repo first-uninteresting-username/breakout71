@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "コインやブロックの周りのハイライトを大きくする。",
     "settings.fullscreen": "全画面",
     "settings.fullscreen_help": "ゲームを開始する前にフルスクリーンモードにしようとします",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "言語",
     "settings.language_help": "ゲーム画面の言語を選択する",
     "settings.level_unlocks_hints": "レベル解禁のヒント",

@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Aumenta el tamaño del halo alrededor de las monedas y los ladrillos.",
     "settings.fullscreen": "Pantalla completa",
     "settings.fullscreen_help": "El juego intentará pasar a pantalla completa antes de comenzar.",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Idioma",
     "settings.language_help": "Elige el idioma del juego",
     "settings.level_unlocks_hints": "Pistas para desbloquear niveles",

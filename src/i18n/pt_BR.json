@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Aumenta o tamanho do espaço escuro em torno de moedas e blocos.",
     "settings.fullscreen": "Tela cheia",
     "settings.fullscreen_help": "O jogo vai tentar entrar em tela cheia antes de começar",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Idioma",
     "settings.language_help": "Escolha o idioma do jogo",
     "settings.level_unlocks_hints": "Dicas de desbloqueio de níveis",

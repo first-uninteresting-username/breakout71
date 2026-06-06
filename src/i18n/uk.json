@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Підвищує розмір галя навколо монет і цегли.",
     "settings.fullscreen": "Відео",
     "settings.fullscreen_help": "Гра намагатиметься пройти повний екран перед початком",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Українська",
     "settings.language_help": "Виберіть мову гри",
     "settings.level_unlocks_hints": "Рівень розблокування підказок",

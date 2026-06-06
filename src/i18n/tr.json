@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Madeni paraların ve tuğlaların etrafındaki hale boyutunu büyütür.",
     "settings.fullscreen": "Tam ekran",
     "settings.fullscreen_help": "Oyun başlamadan önce tam ekran olmaya çalışacak",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Dil",
     "settings.language_help": "Oyunun dilini seçin",
     "settings.level_unlocks_hints": "Seviyeler ipuçlarını açar",

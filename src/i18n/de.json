@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Erhöht die Größe des Halos um Münzen und Ziegel.",
     "settings.fullscreen": "Vollbild",
     "settings.fullscreen_help": "Das Spiel versucht, vor dem Start in den Vollbildmodus zu wechseln",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Sprache",
     "settings.language_help": "Wähle die Sprache des Spiels",
     "settings.level_unlocks_hints": "Hinweise zum Freischalten von Levels",

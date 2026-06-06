@@ -1,4 +1,4 @@
-import { t } from "./i18n/i18n";
+import { currentLanguageSupportsHeavyFontWeight, t } from "./i18n/i18n";
 
 import { OptionDef, OptionId } from "./types";
 import { getSettingValue, setSettingValue } from "./settings";
@@ -98,6 +98,11 @@ export const options = {
     default: true,
     name: t("settings.combo_bubbles"),
     help: t("settings.combo_bubbles_help"),
+  },
+  goofy_text: {
+    default: currentLanguageSupportsHeavyFontWeight(),
+    name: t("settings.goofy_text"),
+    help: t("settings.goofy_text_help"),
   },
   show_puck_rails: {
     default: true,

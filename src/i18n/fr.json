@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Plus grand halo lumineux autours des briques et pièces.",
     "settings.fullscreen": "Plein écran",
     "settings.fullscreen_help": "Le jeu essaiera de passer en plein écran quand vous le démarrez",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Langue",
     "settings.language_help": "Changer la langue d'affichage",
     "settings.level_unlocks_hints": "Indices de déblocage des niveaux",

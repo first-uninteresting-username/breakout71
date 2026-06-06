@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Увеличивает размер ореола вокруг монет и кирпичей.",
     "settings.fullscreen": "ПОЛНЫЙ ЭКРАН",
     "settings.fullscreen_help": "Игра пытается перейти в полноэкранный режим перед запуском",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Язык",
     "settings.language_help": "Выберите язык игры",
     "settings.level_unlocks_hints": "Подсказки для разблокировки уровней",

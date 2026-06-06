@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Zwiększa rozmiar halo wokół monet i cegieł.",
     "settings.fullscreen": "Fullscreen",
     "settings.fullscreen_help": "Game próbuje wykonać pełny ekran przed rozpoczęciem gry",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Językoznawstwo",
     "settings.language_help": "Choose the game's language",
     "settings.level_unlocks_hints": "Poziom unlock",

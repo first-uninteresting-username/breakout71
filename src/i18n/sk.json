@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Zvyšuje veľkosť halo okolo mincí a tehál.",
     "settings.fullscreen": "Plná obrazovka",
     "settings.fullscreen_help": "Hra sa bude snažiť ísť celú obrazovku pred začatím",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Slovenčina",
     "settings.language_help": "Vyberte si jazyk hry",
     "settings.level_unlocks_hints": "Úrovne odomknúť náznaky",

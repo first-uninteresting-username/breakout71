@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Aumenta la dimensione dell'alone intorno monete e mattoni.",
     "settings.fullscreen": "Schermo intero",
     "settings.fullscreen_help": "Il gioco cercherà di passare a schermo intero prima di iniziare",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Lingua",
     "settings.language_help": "Scegli la lingua del gioco",
     "settings.level_unlocks_hints": "Suggerimenti sblocco livelli",

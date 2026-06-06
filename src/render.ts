@@ -545,7 +545,8 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
       let borderWidth =
         Math.floor(Math.sqrt(size) - 2) *
         (isClearingBg ? 4 : 1) *
-        (currentLanguageSupportsHeavyFontWeight() || isClearingBg ? 1 : 0);
+        (isOptionOn("goofy_text") || isClearingBg ? 1 : 0);
+
       drawText(
         ctx,
         flash.text,

@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Zvětší rozměry záře kolem mincí a cihliček.",
     "settings.fullscreen": "Celá obrazovka",
     "settings.fullscreen_help": "Hra se pokusí před startem přejít na režim celé obrazovky",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "Jazyk",
     "settings.language_help": "Zvolte si jazyk této hry",
     "settings.level_unlocks_hints": "Rady pro odemčení úrovní",

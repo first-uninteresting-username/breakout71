@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "增加硬幣和磚塊的光暈尺寸。",
     "settings.fullscreen": "全螢幕",
     "settings.fullscreen_help": "遊戲會在開始前嘗試進入全螢幕",
+    "settings.goofy_text": "",
+    "settings.goofy_text_help": "",
     "settings.language": "語言",
     "settings.language_help": "選擇遊戲的語言",
     "settings.level_unlocks_hints": "關卡解鎖提示",

@@ -157,6 +157,8 @@
     "settings.extra_bright_help": "Increases the size of the halo around coins and bricks.",
     "settings.fullscreen": "Fullscreen",
     "settings.fullscreen_help": "Game will try to go full screen before starting",
+    "settings.goofy_text": "Goofy bold text",
+    "settings.goofy_text_help": "Show combo increase/decrease/reset call-outs with extra bold text",
     "settings.language": "Language",
     "settings.language_help": "Choose the game's language",
     "settings.level_unlocks_hints": "Levels unlock hints",
