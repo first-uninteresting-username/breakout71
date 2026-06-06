@@ -29,7 +29,6 @@ import {
   setSettingValue,
 } from "./settings";
 import {
-  forEachLiveOne,
   gameStateTick,
   loadLevelBackground,
   normalizeGameState,
@@ -58,7 +57,7 @@ import {
   closeModal,
 } from "./asyncAlert";
 import { isOptionOn, options, toggleOption } from "./options";
-import { clamp, isComputerControlled } from "./pure_functions";
+import { clamp, forEachLiveOne, isComputerControlled } from "./pure_functions";
 import { helpMenuEntry } from "./help";
 import { creativeMode } from "./creative";
 import { hideAnyTooltip, setupTooltips } from "./tooltip";

@@ -1,8 +1,7 @@
 import { GameState } from "./types";
 import { getClosestBall } from "./game_utils";
 import { hashCode } from "./getLevelBackground";
-import { clamp } from "./pure_functions";
-import { forEachLiveOne } from "./gameStateMutators";
+import { clamp, forEachLiveOne } from "./pure_functions";
 import { gameOver } from "./gameOver";
 
 export function computerControl(gameState: GameState) {

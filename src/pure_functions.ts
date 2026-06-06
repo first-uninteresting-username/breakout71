@@ -1,4 +1,4 @@
-import { Ball, GameState } from "./types";
+import { Ball, GameState, ReusableArray } from "./types";
 
 export function clamp(value: number, min: number, max: number) {
   return Math.max(min, Math.min(value, max));
@@ -188,4 +188,67 @@ export function countDifferentColorBricks(
   } else {
     return 0;
   }
+}
+export function append<T extends { destroyed?: boolean | undefined }>(
+  where: ReusableArray<T>,
+  makeItem: (match: Partial<T>) => void,
+) {
+  while (
+    where.list[where.indexMin] &&
+    !where.list[where.indexMin].destroyed &&
+    where.indexMin < where.list.length
+  ) {
+    where.indexMin++;
+  }
+  if (where.indexMin < where.list.length) {
+    where.list[where.indexMin].destroyed = false;
+    makeItem(where.list[where.indexMin]);
+    where.indexMin++;
+  } else {
+    const p = { destroyed: false };
+    makeItem(p as T);
+    where.list.push(p as T);
+  }
+  where.total++;
+}
+
+export function destroy<T extends { destroyed?: boolean }>(
+  where: ReusableArray<T>,
+  index: number,
+) {
+  if (where.list[index].destroyed) return;
+  where.list[index].destroyed = true;
+  where.indexMin = Math.min(where.indexMin, index);
+  where.total--;
+}
+
+export function liveCount<T extends { destroyed?: boolean }>(
+  where: ReusableArray<T>,
+) {
+  return where.total;
+}
+
+export function empty<T extends { destroyed?: boolean }>(
+  where: ReusableArray<T>,
+) {
+  let destroyed = 0;
+  where.total = 0;
+  where.indexMin = 0;
+  where.list.forEach((i) => {
+    if (!i.destroyed) {
+      i.destroyed = true;
+      destroyed++;
+    }
+  });
+  return destroyed;
+}
+export function forEachLiveOne<T extends { destroyed?: boolean }>(
+  where: ReusableArray<T>,
+  cb: (t: T, index: number) => void,
+) {
+  where.list.forEach((item: T, index: number) => {
+    if (item && !item.destroyed) {
+      cb(item, index);
+    }
+  });
 }

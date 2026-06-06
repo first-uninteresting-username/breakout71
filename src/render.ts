@@ -1,9 +1,4 @@
-import {
-  baseCombo,
-  forEachLiveOne,
-  getPredictableBallDirection,
-  liveCount,
-} from "./gameStateMutators";
+import { baseCombo, getPredictableBallDirection } from "./gameStateMutators";
 import {
   baseBrickHP,
   brickCenterX,
@@ -32,9 +27,11 @@ import {
   catchRateGood,
   clamp,
   countDifferentColorBricks,
+  forEachLiveOne,
   isComputerControlled,
   levelTimeBest,
   levelTimeGood,
+  liveCount,
   missesBest,
   missesGood,
 } from "./pure_functions";

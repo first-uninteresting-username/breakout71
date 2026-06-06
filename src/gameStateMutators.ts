@@ -7,7 +7,6 @@ import {
   HitDirection,
   Level,
   LightFlash,
-  ReusableArray,
   TextFlash,
 } from "./types";
 
@@ -48,15 +47,20 @@ import { fitSize, pause } from "./game";
 import { stopRecording } from "./recording";
 import { isOptionOn } from "./options";
 import {
+  append,
   applyComboBoost,
   ballTransparency,
   base_combo_from_stronger_foundation,
   clamp,
   comboKeepingRate,
   countDifferentColorBricks,
+  destroy,
+  empty,
+  forEachLiveOne,
   getNewReusableArray,
   getRowColIndex,
   isComputerControlled,
+  liveCount,
 } from "./pure_functions";
 import { addToTotalScore } from "./addToTotalScore";
 import { openUpgradesPicker } from "./openUpgradesPicker";
@@ -2499,7 +2503,7 @@ function traceBallTail(gameState: GameState, ball: Ball, color: string) {
   });
 }
 
-function makeText(
+export function makeText(
   gameState: GameState,
   x: number,
   y: number,
@@ -2525,7 +2529,7 @@ function makeText(
   });
 }
 
-function makeLight(
+export function makeLight(
   gameState: GameState,
   x: number,
   y: number,
@@ -2543,37 +2547,7 @@ function makeLight(
   });
 }
 
-export function append<T>(
-  where: ReusableArray<T>,
-  makeItem: (match: Partial<T>) => void,
-) {
-  while (
-    where.list[where.indexMin] &&
-    !where.list[where.indexMin].destroyed &&
-    where.indexMin < where.list.length
-  ) {
-    where.indexMin++;
-  }
-  if (where.indexMin < where.list.length) {
-    where.list[where.indexMin].destroyed = false;
-    makeItem(where.list[where.indexMin]);
-    where.indexMin++;
-  } else {
-    const p = { destroyed: false };
-    makeItem(p);
-    where.list.push(p);
-  }
-  where.total++;
-}
-
-export function destroy<T>(where: ReusableArray<T>, index: number) {
-  if (where.list[index].destroyed) return;
-  where.list[index].destroyed = true;
-  where.indexMin = Math.min(where.indexMin, index);
-  where.total--;
-}
-
-function applyGravity(gameState: GameState, ball: Ball) {
+export function applyGravity(gameState: GameState, ball: Ball) {
   if (!ball.hasGravity && !ball.destroyed) {
     ball.hasGravity = true;
     makeText(
@@ -2588,35 +2562,7 @@ function applyGravity(gameState: GameState, ball: Ball) {
   }
 }
 
-export function liveCount<T>(where: ReusableArray<T>) {
-  return where.total;
-}
-
-export function empty<T>(where: ReusableArray<T>) {
-  let destroyed = 0;
-  where.total = 0;
-  where.indexMin = 0;
-  where.list.forEach((i) => {
-    if (!i.destroyed) {
-      i.destroyed = true;
-      destroyed++;
-    }
-  });
-  return destroyed;
-}
-
-export function forEachLiveOne<T>(
-  where: ReusableArray<T>,
-  cb: (t: T, index: number) => void,
-) {
-  where.list.forEach((item: T, index: number) => {
-    if (item && !item.destroyed) {
-      cb(item, index);
-    }
-  });
-}
-
-function goToNearestBrick(
+export function goToNearestBrick(
   gameState: GameState,
   coin: Ball | Coin,
   strength: number,
@@ -2725,7 +2671,7 @@ function underWrapLimit(gameState: GameState, ball: Ball) {
   return true;
 }
 
-function applyWrapUp(gameState: GameState, ball: Ball | Coin, radius) {
+function applyWrapUp(gameState: GameState, ball: Ball | Coin, radius: number) {
   schedulGameSound(gameState, "plouf", ball.x, 1);
 
   ball.y = gameState.gameZoneHeight - gameState.puckHeight - radius;
@@ -2813,7 +2759,7 @@ function refillBall(gameState: GameState, ball: Ball) {
 function applyBrickSidesParticleEffects(gameState: GameState, frames: number) {
   if (
     gameState.combo <= baseCombo(gameState) ||
-    (gameState.combo - baseCombo(gameState)) * Math.random() * frames < 5
+    (gameState.combo - baseCombo(gameState)) * Math.random() * frames < 1
   ) {
     return;
   }

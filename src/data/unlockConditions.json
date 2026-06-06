@@ -2195,5 +2195,31 @@
     "required": ["chill", "fumes", "reach"],
     "forbidden": ["round_bricks", "bricks_attract_coins", "hardhat"],
     "minScore": 42300
+  },
+
+  "invasion": {
+    "required": ["chill", "minefield", "fumes"],
+    "forbidden": ["addiction", "reach", "passive_income"],
+    "minScore": 42400
+  },
+  "pop rocks": {
+    "required": ["sacrifice", "chill", "fumes"],
+    "forbidden": ["reach", "wrap_up", "minefield"],
+    "minScore": 42500
+  },
+  "hyenas at play": {
+    "required": ["smaller_puck", "ottawa_treaty", "chill"],
+    "forbidden": ["fumes", "reach", "sacrifice"],
+    "minScore": 42600
+  },
+  "hole in one": {
+    "required": ["double_or_nothing", "soft_brush", "soft_reset"],
+    "forbidden": ["soft_touch", "paddle_up_combo", "right_is_lava"],
+    "minScore": 42700
+  },
+  "Manjaro linux": {
+    "required": ["vibrant_neighborhood", "chill", "fumes"],
+    "forbidden": ["transparency", "left_is_lava", "reach"],
+    "minScore": 42800
   }
 }

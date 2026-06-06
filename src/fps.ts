@@ -1,8 +1,7 @@
 import { mainGameState } from "./game";
 import { sumOfValues } from "./game_utils";
-import { liveCount } from "./gameStateMutators";
 import { getCurrentMaxCoins, getCurrentMaxParticles } from "./settings";
-import { clamp } from "./pure_functions";
+import { clamp, liveCount } from "./pure_functions";
 
 export let total: Record<string, number> = {};
 let lastTick = performance.now();
