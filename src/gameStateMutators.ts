@@ -1064,23 +1064,48 @@ export function attract(gameState: GameState, a: Ball, b: Ball, power: number) {
 export function coinBrickHitCheck(gameState: GameState, coin: Coin) {
   // Make ball/coin bonce, and return bricks that were hit
   const radius = coin.size / 2;
-  const { x, y } = coin;
 
-  const hit = hitsSomething(gameState, x, y, radius * COINS_EXTRA_HIT_RADIUS);
+  const { x, y, previousX, previousY } = coin;
 
-  if (hit) {
+  const vhit = hitsSomething(gameState, previousX, y, radius);
+  const hhit = hitsSomething(gameState, x, previousY, radius);
+  const chit =
+    (typeof vhit == "undefined" &&
+      typeof hhit == "undefined" &&
+      hitsSomething(gameState, x, y, radius)) ||
+    undefined;
+
+  if (typeof (vhit ?? hhit ?? chit) !== "undefined") {
     if (gameState.perks.ghost_coins) {
       coin.vy *= 1 - 0.2 / gameState.perks.ghost_coins;
       coin.vx *= 1 - 0.2 / gameState.perks.ghost_coins;
     } else {
-      bounceOnHitBrick(coin, hit);
-      coin.vx -= hit.cos * 2;
-      if (Math.abs(hit.cos) > Math.abs(hit.sin) / 6) {
-        coin.sa += hit.cos / 10;
+      if (typeof vhit !== "undefined" || typeof chit !== "undefined") {
+        coin.y = coin.previousY;
+        coin.vy *= -1;
+
+        //   Roll on corners
+        const leftHit =
+          gameState.bricks[brickIndex(gameState, x - radius, y + radius)];
+        const rightHit =
+          gameState.bricks[brickIndex(gameState, x + radius, y + radius)];
+
+        if (leftHit && !rightHit) {
+          coin.vx += 1;
+          coin.sa -= 1;
+        }
+        if (!leftHit && rightHit) {
+          coin.vx -= 1;
+          coin.sa += 1;
+        }
+      }
+      if (typeof hhit !== "undefined" || typeof chit !== "undefined") {
+        coin.x = coin.previousX;
+        coin.vx *= -1;
       }
     }
   }
-  return hit?.hitBrick;
+  return vhit ?? hhit ?? chit;
 }
 
 export function bordersHitCheck(
@@ -2205,14 +2230,21 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
   }
   const radius = gameState.ballSize / 2;
   // Make ball/coin bounce, and return bricks that were hit
-  const { x, y } = ball;
-  const hit = hitsSomething(gameState, x, y, radius);
+  const { x, y, previousX, previousY } = ball;
 
-  if (hit) {
-    const { hitBrick, hitX, hitY } = hit;
+  const vhit = hitsSomething(gameState, previousX, y, radius);
+  const hhit = hitsSomething(gameState, x, previousY, radius);
+  const chit =
+    (typeof vhit == "undefined" &&
+      typeof hhit == "undefined" &&
+      hitsSomething(gameState, x, y, radius)) ||
+    undefined;
 
-    const dx = brickCenterX(gameState, hitBrick) - hitX;
-    const dy = brickCenterY(gameState, hitBrick) - hitY;
+  const hitBrick = vhit ?? hhit ?? chit;
+
+  if (typeof hitBrick !== "undefined") {
+    const dx = brickCenterX(gameState, hitBrick) - x;
+    const dy = brickCenterY(gameState, hitBrick) - y;
 
     const hitFrom: HitDirection =
       Math.abs(dx) > Math.abs(dy)
@@ -2223,7 +2255,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
           ? "top"
           : "bottom";
 
-    // makeText(gameState, hitX, hitY, "#00FF00", hitFrom, 10, 500, 0, 0);
+    // makeText(gameState, x, y, "#00FF00", hitFrom, 10, 500, 0, 0);
 
     const initialBrickColor = gameState.bricks[hitBrick];
     ball.hitSinceBounce++;
@@ -2321,7 +2353,14 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
     }
 
     if (!ball.piercePoints || !damageMultiplier) {
-      bounceOnHitBrick(ball, hit);
+      if (typeof vhit !== "undefined" || typeof chit !== "undefined") {
+        ball.y = ball.previousY;
+        ball.vy *= -1;
+      }
+      if (typeof hhit !== "undefined" || typeof chit !== "undefined") {
+        ball.x = ball.previousX;
+        ball.vx *= -1;
+      }
     }
 
     if (gameState.brickHP[hitBrick] <= 0) {
@@ -2364,9 +2403,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
 
     if (
       willMiss ||
-      (extraCombo && Math.random() > 0.1 / (1 + extraCombo)) ||
-      (remainingSapper && Math.random() > 0.1 / (1 + remainingSapper)) ||
-      (extraCombo && Math.random() > 0.1 / (1 + extraCombo))
+      (remainingSapper && Math.random() > 0.1 / (1 + remainingSapper))
     ) {
       const color =
         (remainingSapper && (Math.random() > 0.5 ? "#ffb92a" : "#FF0000")) ||
@@ -2391,27 +2428,6 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
       );
     }
   }
-}
-
-export function bounceOnHitBrick(
-  ball: {
-    x: number;
-    y: number;
-    vx: number;
-    vy: number;
-    previousX: number;
-    previousY: number;
-  },
-  hit: { cos: number; sin: number },
-) {
-  const { cos, sin } = hit;
-  const dotProduct = ball.vx * cos + ball.vy * sin;
-
-  ball.vx -= dotProduct * cos * 2;
-  ball.vy -= dotProduct * sin * 2;
-
-  ball.y = ball.previousY;
-  ball.x = ball.previousX;
 }
 function justLostALife(gameState: GameState, x: number, y: number) {
   gameState.perks.extra_life -= 1;

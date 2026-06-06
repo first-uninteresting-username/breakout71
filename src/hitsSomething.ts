@@ -4,19 +4,24 @@ import { brickCenterX, brickCenterY } from "./game_utils";
 
 export const COINS_EXTRA_HIT_RADIUS = 1.2;
 
+function getRow(gameState: GameState, y: number) {
+  return Math.floor(y / gameState.brickWidth);
+}
+function getCol(gameState: GameState, x: number) {
+  return Math.floor((x - gameState.offsetX) / gameState.brickWidth);
+}
+
 export function brickIndex(gameState: GameState, x: number, y: number) {
   const index = getRowColIndex(
     gameState,
-    Math.floor(y / gameState.brickWidth),
-    Math.floor((x - gameState.offsetX) / gameState.brickWidth),
+    getRow(gameState, y),
+    getCol(gameState, x),
   );
-  if (gameState.perks.round_bricks && index !== -1) {
-    const dx = x - brickCenterX(gameState, index);
-    const dy = y - brickCenterY(gameState, index);
-    const radius = gameState.brickWidth / 2.8;
-    if (dx * dx + dy * dy > radius * radius) return -1;
+  if (isPointInBrick(gameState, index, x, y)) {
+    return index;
+  } else {
+    return -1;
   }
-  return index;
 }
 
 export function hasBrick(
@@ -26,57 +31,7 @@ export function hasBrick(
   if (gameState.bricks[index]) return index;
 }
 
-let hit: {
-  hitBrick?: number;
-  hitX?: number;
-  hitY?: number;
-  cos?: number;
-  sin?: number;
-} = {};
-
-export function hitsSomething(
-  gameState: GameState,
-  x: number,
-  y: number,
-  radius: number,
-) {
-  delete hit.hitBrick;
-  // find the closest hit item
-  const extraSegments = Math.floor((radius * 2) / gameState.brickWidth);
-  const xyList = getCoordinatesList(extraSegments);
-  let distToCenter = 10000;
-
-  for (let i = 0; i < xyList.length; i++) {
-    const cos = xyList[i].cos;
-    const sin = xyList[i].sin;
-    const hitX = x + cos * radius;
-    const hitY = y + sin * radius;
-    const hitBrick = hasBrick(gameState, brickIndex(gameState, hitX, hitY));
-    // index might be 0
-    if (typeof hitBrick === "undefined") continue;
-    const dist = distanceToBrickCenter(gameState, hitBrick, hitX, hitY);
-    if (dist < distToCenter) {
-      distToCenter = dist;
-      hit.cos = cos;
-      hit.sin = sin;
-      hit.hitX = hitX;
-      hit.hitY = hitY;
-      hit.hitBrick = hitBrick;
-    }
-  }
-
-  if (typeof hit.hitBrick !== "undefined") {
-    return hit as {
-      hitBrick: number;
-      hitX: number;
-      hitY: number;
-      cos: number;
-      sin: number;
-    };
-  }
-}
-
-export function distanceToBrickCenter(
+export function isPointInBrick(
   gameState: GameState,
   index: number,
   x: number,
@@ -84,27 +39,87 @@ export function distanceToBrickCenter(
 ) {
   const dx = x - brickCenterX(gameState, index);
   const dy = y - brickCenterY(gameState, index);
-  return dx * dx + dy * dy;
+  if (gameState.perks.round_bricks && index !== -1) {
+    const radius = gameState.brickWidth / 2.8;
+    return dx * dx + dy * dy > radius * radius;
+  } else {
+    return (
+      Math.abs(dx) < gameState.brickWidth / 2 &&
+      Math.abs(dy) < gameState.brickWidth / 2
+    );
+  }
 }
 
-const coordinatesListCache: Record<
-  number,
-  Array<{ cos: number; sin: number }>
-> = {};
-function getCoordinatesList(extraSegments: number) {
-  // retuns a list of points in a circle to check for collisions
-  if (!coordinatesListCache[extraSegments]) {
-    coordinatesListCache[extraSegments] = [];
-    for (let extra = 0; extra < 1 + extraSegments; extra++) {
-      const baseAngle = ((extra / (1 + extraSegments)) * Math.PI) / 2;
-      for (let step = 0; step < 8; step++) {
-        const angle = baseAngle + (step * Math.PI * 2) / 8;
-        coordinatesListCache[extraSegments].push({
-          cos: Math.cos(angle),
-          sin: Math.sin(angle),
-        });
+export function isPointInCircle(
+  circleCenterX: number,
+  circleCenterY: number,
+  radius: number,
+  pointX: number,
+  pointY: number,
+) {
+  const dx = pointX - circleCenterX;
+  const dy = pointY - circleCenterY;
+  return dx * dx + dy * dy < radius * radius;
+}
+
+export function hitsSomething(
+  gameState: GameState,
+  x: number,
+  y: number,
+  radius: number,
+) {
+  // Find the index of the furthest brick intersecting with the circle
+  const minRow = getRow(gameState, y - radius);
+  const maxRow = getRow(gameState, y + radius);
+  const minCol = getCol(gameState, x - radius);
+  const maxCol = getCol(gameState, x + radius);
+
+  // It would be best to start with the furthest cells, but really, this mostly
+  // runs when the ball is in empty air and the order doesn't matter
+  let highestDistance2 = -Infinity,
+    bestIndex = undefined;
+  for (let col = minCol; col <= maxCol; col++) {
+    for (let row = minRow; row <= maxRow; row++) {
+      const index = getRowColIndex(gameState, row, col);
+      if (index === -1 || !gameState.bricks[index]) {
+        continue;
+      }
+
+      const brickX = brickCenterX(gameState, index);
+      const brickY = brickCenterY(gameState, index);
+      const dx = brickX - x;
+      const dy = brickY - y;
+      const dist2 = dx * dx + dy * dy;
+      const delta = gameState.brickWidth / 2;
+
+      let hit;
+      if (gameState.perks.round_bricks) {
+        const dMax = gameState.brickWidth / 2.8 + radius;
+        hit = dist2 < dMax * dMax;
+      } else {
+        hit =
+          // Circle center inside brick
+          isPointInBrick(gameState, index, x, y) ||
+          // Brick corner inside circle
+          isPointInCircle(x, y, radius, brickX - delta, brickY - delta) ||
+          isPointInCircle(x, y, radius, brickX + delta, brickY - delta) ||
+          isPointInCircle(x, y, radius, brickX + delta, brickY + delta) ||
+          isPointInCircle(x, y, radius, brickX - delta, brickY + delta) ||
+          // borders overlapping
+          (y > brickY - delta &&
+            y < brickY + delta &&
+            Math.abs(dx) < radius + delta) ||
+          (x > brickX - delta &&
+            x < brickX + delta &&
+            Math.abs(dy) < radius + delta);
+      }
+
+      if (hit && dist2 > highestDistance2) {
+        // we have a hit
+        bestIndex = index;
+        highestDistance2 = dist2;
       }
     }
   }
-  return coordinatesListCache[extraSegments];
+  return bestIndex;
 }
