@@ -2399,7 +2399,6 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
       ball.topHitsSinceBounce;
     const willBeForgiven =
       willMiss && gameState.levelMisses < gameState.perks.forgiving;
-    const extraCombo = gameState.combo - 1;
 
     if (
       willMiss ||
