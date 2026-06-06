@@ -348,7 +348,17 @@ export const rawUpgrades = [
     fullHelp: (lvl: number) =>
       t("upgrades.bigger_puck.verbose_description", { lvl }),
   },
-
+  {
+    category: categories.beginner,
+    requires: [],
+    threshold: 5000,
+    id: "bigger_balls",
+    max: 2,
+    hardLimit: 8,
+    name: t("upgrades.bigger_balls.name"),
+    help: (lvl: number) => t("upgrades.bigger_balls.tooltip"),
+    fullHelp: (lvl: number) => t("upgrades.bigger_balls.verbose_description"),
+  },
   {
     category: categories.beginner,
     requires: [],
@@ -1223,16 +1233,5 @@ export const rawUpgrades = [
     name: t("upgrades.hardhat.name"),
     help: (lvl: number) => t("upgrades.hardhat.tooltip"),
     fullHelp: (lvl: number) => t("upgrades.hardhat.verbose_description"),
-  },
-  {
-    category: categories.advanced,
-    requires: [],
-    threshold: 440000,
-    id: "bigger_balls",
-    max: 2,
-    hardLimit: 8,
-    name: t("upgrades.bigger_balls.name"),
-    help: (lvl: number) => t("upgrades.bigger_balls.tooltip"),
-    fullHelp: (lvl: number) => t("upgrades.bigger_balls.verbose_description"),
   },
 ] as const;

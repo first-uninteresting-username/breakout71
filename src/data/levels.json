@@ -4418,9 +4418,15 @@
   {
     "size": 21,
     "bricks": "__y______y____y__________y_vvvvvvvvv__y__yy__vvvtttyyytttvvv_____vyyttttyyyttttyyvy__yvyyttttyyyttttyyv____vyyttttyyyttttyyvy_y_vyytttyyyyytttyyv____vyytttyyyyytttyyv____vyyyttyBBByttyyyv_y__vyyyyyyBBByyyyyyv___y_vytttyyByytttyv_y____vyttttyyyttttyv_____yvyttttyyyttttyv_y_y__vyttttyyyttttyv______vyttttyyyttttyvy___y_vyyyyyyyyyyyyyv__y____vvvvvvvvvvvvv______y__y_____y____y__y___y_____y____y_____y__yyy__y___y__yy___yy_yyyyy_y_yyy_yyy_yyyyy",
-    "name": "Trapped chest",
     "credit": "It's a perfectly normal chest. Don't be weird.",
-    "author": "bunny baphomet",
-    "category": "stills"
+    "category": "stills",
+    "author": "bunny baphomet"
+  },
+  {
+    "name": "icon:bigger_balls",
+    "size": 8,
+    "bricks": "_GGGGGG__GGGWWG__GGWWWW____WWWW_____WW____________________WWW___",
+    "svg": null,
+    "color": ""
   }
 ]
