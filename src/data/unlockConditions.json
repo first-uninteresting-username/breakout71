@@ -2221,5 +2221,65 @@
     "required": ["vibrant_neighborhood", "chill", "fumes"],
     "forbidden": ["transparency", "left_is_lava", "reach"],
     "minScore": 42800
+  },
+  "Rockman": {
+    "required": ["sapper", "pierce", "superhot"],
+    "forbidden": ["bigger_puck", "three_cushion"],
+    "minScore": 12000
+  },
+  "Cristo Redentor": {
+    "required": ["extra_life", "forgiving", "thomas"],
+    "forbidden": ["pierce", "three_cushion", "slow_down"],
+    "minScore": 24000
+  },
+  "Aeropress": {
+    "required": ["forgiving", "ball_attracts_coins", "implosions"],
+    "forbidden": ["viscosity", "vibrant_neighborhood", "limitless"],
+    "minScore": 42900
+  },
+  "bankjob 71": {
+    "required": ["bigger_balls", "steering", "forgiving"],
+    "forbidden": ["viscosity", "telekinesis", "limitless"],
+    "minScore": 43000
+  },
+  "inflatable pastures": {
+    "required": ["wrap_up", "round_bricks", "telekinesis"],
+    "forbidden": ["compound_interest", "unbounded", "limitless"],
+    "minScore": 43100
+  },
+  "burgout 71": {
+    "required": ["concave_puck", "skip_last", "ball_attract_ball"],
+    "forbidden": ["sturdy_bricks", "double_or_nothing", "telekinesis"],
+    "minScore": 43200
+  },
+  "Scale": {
+    "required": ["superhot", "gravity_falls", "streak_shots"],
+    "forbidden": ["skip_last", "side_flip", "side_kick"],
+    "minScore": 43300
+  },
+  "Evil Eye": {
+    "required": ["trickledown", "three_cushion", "thomas"],
+    "forbidden": ["shocks", "sapper", "disco_ball"],
+    "minScore": 43500
+  },
+  "Cristo Redentor": {
+    "required": ["transparency", "left_is_lava", "wrap_up"],
+    "forbidden": ["flyswatter", "sticky_coins", "etherealcoins"],
+    "minScore": 43600
+  },
+  "dragons tower": {
+    "required": ["asceticism", "fountain_toss", "soft_brush"],
+    "forbidden": ["soft_reset", "soft_touch", "steering"],
+    "minScore": 43700
+  },
+  "brickroll 71": {
+    "required": ["happy_family", "ball_repulse_ball", "puck_repulse_ball"],
+    "forbidden": ["trampoline", "superhot", "trickledown"],
+    "minScore": 43800
+  },
+  "dither fields": {
+    "required": ["ottawa_treaty", "implosions", "hardhat"],
+    "forbidden": ["ball_attracts_coins", "happy_family", "rainbow"],
+    "minScore": 43900
   }
 }
