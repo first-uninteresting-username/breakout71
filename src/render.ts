@@ -1448,6 +1448,11 @@ function updateScoreDisplay(gameState: GameState) {
   } else if (gameState.startParams.runType === "level_preview_run") {
     scoreDisplay.innerHTML = t("play.close_modale_window_tooltip");
   } else {
+    const misses = Math.max(
+      0,
+      gameState.levelMisses - gameState.perks.forgiving,
+    );
+
     scoreDisplay.innerHTML =
       (isOptionOn("show_fps") || isComputerControlled(gameState)
         ? ` 
@@ -1464,8 +1469,8 @@ function updateScoreDisplay(gameState: GameState) {
         <span class="${(gameState.levelTime < levelTimeBest * 1000 && "great") || (gameState.levelTime < levelTimeGood * 1000 && "good") || ""}" data-tooltip="${t("play.stats.levelTime")}">
         ${Math.ceil(gameState.levelTime / 1000)}s 
         </span><span> / </span>  
-        <span class="${(gameState.levelMisses < missesBest && "great") || (gameState.levelMisses < missesGood && "good") || ""}" data-tooltip="${t("play.stats.levelMisses")}">
-        ${gameState.levelMisses} M
+        <span class="${(misses < missesBest && "great") || (misses < missesGood && "good") || ""}" data-tooltip="${t("play.stats.levelMisses")}">
+        ${misses} M
         </span><span> / </span>
         `
         : "") +
