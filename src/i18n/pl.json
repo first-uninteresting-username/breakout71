@@ -165,7 +165,7 @@
     "settings.level_unlocks_hints_help": "Pomoże Ci wybrać odpowiednie bonusy, aby odblokować kolejne poziomy",
     "settings.load_save_file": "Wczytaj zapis gry",
     "settings.load_save_file_help": "Wybierz plik zapisu z urządzenia",
-    "settings.max_coins": "{{max}} monet maksymalnie na ekranie",
+    "settings.max_coins": "Maksymalnie {{max}} monet na ekranie",
     "settings.max_coins_help": "Tylko kosmetyczne, bez wpływu na wynik",
     "settings.menu_sound": "Menu dźwięku",
     "settings.menu_sound_help": "Krótki sygnał potwierdzający każde kliknięcie w menu",
