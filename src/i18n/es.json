@@ -281,7 +281,6 @@
     "unlocks.unlock_condition": "Condición de desbloqueo:",
     "unlocks.upgrade_choice_perk": "Ofrecido como mejora",
     "unlocks.upgrade_choice_perk_help": "Incluir esta mejora en la lista tras subir de nivel",
-    "unlocks.upgrade_choice_perk_locked": "Debes mantener al menos 15 mejoras.",
     "unlocks.upgrades": "Mejoras",
     "unlocks.upgrades_help": "Descubre todas las {{count}} mejoras de juego.",
     "unlocks.use": "Usar",

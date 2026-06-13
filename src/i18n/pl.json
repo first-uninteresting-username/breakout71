@@ -281,7 +281,6 @@
     "unlocks.unlock_condition": "Warunek odblokowania:",
     "unlocks.upgrade_choice_perk": "Oferowane jako ulepszenie",
     "unlocks.upgrade_choice_perk_help": "Dodaj to ulepszenie do listy oferowanych po awansowaniu na kolejny poziom",
-    "unlocks.upgrade_choice_perk_locked": "Musisz zachować co najmniej 15 ulepszeń.",
     "unlocks.upgrades": "Ulepszenia",
     "unlocks.upgrades_help": "Odkryj wszystkie {{count}} ulepszenia rozgrywki.",
     "unlocks.use": "Użyj",

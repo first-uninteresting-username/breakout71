@@ -190,7 +190,6 @@ export async function editRawLevel(nth: number, color = "") {
     document.removeEventListener("pointerup", handlePointerUp, options);
     document.removeEventListener("contextmenu", handleContextMenu, options);
   }
-
   const clicked = await asyncAlert<string | null | (() => void)>({
     title: `<span class="perk-title">
     <button ${previous ? 'data-resolve-to="previous"' : "disabled"} data-tooltip="${t("unlocks.previous")}">‹ </button>

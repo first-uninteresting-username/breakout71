@@ -281,7 +281,6 @@
     "unlocks.unlock_condition": "Podmínka odemčení:",
     "unlocks.upgrade_choice_perk": "Nabízet vylepšení",
     "unlocks.upgrade_choice_perk_help": "Zahrnout toto vylepšení do seznamu nabízeného po dokončení úrovně",
-    "unlocks.upgrade_choice_perk_locked": "Musíte ponechat alespoň 15 vylepšení.",
     "unlocks.upgrades": "Vylepšení",
     "unlocks.upgrades_help": "Objevte všech {{count}} vylepšení hry.",
     "unlocks.use": "Použít",

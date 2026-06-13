@@ -281,7 +281,6 @@
     "unlocks.unlock_condition": "Condition d'obtention :",
     "unlocks.upgrade_choice_perk": "Proposée en fin de niveau",
     "unlocks.upgrade_choice_perk_help": "Inclure cette amélioration dans la liste proposée après le passage d'un niveau",
-    "unlocks.upgrade_choice_perk_locked": "Vous devez conserver au moins 15 améliorations.",
     "unlocks.upgrades": "Améliorations",
     "unlocks.upgrades_help": "Voir les {{count}} améliorations et comment les débloquer.",
     "unlocks.use": "Utiliser",

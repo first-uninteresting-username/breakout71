@@ -12,7 +12,7 @@ import {
 import { upgrades } from "./loadGameData";
 import { t } from "./i18n/i18n";
 import { append, clamp } from "./pure_functions";
-import { getSettingValue, getTotalScore } from "./settings";
+import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
 import { isOptionOn } from "./options";
 import { getIcon } from "./levelIcon";
 
@@ -95,6 +95,7 @@ export function getClosestBall(
 export function getPossibleUpgrades(gameState: GameState) {
   return upgrades
     .filter((u) => getTotalScore() >= u.threshold)
+    .filter((u) => getSettingValue("offer-upgrade-" + u.id, true))
     .filter(
       (u) =>
         u.requires.length === 0 || u.requires.find((r) => gameState.perks[r]),

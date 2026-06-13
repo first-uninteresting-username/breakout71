@@ -1,11 +1,13 @@
 import { PerkId, Upgrade } from "./types";
 import { upgrades } from "./loadGameData";
-import { getTotalScore } from "./settings";
+import { getSettingValue, getTotalScore, setSettingValue } from "./settings";
 import { asyncAlert } from "./asyncAlert";
 import { miniMarkDown } from "./pure_functions";
 import { t } from "./i18n/i18n";
 import { getPerkAnimation } from "./gameAnimation";
 import { getUpgradeHelp, getUpgradeTooltip } from "./openUpgradesPicker";
+import { getCheckboxIcon } from "./levelIcon";
+import { mainGameState } from "./game";
 
 export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
   const u = upgrades.find((u) => u.id === id) as Upgrade;
@@ -24,6 +26,11 @@ export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
     .filter((r) => u.requires.includes(r.id) && r.id !== u.id)
     .map((u) => u.name);
 
+  const allowedInGame = getSettingValue("offer-upgrade-" + id, true);
+  const tooFarInGame =
+    mainGameState.currentLevel > 0 &&
+    mainGameState.startParams.runType === "normal";
+
   const action = await asyncAlert<string>({
     title: `<span class="perk-title">
     <button ${previous ? 'data-resolve-to="previous"' : "disabled"} data-tooltip="${t("unlocks.previous")}">‹ </button>
@@ -38,6 +45,16 @@ export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
         (required.length &&
           t("unlocks.requires", { required: required.join(", ") })) ||
         "",
+      {
+        icon: getCheckboxIcon(allowedInGame),
+        text: t("unlocks.upgrade_choice_perk"),
+        help:
+          (tooFarInGame &&
+            t("unlocks.include_in_unlock_not_during_gameplay")) ||
+          t("unlocks.upgrade_choice_perk_help"),
+        value: "toggle-offer-upgrade",
+        disabled: tooFarInGame,
+      },
       "id:" + id,
     ],
     allowClose: true,
@@ -56,6 +73,10 @@ export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
         openUpgradeDetails(next, onClose);
         return;
       }
+      break;
+
+    case "toggle-offer-upgrade":
+      setSettingValue("offer-upgrade-" + id, !allowedInGame);
       break;
   }
   return openUpgradeDetails(id, onClose);

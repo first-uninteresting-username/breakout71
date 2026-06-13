@@ -281,7 +281,6 @@
     "unlocks.unlock_condition": "Condição de desbloqueio:",
     "unlocks.upgrade_choice_perk": "Oferecer no final do nível",
     "unlocks.upgrade_choice_perk_help": "Inclua este upgrade na lista oferecida após um nível",
-    "unlocks.upgrade_choice_perk_locked": "É necessário ter pelo menos 15 melhorias.",
     "unlocks.upgrades": "Melhorias",
     "unlocks.upgrades_help": "Descubra todas as {{count}} melhorias e como desbloqueá-las.",
     "unlocks.use": "Usar",
