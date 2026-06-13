@@ -2262,11 +2262,6 @@
     "forbidden": ["shocks", "sapper", "disco_ball"],
     "minScore": 43500
   },
-  "Cristo Redentor": {
-    "required": ["transparency", "left_is_lava", "wrap_up"],
-    "forbidden": ["flyswatter", "sticky_coins", "etherealcoins"],
-    "minScore": 43600
-  },
   "dragons tower": {
     "required": ["asceticism", "fountain_toss", "soft_brush"],
     "forbidden": ["soft_reset", "soft_touch", "steering"],
@@ -2281,5 +2276,46 @@
     "required": ["ottawa_treaty", "implosions", "hardhat"],
     "forbidden": ["ball_attracts_coins", "happy_family", "rainbow"],
     "minScore": 43900
+  },
+  "Brick character": {
+    "required": [],
+    "forbidden": ["pierce", "addiction"],
+    "minScore": 9000
+  },
+
+  "snakeout 71": {
+    "required": ["ottawa_treaty", "implosions", "hardhat"],
+    "forbidden": ["ball_attracts_coins", "happy_family", "rainbow"],
+    "minScore": 43900
+  },
+  "Sailing Away": {
+    "required": ["bricks_attract_ball", "hot_start", "bricks_attract_coins"],
+    "forbidden": ["nbricks", "wrap_up", "implosions"],
+    "minScore": 44200
+  },
+  "Campfire": {
+    "required": ["telekinesis", "smaller_puck", "superhot"],
+    "forbidden": ["hot_start", "thomas", "wrap_left"],
+    "minScore": 44300
+  },
+  "Little Face": {
+    "required": ["left_is_lava", "wrap_left", "transparency"],
+    "forbidden": ["sticky_coins", "paddle_up_combo", "wrap_right"],
+    "minScore": 44400
+  },
+  "Earth and Friends II": {
+    "required": ["disco_ball", "hardhat", "sturdy_bricks"],
+    "forbidden": ["wrap_left", "rainbow", "bigger_explosions"],
+    "minScore": 44500
+  },
+  "Under the Moon of Love": {
+    "required": ["flyswatter", "gravity_falls", "trickledown"],
+    "forbidden": ["happy_family", "palette", "addiction"],
+    "minScore": 44600
+  },
+  "Extemely Lousy Weather": {
+    "required": ["trickledown", "puck_repulse_ball", "steering"],
+    "forbidden": ["ball_repulse_ball", "wrap_up", "addiction"],
+    "minScore": 44700
   }
 }
