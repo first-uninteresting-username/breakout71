@@ -1,20 +1,24 @@
 import en from "./en.json";
-import fr from "./fr.json";
-import ar from "./ar.json";
-import ru from "./ru.json";
-import es from "./es.json";
-import tr from "./tr.json";
-import de from "./de.json";
-import ko from "./ko.json";
+import cs from "./cs.json";
+import pl from "./pl.json";
 import zh from "./zh.json";
-import fa from "./fa.json";
-import ja from "./ja.json";
-import zh_Hant from "./zh_Hant.json";
+import fr from "./fr.json";
 import br from "./pt_BR.json";
 import pt from "./pt.json";
-import sk from "./sk.json";
+import zh_Hant from "./zh_Hant.json";
+import es from "./es.json";
+import de from "./de.json";
 import it from "./it.json";
-import cs from "./cs.json";
+import fa from "./fa.json";
+import ru from "./ru.json";
+import ar from "./ar.json";
+import tr from "./tr.json";
+import ja from "./ja.json";
+import ko from "./ko.json";
+import sk from "./sk.json";
+import ro from "./ro.json";
+import uk from "./uk.json";
+
 import { getSettingValue } from "../settings";
 
 export const languages = [
@@ -125,6 +129,24 @@ export const languages = [
     value: "cs",
     strings: cs,
     levelName: "Czech Republic",
+  },
+  {
+    text: "Polski",
+    value: "pl",
+    strings: pl,
+    levelName: "Poland",
+  },
+  {
+    text: "Română",
+    value: "ro",
+    strings: ro,
+    levelName: "Romania",
+  },
+  {
+    text: "українська",
+    value: "uk",
+    strings: uk,
+    levelName: "Ukraine",
   },
 ];
 

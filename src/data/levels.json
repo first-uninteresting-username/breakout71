@@ -4622,5 +4622,13 @@
     "name": "Extemely Lousy Weather",
     "author": "Nibiri",
     "credit": "We'll be expecting highs of 400°C. Mind the shrapnel."
+  },
+  {
+    "name": "Romania",
+    "size": 8,
+    "bricks": "_________________ttyySS__ttyySS__ttyySS__ttyySS_________________",
+    "svg": null,
+    "color": "",
+    "category": "flags"
   }
 ]

@@ -2317,5 +2317,10 @@
     "required": ["trickledown", "puck_repulse_ball", "steering"],
     "forbidden": ["ball_repulse_ball", "wrap_up", "addiction"],
     "minScore": 44700
+  },
+  "Romania": {
+    "required": ["thomas", "minefield", "shocks"],
+    "forbidden": ["trampoline", "sapper", "vibrant_neighborhood"],
+    "minScore": 44800
   }
 }
