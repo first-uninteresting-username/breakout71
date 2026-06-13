@@ -281,6 +281,8 @@
     "unlocks.unlock_condition": "Unlock condition:",
     "unlocks.upgrade_choice_perk": "Offered as upgrade",
     "unlocks.upgrade_choice_perk_help": "Include this upgrade in the list offered after a level up",
+    "unlocks.upgrade_incompatibilities": "Decreases the probability of getting : {{list}}",
+    "unlocks.upgrade_synergies": "Increases the probability of getting : {{list}}",
     "unlocks.upgrades": "Upgrades",
     "unlocks.upgrades_help": "Discover all {{count}} gameplay upgrades.",
     "unlocks.use": "Use",

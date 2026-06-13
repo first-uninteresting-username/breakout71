@@ -281,6 +281,8 @@
     "unlocks.unlock_condition": "解锁条件：",
     "unlocks.upgrade_choice_perk": "作为升级提供",
     "unlocks.upgrade_choice_perk_help": "在列表中包含这个升级，在清理一个关卡后提供它",
+    "unlocks.upgrade_incompatibilities": "",
+    "unlocks.upgrade_synergies": "",
     "unlocks.upgrades": "升级",
     "unlocks.upgrades_help": "发现所有 {{count}} 个游玩升级。",
     "unlocks.use": "使用",

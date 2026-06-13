@@ -8,6 +8,8 @@ import { getPerkAnimation } from "./gameAnimation";
 import { getUpgradeHelp, getUpgradeTooltip } from "./openUpgradesPicker";
 import { getCheckboxIcon } from "./levelIcon";
 import { mainGameState } from "./game";
+import { synergies } from "./synergies";
+import { incompatibilities } from "./incompatibilities";
 
 export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
   const u = upgrades.find((u) => u.id === id) as Upgrade;
@@ -30,6 +32,20 @@ export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
   const tooFarInGame =
     mainGameState.currentLevel > 0 &&
     mainGameState.startParams.runType === "normal";
+
+  const synergiesPerks = upgrades
+    .filter((c) => synergies[u.id]?.includes(c.id))
+    .map((u) => u.name)
+    .join(", ");
+
+  const incompatible = incompatibilities
+    .filter((l) => l.includes(u.id))
+    .flat()
+    .filter((id) => id != u.id);
+  const incompatiblePerks = upgrades
+    .filter((c) => incompatible.includes(c.id))
+    .map((u) => u.name)
+    .join(", ");
 
   const action = await asyncAlert<string>({
     title: `<span class="perk-title">
@@ -55,6 +71,14 @@ export async function openUpgradeDetails(id: PerkId, onClose: () => void) {
         value: "toggle-offer-upgrade",
         disabled: tooFarInGame,
       },
+
+      synergiesPerks &&
+        t("unlocks.upgrade_synergies", { list: synergiesPerks }),
+      incompatiblePerks &&
+        t("unlocks.upgrade_incompatibilities", {
+          list: incompatiblePerks,
+        }),
+
       "id:" + id,
     ],
     allowClose: true,

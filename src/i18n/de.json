@@ -281,6 +281,8 @@
     "unlocks.unlock_condition": "",
     "unlocks.upgrade_choice_perk": "",
     "unlocks.upgrade_choice_perk_help": "",
+    "unlocks.upgrade_incompatibilities": "",
+    "unlocks.upgrade_synergies": "",
     "unlocks.upgrades": "Upgrades",
     "unlocks.upgrades_help": "",
     "unlocks.use": "Verwenden",
