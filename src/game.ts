@@ -953,3 +953,7 @@ setupTooltips();
 document
   .getElementById("menu")
   ?.setAttribute("data-tooltip", t("play.menu_tooltip"));
+
+if (window.location.search.includes("skipplaying")) {
+  window["skipplaying"] = true;
+}
