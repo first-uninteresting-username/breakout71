@@ -2322,5 +2322,61 @@
     "required": ["thomas", "minefield", "shocks"],
     "forbidden": ["trampoline", "sapper", "vibrant_neighborhood"],
     "minScore": 44800
+  },
+  "Football": {
+    "required": ["multiball", "ball_attract_ball"],
+    "forbidden": [],
+    "minScore": 11450
+  },
+
+  "Appletree": {
+    "required": ["instant_explosion", "bigger_explosions", "sacrifice"],
+    "forbidden": ["compound_interest", "etherealcoins", "implosions"],
+    "minScore": 44900
+  },
+  "Middle Age Fortress": {
+    "required": ["rainbow", "coin_magnet", "smaller_puck"],
+    "forbidden": ["respawn", "bigger_puck", "gravity_falls"],
+    "minScore": 45100
+  },
+  ">:3": {
+    "required": ["palette", "metamorphosis", "implosions"],
+    "forbidden": ["bigger_puck", "sticky_coins", "top_is_lava"],
+    "minScore": 45200
+  },
+  "Ship bottle": {
+    "required": ["nbricks", "top_is_lava", "etherealcoins"],
+    "forbidden": ["bigger_puck", "forgiving", "viscosity"],
+    "minScore": 45300
+  },
+  "ships! on the horizon": {
+    "required": ["limitless", "unbounded", "viscosity"],
+    "forbidden": ["bigger_explosions", "forgiving", "fountain_toss"],
+    "minScore": 45400
+  },
+  "Red Panda": {
+    "required": ["telekinesis", "happy_family", "disco_ball"],
+    "forbidden": ["passive_income", "skip_last", "unbounded"],
+    "minScore": 45500
+  },
+  "The Joy of Painting": {
+    "required": ["skip_last", "thomas", "shocks"],
+    "forbidden": ["sapper", "telekinesis", "hardhat"],
+    "minScore": 45600
+  },
+  "Old green Telephone": {
+    "required": ["side_flip", "side_kick", "palette"],
+    "forbidden": ["right_is_lava", "paddle_up_combo", "steering"],
+    "minScore": 45700
+  },
+  "Three of a kind": {
+    "required": ["compound_interest", "wrap_up", "trampoline"],
+    "forbidden": ["side_kick", "side_flip", "nbricks"],
+    "minScore": 45800
+  },
+  "Farming": {
+    "required": ["golden_goose", "trickledown", "gravity_falls"],
+    "forbidden": ["ball_attract_ball", "wrap_right", "double_or_nothing"],
+    "minScore": 45900
   }
 }
