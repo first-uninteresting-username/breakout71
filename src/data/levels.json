@@ -4632,91 +4632,227 @@
     "author": ""
   },
   {
+    "name": "Appletree",
     "size": 8,
     "bricks": "__________kkkG___kGGGkG__SkGrGC__kSkSSC___rSGC_____SS______SS___",
+    "credit": "It is just an appletree...",
     "category": "landscapes",
-    "name": "Appletree",
-    "author": "Wombatmithut",
-    "credit": "It is just an appletree..."
+    "author": "Wombatmithut"
   },
   {
+    "name": "Football",
     "size": 8,
     "bricks": "__gggg___gWggWg_gWWWWWWgggWggWggggWggWgggWWWWWWg_gWggWg___gggg__",
+    "credit": "Fun fact: this classic ball design was made to make it easy to see the ball on black and white TVs, the standard when it was created!",
     "category": "stills",
-    "name": "Football",
-    "author": "Pedr01gb",
-    "credit": "Fun fact: this classic ball design was made to make it easy to see the ball on black and white TVs, the standard when it was created!"
+    "author": "Pedr01gb"
   },
   {
+    "name": "Middle Age Fortress",
     "size": 18,
     "bricks": "_______________________l_l__l_l_________BllllllllB________sllsBBslls________r_llllll_r________y_lBllBl_y__________llllll____________lBllBl___________slllllls__________rlBllBlr__________ylllllly__________llssssll______B___l_r__r_l___B__s__llBy__yBll__s__sssllls__slllsss__tttttttssttttttt____t__ttsstt__t_____________________",
+    "credit": "",
     "category": "stills",
-    "name": "Middle Age Fortress",
-    "author": "Wombatmithut",
-    "credit": ""
+    "author": "Wombatmithut"
+  },
+  {
+    "name": ">:3",
+    "size": 23,
+    "bricks": "__________________W__W____b__________b___WW_W___btb________btb__W_WW____btb______btb___W__W_____btb____btb__________W___btb__btb___W_W__W___W___btbbtb___W__WWWW____W_bbbttbbb_W______W_____baaabbaaab____WWWW___W_baBabbaBab_W________W__baaabbaaab__W_WWWW___bbbbbbbbbbbbbb__W__W__btabWbPPPPbWbatb_WWWW__btaWbWbPPbWbWatb_W__W__btabbbbaabbbbatb_______bttaaaattaaaattb_WWWW___btttttbbtttttb__W__W____bbbbb__bbbbb___WWWW___W____________W__W__W__W______________W_________________________W_W___________________W_W_________________________",
+    "credit": "classic furry experience that indicates a high intensity moment - fwiend or foe? either way, shenanigans are incoming",
+    "category": "animals",
+    "author": "bunny baphomet"
+  },
+  {
+    "name": "Ship bottle",
+    "size": 24,
+    "bricks": "__t__t_t_t__t__t__t__t_____t_______t__t__t__t__tt____ttttt___t__t__t__t__t__tGGGGGtt___t__t__t_____tGGGGGGGGtt___t__t_____tGGB_B_B_BGGtt___t___t_tGGB_BeB_B_B_GGtt____t__tGB_B_t_Bva_B_BGGttt___tGG_B_Bva_vaa_B_B_GGGte_tGGB_B_vaavaaa_B_B_Beee_tGG_e_Bvaavaaaa_BeB_eee_tGG_tv_vaavaaaaa_t_Beee_tGGvvv_v__v____vvvB_eee_tGGvvvvvvvvvvvvvv__Beee_tGGtvvBvBvBvBvvvttGGGte__tGtvvvvvvvvvvttGGttt____tGGtvvvvvvvvtGGtt____t___tGGtttttttGGtt___t___t___tGGGGGGGGtt___t__t____t__tGGGGGtt___t__t__t__t____ttttt___t__t__t__t____t_______t__t__t__t__t__t__t_t_t__t__t__t__t__________________________",
+    "credit": "How did they get that whole ship in there? it's also filled with some kind of aerosolized gunpowder...",
+    "category": "landscapes",
+    "author": "bunny baphomet"
+  },
+  {
+    "name": "ships! on the horizon",
+    "size": 21,
+    "bricks": "____________y_yy_y__________ggg____yy____________gWg___y__y_______gg__ggg________gg___OBO___O___gggg__OO________OeO_gWgg_____________OOO_WgWg__gg_______O_____gWgg__Wg____gWggggW___gggg_gg_____gWWWW_____O__e_O_____gWgWg___eeeeeOOOOO___ggWWW____OeBOBOBOO___gWgWW____OOBOBOOOO__gWWgggW____OOOOOOO___e__O_______________OOOOOOOeeeeeee_______OOBBeBBeBBOOO________OeBBeBBeBBOO_________OeeeeeOOOOO___________OOOOOOOO_________________________________",
+    "credit": "these marauding marooning mariners are on the way to plunder your booty in pirating sorts of ways - at least they might be pirates. it's hard to see from here",
+    "category": "landscapes",
+    "author": "bunny baphomet"
+  },
+  {
+    "name": "Red Panda",
+    "size": 13,
+    "bricks": "_____R____R______RWR__RWR_____RWR__RWR______RWRRWR__g____WBllBW__gg__WssssssW_gg__sWRggRWs_gg__RssWWssR__ggRsRssssRsR__ggsRgssgRsR___gRssssssR______RRssRR_________gg____",
+    "credit": "It is red and cute: https://en.wikipedia.org/wiki/Red_panda",
+    "category": "animals",
+    "author": "Wombatmithut"
+  },
+  {
+    "name": "The Joy of Painting",
+    "size": 10,
+    "bricks": "__________sssssssssss__C_____ss_CCC__l_ss_CCC_lllss__s__ltlss__s_lltlssCCCCGtGGssCCCGttttsssssssssss",
+    "credit": "Bob Ross: https://en.wikipedia.org/wiki/Bob_Ross",
+    "category": "landscapes",
+    "author": "Wombatmithut"
+  },
+  {
+    "name": "Old green Telephone",
+    "size": 22,
+    "bricks": "_________________________kkkk__________kkkk___kkkkkkkkkkkkkkkkkkkk_glkkkklkkkkkkkklkkkklg_gllllg_g____g_gllllgg__gggg___gkkg___gggg__g_______kkkkkk_______g_______kkggggkk_______g_____kkgBWWBgkk______g____kkgBWllWBgkk______gg__kkgWlWWlWgkk________g_kkgBlWWlWgkk_______g__kkgBWllWBgkk______g___lkkgBWBWgkkl______g__g_lkkggggkkl________gg___lkkkkkkl_______________llllll_____________________________________________________________________________________________________________________",
+    "credit": "Please hold the line: https://en.wikipedia.org/wiki/Telephone",
+    "category": "stills",
+    "author": "Wombatmithut"
+  },
+  {
+    "name": "Three of a kind",
+    "size": 20,
+    "bricks": "___________________________y__________________yRy_____y________y_yRORy___yRy______yRyOOOORy_yRORy____yROROOOOORyOOOORy__yOOOOROOOOOROOOOORy_________________________________________________k_____k___kk_k_____kRk___kRk_kaakRk_____R_____R__akk_R______kk____kBkakk_k____kkaakB_kakakkakak_BkaakkakkakakkakakakkakkB_kaakBkakakkBkaak_____kk___kakk___kk_____________aa__________________Bk____________________",
+    "credit": "Pyramids of Giza: https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+    "category": "landscapes",
+    "author": "Wombatmithut"
+  },
+  {
+    "name": "Farming",
+    "size": 17,
+    "bricks": "____B_______B_________e_____e___________e___e_____________eRe_____________BReRB____________ReOeR______RRRRRReRRRe__y_y_RBOeOeROeORe_yBy_ROOeOOROeORB_yyyy_____________________BR___R__OR_R_____OG___GB__G_G_OR___G_R__OR__OG_BG_R__OG___GO_BO___OG_OBG_R_G_O______GO___OGO_______________G_______",
+    "credit": "Harvest Moon: Humanity Update: https://simple.wikipedia.org/wiki/Farming",
+    "category": "landscapes",
+    "author": "Wombatmithut"
+  },
+  {
+    "size": 9,
+    "bricks": "_________OOOO_SS__OeeOO_SS_OOeeOOOS___OOOOOO____OOOOOO__OOOOOOO_OOeeeegg____eeee_",
+    "category": "games",
+    "name": "OpenSurge",
+    "author": "Pedr01gb",
+    "credit": "https://opensurge2d.org"
+  },
+  {
+    "size": 19,
+    "bricks": "_gg_gg_gg_gg_gg_gg____________________R_RR_RR_RR_RR_RR_RR____________________CC_CC_CC_CC_CC_CC____________________t_tt_tt_tt_tt_tt_tt____________________ss_ss_ss_ss_ss_ss____________________g_gg_gg_gg_gg_gg_gg____________________RR_RR_RR_RR_RR_RR____________________C_CC_CC_CC_CC_CC_CC____________________tt_tt_tt_tt_tt_tt____________________s_ss_ss_ss_ss_ss_ss",
+    "category": "abstract",
+    "name": "ants",
+    "author": "bunny baphomet",
+    "credit": "it's a big world out there."
   },
   {
     "size": 23,
-    "bricks": "__________________W__W____b__________b___WW_W___btb________btb__W_WW____btb______btb___W__W_____btb____btb__________W___btb__btb___W_W__W___W___btbbtb___W__WWWW____W_bbbttbbb_W______W_____baaabbaaab____WWWW___W_baBabbaBab_W________W__baaabbaaab__W_WWWW___bbbbbbbbbbbbbb__W__W__btabWbPPPPbWbatb_WWWW__btaWbWbPPbWbWatb_W__W__btabbbbaabbbbatb_______bttaaaattaaaattb_WWWW___btttttbbtttttb__W__W____bbbbb__bbbbb___WWWW___W____________W__W__W__W______________W_________________________W_W___________________W_W_________________________",
-    "category": "animals",
-    "name": ">:3",
+    "bricks": "____y__y_______y__y______y__y__yy___yy__y__y__y__y__y___yyy___y__y__y_y__y____y___y____y__y___y__y__y_____y__y__y_____y______yyy______y_____l___l__y___y__l___l____l_t_l_y_____y_l_t_l____lllll___yyy___lllll____ll_ll__y___y__ll_ll_____l_l__y__t__y__l_l______lll____l_l____lll______lll___lllll___lll___l_lllll_llOOOll_lllll_l_ll_l_lllOOOOOlll_l_ll_lll_l_lllOOBOOlll_l_lll_llllllllOOOOOllllllll_lllllllllOOOOOlllllllll___kk__________________tttktttttttttttttttkktt_tttttkkktttttttttttkt_kkkttttttttttkkkttttttt_______________________",
+    "category": "landscapes",
+    "name": "holy siege",
     "author": "bunny baphomet",
-    "credit": "classic furry experience that indicates a high intensity moment - fwiend or foe? either way, shenanigans are incoming"
+    "credit": "this place seems protected - or haunted - by a holy spectre, and they don't seem to want visitors. watch out for those gators"
   },
   {
     "size": 24,
-    "bricks": "__t__t_t_t__t__t__t__t_____t_______t__t__t__t__tt____ttttt___t__t__t__t__t__tGGGGGtt___t__t__t_____tGGGGGGGGtt___t__t_____tGGB_B_B_BGGtt___t___t_tGGB_BeB_B_B_GGtt____t__tGB_B_t_Bva_B_BGGttt___tGG_B_Bva_vaa_B_B_GGGte_tGGB_B_vaavaaa_B_B_Beee_tGG_e_Bvaavaaaa_BeB_eee_tGG_tv_vaavaaaaa_t_Beee_tGGvvv_v__v____vvvB_eee_tGGvvvvvvvvvvvvvv__Beee_tGGtvvBvBvBvBvvvttGGGte__tGtvvvvvvvvvvttGGttt____tGGtvvvvvvvvtGGtt____t___tGGtttttttGGtt___t___t___tGGGGGGGGtt___t__t____t__tGGGGGtt___t__t__t__t____ttttt___t__t__t__t____t_______t__t__t__t__t__t__t_t_t__t__t__t__t__________________________",
-    "category": "landscapes",
-    "name": "Ship bottle",
+    "bricks": "W______________________W________________________________________________________________________________________________WWW_W___W_WWW____________W__W_W_W_W_W____________W___W_W__WWW________WWW_________________W_W_W_____W___W_WWW_WWW_W_W_WWW___WWW_W_W_W_W___WW____W___W_W_W_W_W_W___W_W_WWW___WWW_W_WWW_WWW_W_W_____________________________W_WWW______W___WW_______W_W_W__WWW_WWW_WWW__________W___W__W_W_____cvbrcrbv____________rcvbrWWWWWWcbrcvbrcvbrcvbWWWBW_WWB_BWWWBWWW_WB_W_W_B_WBWW_B_WBW_W_WBWWBWBWW_BWWBWB_BW_WBWWB_WBWW_W_B_WBWWWW_WWW_W_WBW_BWBWWWBW_Wrbvcrbvcrbvcrbvcrbvcrbvc",
+    "category": "symbols",
+    "name": "the forbidden level",
     "author": "bunny baphomet",
-    "credit": "How did they get that whole ship in there? it's also filled with some kind of aerosolized gunpowder..."
+    "credit": "the dreaded breakout 7-1 split, desperate whispers pleaded. they said it should never be done."
   },
   {
     "size": 21,
-    "bricks": "____________y_yy_y__________ggg____yy____________gWg___y__y_______gg__ggg________gg___OBO___O___gggg__OO________OeO_gWgg_____________OOO_WgWg__gg_______O_____gWgg__Wg____gWggggW___gggg_gg_____gWWWW_____O__e_O_____gWgWg___eeeeeOOOOO___ggWWW____OeBOBOBOO___gWgWW____OOBOBOOOO__gWWgggW____OOOOOOO___e__O_______________OOOOOOOeeeeeee_______OOBBeBBeBBOOO________OeBBeBBeBBOO_________OeeeeeOOOOO___________OOOOOOOO_________________________________",
-    "category": "landscapes",
-    "name": "ships! on the horizon",
-    "author": "bunny baphomet",
-    "credit": "these marauding marooning mariners are on the way to plunder your booty in pirating sorts of ways - at least they might be pirates. it's hard to see from here"
+    "bricks": "ByyBggByyBggByyBggByygByyBggByyBggByyBggByggByyBggByyBggByyBggBBggByyBggByyBggByyBggyBggByyBggByyBggByyBgyyBggByyBggByyBggByyBByyBggByyBggByyBggByygByyBggByyBggByyBggByggByyBggByyBggByyBggBBggByyBggByyBggByyBggyBggByyBggByyBggByyBgyyBggByyBggByyBggByyBByyBggByyBggByyBggByygByyBggByyBggByyBBgByggByyBggByyBggByyBggBBggByyBggByyBggByyBggyBggByyBggByyBggByyBgyyBggByyBggByyBggByyBByyBggByyBggByyBggByygByyBggByyBggByyBggByggByyBggByyBggByyBggB",
+    "name": "CRASH TEST 1",
+    "credit": "WARNING! CAUTION!! ACTIVATE COOLING PROTOCOLS BEFOREHAND! Level by D.V.",
+    "author": "D.V.",
+    "category": "abstract"
+  },
+  {
+    "size": 21,
+    "bricks": "BggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggB",
+    "name": "CRASH TEST 2",
+    "credit": "WARNING! CAUTION!! ACTIVATE COOLING PROTOCOLS BEFOREHAND! Level by D.V.",
+    "author": "D.V.",
+    "category": "abstract"
+  },
+  {
+    "size": 21,
+    "bricks": "ByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBBgByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBgByBgByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyB",
+    "name": "CRASH TEST 3",
+    "credit": "WARNING! CAUTION!! ACTIVATE COOLING PROTOCOLS BEFOREHAND! Level by D.V.",
+    "author": "D.V.",
+    "category": "abstract"
+  },
+  {
+    "size": 19,
+    "bricks": "____________________________________________________________________________BBBBBBBBBBBBBBBBBBBBkkkkkkkkkkkkkkkkkBBkkkkkBBRRRBBkkkkkBBkkkkBRRRRRRRBkkkkBBkkkBRRRRRRRRRBkkkBBkkkBRyyyBRyBRBkkkBBkkBRRRRyByyBRRBkkBBkkBRRRyBRRyBRRBkkBBkkBRRRyBRRyBRRBkkBBkkkBRRyBRRyBRBkkkBBkkkBRRRRRRRRRBkkkBBkkkkBRRRRRRRBkkkkBBkkkkkBBRRRBBkkkkkBBkkkkkkkkkkkkkkkkkBBBBBBBBBBBBBBBBBBBB",
+    "name": "BANG-ladesh",
+    "credit": "artistic pun of the official flag. also, we got our independence in 1971. Hence the number. The proportions are not accurate on purpose. A caricature of my country. Level by D.V. https://en.wikipedia.org/wiki/Bangladesh?wprov=sfla1",
+    "author": "D.V.",
+    "category": "flags"
+  },
+  {
+    "size": 21,
+    "bricks": "Btt__________________t___t_B______________t___t_r______________t___t________________ttB_t_r_BO_OB__________t_t_r_O_O_O__________t_t_r_O_O_O________t_t_t_r_O_O_O________ttB_t_______O____________Bttt__________________________________Bvv___v________C_____v______v___ttB_C_C__CBvvvv__v__t__t_C_C_CB____vv_v__t_tt_C_BCB______v_v___t_t_C__C_______v_vBvB__BCC__C___v__vB_vv_v_BC_C__C____vvB__v__v_C__C_BC_________v__v_BCCC_CB___________________C___",
+    "name": "The Slim Shady LP",
+    "credit": "https://www.youtube.com/watch?v=mSHkNdB8x-A&list=PLuIv_B1DKbFWtZmctxtPx91PgYwkesdJK",
+    "author": "D.V.",
+    "category": "symbols"
   },
   {
     "size": 13,
-    "bricks": "_____R____R______RWR__RWR_____RWR__RWR______RWRRWR__g____WBllBW__gg__WssssssW_gg__sWRggRWs_gg__RssWWssR__ggRsRssssRsR__ggsRgssgRsR___gRssssssR______RRssRR_________gg____",
-    "category": "animals",
-    "name": "Red Panda",
-    "author": "Wombatmithut",
-    "credit": "It is red and cute: https://en.wikipedia.org/wiki/Red_panda"
+    "bricks": "_______________________S__SS___WWW___S__SSSaaSS______WS___SS______Wa_a_Wy_____aaaaaaSSy___B_aaaaaa__S_______yySS_S________y___________y___________yy_W__y________W_______",
+    "name": "Cat Finger Painting",
+    "credit": "My cat finger painted this while trying to eat my phone. I put my phone in a zip lock bag and put a minced meat on top of the editor. I am 100% serious. Level by Princess BingBong",
+    "author": "D.V.",
+    "category": "abstract"
   },
   {
-    "size": 10,
-    "bricks": "__________sssssssssss__C_____ss_CCC__l_ss_CCC_lllss__s__ltlss__s_lltlssCCCCGtGGssCCCGttttsssssssssss",
-    "category": "landscapes",
-    "name": "The Joy of Painting",
-    "author": "Wombatmithut",
-    "credit": "Bob Ross: https://en.wikipedia.org/wiki/Bob_Ross"
+    "size": 21,
+    "bricks": "________________________BBg_________gBB_____Blllgg_____gglllB___BleelllB___BleelllB__geeeelllB_Beeeeellg__geeeeellg_geeeeellg__geeBgggB___BgggBelg_lBeeB_r_gg_gg_r_BelBl_Beelg_eeglglg_eellB_lBeelllelB_BeleeellBl_lBeeeellBlBeellllBl_l_BeeeeelB_BeeeeelB_l_lgeeeeBeBlBeBeeelgl_l_lggeelgl_lgleeggl_l_l_Begleg_l_geegeB_l_l_lBegegglelggeglBl_lkkggeeBkrkrkrkBelggkkkkgegeelgkkkgeelglgkkkBeelBllgkkkgelBlllBkkBeellBBekkkeBBlellBkkkkkkkkkkkkkkkkkkkkkk",
+    "name": "The Division Bell",
+    "credit": "A very memorable album for me. Funnily enough, I only know two songs from this album but mainly the image of this album is very significant. It's one of the only good memories I have of my brother. because he had a bootleg copy of this CD. https://www.youtube.com/watch?v=4HLaOmiwV5Q&list=PLYe_yAiX89Y1Hbf5l6bcrMdscFDEBLx53",
+    "author": "D.V.",
+    "category": "portraits"
   },
   {
-    "size": 22,
-    "bricks": "_________________________kkkk__________kkkk___kkkkkkkkkkkkkkkkkkkk_glkkkklkkkkkkkklkkkklg_gllllg_g____g_gllllgg__gggg___gkkg___gggg__g_______kkkkkk_______g_______kkggggkk_______g_____kkgBWWBgkk______g____kkgBWllWBgkk______gg__kkgWlWWlWgkk________g_kkgBlWWlWgkk_______g__kkgBWllWBgkk______g___lkkgBWBWgkkl______g__g_lkkggggkkl________gg___lkkkkkkl_______________llllll_____________________________________________________________________________________________________________________",
-    "category": "stills",
-    "name": "Old green Telephone",
-    "author": "Wombatmithut",
-    "credit": "Please hold the line: https://en.wikipedia.org/wiki/Telephone"
+    "size": 21,
+    "bricks": "BBBRRRBBBRRRRRRRRRRRRRRRRRRRRRRRRBBRRRBBBBpppBBRRpRRpRRRpRpRRpRpRRpRRppBRppRppRppRpRpRRpRpRpRRpppRpRppppRpRRpRppppRpBpBpRpRppRpppRRpRRpBpBBBpRpRBpBBRRBBBRRRB___BBBRRRRRRRRRRRRRB______BRRBBBRBBBRRR_B_W____BRRRRRRRRRRRR_B______RRRRRRRRRRRRRRB______RRRBBBBRBBBRRRRB____BRRRRRRRRRRRRRW__B__BWRRBBBRRRRRlWWlW__BBWllWWRRRBBlWWWWWlWWWWlWWlWRRRRRlWWWWWWllllWWWWWWBBRlWWWWWWWWWWWWlWWlWRRBlWWWlWWWWWWlWWWWlWRRRlWWWlWWWWWWWWlWW__RBRlWWWlWWWWWWWWWlW__RR",
+    "name": "DAMN.",
+    "credit": "A studio album released in 2017 by the rapper Kendrick Lamar. When it came out it was quite quickly named one of the greatest albums of 2017 and the decade. It is a 'Conscious HipHop' album. https://www.youtube.com/watch?v=5OaGBXAzFY0&pp=ygUFREFNTi4%3D",
+    "author": "D.V.",
+    "category": "portraits"
+  },
+  {
+    "size": 21,
+    "bricks": "llBlllllllllllllllBlllBWBWBW_WWBWW_WBWBWBlBW_W_W_W_WBBWW_W_W_WBl_W_W_W_WWBWW_W_W_W_llW_W_W_W_WBW_W_W_W_Wll_W_WBBBBlBlBBBBW_W_llBBBBWWWWWWWWWWWBBBBllWWWWWWWWWWWWWWWWWWWllWWWWWWWWlWlWWWWWWWWll_lW_WW_W_W_W_WW_Wl_llB_lBW_lWlW_Wl_WBl_BllBlBl_lll_ll_Bl_lBlBllBBl_WBl_BW_lWlW_l_BllBlll_lWlWBW__W_lllBllBlBWW_lWllBl_BBWBlBllB_llBWWBWBW__WlWl_BllB___ll_llBW__l_l_lBllBllBB_l___l_BWBBBlBllBl_W_B___l__B_ll__BllB__B__BB_B________Bllllllllllllllllllllll",
+    "name": "To Pimp A Butterly",
+    "credit": "I mean, this is abstract art at best, but hopefully it can be recognized somewhat. its better If you squint like you're trying to recognize your enemies face in blurry CCTV footage. https://www.youtube.com/watch?v=l9fN-8NjrvI&list=PL8YH4mOwWryUO4kxV36tPqkiaAr4_oJe5",
+    "author": "D.V.",
+    "category": "stills"
   },
   {
     "size": 20,
-    "bricks": "___________________________y__________________yRy_____y________y_yRORy___yRy______yRyOOOORy_yRORy____yROROOOOORyOOOORy__yOOOOROOOOOROOOOORy_________________________________________________k_____k___kk_k_____kRk___kRk_kaakRk_____R_____R__akk_R______kk____kBkakk_k____kkaakB_kakakkakak_BkaakkakkakakkakakakkakkB_kaakBkakakkBkaak_____kk___kakk___kk_____________aa__________________Bk____________________",
-    "category": "landscapes",
-    "name": "Three of a kind",
-    "author": "Wombatmithut",
-    "credit": "Pyramids of Giza: https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+    "bricks": "eeeeeeeeeeeeeeeeeBBBBBBBBBBBBBBBBBBBBRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRBeRRRRRRRRRRRRR__RRRBBRRBBRRRRRRRRBBBBRRRRRReBRRBRReRR__W_RRRRRRRRRRBBRBRR____R__RBeRRRReBRRRR__RRR__RRRRRRRRRRBRRlWWR_lW_RRRBBRRRReRWWlWWW__lRRB_WBRRRRRlWWlWWWlRRRRBBRRRRRRlWlWWlWWRRRBlWBRRRRR_llWWl_WRR_lWWWBRRRR_lWWWl__RRBBlW_BllRRRllW_W_lllB__BBllllRlRllBBW_lB_eB_lleelWlWkkkkklB_eB_eeelllWlWkkkkk_Be_BeelllllWlWkkkkkeeeeeeelell",
+    "name": "Mr.Morale & The Big Steppers",
+    "credit": "This is a 2022 studio album released by Kendrick Lamar, its main theme focuses on dealing with the suffering of life a human can experience, but in healthy ways that won't perpetuate the cycle of trauma and harm. https://www.youtube.com/watch?v=SdwEIPD1bEw&pp=ygUcTXIuTW9yYWxlICYgVGhlIEJpZyBTdGVwcGVyc9IHCQk-CwGHKiGM7w%3D%3D",
+    "author": "D.V.",
+    "category": "portraits"
   },
   {
-    "size": 17,
-    "bricks": "____B_______B_________e_____e___________e___e_____________eRe_____________BReRB____________ReOeR______RRRRRReRRRe__y_y_RBOeOeROeORe_yBy_ROOeOOROeORB_yyyy_____________________BR___R__OR_R_____OG___GB__G_G_OR___G_R__OR__OG_BG_R__OG___GO_BO___OG_OBG_R_G_O______GO___OGO_______________G_______",
-    "category": "landscapes",
-    "name": "Farming",
-    "author": "Wombatmithut",
-    "credit": "Harvest Moon: Humanity Update: https://simple.wikipedia.org/wiki/Farming"
+    "size": 21,
+    "bricks": "_______________W___________________RRW____WBWBWBWBW____WRR_RRR_W_WBW_W_WB__W__R_RBRWW_W_WBWBWB___R___BRBRWBWBW_W_WB__RRBRBRBWWWBW_WBWBW___RBRBRBRBR____________RWBRBRWWW_W_W_W______WRRBRBRBRBWBW_WB_____WWWRRRBWW_WBWBWB_____BWWWWRRRWBW_W_W_______BWWWWWW______________BWWWWW__R_RBRBRBR____WWWWWB__RBR_RBR_R___BWWWWB_______________WWWWW____R_R_R______WWWWWB____RBRBR_____BWWWWW______________BWWWWWB_____________BWWWWWW_____________BWWWWWWB______",
+    "name": "American Idiot",
+    "credit": "I'm not American and I probably wouldn't consider myself an idiot, but somehow I listened to this album when I was very young because a slightly older neighbor kid with a boom box let me listen to it randomly one day. Not my most favorite or \"well listened to\", but it got stuck in my memory for some reason. https://www.youtube.com/watch?v=SBmX7-6eJms&pp=ygUOQW1lcmljYW4gSWRpb3Q%3D",
+    "author": "D.V.",
+    "category": "symbols"
+  },
+  {
+    "size": 21,
+    "bricks": "BWWWWWWWWWWCCBCCBCCBCWWWWllBBWWWWCCCBCCBCCWWWlWWWWBBWWWCCCCBCCBWWlWWWWWWCBWWWWWCCCBCWlBBBBWWWWCBWWWWWCCCCWWlCCCBWWWWCBBBWWWCCBWWWWCCCBWWWWCCCCWWWCClWWWWCCCBWWWWCCCCWWCCWBWWWWWCCBWWWCCCBWWCBWCBBWWWWWlWWWCCBWWWCCWWCCBWWWWWlWCCBWWWCCBllWCCBlWWWWlCCBWWCCBCWWlCCCBlWWWWCBWWCCCCBWWWWWWWgllWWCBWWWWCCCBBBBBWWWWWllCBWWrWWCCWWlCBl_BBWWWCCBWWWrCCWWCBWWWCBBBWlCCBBBBrCWlCBWWWCCBWBWWCCCCCBCWCCBWWlCBWWWBBWWCCCCClCCBWWWBWWWWCCBBWCCCCCCCCBWWWWWWCCCCCBCCCC",
+    "name": "Private Music by Deftones",
+    "credit": "This is the album cover 10th Studio album released by Deftones in 2025 https://www.youtube.com/watch?v=PyNj9xxiA20 ",
+    "author": "D.V.",
+    "category": "animals"
+  },
+  {
+    "size": 21,
+    "bricks": "WWWWWWWWWWWWWWWWWWWWWW_W______________W__WW__WW_________WWW___WW____W_______W______WW_ll_____________lllWWlBBl___________gBBBWWBBBBl__ggggggg__lBlWWlWlW__BlBlllBlB_lWBWWllll_glllBlBlllglWlWWkkkggRgggggggggggkkWWkkggBgggggggggBggkkWWllgBWBgggggggBWBgllWWlllBBBlllllllBBBlllWWBlllllllBBBlllllllBWWlllllllllllllllllllWWBBBBBBBBBBBBBBBBBBBWWlllllllllllllllllllWWWWWWWWWWWWWWWWWWWWWWWWWWWWWBWBWBWBWBBBBBWWWWWWWWWWWBWBBWBWBWBWWWWWWWWWWWBBWBWBBBBBW",
+    "name": "good kid, m.A.A.d city",
+    "credit": "https://www.youtube.com/watch?v=QyRmI1a6NCA&list=PLFvR2bZRQluxsElKifksCXcbDXbDscLEq",
+    "author": "D.V.",
+    "category": "landscapes"
   }
 ]

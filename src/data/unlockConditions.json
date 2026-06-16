@@ -2378,5 +2378,90 @@
     "required": ["golden_goose", "trickledown", "gravity_falls"],
     "forbidden": ["ball_attract_ball", "wrap_right", "double_or_nothing"],
     "minScore": 45900
+  },
+  "OpenSurge": {
+    "required": ["asceticism", "sticky_coins", "bricks_attract_coins"],
+    "forbidden": ["left_is_lava", "transparency", "ball_attracts_coins"],
+    "minScore": 46000
+  },
+  "ants": {
+    "required": ["ottawa_treaty", "puck_repulse_ball", "ball_repulse_ball"],
+    "forbidden": ["paddle_up_combo", "bricks_attract_coins", "varied_diet"],
+    "minScore": 46100
+  },
+  "holy siege": {
+    "required": ["varied_diet", "rainbow", "steering"],
+    "forbidden": ["respawn", "sturdy_bricks", "right_is_lava"],
+    "minScore": 46200
+  },
+  "the forbidden level": {
+    "required": ["bricks_attract_ball", "instant_explosion", "happy_family"],
+    "forbidden": ["bigger_explosions", "palette", "coin_magnet"],
+    "minScore": 46300
+  },
+  "CRASH TEST 1": {
+    "required": ["coin_magnet", "nbricks", "bigger_puck"],
+    "forbidden": ["thomas", "top_is_lava", "shocks"],
+    "minScore": 46400
+  },
+  "CRASH TEST 2": {
+    "required": ["metamorphosis", "top_is_lava", "bigger_puck"],
+    "forbidden": ["soft_touch", "soft_reset", "hot_start"],
+    "minScore": 46500
+  },
+  "CRASH TEST 3": {
+    "required": ["hot_start", "etherealcoins", "vibrant_neighborhood"],
+    "forbidden": ["top_is_lava", "bigger_puck", "three_cushion"],
+    "minScore": 46600
+  },
+  "BANG-ladesh": {
+    "required": ["telekinesis", "rainbow", "golden_goose"],
+    "forbidden": ["vibrant_neighborhood", "wrap_left", "fountain_toss"],
+    "minScore": 46700
+  },
+  "The Slim Shady LP": {
+    "required": ["ball_attract_ball", "palette", "double_or_nothing"],
+    "forbidden": ["wrap_left", "telekinesis", "trampoline"],
+    "minScore": 46800
+  },
+  "Cat Finger Painting": {
+    "required": ["sapper", "shocks", "wrap_right"],
+    "forbidden": ["refill", "thomas", "nbricks"],
+    "minScore": 46900
+  },
+  "The Division Bell": {
+    "required": ["chill", "fumes", "passive_income"],
+    "forbidden": ["three_cushion", "reach", "puck_repulse_ball"],
+    "minScore": 47000
+  },
+  "DAMN.": {
+    "required": ["trampoline", "ball_attracts_coins", "chill"],
+    "forbidden": ["fumes", "reach", "happy_family"],
+    "minScore": 47100
+  },
+  "To Pimp A Butterly": {
+    "required": ["compound_interest", "minefield", "addiction"],
+    "forbidden": ["chill", "fumes", "steering"],
+    "minScore": 47200
+  },
+  "Mr.Morale & The Big Steppers": {
+    "required": ["respawn", "sacrifice", "rainbow"],
+    "forbidden": ["varied_diet", "ball_attract_ball", "chill"],
+    "minScore": 47300
+  },
+  "American Idiot": {
+    "required": ["varied_diet", "ottawa_treaty", "palette"],
+    "forbidden": ["sacrifice", "chill", "fumes"],
+    "minScore": 47400
+  },
+  "Private Music by Deftones": {
+    "required": ["soft_reset", "soft_touch", "soft_brush"],
+    "forbidden": ["superhot", "sturdy_bricks", "coin_magnet"],
+    "minScore": 47500
+  },
+  "good kid, m.A.A.d city": {
+    "required": ["coin_magnet", "golden_goose", "bigger_puck"],
+    "forbidden": ["top_is_lava", "forgiving", "chill"],
+    "minScore": 47600
   }
 }
