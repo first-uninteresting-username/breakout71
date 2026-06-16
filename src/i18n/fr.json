@@ -273,7 +273,7 @@
     "unlocks.sort_colors_label": "{{count}} couleurs distinctes",
     "unlocks.sort_colors_label_1": "Monochrome",
     "unlocks.sort_size": "Taille",
-    "unlocks.sort_unlocked": "",
+    "unlocks.sort_unlocked": "Accès",
     "unlocks.start_new_game_with": "Commencez une nouvelle partie",
     "unlocks.start_new_game_with_help": "Utiliser cette amélioration comme avantage de départ.",
     "unlocks.title_upgrades": "Vous avez débloqué {{unlocked}} améliorations sur {{out_of}}",
