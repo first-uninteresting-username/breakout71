@@ -4720,64 +4720,160 @@
     "author": "Wombatmithut"
   },
   {
+    "name": "OpenSurge",
     "size": 9,
     "bricks": "_________OOOO_SS__OeeOO_SS_OOeeOOOS___OOOOOO____OOOOOO__OOOOOOO_OOeeeegg____eeee_",
+    "credit": "https://opensurge2d.org",
     "category": "games",
-    "name": "OpenSurge",
-    "author": "Pedr01gb",
-    "credit": "https://opensurge2d.org"
+    "author": "Pedr01gb"
   },
   {
+    "name": "ants",
     "size": 19,
     "bricks": "_gg_gg_gg_gg_gg_gg____________________R_RR_RR_RR_RR_RR_RR____________________CC_CC_CC_CC_CC_CC____________________t_tt_tt_tt_tt_tt_tt____________________ss_ss_ss_ss_ss_ss____________________g_gg_gg_gg_gg_gg_gg____________________RR_RR_RR_RR_RR_RR____________________C_CC_CC_CC_CC_CC_CC____________________tt_tt_tt_tt_tt_tt____________________s_ss_ss_ss_ss_ss_ss",
+    "credit": "it's a big world out there.",
     "category": "abstract",
-    "name": "ants",
-    "author": "bunny baphomet",
-    "credit": "it's a big world out there."
+    "author": "bunny baphomet"
   },
   {
+    "name": "holy siege",
     "size": 23,
     "bricks": "____y__y_______y__y______y__y__yy___yy__y__y__y__y__y___yyy___y__y__y_y__y____y___y____y__y___y__y__y_____y__y__y_____y______yyy______y_____l___l__y___y__l___l____l_t_l_y_____y_l_t_l____lllll___yyy___lllll____ll_ll__y___y__ll_ll_____l_l__y__t__y__l_l______lll____l_l____lll______lll___lllll___lll___l_lllll_llOOOll_lllll_l_ll_l_lllOOOOOlll_l_ll_lll_l_lllOOBOOlll_l_lll_llllllllOOOOOllllllll_lllllllllOOOOOlllllllll___kk__________________tttktttttttttttttttkktt_tttttkkktttttttttttkt_kkkttttttttttkkkttttttt_______________________",
+    "credit": "this place seems protected - or haunted - by a holy spectre, and they don't seem to want visitors. watch out for those gators",
     "category": "landscapes",
-    "name": "holy siege",
+    "author": "bunny baphomet"
+  },
+  {
+    "name": "the forbidden level",
+    "size": 24,
+    "bricks": "W______________________W________________________________________________________________________________________________WWW_W___W_WWW____________W__W_W_W_W_W____________W___W_W__WWW________WWW_________________W_W_W_____W___W_WWW_WWW_W_W_WWW___WWW_W_W_W_W___WW____W___W_W_W_W_W_W___W_W_WWW___WWW_W_WWW_WWW_W_W_____________________________W_WWW______W___WW_______W_W_W__WWW_WWW_WWW__________W___W__W_W_____cvbrcrbv____________rcvbrWWWWWWcbrcvbrcvbrcvbWWWBW_WWB_BWWWBWWW_WB_W_W_B_WBWW_B_WBW_W_WBWWBWBWW_BWWBWB_BW_WBWWB_WBWW_W_B_WBWWWW_WWW_W_WBW_BWBWWWBW_Wrbvcrbvcrbvcrbvcrbvcrbvc",
+    "credit": "the dreaded breakout 7-1 split, desperate whispers pleaded. they said it should never be done.",
+    "category": "symbols",
+    "author": "bunny baphomet"
+  },
+  {
+    "name": "CRASH TEST 1",
+    "size": 21,
+    "bricks": "ByyBggByyBggByyBggByygByyBggByyBggByyBggByggByyBggByyBggByyBggBBggByyBggByyBggByyBggyBggByyBggByyBggByyBgyyBggByyBggByyBggByyBByyBggByyBggByyBggByygByyBggByyBggByyBggByggByyBggByyBggByyBggBBggByyBggByyBggByyBggyBggByyBggByyBggByyBgyyBggByyBggByyBggByyBByyBggByyBggByyBggByygByyBggByyBggByyBBgByggByyBggByyBggByyBggBBggByyBggByyBggByyBggyBggByyBggByyBggByyBgyyBggByyBggByyBggByyBByyBggByyBggByyBggByygByyBggByyBggByyBggByggByyBggByyBggByyBggB",
+    "credit": "WARNING! CAUTION!! ACTIVATE COOLING PROTOCOLS BEFOREHAND! Level by D.V.",
+    "category": "abstract",
+    "author": "D.V."
+  },
+  {
+    "name": "CRASH TEST 2",
+    "size": 21,
+    "bricks": "BggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggB",
+    "credit": "WARNING! CAUTION!! ACTIVATE COOLING PROTOCOLS BEFOREHAND! Level by D.V.",
+    "category": "abstract",
+    "author": "D.V."
+  },
+  {
+    "name": "CRASH TEST 3",
+    "size": 21,
+    "bricks": "ByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBBgByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBgByBgByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyB",
+    "credit": "WARNING! CAUTION!! ACTIVATE COOLING PROTOCOLS BEFOREHAND! Level by D.V.",
+    "category": "abstract",
+    "author": "D.V."
+  },
+  {
+    "name": "The Slim Shady LP",
+    "size": 21,
+    "bricks": "Btt__________________t___t_B______________t___t_r______________t___t________________ttB_t_r_BO_OB__________t_t_r_O_O_O__________t_t_r_O_O_O________t_t_t_r_O_O_O________ttB_t_______O____________Bttt__________________________________Bvv___v________C_____v______v___ttB_C_C__CBvvvv__v__t__t_C_C_CB____vv_v__t_tt_C_BCB______v_v___t_t_C__C_______v_vBvB__BCC__C___v__vB_vv_v_BC_C__C____vvB__v__v_C__C_BC_________v__v_BCCC_CB___________________C___",
+    "credit": "https://www.youtube.com/watch?v=mSHkNdB8x-A&list=PLuIv_B1DKbFWtZmctxtPx91PgYwkesdJK",
+    "category": "symbols",
+    "author": "D.V."
+  },
+  {
+    "name": "Cat Finger Painting",
+    "size": 13,
+    "bricks": "_______________________S__SS___WWW___S__SSSaaSS______WS___SS______Wa_a_Wy_____aaaaaaSSy___B_aaaaaa__S_______yySS_S________y___________y___________yy_W__y________W_______",
+    "credit": "My cat finger painted this while trying to eat my phone. I put my phone in a zip lock bag and put a minced meat on top of the editor. I am 100% serious. Level by Princess BingBong",
+    "category": "abstract",
+    "author": "D.V."
+  },
+  {
+    "name": "The Division Bell",
+    "size": 21,
+    "bricks": "________________________BBg_________gBB_____Blllgg_____gglllB___BleelllB___BleelllB__geeeelllB_Beeeeellg__geeeeellg_geeeeellg__geeBgggB___BgggBelg_lBeeB_r_gg_gg_r_BelBl_Beelg_eeglglg_eellB_lBeelllelB_BeleeellBl_lBeeeellBlBeellllBl_l_BeeeeelB_BeeeeelB_l_lgeeeeBeBlBeBeeelgl_l_lggeelgl_lgleeggl_l_l_Begleg_l_geegeB_l_l_lBegegglelggeglBl_lkkggeeBkrkrkrkBelggkkkkgegeelgkkkgeelglgkkkBeelBllgkkkgelBlllBkkBeellBBekkkeBBlellBkkkkkkkkkkkkkkkkkkkkkk",
+    "credit": "A very memorable album for me. Funnily enough, I only know two songs from this album but mainly the image of this album is very significant. It's one of the only good memories I have of my brother. because he had a bootleg copy of this CD. https://www.youtube.com/watch?v=4HLaOmiwV5Q&list=PLYe_yAiX89Y1Hbf5l6bcrMdscFDEBLx53",
+    "category": "portraits",
+    "author": "D.V."
+  },
+  {
+    "name": "DAMN.",
+    "size": 21,
+    "bricks": "BBBRRRBBBRRRRRRRRRRRRRRRRRRRRRRRRBBRRRBBBBpppBBRRpRRpRRRpRpRRpRpRRpRRppBRppRppRppRpRpRRpRpRpRRpppRpRppppRpRRpRppppRpBpBpRpRppRpppRRpRRpBpBBBpRpRBpBBRRBBBRRRB___BBBRRRRRRRRRRRRRB______BRRBBBRBBBRRR_B_W____BRRRRRRRRRRRR_B______RRRRRRRRRRRRRRB______RRRBBBBRBBBRRRRB____BRRRRRRRRRRRRRW__B__BWRRBBBRRRRRlWWlW__BBWllWWRRRBBlWWWWWlWWWWlWWlWRRRRRlWWWWWWllllWWWWWWBBRlWWWWWWWWWWWWlWWlWRRBlWWWlWWWWWWlWWWWlWRRRlWWWlWWWWWWWWlWW__RBRlWWWlWWWWWWWWWlW__RR",
+    "credit": "A studio album released in 2017 by the rapper Kendrick Lamar. When it came out it was quite quickly named one of the greatest albums of 2017 and the decade. It is a 'Conscious HipHop' album. https://www.youtube.com/watch?v=5OaGBXAzFY0&pp=ygUFREFNTi4%3D",
+    "category": "portraits",
+    "author": "D.V."
+  },
+  {
+    "name": "To Pimp A Butterly",
+    "size": 21,
+    "bricks": "llBlllllllllllllllBlllBWBWBW_WWBWW_WBWBWBlBW_W_W_W_WBBWW_W_W_WBl_W_W_W_WWBWW_W_W_W_llW_W_W_W_WBW_W_W_W_Wll_W_WBBBBlBlBBBBW_W_llBBBBWWWWWWWWWWWBBBBllWWWWWWWWWWWWWWWWWWWllWWWWWWWWlWlWWWWWWWWll_lW_WW_W_W_W_WW_Wl_llB_lBW_lWlW_Wl_WBl_BllBlBl_lll_ll_Bl_lBlBllBBl_WBl_BW_lWlW_l_BllBlll_lWlWBW__W_lllBllBlBWW_lWllBl_BBWBlBllB_llBWWBWBW__WlWl_BllB___ll_llBW__l_l_lBllBllBB_l___l_BWBBBlBllBl_W_B___l__B_ll__BllB__B__BB_B________Bllllllllllllllllllllll",
+    "credit": "I mean, this is abstract art at best, but hopefully it can be recognized somewhat. its better If you squint like you're trying to recognize your enemies face in blurry CCTV footage. https://www.youtube.com/watch?v=l9fN-8NjrvI&list=PL8YH4mOwWryUO4kxV36tPqkiaAr4_oJe5",
+    "category": "stills",
+    "author": "D.V."
+  },
+  {
+    "name": "Mr.Morale & The Big Steppers",
+    "size": 20,
+    "bricks": "eeeeeeeeeeeeeeeeeBBBBBBBBBBBBBBBBBBBBRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRBeRRRRRRRRRRRRR__RRRBBRRBBRRRRRRRRBBBBRRRRRReBRRBRReRR__W_RRRRRRRRRRBBRBRR____R__RBeRRRReBRRRR__RRR__RRRRRRRRRRBRRlWWR_lW_RRRBBRRRReRWWlWWW__lRRB_WBRRRRRlWWlWWWlRRRRBBRRRRRRlWlWWlWWRRRBlWBRRRRR_llWWl_WRR_lWWWBRRRR_lWWWl__RRBBlW_BllRRRllW_W_lllB__BBllllRlRllBBW_lB_eB_lleelWlWkkkkklB_eB_eeelllWlWkkkkk_Be_BeelllllWlWkkkkkeeeeeeelell",
+    "credit": "This is a 2022 studio album released by Kendrick Lamar, its main theme focuses on dealing with the suffering of life a human can experience, but in healthy ways that won't perpetuate the cycle of trauma and harm. https://www.youtube.com/watch?v=SdwEIPD1bEw&pp=ygUcTXIuTW9yYWxlICYgVGhlIEJpZyBTdGVwcGVyc9IHCQk-CwGHKiGM7w%3D%3D",
+    "category": "portraits",
+    "author": "D.V."
+  },
+  {
+    "name": "American Idiot",
+    "size": 21,
+    "bricks": "_______________W___________________RRW____WBWBWBWBW____WRR_RRR_W_WBW_W_WB__W__R_RBRWW_W_WBWBWB___R___BRBRWBWBW_W_WB__RRBRBRBWWWBW_WBWBW___RBRBRBRBR____________RWBRBRWWW_W_W_W______WRRBRBRBRBWBW_WB_____WWWRRRBWW_WBWBWB_____BWWWWRRRWBW_W_W_______BWWWWWW______________BWWWWW__R_RBRBRBR____WWWWWB__RBR_RBR_R___BWWWWB_______________WWWWW____R_R_R______WWWWWB____RBRBR_____BWWWWW______________BWWWWWB_____________BWWWWWW_____________BWWWWWWB______",
+    "credit": "I'm not American and I probably wouldn't consider myself an idiot, but somehow I listened to this album when I was very young because a slightly older neighbor kid with a boom box let me listen to it randomly one day. Not my most favorite or \"well listened to\", but it got stuck in my memory for some reason. https://www.youtube.com/watch?v=SBmX7-6eJms&pp=ygUOQW1lcmljYW4gSWRpb3Q%3D",
+    "category": "symbols",
+    "author": "D.V."
+  },
+  {
+    "name": "Private Music by Deftones",
+    "size": 21,
+    "bricks": "BWWWWWWWWWWCCBCCBCCBCWWWWllBBWWWWCCCBCCBCCWWWlWWWWBBWWWCCCCBCCBWWlWWWWWWCBWWWWWCCCBCWlBBBBWWWWCBWWWWWCCCCWWlCCCBWWWWCBBBWWWCCBWWWWCCCBWWWWCCCCWWWCClWWWWCCCBWWWWCCCCWWCCWBWWWWWCCBWWWCCCBWWCBWCBBWWWWWlWWWCCBWWWCCWWCCBWWWWWlWCCBWWWCCBllWCCBlWWWWlCCBWWCCBCWWlCCCBlWWWWCBWWCCCCBWWWWWWWgllWWCBWWWWCCCBBBBBWWWWWllCBWWrWWCCWWlCBl_BBWWWCCBWWWrCCWWCBWWWCBBBWlCCBBBBrCWlCBWWWCCBWBWWCCCCCBCWCCBWWlCBWWWBBWWCCCCClCCBWWWBWWWWCCBBWCCCCCCCCBWWWWWWCCCCCBCCCC",
+    "credit": "This is the album cover 10th Studio album released by Deftones in 2025 https://www.youtube.com/watch?v=PyNj9xxiA20",
+    "category": "animals",
+    "author": "D.V."
+  },
+  {
+    "name": "good kid, m.A.A.d city",
+    "size": 21,
+    "bricks": "WWWWWWWWWWWWWWWWWWWWWW_W______________W__WW__WW_________WWW___WW____W_______W______WW_ll_____________lllWWlBBl___________gBBBWWBBBBl__ggggggg__lBlWWlWlW__BlBlllBlB_lWBWWllll_glllBlBlllglWlWWkkkggRgggggggggggkkWWkkggBgggggggggBggkkWWllgBWBgggggggBWBgllWWlllBBBlllllllBBBlllWWBlllllllBBBlllllllBWWlllllllllllllllllllWWBBBBBBBBBBBBBBBBBBBWWlllllllllllllllllllWWWWWWWWWWWWWWWWWWWWWWWWWWWWWBWBWBWBWBBBBBWWWWWWWWWWWBWBBWBWBWBWWWWWWWWWWWBBWBWBBBBBW",
+    "credit": "https://www.youtube.com/watch?v=QyRmI1a6NCA&list=PLFvR2bZRQluxsElKifksCXcbDXbDscLEq",
+    "category": "landscapes",
+    "author": "D.V."
+  },
+  {
+    "size": 20,
+    "bricks": "____________________WWWWWWWWWWWWWWWWWWWW_BWW_BWW_BWW_BWW_BWW_WW__WW__WW__WW__WW_WWB_WWB_WWB_WWB_WWB__WW__WW__WW__WW__WW__BWW_BWW_BWW_BWW_BWW_WW__WW__WW__WW__WW_WWB_WWB_WWB_WW__WWB__WW__WW__WW__WW__WW__BWW_BWW_BWW_BWW_BWW_WW__WW__WW__WW__WW_WWB_WWB_WWB_WW__WWB__WW__WW__WW__WW__WW__BWW_BWW_BWW_BWW_BWW_WW__WW__WW__WW__WW_WWB_WWB_WWB_WW__WWB__WW__WW__WW__WW__WW__BWW_BWW_BWW_BWW_BWWWWWWWWWWWWWWWWWWWWWW",
+    "category": "abstract",
+    "name": "zippy",
     "author": "bunny baphomet",
-    "credit": "this place seems protected - or haunted - by a holy spectre, and they don't seem to want visitors. watch out for those gators"
+    "credit": "mezmerized."
   },
   {
     "size": 24,
-    "bricks": "W______________________W________________________________________________________________________________________________WWW_W___W_WWW____________W__W_W_W_W_W____________W___W_W__WWW________WWW_________________W_W_W_____W___W_WWW_WWW_W_W_WWW___WWW_W_W_W_W___WW____W___W_W_W_W_W_W___W_W_WWW___WWW_W_WWW_WWW_W_W_____________________________W_WWW______W___WW_______W_W_W__WWW_WWW_WWW__________W___W__W_W_____cvbrcrbv____________rcvbrWWWWWWcbrcvbrcvbrcvbWWWBW_WWB_BWWWBWWW_WB_W_W_B_WBWW_B_WBW_W_WBWWBWBWW_BWWBWB_BW_WBWWB_WBWW_W_B_WBWWWW_WWW_W_WBW_BWBWWWBW_Wrbvcrbvcrbvcrbvcrbvcrbvc",
-    "category": "symbols",
-    "name": "the forbidden level",
+    "bricks": "____W___W_____W_____W___W____W_____W_____W_____W__W____W__W__ccc___W____W__vvvvvstsvcWcsWv___W___vWvWscccsccWcsvvtsvv____ssccvccttvvcvtvtvcctv_WsscttvvttvsWBtvtcvcBsWv_vttctcv__W_vvvBtvcvtvsv_ttcsvW____sstttBcWvWvvv_vctcW_W_vvBBsvBtWBtvss_WvvW____vtWcBcBvcccWs____v____ccsccBBBvtctsvsW__vv__WtBccBBcBWscvct____vv_W_vWvvBvvWBBtv___W__tvs__cvvvBtvWttv__W____Wts__vtvcBtttvvv_______vsts_vscvvcBvBvvs__Wvccssttv_vscccctcvvtvccccWsvtcs__WvtssccvvWccWvvssttcsW____vWvsctcvWccsvvstvv___W_W___vWvvcctvvstvvv_W_______W__s__Wvstvsvv_W______W___W_W____W___W___W__W__________W___________W",
+    "category": "landscapes",
+    "name": "spiral anomaly",
     "author": "bunny baphomet",
-    "credit": "the dreaded breakout 7-1 split, desperate whispers pleaded. they said it should never be done."
+    "credit": "a mysterious anomaly deep in the galaxy, containing an extremely volatile dark matter. it draws you ever deeper"
   },
   {
     "size": 21,
-    "bricks": "ByyBggByyBggByyBggByygByyBggByyBggByyBggByggByyBggByyBggByyBggBBggByyBggByyBggByyBggyBggByyBggByyBggByyBgyyBggByyBggByyBggByyBByyBggByyBggByyBggByygByyBggByyBggByyBggByggByyBggByyBggByyBggBBggByyBggByyBggByyBggyBggByyBggByyBggByyBgyyBggByyBggByyBggByyBByyBggByyBggByyBggByygByyBggByyBggByyBBgByggByyBggByyBggByyBggBBggByyBggByyBggByyBggyBggByyBggByyBggByyBgyyBggByyBggByyBggByyBByyBggByyBggByyBggByygByyBggByyBggByyBggByggByyBggByyBggByyBggB",
-    "name": "CRASH TEST 1",
-    "credit": "WARNING! CAUTION!! ACTIVATE COOLING PROTOCOLS BEFOREHAND! Level by D.V.",
-    "author": "D.V.",
-    "category": "abstract"
-  },
-  {
-    "size": 21,
-    "bricks": "BggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggB",
-    "name": "CRASH TEST 2",
-    "credit": "WARNING! CAUTION!! ACTIVATE COOLING PROTOCOLS BEFOREHAND! Level by D.V.",
-    "author": "D.V.",
-    "category": "abstract"
-  },
-  {
-    "size": 21,
-    "bricks": "ByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBBgByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBgByBgByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyByyBggByyBgggByyBggByyyBggByyBggBggByyBggByBggByyBggByBggByyBggBggByyBggByyyBggByyBgggByyBggByyByyBggByyBgByyBggByyBgByyBggByyB",
-    "name": "CRASH TEST 3",
-    "credit": "WARNING! CAUTION!! ACTIVATE COOLING PROTOCOLS BEFOREHAND! Level by D.V.",
-    "author": "D.V.",
-    "category": "abstract"
+    "bricks": "bbbbbllllllRRRRRRllllllllbll____RRRRRR___lbbblbll_____________lllbBbll_____________l__yyyyy_____________l__yyyyy_____yyyy____l____________yyyy____l__________yyllblcc__y__yyyy____yybbblcc__y__yBBy____yylbllcc__y__yBby____yylbllcc__y__yyby____yylbbbcc__y____b______lllbll___l____b______lllbll___l____b______lllbll___l__RRbRRRR__llbbll___lllRRRRRRRllllblcc__yylllblblllllllbbcc__yybbbblbbllbbbbblcc__yyllllllbbbblllbbcc__yybbbbbbbllllllllcc__yy",
+    "category": "stills",
+    "name": "hacking the system",
+    "author": "bunny baphomet",
+    "credit": "use your hacker voice as you splice your way into this one."
   },
   {
     "size": 19,
-    "bricks": "____________________________________________________________________________BBBBBBBBBBBBBBBBBBBBkkkkkkkkkkkkkkkkkBBkkkkkBBRRRBBkkkkkBBkkkkBRRRRRRRBkkkkBBkkkBRRRRRRRRRBkkkBBkkkBRyyyBRyBRBkkkBBkkBRRRRyByyBRRBkkBBkkBRRRyBRRyBRRBkkBBkkBRRRyBRRyBRRBkkBBkkkBRRyBRRyBRBkkkBBkkkBRRRRRRRRRBkkkBBkkkkBRRRRRRRBkkkkBBkkkkkBBRRRBBkkkkkBBkkkkkkkkkkkkkkkkkBBBBBBBBBBBBBBBBBBBB",
+    "bricks": "______________________________________________________________________________BBBBBBBBBBBBBBB__BkkkkkkkkkkkkkkkkkBBkkkkkk_RRR_kkkkkkBBkkkkBRRRRRRRBkkkkBBkkkBRRRRRRRRRBkkkBBkkkBRyyyBRyBRBkkkBBkkBRRRRyByyBRRBkkBBkkBRRRyBRRyBRRBkkBBkkBRRRyBRRyBRRBkkBBkkkBRRyBRRyBRBkkkBBkkkBRRRRRRRRRBkkkBBkkkkBRRRRRRRBkkkkBBkkkkkk_RRR_kkkkkkBBkkkkkkkkkkkkkkkkkB__BBBBBBBBBBBBBBB__",
     "name": "BANG-ladesh",
     "credit": "artistic pun of the official flag. also, we got our independence in 1971. Hence the number. The proportions are not accurate on purpose. A caricature of my country. Level by D.V. https://en.wikipedia.org/wiki/Bangladesh?wprov=sfla1",
     "author": "D.V.",
@@ -4785,74 +4881,34 @@
   },
   {
     "size": 21,
-    "bricks": "Btt__________________t___t_B______________t___t_r______________t___t________________ttB_t_r_BO_OB__________t_t_r_O_O_O__________t_t_r_O_O_O________t_t_t_r_O_O_O________ttB_t_______O____________Bttt__________________________________Bvv___v________C_____v______v___ttB_C_C__CBvvvv__v__t__t_C_C_CB____vv_v__t_tt_C_BCB______v_v___t_t_C__C_______v_vBvB__BCC__C___v__vB_vv_v_BC_C__C____vvB__v__v_C__C_BC_________v__v_BCCC_CB___________________C___",
-    "name": "The Slim Shady LP",
-    "credit": "https://www.youtube.com/watch?v=mSHkNdB8x-A&list=PLuIv_B1DKbFWtZmctxtPx91PgYwkesdJK",
-    "author": "D.V.",
-    "category": "symbols"
-  },
-  {
-    "size": 13,
-    "bricks": "_______________________S__SS___WWW___S__SSSaaSS______WS___SS______Wa_a_Wy_____aaaaaaSSy___B_aaaaaa__S_______yySS_S________y___________y___________yy_W__y________W_______",
-    "name": "Cat Finger Painting",
-    "credit": "My cat finger painted this while trying to eat my phone. I put my phone in a zip lock bag and put a minced meat on top of the editor. I am 100% serious. Level by Princess BingBong",
-    "author": "D.V.",
-    "category": "abstract"
+    "bricks": "_____W_W_____W_W__W___W_W__B___W___B__WB____B_______BW_____________CCCC______W_W__W_____CWWC_CCC___BR__BW____CWWCCCWC____R____kkkCCCCCCCCCCkkRRkkkkkCCCCCCCCCCCCCRRk_G_kCCCB_B_B_CCCCRRk_k_kGCCB_B_B_B_CCRRk_kRk_kCC_B___B_BCCCC_kGGGk_CCB_B_B_B_CCCCk_kGk_kCCCB_B_B_CCCCC_k_k_k_CCCCCCCCCCCCGGk_k_k_RCCCCCCCCCCGCCCGk_k_GRCCCCCGGCCCGGGGG_k_kGGCCCCCCGGCCCCCCGk_k_kGGCCCCCCGGGGGGGk_k_k_kGGGGGGGGGGGGGk_k_k_kRkGGGGGGGGGG_k_k_kGGRR_k_k_k_k_k_k_k_kGGGGG",
+    "category": "animals",
+    "name": "into the bayou",
+    "author": "bunny baphomet",
+    "credit": "the big frog in the pond never accounted for spontaneous explosive indigestion via eating too many bomb brick flies. happens to the best of us"
   },
   {
     "size": 21,
-    "bricks": "________________________BBg_________gBB_____Blllgg_____gglllB___BleelllB___BleelllB__geeeelllB_Beeeeellg__geeeeellg_geeeeellg__geeBgggB___BgggBelg_lBeeB_r_gg_gg_r_BelBl_Beelg_eeglglg_eellB_lBeelllelB_BeleeellBl_lBeeeellBlBeellllBl_l_BeeeeelB_BeeeeelB_l_lgeeeeBeBlBeBeeelgl_l_lggeelgl_lgleeggl_l_l_Begleg_l_geegeB_l_l_lBegegglelggeglBl_lkkggeeBkrkrkrkBelggkkkkgegeelgkkkgeelglgkkkBeelBllgkkkgelBlllBkkBeellBBekkkeBBlellBkkkkkkkkkkkkkkkkkkkkkk",
-    "name": "The Division Bell",
-    "credit": "A very memorable album for me. Funnily enough, I only know two songs from this album but mainly the image of this album is very significant. It's one of the only good memories I have of my brother. because he had a bootleg copy of this CD. https://www.youtube.com/watch?v=4HLaOmiwV5Q&list=PLYe_yAiX89Y1Hbf5l6bcrMdscFDEBLx53",
-    "author": "D.V.",
-    "category": "portraits"
+    "bricks": "_____ccccct_t_tRRRRR_____ccccctBtBtBtRRBRR___ccBcct_t_t_t_tRRBR__ccBcct_t_ttt_t_tRRR_ccBcct_t_ttatt_t_tRRccBcct_t_ttaBatt_t_tRcccct_t_tta_a_att_t_Rccct_t_ttaBa_aBatt_tRcct_t_tta_a_a_a_attBRctBt_ttaBa_apa_aBattRc_t_tta_a_apBpa_attBRctBttaBa_apBpa_att_tRc_tta_a_a_apa_att_tBRctBtta_a_a_a_att_t_tRc_t_tta_a_a_att_t_t_RctBt_tta_a_att_t_t__Rc_t_t_tta_a_a_t_t___Rc__t_t_tta_a_a_t____Rc___t_t_tta_a_a_____Rc____t_t_tta_a_a____Rc_____t_t_tta_a_a___R",
+    "category": "abstract",
+    "name": "fluidity",
+    "author": "bunny baphomet",
+    "credit": "it's all flowing together"
   },
   {
     "size": 21,
-    "bricks": "BBBRRRBBBRRRRRRRRRRRRRRRRRRRRRRRRBBRRRBBBBpppBBRRpRRpRRRpRpRRpRpRRpRRppBRppRppRppRpRpRRpRpRpRRpppRpRppppRpRRpRppppRpBpBpRpRppRpppRRpRRpBpBBBpRpRBpBBRRBBBRRRB___BBBRRRRRRRRRRRRRB______BRRBBBRBBBRRR_B_W____BRRRRRRRRRRRR_B______RRRRRRRRRRRRRRB______RRRBBBBRBBBRRRRB____BRRRRRRRRRRRRRW__B__BWRRBBBRRRRRlWWlW__BBWllWWRRRBBlWWWWWlWWWWlWWlWRRRRRlWWWWWWllllWWWWWWBBRlWWWWWWWWWWWWlWWlWRRBlWWWlWWWWWWlWWWWlWRRRlWWWlWWWWWWWWlWW__RBRlWWWlWWWWWWWWWlW__RR",
-    "name": "DAMN.",
-    "credit": "A studio album released in 2017 by the rapper Kendrick Lamar. When it came out it was quite quickly named one of the greatest albums of 2017 and the decade. It is a 'Conscious HipHop' album. https://www.youtube.com/watch?v=5OaGBXAzFY0&pp=ygUFREFNTi4%3D",
-    "author": "D.V.",
-    "category": "portraits"
+    "bricks": "_________k_______O________k_kk_______OOO________kkkk_____OOOOO_______kOk_____OOOOOOO__k__k_O___k__b_____b_kk____O___kk_b_OO_Obkkkkk__O__kkk_b_OO_Ob__________k_k_b_OO__b___________k_kbbOObbbllllllllllb_k_k_klk_k_______O_bbb_k_k_l_k_le__l_Oebbbl__k_klk_kee__lOee_e_l_________kk__l_kk_k_l_________llllllllllllllllll___l_l_l_l_l_l_l_lllOO___l_l_l_l_l_l_l_llOO__l_l_l_l_l_l_l_lllbb___l_l_l_l_llllllllbb__l_l_l_l_lll___lllbb___l_l_l_lll__l__llll__",
+    "category": "landscapes",
+    "name": "stakeout '71",
+    "author": "bunny baphomet",
+    "credit": "\"you think they'll notice our comically oversized binoculars?\" \"we're consummate professionals, jim. we're perfectly inconspicuous\""
   },
   {
-    "size": 21,
-    "bricks": "llBlllllllllllllllBlllBWBWBW_WWBWW_WBWBWBlBW_W_W_W_WBBWW_W_W_WBl_W_W_W_WWBWW_W_W_W_llW_W_W_W_WBW_W_W_W_Wll_W_WBBBBlBlBBBBW_W_llBBBBWWWWWWWWWWWBBBBllWWWWWWWWWWWWWWWWWWWllWWWWWWWWlWlWWWWWWWWll_lW_WW_W_W_W_WW_Wl_llB_lBW_lWlW_Wl_WBl_BllBlBl_lll_ll_Bl_lBlBllBBl_WBl_BW_lWlW_l_BllBlll_lWlWBW__W_lllBllBlBWW_lWllBl_BBWBlBllB_llBWWBWBW__WlWl_BllB___ll_llBW__l_l_lBllBllBB_l___l_BWBBBlBllBl_W_B___l__B_ll__BllB__B__BB_B________Bllllllllllllllllllllll",
-    "name": "To Pimp A Butterly",
-    "credit": "I mean, this is abstract art at best, but hopefully it can be recognized somewhat. its better If you squint like you're trying to recognize your enemies face in blurry CCTV footage. https://www.youtube.com/watch?v=l9fN-8NjrvI&list=PL8YH4mOwWryUO4kxV36tPqkiaAr4_oJe5",
-    "author": "D.V.",
-    "category": "stills"
-  },
-  {
-    "size": 20,
-    "bricks": "eeeeeeeeeeeeeeeeeBBBBBBBBBBBBBBBBBBBBRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRBeRRRRRRRRRRRRR__RRRBBRRBBRRRRRRRRBBBBRRRRRReBRRBRReRR__W_RRRRRRRRRRBBRBRR____R__RBeRRRReBRRRR__RRR__RRRRRRRRRRBRRlWWR_lW_RRRBBRRRReRWWlWWW__lRRB_WBRRRRRlWWlWWWlRRRRBBRRRRRRlWlWWlWWRRRBlWBRRRRR_llWWl_WRR_lWWWBRRRR_lWWWl__RRBBlW_BllRRRllW_W_lllB__BBllllRlRllBBW_lB_eB_lleelWlWkkkkklB_eB_eeelllWlWkkkkk_Be_BeelllllWlWkkkkkeeeeeeelell",
-    "name": "Mr.Morale & The Big Steppers",
-    "credit": "This is a 2022 studio album released by Kendrick Lamar, its main theme focuses on dealing with the suffering of life a human can experience, but in healthy ways that won't perpetuate the cycle of trauma and harm. https://www.youtube.com/watch?v=SdwEIPD1bEw&pp=ygUcTXIuTW9yYWxlICYgVGhlIEJpZyBTdGVwcGVyc9IHCQk-CwGHKiGM7w%3D%3D",
-    "author": "D.V.",
-    "category": "portraits"
-  },
-  {
-    "size": 21,
-    "bricks": "_______________W___________________RRW____WBWBWBWBW____WRR_RRR_W_WBW_W_WB__W__R_RBRWW_W_WBWBWB___R___BRBRWBWBW_W_WB__RRBRBRBWWWBW_WBWBW___RBRBRBRBR____________RWBRBRWWW_W_W_W______WRRBRBRBRBWBW_WB_____WWWRRRBWW_WBWBWB_____BWWWWRRRWBW_W_W_______BWWWWWW______________BWWWWW__R_RBRBRBR____WWWWWB__RBR_RBR_R___BWWWWB_______________WWWWW____R_R_R______WWWWWB____RBRBR_____BWWWWW______________BWWWWWB_____________BWWWWWW_____________BWWWWWWB______",
-    "name": "American Idiot",
-    "credit": "I'm not American and I probably wouldn't consider myself an idiot, but somehow I listened to this album when I was very young because a slightly older neighbor kid with a boom box let me listen to it randomly one day. Not my most favorite or \"well listened to\", but it got stuck in my memory for some reason. https://www.youtube.com/watch?v=SBmX7-6eJms&pp=ygUOQW1lcmljYW4gSWRpb3Q%3D",
-    "author": "D.V.",
-    "category": "symbols"
-  },
-  {
-    "size": 21,
-    "bricks": "BWWWWWWWWWWCCBCCBCCBCWWWWllBBWWWWCCCBCCBCCWWWlWWWWBBWWWCCCCBCCBWWlWWWWWWCBWWWWWCCCBCWlBBBBWWWWCBWWWWWCCCCWWlCCCBWWWWCBBBWWWCCBWWWWCCCBWWWWCCCCWWWCClWWWWCCCBWWWWCCCCWWCCWBWWWWWCCBWWWCCCBWWCBWCBBWWWWWlWWWCCBWWWCCWWCCBWWWWWlWCCBWWWCCBllWCCBlWWWWlCCBWWCCBCWWlCCCBlWWWWCBWWCCCCBWWWWWWWgllWWCBWWWWCCCBBBBBWWWWWllCBWWrWWCCWWlCBl_BBWWWCCBWWWrCCWWCBWWWCBBBWlCCBBBBrCWlCBWWWCCBWBWWCCCCCBCWCCBWWlCBWWWBBWWCCCCClCCBWWWBWWWWCCBBWCCCCCCCCBWWWWWWCCCCCBCCCC",
-    "name": "Private Music by Deftones",
-    "credit": "This is the album cover 10th Studio album released by Deftones in 2025 https://www.youtube.com/watch?v=PyNj9xxiA20 ",
-    "author": "D.V.",
-    "category": "animals"
-  },
-  {
-    "size": 21,
-    "bricks": "WWWWWWWWWWWWWWWWWWWWWW_W______________W__WW__WW_________WWW___WW____W_______W______WW_ll_____________lllWWlBBl___________gBBBWWBBBBl__ggggggg__lBlWWlWlW__BlBlllBlB_lWBWWllll_glllBlBlllglWlWWkkkggRgggggggggggkkWWkkggBgggggggggBggkkWWllgBWBgggggggBWBgllWWlllBBBlllllllBBBlllWWBlllllllBBBlllllllBWWlllllllllllllllllllWWBBBBBBBBBBBBBBBBBBBWWlllllllllllllllllllWWWWWWWWWWWWWWWWWWWWWWWWWWWWWBWBWBWBWBBBBBWWWWWWWWWWWBWBBWBWBWBWWWWWWWWWWWBBWBWBBBBBW",
-    "name": "good kid, m.A.A.d city",
-    "credit": "https://www.youtube.com/watch?v=QyRmI1a6NCA&list=PLFvR2bZRQluxsElKifksCXcbDXbDscLEq",
-    "author": "D.V.",
-    "category": "landscapes"
+    "size": 23,
+    "bricks": "____W_____WW______________W___W_W__W_____W__W__W_W_WW__W_____W__WW_W__W_W_W___W____W_W_W_WW__W_W_WW__W_WW_WWW_W__W___W__W____WW__W_W___________WWW_____WW_WW__________________________________yy___yy____________P_P_y_____y____b_P_P___PPP_yyybyyy____W_PPP____P___WbbWW____W___P_________bbWW_WbbW__________P_P__WWWWWWbb__P_P_____PPP___y_bbWWW__PPP______P_____W_W_W_W__P____________b__b_b__b______r_r_______________r_r__rrr____WW_W____WW_rrr___r____W_W_W___W____r_________WWW_W___WWW____________W___W_____W____________W___WWW_WWW_____",
+    "category": "animals",
+    "name": "steak-out 71",
+    "author": "bunny baphomet",
+    "credit": "every second, 71 cows are destroyed by gamers. you can help put a stop to this. they know how to play games too"
   }
 ]

@@ -2463,5 +2463,41 @@
     "required": ["coin_magnet", "golden_goose", "bigger_puck"],
     "forbidden": ["top_is_lava", "forgiving", "chill"],
     "minScore": 47600
+  },
+
+  "zippy": {
+    "required": ["coin_magnet", "golden_goose", "bigger_puck"],
+    "forbidden": ["top_is_lava", "forgiving", "chill"],
+    "minScore": 47600
+  },
+  "spiral anomaly": {
+    "required": ["forgiving", "bigger_puck", "thomas"],
+    "forbidden": ["top_is_lava", "shocks", "sapper"],
+    "minScore": 47700
+  },
+  "hacking the system": {
+    "required": ["metamorphosis", "rainbow", "bigger_balls"],
+    "forbidden": ["unbounded", "limitless", "top_is_lava"],
+    "minScore": 47800
+  },
+  "into the bayou": {
+    "required": ["skip_last", "bricks_attract_coins", "happy_family"],
+    "forbidden": ["sturdy_bricks", "thomas", "shocks"],
+    "minScore": 48000
+  },
+  "fluidity": {
+    "required": ["gravity_falls", "trampoline", "compound_interest"],
+    "forbidden": ["skip_last", "side_flip", "side_kick"],
+    "minScore": 48100
+  },
+  "stakeout '71": {
+    "required": ["ball_attract_ball", "side_kick", "side_flip"],
+    "forbidden": ["double_or_nothing", "wrap_right", "ball_attracts_coins"],
+    "minScore": 48200
+  },
+  "steak-out 71": {
+    "required": ["three_cushion", "side_kick", "side_flip"],
+    "forbidden": ["disco_ball", "golden_goose", "metamorphosis"],
+    "minScore": 48300
   }
 }
