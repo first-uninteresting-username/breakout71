@@ -4848,67 +4848,91 @@
     "author": "D.V."
   },
   {
+    "name": "zippy",
     "size": 20,
     "bricks": "____________________WWWWWWWWWWWWWWWWWWWW_BWW_BWW_BWW_BWW_BWW_WW__WW__WW__WW__WW_WWB_WWB_WWB_WWB_WWB__WW__WW__WW__WW__WW__BWW_BWW_BWW_BWW_BWW_WW__WW__WW__WW__WW_WWB_WWB_WWB_WW__WWB__WW__WW__WW__WW__WW__BWW_BWW_BWW_BWW_BWW_WW__WW__WW__WW__WW_WWB_WWB_WWB_WW__WWB__WW__WW__WW__WW__WW__BWW_BWW_BWW_BWW_BWW_WW__WW__WW__WW__WW_WWB_WWB_WWB_WW__WWB__WW__WW__WW__WW__WW__BWW_BWW_BWW_BWW_BWWWWWWWWWWWWWWWWWWWWWW",
+    "credit": "mezmerized.",
     "category": "abstract",
-    "name": "zippy",
-    "author": "bunny baphomet",
-    "credit": "mezmerized."
+    "author": "bunny baphomet"
   },
   {
+    "name": "spiral anomaly",
     "size": 24,
     "bricks": "____W___W_____W_____W___W____W_____W_____W_____W__W____W__W__ccc___W____W__vvvvvstsvcWcsWv___W___vWvWscccsccWcsvvtsvv____ssccvccttvvcvtvtvcctv_WsscttvvttvsWBtvtcvcBsWv_vttctcv__W_vvvBtvcvtvsv_ttcsvW____sstttBcWvWvvv_vctcW_W_vvBBsvBtWBtvss_WvvW____vtWcBcBvcccWs____v____ccsccBBBvtctsvsW__vv__WtBccBBcBWscvct____vv_W_vWvvBvvWBBtv___W__tvs__cvvvBtvWttv__W____Wts__vtvcBtttvvv_______vsts_vscvvcBvBvvs__Wvccssttv_vscccctcvvtvccccWsvtcs__WvtssccvvWccWvvssttcsW____vWvsctcvWccsvvstvv___W_W___vWvvcctvvstvvv_W_______W__s__Wvstvsvv_W______W___W_W____W___W___W__W__________W___________W",
+    "credit": "a mysterious anomaly deep in the galaxy, containing an extremely volatile dark matter. it draws you ever deeper",
     "category": "landscapes",
-    "name": "spiral anomaly",
-    "author": "bunny baphomet",
-    "credit": "a mysterious anomaly deep in the galaxy, containing an extremely volatile dark matter. it draws you ever deeper"
+    "author": "bunny baphomet"
   },
   {
+    "name": "hacking the system",
     "size": 21,
     "bricks": "bbbbbllllllRRRRRRllllllllbll____RRRRRR___lbbblbll_____________lllbBbll_____________l__yyyyy_____________l__yyyyy_____yyyy____l____________yyyy____l__________yyllblcc__y__yyyy____yybbblcc__y__yBBy____yylbllcc__y__yBby____yylbllcc__y__yyby____yylbbbcc__y____b______lllbll___l____b______lllbll___l____b______lllbll___l__RRbRRRR__llbbll___lllRRRRRRRllllblcc__yylllblblllllllbbcc__yybbbblbbllbbbbblcc__yyllllllbbbblllbbcc__yybbbbbbbllllllllcc__yy",
+    "credit": "use your hacker voice as you splice your way into this one.",
     "category": "stills",
-    "name": "hacking the system",
-    "author": "bunny baphomet",
-    "credit": "use your hacker voice as you splice your way into this one."
+    "author": "bunny baphomet"
   },
   {
+    "name": "BANG-ladesh",
     "size": 19,
     "bricks": "______________________________________________________________________________BBBBBBBBBBBBBBB__BkkkkkkkkkkkkkkkkkBBkkkkkk_RRR_kkkkkkBBkkkkBRRRRRRRBkkkkBBkkkBRRRRRRRRRBkkkBBkkkBRyyyBRyBRBkkkBBkkBRRRRyByyBRRBkkBBkkBRRRyBRRyBRRBkkBBkkBRRRyBRRyBRRBkkBBkkkBRRyBRRyBRBkkkBBkkkBRRRRRRRRRBkkkBBkkkkBRRRRRRRBkkkkBBkkkkkk_RRR_kkkkkkBBkkkkkkkkkkkkkkkkkB__BBBBBBBBBBBBBBB__",
-    "name": "BANG-ladesh",
     "credit": "artistic pun of the official flag. also, we got our independence in 1971. Hence the number. The proportions are not accurate on purpose. A caricature of my country. Level by D.V. https://en.wikipedia.org/wiki/Bangladesh?wprov=sfla1",
-    "author": "D.V.",
-    "category": "flags"
+    "category": "flags",
+    "author": "D.V."
   },
   {
+    "name": "into the bayou",
     "size": 21,
     "bricks": "_____W_W_____W_W__W___W_W__B___W___B__WB____B_______BW_____________CCCC______W_W__W_____CWWC_CCC___BR__BW____CWWCCCWC____R____kkkCCCCCCCCCCkkRRkkkkkCCCCCCCCCCCCCRRk_G_kCCCB_B_B_CCCCRRk_k_kGCCB_B_B_B_CCRRk_kRk_kCC_B___B_BCCCC_kGGGk_CCB_B_B_B_CCCCk_kGk_kCCCB_B_B_CCCCC_k_k_k_CCCCCCCCCCCCGGk_k_k_RCCCCCCCCCCGCCCGk_k_GRCCCCCGGCCCGGGGG_k_kGGCCCCCCGGCCCCCCGk_k_kGGCCCCCCGGGGGGGk_k_k_kGGGGGGGGGGGGGk_k_k_kRkGGGGGGGGGG_k_k_kGGRR_k_k_k_k_k_k_k_kGGGGG",
+    "credit": "the big frog in the pond never accounted for spontaneous explosive indigestion via eating too many bomb brick flies. happens to the best of us",
     "category": "animals",
-    "name": "into the bayou",
-    "author": "bunny baphomet",
-    "credit": "the big frog in the pond never accounted for spontaneous explosive indigestion via eating too many bomb brick flies. happens to the best of us"
+    "author": "bunny baphomet"
   },
   {
+    "name": "fluidity",
     "size": 21,
     "bricks": "_____ccccct_t_tRRRRR_____ccccctBtBtBtRRBRR___ccBcct_t_t_t_tRRBR__ccBcct_t_ttt_t_tRRR_ccBcct_t_ttatt_t_tRRccBcct_t_ttaBatt_t_tRcccct_t_tta_a_att_t_Rccct_t_ttaBa_aBatt_tRcct_t_tta_a_a_a_attBRctBt_ttaBa_apa_aBattRc_t_tta_a_apBpa_attBRctBttaBa_apBpa_att_tRc_tta_a_a_apa_att_tBRctBtta_a_a_a_att_t_tRc_t_tta_a_a_att_t_t_RctBt_tta_a_att_t_t__Rc_t_t_tta_a_a_t_t___Rc__t_t_tta_a_a_t____Rc___t_t_tta_a_a_____Rc____t_t_tta_a_a____Rc_____t_t_tta_a_a___R",
+    "credit": "it's all flowing together",
     "category": "abstract",
-    "name": "fluidity",
-    "author": "bunny baphomet",
-    "credit": "it's all flowing together"
+    "author": "bunny baphomet"
+  },
+  {
+    "name": "stakeout '71",
+    "size": 21,
+    "bricks": "_________k_______O________k_kk_______OOO________kkkk_____OOOOO_______kOk_____OOOOOOO__k__k_O___k__b_____b_kk____O___kk_b_OO_Obkkkkk__O__kkk_b_OO_Ob__________k_k_b_OO__b___________k_kbbOObbbllllllllllb_k_k_klk_k_______O_bbb_k_k_l_k_le__l_Oebbbl__k_klk_kee__lOee_e_l_________kk__l_kk_k_l_________llllllllllllllllll___l_l_l_l_l_l_l_lllOO___l_l_l_l_l_l_l_llOO__l_l_l_l_l_l_l_lllbb___l_l_l_l_llllllllbb__l_l_l_l_lll___lllbb___l_l_l_lll__l__llll__",
+    "credit": "\"you think they'll notice our comically oversized binoculars?\" \"we're consummate professionals, jim. we're perfectly inconspicuous\"",
+    "category": "landscapes",
+    "author": "bunny baphomet"
+  },
+  {
+    "name": "steak-out 71",
+    "size": 23,
+    "bricks": "____W_____WW______________W___W_W__W_____W__W__W_W_WW__W_____W__WW_W__W_W_W___W____W_W_W_WW__W_W_WW__W_WW_WWW_W__W___W__W____WW__W_W___________WWW_____WW_WW__________________________________yy___yy____________P_P_y_____y____b_P_P___PPP_yyybyyy____W_PPP____P___WbbWW____W___P_________bbWW_WbbW__________P_P__WWWWWWbb__P_P_____PPP___y_bbWWW__PPP______P_____W_W_W_W__P____________b__b_b__b______r_r_______________r_r__rrr____WW_W____WW_rrr___r____W_W_W___W____r_________WWW_W___WWW____________W___W_____W____________W___WWW_WWW_____",
+    "credit": "every second, 71 cows are destroyed by gamers. you can help put a stop to this. they know how to play games too",
+    "category": "animals",
+    "author": "bunny baphomet"
   },
   {
     "size": 21,
-    "bricks": "_________k_______O________k_kk_______OOO________kkkk_____OOOOO_______kOk_____OOOOOOO__k__k_O___k__b_____b_kk____O___kk_b_OO_Obkkkkk__O__kkk_b_OO_Ob__________k_k_b_OO__b___________k_kbbOObbbllllllllllb_k_k_klk_k_______O_bbb_k_k_l_k_le__l_Oebbbl__k_klk_kee__lOee_e_l_________kk__l_kk_k_l_________llllllllllllllllll___l_l_l_l_l_l_l_lllOO___l_l_l_l_l_l_l_llOO__l_l_l_l_l_l_l_lllbb___l_l_l_l_llllllllbb__l_l_l_l_lll___lllbb___l_l_l_lll__l__llll__",
-    "category": "landscapes",
-    "name": "stakeout '71",
+    "bricks": "__W___W___W___W___W___W_W_W_W_W___W_W_W_W__WWW_WWW___W__WW_WWW__W_W_W_W__W_W__W_W_W__________W_b_W_______________W_b_b_W________W____W_R_b_O_W__W___W_W__W_R_R_O_O_W__W__WWW__WW_R_c_O_WW_WW__W_W__W_W_c_c_W_W__W_______Wc_W_c_W_bW__________W_c_W_W_b_W______W___Wb_R_W_O_RW_W___W_W__W_b_RWO_R_W__W__WWW___W_c_W_O_W__WW__W_W_W__W_cWO_W__W_W__________W_W_W_________W___W___W_W_____W___W_W_W_W___W___W_W_W__WWW_WWW_W___WWW_WWW__W_W_W_W_W_W_W_W_W_W_",
+    "category": "stills",
+    "name": "cubedoubt 71",
     "author": "bunny baphomet",
-    "credit": "\"you think they'll notice our comically oversized binoculars?\" \"we're consummate professionals, jim. we're perfectly inconspicuous\""
+    "credit": "pretty sure no one's ever solved this before"
+  },
+  {
+    "size": 21,
+    "bricks": "t__________________t____WWWWW_WWW__WWWW____t_W_W_W_W_W__W__W__t___W_W_W_WWWW_W__W_W_t___________________t__t__t__t__t__t__t___t___________________t_t_t_t_t_t_t_t_t_t_t_t_t_t_t_tttttOttttttttttttttttOOOBOtttteeebbbbbbbbbOOOOObbeeeeebbbbbbbbbbbbOOeeeOOeeb_b_b_b_b_beOOOOOOeOe_b_b_b_b_bebOOOOOBeOeb_b_b_b_bebeOOOOOOeOe_b_b_b_bebebOOeeOOeeeb_b_b_bebebeOOeeOOee__b_b_bebebeeBBeeBBee_b_b_bebebeeeeeeeeee___b_bebebeeeeeee______b_eebebeeeeee________",
+    "category": "animals",
+    "name": "ho'down",
+    "author": "bunny baphomet",
+    "credit": "it's a tough time for horses"
   },
   {
     "size": 23,
-    "bricks": "____W_____WW______________W___W_W__W_____W__W__W_W_WW__W_____W__WW_W__W_W_W___W____W_W_W_WW__W_W_WW__W_WW_WWW_W__W___W__W____WW__W_W___________WWW_____WW_WW__________________________________yy___yy____________P_P_y_____y____b_P_P___PPP_yyybyyy____W_PPP____P___WbbWW____W___P_________bbWW_WbbW__________P_P__WWWWWWbb__P_P_____PPP___y_bbWWW__PPP______P_____W_W_W_W__P____________b__b_b__b______r_r_______________r_r__rrr____WW_W____WW_rrr___r____W_W_W___W____r_________WWW_W___WWW____________W___W_____W____________W___WWW_WWW_____",
-    "category": "animals",
-    "name": "steak-out 71",
+    "bricks": "__________________________bbbbbbbbbbbbbbbbb___bbbbWOkkWOksbOWsskbbbbbbbOWOsbbbsWkWkkOWbWOObbOWsbWb___bbbbbbbkkObsOOOkskb__s_______bbbbkbWbbsbbb_sWs________bbWOkOkObbb_sWs__ss_____bbOObbbbb___O___Oss_____bbbbbbb____sk__OOs______bbbbb_______kkkks_______bbb____bW_W_WkWkW_Wb____b_____b_W_WkWkW_W_b__________bW_WkWkWOW_Wb_________Wb___O__k____bW________Wb______k____bW________Wb_____WO____bW_______W_______________W______W_______W_______W______W_______________W_____W________W________W____W_________________W____W________W________W__",
+    "category": "portraits",
+    "name": "match point",
     "author": "bunny baphomet",
-    "credit": "every second, 71 cows are destroyed by gamers. you can help put a stop to this. they know how to play games too"
+    "credit": "it's the last point of the game and it looks like your opponent is winding up for a fierce spike. better watch out"
   }
 ]

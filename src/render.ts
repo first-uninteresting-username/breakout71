@@ -517,7 +517,7 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
     gameState,
     (bottomLineIsRed && "#FF0000") ||
       (isPreview && "#FFFFFF") ||
-      (isOptionOn("mobile-mode") && "#FFFFFF") ||
+      (gameState.gameZoneHeight < gameState.canvasHeight && "#FFFFFF") ||
       (corner && "#FFFFFF") ||
       "",
     gameState.offsetXRoundedDown - corner,

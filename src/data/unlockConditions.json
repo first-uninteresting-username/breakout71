@@ -2499,5 +2499,20 @@
     "required": ["three_cushion", "side_kick", "side_flip"],
     "forbidden": ["disco_ball", "golden_goose", "metamorphosis"],
     "minScore": 48300
+  },
+  "cubedoubt 71": {
+    "required": ["bricks_attract_ball", "golden_goose", "respawn"],
+    "forbidden": ["flyswatter", "rainbow", "etherealcoins"],
+    "minScore": 48400
+  },
+  "ho'down": {
+    "required": ["thomas", "asceticism", "shocks"],
+    "forbidden": ["sapper", "refill", "vibrant_neighborhood"],
+    "minScore": 48500
+  },
+  "match point": {
+    "required": ["bigger_balls", "varied_diet", "vibrant_neighborhood"],
+    "forbidden": ["paddle_up_combo", "passive_income", "nbricks"],
+    "minScore": 48600
   }
 }

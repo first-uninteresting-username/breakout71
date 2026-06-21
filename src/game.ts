@@ -163,13 +163,18 @@ export const fitSize = (gameState: GameState) => {
 
   const baseWidth = Math.round(
     Math.min(
-      gameState.canvasWidth,
+      gameState.canvasWidth -
+        (gameState.perks.corner_shot * gameState.canvasWidth) / 6,
       (gameState.gameZoneHeight *
         0.73 *
         (gameState.gridSize + gameState.perks.unbounded * 2)) /
         gameState.gridSize,
     ),
   );
+
+  if (gameState.gameZoneHeight > baseWidth * 2) {
+    gameState.gameZoneHeight = baseWidth * 2;
+  }
 
   forEachLiveOne(gameState.coins, (b) => (b.size = gameState.coinSize));
 
