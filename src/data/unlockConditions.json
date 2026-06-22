@@ -2514,5 +2514,110 @@
     "required": ["bigger_balls", "varied_diet", "vibrant_neighborhood"],
     "forbidden": ["paddle_up_combo", "passive_income", "nbricks"],
     "minScore": 48600
+  },
+  "Frequency Distortion 1": {
+    "required": ["ottawa_treaty", "implosions", "round_bricks"],
+    "forbidden": ["varied_diet", "coin_magnet", "bigger_balls"],
+    "minScore": 48700
+  },
+  "Frequency Distortion 2": {
+    "required": ["coin_magnet", "concave_puck", "ball_repulse_ball"],
+    "forbidden": ["puck_repulse_ball", "sturdy_bricks", "right_is_lava"],
+    "minScore": 48800
+  },
+  "Frequency Distortion 3": {
+    "required": ["bigger_puck", "rainbow", "hot_start"],
+    "forbidden": ["top_is_lava", "streak_shots", "respawn"],
+    "minScore": 48900
+  },
+  "Frequency Distortion 4": {
+    "required": ["streak_shots", "bigger_explosions", "trickledown"],
+    "forbidden": ["metamorphosis", "hardhat", "instant_explosion"],
+    "minScore": 49000
+  },
+  "Frequency Distortion 5": {
+    "required": ["helium", "three_cushion", "etherealcoins"],
+    "forbidden": ["trickledown", "smaller_puck", "streak_shots"],
+    "minScore": 49100
+  },
+  "Magma": {
+    "required": ["smaller_puck", "disco_ball", "wrap_up"],
+    "forbidden": ["ball_attracts_coins", "fountain_toss", "puck_repulse_ball"],
+    "minScore": 49200
+  },
+  "Cursed Blueberry Pie": {
+    "required": ["sticky_coins", "left_is_lava", "transparency"],
+    "forbidden": ["flyswatter", "ball_attracts_coins", "fountain_toss"],
+    "minScore": 49300
+  },
+  "Starve": {
+    "required": ["compound_interest", "hot_start", "instant_explosion"],
+    "forbidden": ["transparency", "left_is_lava", "bigger_explosions"],
+    "minScore": 49400
+  },
+  "Squabble up kitty": {
+    "required": ["bricks_attract_ball", "passive_income", "hot_start"],
+    "forbidden": ["ball_attract_ball", "trampoline", "double_or_nothing"],
+    "minScore": 49500
+  },
+  "POLYBIUS": {
+    "required": ["happy_family", "sturdy_bricks", "wrap_right"],
+    "forbidden": ["wrap_left", "paddle_up_combo", "helium"],
+    "minScore": 49600
+  },
+  "Virgin VS Chad": {
+    "required": ["wrap_left", "gravity_falls", "corner_shot"],
+    "forbidden": ["respawn", "wrap_up", "disco_ball"],
+    "minScore": 49700
+  },
+  "minbitt": {
+    "required": ["corner_shot", "bricks_attract_coins", "clairvoyant"],
+    "forbidden": ["flyswatter", "passive_income", "wrap_left"],
+    "minScore": 49800
+  },
+  "The Powers That B": {
+    "required": ["corner_shot", "clairvoyant", "soft_brush"],
+    "forbidden": ["bricks_attract_coins", "soft_reset", "soft_touch"],
+    "minScore": 49900
+  },
+  "Abacus": {
+    "required": ["smaller_puck", "superhot", "paddle_up_combo"],
+    "forbidden": ["right_is_lava", "reach", "fumes"],
+    "minScore": 50000
+  },
+  "Gamblecore": {
+    "required": ["hardhat", "addiction", "minefield"],
+    "forbidden": ["reach", "fumes", "chill"],
+    "minScore": 50100
+  },
+  "Argentina": {
+    "required": ["trickledown", "sacrifice", "reach"],
+    "forbidden": ["fumes", "chill", "soft_touch"],
+    "minScore": 50200
+  },
+  "Wasp": {
+    "required": ["reach", "ball_attracts_coins", "fumes"],
+    "forbidden": ["chill", "metamorphosis", "wrap_up"],
+    "minScore": 50300
+  },
+  "Bunny": {
+    "required": ["chill", "happy_family", "fumes"],
+    "forbidden": ["double_or_nothing", "reach", "vibrant_neighborhood"],
+    "minScore": 50400
+  },
+  "Wombat": {
+    "required": ["chill", "fumes", "reach"],
+    "forbidden": ["fountain_toss", "bricks_attract_ball", "forgiving"],
+    "minScore": 50500
+  },
+  "Twine": {
+    "required": ["wrap_right", "forgiving", "chill"],
+    "forbidden": ["fumes", "reach", "viscosity"],
+    "minScore": 50600
+  },
+  "Walk in the Park": {
+    "required": ["unbounded", "limitless", "chill"],
+    "forbidden": ["fumes", "reach", "viscosity"],
+    "minScore": 50700
   }
 }
