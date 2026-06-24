@@ -461,7 +461,7 @@
     "upgrades.refill.tooltip": "Uderzenie w dowolną ściankę lub teleportacja piłki powoduje zresetowanie licznika przebicia piłki",
     "upgrades.refill.verbose_description": "Dodaje również +1 do przebicia.",
     "upgrades.respawn.name": "Odrodzenie",
-    "upgrades.respawn.tooltip": "{{percent}}% cegielodradza się po {{delay}} sekundach.",
+    "upgrades.respawn.tooltip": "{{percent}}% cegieł odradza się po {{delay}} sekundach.",
     "upgrades.respawn.verbose_description": "Niektóre efekty wizualne wskażą Ci, gdzie pojawią się cegły.",
     "upgrades.right_is_lava.name": "Unikaj prawej strony",
     "upgrades.right_is_lava.tooltip": "Dostaniesz więcej monet, jeśli nie dotkniesz prawej strony",
