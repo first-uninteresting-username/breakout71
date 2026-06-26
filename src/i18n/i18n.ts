@@ -18,6 +18,7 @@ import ko from "./ko.json";
 import sk from "./sk.json";
 import ro from "./ro.json";
 import uk from "./uk.json";
+import ta from "./ta.json";
 
 import { getSettingValue } from "../settings";
 
@@ -147,6 +148,12 @@ export const languages = [
     value: "uk",
     strings: uk,
     levelName: "Ukraine",
+  },
+  {
+    text: "தமிழ்",
+    value: "ta",
+    strings: ta,
+    levelName: "Tamil",
   },
 ];
 

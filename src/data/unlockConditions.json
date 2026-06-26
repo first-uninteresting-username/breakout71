@@ -2793,5 +2793,10 @@
     "required": ["varied_diet", "passive_income", "golden_goose"],
     "forbidden": ["palette", "flyswatter", "vibrant_neighborhood"],
     "minScore": 54100
+  },
+  "Tamil": {
+    "required": ["paddle_up_combo", "vibrant_neighborhood", "varied_diet"],
+    "forbidden": ["coin_magnet", "superhot", "nbricks"],
+    "minScore": 54200
   }
 }

@@ -5104,275 +5104,284 @@
     "author": "Wombatmithut"
   },
   {
+    "name": "beyond",
     "size": 21,
     "bricks": "_____________________a_a_a_a_a_a_a_a_a_a_a______________________v_v_v_v_v_v_v_v_v_v______________________bb__bb__bb__bb__bb__bbb__bb__bb__bb__bb__b_______________________PP__PP__PP__PP__PP___PP__PP__PP__PP__PP______________________tt__tt__tt__tt__tt__ttt__tt__tt__tt__tt__t________________________aaa___aaa___aaa______aaa___aaa___aaa______aaa___aaa___aaa________________________vvv___vvv___vvv___vvvvvv___vvv___vvv___vvvvvv___vvv___vvv___vvv",
+    "credit": "it just keeps going in one long incredibly unbroken pattern moving from color to color",
     "category": "abstract",
-    "name": "beyond",
-    "author": "bunny baphomet",
-    "credit": "it just keeps going in one long incredibly unbroken pattern moving from color to color"
+    "author": "bunny baphomet"
   },
   {
+    "name": "bunnies in the snow",
     "size": 23,
     "bricks": "l___l___l___l___l___l____l___l___l___l___l___ll___l___l___l___l___l____l___l___l___l___l___ll___l___l___l___l___l____l___l___l___l___l___l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_l_lllllllllllllll_l_lllllWWWWWWWWWWWWWWWllllWWWWWWWWWWPWPWWWWWWWWWWWWWWWWWWWWPPPWWWWWWWWWW_WWWWWWWWlWPW_WWWWWWWW_WWWWWWWWWllW__WWWWWWWWW_WWWWWWllllW____WWWWWW_W_WWWWllllll____WWWWW_W_WWWWWWWWWWWWWWWWWWWWW_W_WWWWWWWWWWWWWWWWWWW_W_W_W_WWWWWWWWWWWWW_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W_W________________________",
+    "credit": "so cozy we could fall asleep, if only this moment lasted forever. ill remember it for the both of us",
     "category": "animals",
-    "name": "bunnies in the snow",
-    "author": "bunny baphomet",
-    "credit": "so cozy we could fall asleep, if only this moment lasted forever. ill remember it for the both of us"
+    "author": "bunny baphomet"
   },
   {
+    "name": "friendly",
     "size": 13,
     "bricks": "___WW___WW_____W_WW_W_WW____W_WW_W_WW____W_WW_W_WW____tWWt_tWWt____tttt_tttt____t_tt_tt_t_____t_t_t_t_____t_t___t_t_____t_t_t_t_____t_t___t_t_____t_t_t_t_____t_t___t_t__",
+    "credit": "we fade away eventually",
     "category": "portraits",
-    "name": "friendly",
-    "author": "bunny baphomet",
-    "credit": "we fade away eventually"
+    "author": "bunny baphomet"
   },
   {
+    "name": "The two of us",
     "size": 8,
     "bricks": "SSytttttSytttWttytttWtWtttWttttttWtWttttttttttttttkykykttkkSkSkk",
+    "credit": "Rain drops keep fallin on my head",
     "category": "landscapes",
-    "name": "The two of us",
-    "author": "Wombatmithut",
-    "credit": "Rain drops keep fallin on my head"
+    "author": "Wombatmithut"
   },
   {
+    "name": "Rainbow x3",
     "size": 11,
     "bricks": "____rrr_______ryyyr____rryGGGyrr_ryyGbbbGyyryGGb___bGGyGbb_____bbGb_________b___y___y______b_y_r______bOrOr______b_b_r___",
+    "credit": "",
     "category": "landscapes",
-    "name": "Rainbow x3",
-    "author": "Wombatmithut",
-    "credit": ""
+    "author": "Wombatmithut"
   },
   {
+    "name": "Pawn",
     "size": 15,
     "bricks": "_____________________ggg___________ggggg__________ggggg__________ggggg___________ggg___________ggggg___________ggg____________ggg____________ggg___________ggggg________ggggggggg______ggggggggg_____ggggggggggg____ggggggggggg__",
+    "credit": "https://en.wikipedia.org/wiki/Pawn_(chess)",
     "category": "stills",
-    "name": "Pawn",
-    "author": "Nìtsuga",
-    "credit": "https://en.wikipedia.org/wiki/Pawn_(chess)"
+    "author": "Nìtsuga"
   },
   {
+    "name": "CalcYou",
     "size": 7,
     "bricks": "____v_vvvv__v_____v_v________v__vvvvvv_____v__vvv",
+    "credit": "https://github.com/you-apps/CalcYou",
     "category": "symbols",
-    "name": "CalcYou",
-    "author": "Nìtsuga",
-    "credit": "https://github.com/you-apps/CalcYou"
+    "author": "Nìtsuga"
   },
   {
+    "name": "Windows Terminal",
     "size": 7,
     "bricks": "W_______W_______W_______W_____W_____W_____W___WWW",
+    "credit": "https://en.wikipedia.org/wiki/Windows_Terminal",
     "category": "symbols",
-    "name": "Windows Terminal",
-    "author": "Nìtsuga",
-    "credit": "https://en.wikipedia.org/wiki/Windows_Terminal"
+    "author": "Nìtsuga"
   },
   {
+    "name": "loss",
     "size": 11,
     "bricks": "_____W_______W__W_W_____W__W_W_W___W__W_W_W______W_____WWWWWWWWWWW_____W______W_W_W_W____W_W_W_W____W_W_W_WWW______W_____",
+    "credit": "https://en.wikipedia.org/wiki/Loss_(Ctrl+Alt+Del)",
     "category": "symbols",
-    "name": "loss",
-    "author": "Nìtsuga",
-    "credit": "https://en.wikipedia.org/wiki/Loss_(Ctrl+Alt+Del)"
+    "author": "Nìtsuga"
   },
   {
+    "name": "Monogolf",
     "size": 14,
     "bricks": "_____gggg________ggWWWWgg_____gWWWWWWWWg____gWWWWWWWWg___gWWWWWWWWWWg__gWWWWWWWWWWg__gWWWWWWWWWWg__gWWWWWWWWWWg__ggWWWWWWWWgg__ggWWWWWWWWgg___gggWWWWggg____gggggggggg_____gggggggg________gggg_____",
+    "credit": "https://livito.win/",
     "category": "games",
-    "name": "Monogolf",
-    "author": "Nìtsuga",
-    "credit": "https://livito.win/"
+    "author": "Nìtsuga"
   },
   {
+    "name": "Breakout 71, negative space",
     "size": 9,
     "bricks": "_________tttbbbttt__t___t_t_t_bb___t__tb_bt_t_t_b_bt_t___b_b___tttbbbttt_________",
+    "credit": "",
     "category": "symbols",
-    "name": "Breakout 71, negative space",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Alphonse Elric's Blood Seal",
     "size": 23,
     "bricks": "_____________________________rrrrrrrrrrr___________r_R_______R_r_________r__RR_____RR__r_______r___R_R___R_R___r_____r____R__R_R__R____r___r_____R___R___R_____r__rRRRRRRRRRRRRRRRRRRRr__r_R___R_______R___R_r__r__R__R__rrr__R__R__r__r___R_R_r___r_R_R___r__r____RR_rr__r_RR____r__r___R_R____r__R_R___r__r__R__R___r___R__R__r__r_R___R_______R___R_r__rRRRRRRRRRRRRRRRRRRRr__r_____R___R___R_____r___r____R__R_R__R____r_____r___R_R___R_R___r_______r__RR_____RR__r_________r_R_______R_r___________rrrrrrrrrrr_____________________________",
+    "credit": "In Fullmetal Alchemist, the younger brother Alfonse Elric, only has his soul left after an alchemical accident. His soul is bound to his iconic armor using this seal. The seal is drawn by his older brother, Edward Elric, who used his own blood. https://en.wikipedia.org/wiki/Fullmetal_Alchemist?wprov=sfla1",
     "category": "symbols",
-    "name": "Alphonse Elric's Blood Seal",
-    "author": "D.V.",
-    "credit": "In Fullmetal Alchemist, the younger brother Alfonse Elric, only has his soul left after an alchemical accident. His soul is bound to his iconic armor using this seal. The seal is drawn by his older brother, Edward Elric, who used his own blood. https://en.wikipedia.org/wiki/Fullmetal_Alchemist?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "Your Flamel Cross",
     "size": 13,
     "bricks": "_____W_W______WW__WWW__WW___WW_____WW________W___________RWR_________R_W_R_______WRWWWRW_______R_W_R__________WR___________R___________RW____________WR___________R______",
+    "credit": "This is the Flamel Cross from Fullmetal Alchemist. This cross doesn't refer to Christianity. the Flamel Cross symbolizes a union of opposites, a union of \"Fixed\" & \"Volatile\" elements, in alchemy terms. A union between Order & Chaos, between Life & Death or Death & Rebirth. It symbolizes a form of Divinity. The wings and crown are also additional symbols of divinity, only added in the Fullmetal Alchemist story. https://en.wikipedia.org/wiki/Fullmetal_Alchemist?wprov=sfla1",
     "category": "symbols",
-    "name": "Your Flamel Cross",
-    "author": "D.V.",
-    "credit": "This is the Flamel Cross from Fullmetal Alchemist. This cross doesn't refer to Christianity. the Flamel Cross symbolizes a union of opposites, a union of \"Fixed\" & \"Volatile\" elements, in alchemy terms. A union between Order & Chaos, between Life & Death or Death & Rebirth. It symbolizes a form of Divinity. The wings and crown are also additional symbols of divinity, only added in the Fullmetal Alchemist story. https://en.wikipedia.org/wiki/Fullmetal_Alchemist?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "the Flamel Cross she tells you not to worry about",
     "size": 21,
     "bricks": "________W_W_W________________WWWWW__________WWW_____B_____WWW_____WWW____W____WWW_______WWWW_WWW_WWWW______________W__________________RRRRR_______________RR_W_RR____________W_R__W__R_W________BWWWWWWWWWWWWWB________W_R__W__R_W___________RBR_W_RR______________RR_WRR__________________RR__________________RR__________________RRW___________________RW____________________WR___________________WR__________________WRW___________________W__________",
+    "credit": "This is the Flamel Cross from Fullmetal Alchemist. This cross doesn't refer to Christianity. the Flamel Cross symbolizes a union of opposites, of a union of \"Fixed\" and \"Volatile\", between order and chaos, between life and death or death and rebirth. It symbolizes a form of Divinity. The wings and crown are also additional symbols of divinity, only added in the Fullmetal Alchemist story. https://en.wikipedia.org/wiki/Fullmetal_Alchemist?wprov=sfla1",
     "category": "symbols",
-    "name": "the Flamel Cross she tells you not to worry about",
-    "author": "D.V.",
-    "credit": "This is the Flamel Cross from Fullmetal Alchemist. This cross doesn't refer to Christianity. the Flamel Cross symbolizes a union of opposites, of a union of \"Fixed\" and \"Volatile\", between order and chaos, between life and death or death and rebirth. It symbolizes a form of Divinity. The wings and crown are also additional symbols of divinity, only added in the Fullmetal Alchemist story. https://en.wikipedia.org/wiki/Fullmetal_Alchemist?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "Your Brand of Sacrifice.",
     "size": 11,
     "bricks": "______________r_r_r_____r__r__r_____r_r_r_______rrr_______r_r_r_____r__r__r_____r_r_r_______rrr_________r________________",
+    "credit": "The mark cut into the flesh of those who were sacrificed in the name of someone else's desire. from Berserk. https://en.wikipedia.org/wiki/Berserk_%28manga%29",
     "category": "portraits",
-    "name": "Your Brand of Sacrifice.",
-    "author": "D.V.",
-    "credit": "The mark cut into the flesh of those who were sacrificed in the name of someone else's desire. from Berserk. https://en.wikipedia.org/wiki/Berserk_%28manga%29"
+    "author": "D.V."
   },
   {
+    "name": "The Brand of Sacrifice she tells you not to worry about",
     "size": 21,
     "bricks": "____________________________r_____r_____________r_______r______R____rr_r_r_r_rr___RRR___rr___rrr___rr___RRR___rr___r___rr____R______rr__r__rr___R__RRRR___rr_r_rr____RRRR_______rrrrr___R______R_RR___rrr___RR_RRRRRR_R___rrrrr_______R_______rr_r_rr___RR___RR___rr__r__rr___RR_RR___rr___r___rr_________rr____r____rr___R_R___rr___r___rr___RRRR____rr__r__rr_____R___R___rr_r_rr___RR___R_R____rrrrr____R__R_R_R_R___rrr___R_R_RRRR___RR___r___RR____R",
+    "credit": "The mark cut into the flesh of those who were sacrificed in the name of someone else's desire. from Berserk. https://en.wikipedia.org/wiki/Berserk_%28manga%29",
     "category": "symbols",
-    "name": "The Brand of Sacrifice she tells you not to worry about",
-    "author": "D.V.",
-    "credit": "The mark cut into the flesh of those who were sacrificed in the name of someone else's desire. from Berserk. https://en.wikipedia.org/wiki/Berserk_%28manga%29"
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 1",
     "size": 23,
     "bricks": "__ee____e__s__e____ee___e_____s__S_S__s_____e_e_s____s___S___s____s_ee__e____Sr___rS____e__e____sSr_r__r__r_rSs________S____r_r_r____S________r_r__R_R_R__r_r_____ss____r___R___r____ss_e__Sr___R__R__R___rS__e___r_rR__R___R__Rr_r____S________R_R________S_s_S_rrRRR_____RRRrr_S_s_S________R_R________S____r_rR__R___R__Rr_r___e__Sr___R__R__R___rS__e_ss____R___R___r____ss_____r_r__R_R_R__r_r________S____r_r_r____S________sSr_r__r__r_rSs____e__e____Sr___rS____e__ee_s____s___S___s____s_e_e_____s__S_S__s_____e___ee____e__s__e____ee__",
+    "credit": "",
     "category": "abstract",
-    "name": "Radial Symmetry 1",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 2",
     "size": 23,
     "bricks": "________R__R__R__________RRR_R_rr___rr_R_RRR___R____r___rrr___r____R__R_Rr_r_r__r__r_r_rR_R__R_r__r__r_O_r__r__r_R_______r__O_O_O__r_______RrrrrO____O____OrrrrR_________OO_y_OO________Rr_r___Oy__y__yO___r_rR_r__rO_O_y_y_y_O_Or__r___r________W________r__R_rrOOOyyyWWWyyyOOOrr_R__r________W________r___r__rO_O_y_y_y_O_Or__r_Rr_r___Oy__y__yO___r_rR________OO_y_OO_________RrrrrO____O____OrrrrR_______r__O_O_O__r_______R_r__r__r_O_r__r__r_R__R_Rr_r_r__r__r_r_rR_R__R____r___rrr___r____R___RRR_R_rr___rr_R_RRR__________r__R__r________",
+    "credit": "",
     "category": "abstract",
-    "name": "Radial Symmetry 2",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 3",
     "size": 23,
     "bricks": "____W___W__a__W___W_____W__W____a___a____W__W___W_a_____t_t_____a_W_______at____t____ta_____WWa_a___tb_b_bt___a_aWW___a__t_b_____b_t__a______t_tb___bbb___bt_t__________b___v___b_______W___tb__bv_v_vb__bt___W_a__b___v__v__v___b__a___t___b___v_v___b___t__a__tb_bvvv___vvvb_bt__a__t___b___v_v___b___t___a__b___v__v__v___b__a_W___tb__bv_v_vb__bt___W_______b___v___b__________t_tb___bbb___bt_t______a__t_b_____b_t__a___WWa_a___tb_b_bt___a_aWW_____at____t____ta_______W_a_____t_t_____a_W___W__W____a___a____W__W_____W___W__a__W___W____",
+    "credit": "",
     "category": "stills",
-    "name": "Radial Symmetry 3",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 5",
     "size": 23,
     "bricks": "__v__v__v_____v__v__v____v_____vbbvbbv_____v__vvv_vbb____b____bbv_vvv_______b__ttt__b_________v_bt___________tb_v__v_b_t__t_tt_tt_t__t_b_v__b____t__a_a__t____b_____b_tta__a_a__att_b___vv_______aW_Wa_______vv_b___t__a_____a__t___b__b_t_taaW_W_W_Waat_t_b__vbt_______W_______tbv__b_t_taaW_W_W_Waat_t_b__b___t__a_____a__t___b_vv_______aW_Wa_______vv___b_tta__a_a__att_b_____b____t__a_a__t____b__v_b_t__t_tt_tt_t__t_b_v__v_bt___________tb_v_________b__ttt__b_______vvv_vbb____b____bbv_vvv__v_____vbbvbbv_____v____v__v__v_____v__v__v__",
+    "credit": "",
     "category": "abstract",
-    "name": "Radial Symmetry 5",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 6",
     "size": 23,
     "bricks": "___c___c__c_c__c___c____c_c_c_c___C___c_c_c_c____ccC_CCC_C_CCC_Ccc___ccc______C___C______ccc__c_cCC___CCC___CCc_c___cC_C__C___G___C__C_Cc_____C__G_G_G_G_G__C____ccC__CGy_G_y_G_yGC__Ccc__C______y___y______C____CC__GGyWy_yWyGG__CC__c___C____y___y____C___c_CC_CGGy___W___yGGC_CC_c___C____y___y____C___c__CC__GGyWy_yWyGG__CC____C______y___y______C__ccC__CGy_G_y_G_yGC__Ccc____C__G_G_G_G_G__C_____cC_C__C___G___C__C_Cc___c_cCC___CCC___CCc_c__ccc______C___C______ccc___ccC_CCC_C_CCC_Ccc____c_c_c_c___C___c_c_c_c____c___c__c_c__c___c___",
+    "credit": "",
     "category": "abstract",
-    "name": "Radial Symmetry 6",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 7",
     "size": 23,
     "bricks": "___b____btaaatb____b____bbb_b__t_____t__b_bbb__b___tt___aca___tt___b_bb_b__aa___c___aa__b_bb____t__cc_____cc__t_____bt__a__c_c_c_c__a__tb___ta__c___CCC___c__at_____ac___c_____c___ca___bt__cc_c_CC_CC_c_cc__tbt_______C_____C_______ta_a__cC_C_C_C_C_Cc__a_aa_cc__C____C____C__cc_aa_a__cC_C_C_C_C_Cc__a_at_______C_____C_______tbt__cc_c_CC_CC_c_cc__tb___ac___c_____c___ca_____ta__c___CCC___c__at___bt__a__c_c_c_c__a__tb_____t__cc_____cc__t____bb_b__aa___c___aa__b_bb_b___tt___aca___tt___b__bbb_b__t_____t__b_bbb____b____btaaatb____b___",
+    "credit": "",
     "category": "abstract",
-    "name": "Radial Symmetry 7",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 8",
     "size": 23,
     "bricks": "__SS__S___p_p___S__SS____S____p___p___p____S__SS_ppp__vv___vv__ppp_SSS_pS__p__pvbvp__p__Sp_S__p________v________p____p__pvvb__b__bvvp__p__S__p_v___b_b_b___v_p__S_p___v_t_b_t_b_t_v___p___v__b___t_b_t___b__v____vp__bbt_____tbb__pv__p__v______ttt______v__p_p_bvbbtb_t_t_btbbvb_p_p__v______ttt______v__p__vp__bbt_____tbb__pv____v__b___t_b_t___b__v___p___v_t_b_t_b_t_v___p_S__p_v___b_b_b___v_p__S__p__pvvb__b__bvvp__p____p________v________p__S_pS__p__pvbvp__p__Sp_SSS_ppp__vv___vv__ppp_SS__S____p___p___p____S____SS__S___p_p___S__SS__",
+    "credit": "",
     "category": "abstract",
-    "name": "Radial Symmetry 8",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 9",
     "size": 23,
     "bricks": "__________bbb_____________bb____b_b_b____bb______b_tt____t____tt_b____bbt_____t_a_t_____tbb__b__t__ttt_t_ttt__t__b___t__a___a_a_a___a__t____t___a____W____a___t______t__Wa_aaa_aW__t________t__aW_W_W_Wa__t_____b_tta___________att_b_b______aW__W__Wa______bbbtataWa__WWW__aWatatbbb______aW__W__Wa______b_b_tta___________att_b_____t__aW_W_W_Wa__t________t__Wa_aaa_aW__t______t___a____W____a___t____t__a___a_a_a___a__t___b__t__ttt_t_ttt__t__b__bbt_____t_a_t_____tbb____b_tt____t____tt_b______bb____b_b_b____bb_____________bbb__________",
+    "credit": "",
     "category": "abstract",
-    "name": "Radial Symmetry 9",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 10",
     "size": 23,
     "bricks": "________R__R__R_________R___RRRR_R_R_RRRR___R___R__R_____r_____R__R_____r__r_Rr___rR_r__r_______r_r_r_r_r_r_r_r_____RR__SS____S____SS__RR__R_rrS__SS_S_SS__Srr_R__R_______s_s_s_______R_RR_Rr_S_s__e__s_S_rR_RR___r__Ss_e_s_e_sS__r____R__r______e______r__R_R_r__SSseseeesesSS__r_R_R__r______e______r__R____r__Ss_e_s_e_sS__r___RR_Rr_S_s__e__s_S_rR_RR_R_______s_s_s_______R__R_rrS__SS_S_SS__Srr_R__RR__SS____S____SS__RR_____r_r_r_r_r_r_r_r_______r__r_Rr___rR_r__r_____R__R_____r_____R__R___R___RRRR_R_R_RRRR___R_________R__R__R________",
+    "credit": "",
     "category": "abstract",
-    "name": "Radial Symmetry 10",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Spooder",
     "size": 13,
     "bricks": "____________________________sO_____sO___s_WOO_sO_WO__OB__WO_WB_O__sOOB_OB_OOs___sOOOOOOOs___sO_OsOsO_OO__sO_Rs_sR_sO__sO_R___R_sO__RO__R_R__sR___RO_____OR_____R_____R___",
+    "credit": "A baby jumping spider. Sorry to everyone with Arachnophobia. But these spiders are completely harmless to large animals like humans. Their method of hunting involves shooting themselves like a bullet at their prey. https://en.wikipedia.org/wiki/Jumping_spider?wprov=sfla1",
     "category": "animals",
-    "name": "Spooder",
-    "author": "D.V.",
-    "credit": "A baby jumping spider. Sorry to everyone with Arachnophobia. But these spiders are completely harmless to large animals like humans. Their method of hunting involves shooting themselves like a bullet at their prey. https://en.wikipedia.org/wiki/Jumping_spider?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "Mantis",
     "size": 13,
     "bricks": "____________________________GG_____GG___kyyG___kyyG__GyyyG_kyyWG__kyByWGyByyG___kyyyGyyyG_____kGGGGGG_______kGGGG_______kG_G_kG______k_____G_______G___G_________r_r_____",
+    "credit": "A Praying Mantis. Though they hold their hands like a prayer, they are actually readying their sharp \"blades\" to attack. And this is one of the species famous for beheading the male partner after mating, for a snack.  https://en.wikipedia.org/wiki/Mantis?wprov=sfla1",
     "category": "animals",
-    "name": "Mantis",
-    "author": "D.V.",
-    "credit": "A Praying Mantis. Though they hold their hands like a prayer, they are actually readying their sharp \"blades\" to attack. And this is one of the species famous for beheading the male partner after mating, for a snack.  https://en.wikipedia.org/wiki/Mantis?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "Dragonfly",
     "size": 13,
     "bricks": "__________________________________________aaa_aaa_____aaWaRaWWa___aacaWRcacWa__cacccRcccac__cBcc_R_ccBc__ccccBeBcccc___cc_eee_cc_____ReeeeeR_______RR_RR_________R_R_____",
+    "credit": "This is a Dragonfly. With very tightly packed large eyes, they have stiff wings and a hard exoskeleton, and their wings are always spread out. Dragonflies are the top predator of mosquitoes. Having an environment suitable for dragonflies reduces the local mosquito population immensely. Sadly, it is nearly impossible to cultivate or raise dragonflies outside the wild. https://en.wikipedia.org/wiki/Dragonfly?wprov=sfla1",
     "category": "animals",
-    "name": "Dragonfly",
-    "author": "D.V.",
-    "credit": "This is a Dragonfly. With very tightly packed large eyes, they have stiff wings and a hard exoskeleton, and their wings are always spread out. Dragonflies are the top predator of mosquitoes. Having an environment suitable for dragonflies reduces the local mosquito population immensely. Sadly, it is nearly impossible to cultivate or raise dragonflies outside the wild. https://en.wikipedia.org/wiki/Dragonfly?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "Roach",
     "size": 13,
     "bricks": "_____________________________________________________BRR_____RRB_____R___R_________ORO_________ORRRO_______OROBORO_____BRRRORRRB____ORWRBRWRO___BRORRORRWRB__ORROOBOORRR_",
+    "credit": "The humble cockroach. Found everywhere and anywhere. Can survive nearly anything, beheading, getting crushed, lethal doses of radiation etc. Their immune system is one of the strongest in the animal kingdom, hence they can survive in the nastiest environment while carrying deadly diseases. It's very hard to get rid of cockroaches, but it is much easier to prevent them by keeping the our residences free of food waste and crumbs. https://en.wikipedia.org/wiki/Cockroach?wprov=sfla1",
     "category": "animals",
-    "name": "Roach",
-    "author": "D.V.",
-    "credit": "The humble cockroach. Found everywhere and anywhere. Can survive nearly anything, beheading, getting crushed, lethal doses of radiation etc. Their immune system is one of the strongest in the animal kingdom, hence they can survive in the nastiest environment while carrying deadly diseases. It's very hard to get rid of cockroaches, but it is much easier to prevent them by keeping the our residences free of food waste and crumbs. https://en.wikipedia.org/wiki/Cockroach?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "House Fly",
     "size": 13,
     "bricks": "__________________________________________rr___rr_____RrWrlRrWr___lRRrrlRRrrl__k_RRlk_RRlk__kkBBklkBBkk___kllklkllk_____kk_l_kk_________l____________l___________lll_____",
+    "credit": "The House Fly. just one of the hundreds of species seen all across the world.. All of them very similar with slight variations. Most Flies actually cannot eat any food, instead, they actually eat the residue and biofilm of bacteria growing on rotting food. So, if a fly is landing on top of food or a surface, you can be sure that it is covered with enough bacteria for them to literally eat it. https://en.wikipedia.org/wiki/Housefly?wprov=sfla1",
     "category": "animals",
-    "name": "House Fly",
-    "author": "D.V.",
-    "credit": "The House Fly. just one of the hundreds of species seen all across the world.. All of them very similar with slight variations. Most Flies actually cannot eat any food, instead, they actually eat the residue and biofilm of bacteria growing on rotting food. So, if a fly is landing on top of food or a surface, you can be sure that it is covered with enough bacteria for them to literally eat it. https://en.wikipedia.org/wiki/Housefly?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "XJ-9 Jenny Wakeman",
     "size": 19,
     "bricks": "___________BaaB_______Baa___aaaaaaaaB___aaaa___a__aaaaaa__aaaaaB______aaaa__Baaaaaa_____aaaB___aa___aBW___WBa_____a_____WB___BW______aa____aaaaaaa___________aaaaaWaWa_________WWaaaaaWaWW________WWWWWWWWWWW_______WWWW__WWW__WW______WWW_WWWW_WWWW______WWW_WBWW_WBWW______WWW_WBWW_WBW________WWWWWWWWWWWW_______WWWW____WWW_________WWWW__WWW____________WWWWWW______",
+    "credit": "The main character of 'My Life as a Teenage Robot', XJ-9, or (as she prefers) Jenny Wakeman. https://en.wikipedia.org/wiki/My_Life_as_a_Teenage_Robot?wprov=sfla1",
     "category": "portraits",
-    "name": "XJ-9 Jenny Wakeman",
-    "author": "D.V.",
-    "credit": "The main character of 'My Life as a Teenage Robot', XJ-9, or (as she prefers) Jenny Wakeman. https://en.wikipedia.org/wiki/My_Life_as_a_Teenage_Robot?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "My Life as a Teenage Robot",
     "size": 24,
     "bricks": "_________t____t_________________ttt__ttt_______________tt______tt_____________t_t______t_t___________t__t______t__t_________t__t________t__t_______t___t________t___t_____t____t_________t___t_____tt_t___tttt___t_tt________tt_tt____tt_tt____________t________t_____________t__________tt__________t___W____W___t__________t__W_W__W_W__t_________t___W_W__W_W___t________t___W_W__W_W___t________t___W_W__W_W___t________t___W_W__W_W___t_________t___W____W___t__________t____________t___________t___W__W___t_____________t___WW___t_______________tt____tt__________________tttt__________",
+    "credit": "Logo of the animated sci-fi comedy show, \"My Life as a Teenage Robot\". A pictograph of Jenny Wakeman's face. https://en.wikipedia.org/wiki/My_Life_as_a_Teenage_Robot?wprov=sfla1",
     "category": "symbols",
-    "name": "My Life as a Teenage Robot",
-    "author": "D.V.",
-    "credit": "Logo of the animated sci-fi comedy show, \"My Life as a Teenage Robot\". A pictograph of Jenny Wakeman's face. https://en.wikipedia.org/wiki/My_Life_as_a_Teenage_Robot?wprov=sfla1"
+    "author": "D.V."
   },
   {
+    "name": "Radial Symmetry 4",
     "size": 23,
     "bricks": "_G______G__G__G______G_GG__G__CC_____CC__G__GG__G_C_C___CCC___C_C_G______C___cc___cc___C_____GCC_c_____c_____c_CCG_____cc____c_c____cc______C___a_c_a_a_c_a___C___C______a_W_W_a______C_GC_c__ca__a_a__ac__c_CG___c______W_W______c_____C__caWaWW_WWaWac__C__G_C_c______W______c_C_G__C__caWaWW_WWaWac__C_____c______W_W______c___GC_c__ca__a_a__ac__c_CG_C______a_W_W_a______C___C___a_c_a_a_c_a___C______cc____c_c____cc_____GCC_c_____c_____c_CCG_____C___cc___cc___C______G_C_C___CCC___C_C_G__GG__G__CC_____CC__G__GG_G______G__G__G______G_",
+    "credit": "",
     "category": "stills",
-    "name": "Radial Symmetry 4",
-    "author": "D.V.",
-    "credit": ""
+    "author": "D.V."
   },
   {
+    "name": "Damsel-fly",
     "size": 13,
     "bricks": "___________________________BB_______BB____B_____B_______B___B______aab___baa___aBaabbbaBaa__caaatttcaaa___ccbbtbbcc______ebebe________e___e_________e_e__________________",
+    "credit": "This is a Damselfly. Even though it looks similar to a Dragonfly, it is a completely different species with a different evolutionary line. Their eyes are small and far apart, their bodies are softer and they keep their wings tucked when they stay still. Damselflies cannot hunt mosquitoes like dragonflies but they're just as important to the ecosystem and they're very beautiful insects. https://en.wikipedia.org/wiki/Damselfly?wprov=sfla1",
     "category": "animals",
-    "name": "Damsel-fly",
-    "author": "D.V.",
-    "credit": "This is a Damselfly. Even though it looks similar to a Dragonfly, it is a completely different species with a different evolutionary line. Their eyes are small and far apart, their bodies are softer and they keep their wings tucked when they stay still. Damselflies cannot hunt mosquitoes like dragonflies but they're just as important to the ecosystem and they're very beautiful insects. https://en.wikipedia.org/wiki/Damselfly?wprov=sfla1"
+    "author": "D.V."
+  },
+  {
+    "name": "Tamil",
+    "size": 14,
+    "bricks": "_________________WWWWWWW_______W__WW_________W__WW_________WWWWWWW______W___WW__W____W____WW___W___W____WW___WW___W__WW____WW____WW______W____________W_____WWWWWWWW_____W______________W___________",
+    "svg": null,
+    "color": "",
+    "credit": "https://en.wikipedia.org/wiki/Tamil_language",
+    "category": "symbols"
   }
 ]

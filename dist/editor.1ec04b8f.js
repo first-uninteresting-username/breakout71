@@ -142,10 +142,10 @@
       this[globalName] = mainExports;
     }
   }
-})({"arnIv":[function(require,module,exports,__globalThis) {
-require("810482c99831393b")(require("7b0f1ba0c2150cb2").getBundleURL('jo05F') + "editor.5ab00790.js");
+})({"9xozB":[function(require,module,exports,__globalThis) {
+require("ff1a237d49ed0b1c")(require("b7b834475f7af85b").getBundleURL('jo05F') + "editor.5d1dbf12.js");
 
-},{"810482c99831393b":"61B45","7b0f1ba0c2150cb2":"lgJ39"}],"61B45":[function(require,module,exports,__globalThis) {
+},{"ff1a237d49ed0b1c":"61B45","b7b834475f7af85b":"lgJ39"}],"61B45":[function(require,module,exports,__globalThis) {
 "use strict";
 var cacheLoader = require("ca2a84f7fa4a3bb0");
 module.exports = cacheLoader(function(bundle) {
@@ -16414,6 +16414,6 @@ function setBrick(level, index, colorCode) {
     };
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["arnIv","9Ly5x"], "9Ly5x", "parcelRequire94c2")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9xozB","9Ly5x"], "9Ly5x", "parcelRequire94c2")
 
 //# sourceMappingURL=editor.1ec04b8f.js.map
