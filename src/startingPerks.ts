@@ -13,15 +13,11 @@ import { formatFullNumber } from "./format_number";
 export function getStartingPerks() {
   const favorite = getSettingValue<string>("starting_perk", "");
 
-  const allowedUpgrades = possibleStartingPerks();
-  let upgrade: Upgrade = allowedUpgrades.find(
-    (u) => u.id === favorite,
-  ) as Upgrade;
+  const allowed = possibleStartingPerks();
+  let upgrade: Upgrade = allowed.find((u) => u.id === favorite) as Upgrade;
   if (!upgrade) {
     upgrade = sample(
-      allowedUpgrades.filter(
-        (u) => u.threshold <= getTotalScore() && u.id !== "slow_down",
-      ),
+      allowed.filter((u) => u.category === categories.combo),
     ) as Upgrade;
   }
 
@@ -41,12 +37,7 @@ export function getStartingPerks() {
 }
 
 function possibleStartingPerks() {
-  return [
-    upgrades.find((u) => u.id === "slow_down"),
-    ...upgrades
-      .filter((upgrade) => upgrade.category === categories.combo)
-      .sort((a, b) => a.threshold - b.threshold),
-  ] as Upgrade[];
+  return upgrades.filter((u) => u.threshold <= getTotalScore()) as Upgrade[];
 }
 
 export function getStartRunButtons() {

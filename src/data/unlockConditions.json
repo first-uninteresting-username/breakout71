@@ -2619,5 +2619,179 @@
     "required": ["unbounded", "limitless", "chill"],
     "forbidden": ["fumes", "reach", "viscosity"],
     "minScore": 50700
+  },
+  "beyond": {
+    "required": ["golden_goose", "flyswatter", "skip_last"],
+    "forbidden": ["chill", "fumes", "reach"],
+    "minScore": 50800
+  },
+  "bunnies in the snow": {
+    "required": ["asceticism", "sturdy_bricks", "skip_last"],
+    "forbidden": ["chill", "fumes", "reach"],
+    "minScore": 50900
+  },
+  "friendly": {
+    "required": ["telekinesis", "passive_income", "fountain_toss"],
+    "forbidden": ["transparency", "left_is_lava", "sticky_coins"],
+    "minScore": 51000
+  },
+  "The two of us": {
+    "required": ["side_flip", "side_kick", "telekinesis"],
+    "forbidden": ["flyswatter", "skip_last", "happy_family"],
+    "minScore": 51100
+  },
+  "Rainbow x3": {
+    "required": ["soft_brush", "soft_reset", "soft_touch"],
+    "forbidden": ["ottawa_treaty", "hardhat", "happy_family"],
+    "minScore": 51200
+  },
+  "Pawn": {
+    "required": ["right_is_lava", "trickledown", "double_or_nothing"],
+    "forbidden": ["sturdy_bricks", "palette", "ball_attracts_coins"],
+    "minScore": 51300
+  },
+  "CalcYou": {
+    "required": ["trickledown", "wrap_up", "steering"],
+    "forbidden": ["implosions", "nbricks", "ball_attracts_coins"],
+    "minScore": 51400
+  },
+  "Windows Terminal": {
+    "required": ["trickledown", "ball_repulse_ball", "gravity_falls"],
+    "forbidden": ["puck_repulse_ball", "trampoline", "bricks_attract_ball"],
+    "minScore": 51500
+  },
+  "loss": {
+    "required": ["bricks_attract_ball", "metamorphosis", "golden_goose"],
+    "forbidden": ["wrap_right", "trickledown", "thomas"],
+    "minScore": 51600
+  },
+  "Monogolf": {
+    "required": ["superhot", "disco_ball", "hardhat"],
+    "forbidden": ["etherealcoins", "bigger_explosions", "bricks_attract_coins"],
+    "minScore": 51700
+  },
+  "Breakout 71, negative space": {
+    "required": ["flyswatter", "hot_start", "bricks_attract_coins"],
+    "forbidden": ["fountain_toss", "bigger_balls", "palette"],
+    "minScore": 51800
+  },
+  "Alphonse Elric's Blood Seal": {
+    "required": ["bigger_balls", "puck_repulse_ball", "hot_start"],
+    "forbidden": ["wrap_up", "ball_repulse_ball", "asceticism"],
+    "minScore": 51900
+  },
+  "Your Flamel Cross": {
+    "required": ["nbricks", "top_is_lava", "bigger_puck"],
+    "forbidden": ["helium", "hot_start", "happy_family"],
+    "minScore": 52000
+  },
+  "the Flamel Cross she tells you not to worry about": {
+    "required": ["wrap_left", "three_cushion", "flyswatter"],
+    "forbidden": ["happy_family", "telekinesis", "top_is_lava"],
+    "minScore": 52100
+  },
+  "Your Brand of Sacrifice.": {
+    "required": ["asceticism", "telekinesis", "soft_brush"],
+    "forbidden": ["vibrant_neighborhood", "etherealcoins", "soft_reset"],
+    "minScore": 52200
+  },
+  "The Brand of Sacrifice she tells you not to worry about": {
+    "required": ["vibrant_neighborhood", "fountain_toss", "telekinesis"],
+    "forbidden": ["hardhat", "rainbow", "trampoline"],
+    "minScore": 52300
+  },
+  "Radial Symmetry 1": {
+    "required": [
+      "ball_repulse_ball",
+      "ball_attracts_coins",
+      "puck_repulse_ball"
+    ],
+    "forbidden": ["implosions", "addiction", "palette"],
+    "minScore": 52400
+  },
+  "Radial Symmetry 2": {
+    "required": ["ottawa_treaty", "minefield", "wrap_up"],
+    "forbidden": ["golden_goose", "paddle_up_combo", "addiction"],
+    "minScore": 52500
+  },
+  "Radial Symmetry 3": {
+    "required": ["passive_income", "bigger_explosions", "sacrifice"],
+    "forbidden": ["instant_explosion", "trickledown", "right_is_lava"],
+    "minScore": 52600
+  },
+  "Radial Symmetry 5": {
+    "required": ["bigger_balls", "trickledown", "disco_ball"],
+    "forbidden": ["superhot", "bricks_attract_ball", "soft_touch"],
+    "minScore": 52700
+  },
+  "Radial Symmetry 6": {
+    "required": ["hardhat", "round_bricks", "gravity_falls"],
+    "forbidden": ["flyswatter", "trickledown", "concave_puck"],
+    "minScore": 52800
+  },
+  "Radial Symmetry 7": {
+    "required": ["metamorphosis", "concave_puck", "forgiving"],
+    "forbidden": ["thomas", "streak_shots", "shocks"],
+    "minScore": 52900
+  },
+  "Radial Symmetry 8": {
+    "required": ["palette", "coin_magnet", "disco_ball"],
+    "forbidden": ["forgiving", "varied_diet", "right_is_lava"],
+    "minScore": 53000
+  },
+  "Radial Symmetry 9": {
+    "required": ["limitless", "flyswatter", "viscosity"],
+    "forbidden": ["unbounded", "coin_magnet", "nbricks"],
+    "minScore": 53100
+  },
+  "Radial Symmetry 10": {
+    "required": ["top_is_lava", "bigger_puck", "superhot"],
+    "forbidden": ["gravity_falls", "asceticism", "unbounded"],
+    "minScore": 53200
+  },
+  "Spooder": {
+    "required": ["golden_goose", "skip_last", "trampoline"],
+    "forbidden": ["puck_repulse_ball", "top_is_lava", "ball_repulse_ball"],
+    "minScore": 53300
+  },
+  "Mantis": {
+    "required": ["telekinesis", "rainbow", "three_cushion"],
+    "forbidden": ["side_flip", "side_kick", "implosions"],
+    "minScore": 53400
+  },
+  "Dragonfly": {
+    "required": ["compound_interest", "palette", "bigger_balls"],
+    "forbidden": ["telekinesis", "side_kick", "side_flip"],
+    "minScore": 53500
+  },
+  "Roach": {
+    "required": ["nbricks", "round_bricks", "fountain_toss"],
+    "forbidden": ["wrap_up", "bricks_attract_coins", "ball_attract_ball"],
+    "minScore": 53600
+  },
+  "House Fly": {
+    "required": ["bricks_attract_ball", "concave_puck", "bricks_attract_coins"],
+    "forbidden": ["soft_touch", "soft_reset", "soft_brush"],
+    "minScore": 53700
+  },
+  "XJ-9 Jenny Wakeman": {
+    "required": ["ottawa_treaty", "streak_shots", "paddle_up_combo"],
+    "forbidden": ["trickledown", "concave_puck", "bricks_attract_coins"],
+    "minScore": 53800
+  },
+  "My Life as a Teenage Robot": {
+    "required": ["trickledown", "hardhat", "right_is_lava"],
+    "forbidden": ["smaller_puck", "sturdy_bricks", "rainbow"],
+    "minScore": 53900
+  },
+  "Radial Symmetry 4": {
+    "required": ["respawn", "bigger_explosions", "disco_ball"],
+    "forbidden": ["instant_explosion", "rainbow", "fountain_toss"],
+    "minScore": 54000
+  },
+  "Damsel-fly": {
+    "required": ["varied_diet", "passive_income", "golden_goose"],
+    "forbidden": ["palette", "flyswatter", "vibrant_neighborhood"],
+    "minScore": 54100
   }
 }

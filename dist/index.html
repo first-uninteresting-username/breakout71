@@ -6983,9 +6983,9 @@ var _openUpgradesPicker = require("./openUpgradesPicker");
 var _formatNumber = require("./format_number");
 function getStartingPerks() {
     const favorite = (0, _settings.getSettingValue)("starting_perk", "");
-    const allowedUpgrades = possibleStartingPerks();
-    let upgrade = allowedUpgrades.find((u)=>u.id === favorite);
-    if (!upgrade) upgrade = (0, _gameUtils.sample)(allowedUpgrades.filter((u)=>u.threshold <= (0, _settings.getTotalScore)() && u.id !== "slow_down"));
+    const allowed = possibleStartingPerks();
+    let upgrade = allowed.find((u)=>u.id === favorite);
+    if (!upgrade) upgrade = (0, _gameUtils.sample)(allowed.filter((u)=>u.category === (0, _upgrades.categories).combo));
     let perks = {
         [upgrade.id]: 1
     };
@@ -6997,10 +6997,7 @@ function getStartingPerks() {
     };
 }
 function possibleStartingPerks() {
-    return [
-        (0, _loadGameData.upgrades).find((u)=>u.id === "slow_down"),
-        ...(0, _loadGameData.upgrades).filter((upgrade)=>upgrade.category === (0, _upgrades.categories).combo).sort((a, b)=>a.threshold - b.threshold)
-    ];
+    return (0, _loadGameData.upgrades).filter((u)=>u.threshold <= (0, _settings.getTotalScore)());
 }
 function getStartRunButtons() {
     const favorite = (0, _settings.getSettingValue)("starting_perk", "");

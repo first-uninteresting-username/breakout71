@@ -143,6 +143,9 @@
     }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 768cbcd (feat: allow all perks as starting perks)
 })({"arnIv":[function(require,module,exports,__globalThis) {
 require("810482c99831393b")(require("7b0f1ba0c2150cb2").getBundleURL('jo05F') + "editor.5ab00790.js");
 
@@ -244,9 +247,12 @@ exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
 },{}],"9Ly5x":[function(require,module,exports,__globalThis) {
+<<<<<<< HEAD
 =======
 })({"9Ly5x":[function(require,module,exports,__globalThis) {
 >>>>>>> 6818f38 (fix: avoid random screenshake)
+=======
+>>>>>>> 768cbcd (feat: allow all perks as starting perks)
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _paletteJson = require("../data/palette.json");
@@ -2127,11 +2133,14 @@ process.umask = function() {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 },{}],"ktRBU":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"_\":\"\",\"B\":\"black\",\"W\":\"#FFFFFF\",\"g\":\"#231f20\",\"y\":\"#FFD300\",\"b\":\"#6262EA\",\"t\":\"#5DA3EA\",\"s\":\"#E67070\",\"r\":\"#e32119\",\"R\":\"#ab0c0c\",\"c\":\"#59EEA3\",\"G\":\"#A1F051\",\"v\":\"#A664E8\",\"p\":\"#E869E8\",\"a\":\"#5BECEC\",\"C\":\"#53EE53\",\"S\":\"#F44848\",\"P\":\"#E66BA8\",\"O\":\"#F29E4A\",\"k\":\"#618227\",\"e\":\"#e1c8b4\",\"l\":\"#9b9fa4\"}");
 
 >>>>>>> 6818f38 (fix: avoid random screenshake)
+=======
+>>>>>>> 768cbcd (feat: allow all perks as starting perks)
 },{}],"lOjBx":[function(require,module,exports,__globalThis) {
 'use strict';
 function checkDCE() {
@@ -16425,6 +16434,7 @@ function setBrick(level, index, colorCode) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["arnIv","9Ly5x"], "9Ly5x", "parcelRequire94c2")
 =======
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports,__globalThis) {
@@ -18503,5 +18513,8 @@ const categoryDetails = {
 
 },{"./i18n/i18n":"eNPRm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9Ly5x"], "9Ly5x", "parcelRequire94c2")
 >>>>>>> 6818f38 (fix: avoid random screenshake)
+=======
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["arnIv","9Ly5x"], "9Ly5x", "parcelRequire94c2")
+>>>>>>> 768cbcd (feat: allow all perks as starting perks)
 
 //# sourceMappingURL=editor.1ec04b8f.js.map
