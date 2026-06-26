@@ -144,7 +144,7 @@
   }
 })({"bTsi7":[function(require,module,exports,__globalThis) {
 // The version of the cache.
-const VERSION = '29708148';
+const VERSION = '29708157';
 // The name of the cache
 const CACHE_NAME = `breakout-71-${VERSION}`;
 // The static resources that the app needs to function.
