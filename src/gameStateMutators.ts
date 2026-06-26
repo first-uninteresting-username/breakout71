@@ -874,6 +874,7 @@ export async function setLevel(gameState: GameState, l: number) {
   gameState.lastPuckMove = 0;
   gameState.lastZenComboIncrease = 0;
   gameState.autoCleanUses = 0;
+  gameState.lastExplosion = -1000;
 
   gameState.lastTickDown = gameState.levelTime;
   gameState.levelStartScore = gameState.score;
