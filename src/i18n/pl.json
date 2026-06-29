@@ -129,7 +129,7 @@
     "play.stats.levelWallBounces": "Odbicia od ścian",
     "play.trying_level": "Poziom próbny",
     "score_panel.close_to_unlock": "Odblokowanie kolejnego poziomu:",
-    "score_panel.get_upgrades_to_unlock": "Get (missingUpgrades) and score {{points}} więcej punktów do odblokowania poziomu \"{{level}}\"",
+    "score_panel.get_upgrades_to_unlock": "Zdobądź {{missingUpgrades}} i zdobądź {{points}} dodatkowych punktów, aby odblokować poziom \"{{level}}\"",
     "score_panel.score_to_unlock": "Score {{points}} zwraca więcej punktów do odblokowania poziomu \"{{level}}\"",
     "score_panel.title": "współśrednia na poziomie {{level}}/{{max}}",
     "score_panel.upcoming_levels": "Najbliższy poziom",
