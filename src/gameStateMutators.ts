@@ -231,7 +231,8 @@ export function normalizeGameState(gameState: GameState) {
 
   if (
     gameState.perks.flyswatter &&
-    gameState.puckPosition === minX &&
+    gameState.puckPosition - gameState.puckWidth / 2 <=
+      gameState.offsetXRoundedDown &&
     gameState.running
   ) {
     gameState.balls.forEach((ball) => {
