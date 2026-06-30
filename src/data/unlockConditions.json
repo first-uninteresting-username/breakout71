@@ -2798,5 +2798,80 @@
     "required": ["paddle_up_combo", "vibrant_neighborhood", "varied_diet"],
     "forbidden": ["coin_magnet", "superhot", "nbricks"],
     "minScore": 54200
+  },
+  "Genderfluid Pride": {
+    "required": ["compound_interest", "ball_attracts_coins"],
+    "forbidden": ["double_or_nothing", "limitless", "sacrifice"],
+    "minScore": 4000
+  },
+  "stopping by woods on a snowy evening": {
+    "required": ["coin_magnet", "trampoline", "hot_start"],
+    "forbidden": ["bigger_puck", "bigger_balls", "right_is_lava"],
+    "minScore": 54300
+  },
+  "respite": {
+    "required": ["bigger_puck", "top_is_lava", "compound_interest"],
+    "forbidden": ["sturdy_bricks", "wrap_left", "coin_magnet"],
+    "minScore": 54400
+  },
+  "old house": {
+    "required": ["ball_attracts_coins", "ball_attract_ball", "rainbow"],
+    "forbidden": ["gravity_falls", "wrap_left", "double_or_nothing"],
+    "minScore": 54500
+  },
+  "platformer": {
+    "required": ["palette", "steering", "streak_shots"],
+    "forbidden": ["telekinesis", "concave_puck", "top_is_lava"],
+    "minScore": 54600
+  },
+  "Red Rose": {
+    "required": ["addiction", "minefield", "smaller_puck"],
+    "forbidden": ["telekinesis", "etherealcoins", "bricks_attract_ball"],
+    "minScore": 54800
+  },
+  "The Annoying Thing": {
+    "required": ["sticky_coins", "left_is_lava", "transparency"],
+    "forbidden": ["sacrifice", "implosions", "superhot"],
+    "minScore": 54900
+  },
+  "Totally Normal Looking Fluffy Boy": {
+    "required": ["chill", "fumes", "sacrifice"],
+    "forbidden": ["reach", "golden_goose", "minefield"],
+    "minScore": 55000
+  },
+  "Unknown Mother Goose (wowaka)": {
+    "required": ["metamorphosis", "respawn", "chill"],
+    "forbidden": ["fumes", "reach", "sacrifice"],
+    "minScore": 55100
+  },
+  "HeliBoard": {
+    "required": ["bigger_balls", "etherealcoins", "chill"],
+    "forbidden": ["fumes", "reach", "three_cushion"],
+    "minScore": 55200
+  },
+  "Fossify Calendar": {
+    "required": ["round_bricks", "varied_diet", "chill"],
+    "forbidden": ["fumes", "reach", "fountain_toss"],
+    "minScore": 55300
+  },
+  "Double or Nothing Russian Roulette": {
+    "required": ["forgiving", "wrap_right", "double_or_nothing"],
+    "forbidden": ["viscosity", "varied_diet", "limitless"],
+    "minScore": 55400
+  },
+  "DVD Screensavers' Untouched Territories": {
+    "required": ["coin_magnet", "unbounded", "limitless"],
+    "forbidden": ["bricks_attract_coins", "viscosity", "paddle_up_combo"],
+    "minScore": 55500
+  },
+  "Bow & Arrow": {
+    "required": ["smaller_puck", "bigger_puck", "rainbow"],
+    "forbidden": ["top_is_lava", "skip_last", "respawn"],
+    "minScore": 55600
+  },
+  "Paraguayan flag": {
+    "required": ["asceticism", "passive_income", "top_is_lava"],
+    "forbidden": ["palette", "bigger_puck", "sticky_coins"],
+    "minScore": 55700
   }
 }

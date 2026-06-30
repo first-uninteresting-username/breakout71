@@ -5379,9 +5379,128 @@
     "name": "Tamil",
     "size": 14,
     "bricks": "_________________WWWWWWW_______W__WW_________W__WW_________WWWWWWW______W___WW__W____W____WW___W___W____WW___WW___W__WW____WW____WW______W____________W_____WWWWWWWW_____W______________W___________",
-    "svg": null,
-    "color": "",
     "credit": "https://en.wikipedia.org/wiki/Tamil_language",
-    "category": "symbols"
+    "category": "symbols",
+    "author": ""
+  },
+  {
+    "size": 21,
+    "bricks": "b_b_b_b_b_b_b_b_b_b_l_b_b_b_b_b_b_b_b_b_blb_b_W__W_W_W__b_b_blb_bW_WWWWWWWWWW_b_blb_b_WWWWWkWWWWWkW_b_l_b_WWWWkWWWWkkkkk____l_WWkWkWWkkk_k_kkWWWWOWWkkWWWkk_kkk_kWWWW_WWWkWWWk_k_k_kkWWWW_WWWWWWkkk_k_k_kWWWW_WWWWkWkk_k_kk_kWWWW_WWWWWWk_k_kk_kkWWWWW_WWWWWkkk_k_k__WWWWW_WWWWWbkk_k_kkW__WWW_WWWWWWb_k_k_kWWW__W__WWWWWbb_k_k_WWWWW_W__WWWWWb__k_WWWWWWW____WWWWbbb_kWWWWWWWW___WWWWWbb_kWWWWWWWWW___WWWWbb_bWWWWWWWWWW___WWWWb_b_WWWWWWWWW____WWWWbb_b",
+    "category": "landscapes",
+    "name": "stopping by woods on a snowy evening",
+    "author": "bunny baphomet",
+    "credit": "https://www.poetryfoundation.org/poems/42891/stopping-by-woods-on-a-snowy-evening"
+  },
+  {
+    "size": 24,
+    "bricks": "_____________ll______ee_____________lll_____ee_e___________ll_l____ee_e___________lll_l___ee_e_e_________ll_l_l__ee_e_e_________lll_l_l_ee_e_e_e________l_l_l_lee_e_e_e_________l_l_l_ee_e_e_e_e________l_l_lee_e_e_e_e_________l_l_ee_e_e______________l_lee_e_e___bbb____kkkkkkkee_e_e_bbb___b__kkek_k_kk___e__b_kbbbk_kkekee_llkk_e_e_b_kk_kk_k_e_e_kll_k__e__bbk_k_k_k_ekek__klk_e_e___kk_kk_kk_e_eee_kl__e_e__kkkkk__kkekek_kk_l__e_e_________kkkkkkk___l__e_e_e_e_________eeee___e_e_e_e_e________lleee_e_e_e_e_e_________ll__eeee_e_e_e_e________ll___leee_e_e_e_________ll___ll_eeee_e_e",
+    "category": "stills",
+    "name": "respite",
+    "author": "bunny baphomet",
+    "credit": "we used to share these moments together"
+  },
+  {
+    "size": 23,
+    "bricks": "___lllllll__________lll__lllWlllll___RRRR_lllW_____WW_WW__RR_RR_RR_W__lll__W_W_RRR_R__R_RR_WlllllW__RR_R_R_RR_R_RRR_W___WRRRRRRRRRRRRRRRRRW____RRssssssssssssssss_Wll__ss_s_s_s_s_s_s_s__llWl_s_sssssss_s_sssss___W__ss_sWWWs_s_ssWWWs____W_s_ssW_Wss_s_sWWWs_ll_W_ss_sW_Ws_s_ssWWWsllll__s_sssssss_s_sssss_W____ss_s_s_s_s_s_s_s_W_____s_s_s_s_sssss_s_s_Wll__ss_s_s_ssRRs_s_s__llWl_s_s_s_s_sRRss_s_s___WW_ss_s_s_ssRRs_s_s_____W_s_s_s_s_sRRss_s_sOOOOOOOOOOOOOOOOOOOOOOOO_O_O_O_O_O_O_OOOO_O_O_O_O_O_O_O_O_O_OOOO_O_O_O_O_O_O_O_O_O_OOOO_O_O_",
+    "category": "landscapes",
+    "name": "old house",
+    "author": "bunny baphomet",
+    "credit": "it's been abandoned for years. no one comes around anymore"
+  },
+  {
+    "size": 12,
+    "bricks": "____________lkkkkl_______lkkl___lkkl_llll____ll___ll______l___l___ll_________________C_P____CP_Pkkkkk__kkkkkOOOOO__OOOOOOOOOO__OOOOOOOOOO__OOOOO",
+    "category": "games",
+    "name": "platformer",
+    "author": "bunny baphomet",
+    "credit": "looks like you were in the bottomless pit this whole time, begging to be released"
+  },
+  {
+    "size": 7,
+    "bricks": "________PPPPP__WWWWW__vvvvv__ggggg__bbbbb________",
+    "category": "flags",
+    "name": "Genderfluid Pride",
+    "author": "Luna",
+    "credit": "It's a genderfluid pride flag. You are valid <3"
+  },
+  {
+    "size": 18,
+    "bricks": "______________________R__R__R__________RrRrrrRrR_________RrrRrRrrR_________RrrRRRrrR__________RrrRrrR____________RrRrR______________kkk________________k_______________R_k________________Rk________________k________________k___R_k____________kR__R_k___________Rk_k___kR___________k____Rk_______________________________________",
+    "category": "stills",
+    "name": "Red Rose",
+    "author": "Wombatmithut",
+    "credit": "Latin, greek or persian? https://en.wikipedia.org/wiki/Rose"
+  },
+  {
+    "size": 24,
+    "bricks": "________WWWWWWWWW_____________WWWWWWWWWWWWW__________WWWWWWWWWWWWWWW_________WWWWWWWWWWWWWWW______gggggWWWWWWWggggWWW____ggWWWWggWWWggWWWgggWW__ggWWtttWWgWgWWWtttWggW__gWWWtttWWgggWtttttWWgW__gWWWtttWWgegWtttttWWggg_gggggggggeeeggggggggggg__eeggggeeeeeeegggggeeg___ggggggttttttgggggggge___gtttttttttttttttttttg___tttttttttttttttttttttg_gtttttttttttttttttttttg_gtttWGggGWtttWGggGWttttggtttWGggGWtttWGggGWWtttgtttttWWWWtttttGGGGttttWggWWtttttttttttttttttWWWgWWWWWWWWWWWWWWWWWWWWWWWggWWWWWWWWWWWWWWWWtWWWWWggWWWttttttttttttttWWW__gg__WWWWWWWWWWWWWWWWW__g_________WWWWWWWW________",
+    "category": "portraits",
+    "name": "The Annoying Thing",
+    "author": "Nìtsuga",
+    "credit": "https://en.wikipedia.org/wiki/Crazy_Frog"
+  },
+  {
+    "size": 16,
+    "bricks": "_gPgWWWWWWPPPg___ggWCCWWWWWPgg____gCWWCWCCWWWg____gCWgCCWWCWWWg__gWWCCWCgWCWWWg__gWWWWWWCCWPWWWggPgWWgWgWWWgWWWggPgppWgWWWPgWWWggPgppppppppgWWgg_gggppppppppgg_____ggppppgggg_____gCCggggCgggg__gggCCCCCCCCggg__gWWWgCCWWCCgWWg_gWWWWgCWWWCgWWg__gWWWggWWWCCggg_",
+    "category": "portraits",
+    "name": "Totally Normal Looking Fluffy Boy",
+    "author": "Nìtsuga",
+    "credit": "https://deltarune.wiki/w/Ralsei"
+  },
+  {
+    "size": 24,
+    "bricks": "____________________________gWWWWW_____WWWllW______WgggWWWW___WWWlllWW____WlgggggWWW_WWllllllWW__WWlggggglllWllllllllllW_WlggglllllggggggggllllW_WglllllllggggWWWggWWlWW_glggglllgggWWWWWWWWWWll_gllgggllggWWggggWWWWgll_gglgggglggWgggggWWWggll__gllgggllgggllgggWWggl____lllggglgglgllggWgggg_____llgggllllgglggWggl_______lggggllggllggWll___l______lgggggglgglll_____llll___lgggllgglll_______lll___lllllgglll_________lll___lllgggll___________lll___llggll_____________ll____lggl_______________ll___lgl_________________l____g___________________l________________________l______________",
+    "category": "symbols",
+    "name": "Unknown Mother Goose (wowaka)",
+    "author": "63CritsInARow",
+    "credit": "Song by: wowaka (RIP, 1987 - 2019) https://youtu.be/P_CSdxSGfaA?si=X_l1n0kheRoAn1oB"
+  },
+  {
+    "size": 23,
+    "bricks": "___________________________________________________________________________________________________________________W___W__WWW___WWW___WWW_W___W_WW_WW_WWWWW_WWWWWWWWWW_W___W_WWWWW_W___WW___W_WW_WW_WWWWW_WWWWWW___W__WWW___WWW___WWW_________________________WWW___WWW___WWW__WWWW_WWWWW_WWWWW_WW_WW_W___WW___W_WWWWW_W___W_WWWW_WWWWW_WWWWW_WW_WW_W___W_WWW___WWW___WWW__WWWW____________________________WWWWWWWWWWWWWWW_______________________________________________________________________________________________________________________",
+    "category": "symbols",
+    "name": "HeliBoard",
+    "author": "Nìtsuga",
+    "credit": "https://github.com/heliborg/heliboard"
+  },
+  {
+    "size": 9,
+    "bricks": "_W_____W_WWWWWWWWWWWWWWWWWWW_______WW_W_W_W_WW_______WW_W_W_W_WW_______WWWWWWWWWW",
+    "category": "stills",
+    "name": "Fossify Calendar",
+    "author": "Nìtsuga",
+    "credit": "https://github.com/FossifyOrg/Calendar"
+  },
+  {
+    "size": 23,
+    "bricks": "W________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+    "category": "stills",
+    "name": "Double or Nothing Russian Roulette",
+    "author": "Misty.EXE",
+    "credit": "That last brick that you can't even hit it. Double or Nothing players, I'm not sorry. "
+  },
+  {
+    "size": 24,
+    "bricks": "P______________________y________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________a______________________c",
+    "category": "stills",
+    "name": "DVD Screensavers' Untouched Territories",
+    "author": "Misty.EXE",
+    "credit": "Frustration of unc/aun players from the old days: The DVD player screensaver will never hit the corners. Your turn to claim those unclaimed lands."
+  },
+  {
+    "size": 14,
+    "bricks": "_________________lRRR____________O_R___________O__R__________O___R_____R___O___R_____OR__O___R_l____leeeeeeeell__OR__O___R_l___R___O___R_________O___R_________O__R__________O_R_________lRRR_______",
+    "category": "stills",
+    "name": "Bow & Arrow",
+    "author": "Wombatmithut",
+    "credit": "Lets hunt together!: https://en.wikipedia.org/wiki/Bow_and_arrow"
+  },
+  {
+    "size": 9,
+    "bricks": "___________________________SSSSSSSSSSSSSSSSSSWWWkykWWWWWWWkWWWWbbbbbbbbbbbbbbbbbb",
+    "category": "flags",
+    "name": "Paraguayan flag",
+    "author": "63CritsInARow",
+    "credit": "The Paraguayan flag, often called \"The heart of South America\". The flag has 2 sides with different symbols."
   }
 ]
