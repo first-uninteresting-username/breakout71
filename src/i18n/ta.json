@@ -195,6 +195,8 @@
     "settings.save_file_loaded": "ஏற்றப்பட்ட கோப்பை சேமிக்கவும்",
     "settings.save_file_loaded_help": "உங்கள் சேமிப்பைப் பயன்படுத்த, பயன்பாடு இப்போது மீண்டும் ஏற்றப்படும்",
     "settings.save_file_loaded_ok": "சரி",
+    "settings.shake": "",
+    "settings.shake_help": "",
     "settings.short_numbers": "எண்களை சுருக்கவும்",
     "settings.short_numbers_help": "பொருந்தும் போது முழு எண்களுக்குப் பதிலாக 3k, 2M, 1B ஆகியவற்றைக் காட்டு",
     "settings.show_fps": "FPS கவுண்டர்",

@@ -195,6 +195,8 @@
     "settings.save_file_loaded": "Зберегти файл, завантажений",
     "settings.save_file_loaded_help": "Додаток тепер перезавантажить, щоб застосувати вашу економію",
     "settings.save_file_loaded_ok": "Навігація",
+    "settings.shake": "",
+    "settings.shake_help": "",
     "settings.short_numbers": "",
     "settings.short_numbers_help": "",
     "settings.show_fps": "FPS лічильник",

@@ -195,6 +195,8 @@
     "settings.save_file_loaded": "儲存檔案已載入",
     "settings.save_file_loaded_help": "應用程式現在將重新載入以套用你的儲存",
     "settings.save_file_loaded_ok": "好的",
+    "settings.shake": "",
+    "settings.shake_help": "",
     "settings.short_numbers": "縮短數字",
     "settings.short_numbers_help": "適用時顯示 3k、2M、1B 等數字，而不是完整的數字",
     "settings.show_fps": "FPS 計數器",

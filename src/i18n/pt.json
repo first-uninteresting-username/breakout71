@@ -195,6 +195,8 @@
     "settings.save_file_loaded": "Gravar ficheiro de dados",
     "settings.save_file_loaded_help": "A app agora vai reiniciar para aplicar os seus dados gravados",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.shake": "",
+    "settings.shake_help": "",
     "settings.short_numbers": "Arredondar números",
     "settings.short_numbers_help": "",
     "settings.show_fps": "Contador de FPS",

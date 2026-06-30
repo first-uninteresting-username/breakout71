@@ -195,6 +195,8 @@
     "settings.save_file_loaded": "حفظ الملف المحمّل",
     "settings.save_file_loaded_help": "سيتم الآن إعادة تحميل التطبيق لتطبيق الحفظ الخاص بك",
     "settings.save_file_loaded_ok": "نعم",
+    "settings.shake": "",
+    "settings.shake_help": "",
     "settings.short_numbers": "",
     "settings.short_numbers_help": "",
     "settings.show_fps": "عداد FPS",

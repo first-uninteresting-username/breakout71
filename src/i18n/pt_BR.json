@@ -195,6 +195,8 @@
     "settings.save_file_loaded": "Salvar arquivo de dados",
     "settings.save_file_loaded_help": "O aplicativo agora vai reiniciar para aplicar seus dados salvos",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.shake": "",
+    "settings.shake_help": "",
     "settings.short_numbers": "Arredondar números",
     "settings.short_numbers_help": "Mostrar 3k, 2M, 1B em vez dos números completos, quando aplicável",
     "settings.show_fps": "Contador de FPS",

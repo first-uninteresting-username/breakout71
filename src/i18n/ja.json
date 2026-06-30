@@ -195,6 +195,8 @@
     "settings.save_file_loaded": "セーブファイルを読み込みました",
     "settings.save_file_loaded_help": "アプリが再読み込みされ、セーブファイルの内容が適用されます",
     "settings.save_file_loaded_ok": "OK",
+    "settings.shake": "",
+    "settings.shake_help": "",
     "settings.short_numbers": "",
     "settings.short_numbers_help": "",
     "settings.show_fps": "FPSカウンター",

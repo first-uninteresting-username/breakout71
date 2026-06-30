@@ -195,6 +195,8 @@
     "settings.save_file_loaded": "Sauvegarde chargée",
     "settings.save_file_loaded_help": "L'appli va redémarrer",
     "settings.save_file_loaded_ok": "Ok",
+    "settings.shake": "",
+    "settings.shake_help": "",
     "settings.short_numbers": "Nombres plus courts",
     "settings.short_numbers_help": "Afficher 3k, 2M, 1G plutôt que le nombre complet quand c'est possible",
     "settings.show_fps": "Compteur de FPS",

@@ -254,7 +254,8 @@ export function render(gameState: GameState, ctx: CanvasRenderingContext2D) {
   const shaked =
     lastExplosionDelay < 200 &&
     // Otherwise, if you pause after an explosion, moving the mouses shakes the picture
-    gameState.running;
+    gameState.running &&
+    isOptionOn("shake");
   if (shaked) {
     const amplitude =
       ((gameState.perks.bigger_explosions + 1) * 50) / lastExplosionDelay;

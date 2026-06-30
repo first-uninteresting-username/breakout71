@@ -114,6 +114,11 @@ export const options = {
     name: t("settings.particles"),
     help: t("settings.particles_help"),
   },
+  shake: {
+    default: true,
+    name: t("settings.shake"),
+    help: t("settings.shake_help"),
+  },
   pointerLock: {
     default: false,
     name: t("settings.pointer_lock"),

@@ -195,6 +195,8 @@
     "settings.save_file_loaded": "保存文件已载入",
     "settings.save_file_loaded_help": "现在本应用会重新载入以应用你的保存",
     "settings.save_file_loaded_ok": "确定",
+    "settings.shake": "",
+    "settings.shake_help": "",
     "settings.short_numbers": "缩短数字",
     "settings.short_numbers_help": "当可应用时显示 3k, 2M, 1B 而不是完整数字",
     "settings.show_fps": "FPS 计数器",
