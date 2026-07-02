@@ -2332,7 +2332,7 @@ export function ballTick(gameState: GameState, ball: Ball, frames: number) {
       gameState.brickHP[hitBrick],
       baseDmg + ball.piercePoints * damageMultiplier,
     );
-    if (gameState.perks.soft_touch && !ballIsAbovePaddle) {
+    if (gameState.perks.soft_touch && !isBrickOverPaddle(gameState, hitBrick)) {
       dmg = 0;
     }
     if (

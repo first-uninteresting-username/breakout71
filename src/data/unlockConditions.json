@@ -2873,5 +2873,80 @@
     "required": ["asceticism", "passive_income", "top_is_lava"],
     "forbidden": ["palette", "bigger_puck", "sticky_coins"],
     "minScore": 55700
+  },
+  "the light recedes": {
+    "required": ["bricks_attract_ball", "side_flip", "side_kick"],
+    "forbidden": ["gravity_falls", "nbricks", "thomas"],
+    "minScore": 55800
+  },
+  "the light encroaches": {
+    "required": ["telekinesis", "implosions", "superhot"],
+    "forbidden": ["side_kick", "side_flip", "metamorphosis"],
+    "minScore": 55900
+  },
+  "the intimate out of reach": {
+    "required": ["ottawa_treaty", "bigger_balls", "soft_touch"],
+    "forbidden": ["soft_reset", "soft_brush", "vibrant_neighborhood"],
+    "minScore": 56000
+  },
+  "resonate": {
+    "required": ["round_bricks", "vibrant_neighborhood", "steering"],
+    "forbidden": ["sturdy_bricks", "right_is_lava", "concave_puck"],
+    "minScore": 56100
+  },
+  "intersecting": {
+    "required": ["concave_puck", "respawn", "implosions"],
+    "forbidden": ["streak_shots", "rainbow", "round_bricks"],
+    "minScore": 56200
+  },
+  "bamboo garden": {
+    "required": ["streak_shots", "gravity_falls", "double_or_nothing"],
+    "forbidden": ["palette", "trampoline", "ball_attract_ball"],
+    "minScore": 56300
+  },
+  "mona lisa": {
+    "required": ["metamorphosis", "smaller_puck", "wrap_right"],
+    "forbidden": ["superhot", "varied_diet", "nbricks"],
+    "minScore": 56400
+  },
+  "My Honest Reaction": {
+    "required": ["etherealcoins", "ball_repulse_ball", "varied_diet"],
+    "forbidden": ["disco_ball", "puck_repulse_ball", "three_cushion"],
+    "minScore": 56500
+  },
+  "Small Android": {
+    "required": ["flyswatter", "ball_attracts_coins", "varied_diet"],
+    "forbidden": ["hot_start", "transparency", "left_is_lava"],
+    "minScore": 56600
+  },
+  "Good boy in the bush": {
+    "required": ["respawn", "bigger_explosions", "coin_magnet"],
+    "forbidden": ["rainbow", "asceticism", "instant_explosion"],
+    "minScore": 56700
+  },
+  "Copyright": {
+    "required": ["wrap_left", "coin_magnet", "bigger_puck"],
+    "forbidden": ["happy_family", "top_is_lava", "trampoline"],
+    "minScore": 56800
+  },
+  "Copyleft": {
+    "required": ["top_is_lava", "bigger_puck", "right_is_lava"],
+    "forbidden": ["nbricks", "wrap_left", "implosions"],
+    "minScore": 56900
+  },
+  "❌": {
+    "required": ["concave_puck", "asceticism", "soft_brush"],
+    "forbidden": ["soft_reset", "soft_touch", "round_bricks"],
+    "minScore": 57000
+  },
+  "Deal": {
+    "required": ["streak_shots", "steering", "fountain_toss"],
+    "forbidden": ["hardhat", "concave_puck", "addiction"],
+    "minScore": 57100
+  },
+  "Pipe ©": {
+    "required": ["passive_income", "implosions", "addiction"],
+    "forbidden": ["smaller_puck", "minefield", "paddle_up_combo"],
+    "minScore": 57200
   }
 }
