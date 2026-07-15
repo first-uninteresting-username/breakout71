@@ -2694,6 +2694,10 @@ function applyWrapUp(gameState: GameState, ball: Ball | Coin, radius: number) {
     ball.previousY,
     "#6262EA",
   );
+  // Fixes the issue of bricks above the paddle breaking because of a mix of
+  // previous Y and ball X
+  ball.previousX = ball.x - ball.vx;
+  ball.previousY = ball.y - ball.vy;
 }
 
 function addGravityParticules(gameState: GameState, frames: number) {
