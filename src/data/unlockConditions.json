@@ -2948,5 +2948,90 @@
     "required": ["passive_income", "implosions", "addiction"],
     "forbidden": ["smaller_puck", "minefield", "paddle_up_combo"],
     "minScore": 57200
+  },
+  "Flappy Bird": {
+    "required": ["helium", "compound_interest"],
+    "forbidden": ["bigger_puck"],
+    "minScore": 7000
+  },
+  "Free Speech Flag / 09 F9": {
+    "required": ["chill"],
+    "forbidden": ["double_or_nothing"],
+    "minScore": 10000
+  },
+  "Subspace Tripmine": {
+    "required": ["zen", "minefield", "double_or_nothing", "sapper"],
+    "forbidden": ["ottawa_treaty", "one_more_choice", "extra_levels"],
+    "minScore": 1
+  },
+  "Magisk": {
+    "required": ["chill"],
+    "forbidden": [],
+    "minScore": 777777
+  },
+  "Image Toolbox": {
+    "required": ["wrap_left", "left_is_lava", "minefield"],
+    "forbidden": ["clairvoyant"],
+    "minScore": 20100
+  },
+  "Flower Patch": {
+    "required": ["transparency", "left_is_lava", "sticky_coins"],
+    "forbidden": ["superhot", "puck_repulse_ball", "sacrifice"],
+    "minScore": 57400
+  },
+  "dungeon crawling": {
+    "required": ["disco_ball", "bricks_attract_coins", "passive_income"],
+    "forbidden": ["sacrifice", "soft_touch", "gravity_falls"],
+    "minScore": 57500
+  },
+  "solace": {
+    "required": ["instant_explosion", "bigger_explosions", "compound_interest"],
+    "forbidden": ["flyswatter", "happy_family", "gravity_falls"],
+    "minScore": 57600
+  },
+  "blending": {
+    "required": ["metamorphosis", "varied_diet", "happy_family"],
+    "forbidden": ["forgiving", "ball_attracts_coins", "viscosity"],
+    "minScore": 57700
+  },
+  "hidden spirals": {
+    "required": ["varied_diet", "viscosity", "trampoline"],
+    "forbidden": ["limitless", "respawn", "etherealcoins"],
+    "minScore": 57800
+  },
+  "interlace": {
+    "required": ["thomas", "bricks_attract_ball", "shocks"],
+    "forbidden": ["sapper", "refill", "coin_magnet"],
+    "minScore": 57900
+  },
+  "on the edge of everything": {
+    "required": ["gravity_falls", "asceticism", "vibrant_neighborhood"],
+    "forbidden": ["ghost_coins", "skip_last", "unbounded"],
+    "minScore": 58000
+  },
+  "eternity falls": {
+    "required": ["skip_last", "bigger_explosions", "smaller_puck"],
+    "forbidden": ["instant_explosion", "trampoline", "metamorphosis"],
+    "minScore": 58100
+  },
+  "N64 controller": {
+    "required": ["paddle_up_combo", "fountain_toss", "superhot"],
+    "forbidden": ["respawn", "happy_family", "wrap_up"],
+    "minScore": 58400
+  },
+  "killing 2 birds with 1 ball": {
+    "required": ["compound_interest", "happy_family", "soft_touch"],
+    "forbidden": ["soft_reset", "disco_ball", "soft_brush"],
+    "minScore": 58500
+  },
+  "black cat": {
+    "required": ["ball_attracts_coins", "thomas", "shocks"],
+    "forbidden": ["sapper", "sturdy_bricks", "refill"],
+    "minScore": 58700
+  },
+  "Mr Pioupiou": {
+    "required": ["passive_income", "steering", "trampoline"],
+    "forbidden": ["gravity_falls", "varied_diet", "golden_goose"],
+    "minScore": 58800
   }
 }

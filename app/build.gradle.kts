@@ -28,8 +28,8 @@ android {
         applicationId = "me.lecaro.breakout"
         minSdk = 23
         targetSdk = 37
-        versionCode = 29716746
-        versionName = "29716746"
+        versionCode = 29734901
+        versionName = "29734901"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
