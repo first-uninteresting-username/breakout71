@@ -79,6 +79,7 @@ export async function openLevelDetails(level: Level) {
   if (action === "run") {
     if (await confirmRestart(mainGameState)) {
       restart({ runType: "level_preview_run", level } as RunParams);
+      setSettingValue("autosave", null);
       return;
     }
   }

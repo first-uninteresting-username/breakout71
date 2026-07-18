@@ -125,6 +125,7 @@ export async function openCreativeModePerksPicker() {
           perks: creativeModePerks,
           level: selectedLeveOption.value,
         });
+        setSettingValue("autosave", null);
         return;
       }
     } else if ("bricks" in choice) {

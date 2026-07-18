@@ -777,7 +777,7 @@ async function applyFullScreenChoice() {
   return false;
 }
 
-export async function confirmRestart(gameState) {
+export async function confirmRestart(gameState: GameState) {
   if (!gameState.currentLevel) return true;
   if (alertsOpen) return true;
   pause(true);
@@ -867,6 +867,7 @@ document.addEventListener("keyup", async (e) => {
         runType: "normal",
         levelToAvoid: currentLevelInfo(mainGameState).name,
       });
+      setSettingValue("autosave", null);
     }
   } else if (
     e.key.toLowerCase() === "r" &&
@@ -884,7 +885,6 @@ export const mainGameState = newGameState({ runType: "normal" });
 window.mainGameState = mainGameState;
 
 export async function restart(params: RunParams) {
-  setSettingValue("autosave", null);
   // just to reset counters
   isPerformanceTerrible();
   if (mainGameState.currentLevel > 0 && !mainGameState.isGameOver) {
@@ -905,20 +905,38 @@ if (window.location.search.match(/autoplay|stress/)) {
     window.location.search.includes("stress") ? "stress" : "autoplay",
   );
 } else {
+  restart({
+    runType: "normal",
+  });
   let saved = getSettingValue<GameState | null>("autosave", null);
+
   if (
     isOptionOn("enable_autosave") &&
     saved &&
     saved.gameVersion === appVersion
   ) {
-    setSettingValue("autosave", null);
-    Object.assign(mainGameState, saved);
-    fitSize(mainGameState);
-    loadLevelBackground(mainGameState.level);
-    toast(t("play.auto_save_resumed"));
-  } else {
-    restart({
-      runType: "normal",
+    asyncAlert({
+      title: t("play.confirm_resume_autosave"),
+      content: [
+        t("play.confirm_resume_autosave_help", { lvl: saved.currentLevel + 1 }),
+        {
+          value: false,
+          text: t("play.confirm_resume_autosave_no"),
+        },
+        {
+          value: true,
+          text: t("play.confirm_resume_autosave_yes"),
+        },
+      ],
+    }).then((load) => {
+      if (load) {
+        Object.assign(mainGameState, saved);
+        fitSize(mainGameState);
+        loadLevelBackground(mainGameState.level);
+        toast(t("play.auto_save_resumed"));
+      } else {
+        setSettingValue("autosave", null);
+      }
     });
   }
 }
