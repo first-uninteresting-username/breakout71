@@ -2965,9 +2965,9 @@
     "minScore": 1
   },
   "Magisk": {
-    "required": ["chill"],
-    "forbidden": [],
-    "minScore": 777777
+    "required": ["limitless"],
+    "forbidden": ["chill"],
+    "minScore": 2147483647
   },
   "Image Toolbox": {
     "required": ["wrap_left", "left_is_lava", "minefield"],
@@ -3033,5 +3033,10 @@
     "required": ["passive_income", "steering", "trampoline"],
     "forbidden": ["gravity_falls", "varied_diet", "golden_goose"],
     "minScore": 58800
+  },
+  "the original starwalker": {
+    "required": ["bricks_attract_ball", "telekinesis", "golden_goose"],
+    "forbidden": ["etherealcoins", "double_or_nothing", "three_cushion"],
+    "minScore": 59000
   }
 }
