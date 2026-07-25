@@ -5760,11 +5760,59 @@
     "author": "Pedr01gb"
   },
   {
+    "name": "the original starwalker",
     "size": 24,
     "bricks": "__________y_______________________y______________________yyy_____________________yyy____________________yyyyy__________________yyyyyyy________________ggggyyyyy____________yygWWgggggggg________yyyyyygWWWWgWggWg_________yyyyyggggygWWWWgyy_________yyyyyyyyggggyyyyy________yyyyyyyyyyyyyyyyyy______yyyyyyyyyyyyyyyy________yyyyyyyyyyyyyy__________yyyyy__yyyyyy___________yyyyy__yyyyyy__________yyyyy___yyyyy___________yyyyy___yyyy____________yyyy____yyyy____________yyyy____yyy____________yyyy____yyyy____________yyyy____yyyy____________yyy_____yyy____________yyyy_____yyy_________",
+    "credit": "https://deltarune.wiki/w/Starwalker",
     "category": "portraits",
-    "name": "the original starwalker",
-    "author": "Nìtsuga",
-    "credit": "https://deltarune.wiki/w/Starwalker"
+    "author": "Nìtsuga"
+  },
+  {
+    "size": 13,
+    "bricks": "__________________________bbbbbbbbbbbbbbbbbbbybbbbbbbbbbybbbybbbbbbbbbbbbbbbbbbbbybbbbbybbbbbbbbbbbbbbbbbbbbybbbybbbbbbbbbbybbbbbbbbbbbbbbbbbbb__________________________",
+    "category": "flags",
+    "name": "EU flag",
+    "author": "Malzahn",
+    "credit": "https://en.wikipedia.org/wiki/Flag_of_Europe"
+  },
+  {
+    "size": 6,
+    "bricks": "GGGllGGGlGGlGGlGGlGOOllGOOOGGGOOGGGG",
+    "category": "symbols",
+    "name": "OpenStreetMap",
+    "author": "Malzahn",
+    "credit": "https://www.openstreetmap.org"
+  },
+  {
+    "size": 13,
+    "bricks": "_______________ggg_________ggggg__ggg___WWWWW_ggggg__WgWgW_WWWWW__WWWWW_WgWgW___WWW__WWWWW___ggg___WWW_____g____ggg_____g_____g______g_____g______g_____g________________",
+    "category": "portraits",
+    "name": "Blues Brothers",
+    "author": "Malzahn",
+    "credit": ""
+  },
+  {
+    "size": 11,
+    "bricks": "_____________O_O_O_O___OPOPOPOPO__OPOPOPOPO__OOOOOOOOO__OOOPPPOOO__OOPPPPPOO___OPPPPPO_____OOOOO_________________________",
+    "category": "animals",
+    "name": "Fox Paw",
+    "author": "djninjanova",
+    "credit": ""
+  },
+  {
+    "size": 10,
+    "bricks": "___O__O_____O_OO_O____ObbbbO____bbbbbb____CyCCyC____bbbbbb____bbPPbb_____bbbb_______________________",
+    "category": "portraits",
+    "name": "ninja fox logo",
+    "author": "djninjanova",
+    "credit": ""
+  },
+  {
+    "size": 24,
+    "bricks": "_________________________yyyyyyyyyyyyyyyyyyyyyy__yyggyyttttttytttttttty__yygygytttttyyyttttttty__yyggyyttttyyyyytttttty__yygygytttyyaaayyttttty__yyyyyyttyyyaaayyytttty__yttttttyyyyaaayyyyttty__ytttttyyaaayyyyayyytty__yttttyyyaaayyyaaayyyty__ytttttyyaaayyaaayyyyyy__yttttttyyyyyaaayyyyyty__ytttttttyyyaaayyyyytty__yttttttttyyyayyyyyttty__ytttltttttyyyyyyytttty__yttlgltttttyyyyyttttty__ytlgggltttttyyytttttty__ytlggglttttttyttttttty__ylggggglaaaaaaaaaaaaay__yyyyyyyyyyyyyyyyyyyyyy_________________________________________________________________________________________________",
+    "category": "games",
+    "name": "Geometry Dash Logo",
+    "author": "djninjanova",
+    "credit": ""
   }
 ]

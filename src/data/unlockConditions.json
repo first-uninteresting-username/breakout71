@@ -3038,5 +3038,35 @@
     "required": ["bricks_attract_ball", "telekinesis", "golden_goose"],
     "forbidden": ["etherealcoins", "double_or_nothing", "three_cushion"],
     "minScore": 59000
+  },
+  "EU flag": {
+    "required": ["wrap_right", "palette", "fountain_toss"],
+    "forbidden": ["golden_goose", "telekinesis", "trickledown"],
+    "minScore": 59100
+  },
+  "OpenStreetMap": {
+    "required": ["wrap_up", "nbricks", "bricks_attract_coins"],
+    "forbidden": ["bigger_balls", "ball_repulse_ball", "trickledown"],
+    "minScore": 59200
+  },
+  "Blues Brothers": {
+    "required": ["helium", "bricks_attract_coins", "trickledown"],
+    "forbidden": ["flyswatter", "bigger_balls", "round_bricks"],
+    "minScore": 59300
+  },
+  "Fox Paw": {
+    "required": ["asceticism", "trickledown", "round_bricks"],
+    "forbidden": ["concave_puck", "passive_income", "bigger_explosions"],
+    "minScore": 59400
+  },
+  "ninja fox logo": {
+    "required": ["hardhat", "streak_shots", "hot_start"],
+    "forbidden": ["sturdy_bricks", "concave_puck", "trickledown"],
+    "minScore": 59500
+  },
+  "Geometry Dash Logo": {
+    "required": ["implosions", "gravity_falls", "puck_repulse_ball"],
+    "forbidden": ["hot_start", "ball_repulse_ball", "streak_shots"],
+    "minScore": 59600
   }
 }
