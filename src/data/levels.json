@@ -5768,51 +5768,91 @@
     "author": "Nìtsuga"
   },
   {
+    "name": "EU flag",
     "size": 13,
     "bricks": "__________________________bbbbbbbbbbbbbbbbbbbybbbbbbbbbbybbbybbbbbbbbbbbbbbbbbbbbybbbbbybbbbbbbbbbbbbbbbbbbbybbbybbbbbbbbbbybbbbbbbbbbbbbbbbbbb__________________________",
+    "credit": "https://en.wikipedia.org/wiki/Flag_of_Europe",
     "category": "flags",
-    "name": "EU flag",
-    "author": "Malzahn",
-    "credit": "https://en.wikipedia.org/wiki/Flag_of_Europe"
+    "author": "Malzahn"
   },
   {
+    "name": "OpenStreetMap",
     "size": 6,
     "bricks": "GGGllGGGlGGlGGlGGlGOOllGOOOGGGOOGGGG",
+    "credit": "https://www.openstreetmap.org",
     "category": "symbols",
-    "name": "OpenStreetMap",
-    "author": "Malzahn",
-    "credit": "https://www.openstreetmap.org"
+    "author": "Malzahn"
   },
   {
+    "name": "Blues Brothers",
     "size": 13,
     "bricks": "_______________ggg_________ggggg__ggg___WWWWW_ggggg__WgWgW_WWWWW__WWWWW_WgWgW___WWW__WWWWW___ggg___WWW_____g____ggg_____g_____g______g_____g______g_____g________________",
+    "credit": "",
     "category": "portraits",
-    "name": "Blues Brothers",
-    "author": "Malzahn",
-    "credit": ""
+    "author": "Malzahn"
   },
   {
+    "name": "Fox Paw",
     "size": 11,
     "bricks": "_____________O_O_O_O___OPOPOPOPO__OPOPOPOPO__OOOOOOOOO__OOOPPPOOO__OOPPPPPOO___OPPPPPO_____OOOOO_________________________",
+    "credit": "",
     "category": "animals",
-    "name": "Fox Paw",
-    "author": "djninjanova",
-    "credit": ""
+    "author": "djninjanova"
   },
   {
+    "name": "ninja fox logo",
     "size": 10,
     "bricks": "___O__O_____O_OO_O____ObbbbO____bbbbbb____CyCCyC____bbbbbb____bbPPbb_____bbbb_______________________",
+    "credit": "",
     "category": "portraits",
-    "name": "ninja fox logo",
-    "author": "djninjanova",
-    "credit": ""
+    "author": "djninjanova"
   },
   {
+    "name": "Geometry Dash Logo",
     "size": 24,
     "bricks": "_________________________yyyyyyyyyyyyyyyyyyyyyy__yyggyyttttttytttttttty__yygygytttttyyyttttttty__yyggyyttttyyyyytttttty__yygygytttyyaaayyttttty__yyyyyyttyyyaaayyytttty__yttttttyyyyaaayyyyttty__ytttttyyaaayyyyayyytty__yttttyyyaaayyyaaayyyty__ytttttyyaaayyaaayyyyyy__yttttttyyyyyaaayyyyyty__ytttttttyyyaaayyyyytty__yttttttttyyyayyyyyttty__ytttltttttyyyyyyytttty__yttlgltttttyyyyyttttty__ytlgggltttttyyytttttty__ytlggglttttttyttttttty__ylggggglaaaaaaaaaaaaay__yyyyyyyyyyyyyyyyyyyyyy_________________________________________________________________________________________________",
+    "credit": "",
     "category": "games",
-    "name": "Geometry Dash Logo",
-    "author": "djninjanova",
-    "credit": ""
+    "author": "djninjanova"
+  },
+  {
+    "size": 9,
+    "bricks": "____CC______CCeC_____Ceee______eb_______eb______ebb_______bb_____ebbbb____e__ee__",
+    "category": "games",
+    "name": "Lemming",
+    "author": "Malzahn",
+    "credit": "Walker from original Lemmings Computer Game: https://en.wikipedia.org/wiki/Lemmings_(video_game)"
+  },
+  {
+    "size": 23,
+    "bricks": "__________yyy___________________yyyyy__________________ygygy__________________yyyyy__________________ygggy__________________yyyyy___________________yyy_________________SSSSSSSSS_____________SSSSSSSSSSS___________SSSSSSSSSSSSS__________SSSSSSSSSSSSS__________SS_SSSSSSS_SS__________SS_SSSSSSS_SS_________yyy_SSSSSSS_yyy________y_y_ttttttt_y_y________y_y_ttttttt_y_y____________ttttttt________________ttttttt________________ttt_ttt________________ttt_ttt________________ttt_ttt________________ttt_ttt________________ttt_ttt________",
+    "category": "portraits",
+    "name": "Lego figure",
+    "author": "Malzahn",
+    "credit": "https://en.wikipedia.org/wiki/Lego_minifigure"
+  },
+  {
+    "size": 14,
+    "bricks": "_____WWW__________WWW__________WgWgWrr_______WWWWWRrr_____rWWgWW_rRr___rrRWWWWrR_rr__rr_WWWrRWWWWW_rrWWWrRWWWWW_WWWWWrRWWWWrr__WWWrRWWWWWrr__RrrRWWWWWrrR___RrRWWWWrrR_____RrrrrrrR_______RRRRRR____",
+    "category": "symbols",
+    "name": "Ghostbusters",
+    "author": "Malzahn",
+    "credit": "Logos of the Ghostbusters based on https://www.pixelartshop.com/news/perler-bead-pixel-art-ghostbusters-icon-patterns"
+  },
+  {
+    "size": 17,
+    "bricks": "_______CCC_____________CkCkC___________CkykykC__________CCCCCCC______C__CCWWWWWCC__C_CC_CCCrrrrrCCC_CC_kCkCCCrrrCCCkCk___k_CCkCCCkCC_k______CCCkkkCCC________CkCCCCCkC_________CkkkkkC___________CCCCC___________________________________________________________________________________________",
+    "category": "portraits",
+    "name": "Slimer",
+    "author": "Malzahn",
+    "credit": "Slimer from Ghostbusters based on https://www.pixelartshop.com/news/perler-bead-pixel-art-ghostbusters-icon-patterns"
+  },
+  {
+    "size": 12,
+    "bricks": "WWW_rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrr____rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrr____________ttt_WWWWW_WWttt_WWWWW___ttt_WWWWW_yy",
+    "category": "abstract",
+    "name": "Mondrian Composition II",
+    "author": "Malzahn",
+    "credit": "Based on Piet Mondrian: Composition with Red, Blue, and Yellow Work Type painting Date 1930 Material oil on canvas. https://www.piet-mondrian.org/composition-ii-in-red-blue-and-yellow.jsp"
   }
 ]

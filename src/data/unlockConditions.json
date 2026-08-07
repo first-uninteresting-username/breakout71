@@ -3068,5 +3068,30 @@
     "required": ["implosions", "gravity_falls", "puck_repulse_ball"],
     "forbidden": ["hot_start", "ball_repulse_ball", "streak_shots"],
     "minScore": 59600
+  },
+  "Lemming": {
+    "required": ["smaller_puck", "wrap_left", "wrap_up"],
+    "forbidden": ["passive_income", "nbricks", "metamorphosis"],
+    "minScore": 5970
+  },
+  "Lego figure": {
+    "required": ["ball_attracts_coins", "sticky_coins", "compound_interest"],
+    "forbidden": ["left_is_lava", "transparency", "instant_explosion"],
+    "minScore": 5980
+  },
+  "Ghostbusters": {
+    "required": ["vibrant_neighborhood", "disco_ball", "etherealcoins"],
+    "forbidden": ["ball_attract_ball", "transparency", "soft_touch"],
+    "minScore": 5990
+  },
+  "Slimer": {
+    "required": ["top_is_lava", "bigger_puck", "bricks_attract_ball"],
+    "forbidden": ["telekinesis", "bigger_balls", "coin_magnet"],
+    "minScore": 6000
+  },
+  "Mondrian Composition II": {
+    "required": ["helium", "ball_repulse_ball", "bigger_balls"],
+    "forbidden": ["puck_repulse_ball", "telekinesis", "rainbow"],
+    "minScore": 6010
   }
 }
