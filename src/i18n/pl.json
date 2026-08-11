@@ -205,7 +205,7 @@
     "settings.short_numbers_help": "W stosownych przypadkach wyświetlaj 3 tys., 2 mln, 1 mld zamiast pełnych liczb",
     "settings.show_fps": "Licznik FPS",
     "settings.show_fps_help": "Monitoruj wydajność aplikacji",
-    "settings.show_puck_rails": "Pionowe łopatka do odbijania",
+    "settings.show_puck_rails": "Pionowa łopatka do odbijania",
     "settings.show_puck_rails_help": "Pokaż, co znajduje się nad łopatką, gdy aktywne są odpowiednie ulepszenia.",
     "settings.show_stats": "Pokaż statystyki na żywo",
     "settings.show_stats_help": "Monety, czas,  nieudane próby",
