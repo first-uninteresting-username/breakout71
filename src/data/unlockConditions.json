@@ -3093,5 +3093,15 @@
     "required": ["helium", "ball_repulse_ball", "bigger_balls"],
     "forbidden": ["puck_repulse_ball", "telekinesis", "rainbow"],
     "minScore": 6010
+  },
+  "Old Postcard": {
+    "required": ["round_bricks", "minefield", "metamorphosis"],
+    "forbidden": ["palette", "telekinesis", "disco_ball"],
+    "minScore": 60200
+  },
+  "greg1415": {
+    "required": ["bigger_explosions", "sacrifice", "flyswatter"],
+    "forbidden": ["nbricks", "instant_explosion", "concave_puck"],
+    "minScore": 60300
   }
 }
