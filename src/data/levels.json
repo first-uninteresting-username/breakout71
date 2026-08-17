@@ -5816,43 +5816,59 @@
     "author": "djninjanova"
   },
   {
+    "name": "Lemming",
     "size": 9,
     "bricks": "____CC______CCeC_____Ceee______eb_______eb______ebb_______bb_____ebbbb____e__ee__",
+    "credit": "Walker from original Lemmings Computer Game: https://en.wikipedia.org/wiki/Lemmings_(video_game)",
     "category": "games",
-    "name": "Lemming",
-    "author": "Malzahn",
-    "credit": "Walker from original Lemmings Computer Game: https://en.wikipedia.org/wiki/Lemmings_(video_game)"
+    "author": "Malzahn"
   },
   {
+    "name": "Lego figure",
     "size": 23,
     "bricks": "__________yyy___________________yyyyy__________________ygygy__________________yyyyy__________________ygggy__________________yyyyy___________________yyy_________________SSSSSSSSS_____________SSSSSSSSSSS___________SSSSSSSSSSSSS__________SSSSSSSSSSSSS__________SS_SSSSSSS_SS__________SS_SSSSSSS_SS_________yyy_SSSSSSS_yyy________y_y_ttttttt_y_y________y_y_ttttttt_y_y____________ttttttt________________ttttttt________________ttt_ttt________________ttt_ttt________________ttt_ttt________________ttt_ttt________________ttt_ttt________",
+    "credit": "https://en.wikipedia.org/wiki/Lego_minifigure",
     "category": "portraits",
-    "name": "Lego figure",
-    "author": "Malzahn",
-    "credit": "https://en.wikipedia.org/wiki/Lego_minifigure"
+    "author": "Malzahn"
   },
   {
+    "name": "Ghostbusters",
     "size": 14,
     "bricks": "_____WWW__________WWW__________WgWgWrr_______WWWWWRrr_____rWWgWW_rRr___rrRWWWWrR_rr__rr_WWWrRWWWWW_rrWWWrRWWWWW_WWWWWrRWWWWrr__WWWrRWWWWWrr__RrrRWWWWWrrR___RrRWWWWrrR_____RrrrrrrR_______RRRRRR____",
+    "credit": "Logos of the Ghostbusters based on https://www.pixelartshop.com/news/perler-bead-pixel-art-ghostbusters-icon-patterns",
     "category": "symbols",
-    "name": "Ghostbusters",
-    "author": "Malzahn",
-    "credit": "Logos of the Ghostbusters based on https://www.pixelartshop.com/news/perler-bead-pixel-art-ghostbusters-icon-patterns"
+    "author": "Malzahn"
+  },
+  {
+    "name": "Slimer",
+    "size": 17,
+    "bricks": "_______CCC_____________CkCkC___________CkykykC__________CCCCCCC______C__CCWWWWWCC__C_CC_CCCrrrrrCCC_CC_kCkCCCrrrCCCkCk___k_CCkCCCkCC_k______CCCkkkCCC________CkCCCCCkC_________CkkkkkC___________CCCCC___________________________________________________________________________________________",
+    "credit": "Slimer from Ghostbusters based on https://www.pixelartshop.com/news/perler-bead-pixel-art-ghostbusters-icon-patterns",
+    "category": "portraits",
+    "author": "Malzahn"
+  },
+  {
+    "name": "Mondrian Composition II",
+    "size": 12,
+    "bricks": "WWW_rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrr____rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrr____________ttt_WWWWW_WWttt_WWWWW___ttt_WWWWW_yy",
+    "credit": "Based on Piet Mondrian: Composition with Red, Blue, and Yellow Work Type painting Date 1930 Material oil on canvas. https://www.piet-mondrian.org/composition-ii-in-red-blue-and-yellow.jsp",
+    "category": "abstract",
+    "author": "Malzahn"
   },
   {
     "size": 17,
-    "bricks": "_______CCC_____________CkCkC___________CkykykC__________CCCCCCC______C__CCWWWWWCC__C_CC_CCCrrrrrCCC_CC_kCkCCCrrrCCCkCk___k_CCkCCCkCC_k______CCCkkkCCC________CkCCCCCkC_________CkkkkkC___________CCCCC___________________________________________________________________________________________",
-    "category": "portraits",
-    "name": "Slimer",
-    "author": "Malzahn",
-    "credit": "Slimer from Ghostbusters based on https://www.pixelartshop.com/news/perler-bead-pixel-art-ghostbusters-icon-patterns"
+    "bricks": "____________________________________________________eeeeeeeeeeeeeee__eeebeebeleerbee__ebbebbbeleebree__eeeeeeeeleeeeee__eebeebeelelllle__ebbbbebeleeeeee__eeeeeeeelelllle__ebeebebeleeeeee__ebbbebeelelllle__eeeeeeeeeeeeeee_____________________________________________________________________",
+    "category": "stills",
+    "name": "Old Postcard",
+    "author": "Wombatmithut",
+    "credit": ",,Hey Mister Postman!\""
   },
   {
-    "size": 12,
-    "bricks": "WWW_rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrr____rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrrWWW_rrrrrrrr____________ttt_WWWWW_WWttt_WWWWW___ttt_WWWWW_yy",
-    "category": "abstract",
-    "name": "Mondrian Composition II",
-    "author": "Malzahn",
-    "credit": "Based on Piet Mondrian: Composition with Red, Blue, and Yellow Work Type painting Date 1930 Material oil on canvas. https://www.piet-mondrian.org/composition-ii-in-red-blue-and-yellow.jsp"
+    "size": 20,
+    "bricks": "________gggg______________OOOOOOOOO_________OOOOOOOOOOOOO______OOOOOOOOOOOOOOO____gggggggggggggggg___OgWWWWWggWWWWgOOOg__OgWWgWgOgWWgWgOOOO_OOgWWWgOOgWWWWgOOOOOOOOgggOOOOgggggOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOgWgWgWgWgWgOOOOOOOOOOOggggggggggOOOOOOOOOOOggggggggOOOOOOO_OOgOOggggggOOOOOOO__gOOOOOOOOOOOgOOOOg___OOOgOgOgOgOOOOOO_____gOOOOOOOOOOOOg________gOOOOOOOOOg___________gOgOgOg______",
+    "category": "portraits",
+    "name": "greg1415",
+    "author": "greg1415",
+    "credit": "self-portrait"
   }
 ]
