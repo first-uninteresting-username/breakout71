@@ -3103,5 +3103,10 @@
     "required": ["bigger_explosions", "sacrifice", "flyswatter"],
     "forbidden": ["nbricks", "instant_explosion", "concave_puck"],
     "minScore": 60300
+  },
+  "Zala": {
+    "required": ["streak_shots"],
+    "forbidden": [],
+    "minScore": 4000
   }
 }

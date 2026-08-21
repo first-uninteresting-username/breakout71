@@ -23,6 +23,7 @@ set -x
 rm -rf ./build/*
 mkdir -p ./app/src/main/assets/
 rm -rf ./app/src/main/assets/*
+echo "DGJLHICYKNST2AAAAAAAAAAAAA" > ./app/src/main/assets/adi-registration.properties
 rm -rf  ./app/build/outputs/apk/release/*
 rm -rf  ./app/build/outputs/bundle/release/*
 
