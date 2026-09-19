@@ -1,6 +1,6 @@
 # Breakout 71
 
-> GitHub fork of [lecarore/breakout71 on GitLab](https://gitlab.com/lecarore/breakout71) by Renan LE CARO, hosted on GitHub Pages here: https://first-non-interesting-username.github.io/breakout71/ — one-time fork, upstream remains the source of truth. Licensed under GNU AGPLv3 (see `LICENSE`).
+> GitHub fork of [lecarore/breakout71 on GitLab](https://gitlab.com/lecarore/breakout71) by Renan LE CARO, hosted on GitHub Pages here: https://first-uninteresting-username.github.io/breakout71/ — one-time fork, upstream remains the source of truth. Licensed under GNU AGPLv3 (see `LICENSE`).
 
 Break colourful bricks, catch bouncing coins and select powerful upgrades !
 
